@@ -1,0 +1,27 @@
+/**
+ * QAdmin v1.2.0 (http://www.qadmin.com/)
+ * Copyright 2015-2017 QAdmin Team
+ * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
+ */
+table.dataTable.fixedHeader-floating {
+	position: fixed !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	background-color: white;
+}
+@media print {
+	table.dataTable.fixedHeader-floating {
+		display: none;
+	}
+}
+table.dataTable.fixedHeader-locked {
+	position: absolute !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	background-color: white;
+}
+.fixedHeader {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	background-color: white;
+}

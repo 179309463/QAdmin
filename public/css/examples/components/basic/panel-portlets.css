@@ -1,0 +1,16 @@
+/**
+ * QAdmin v1.2.0 (http://www.qadmin.com/)
+ * Copyright 2015-2017 QAdmin Team
+ * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
+ */
+.grid-stack-item-content {
+	font-size: 20px;
+	color: #526069;
+	text-align: center;
+	background: white;
+}
+.grid-stack-item-content .fa {
+	display: block;
+	margin: 20px 0 10px;
+	font-size: 64px;
+}

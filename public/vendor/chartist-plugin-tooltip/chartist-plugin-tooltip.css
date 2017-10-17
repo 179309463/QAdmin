@@ -1,0 +1,18 @@
+/**
+ * QAdmin v1.2.0 (http://www.qadmin.com/)
+ * Copyright 2015-2017 QAdmin Team
+ * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
+ */
+.chartist-tooltip {
+	position: absolute;
+	z-index: 1;
+	display: inline-block;
+	padding: 3px 8px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	pointer-events: none;
+	background-color: rgba(0, 0, 0, .7);
+	border-radius: 3px;
+}
