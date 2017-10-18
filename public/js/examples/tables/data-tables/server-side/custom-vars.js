@@ -10,8 +10,8 @@
         "processing": true,
         "serverSide": true,
         "ajax": {
-            "url": "http://demo.qadmin.com/employee/all",
-            "dataType": "jsonp",
+            "url": "/employee/all",
+            "dataType": "json",
             "data": function (d) {
                 d.myKey = "myValue";
                 // d.custom = $('#myInput').val();

@@ -12,8 +12,8 @@
             "processing": true,
             "serverSide": true,
             "ajax": {
-                "url": "http://demo.qadmin.com/employee/all/get",
-                "dataType": "jsonp"
+                "url": "/employee/all/get",
+                "dataType": "json"
             },
             "columns": [
                 {"data": "name"},

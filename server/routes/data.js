@@ -36,9 +36,27 @@ router.get('/log/query', function(req, res){
 router.get('/message/query', function(req, res){
     filterData(req, res, '/data/system/message.json');
 });
+router.get('/message/queryUnread', function(req, res){
+    filterData(req, res, '/data/system/message.json');
+});
+router.post('/message/read', function(req, res){
+    filterData(req, res, '/data/system/message.read.json');
+});
 
 router.post('/post/table', function(req, res){
     filterData(req, res, '/data/examples/tables/dt-server-post.json');
+});
+
+router.get(['/employee/query', '/employee/all/get'], function(req, res){
+    filterData(req, res, '/data/examples/data-tables/server-side/employee.get.json');
+});
+
+router.get('/employee/all', function(req, res){
+    filterData(req, res, '/data/examples/data-tables/server-side/employee.json');
+});
+
+router.post('/employee/all/post', function(req, res){
+    filterData(req, res, '/data/examples/data-tables/server-side/employee.post.json');
 });
 
 module.exports = router;

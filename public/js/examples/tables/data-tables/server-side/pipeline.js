@@ -13,11 +13,11 @@
         // Configuration options
         var conf = $.extend({
             pages: 5,     // number of pages to cache
-            url: 'http://demo.qadmin.com/employee/query',      // script url
+            url: '/employee/query',      // script url
             data: null,   // function or object with parameters to send to the server
                           // matching how `ajax.data` works in DataTables
             method: 'GET', // Ajax HTTP method
-            dataType: 'jsonp'
+            dataType: 'json'
         }, opts);
 
         // Private variables for storing the cache
@@ -85,7 +85,7 @@
                     "type": conf.method,
                     "url": conf.url,
                     "data": request,
-                    "dataType": "jsonp",
+                    "dataType": "json",
                     "cache": false,
                     "success": function (json) {
                         cacheLastJson = $.extend(true, {}, json);
@@ -128,8 +128,8 @@
         "processing": true,
         "serverSide": true,
         "ajax": $.fn.dataTable.pipeline({
-            url: 'http://demo.qadmin.com/employee/query',
-            dataType: 'jsonp',
+            url: '/employee/query',
+            dataType: 'json',
             pages: 5 // number of pages to cache
         }),
         "columns": [

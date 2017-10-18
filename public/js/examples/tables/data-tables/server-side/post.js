@@ -10,7 +10,7 @@
         "processing": true,
         "serverSide": true,
         "ajax": {
-            "url": "http://demo.qadmin.com/employee/all/post",
+            "url": "/employee/all/post",
             "crossDomain": true,
             "type": "POST",
             "dataType": "json"
