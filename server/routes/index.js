@@ -17,10 +17,6 @@ function responseCommon(req, res) {
     }
 }
 
-router.all('/*', function (req, res) {
-    responseCommon(req, res);
-});
-
 router.all('/system/account/*', function (req, res) {
     res.charset = 'utf-8';
     var _path = req.path.substring(1),
@@ -105,5 +101,17 @@ router.all('/system/account/*', function (req, res) {
         }
     }
 });
+
+router.get('/login', (req, res) => {
+  res.render('login')
+})
+router.get('/locked.html', (req, res) => {
+  res.render('locked')
+})
+
+router.all('/*', function (req, res) {
+    responseCommon(req, res);
+});
+
 
 module.exports = router;

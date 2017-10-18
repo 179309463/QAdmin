@@ -23,7 +23,7 @@
         }
     </style>
     <div class="ajax-col">
-        <img class="img-responsive" src="http://ifanr-cdn.b0.upaiyun.com/wp-content/uploads/2016/03/JD.com_.png" alt="..." />
+        <img class="img-responsive" src="/images/uploads/JD.com_.png" alt="..." />
     </div>
     <div class="ajax-col">
         <div class="margin-left-20">

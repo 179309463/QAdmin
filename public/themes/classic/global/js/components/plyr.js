@@ -46,7 +46,7 @@
                         b.insertBefore(c, b.childNodes[0]);
                     };
                 }
-            })(document, "https://cdn.plyr.io/1.1.5/sprite.svg");
+            })(document, "/images/uploads/sprite.svg");
 
             plyr.setup();
         }
