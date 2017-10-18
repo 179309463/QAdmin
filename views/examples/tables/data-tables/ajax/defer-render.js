@@ -7,7 +7,7 @@
     "use strict";
 
     $('#dataTableExample').DataTable($.po('dataTable', {
-        "ajax": $.ctx + "/data/examples/tables/dt-ajax.json",
+        "ajax": $.ctx + "/views/examples/tables/dt-ajax.json",
         "deferRender": true
     }));
 })(window, document, jQuery);

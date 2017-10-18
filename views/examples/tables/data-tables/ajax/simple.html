@@ -6,7 +6,7 @@
         <p>本示例展示 DataTables 最简单的 Ajax 数据源的用法</p>
     </div>
     <div class="panel-body">
-        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample" data-plugin="dataTable" data-ajax="/data/examples/tables/dt-ajax.json">
+        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample" data-plugin="dataTable" data-ajax="/views/examples/tables/dt-ajax.json">
             <thead>
             <tr>
                 <th>姓名</th>
@@ -54,7 +54,7 @@
             </div>
             <div class="tab-pane" id="DTJS" role="tabpanel">
                 <pre data-plugin="highlight"><code class="js">$('#dataTableExample').DataTable($.po('dataTable', {
-    "ajax": "/data/examples/tables/dt-ajax.json"
+    "ajax": "/views/examples/tables/dt-ajax.json"
 }));</code></pre>
             </div>
             <div class="tab-pane" id="DTAjax" role="tabpanel">

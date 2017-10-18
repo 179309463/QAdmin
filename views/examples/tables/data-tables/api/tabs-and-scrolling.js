@@ -11,7 +11,7 @@
     });
 
     $('#DTExample table.dataTable').DataTable($.po('dataTable', {
-        ajax: $.ctx + '/data/examples/tables/dt-ajax.json',
+        ajax: $.ctx + '/views/examples/tables/dt-ajax.json',
         scrollY: 200,
         scrollCollapse: true,
         paging: false

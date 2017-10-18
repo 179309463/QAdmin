@@ -6,7 +6,7 @@
         <p>DataTables 可以通过 <code>ajax</code> 设置ajax数据源获取json数据</p>
     </div>
     <div class="panel-body">
-        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample" data-plugin="dataTable" data-ajax="/data/examples/tables/dt-ajax.json">
+        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample" data-plugin="dataTable" data-ajax="/views/examples/tables/dt-ajax.json">
             <thead>
             <tr>
                 <th>姓名</th>
@@ -54,7 +54,7 @@
             </div>
             <div class="tab-pane" id="DTJS" role="tabpanel">
                 <pre data-plugin="highlight"><code class="js">$('#dataTableExample').DataTable($.po('dataTable', {
-    "ajax": "/data/examples/tables/dt-ajax.json"
+    "ajax": "/views/examples/tables/dt-ajax.json"
 }));</code></pre>
             </div>
             <div class="tab-pane" id="DTAjax" role="tabpanel">
@@ -520,7 +520,7 @@
 }</code></pre>
             </div>
             <div class="tab-pane" id="DTHtml" role="tabpanel">
-                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped width-full" data-plugin="dataTable" data-ajax="/data/examples/tables/dt-ajax.json"&gt;
+                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped width-full" data-plugin="dataTable" data-ajax="/views/examples/tables/dt-ajax.json"&gt;
     &lt;thead&gt;
     &lt;tr&gt;
         &lt;th&gt;姓名&lt;/th&gt;

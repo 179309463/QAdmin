@@ -7,7 +7,7 @@
     "use strict";
 
     var table = $('#dataTableExample').DataTable($.po('dataTable', {
-        "ajax": $.ctx + "/data/examples/tables/dt-ajax.json",
+        "ajax": $.ctx + "/views/examples/tables/dt-ajax.json",
         "columnDefs": [{
             "targets": -1,
             "data": null,

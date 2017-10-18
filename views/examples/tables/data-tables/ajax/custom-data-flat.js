@@ -8,7 +8,7 @@
 
     $('#dataTableExample').DataTable($.po('dataTable', {
         "ajax": {
-            "url": $.ctx + "/data/examples/tables/dt-ajax-6.json",
+            "url": $.ctx + "/views/examples/tables/dt-ajax-6.json",
             "dataSrc": ""
         },
         "columns": [

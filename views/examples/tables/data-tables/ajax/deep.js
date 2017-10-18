@@ -8,7 +8,7 @@
 
     $('#dataTableExample').DataTable($.po('dataTable', {
         "processing": true,
-        "ajax": $.ctx + "/data/examples/tables/dt-ajax-1.json",
+        "ajax": $.ctx + "/views/examples/tables/dt-ajax-1.json",
         "columns": [
             {"data": "name"},
             {"data": "hr.position"},

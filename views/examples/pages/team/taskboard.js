@@ -53,7 +53,7 @@
         },
 
         taskTpl: function (data) {
-            return '<li class="list-group-item priority-' + data.priority + '" data-taskboard="slidePanel" data-url="/data/examples/pages/taskboard-panel.tpl">' +
+            return '<li class="list-group-item priority-' + data.priority + '" data-taskboard="slidePanel" data-url="/views/examples/pages/taskboard-panel.tpl">' +
                 '<div class="checkbox-custom checkbox-primary">' +
                 '<input type="checkbox" ' + (data.complete ? 'checked="checked"' : '') + ' name="checkbox">' +
                 '<label class="task-title">' + data.title + '</label>' +
@@ -170,7 +170,7 @@
 
         init: function () {
             var self = this;
-            $.getJSON($.ctx + '/data/examples/pages/taskboard.json', function (data) {
+            $.getJSON($.ctx + '/views/examples/pages/taskboard.json', function (data) {
                 var $wrap = $('#taskboard-stages');
                 self.buildStage($wrap, data);
                 self.initSortable();

@@ -810,7 +810,7 @@
         exampleThree: function () {
             var myChart = echarts.init(document.getElementById('echartsDemo3'));
 
-            $.getJSON($.ctx + '/data/examples/echarts/hangzhou-tracks.json', function (data) {
+            $.getJSON($.ctx + '/views/examples/echarts/hangzhou-tracks.json', function (data) {
 
                 var points = [].concat.apply([], data.map(function (track) {
                     return track.map(function (seg) {

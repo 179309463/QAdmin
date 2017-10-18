@@ -28,7 +28,7 @@
             }
 
             var table = $('#dataTableExample').DataTable($.po('dataTable', {
-                "ajax": $.ctx + "/data/examples/tables/dt-ajax-2.json",
+                "ajax": $.ctx + "/views/examples/tables/dt-ajax-2.json",
                 "columns": [
                     {
                         "class": 'details-control',
