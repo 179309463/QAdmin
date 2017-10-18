@@ -24,6 +24,7 @@ body {
 	line-height: 1.6;
 	color: #76838f;
 	background-color: #fff;
+	overflow: hidden;
 }
 input, button, select, textarea {
 	font-family: inherit;
@@ -6500,12 +6501,12 @@ body {
 	}
 }
 .site-contabs-open .site-page .page {
-	min-height: -webkit-calc(100vh - 140px) !important;
-	min-height:         calc(100vh - 140px) !important;
+	min-height: -webkit-calc(100vh - 180px) !important;
+	min-height:         calc(100vh - 180px) !important;
 }
 .site-contabs-open .site-page .page.page-full {
-	height: -webkit-calc(100vh - 140px) !important;
-	height:         calc(100vh - 140px) !important;
+	height: -webkit-calc(100vh - 180px) !important;
+	height:         calc(100vh - 180px) !important;
 }
 .site-contabs-open .site-page .page-loading {
 	height: -webkit-calc(100vh - 100px) !important;

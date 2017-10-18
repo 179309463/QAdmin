@@ -509,6 +509,15 @@ router.get('/login', (req, res) => {
 router.get('/locked.html', (req, res) => {
   res.render('locked')
 })
+router.get('/home', (req, res) => {
+    var _path = req.path.substring(1);
+
+    if (req.headers['x-pjax']) {
+        res.render("examples/home.html");
+    } else {
+        res.render('index', {path: "examples/home.html"});
+    }
+})
 
 router.all('/*', function (req, res) {
     responseCommon(req, res);
