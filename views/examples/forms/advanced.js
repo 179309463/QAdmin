@@ -95,7 +95,7 @@
             var cities = new Bloodhound({
                 datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'),
                 queryTokenizer: Bloodhound.tokenizers.whitespace,
-                prefetch: $.ctx + '/views/examples/forms/cities.json'
+                prefetch: $.ctx + '/views/examples/forms/advanced.cities.json'
             });
             cities.initialize();
 
@@ -144,7 +144,7 @@
             var cities = new Bloodhound({
                 datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'),
                 queryTokenizer: Bloodhound.tokenizers.whitespace,
-                prefetch: $.ctx + '/views/examples/forms/cities.json'
+                prefetch: $.ctx + '/views/examples/forms/advanced.cities.json'
             });
             cities.initialize();
 
@@ -288,7 +288,7 @@
                 var countries = new Bloodhound({
                     datumTokenizer: Bloodhound.tokenizers.whitespace,
                     queryTokenizer: Bloodhound.tokenizers.whitespace,
-                    prefetch: $.ctx + '/views/examples/forms/countries.json'
+                    prefetch: $.ctx + '/views/examples/forms/advanced.countries.json'
                 });
 
                 $('#exampleTypeaheadPrefetch').typeahead(null, {

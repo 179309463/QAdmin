@@ -8,7 +8,7 @@
 
     $('#dataTableExample').DataTable($.po('dataTable', {
         "processing": true,
-        "ajax": $.ctx + "/views/examples/tables/dt-ajax-5.json",
+        "ajax": $.ctx + "/views/examples/tables/data-tables/ajax/custom-data-property.json",
         // 默认为data，这里定义为demo
         "dataSrc": "demo"
     }));

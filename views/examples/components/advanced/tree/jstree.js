@@ -43,7 +43,7 @@
             $('#ajax').data('jstree', false).empty().jstree({ // Ajax
                 'core': {
                     'data': {
-                        "url": $.ctx + "/views/examples/components/jstree-root.json",
+                        "url": $.ctx + "/views/examples/components/advanced/tree/jstree.json",
                         "dataType": "JSON"
                     }
                 }
@@ -52,7 +52,7 @@
             $('#lazy').jstree({ // 懒加载
                 'core': {
                     'data': {
-                        "url": $.ctx + "/views/examples/components/jstree-root.json",
+                        "url": $.ctx + "/views/examples/components/advanced/tree/jstree.json",
                         "dataType": "JSON",
                         "data": function (node) {
                             return {"id": node.id};

@@ -6,7 +6,7 @@ var express = require('express'),
     path = require('path');
 
 function filterData(req, res, file){
-    var basePath = '../../public';
+    var basePath = '../..';
 
     fs.readFile(path.resolve(__dirname, basePath + file), 'utf-8', function (err, data) {
         if (err) {
@@ -18,45 +18,45 @@ function filterData(req, res, file){
 }
 
 router.get(['/menu/all', '/role/menus'], function (req, res) {
-    filterData(req, res, '/data/system/menu.json');
+    filterData(req, res, '/views/system/menu.json');
 });
 
 router.get(['/menu/roles', '/user/role'], function(req, res){
-    filterData(req, res, '/data/system/auth.json');
+    filterData(req, res, '/views/system/auth.json');
 });
 
 router.get('/role/user', function(req, res){
-    filterData(req, res, '/data/system/user.json');
+    filterData(req, res, '/views/system/user.json');
 });
 
 router.get('/log/query', function(req, res){
-    filterData(req, res, '/data/system/log.json');
+    filterData(req, res, '/views/system/log.json');
 });
 
 router.get('/message/query', function(req, res){
-    filterData(req, res, '/data/system/message.json');
+    filterData(req, res, '/views/system/message.json');
 });
 router.get('/message/queryUnread', function(req, res){
-    filterData(req, res, '/data/system/message.json');
+    filterData(req, res, '/views/system/message.json');
 });
 router.post('/message/read', function(req, res){
-    filterData(req, res, '/data/system/message.read.json');
+    filterData(req, res, '/views/system/message.read.json');
 });
 
 router.post('/post/table', function(req, res){
-    filterData(req, res, '/data/examples/tables/dt-server-post.json');
+    filterData(req, res, '/views/examples/tables/dt-server-post.json');
 });
 
 router.get(['/employee/query', '/employee/all/get'], function(req, res){
-    filterData(req, res, '/data/examples/data-tables/server-side/employee.get.json');
+    filterData(req, res, '/views/examples/tables/data-tables/server-side/employee.get.json');
 });
 
 router.get('/employee/all', function(req, res){
-    filterData(req, res, '/data/examples/data-tables/server-side/employee.json');
+    filterData(req, res, '/views/examples/tables/data-tables/server-side/employee.json');
 });
 
 router.post('/employee/all/post', function(req, res){
-    filterData(req, res, '/data/examples/data-tables/server-side/employee.post.json');
+    filterData(req, res, '/views/examples/tables/data-tables/server-side/employee.post.json');
 });
 
 module.exports = router;

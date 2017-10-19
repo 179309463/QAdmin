@@ -159,7 +159,7 @@
         initMail: function () {
             var self = this;
 
-            $.getJSON($.ctx + '/views/examples/pages/mailbox.json', function (data) {
+            $.getJSON($.ctx + '/views/examples/pages/team/mailbox.json', function (data) {
                 var $wrap = $('#mailboxTable');
 
                 self.buildMail($wrap, data);
@@ -202,7 +202,7 @@
 
             $pageContent.on('click', '[data-mailbox="slidePanel"]', function (e) {
                 $.slidePanel.show({
-                    url: $.ctx + '/views/examples/pages/mailbox-panel.tpl',
+                    url: $.ctx + '/views/examples/pages/team/mailbox.tpl',
                     target: $(this)
                 }, $.po('slidePanel', {
                     template: function (options) {
