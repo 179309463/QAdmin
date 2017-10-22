@@ -106,7 +106,7 @@
             <div class="media">
                 <div class="media-left">
                     <a class="avatar avatar-lg" href="javascript:;">
-                        <img src="/images/portraits/5.jpg" alt="...">
+                        <img src="/views/examples/images/portraits/5.jpg" alt="...">
                     </a>
                 </div>
                 <div class="media-body">

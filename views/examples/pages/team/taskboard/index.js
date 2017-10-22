@@ -60,7 +60,7 @@
                 '</div>' +
                 '<div class="task-badges"></div>' +
                 '<ul class="task-members">' +
-                '<li><img class="avatar avatar-sm" src="/images/portraits/5.jpg"></li>' +
+                '<li><img class="avatar avatar-sm" src="/views/examples/images/portraits/5.jpg"></li>' +
                 '</div>' +
                 '</li>';
         },
@@ -567,27 +567,27 @@
             var members = [{
                 id: 'uid_1',
                 name: '梅小燕',
-                img: '/images/portraits/1.jpg'
+                img: '/views/examples/images/portraits/1.jpg'
             }, {
                 id: 'uid_2',
                 name: '赵桦',
-                img: '/images/portraits/2.jpg'
+                img: '/views/examples/images/portraits/2.jpg'
             }, {
                 id: 'uid_3',
                 name: '唐雪琴',
-                img: '/images/portraits/3.jpg'
+                img: '/views/examples/images/portraits/3.jpg'
             }, {
                 id: 'uid_4',
                 name: '曹洁群',
-                img: '/images/portraits/4.jpg'
+                img: '/views/examples/images/portraits/4.jpg'
             }, {
                 id: 'uid_5',
                 name: '陈媚婉',
-                img: '/images/portraits/5.jpg'
+                img: '/views/examples/images/portraits/5.jpg'
             }, {
                 id: 'uid_6',
                 name: '嵇慧莉',
-                img: '/images/portraits/6.jpg'
+                img: '/views/examples/images/portraits/6.jpg'
             }];
 
             $target.selective({

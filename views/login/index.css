@@ -13,7 +13,7 @@ html {
 	overflow: hidden;
 }
 .page-login:before {
-	background-image: url("../images/login.jpg");
+	background-image: url("images/login.jpg");
 }
 .page-login .page-content {
 	padding-right: 500px;

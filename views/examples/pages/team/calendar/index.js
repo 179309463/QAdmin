@@ -136,29 +136,29 @@
             var member = [{
                 id: 'uid_1',
                 name: '刘松洋',
-                avatar: '/images/portraits/1.jpg'
+                avatar: '/views/examples/images/portraits/1.jpg'
             }, {
                 id: 'uid_2',
                 name: '邓艳红',
-                avatar: '/images/portraits/2.jpg'
+                avatar: '/views/examples/images/portraits/2.jpg'
             }, {
                 id: 'uid_3',
                 name: '张润展',
-                avatar: '/images/portraits/3.jpg'
+                avatar: '/views/examples/images/portraits/3.jpg'
             }, {
                 id: 'uid_4',
                 name: '李吉琴',
-                avatar: '/images/portraits/4.jpg'
+                avatar: '/views/examples/images/portraits/4.jpg'
             }];
 
             var items = [{
                 id: 'uid_1',
                 name: '赵振宁',
-                avatar: '/images/portraits/1.jpg'
+                avatar: '/views/examples/images/portraits/1.jpg'
             }, {
                 id: 'uid_2',
                 name: '陈宝荣',
-                avatar: '/images/portraits/2.jpg'
+                avatar: '/views/examples/images/portraits/2.jpg'
             }];
 
             $('[data-plugin="jquery-selective"]').selective({
