@@ -15,6 +15,7 @@
     "ace-builds": "^1.2.9",
     "alertifyjs": "^1.0.11",
     "jquery-pjax": "^2.0.1",
-    "jquery-asHoverScroll": "^0.3.3"
+    "jquery-asHoverScroll": "^0.3.3",
+    "bootbox.js": "bootbox#^4.4.0"
   }
 }
