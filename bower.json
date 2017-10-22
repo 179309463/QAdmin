@@ -12,6 +12,7 @@
     "tests"
   ],
   "dependencies": {
-    "ace-builds": "^1.2.9"
+    "ace-builds": "^1.2.9",
+    "alertifyjs": "^1.0.11"
   }
 }
