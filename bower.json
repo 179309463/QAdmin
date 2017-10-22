@@ -1,0 +1,17 @@
+{
+  "name": "QAdmin",
+  "description": "使用express框架搭建项目",
+  "main": "server/app.js",
+  "license": "ISC",
+  "homepage": "https://github.com/179309463/qadmin",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ace-builds": "^1.2.9"
+  }
+}
