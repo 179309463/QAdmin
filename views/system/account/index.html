@@ -1,6 +1,6 @@
 <title>账户信息</title>
 
-<link rel="stylesheet" href="/views/system/account/account.css">
+<link rel="stylesheet" href="/views/system/account/index.css">
 <link rel="stylesheet" href="/vendor/jquery-strength/jquery-strength.css">
 <link rel="stylesheet" href="/vendor/alertify-js/alertify.css">
 <div class="page page-full animation-fade page-account">
@@ -42,17 +42,17 @@
                                     <span class="badge badge-danger"></span></a>
                             </li>
                             <li class="<% if (fileName === 'log.html'){ %> active<% } %>" role="presentation " id="accountLog">
-                                <a href="/system/account/log.html" data-pjax="#accountContent" aria-expanded="false">
+                                <a href="/system/account/log/index.html" data-pjax="#accountContent" aria-expanded="false">
                                     <i class="icon fa-file-text-o" aria-hidden="true"></i> 日志
                                 </a>
                             </li>
                             <li class="<% if (fileName === 'password.html'){ %> active<% } %>" role="presentation">
-                                <a href="/system/account/password.html" data-pjax="#accountContent" aria-expanded="false">
+                                <a href="/system/account/password/index.html" data-pjax="#accountContent" aria-expanded="false">
                                     <i class="icon fa-key" aria-hidden="true"></i> 密码
                                 </a>
                             </li>
                             <li class="<% if (fileName === 'display.html'){ %> active<% } %>" role="presentation">
-                                <a href="/system/account/display.html" data-pjax="#accountContent" aria-expanded="false">
+                                <a href="/system/account/display/index.html" data-pjax="#accountContent" aria-expanded="false">
                                     <i class="icon fa-magic" aria-hidden="true"></i> 显示
                                 </a>
                             </li>
@@ -71,4 +71,4 @@
 
 <script src="/vendor/jquery-strength/jquery-strength.min.js"></script>
 <script src="/vendor/alertify-js/alertify.min.js"></script>
-<script src="/views/system/account/account.js" data-deps="message"></script>
+<script src="/views/system/account/index.js" data-deps="message"></script>

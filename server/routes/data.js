@@ -18,7 +18,7 @@ function filterData(req, res, file){
 }
 
 router.get(['/menu/all', '/role/menus'], function (req, res) {
-    filterData(req, res, '/views/system/menu.json');
+    filterData(req, res, '/views/system/menu/index.json');
 });
 
 router.get(['/menu/roles', '/user/role'], function(req, res){
@@ -26,11 +26,11 @@ router.get(['/menu/roles', '/user/role'], function(req, res){
 });
 
 router.get('/role/user', function(req, res){
-    filterData(req, res, '/views/system/user.json');
+    filterData(req, res, '/views/system/user/index.json');
 });
 
 router.get('/log/query', function(req, res){
-    filterData(req, res, '/views/system/log.json');
+    filterData(req, res, '/views/system/log/index.json');
 });
 
 router.get('/message/query', function(req, res){

@@ -2,7 +2,7 @@ var express = require('express'),
     router = express.Router();
 
 router.get('/', (req, res) => {
-  res.render('index', {path: 'examples/home.html'})
+  res.render('index', {path: 'examples/home/index.html'})
 })
 
 console.log('载入路由...');
@@ -21,48 +21,50 @@ router.all('/system/account/*', function (req, res) {
     res.charset = 'utf-8';
     var _path = req.path.substring(1),
         fileName = _path.lastIndexOf('/'),
+        _path2 = _path.substring(0, fileName),
+        fileName = _path2.lastIndexOf("/"),
         _index = 'system/account/index.html';
 
     fileName = _path.substring(fileName + 1);
 
     if (req.headers['x-pjax']) {
         switch (fileName) {
-            case 'index.html':
+            case 'account/index.html':
                 if(req.headers['x-pjax-container'] === '#accountContent'){
-                    res.render('system/account/message.html');
+                    res.render('system/account/message/index.html');
                 }else{
                     res.render(_index, {
-                        path1:'message.html',
+                        path1:'message/index.html',
                         fileName:fileName
                     });
                 }
                 break;
-            case 'password.html':
+            case 'password/index.html':
                 if(req.headers['x-pjax-container'] === '#accountContent'){
-                    res.render('system/account/password.html');
+                    res.render('system/account/password/index.html');
                 }else{
                     res.render(_index, {
-                        path1: 'password.html',
+                        path1: 'password/index.html',
                         fileName:fileName
                     });
                 }
                 break;
-            case 'log.html':
+            case 'log/index.html':
                 if(req.headers['x-pjax-container'] === '#accountContent'){
-                    res.render('system/log-table.html');
+                    res.render('system/log-table/index.html');
                 }else{
                     res.render(_index,{
-                        path1: '../log-table.html',
+                        path1: '../log-table/index.html',
                         fileName:fileName
                     });
                 }
                 break;
-            case 'display.html':
+            case 'display/index.html':
                 if(req.headers['x-pjax-container'] === '#accountContent'){
-                    res.render('system/settings/display.html');
+                    res.render('system/settings-display/index.html');
                 }else{
                     res.render(_index,{
-                        path1: '../settings/display.html',
+                        path1: '../settings-display/index.html',
                         fileName:fileName
                     });
                 }
@@ -70,31 +72,31 @@ router.all('/system/account/*', function (req, res) {
         }
     } else {
         switch (fileName) {
-            case 'index.html':
+            case 'account/index.html':
                 res.render('index', {
                     path: _index,
-                    path1:'message.html',
+                    path1:'message/index.html',
                     fileName: fileName
                 });
                 break;
-            case 'password.html':
+            case 'password/index.html':
                 res.render('index', {
                     path: _index,
-                    path1: 'password.html',
+                    path1: 'password/index.html',
                     fileName: fileName
                 });
                 break;
-            case 'log.html':
+            case 'log/index.html':
                 res.render('index',{
                     path: _index,
-                    path1: '../log-table.html',
+                    path1: '../log-table/index.html',
                     fileName: fileName
                 });
                 break;
-            case 'display.html':
+            case 'display/index.html':
                 res.render('index',{
                     path: _index,
-                    path1: '../settings/display.html',
+                    path1: '../settings-display/index.html',
                     fileName: fileName
                 });
                 break;
@@ -106,18 +108,20 @@ router.all('/examples/tables/data-tables/basic-init/*', function (req, res) {
     res.charset = 'utf-8';
     var _path = req.path.substring(1),
         fileName = _path.lastIndexOf('/'),
+        _path2 = _path.substring(0, fileName),
+        fileName = _path2.lastIndexOf("/"),
         _index = 'examples/tables/data-tables/basic-init/index.html';
 
     fileName = _path.substring(fileName + 1);
 
     if (req.headers['x-pjax']) {
         switch (fileName) {
-            case 'index.html':
+            case 'basic-init/index.html':
                 if(req.headers['x-pjax-container'] === '#DTConent'){
-                    res.render('examples/tables/data-tables/basic-init/zero-configuration.html');
+                    res.render('examples/tables/data-tables/basic-init/zero-configuration/index.html');
                 }else{
                     res.render(_index, {
-                        path1:'zero-configuration.html',
+                        path1:'zero-configuration/index.html',
                         fileName:fileName
                     });
                 }
@@ -135,10 +139,10 @@ router.all('/examples/tables/data-tables/basic-init/*', function (req, res) {
         }
     } else {
         switch (fileName) {
-            case 'index.html':
+            case 'basic-init/index.html':
                 res.render('index', {
                     path: _index,
-                    path1:'zero-configuration.html',
+                    path1:'zero-configuration/index.html',
                     fileName: fileName
                 });
                 break;
@@ -156,18 +160,20 @@ router.all('/examples/tables/data-tables/advanced-init/*', function (req, res) {
     res.charset = 'utf-8';
     var _path = req.path.substring(1),
         fileName = _path.lastIndexOf('/'),
+        _path2 = _path.substring(0, fileName),
+        fileName = _path2.lastIndexOf("/"),
         _index = 'examples/tables/data-tables/advanced-init/index.html';
 
     fileName = _path.substring(fileName + 1);
 
     if (req.headers['x-pjax']) {
         switch (fileName) {
-            case 'index.html':
+            case 'advanced-init/index.html':
                 if(req.headers['x-pjax-container'] === '#DTConent'){
-                    res.render('examples/tables/data-tables/advanced-init/events-live.html');
+                    res.render('examples/tables/data-tables/advanced-init/events-live/index.html');
                 }else{
                     res.render(_index, {
-                        path1:'events-live.html',
+                        path1:'events-live/index.html',
                         fileName:fileName
                     });
                 }
@@ -185,10 +191,10 @@ router.all('/examples/tables/data-tables/advanced-init/*', function (req, res) {
         }
     } else {
         switch (fileName) {
-            case 'index.html':
+            case 'advanced-init/index.html':
                 res.render('index', {
                     path: _index,
-                    path1:'events-live.html',
+                    path1:'events-live/index.html',
                     fileName: fileName
                 });
                 break;
@@ -206,18 +212,20 @@ router.all('/examples/tables/data-tables/data-sources/*', function (req, res) {
     res.charset = 'utf-8';
     var _path = req.path.substring(1),
         fileName = _path.lastIndexOf('/'),
+        _path2 = _path.substring(0, fileName),
+        fileName = _path2.lastIndexOf("/"),
         _index = 'examples/tables/data-tables/data-sources/index.html';
 
     fileName = _path.substring(fileName + 1);
 
     if (req.headers['x-pjax']) {
         switch (fileName) {
-            case 'index.html':
+            case 'data-sources/index.html':
                 if(req.headers['x-pjax-container'] === '#DTConent'){
-                    res.render('examples/tables/data-tables/data-sources/dom.html');
+                    res.render('examples/tables/data-tables/data-sources/dom/index.html');
                 }else{
                     res.render(_index, {
-                        path1:'dom.html',
+                        path1:'dom/index.html',
                         fileName:fileName
                     });
                 }
@@ -235,10 +243,10 @@ router.all('/examples/tables/data-tables/data-sources/*', function (req, res) {
         }
     } else {
         switch (fileName) {
-            case 'index.html':
+            case 'data-sources/index.html':
                 res.render('index', {
                     path: _index,
-                    path1:'dom.html',
+                    path1:'dom/index.html',
                     fileName: fileName
                 });
                 break;
@@ -256,18 +264,20 @@ router.all('/examples/tables/data-tables/api/*', function (req, res) {
     res.charset = 'utf-8';
     var _path = req.path.substring(1),
         fileName = _path.lastIndexOf('/'),
+        _path2 = _path.substring(0, fileName),
+        fileName = _path2.lastIndexOf("/"),
         _index = 'examples/tables/data-tables/api/index.html';
 
     fileName = _path.substring(fileName + 1);
 
     if (req.headers['x-pjax']) {
         switch (fileName) {
-            case 'index.html':
+            case 'api/index.html':
                 if(req.headers['x-pjax-container'] === '#DTConent'){
-                    res.render('examples/tables/data-tables/api/add-row.html');
+                    res.render('examples/tables/data-tables/api/add-row/index.html');
                 }else{
                     res.render(_index, {
-                        path1:'add-row.html',
+                        path1:'add-row/index.html',
                         fileName:fileName
                     });
                 }
@@ -285,10 +295,10 @@ router.all('/examples/tables/data-tables/api/*', function (req, res) {
         }
     } else {
         switch (fileName) {
-            case 'index.html':
+            case 'api/index.html':
                 res.render('index', {
                     path: _index,
-                    path1:'add-row.html',
+                    path1:'add-row/index.html',
                     fileName: fileName
                 });
                 break;
@@ -306,18 +316,20 @@ router.all('/examples/tables/data-tables/ajax/*', function (req, res) {
     res.charset = 'utf-8';
     var _path = req.path.substring(1),
         fileName = _path.lastIndexOf('/'),
+        _path2 = _path.substring(0, fileName),
+        fileName = _path2.lastIndexOf("/"),
         _index = 'examples/tables/data-tables/ajax/index.html';
 
     fileName = _path.substring(fileName + 1);
 
     if (req.headers['x-pjax']) {
         switch (fileName) {
-            case 'index.html':
+            case 'ajax/index.html':
                 if(req.headers['x-pjax-container'] === '#DTConent'){
-                    res.render('examples/tables/data-tables/ajax/simple.html');
+                    res.render('examples/tables/data-tables/ajax/simple/index.html');
                 }else{
                     res.render(_index, {
-                        path1:'simple.html',
+                        path1:'simple/index.html',
                         fileName:fileName
                     });
                 }
@@ -335,10 +347,10 @@ router.all('/examples/tables/data-tables/ajax/*', function (req, res) {
         }
     } else {
         switch (fileName) {
-            case 'index.html':
+            case 'ajax/index.html':
                 res.render('index', {
                     path: _index,
-                    path1:'simple.html',
+                    path1:'simple/index.html',
                     fileName: fileName
                 });
                 break;
@@ -356,18 +368,20 @@ router.all('/examples/tables/data-tables/server-side/*', function (req, res) {
     res.charset = 'utf-8';
     var _path = req.path.substring(1),
         fileName = _path.lastIndexOf('/'),
+        _path2 = _path.substring(0, fileName),
+        fileName = _path2.lastIndexOf("/"),
         _index = 'examples/tables/data-tables/server-side/index.html';
 
     fileName = _path.substring(fileName + 1);
 
     if (req.headers['x-pjax']) {
         switch (fileName) {
-            case 'index.html':
+            case 'server-side/index.html':
                 if(req.headers['x-pjax-container'] === '#DTConent'){
-                    res.render('examples/tables/data-tables/server-side/simple.html');
+                    res.render('examples/tables/data-tables/server-side/simple/index.html');
                 }else{
                     res.render(_index, {
-                        path1:'simple.html',
+                        path1:'simple/index.html',
                         fileName:fileName
                     });
                 }
@@ -385,10 +399,10 @@ router.all('/examples/tables/data-tables/server-side/*', function (req, res) {
         }
     } else {
         switch (fileName) {
-            case 'index.html':
+            case 'server-side/index.html':
                 res.render('index', {
                     path: _index,
-                    path1:'simple.html',
+                    path1:'simple/index.html',
                     fileName: fileName
                 });
                 break;
@@ -406,18 +420,20 @@ router.all('/examples/tables/data-tables/plug-ins/*', function (req, res) {
     res.charset = 'utf-8';
     var _path = req.path.substring(1),
         fileName = _path.lastIndexOf('/'),
+        _path2 = _path.substring(0, fileName),
+        fileName = _path2.lastIndexOf("/"),
         _index = 'examples/tables/data-tables/plug-ins/index.html';
 
     fileName = _path.substring(fileName + 1);
 
     if (req.headers['x-pjax']) {
         switch (fileName) {
-            case 'index.html':
+            case 'plug-ins/index.html':
                 if(req.headers['x-pjax-container'] === '#DTConent'){
-                    res.render('examples/tables/data-tables/plug-ins/api.html');
+                    res.render('examples/tables/data-tables/plug-ins/api/index.html');
                 }else{
                     res.render(_index, {
-                        path1:'api.html',
+                        path1:'api/index.html',
                         fileName:fileName
                     });
                 }
@@ -435,10 +451,10 @@ router.all('/examples/tables/data-tables/plug-ins/*', function (req, res) {
         }
     } else {
         switch (fileName) {
-            case 'index.html':
+            case 'plug-ins/index.html':
                 res.render('index', {
                     path: _index,
-                    path1:'api.html',
+                    path1:'api/index.html',
                     fileName: fileName
                 });
                 break;
@@ -456,18 +472,20 @@ router.all('/examples/tables/data-tables/others/*', function (req, res) {
     res.charset = 'utf-8';
     var _path = req.path.substring(1),
         fileName = _path.lastIndexOf('/'),
+        _path2 = _path.substring(0, fileName),
+        fileName = _path2.lastIndexOf("/"),
         _index = 'examples/tables/data-tables/others/index.html';
 
     fileName = _path.substring(fileName + 1);
 
     if (req.headers['x-pjax']) {
         switch (fileName) {
-            case 'index.html':
+            case 'others/index.html':
                 if(req.headers['x-pjax-container'] === '#DTConent'){
-                    res.render('examples/tables/data-tables/others/fixed-header.html');
+                    res.render('examples/tables/data-tables/others/fixed-header/index.html');
                 }else{
                     res.render(_index, {
-                        path1:'fixed-header.html',
+                        path1:'fixed-header/index.html',
                         fileName:fileName
                     });
                 }
@@ -485,10 +503,10 @@ router.all('/examples/tables/data-tables/others/*', function (req, res) {
         }
     } else {
         switch (fileName) {
-            case 'index.html':
+            case 'others/index.html':
                 res.render('index', {
                     path: _index,
-                    path1:'fixed-header.html',
+                    path1:'fixed-header/index.html',
                     fileName: fileName
                 });
                 break;
@@ -515,9 +533,9 @@ router.get('/home', (req, res) => {
     var _path = req.path.substring(1);
 
     if (req.headers['x-pjax']) {
-        res.render("examples/home.html");
+        res.render("examples/home/index.html");
     } else {
-        res.render('index', {path: "examples/home.html"});
+        res.render('index', {path: "examples/home/index.html"});
     }
 });
 
