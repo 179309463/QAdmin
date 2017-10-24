@@ -2,6 +2,8 @@
 
 examples/components/widgets/chart.html
 
+官网：http://www.jacklmoore.com/autosize
+
 官网：http://lipis.github.io/bootstrap-sweetalert/
 
 官网：https://github.com/amazingSurge/breakpoints.js/
@@ -37,6 +39,7 @@ examples/components/widgets/chart.html
 官网：https://github.com/sandywalker/webui-popover/
 
 官网：http://aui.github.com/artTemplate/
+
 
 
 
