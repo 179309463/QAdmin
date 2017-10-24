@@ -6,3 +6,7 @@
 .example {
 	margin: 0;
 }
+
+pre[data-plugin="highlight"] code, code.hljs {
+	border: none;
+}
