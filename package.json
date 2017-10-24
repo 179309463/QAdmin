@@ -16,6 +16,7 @@
     "express": "^4.15.4",
     "gulp": "^3.9.1",
     "gulp-main-bower-files": "^1.6.2",
+    "layui-src": "^2.1.5",
     "morgan": "^1.8.2",
     "serve-favicon": "^2.4.4"
   }
