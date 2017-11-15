@@ -524,6 +524,9 @@ router.all('/examples/tables/data-tables/others/*', function (req, res) {
 router.get('/login', (req, res) => {
   res.render('login/index.html')
 });
+router.get('/system/logout', (req, res) => {
+  res.render('login/index.html')
+});
 
 router.get('/locked.html', (req, res) => {
   res.render('locked')

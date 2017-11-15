@@ -187,7 +187,7 @@
 
             $('title').text($.trim(opt.name)); //修改页面标题
 
-            if ($labelNav.find("a[href='" + opt.url + "']").size() > 0) {
+            if ($labelNav.find("a[href='" + opt.url + "']").length > 0) {
                 return;
             }
 
@@ -205,7 +205,7 @@
 
             var content = $(".con-tabs").width();
 
-            if ($currentLabel.size() > 0) {
+            if ($currentLabel.length > 0) {
                 if ($currentLabel.closest('li').hasClass('active')) {
                     this.app($labelNav, $currentLabel.closest('li'), this.labelWidth, this.view, content);
                     return true;
@@ -222,7 +222,7 @@
         labelSize: function () { // 修改标签页盒子尺寸
             var labelNum, content, $labelNav = $(".con-tabs");
 
-            labelNum = $labelNav.find("li").size();
+            labelNum = $labelNav.find("li").length;
             content = this.labelWidth * labelNum;
             $labelNav.css("width", content);
         },
@@ -244,8 +244,8 @@
         },
         app: function (doc, $this, width, view, content) {
             var x = doc.position().left,
-                prevAll = $this.prevAll('li').size() * width,
-                nextAll = $this.nextAll('li').size() * width;
+                prevAll = $this.prevAll('li').length * width,
+                nextAll = $this.nextAll('li').length * width;
 
             if (-prevAll < x) {
                 if(prevAll + x < view){
@@ -335,7 +335,7 @@
 
             this.$instance.find('.active').removeClass('active');
 
-            if ($item.next("li").size() > 0) {
+            if ($item.next("li").length > 0) {
                 labelsURL = $item.next("li").find("a").attr("href");
 
                 $item.next("li").addClass("active");

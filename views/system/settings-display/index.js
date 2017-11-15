@@ -6,7 +6,7 @@
 (function (window, document) {
     'use strict';
 
-    if ($('#qadmin-pageContent').find('#accountContent').size() > 0) {
+    if ($('#qadmin-pageContent').find('#accountContent').length > 0) {
         $('#displayForm').prepend('<input type="hidden" name="userId" value="' + $('#qadmin-signOut')
                 .attr("data-user") + '">');
     }

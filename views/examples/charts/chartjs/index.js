@@ -10,148 +10,163 @@
 
     // 曲线图示例
     var lineChart = (function () {
-        var lineChartData = {
-            labels: ["1月", "2", "3月", "4月", "5月", "6月", "7月"],
-            scaleShowGridLines: true,
-            scaleShowVerticalLines: false,
-            scaleGridLineColor: "#ebedf0",
-            datasets: [{
-                fillColor: "rgba(204, 213, 219, .1)",
-                strokeColor: $.colors("blue-grey", 300),
-                pointColor: $.colors("blue-grey", 300),
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: $.colors("blue-grey", 300),
-                data: [65, 59, 80, 81, 56, 55, 40]
-            }, {
-                fillColor: "rgba(98, 168, 234, .1)",
-                strokeColor: $.colors("purple", 600),
-                pointColor: $.colors("purple", 600),
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: $.colors("purple", 600),
-                data: [28, 48, 40, 19, 86, 27, 90]
-            }]
-        };
-
-        return new Chart($("#exampleChartjsLine").get(0).getContext("2d")).Line(lineChartData);
+        return new Chart($("#exampleChartjsLine"), {
+            type:"line", 
+            data: {
+                labels: ["1月", "2", "3月", "4月", "5月", "6月", "7月"],
+                scaleShowGridLines: true,
+                scaleShowVerticalLines: false,
+                scaleGridLineColor: "#ebedf0",
+                datasets: [{
+                    label: '分类1',
+                    backgroundColor: "rgba(204, 213, 219, .1)",
+                    borderColor: $.colors("blue-grey", 300),
+                    pointBackgroundColor: $.colors("blue-grey", 300),
+                    pointBorderColor: "#fff",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: $.colors("blue-grey", 300),
+                    data: [65, 59, 80, 81, 56, 55, 40]
+                }, {
+                    label: '分类2',
+                    backgroundColor: "rgba(98, 168, 234, .1)",
+                    borderColor: $.colors("purple", 600),
+                    pointBackgroundColor: $.colors("purple", 600),
+                    pointBorderColor: "#fff",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: $.colors("purple", 600),
+                    data: [28, 48, 40, 19, 86, 27, 90]
+                }]
+            }
+        });
     })();
 
     // 柱状图示例
     var barChart = (function () {
-        var barChartData = {
-            labels: ["1月", "2", "3月", "4月", "5月"],
-            scaleShowGridLines: true,
-            scaleShowVerticalLines: false,
-            scaleGridLineColor: "#ebedf0",
-            barShowStroke: false,
-            datasets: [{
-                fillColor: $.colors("blue", 500),
-                strokeColor: $.colors("blue", 500),
-                highlightFill: $.colors("blue", 500),
-                highlightStroke: $.colors("blue", 500),
-                data: [65, 45, 75, 50, 60]
-            }, {
-                fillColor: $.colors("blue-grey", 300),
-                strokeColor: $.colors("blue-grey", 300),
-                highlightFill: $.colors("blue-grey", 300),
-                highlightStroke: $.colors("blue-grey", 300),
-                data: [30, 20, 40, 25, 45]
-            }]
-        };
-
-        return new Chart(document.getElementById("exampleChartjsBar").getContext("2d")).Bar(barChartData);
+        return new Chart($("#exampleChartjsBar"), {
+            type: 'bar', 
+            data: {
+                labels: ["1月", "2", "3月", "4月", "5月"],
+                scaleShowGridLines: true,
+                scaleShowVerticalLines: false,
+                scaleGridLineColor: "#ebedf0",
+                barShowStroke: false,
+                datasets: [{
+                    label: '分类1',
+                    backgroundColor: $.colors("blue", 500),
+                    borderColor: $.colors("blue", 500),
+                    hoverBorderColor: $.colors("blue", 500),
+                    hoverBackgroundColor: $.colors("blue", 500),
+                    data: [65, 45, 75, 50, 60]
+                }, {
+                    label: '分类2',
+                    backgroundColor: $.colors("blue-grey", 300),
+                    borderColor: $.colors("blue-grey", 300),
+                    hoverBorderColor: $.colors("blue-grey", 300),
+                    hoverBackgroundColor: $.colors("blue-grey", 300),
+                    data: [30, 20, 40, 25, 45]
+                }]
+            }
+        });
     })();
 
     // 雷达图示例
     var radarChart = (function () {
-        var radarChartData = {
-            labels: ["吃饭", "喝水", "睡觉", "设计", "编码", "娱乐", "跑步"],
-            pointLabelFontSize: 14,
-            datasets: [{
-                fillColor: "rgba(204,213,219,0.35)",
-                strokeColor: "rgba(0,0,0,0)",
-                pointColor: $.colors("blue-grey", 300),
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: $.colors("blue-grey", 300),
-                data: [65, 59, 90, 81, 56, 55, 40]
-            }, {
-                fillColor: "rgba(250,122,122,0.25)",
-                strokeColor: "rgba(0,0,0,0)",
-                pointColor: $.colors("red", 500),
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: $.colors("red", 500),
-                data: [28, 48, 40, 19, 96, 27, 100]
-            }]
-        };
-
-        return new Chart(document.getElementById("exampleChartjsRadar").getContext("2d"))
-            .Radar(radarChartData, {
+        return new Chart($("#exampleChartjsRadar"), 
+            {type: 'radar', 
+             data: {
+                labels: ["吃饭", "喝水", "睡觉", "设计", "编码", "娱乐", "跑步"],
+                pointLabelFontSize: 14,
+                datasets: [{
+                    label: '分类1',
+                    backgroundColor: "rgba(204,213,219,0.35)",
+                    borderColor: "rgba(0,0,0,0)",
+                    pointBackgroundColor: $.colors("blue-grey", 300),
+                    pointBorderColor: "#fff",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: $.colors("blue-grey", 300),
+                    data: [65, 59, 90, 81, 56, 55, 40]
+                }, {
+                    label: '分类2',
+                    backgroundColor: "rgba(250,122,122,0.25)",
+                    borderColor: "rgba(0,0,0,0)",
+                    pointBackgroundColor: $.colors("red", 500),
+                    pointBorderColor: "#fff",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: $.colors("red", 500),
+                    data: [28, 48, 40, 19, 96, 27, 100]
+                }]
+             }, 
+             options: {
                 scaleShowLabels: false,
                 pointLabelFontSize: 10
+             }
             });
     })();
 
     // 极地区域图示例
     var polarChart =(function () {
-        var chartData = [{
-            value: 300,
-            color: $.colors("red", 600),
-            label: "红色"
-
-        }, {
-            value: 200,
-            color: $.colors("purple", 500),
-            label: "蓝色"
-        }, {
-            value: 100,
-            color: $.colors("blue-grey", 200),
-            label: "蓝灰色"
-        }, {
-            value: 50,
-            color: $.colors("blue-grey", 300),
-            label: "深蓝灰色"
-        }];
-
-        return new Chart(document.getElementById("exampleChartjsPloarArea").getContext("2d"))
-            .PolarArea(chartData);
+        return new Chart($("#exampleChartjsPloarArea"), {
+            type: 'polarArea', 
+            data: {
+                labels: [
+                    "红色",
+                    "蓝色",
+                    "蓝灰色",
+                    "深蓝灰色"
+                ],
+                datasets: [{
+                    data: [300, 200, 100, 50],
+                    backgroundColor: [
+                        $.colors("red", 600),
+                        $.colors("purple", 500),
+                        $.colors("blue-grey", 200),
+                        $.colors("blue-grey", 300)
+                    ]
+                }]
+            }
+        });
     })();
 
     // 饼状图示例
     var pieChart = (function () {
-        var pieData = [{
-            value: 50,
-            color: $.colors("purple", 500),
-            label: "蓝色"
-        }, {
-            value: 50,
-            color: $.colors("blue-grey", 200),
-            label: "蓝灰色"
-        }];
-
-        return new Chart(document.getElementById("exampleChartjsPie").getContext("2d")).Pie(pieData);
+        return new Chart($("#exampleChartjsPie"), {
+            type: 'pie', 
+            data: {
+                labels: [
+                    "蓝色",
+                    "蓝灰色"
+                ],
+                datasets: [{
+                    data: [50, 50],
+                    backgroundColor: [
+                        $.colors("purple", 500),
+                        $.colors("blue-grey", 200)
+                    ]
+                }]
+            }
+        });
     })();
 
     // 环形图示例
     var dougChart = (function () {
-        var doughnutData = [{
-            value: 45,
-            color: $.colors("red", 500),
-            label: "红色"
-        }, {
-            value: 15,
-            color: $.colors("blue-grey", 200),
-            label: "蓝灰色"
-        }, {
-            value: 60,
-            color: $.colors("purple", 500),
-            label: "蓝色"
-        }];
-
-        return new Chart(document.getElementById("exampleChartjsDonut").getContext("2d"))
-            .Doughnut(doughnutData);
+        return new Chart($("#exampleChartjsDonut"), {
+            type: 'doughnut', 
+            data: {
+                labels: [
+                    "红色", 
+                    "蓝灰色",
+                    "蓝色"
+                ],
+                datasets: [{
+                    data: [45, 15, 60],
+                    backgroundColor: [
+                        $.colors("red", 500),
+                        $.colors("blue-grey", 200),
+                        $.colors("purple", 500)
+                    ]
+                }]
+            }
+        });
     })();
 
     $.leavePage = function () {

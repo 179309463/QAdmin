@@ -5950,6 +5950,16 @@ ul.panel-actions > li:first-child {
 	color: #fff;
 	cursor: pointer;
 }
+.site-navbar .navbar-header .navbar-brand .version-toggle {
+	float: right
+}
+.site-navbar .navbar-header .navbar-brand .version-toggle .btn {
+	color: #fff
+}
+.site-navbar .navbar-header .navbar-brand .version-toggle .dropdown-menu {
+	min-width: auto;
+	margin-top: 10px
+}
 @media (min-width: 768px) {
 	.site-navbar .navbar-header {
 		width: 220px;
@@ -6037,6 +6047,9 @@ ul.panel-actions > li:first-child {
 }
 .site-menubar-fold .navbar-brand-logo.navbar-logo-mini {
 	display: inline-block !important;
+}
+.site-menubar-fold .version-toggle {
+	display: none
 }
 .site-menubar-unfold .navbar-brand-logo.navbar-logo {
 	display: inline-block !important;
@@ -6501,12 +6514,12 @@ body {
 	}
 }
 .site-contabs-open .site-page .page {
-	min-height: -webkit-calc(100vh - 180px) !important;
-	min-height:         calc(100vh - 180px) !important;
+	min-height: -webkit-calc(100vh - 140px) !important;
+	min-height:         calc(100vh - 140px) !important;
 }
 .site-contabs-open .site-page .page.page-full {
-	height: -webkit-calc(100vh - 180px) !important;
-	height:         calc(100vh - 180px) !important;
+	height: -webkit-calc(100vh - 140px) !important;
+	height:         calc(100vh - 140px) !important;
 }
 .site-contabs-open .site-page .page-loading {
 	height: -webkit-calc(100vh - 100px) !important;

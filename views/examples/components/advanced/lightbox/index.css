@@ -11,3 +11,9 @@
 	background: #fff;
 	border-radius: 3px;
 }
+
+.mfp-bg {
+  z-index: 2042; }
+
+.mfp-wrap {
+  z-index: 2043; }

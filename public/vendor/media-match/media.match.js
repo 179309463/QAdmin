@@ -1,4 +1,4 @@
-/* MediaMatch v.2.0.2 - Testing css media queries in Javascript. Authors & copyright (c) 2013: WebLinc, David Knight. */
+/*! MediaMatch v.2.0.3 - Testing css media queries in Javascript. Authors & copyright (c) 2013: WebLinc, David Knight. */
 
 window.matchMedia || (window.matchMedia = function (win) {
     'use strict';
@@ -225,7 +225,7 @@ window.matchMedia || (window.matchMedia = function (win) {
                     } while(qIndex--);
                 }
 
-                
+
             }, 10);
         },
 
@@ -271,8 +271,8 @@ window.matchMedia || (window.matchMedia = function (win) {
             _setFeature();
 
             // Set up listeners
-            addEvent(eventPrefix + 'resize', _watch);
-            addEvent(eventPrefix + 'orientationchange', _watch);
+            addEvent(eventPrefix + 'resize', _watch, false);
+            addEvent(eventPrefix + 'orientationchange', _watch, false);
         };
 
     _init();

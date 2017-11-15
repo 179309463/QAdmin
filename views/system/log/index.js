@@ -79,7 +79,7 @@
                 }
             }));
 
-            if($filterDate.size() > 0){
+            if($filterDate.length > 0){
                 $filterDate.daterangepicker($.po('daterangepicker',{
                     maxDate: new Date(),
                     ranges: {
