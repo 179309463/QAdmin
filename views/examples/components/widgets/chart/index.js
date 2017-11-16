@@ -369,6 +369,10 @@
                     clearTimeout(timer);
                     return;
                 }
+                if ($("#chartLineTime .chart-line").length==0){
+                    clearTimeout(timer);
+                    return;
+                }
 
                 line_time_getData();
 
@@ -641,11 +645,14 @@
                     clearTimeout(timer1);
                     return;
                 }
-
+                if ($("#chartTimelineTwo .ct-chart").length==0){
+                    clearTimeout(timer1);
+                    return;
+                }
                 getData();
 
                 new Chartist.Line("#chartTimelineTwo .ct-chart", timlelineData, timelineOptions);
-                setTimeout(update, updateInterval);
+                timer1 = setTimeout(update, updateInterval);
             }
 
             update();

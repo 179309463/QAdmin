@@ -1,7 +1,7 @@
 <title>轮播组件</title>
 
-<link rel="stylesheet" href="/vendor/owl.carousel/dist/assets/owl.carousel.css">
-<link rel="stylesheet" href="/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="/lib/owl.carousel/dist/assets/owl.carousel.css">
+<link rel="stylesheet" href="/lib/slick-carousel/slick/slick.css">
 <link rel="stylesheet" href="/views/examples/components/basic/carousel/index.css">
 
 <div class="page page-full animation-fade">
@@ -515,7 +515,7 @@
                         <div class="example-wrap">
                             <h4 class="example-title">没有边距</h4>
                             <div class="example">
-                                <div class="owl-carousel" data-plugin="owlCarousel" data-center="false" data-dots="false" data-nav="true">
+                                <div class="owl-carousel owl-theme" data-plugin="owlCarousel" data-center="false" data-dots="false" data-nav="true">
                                     <div class="item">
                                         <img src="/views/examples/images/photos/city-1.jpg" alt="...">
                                     </div>
@@ -544,7 +544,7 @@
                         <div class="example-wrap">
                             <h4 class="example-title">居中</h4>
                             <div class="example">
-                                <div class="owl-carousel-centered" data-plugin="owlCarousel" data-center="true" data-dots="false" data-nav="true">
+                                <div class="owl-carousel-centered owl-carousel owl-theme" data-plugin="owlCarousel" data-center="true" data-dots="false" data-nav="true">
                                     <div class="item">
                                         <img src="/views/examples/images/photos/city-1.jpg" alt="...">
                                     </div>
@@ -575,7 +575,7 @@
                         <div class="example-wrap margin-lg-0">
                             <h4 class="example-title">Logos</h4>
                             <div class="example">
-                                <div class="owl-carousel-shortcode" data-plugin="owlCarousel" data-center="true" data-dots="true" data-nav="false">
+                                <div class="owl-carousel-shortcode owl-carousel owl-theme" data-plugin="owlCarousel" data-center="true" data-dots="true" data-nav="false">
                                     <div class="item">
                                         <i class="icon font-size-40 margin-right-15 fa-wechat" aria-hidden="true"></i>
                                         微信
@@ -596,7 +596,7 @@
                         <div class="example-wrap">
                             <h4 class="example-title">简单组合</h4>
                             <div class="example margin-bottom-0">
-                                <div class="owl-carousel-portfolio owl-carousel-navOut" data-plugin="owlCarousel" data-margin="30">
+                                <div class="owl-carousel-portfolio owl-carousel-navOut owl-carousel owl-theme" data-plugin="owlCarousel" data-margin="30">
                                     <div class="item">
                                         <div class="cover">
                                             <img class="cover-image" src="/views/examples/images/photos/city-1.jpg" alt="...">
@@ -651,6 +651,6 @@
     </div>
 </div>
 
-<script src="/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="/vendor/owl.carousel/dist/owl.carousel.min.js" data-name="owl.carousel"></script>
 <script src="/vendor/slick-carousel/slick/slick.min.js" data-name="slick"></script>
-<script src="/views/examples/components/basic/carousel/index.js" data-deps="slick"></script>
+<script src="/views/examples/components/basic/carousel/index.js" data-deps="owl.carousel,slick"></script>

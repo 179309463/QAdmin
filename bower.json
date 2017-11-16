@@ -38,7 +38,7 @@
     "c3": "^0.4.18",
     "card": "^2.4.0",
     "chart.js": "^2.7.0",
-    "chartist": "^0.11.0",
+    "chartist": "https://github.com/gionkunz/chartist-js.git#^0.11.0",
     "chartist-plugin-tooltip": "^0.0.18",
     "clockpicker": "^0.0.7",
     "codemirror": "^5.30.0",
@@ -63,12 +63,10 @@
     "fontawesome-iconpicker": "^1.3.1",
     "highlight": "^9.12.0",
     "html5shiv": "^3.7.3",
-    "html.sortable": "^0.6.3",
     "iCheck": "^1.0.2",
     "intro.js": "^2.7.0",
     "isotope": "^3.0.4",
     "jquery.cookie": "jquery-cookie#^1.4.1",
-    "jquery-appear": "^0.2.6",
     "jquery-asHoverScroll": "^0.3.3",
     "jquery-pjax": "^2.0.1",
     "jquery-selective": "^0.3.5",
@@ -93,7 +91,7 @@
     "multiselect": "^0.9.12",
     "nestable2": "^1.6.0",
     "nprogress": "^0.2.0",
-    "owl.carousel": "^2.2.1",
+    "owl.carousel": "OwlCarousel2#^2.2.1",
     "peity": "^3.2.1",
     "plyr": "^2.0.16",
     "raphael": "^2.2.7",
@@ -103,12 +101,10 @@
     "rickshaw": "^1.6.2",
     "select2": "^4.0.4",
     "skycons": "*",
-    "slick-carousel": "^1.8.1",
     "summernote": "^0.8.8",
     "jquery-slimscroll": "jquery-slimScroll#^1.3.8",
     "switchery": "^0.8.2",
     "timecircles": "^1.5.3",
-    "toastr": "https://github.com/CodeSeven/toastr.git#^2.1.3",
     "toolbar": "^1.0.1",
     "to-markdown": "^3.1.0",
     "typeahead.js": "^0.11.1",
@@ -132,13 +128,16 @@
     "web-icons": "*",
     "Ionicons": "ionicons#^2.0.1",
     "material-design-iconic-font": "^2.2.0",
-    "jquery": "^3.2.1",
-    "seiyria-bootstrap-slider": "^10.0.0"
+    "seiyria-bootstrap-slider": "^10.0.0",
+    "slick-carousel": "^1.8.1",
+    "html5sortable": "*",
+    "jquery_appear": "https://github.com/morr/jquery.appear.git#^0.3.6"
   },
   "resolutions": {
     "jquery": "1.9.1 - 3",
     "chartist": "^0.11.0",
     "d3": "~3.5.0",
-    "highlight": "^9.12.0"
+    "highlight": "^9.12.0",
+    "slick-carousel": "^1.8.1"
   }
 }
