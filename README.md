@@ -24,7 +24,7 @@ examples/components/widgets/chart.html
 
 官网：https://github.com/morr/jquery.appear/
 
-文档：http://bsify.admui.com/jquery-pjax/
+文档：http://bsify.qadmin.com/jquery-pjax/
 
 官网：http://masonry.desandro.com/
 
