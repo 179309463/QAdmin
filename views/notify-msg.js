@@ -146,15 +146,15 @@
             template.helper('iconType', function (type) {
                 switch (type) {
                     case 'SYSTEM':
-                        return 'fa-desktop system';
+                        return 'fa fa-desktop system';
                     case 'TASK':
-                        return 'fa-tasks task';
+                        return 'fa fa-tasks task';
                     case 'SETTING':
-                        return 'fa-cog setting';
+                        return 'fa fa-cog setting';
                     case 'EVENT':
-                        return 'fa-calendar event';
+                        return 'fa fa-calendar event';
                     default:
-                        return 'fa-comment-o other';
+                        return 'fa fa-comment-o other';
                 }
             });
 

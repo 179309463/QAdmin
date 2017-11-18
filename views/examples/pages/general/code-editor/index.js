@@ -22,11 +22,11 @@
                     nodes: [{
                         text: 'bootstrap.css',
                         href: '#bootstrap.css',
-                        icon: 'fa fa-file-code-o'
+                        icon: 'fa fa fa-file-code-o'
                     }, {
                         text: 'site.css',
                         href: '#site.css',
-                        icon: 'fa fa-file-code-o'
+                        icon: 'fa fa fa-file-code-o'
                     }]
                 }, {
                     text: 'fonts',
@@ -44,11 +44,11 @@
                     nodes: [{
                         text: 'logo.png',
                         href: '#logo.png',
-                        icon: 'fa fa-file-photo-o'
+                        icon: 'fa fa fa-file-photo-o'
                     }, {
                         text: 'bg.png',
                         href: '#bg.png',
-                        icon: 'fa fa-file-photo-o'
+                        icon: 'fa fa fa-file-photo-o'
                     }]
                 }]
             }, {
@@ -60,31 +60,31 @@
                 nodes: [{
                     text: 'autoprefixer.js',
                     href: '#autoprefixer.js',
-                    icon: 'fa fa-file-code-o'
+                    icon: 'fa fa fa-file-code-o'
                 }, {
                     text: 'clean.js',
                     href: '#clean.js',
-                    icon: 'fa fa-file-code-o'
+                    icon: 'fa fa fa-file-code-o'
                 }, {
                     text: 'concat.js',
                     href: '#concat.js',
-                    icon: 'fa fa-file-code-o'
+                    icon: 'fa fa fa-file-code-o'
                 }, {
                     text: 'csscomb.js',
                     href: '#csscomb.js',
-                    icon: 'fa fa-file-code-o'
+                    icon: 'fa fa fa-file-code-o'
                 }, {
                     text: 'cssmin.js',
                     href: '#cssmin.js',
-                    icon: 'fa fa-file-code-o'
+                    icon: 'fa fa fa-file-code-o'
                 }, {
                     text: 'less.js',
                     href: '#less.js',
-                    icon: 'fa fa-file-code-o'
+                    icon: 'fa fa fa-file-code-o'
                 }, {
                     text: 'uglify.js',
                     href: '#uglify.js',
-                    icon: 'fa fa-file-code-o'
+                    icon: 'fa fa fa-file-code-o'
                 }]
             }, {
                 text: 'html',
@@ -95,18 +95,18 @@
                 nodes: [{
                     text: 'blog.html',
                     href: '#blog.html',
-                    icon: 'fa fa-file-code-o'
+                    icon: 'fa fa fa-file-code-o'
                 }, {
                     text: 'docs.html',
                     href: '#docs.html',
-                    icon: 'fa fa-file-code-o'
+                    icon: 'fa fa fa-file-code-o'
                 }, {
                     text: 'index.html',
                     href: '#index.html',
                     state: {
                         selected: true
                     },
-                    icon: 'fa fa-file-code-o'
+                    icon: 'fa fa fa-file-code-o'
                 }]
             }, {
                 text: 'media',
@@ -117,28 +117,28 @@
                 nodes: [{
                     text: 'audio.mp3',
                     href: '#audio.mp3',
-                    icon: 'fa fa-file-audio-o'
+                    icon: 'fa fa fa-file-audio-o'
                 }, {
                     text: 'video.mp4',
                     href: '#video.mp4',
-                    icon: 'fa fa-file-video-o'
+                    icon: 'fa fa fa-file-video-o'
                 }]
             }, {
                 text: 'Gruntfile.js',
                 href: '#Gruntfile.js',
-                icon: 'fa fa-file-code-o'
+                icon: 'fa fa fa-file-code-o'
             }, {
                 text: 'bower.json',
                 href: '#bower.json',
-                icon: 'fa fa-file-code-o'
+                icon: 'fa fa fa-file-code-o'
             }, {
                 text: 'README.pdf',
                 href: '#README.pdf',
-                icon: 'fa fa-file-pdf-o'
+                icon: 'fa fa fa-file-pdf-o'
             }, {
                 text: 'package.json',
                 href: '#package.json',
-                icon: 'fa fa-file-code-o'
+                icon: 'fa fa fa-file-code-o'
             }];
             var options = $.extend({}, {
                 injectStyle: false,

@@ -13,7 +13,7 @@
                 "children": [
                     {
                         "layer": "030101",
-                        "icon": "fa-bars/index",
+                        "icon": "fa fa-bars/index",
                         "id": 11282,
                         "text": "自定义菜单",
                         "children": [
@@ -29,7 +29,7 @@
                     },
                     {
                         "layer": "030102",
-                        "icon": "fa-archive",
+                        "icon": "fa fa-archive",
                         "url": "/slider/index",
                         "id": 11284,
                         "text": "slider",
@@ -45,7 +45,7 @@
                 "children": [
                     {
                         "layer": "030201",
-                        "icon": "fa-adjust",
+                        "icon": "fa fa-adjust",
                         "url": "/taster/index",
                         "id": 11286,
                         "text": "taster",
@@ -53,7 +53,7 @@
                     },
                     {
                         "layer": "030202",
-                        "icon": "fa-bars/index",
+                        "icon": "fa fa-bars/index",
                         "id": 11287,
                         "text": "log",
                         "children": [
@@ -85,7 +85,7 @@
                 "children": [
                     {
                         "layer": "040101",
-                        "icon": "fa-automobile",
+                        "icon": "fa fa-automobile",
                         "url": "/system/menu/index",
                         "id": 4,
                         "text": "菜单管理",
@@ -93,7 +93,7 @@
                     },
                     {
                         "layer": "040102",
-                        "icon": "fa-street-view",
+                        "icon": "fa fa-street-view",
                         "url": "/system/user/index",
                         "id": 5,
                         "text": "用户管理",
@@ -101,7 +101,7 @@
                     },
                     {
                         "layer": "040103",
-                        "icon": "fa-file-text-o",
+                        "icon": "fa fa-file-text-o",
                         "url": "/system/log/index",
                         "id": 6,
                         "text": "日志信息",
@@ -109,7 +109,7 @@
                     },
                     {
                         "layer": "040104",
-                        "icon": "fa-shield",
+                        "icon": "fa fa-shield",
                         "url": "/system/blacklist/index",
                         "id": 7,
                         "text": "黑名单",
@@ -117,7 +117,7 @@
                     },
                     {
                         "layer": "040105",
-                        "icon": "fa-gear/index",
+                        "icon": "fa fa-gear/index",
                         "id": 8,
                         "text": "系统设置",
                         "children": [
@@ -149,7 +149,7 @@
                 "children": [
                     {
                         "layer": "040201",
-                        "icon": "fa-key",
+                        "icon": "fa fa-key",
                         "url": "/system/account/index",
                         "id": 12,
                         "text": "账户信息",
@@ -173,7 +173,7 @@
                 "children": [
                     {
                         "layer": "020101",
-                        "icon": "fa-laptop",
+                        "icon": "fa fa-laptop",
                         "url": "#",
                         "id": 73,
                         "text": "布局",
@@ -255,7 +255,7 @@
                     },
                     {
                         "layer": "020102",
-                        "icon": "fa-cube/index",
+                        "icon": "fa fa-cube/index",
                         "id": 83,
                         "text": "基本",
                         "children": [
@@ -407,7 +407,7 @@
                     },
                     {
                         "layer": "020103",
-                        "icon": "fa-cubes",
+                        "icon": "fa fa-cubes",
                         "url": "#",
                         "id": 11126,
                         "text": "进阶",
@@ -560,7 +560,7 @@
                     },
                     {
                         "layer": "020104",
-                        "icon": "fa-plug/index",
+                        "icon": "fa fa-plug/index",
                         "id": 11145,
                         "text": "组件",
                         "children": [
@@ -712,7 +712,7 @@
                     },
                     {
                         "layer": "020105",
-                        "icon": "fa-puzzle-piece/index",
+                        "icon": "fa fa-puzzle-piece/index",
                         "id": 11164,
                         "text": "小工具",
                         "children": [
@@ -776,7 +776,7 @@
                 "children": [
                     {
                         "layer": "020201",
-                        "icon": "fa-home",
+                        "icon": "fa fa-home",
                         "url": "#",
                         "id": 11172,
                         "text": "首页示例",
@@ -825,7 +825,7 @@
                     },
                     {
                         "layer": "020202",
-                        "icon": "fa-files-o",
+                        "icon": "fa fa-files-o",
                         "url": "#",
                         "id": 11178,
                         "text": "常用页面",
@@ -939,7 +939,7 @@
                     },
                     {
                         "layer": "020203",
-                        "icon": "fa-group/index",
+                        "icon": "fa fa-group/index",
                         "id": 11192,
                         "text": "团队协作",
                         "children": [
@@ -1071,7 +1071,7 @@
     },
     {
         "layer": "06",
-        "icon": "fa-bars",
+        "icon": "fa fa-bars",
         "id": 11289,
         "text": "gewg",
         "children": [

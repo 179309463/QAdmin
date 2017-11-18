@@ -83,8 +83,8 @@
                             $item.children('.dd-content').find("i.menu-icon").remove();
                         } else {
                             if ($item.data("icon") === "") {
-                                $item.data("icon", "fa-bars").attr("data-icon", "fa-bars");
-                                $item.children('.dd-content').find("span.menu-name").prepend("<i class='menu-icon fa-bars'></i>");
+                                $item.data("icon", "fa fa-bars").attr("data-icon", "fa fa-bars");
+                                $item.children('.dd-content').find("span.menu-name").prepend("<i class='menu-icon fa fa-bars'></i>");
                             }
                         }
 
@@ -177,7 +177,7 @@
                 }
 
                 if (data.icon === undefined) {
-                    data.icon = 'fa-bars';
+                    data.icon = 'fa fa-bars';
                 }
 
                 var html = template('selectOption', data);
@@ -681,15 +681,15 @@
                 if (icon) {
                     html = '<li class="dd-item dd-item-alt" data-id="" data-auth="" data-rank="'
                         + dataRrank + '" new-build="' + newMenu + '" data-text="自定义菜单" data-url="'
-                        + '#" data-icon="fa-bars" data-type="add"><div class="dd-handle"></div>' +
+                        + '#" data-icon="fa fa-bars" data-type="add"><div class="dd-handle"></div>' +
                         '<div class="dd-content active"><span class="menu-name"><i class="menu-icon' +
-                        ' fa-bars"></i> 自定义菜单</span><span class="pull-right fa-angle-right">' +
+                        ' fa fa-bars"></i> 自定义菜单</span><span class="pull-right fa fa-angle-right">' +
                         '</span></div></li>';
                 } else {
                     html = '<li class="dd-item dd-item-alt" data-id="" data-auth="" data-rank="' + dataRrank +
                         '" new-build="' + newMenu + '" data-text="自定义菜单" data-url="#" data-icon="" data-type="add">' +
                         '<div class="dd-handle"></div><div class="dd-content active"><span class="menu-name">自定义菜单' +
-                        '</span><span class="pull-right fa-angle-right"></span></div></li>';
+                        '</span><span class="pull-right fa fa-angle-right"></span></div></li>';
                 }
 
                 return html;

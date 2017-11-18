@@ -461,10 +461,10 @@
                             <p>为选项或者分组项添加 <code>data-icon</code> 属性</p>
                             <div class="example">
                                 <select data-plugin="selectpicker">
-                                    <option data-icon="fa-windows" value="Windows">Windows</option>
-                                    <option data-icon="fa-apple" value="Mac">macOS</option>
-                                    <option data-icon="fa-linux" value="Linux">Linux</option>
-                                    <option data-icon="fa-desktop" value="other">其他</option>
+                                    <option data-icon="fa fa-windows" value="Windows">Windows</option>
+                                    <option data-icon="fa fa-apple" value="Mac">macOS</option>
+                                    <option data-icon="fa fa-linux" value="Linux">Linux</option>
+                                    <option data-icon="fa fa-desktop" value="other">其他</option>
                                 </select>
                             </div>
                         </div>
@@ -1572,7 +1572,7 @@
                         <div class="example-wrap">
                             <h4 class="example-title">默认</h4>
                             <p>添加 <code>data-plugin="iconpicker"</code> 即可调用图标选择器</p>
-                            <input class="form-control icp icp-auto" value="fa-anchor" type="text" data-plugin="iconpicker">
+                            <input class="form-control icp icp-auto" value="fa fa-anchor" type="text" data-plugin="iconpicker">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
@@ -1580,7 +1580,7 @@
                             <h4 class="example-title">在输入组中使用</h4>
                             <p>添加 <code>data-placement="bottomRight"</code></p>
                             <div class="input-group">
-                                <input data-plugin="iconpicker" data-placement="bottomRight" class="form-control icp icp-auto" value="fa-archive" type="text">
+                                <input data-plugin="iconpicker" data-placement="bottomRight" class="form-control icp icp-auto" value="fa fa-archive" type="text">
                                 <span class="input-group-addon"></span>
                             </div>
                         </div>
@@ -1595,7 +1595,7 @@
                                 <div class="input-search">
                                     <button type="submit" class="input-search-btn">
                                         <i class="icon wb-search" aria-hidden="true"></i></button>
-                                    <input class="form-control icp icp-auto" data-plugin="iconpicker" data-input-search="true" value="fa-plane" type="text" placeholder="请输入关键词">
+                                    <input class="form-control icp icp-auto" data-plugin="iconpicker" data-input-search="true" value="fa fa-plane" type="text" placeholder="请输入关键词">
                                 </div>
                             </div>
                         </div>
@@ -1609,14 +1609,14 @@
                             <div class="example">
                                 <div class="btn-group">
                                     <button data-selected="graduation-cap" type="button" class="icp icp-dd btn btn-default dropdown-toggle iconpicker-component" data-plugin="iconpicker" data-toggle="dropdown">
-                                        选择图标 <i class="icon fa-fw"></i> <span class="caret"></span>
+                                        选择图标 <i class="icon fa fa-fw"></i> <span class="caret"></span>
                                     </button>
                                     <div class="dropdown-menu"></div>
                                 </div>
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-primary iconpicker-component">
-                                        <i class="icon fa-fw fa-heart"></i></button>
-                                    <button type="button" class="icp icp-dd btn btn-primary dropdown-toggle" data-selected="fa-car" data-plugin="iconpicker" data-toggle="dropdown">
+                                        <i class="icon fa fa-fw fa fa-heart"></i></button>
+                                    <button type="button" class="icp icp-dd btn btn-primary dropdown-toggle" data-selected="fa fa-car" data-plugin="iconpicker" data-toggle="dropdown">
                                         <span class="caret"></span> <span class="sr-only">选择图标</span>
                                     </button>
                                     <div class="dropdown-menu"></div>
@@ -1646,7 +1646,7 @@
                                 <pre class="well margin-top-15 height-200">{
     //...
     title: '自定义配置',
-    icons: ['fa-github', 'fa-heart', 'fa-html5', 'fa-css3'],
+    icons: ['fa fa-github', 'fa fa-heart', 'fa fa-html5', 'fa fa-css3'],
     selectedCustomClass: 'label label-success',
     mustAccept:true,
     placement:'bottomRight',
@@ -1674,7 +1674,7 @@
         'glyphicon-star'],
         $.iconpicker.defaultOptions.icons),
     fullClassFormatter: function(val){
-        if(val.match(/^fa-/)){
+        if(val.match(/^fa fa-/)){
             return 'fa '+val;
         }else{
             return 'glyphicon '+val;
