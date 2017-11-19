@@ -669,7 +669,7 @@
         mode: "default",
         defaults: {
             fullClassFormatter: function(value) {
-                return "icon " + value;
+                return "icon fa " + value;
             },
             templates: {
                 popover: '<div class="iconpicker-popover popover"><div class="arrow"></div>' + '<div class="popover-title"></div><div class="popover-content"></div></div>',
@@ -687,7 +687,7 @@
         mode: "default",
         defaults: {
             fullClassFormatter: function(value) {
-                return "icon " + value;
+                return "icon wb " + value;
             },
             templates: {
                 popover: '<div class="iconpicker-popover popover"><div class="arrow"></div>' + '<div class="popover-title"></div><div class="popover-content"></div></div>',

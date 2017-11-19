@@ -30,3 +30,14 @@
 .bootstrap-maxlength.label {
 	margin-top: 5px;
 }
+
+input.to-labelauty + label {
+	min-width: 160px;
+}
+input.to-labelauty-icon + label {
+	display: inline-block;
+	padding: 8px 8px;
+}
+input.to-labelauty-icon + label + span {
+	margin-left: 7px;
+}
