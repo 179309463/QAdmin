@@ -599,6 +599,20 @@ router.get('/examples/home', (req, res) => {
     }
 });
 
+router.get('/gojs/home', (req, res) => {
+    var _path = req.path.substring(1);
+
+    if (req.headers['x-pjax']) {
+        res.render("gojs/home/index.html");
+    } else {
+        res.render('application/index', {
+            path: "gojs/home/index.html",
+            nav_menu: 'gojs/nav-menu.html',
+            site_menu: 'gojs/site-menu.html'
+        });
+    }
+});
+
 router.all('/*', function (req, res) {
     responseCommon(req, res);
 });

@@ -158,7 +158,13 @@
         </div>
     </div>
 </nav>
-<%- include('../'+site_menu) %>
+<nav class="site-menubar">
+    <div class="site-menubar-body">
+        <div class="tab-content height-full" id="qadmin-navTabs">
+            <%- include('../'+site_menu) %>
+        </div>
+    </div>
+</nav>
 <nav class="site-contabs" id="qadmin-siteConTabs">
     <button type="button" class="btn btn-icon btn-default pull-left hide">
         <i class="icon fa fa-angle-double-left"></i>
