@@ -15,6 +15,9 @@ function responseCommon(req, res) {
     var _path = req.path.substring(1);
     var i = _path.indexOf("/");
     var module = _path.substring(0, i);
+    if(module=="application"){
+        module = "examples"
+    }
 
     if (req.headers['x-pjax']) {
         res.render(_path);
@@ -86,28 +89,36 @@ router.all('/system/account/*', function (req, res) {
                 res.render('index', {
                     path: _index,
                     path1:'message/index.html',
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
             case 'password/index.html':
                 res.render('index', {
                     path: _index,
                     path1: 'password/index.html',
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
             case 'log/index.html':
                 res.render('index',{
                     path: _index,
                     path1: '../log-table/index.html',
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
             case 'display/index.html':
                 res.render('index',{
                     path: _index,
                     path1: '../settings-display/index.html',
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
         }
@@ -150,17 +161,21 @@ router.all('/examples/tables/data-tables/basic-init/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'basic-init/index.html':
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1:'zero-configuration/index.html',
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
             default:
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1: fileName,
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
         }
@@ -202,17 +217,21 @@ router.all('/examples/tables/data-tables/advanced-init/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'advanced-init/index.html':
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1:'events-live/index.html',
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
             default:
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1: fileName,
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
         }
@@ -254,17 +273,21 @@ router.all('/examples/tables/data-tables/data-sources/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'data-sources/index.html':
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1:'dom/index.html',
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
             default:
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1: fileName,
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
         }
@@ -306,17 +329,21 @@ router.all('/examples/tables/data-tables/api/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'api/index.html':
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1:'add-row/index.html',
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
             default:
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1: fileName,
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
         }
@@ -358,17 +385,21 @@ router.all('/examples/tables/data-tables/ajax/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'ajax/index.html':
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1:'simple/index.html',
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
             default:
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1: fileName,
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
         }
@@ -410,17 +441,21 @@ router.all('/examples/tables/data-tables/server-side/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'server-side/index.html':
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1:'simple/index.html',
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
             default:
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1: fileName,
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
         }
@@ -462,17 +497,21 @@ router.all('/examples/tables/data-tables/plug-ins/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'plug-ins/index.html':
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1:'api/index.html',
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
             default:
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1: fileName,
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
         }
@@ -514,17 +553,21 @@ router.all('/examples/tables/data-tables/others/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'others/index.html':
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1:'fixed-header/index.html',
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
             default:
-                res.render('index', {
+                res.render('application/index', {
                     path: _index,
                     path1: fileName,
-                    fileName: fileName
+                    fileName: fileName,
+                    nav_menu: 'examples/nav-menu.html',
+                    site_menu: 'examples/site-menu.html'
                 });
                 break;
         }

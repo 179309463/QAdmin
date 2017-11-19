@@ -196,6 +196,8 @@
             $labelNav.append('<li class="active"><a data-pjax="#qadmin-pageContent" href="' + opt.url + '" title="' + opt.name + '' +
                 '" rel="contents"><span>' + opt.name + '</span><i class="icon wb-close-mini"></i></a></li>');
 
+            $labelNav.find("li.active").removeClass("active").click().addClass("active");
+
             this.labelSize();
             this.labelEvent($labelNav, 'media', 'add');
         },

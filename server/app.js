@@ -18,7 +18,6 @@ app.set('view catch', false)
 app.engine('html', require('ejs').renderFile)
 
 app.use(logger('dev'));
-app.use(express.static(path.resolve(__dirname, '../bower_components')));
 app.use(express.static(path.resolve(__dirname, '../public')));
 app.use('/views/', express.static(path.resolve(__dirname, '../views')));
 app.use('/', data);
