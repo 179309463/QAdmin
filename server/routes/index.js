@@ -2,18 +2,28 @@ var express = require('express'),
     router = express.Router();
 
 router.get('/', (req, res) => {
-  res.render('application/index', {path: 'examples/home/index.html'})
+  res.render('application/index', {
+    path: 'examples/home/index.html',
+    nav_menu: 'examples/nav-menu.html',
+    site_menu: 'examples/site-menu.html'
+  })
 })
 
 console.log('载入路由...');
 
 function responseCommon(req, res) {
     var _path = req.path.substring(1);
+    var i = _path.indexOf("/");
+    var module = _path.substring(0, i);
 
     if (req.headers['x-pjax']) {
         res.render(_path);
     } else {
-        res.render('application/index', {path: _path});
+        res.render('application/index', {
+            path: _path,
+            nav_menu: module+'/nav-menu.html',
+            site_menu: module+'/site-menu.html'
+        });
     }
 }
 
@@ -538,7 +548,11 @@ router.get('/examples/home', (req, res) => {
     if (req.headers['x-pjax']) {
         res.render("examples/home/index.html");
     } else {
-        res.render('application/index', {path: "examples/home/index.html"});
+        res.render('application/index', {
+            path: "examples/home/index.html",
+            nav_menu: 'examples/nav-menu.html',
+            site_menu: 'examples/site-menu.html'
+        });
     }
 });
 
