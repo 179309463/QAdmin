@@ -77,9 +77,9 @@
             model.nodeDataArray =
             [ // note that each node data object holds whatever properties it needs;
               // for this app we add the "name" and "source" properties
-              { name: "Don Meow",  source: "cat1.png" },
-              { name: "Copricat", source: "cat2.png" },
-              { name: "Demeter", source: "cat3.png" },
+              { name: "Don Meow",  source: "/vendor/gojs/learn/cat1.png" },
+              { name: "Copricat", source: "/vendor/gojs/learn/cat2.png" },
+              { name: "Demeter", source: "/vendor/gojs/learn/cat3.png" },
               { /* Empty node data */  }
             ];
             myDiagram.model = model;
@@ -108,12 +108,12 @@
             var model = $(go.TreeModel);
             model.nodeDataArray =
             [
-              { key: "1",              name: "Don Meow",   source: "cat1.png" },
-              { key: "2", parent: "1", name: "Demeter",    source: "cat2.png" },
-              { key: "3", parent: "1", name: "Copricat",   source: "cat3.png" },
-              { key: "4", parent: "3", name: "Jellylorum", source: "cat4.png" },
-              { key: "5", parent: "3", name: "Alonzo",     source: "cat5.png" },
-              { key: "6", parent: "2", name: "Munkustrap", source: "cat6.png" }
+              { key: "1",              name: "Don Meow",   source: "/vendor/gojs/learn/cat1.png" },
+              { key: "2", parent: "1", name: "Demeter",    source: "/vendor/gojs/learn/cat2.png" },
+              { key: "3", parent: "1", name: "Copricat",   source: "/vendor/gojs/learn/cat3.png" },
+              { key: "4", parent: "3", name: "Jellylorum", source: "/vendor/gojs/learn/cat4.png" },
+              { key: "5", parent: "3", name: "Alonzo",     source: "/vendor/gojs/learn/cat5.png" },
+              { key: "6", parent: "2", name: "Munkustrap", source: "/vendor/gojs/learn/cat6.png" }
             ];
             myDiagram.model = model;
         },
@@ -143,12 +143,12 @@
             var model = $(go.TreeModel);
             model.nodeDataArray =
             [
-              { key: "1",              name: "Don Meow",   source: "cat1.png" },
-              { key: "2", parent: "1", name: "Demeter",    source: "cat2.png" },
-              { key: "3", parent: "1", name: "Copricat",   source: "cat3.png" },
-              { key: "4", parent: "3", name: "Jellylorum", source: "cat4.png" },
-              { key: "5", parent: "3", name: "Alonzo",     source: "cat5.png" },
-              { key: "6", parent: "2", name: "Munkustrap", source: "cat6.png" }
+              { key: "1",              name: "Don Meow",   source: "/vendor/gojs/learn/cat1.png" },
+              { key: "2", parent: "1", name: "Demeter",    source: "/vendor/gojs/learn/cat2.png" },
+              { key: "3", parent: "1", name: "Copricat",   source: "/vendor/gojs/learn/cat3.png" },
+              { key: "4", parent: "3", name: "Jellylorum", source: "/vendor/gojs/learn/cat4.png" },
+              { key: "5", parent: "3", name: "Alonzo",     source: "/vendor/gojs/learn/cat5.png" },
+              { key: "6", parent: "2", name: "Munkustrap", source: "/vendor/gojs/learn/cat6.png" }
             ];
             myDiagram.model = model;
         },
@@ -184,12 +184,12 @@
             var model = $(go.TreeModel);
             model.nodeDataArray =
             [
-              { key: "1",              name: "Don Meow",   source: "cat1.png" },
-              { key: "2", parent: "1", name: "Demeter",    source: "cat2.png" },
-              { key: "3", parent: "1", name: "Copricat",   source: "cat3.png" },
-              { key: "4", parent: "3", name: "Jellylorum", source: "cat4.png" },
-              { key: "5", parent: "3", name: "Alonzo",     source: "cat5.png" },
-              { key: "6", parent: "2", name: "Munkustrap", source: "cat6.png" }
+              { key: "1",              name: "Don Meow",   source: "/vendor/gojs/learn/cat1.png" },
+              { key: "2", parent: "1", name: "Demeter",    source: "/vendor/gojs/learn/cat2.png" },
+              { key: "3", parent: "1", name: "Copricat",   source: "/vendor/gojs/learn/cat3.png" },
+              { key: "4", parent: "3", name: "Jellylorum", source: "/vendor/gojs/learn/cat4.png" },
+              { key: "5", parent: "3", name: "Alonzo",     source: "/vendor/gojs/learn/cat5.png" },
+              { key: "6", parent: "2", name: "Munkustrap", source: "/vendor/gojs/learn/cat6.png" }
             ];
             myDiagram.model = model;
         }

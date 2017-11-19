@@ -1,4 +1,4 @@
-<title>Get Started with GoJS</title>
+<title>Learn</title>
 
 <link rel="stylesheet" href="/lib/highlight/highlight.css">
 
@@ -15,7 +15,7 @@
       And of course you need to load the library:
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 &lt;!DOCTYPE html&gt;  &lt;!-- HTML5 document type --&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -28,14 +28,14 @@
       You can download <b>GoJS</b> (and all the samples) <a target="_blank" href="../doc/download.html">here</a>.
       Alternatively you can link straight to the <b>GoJS</b> library provided by <a target="_blank" href="https://cdnjs.com/libraries/gojs">CDNJS</a>:
 
-    <pre><code id="cdnscript"></code></pre>
+    <pre data-plugin="highlight"><code id="cdnscript"></code></pre>
 
     <p>
       Each <b>GoJS</b> diagram is contained in an HTML <code>&lt;div&gt;</code> element in your
       HTML page that you give an explicit size:
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 &lt;!-- The DIV for a Diagram needs an explicit size or else we will not see anything.
      In this case we also add a background color so we can see that area. --&gt;
 &lt;div id="myDiagramDiv"
@@ -46,7 +46,7 @@
       In JavaScript code you pass the <code>&lt;div&gt;</code>'s <code>id</code> when making a Diagram:
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 var $ = go.GraphObject.make;
 var myDiagram =
   $(go.Diagram, "myDiagramDiv");
@@ -90,7 +90,7 @@ var myDiagram =
       Here's an example of a Model and Diagram, followed by the actual diagram it generates:
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 var $ = go.GraphObject.make;
 var myDiagram =
   $(go.Diagram, "myDiagramDiv",
@@ -163,7 +163,7 @@ myDiagram.model = myModel;
       In code, the template looks something like this:
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 myDiagram.nodeTemplate =
   $(go.Node,
     $(go.TextBlock,
@@ -185,7 +185,7 @@ myDiagram.nodeTemplate =
       More generally, the skeleton of a Node template will look something like this:
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 myDiagram.nodeTemplate =
   $(go.Node, "Vertical", // second argument of a Node/Panel can be a Panel type
     /* set Node properties here */
@@ -234,7 +234,7 @@ myDiagram.nodeTemplate =
       </li>
     </ul>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 var $ = go.GraphObject.make;
 var myDiagram =
   $(go.Diagram, "myDiagramDiv",
@@ -309,7 +309,7 @@ myDiagram.model = model;
       Here's an example where node A links to node B and where node B links to node C:
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 var model = $(go.GraphLinksModel);
 model.nodeDataArray =
 [
@@ -338,7 +338,7 @@ myDiagram.model = model;
       Here's the same example done as a TreeModel, with node A linking to node B and node B linking to node C:
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 var model = $(go.TreeModel);
 model.nodeDataArray =
 [
@@ -361,7 +361,7 @@ myDiagram.model = model;
       and specifying keys and parents in the data.
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 var $ = go.GraphObject.make;
 var myDiagram =
   $(go.Diagram, "myDiagramDiv",
@@ -426,7 +426,7 @@ myDiagram.model = model;
       that showcase its properties.
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 // define a TreeLayout that flows from top to bottom
 myDiagram.layout =
   $(go.TreeLayout,
@@ -441,7 +441,7 @@ myDiagram.layout =
       Adding the layout to the diagram and model so far, we can see our results:
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 var $ = go.GraphObject.make;
 var myDiagram =
   $(go.Diagram, "myDiagramDiv",
@@ -498,7 +498,7 @@ myDiagram.model = model;
       and give it a <code>corner</code> value so that right-angle turns are rounded.
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 // define a Link template that routes orthogonally, with no arrowhead
 myDiagram.linkTemplate =
   $(go.Link,
@@ -518,7 +518,7 @@ myDiagram.linkTemplate =
       The complete code is repeated below, and the resulting diagram follows:
     </p>
 
-    <pre><code>
+    <pre data-plugin="highlight"><code>
 var $ = go.GraphObject.make;
 
 var myDiagram =
@@ -573,6 +573,6 @@ myDiagram.model = model;
   </div>
 </p>
 
-<script src="/lib/highlight/highlight.js" data-name="highlight"></script>
+<script src="/lib/highlight/highlight.js"></script>
 <script src="/lib/gojs/release/go.js" data-name="gojs"></script>
-<script src="/views/gojs/learn/index.js" data-deps="highlight,gojs"></script>
+<script src="/views/gojs/learn/index.js" data-deps="gojs"></script>

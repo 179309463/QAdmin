@@ -89,7 +89,7 @@
 			}).on('tap.site.menu', '> .site-menu-item > a', function () {
 				var link = $(this).attr('href');
 				
-				if (link) {
+				if (link && ($(this).data("pjax")==undefined)) {
 					window.location = link;
 				}
 			}).on('touchend.site.menu', '> .site-menu-item > a', function () {
