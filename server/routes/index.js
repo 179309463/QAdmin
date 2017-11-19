@@ -2,7 +2,7 @@ var express = require('express'),
     router = express.Router();
 
 router.get('/', (req, res) => {
-  res.render('index', {path: 'examples/home/index.html'})
+  res.render('application/index', {path: 'examples/home/index.html'})
 })
 
 console.log('载入路由...');
@@ -13,7 +13,7 @@ function responseCommon(req, res) {
     if (req.headers['x-pjax']) {
         res.render(_path);
     } else {
-        res.render('index', {path: _path});
+        res.render('application/index', {path: _path});
     }
 }
 
@@ -23,7 +23,7 @@ router.all('/system/account/*', function (req, res) {
         fileName = _path.lastIndexOf('/'),
         _path2 = _path.substring(0, fileName),
         fileName = _path2.lastIndexOf("/"),
-        _index = 'system/account/index.html';
+        _index = 'application/system/account/index.html';
 
     fileName = _path.substring(fileName + 1);
 
@@ -31,7 +31,7 @@ router.all('/system/account/*', function (req, res) {
         switch (fileName) {
             case 'account/index.html':
                 if(req.headers['x-pjax-container'] === '#accountContent'){
-                    res.render('system/account/message/index.html');
+                    res.render('application/system/account/message/index.html');
                 }else{
                     res.render(_index, {
                         path1:'message/index.html',
@@ -41,7 +41,7 @@ router.all('/system/account/*', function (req, res) {
                 break;
             case 'password/index.html':
                 if(req.headers['x-pjax-container'] === '#accountContent'){
-                    res.render('system/account/password/index.html');
+                    res.render('application/system/account/password/index.html');
                 }else{
                     res.render(_index, {
                         path1: 'password/index.html',
@@ -51,7 +51,7 @@ router.all('/system/account/*', function (req, res) {
                 break;
             case 'log/index.html':
                 if(req.headers['x-pjax-container'] === '#accountContent'){
-                    res.render('system/log-table/index.html');
+                    res.render('application/system/log-table/index.html');
                 }else{
                     res.render(_index,{
                         path1: '../log-table/index.html',
@@ -61,7 +61,7 @@ router.all('/system/account/*', function (req, res) {
                 break;
             case 'display/index.html':
                 if(req.headers['x-pjax-container'] === '#accountContent'){
-                    res.render('system/settings-display/index.html');
+                    res.render('application/system/settings-display/index.html');
                 }else{
                     res.render(_index,{
                         path1: '../settings-display/index.html',
@@ -522,23 +522,23 @@ router.all('/examples/tables/data-tables/others/*', function (req, res) {
 });
 
 router.get('/login', (req, res) => {
-  res.render('login/index.html')
+  res.render('application/login/index.html')
 });
-router.get('/system/logout', (req, res) => {
-  res.render('login/index.html')
+router.get('/application/system/logout', (req, res) => {
+  res.render('application/login/index.html')
 });
 
 router.get('/locked.html', (req, res) => {
-  res.render('locked')
+  res.render('application/locked')
 });
 
-router.get('/home', (req, res) => {
+router.get('/examples/home', (req, res) => {
     var _path = req.path.substring(1);
 
     if (req.headers['x-pjax']) {
         res.render("examples/home/index.html");
     } else {
-        res.render('index', {path: "examples/home/index.html"});
+        res.render('application/index', {path: "examples/home/index.html"});
     }
 });
 
