@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap-daterangepicker中文文档 - BSify</title>
+    <meta name="keywords" content="daterangepicker.js,bootstrap-daterangepicker,daterangepicker.js中文文档,bootstrap-daterangepicker中文文档，daterangepicker.js中文api,bootstrap-daterangepicker中文api,bootstrap-daterangepicker插件,daterangepicker插件">
+    <meta name="description" content="daterangepicker.js是一个基于Bootstrap的日期范围选择器组件，包括限制可选择的日期范围，可本地化的字符串和日期格式，单个日期选择器模式。为用户提供了丰富的日期选择体验。">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;http://www.admui.com/ie.html"/><![endif]-->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="bootstrap-daterangepicker中文文档"/>
+    <link rel="apple-touch-icon-precomposed" href="../dist/images/icon-72@x2.png.html">
+    <meta name="msapplication-TileImage" content="/dist/images/icon-72@x2.png">
+    <meta name="msapplication-TileColor" content="#1abc9c">
+    <link rel="shortcut icon" href="../dist/images/favicon.png">
+    <link rel="stylesheet" href="../dist/plugins/docsify/vue.css" title="vue">
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?68f6c4eca08fed27f96b79b27e90b135";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+<nav class="app-nav no-badge"><ul>
+    <li><a href="javascript:;" id="backIndex" class="active">返回首页</a></li>
+    </ul>
+</nav>
+<section class="cover" style="background: linear-gradient(to left bottom, hsl(139, 100%, 85%) 0%,hsl(49, 100%, 85%) 100%)">
+    <div class="cover-main"></div>
+    <div class="mask"></div>
+</section>
+<main>
+    <button class="sidebar-toggle">
+        <div class="sidebar-toggle-button"><span></span><span></span><span></span></div>
+    </button>
+    <aside class="sidebar">
+        <h1>
+            <a class="app-name-link" data-nosearch>daterangepicker</a>
+        </h1>
+        <div class="sidebar-adv">
+            <a href="/portal/index.html" target="_blank">
+                <img src="../dist/images/banner.jpg" width="300">
+            </a>
+        </div>
+        <div class="sidebar-nav">
+            <ul>
+                <li>
+                    <a class="section-link" href="index-id=%E7%94%A8%E6%B3%95.html">用法</a>
+                </li>
+                <li>
+                    <a class="section-link" href="index-id=%E6%BC%94%E7%A4%BA%E7%A4%BA%E4%BE%8B.html">演示示例</a>
+                </li>
+                <li>
+                    <a class="section-link" href="index-id=%E9%85%8D%E7%BD%AE%E7%94%9F%E6%88%90%E5%99%A8.html">配置生成器</a>
+                </li>
+                <li>
+                    <a class="section-link" href="index-id=%E9%85%8D%E7%BD%AE%E9%80%89%E9%A1%B9%EF%BC%8C%E6%96%B9%E6%B3%95%E5%92%8C%E4%BA%8B%E4%BB%B6.html">配置选项，方法和事件</a>
+                </li>
+                <li>
+                    <ul class="children">
+                        <li>
+                            <a class="section-link" href="index-id=%E9%85%8D%E7%BD%AE%E9%80%89%E9%A1%B9.html">配置选项</a>
+                        </li>
+                        <li>
+                            <a class="section-link" href="index-id=%E6%96%B9%E6%B3%95.html">方法</a>
+                        </li>
+                        <li>
+                            <ul class="children">
+                                <li>
+                                    <a class="section-link" href="index-id=%E7%A4%BA%E4%BE%8B%E7%94%A8%E6%B3%95%EF%BC%9A.html">示例用法：</a>
+                                </li>
+                                </li></ul>
+                        <li>
+                            <a class="section-link" href="index-id=%E4%BA%8B%E4%BB%B6.html">事件</a>
+                        </li>
+                        </li></ul>
+                    <script>window.__SUB_SIDEBAR__ = undefined</script>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <section class="content">
+        <article class="markdown-section" id="main">
+            <h2 id="用法">
+                <a href="index-id=%E7%94%A8%E6%B3%95.html" data-id="用法" class="anchor"><span>用法</span></a>
+            </h2>
+            <p>daterangepicker.js依赖于
+                <a href="http://www.bootcss.com/" target="_blank">Bootstrap</a>
+                、
+                <a href="http://jquery.com/" target="_blank">jQuery</a>
+                、
+                <a href="http://momentjs.com/" target="_blank">Moment.js</a>
+                这三个库。页面中必需包含的脚本和样式文件有：
+            </p>
+            <pre v-pre data-lang="html"><code class="lang-html"><span class="token comment" spellcheck="true">&lt;!-- 需要引用的依赖库 --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>//cdn.jsdelivr.net/jquery/1/jquery.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>//cdn.jsdelivr.net/momentjs/latest/moment.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!-- 引用 daterangepicker 相关文件--></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
+            <p>然后，为您需要的元素添加该插件的调用方法：</p>
+            <pre v-pre data-lang="js"><code class="lang-js"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'input[name="daterange"]'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">daterangepicker</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <p>您可以通过参数自定义相关配置，还可以通过回调函数在用户选择新的日期时获得通知。</p>
+            <pre v-pre data-lang="js"><code class="lang-js"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'input[name="daterange"]'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">daterangepicker</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        locale<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          format<span class="token punctuation">:</span> <span class="token string">'YYYY-MM-DD'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        startDate<span class="token punctuation">:</span> <span class="token string">'2013-01-01'</span><span class="token punctuation">,</span>
+        endDate<span class="token punctuation">:</span> <span class="token string">'2013-12-31'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>start<span class="token punctuation">,</span> end<span class="token punctuation">,</span> label<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"A new date range was chosen: "</span> <span class="token operator">+</span> start<span class="token punctuation">.</span>format        <span class="token punctuation">(</span><span class="token string">'YYYY-MM-DD'</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">' to '</span> <span class="token operator">+</span> end<span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'YYYY-MM-DD'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <h2 id="演示示例">
+                <a href="index-id=%E6%BC%94%E7%A4%BA%E7%A4%BA%E4%BE%8B.html" data-id="演示示例" class="anchor"><span>演示示例</span></a>
+            </h2>
+            <p>请点击这里，查看
+                <a href="https://jsfiddle.net/admui_team/qnr4uky5/" target="_blank">示例</a>
+            </p>
+            <h2 id="配置生成器">
+                <a href="index-id=%E9%85%8D%E7%BD%AE%E7%94%9F%E6%88%90%E5%99%A8.html" data-id="配置生成器" class="anchor">
+                    <span>配置生成器</span></a>
+            </h2>
+            <p>请点击这里，查看
+                <a href="https://jsfiddle.net/admui_team/5uLupaoj/" target="_blank">配置生成器</a>
+            </p>
+            <h2 id="配置选项，方法和事件">
+                <a href="index-id=%E9%85%8D%E7%BD%AE%E9%80%89%E9%A1%B9%EF%BC%8C%E6%96%B9%E6%B3%95%E5%92%8C%E4%BA%8B%E4%BB%B6.html" data-id="配置选项，方法和事件" class="anchor">
+                    <span>配置选项，方法和事件</span></a>
+            </h2>
+            <h3 id="配置选项">
+                <a href="index-id=%E9%85%8D%E7%BD%AE%E9%80%89%E9%A1%B9.html" data-id="配置选项" class="anchor"><span>配置选项</span></a>
+            </h3>
+            <ul>
+                <li><code>startDate</code>: (Date 对象, moment 对象或者string类型)初始化日期范围选中的开始时间。</li>
+                <li><code>endDate</code>: (Date 对象, moment 对象或者string类型)初始化日期范围选中的结束时间。</li>
+                <li><code>minDate</code>: (Date 对象, moment 对象或者string类型) 用户可以选择的最早时间。</li>
+                <li><code>maxDate</code>: (Date 对象, moment 对象或者string类型) 用户可以选择的最晚时间。</li>
+                <li><code>dateLimit</code>: (object类型) 选中的开始和结束日期之间最大时间间隔。可以是能够添加到moment对象（<code>moment.add()</code>）中的任何属性（如：<code>days</code>,
+                    <code>months</code>）。
+                </li>
+                <li><code>showDropdowns</code>: (boolean类型) 在日历上面显示年和月的下拉框，选中后将跳到指定的年和月</li>
+                <li><code>showWeekNumbers</code>: (boolean类型) 在日历上每周开始的地方显示本地化的周编号。</li>
+                <li><code>showISOWeekNumbers</code>: (boolean类型) 在日历上每周开始的地方显示国际标准的周编号。</li>
+                <li><code>timePicker</code>: (boolean类型) 允许选择日期和时间，而不是局限于日期。</li>
+                <li><code>timePickerIncrement</code>: (number类型) 时间选择框中分钟列的增加步长（如：设置为<code>30</code>后只允许选择以0和30结束的时间）。
+                </li>
+                <li><code>timePicker24Hour</code>: (boolean类型) 使用24小时制来代替12小时制，同时删除<code>AM/PM</code>选择框。</li>
+                <li><code>timePickerSeconds</code>: (boolean类型) 在时间选择框中显示秒选择列。</li>
+                <li><code>ranges</code>: (object类型) 设置用户可以选择的预定义日期范围。每个键名即范围的标签名，对应值是两个日期组成的数组，来表示范围的界限。</li>
+                <li>
+                    <code>showCustomRangeLabel</code>: (boolean类型) 当使用范围选项时，在预定义范围列表的末尾显示标记为<code>&quot;Custom Range&quot;</code>的标签。当选择的日期范围与任何一个预定义的范围都不匹配时，该选项将被高亮显示。单击它显示日历可以选择新的范围。
+                </li>
+                <li><code>alwaysShowCalendars</code>: (boolean类型) 通常，如果使用范围选项指定了预定义日期范围，则用户除了单击
+                    <code>&quot;Custom Range&quot;</code>之外，日期选择器都不会显示用于选择自定义日期范围的日历。当选项设置为<code>true</code>时，将始终显示用于选择自定义日期范围的日历。
+                </li>
+                <li>
+                    <code>opens</code>: (string: &#39;left&#39;/&#39;right&#39;/&#39;center&#39;) 设置日期选择器以绑定元素左对齐、右对齐或者居中显示。
+                </li>
+                <li><code>drops</code>: (string: &#39;down&#39; or &#39;up&#39;) 设置日期选择器在绑定元素的下面（默认）或者上面显示。</li>
+                <li><code>buttonClasses</code>: (array类型)为日期选择器中的所有<code>button</code>元素添加<code>CSS</code>类。</li>
+                <li><code>applyClass</code>: (string类型) 为日期选择器中的<code>apply</code>按钮添加类。</li>
+                <li><code>cancelClass</code>: (string类型) 为日期选择器中的<code>cancel</code>按钮添加类。</li>
+                <li><code>locale</code>: (object类型) 允许为按钮和标签提供本地化的字符串，自定义日期格式，并更改日历中周的第一天。 查看配置生成器中的“<code>locale</code>配置（包含设置示例）”，以了解如何自定义这些选项。
+                </li>
+                <li>
+                    <code>singleDatePicker</code>: (boolean类型) 只显示一个日历来选择一个日期，而不是带有两个日历的范围选择器；回调函数中提供的开始和结束日期将和选择的单个日期相同。
+                </li>
+                <li><code>autoApply</code>: (boolean类型) 隐藏<code>apply</code>和<code>cancel</code>按钮。选择两个日期或预定义范围时，会自动应用新的日期范围。
+                </li>
+                <li>
+                    <code>linkedCalendars</code>: (boolean类型) 启用时，显示的两个日历将始终为两个连续的月份（如：1月和2月），并且当单击日历上方的左侧或右侧箭头时，两个日历都将变化。 禁用时，两个日历可以单独变化并显示任何月/年。
+                </li>
+                <li><code>isInvalidDate</code>: (function类型) 在显示两个日历之前传递一个日期参数，然后通过返回true或false，标示该日期是否可供选择。</li>
+                <li><code>isCustomDate</code>: (function类型) 在显示两个日历之前传递一个日期参数，然后将返回的CSS类名字符串传或者数组应用在日历中的该日期上。</li>
+                <li><code>autoUpdateInput</code>: (boolean类型) 标示日期范围选择器是否应在初始化和所选日期改变时，自动更新绑定在<code>&lt;input&gt;</code>元素上的值。
+                </li>
+                <li><code>parentEl</code>: (string类型) 给日期选择器添加父元素的<code>jQuery</code>选择器，如果没有提供，<code>body</code>将被作为父元素。
+                </li>
+            </ul>
+            <h3 id="方法">
+                <a href="index-id=%E6%96%B9%E6%B3%95.html" data-id="方法" class="anchor"><span>方法</span></a>
+            </h3>
+            <p>您可以使用<code>setStartDate</code>和<code>setEndDate</code>方法以程序化的方式更新日期选择器中的<code>startDate</code>和<code>endDate</code>。 您也可以通过绑定到该元素上的<code>data</code>属性访问日期范围选择器对象及其功能和属性。
+            </p>
+            <p>setStartDate(Date 对象, moment 对象或者string类型): 设置日期范围选择器中当前选择的开始日期为提供的日期 setEndDate(Date 对象, moment 对象或者string类型): 设置日期范围选择器中当前选择的结束日期为提供的日期</p>
+            <h4 id="示例用法：">
+                <a href="index-id=%E7%A4%BA%E4%BE%8B%E7%94%A8%E6%B3%95%EF%BC%9A.html" data-id="示例用法：" class="anchor">
+                    <span>示例用法：</span></a>
+            </h4>
+            <pre v-pre data-lang="js"><code class="lang-js"><span class="token comment" spellcheck="true">// 创建一个新的日期范围选择器</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#daterange'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">daterangepicker</span><span class="token punctuation">(</span><span class="token punctuation">{</span> startDate<span class="token punctuation">:</span> <span class="token string">'03/05/2005'</span><span class="token punctuation">,</span> endDate<span class="token punctuation">:</span> <span class="token string">'03/06/2005'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// 改变日期选择器中选中的日期范围</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#daterange'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token string">'daterangepicker'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setStartDate</span><span class="token punctuation">(</span><span class="token string">'03/01/2014'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#daterange'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token string">'daterangepicker'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setEndDate</span><span class="token punctuation">(</span><span class="token string">'03/31/2014'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <h3 id="事件">
+                <a href="index-id=%E4%BA%8B%E4%BB%B6.html" data-id="事件" class="anchor"><span>事件</span></a>
+            </h3>
+            <p>日期选择器绑定的元素可以触发以下几个事件，这些事件，您都可以进行监听。</p>
+            <p>show.daterangepicker: 日期选择器显示后触发事件 hide.daterangepicker: 日期选择器隐藏后触发事件 showCalendar.daterangepicker: 日历显示后触发事件 hideCalendar.daterangepicker: 日历隐藏后触发事件 apply.daterangepicker:
+                <code>apply</code>按钮被点击，或者预定义范围标签被点击时触发事件 cancel.daterangepicker: <code>cancel</code>按钮被点击时触发事件</p>
+            <p>有些应用需要“清除”而不是“取消”功能，这可以通过更改按钮标签监听<code>cancel</code>事件来实现：</p>
+            <pre v-pre data-lang="js"><code class="lang-js"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#daterange'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">daterangepicker</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  locale<span class="token punctuation">:</span> <span class="token punctuation">{</span> cancelLabel<span class="token punctuation">:</span> <span class="token string">'Clear'</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#daterange'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'cancel.daterangepicker'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>ev<span class="token punctuation">,</span> picker<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#daterange'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <p>向构造函数传一个回调函数作为参数是监听所选日期范围更改最简单的方法 ，即使选择未更改，每次应用按钮被点击时，您也可以执行某些操作：</p>
+            <pre v-pre data-lang="js"><code class="lang-js"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#daterange'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">daterangepicker</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#daterange'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'apply.daterangepicker'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>ev<span class="token punctuation">,</span> picker<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>picker<span class="token punctuation">.</span>startDate<span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'YYYY-MM-DD'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>picker<span class="token punctuation">.</span>endDate<span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'YYYY-MM-DD'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <p>---- 最后更新于：2017/07/04 13:36 </p>
+        </article>
+    </section>
+</main>
+<script>window.$docsify = {
+    "basePath": "/daterangepicker/"
+}</script>
+</body>
+<script src="../dist/plugins/docsify/docsify.js" data-name="alertify"></script>
+<script>
+    document.getElementById('backIndex').onclick = function(){
+        location.href = 'http://bsify.admui.com/';
+    };
+</script>
+</html>

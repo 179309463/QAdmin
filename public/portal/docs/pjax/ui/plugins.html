@@ -1,0 +1,1106 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>第三方插件 - Admui 开发文档</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="admui,admui官网,admui框架,通用后台管理系统,后台框架,ui框架" />
+    <meta name="description" content="Admui 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='http://www.admui.com/ie'" />
+    <![endif]-->
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Admui" />
+    <meta name="msapplication-TileImage" content="/portal/assets/img/app/icon-72@x2.png" />
+    <meta name="msapplication-TileColor" content="#395b81" />
+    <link rel="apple-touch-icon-precomposed" href="/portal/assets/img/app/icon-72@x2.png" />
+    <link rel="shortcut icon" href="/portal/assets/img/app/favicon.png" />
+    <meta name="msapplication-TileColor" content="#62a8ea">
+    <script>
+        window.PAGE_TYPE = "ui"
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?cd758c4c82a4964836712308cb782b12";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <link rel="stylesheet" href="/portal/assets/css/page.css">
+</head>
+<body>
+<div id="mobile-bar">
+    <a class="menu-button"></a>
+    <a class="logo" href="../index.html">Admui开发文档</a>
+    <select class="version-select">
+        <option value="basic">基础版</option>
+        <option value="pjax" selected>pjax版</option>
+    </select>
+</div>
+<div id="header">
+    <a id="logo" href="../index.html">
+        <img src="/portal/assets/img/logo.svg"> <span>Admui 开发文档</span>
+    </a>
+    <select class="version-select">
+        <option value="basic">基础版</option>
+        <option value="pjax" selected>pjax版</option>
+    </select>
+    <ul id="nav">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">UI</a>
+</li>
+<li>
+    <a href="../java/index.html" class="nav-link">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+
+    </ul>
+</div>
+
+<div id="main" class="fix-sidebar">
+    
+    
+<div class="sidebar">
+    <ul class="main-menu">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">UI</a>
+</li>
+<li>
+    <a href="../java/index.html" class="nav-link">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+
+    </ul>
+    <div class="list">
+        <ul class="menu-root">
+            
+            <li>
+                <a href="index.html" class="sidebar-link ">基本概述</a>
+            </li>
+            
+            <li>
+                <a href="themes.html" class="sidebar-link ">主题说明</a>
+            </li>
+            
+            <li>
+                <a href="build.html" class="sidebar-link ">构建工具</a>
+            </li>
+            
+            <li>
+                <a href="gui-tools.html" class="sidebar-link ">开发工具</a>
+            </li>
+            
+            <li>
+                <a href="files.html" class="sidebar-link ">入口文件</a>
+            </li>
+            
+            <li>
+                <a href="structure.html" class="sidebar-link ">模板结构</a>
+            </li>
+            
+            <li>
+                <a href="hello-world.html" class="sidebar-link ">Hello world</a>
+            </li>
+            
+            <li>
+                <a href="style.html" class="sidebar-link ">自定义样式</a>
+            </li>
+            
+            <li>
+                <a href="javascript.html" class="sidebar-link ">JS 模块</a>
+            </li>
+            
+            <li>
+                <a href="components.html" class="sidebar-link ">UI 组件</a>
+            </li>
+            
+            <li>
+                <a href="plugins.html" class="sidebar-link current ">第三方插件</a>
+            </li>
+            
+            <li>
+                <a href="icons.html" class="sidebar-link ">字体图标</a>
+            </li>
+            
+            <li>
+                <a href="code-guide.html" class="sidebar-link ">编码规范</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content ui with-sidebar">
+    <h1>第三方插件</h1>
+    <p>在 Admui 中，除了部分自定义的插件外，同时本着不重复制造轮子的原则，我们也整合了大量成熟的，经过验证的第三方插件，在开发过程中，如果有必要，请参考所使用插件的官方api。</p>
+<p>一些插件可能监听了<code>window.onScroll</code>事件，如果页面中使用了<code>.page.page-full</code>，可能会导致这些插件的与滚动条相关的功能失效，如果碰到这种情况，建议不要在<code>.page</code>上使用<code>.page-full</code>。</p>
+<p>对于未使用的插件，建议在项目开发完成后删除。</p>
+<p>以下是我们使用的第三方插件：</p>
+<h2 id="国外插件"><a href="plugins.html#%E5%9B%BD%E5%A4%96%E6%8F%92%E4%BB%B6" class="headerlink" title="国外插件"></a>国外插件</h2><h3 id="ace"><a href="plugins.html#ace" class="headerlink" title="ace"></a>ace</h3><ul>
+<li>版本：1.2.3au</li>
+<li>官网：<a href="https://github.com/ajaxorg/ace-builds/" target="_blank" rel="external">https://github.com/ajaxorg/ace-builds/</a></li>
+<li>许可：BSD</li>
+<li>依赖：无</li>
+<li>DataAPI：<code>data-pulgin=&quot;ace&quot;</code></li>
+<li>功能：基于Web的代码编辑器，实现语法高亮功能</li>
+</ul>
+<h3 id="alertify-js"><a href="plugins.html#alertify-js" class="headerlink" title="alertify.js"></a>alertify.js</h3><ul>
+<li>版本：1.0.10</li>
+<li>文档：<a href="../../bsify/alertify/index.html" target="_blank" rel="external">http://bsify.admui.com/alertify/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：<code>data-pulgin=&quot;alertify&quot;</code></li>
+<li>功能：非侵入式，可定制的通知组件。包括可定制的对话框，和右下角消息弹出框。完全可定制的警告，确认和提示对话框、完全自定义的通知系统、回调参数处理包括“确定“和”取消“按钮的点击、允许对话框排队</li>
+</ul>
+<h3 id="animsition"><a href="plugins.html#animsition" class="headerlink" title="animsition"></a>animsition</h3><ul>
+<li>版本：4.0.1</li>
+<li>官网：<a href="http://blivesta.github.io/animsition/" target="_blank" rel="external">http://blivesta.github.io/animsition/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;animate-list&quot;</code></li>
+<li>功能：为页面切换增加 CSS 动画效果，提供多种不同的动画风格</li>
+</ul>
+<h3 id="blueimp-canvas-to-blob"><a href="plugins.html#blueimp-canvas-to-blob" class="headerlink" title="blueimp-canvas-to-blob"></a>blueimp-canvas-to-blob</h3><ul>
+<li>版本：3.3.0</li>
+<li>官网：<a href="https://github.com/blueimp/JavaScript-Canvas-to-Blob/" target="_blank" rel="external">https://github.com/blueimp/JavaScript-Canvas-to-Blob/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：在HTML元素中创建Blob</li>
+</ul>
+<h3 id="blueimp-file-upload"><a href="plugins.html#blueimp-file-upload" class="headerlink" title="blueimp-file-upload"></a>blueimp-file-upload</h3><ul>
+<li>版本：9.12.3</li>
+<li>官网：<a href="https://github.com/blueimp/jQuery-File-Upload/" target="_blank" rel="external">https://github.com/blueimp/jQuery-File-Upload/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：支持多文件上传、取消、删除，上传前缩略图预览、列表显示图片大小，支持上传进度条显示；支持各种动态语言开发的服务器端</li>
+</ul>
+<h3 id="blueimp-load-image"><a href="plugins.html#blueimp-load-image" class="headerlink" title="blueimp-load-image"></a>blueimp-load-image</h3><ul>
+<li>版本：2.6.1</li>
+<li>官网：<a href="https://github.com/blueimp/JavaScript-Load-Image/" target="_blank" rel="external">https://github.com/blueimp/JavaScript-Load-Image/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：加载和改变图像文件</li>
+</ul>
+<h3 id="blueimp-tmpl"><a href="plugins.html#blueimp-tmpl" class="headerlink" title="blueimp-tmpl"></a>blueimp-tmpl</h3><ul>
+<li>版本：3.4.0</li>
+<li>官网：<a href="https://github.com/blueimp/JavaScript-Templates/" target="_blank" rel="external">https://github.com/blueimp/JavaScript-Templates/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：JS模板</li>
+</ul>
+<h3 id="bootbox-js"><a href="plugins.html#bootbox-js" class="headerlink" title="bootbox.js"></a>bootbox.js</h3><ul>
+<li>版本：4.4.0</li>
+<li>官网：<a href="https://github.com/makeusabrew/bootbox/" target="_blank" rel="external">https://github.com/makeusabrew/bootbox/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;bootbox&quot;</code></li>
+<li>功能：用来创建简单的可编程对话框，基于Bootstrap开发</li>
+</ul>
+<h3 id="bootstrap"><a href="plugins.html#bootstrap" class="headerlink" title="bootstrap"></a>bootstrap</h3><ul>
+<li>版本：3.3.6</li>
+<li>官网：<a href="http://getbootstrap.com" target="_blank" rel="external">http://getbootstrap.com</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：Twitter推出的一个开源的用于前端开发的工具包。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目</li>
+</ul>
+<h3 id="bootstrap-contextmenu"><a href="plugins.html#bootstrap-contextmenu" class="headerlink" title="bootstrap-contextmenu"></a>bootstrap-contextmenu</h3><ul>
+<li>版本：0.3.4</li>
+<li>官网：<a href="http://sydcanem.com/bootstrap-contextmenu/" target="_blank" rel="external">http://sydcanem.com/bootstrap-contextmenu/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：无</li>
+<li>功能：右键上下文菜单</li>
+</ul>
+<h3 id="jquery-colorpicker"><a href="plugins.html#jquery-colorpicker" class="headerlink" title="jquery-colorpicker"></a>jquery-colorpicker</h3><ul>
+<li>版本：2.5.1</li>
+<li>官网：<a href="https://github.com/itsjavi/bootstrap-colorpicker" target="_blank" rel="external">https://github.com/itsjavi/bootstrap-colorpicker</a></li>
+<li>许可：Apache-2.0</li>
+<li>依赖：<a href="plugins.html#jquery">jquery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;colorpicker&quot;</code></li>
+<li>功能：拾色器</li>
+</ul>
+<h3 id="bootstrap-datepicker"><a href="plugins.html#bootstrap-datepicker" class="headerlink" title="bootstrap-datepicker"></a>bootstrap-datepicker</h3><ul>
+<li>版本：1.6.0</li>
+<li>官网：<a href="https://github.com/uxsolutions/bootstrap-datepicker/" target="_blank" rel="external">https://github.com/uxsolutions/bootstrap-datepicker/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;datepicker&quot;</code></li>
+<li>功能：Bootstrap风格日期选择控件。它包括很多选项，方法和事件。并提供国际化支持</li>
+</ul>
+<h3 id="bootstrap-daterangepicker"><a href="plugins.html#bootstrap-daterangepicker" class="headerlink" title="bootstrap-daterangepicker"></a>bootstrap-daterangepicker</h3><ul>
+<li>版本：2.1.24</li>
+<li>官网：<a href="https://github.com/dangrossman/bootstrap-daterangepicker/" target="_blank" rel="external">https://github.com/dangrossman/bootstrap-daterangepicker/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：无</li>
+<li>功能：Bootstrap风格日期范围选择控件。</li>
+</ul>
+<h3 id="bootstrap-hover-dropdown"><a href="plugins.html#bootstrap-hover-dropdown" class="headerlink" title="bootstrap-hover-dropdown"></a>bootstrap-hover-dropdown</h3><ul>
+<li>版本：2.2.1</li>
+<li>官网：<a href="https://github.com/CWSpear/bootstrap-hover-dropdown/" target="_blank" rel="external">https://github.com/CWSpear/bootstrap-hover-dropdown/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：无</li>
+<li>功能：打开Bootstrap下拉菜单</li>
+</ul>
+<h3 id="bootstrap-markdown"><a href="plugins.html#bootstrap-markdown" class="headerlink" title="bootstrap-markdown"></a>bootstrap-markdown</h3><ul>
+<li>版本：2.10.0</li>
+<li>官网：<a href="https://github.com/toopay/bootstrap-markdown/" target="_blank" rel="external">https://github.com/toopay/bootstrap-markdown/</a></li>
+<li>许可：Apache-2.0</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：无</li>
+<li>功能：简单的Markdown编辑器</li>
+</ul>
+<h3 id="bootstrap-maxlength"><a href="plugins.html#bootstrap-maxlength" class="headerlink" title="bootstrap-maxlength"></a>bootstrap-maxlength</h3><ul>
+<li>版本：1.7.0</li>
+<li>官网：<a href="https://github.com/mimo84/bootstrap-maxlength/" target="_blank" rel="external">https://github.com/mimo84/bootstrap-maxlength/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;maxlength&quot;</code></li>
+<li>功能：最大输入字符限制</li>
+</ul>
+<h3 id="bootstrap-select"><a href="plugins.html#bootstrap-select" class="headerlink" title="bootstrap-select"></a>bootstrap-select</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="http://silviomoreto.github.io/bootstrap-select/" target="_blank" rel="external">http://silviomoreto.github.io/bootstrap-select/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;selectpicker&quot;</code></li>
+<li>功能：使用Bootstrap风格美化select</li>
+</ul>
+<h3 id="bootstrap-slider"><a href="plugins.html#bootstrap-slider" class="headerlink" title="bootstrap-slider"></a>bootstrap-slider</h3><ul>
+<li>版本：9.7.2</li>
+<li>官网：<a href="https://github.com/seiyria/bootstrap-slider/" target="_blank" rel="external">https://github.com/seiyria/bootstrap-slider/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;slider&quot;</code></li>
+<li>功能：滑块插件</li>
+</ul>
+<h3 id="bootstrap-sweetalert"><a href="plugins.html#bootstrap-sweetalert" class="headerlink" title="bootstrap-sweetalert"></a>bootstrap-sweetalert</h3><ul>
+<li>版本：0.4.2</li>
+<li>官网：<a href="http://lipis.github.io/bootstrap-sweetalert/" target="_blank" rel="external">http://lipis.github.io/bootstrap-sweetalert/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;sweetalert&quot;</code></li>
+<li>功能：Bootstrap风格的<a href="https://github.com/t4t5/sweetalert" target="_blank" rel="external">SweetAlert</a>插件。</li>
+</ul>
+<h3 id="bootstrap-tagsinput"><a href="plugins.html#bootstrap-tagsinput" class="headerlink" title="bootstrap-tagsinput"></a>bootstrap-tagsinput</h3><ul>
+<li>版本：0.12.1</li>
+<li>官网：<a href="https://github.com/fis-components/bootstrap-tagsinput/" target="_blank" rel="external">https://github.com/fis-components/bootstrap-tagsinput/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;tagsinput&quot;</code></li>
+<li>功能：在输入框中的输入标签</li>
+</ul>
+<h3 id="bootstrap-tokenfield"><a href="plugins.html#bootstrap-tokenfield" class="headerlink" title="bootstrap-tokenfield"></a>bootstrap-tokenfield</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="https://github.com/sliptree/bootstrap-tokenfield" target="_blank" rel="external">https://github.com/sliptree/bootstrap-tokenfield</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;tokenfield&quot;</code></li>
+<li>功能：Bootstrap标签输入</li>
+</ul>
+<h3 id="bootstrap-touchspin"><a href="plugins.html#bootstrap-touchspin" class="headerlink" title="bootstrap-touchspin"></a>bootstrap-touchspin</h3><ul>
+<li>版本：3.1.1</li>
+<li>官网：<a href="http://www.virtuosoft.eu/code/bootstrap-touchspin/" target="_blank" rel="external">http://www.virtuosoft.eu/code/bootstrap-touchspin/</a></li>
+<li>许可：Apache-2.0</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;TouchSpin&quot;</code></li>
+<li>功能：Spinner插件，对移动端和触摸屏友好</li>
+</ul>
+<h3 id="bootstrap-treeview"><a href="plugins.html#bootstrap-treeview" class="headerlink" title="bootstrap-treeview"></a>bootstrap-treeview</h3><ul>
+<li>版本：1.2.0</li>
+<li>官网：<a href="https://github.com/jonmiles/bootstrap-treeview/" target="_blank" rel="external">https://github.com/jonmiles/bootstrap-treeview/</a></li>
+<li>许可：Apache</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：无</li>
+<li>功能：显示树状结构</li>
+</ul>
+<h3 id="breakpoints-js"><a href="plugins.html#breakpoints-js" class="headerlink" title="breakpoints.js"></a>breakpoints.js</h3><ul>
+<li>版本：0.4.2</li>
+<li>官网：<a href="https://github.com/amazingSurge/breakpoints.js/" target="_blank" rel="external">https://github.com/amazingSurge/breakpoints.js/</a></li>
+<li>许可：GPL</li>
+<li>依赖：<a href="plugins.html#jquery">jQuerys</a></li>
+<li>DataAPI：无</li>
+<li>功能：用于响应式布局设置断点</li>
+</ul>
+<h3 id="c3"><a href="plugins.html#c3" class="headerlink" title="c3"></a>c3</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="http://c3js.org/" target="_blank" rel="external">http://c3js.org/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：开源图表库，使用非常舒服、充分可定制性和控制性。支持多种图表类型</li>
+</ul>
+<h3 id="card"><a href="plugins.html#card" class="headerlink" title="card"></a>card</h3><ul>
+<li>版本：1.2.2</li>
+<li>官网：<a href="https://github.com/jessepollak/card/" target="_blank" rel="external">https://github.com/jessepollak/card/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：<code>data-pulgin=&quot;card&quot;</code></li>
+<li>功能：信用卡信息输入</li>
+</ul>
+<h3 id="chart-js"><a href="plugins.html#chart-js" class="headerlink" title="chart.js"></a>chart.js</h3><ul>
+<li>版本：1.0.2</li>
+<li>官网：<a href="http://www.chartjs.org/" target="_blank" rel="external">http://www.chartjs.org/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：使用 HTML5 Canvas 元素的Javascript图表库，支持6种统计图表</li>
+</ul>
+<h3 id="chartist"><a href="plugins.html#chartist" class="headerlink" title="chartist"></a>chartist</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="https://gionkunz.github.io/chartist-js/" target="_blank" rel="external">https://gionkunz.github.io/chartist-js/</a></li>
+<li>许可：WTFPL</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：简单的响应式图表</li>
+</ul>
+<h3 id="chartist-plugin-tooltip"><a href="plugins.html#chartist-plugin-tooltip" class="headerlink" title="chartist-plugin-tooltip"></a>chartist-plugin-tooltip</h3><ul>
+<li>版本：0.0.12</li>
+<li>官网：<a href="https://github.com/Globegitter/chartist-plugin-tooltip/" target="_blank" rel="external">https://github.com/Globegitter/chartist-plugin-tooltip/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#chartist">Chartist</a></li>
+<li>DataAPI：无</li>
+<li>功能：Chartist Tooltip</li>
+</ul>
+<h3 id="clockpicker"><a href="plugins.html#clockpicker" class="headerlink" title="clockpicker"></a>clockpicker</h3><ul>
+<li>版本：0.0.7</li>
+<li>官网：<a href="http://weareoutman.github.io/clockpicker/" target="_blank" rel="external">http://weareoutman.github.io/clockpicker/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;clockpicker&quot;</code></li>
+<li>功能：时钟风格的时间选择器</li>
+</ul>
+<h3 id="codemirror"><a href="plugins.html#codemirror" class="headerlink" title="codemirror"></a>codemirror</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="http://codemirror.net/" target="_blank" rel="external">http://codemirror.net/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：在线代码编辑器</li>
+</ul>
+<h3 id="cropper"><a href="plugins.html#cropper" class="headerlink" title="cropper"></a>cropper</h3><ul>
+<li>版本：2.3.0</li>
+<li>官网：<a href="https://github.com/fengyuanchen/cropper/" target="_blank" rel="external">https://github.com/fengyuanchen/cropper/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：图像裁剪插件，提供预览功能和一些选项</li>
+</ul>
+<h3 id="d3"><a href="plugins.html#d3" class="headerlink" title="d3"></a>d3</h3><ul>
+<li>版本：3.5.16</li>
+<li>官网：<a href="http://d3js.org/" target="_blank" rel="external">http://d3js.org/</a></li>
+<li>许可：BSD-3-Clause</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：最流行的可视化库之一，它允许绑定任意数据到DOM，然后将数据驱动转换应用到Document中。您可以使用它用一个数组创建基本的HTML表格，或是利用它的流体过度和交互，用相似的数据创建惊人的SVG条形图</li>
+</ul>
+<h3 id="datatables"><a href="plugins.html#datatables" class="headerlink" title="datatables"></a>datatables</h3><ul>
+<li>版本：1.10.12</li>
+<li>官网：<a href="http://datatables.net/" target="_blank" rel="external">http://datatables.net/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;dataTable&quot;</code></li>
+<li>功能：表格插件。这是一个高度灵活的工具，依据的基础逐步增强，这将增加先进的互动控制，支持任何HTML表格</li>
+</ul>
+<h3 id="datatables-bootstrap"><a href="plugins.html#datatables-bootstrap" class="headerlink" title="datatables-bootstrap"></a>datatables-bootstrap</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="https://github.com/DataTables/Plugins/" target="_blank" rel="external">https://github.com/DataTables/Plugins/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#datatables">Datatables</a>，<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：无</li>
+<li>功能：Datatables Bootstrap 插件</li>
+</ul>
+<h3 id="datatables-buttons"><a href="plugins.html#datatables-buttons" class="headerlink" title="datatables-buttons"></a>datatables-buttons</h3><ul>
+<li>版本：1.2.4</li>
+<li>官网：<a href="http://datatables.net/" target="_blank" rel="external">http://datatables.net/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#datatables">Datatables</a>，<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：无</li>
+<li>功能：Datatables Bootstrap</li>
+</ul>
+<h3 id="datatables-fixedheader"><a href="plugins.html#datatables-fixedheader" class="headerlink" title="datatables-fixedheader"></a>datatables-fixedheader</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="https://github.com/DataTables/Responsive/" target="_blank" rel="external">https://github.com/DataTables/Responsive/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#datatables">Datatables</a></li>
+<li>DataAPI：无</li>
+<li>功能：Datatables固定表头</li>
+</ul>
+<h3 id="datatables-responsive"><a href="plugins.html#datatables-responsive" class="headerlink" title="datatables-responsive"></a>datatables-responsive</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="https://github.com/DataTables/Responsive/" target="_blank" rel="external">https://github.com/DataTables/Responsive/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#datatables">Datatables</a></li>
+<li>DataAPI：无</li>
+<li>功能：Datatables响应式设计</li>
+</ul>
+<h3 id="datepair-js"><a href="plugins.html#datepair-js" class="headerlink" title="datepair.js"></a>datepair.js</h3><ul>
+<li>版本：0.4.14</li>
+<li>官网：<a href="http://jonthornton.github.com/Datepair.js/" target="_blank" rel="external">http://jonthornton.github.com/Datepair.js/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;datepair&quot;</code></li>
+<li>功能：日期时间选择</li>
+</ul>
+<h3 id="draggabilly"><a href="plugins.html#draggabilly" class="headerlink" title="draggabilly"></a>draggabilly</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="http://draggabilly.desandro.com/" target="_blank" rel="external">http://draggabilly.desandro.com/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：实现网页上各种元素的拖放操作，支持IE8+和多点触控</li>
+</ul>
+<h3 id="dropify"><a href="plugins.html#dropify" class="headerlink" title="dropify"></a>dropify</h3><ul>
+<li>版本：0.2.0</li>
+<li>官网：<a href="http://jeremyfagis.github.io/dropify/" target="_blank" rel="external">http://jeremyfagis.github.io/dropify/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;dropify&quot;</code></li>
+<li>功能：自定义HTML输入文件风格</li>
+</ul>
+<h3 id="flag-icon-css"><a href="plugins.html#flag-icon-css" class="headerlink" title="flag-icon-css"></a>flag-icon-css</h3><ul>
+<li>版本：0.7.1</li>
+<li>官网：<a href="http://lipis.github.io/flag-icon-css/" target="_blank" rel="external">http://lipis.github.io/flag-icon-css/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：svg国旗集合</li>
+</ul>
+<h3 id="Flot"><a href="plugins.html#Flot" class="headerlink" title="Flot"></a>Flot</h3><ul>
+<li>版本：0.8.3</li>
+<li>官网：<a href="http://www.flotcharts.org/" target="_blank" rel="external">http://www.flotcharts.org/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：图表绘制</li>
+</ul>
+<h3 id="Fontawesome-iconpicker"><a href="plugins.html#Fontawesome-iconpicker" class="headerlink" title="Fontawesome-iconpicker"></a>Fontawesome-iconpicker</h3><ul>
+<li>版本：1.2.0</li>
+<li>官网：<a href="https://github.com/mjolnic/fontawesome-iconpicker/" target="_blank" rel="external">https://github.com/mjolnic/fontawesome-iconpicker/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;iconpicker&quot;</code></li>
+<li>功能：字体图标选择器</li>
+</ul>
+<h3 id="formatter-js"><a href="plugins.html#formatter-js" class="headerlink" title="formatter.js"></a>formatter.js</h3><ul>
+<li>版本：0.1.5</li>
+<li>官网：<a href="https://github.com/firstopinion/formatter.js/" target="_blank" rel="external">https://github.com/firstopinion/formatter.js/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：<code>data-pulgin=&quot;formatter&quot;</code></li>
+<li>功能：输入框文本格式化</li>
+</ul>
+<h3 id="formvalidation"><a href="plugins.html#formvalidation" class="headerlink" title="formvalidation"></a>formvalidation</h3><ul>
+<li>版本：0.6.2-dev</li>
+<li>官网：<a href="http://formvalidation.io/" target="_blank" rel="external">http://formvalidation.io/</a></li>
+<li>许可：commercial license</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;formValidation&quot;</code></li>
+<li>功能：表单验证</li>
+</ul>
+<h3 id="fullcalendar"><a href="plugins.html#fullcalendar" class="headerlink" title="fullcalendar"></a>fullcalendar</h3><ul>
+<li>版本：2.6.1</li>
+<li>官网：<a href="http://fullcalendar.io/" target="_blank" rel="external">http://fullcalendar.io/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：制作日程表或计划安排等，可扩展Google日历功能，制作个性化的日程表，同时可绑定点击事件或拖动事件</li>
+</ul>
+<h3 id="gauge-js"><a href="plugins.html#gauge-js" class="headerlink" title="gauge.js"></a>gauge.js</h3><ul>
+<li>版本：1.2.1</li>
+<li>官网：<a href="http://bernii.github.io/gauge.js/" target="_blank" rel="external">http://bernii.github.io/gauge.js/</a></li>
+<li>许可：commercial license</li>
+<li>依赖：无</li>
+<li>DataAPI：<code>data-pulgin=&quot;gauge&quot;</code></li>
+<li>功能：仪表盘</li>
+</ul>
+<h3 id="gridstack"><a href="plugins.html#gridstack" class="headerlink" title="gridstack"></a>gridstack</h3><ul>
+<li>版本：0.2.5</li>
+<li>官网：<a href="http://troolee.github.io/gridstack.js/" target="_blank" rel="external">http://troolee.github.io/gridstack.js/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;gridstack&quot;</code></li>
+<li>功能：部件布局</li>
+</ul>
+<h3 id="highlight-js"><a href="plugins.html#highlight-js" class="headerlink" title="highlight.js"></a>highlight.js</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="https://github.com/isagalaev/highlight.js/" target="_blank" rel="external">https://github.com/isagalaev/highlight.js/</a></li>
+<li>许可：BSD</li>
+<li>依赖：无</li>
+<li>DataAPI：<code>data-pulgin=&quot;highlight&quot;</code></li>
+<li>功能：高亮显示各种示例源代码语法</li>
+</ul>
+<h3 id="html5shiv"><a href="plugins.html#html5shiv" class="headerlink" title="html5shiv"></a>html5shiv</h3><ul>
+<li>版本：3.7.3</li>
+<li>官网：<a href="https://github.com/aFarkas/html5shiv/" target="_blank" rel="external">https://github.com/aFarkas/html5shiv/</a></li>
+<li>许可：MIT/GPL2</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：让IE9以下的浏览器能识别HTML5元素</li>
+</ul>
+<h3 id="html-sortable"><a href="plugins.html#html-sortable" class="headerlink" title="html.sortable"></a>html.sortable</h3><ul>
+<li>版本：0.3.1</li>
+<li>官网：<a href="https://github.com/voidberg/html5sortable/" target="_blank" rel="external">https://github.com/voidberg/html5sortable/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：<code>data-pulgin=&quot;sortable&quot;</code></li>
+<li>功能：元素拖拽排序</li>
+</ul>
+<h3 id="iCheck"><a href="plugins.html#iCheck" class="headerlink" title="iCheck"></a>iCheck</h3><ul>
+<li>版本：1.0.2</li>
+<li>官网：<a href="http://fronteed.com/iCheck/" target="_blank" rel="external">http://fronteed.com/iCheck/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;iCheck&quot;</code></li>
+<li>功能：提供风格一致checkbox，radio外观，回调和方法可以用来方便地处理修改和自定义输入</li>
+</ul>
+<h3 id="intro-js"><a href="plugins.html#intro-js" class="headerlink" title="intro.js"></a>intro.js</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="http://usablica.github.com/intro.js/" target="_blank" rel="external">http://usablica.github.com/intro.js/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：非常好用的网站新特性介绍和详细用户向导框架</li>
+</ul>
+<h3 id="isotope"><a href="plugins.html#isotope" class="headerlink" title="isotope"></a>isotope</h3><ul>
+<li>版本：2.2.2</li>
+<li>官网：<a href="http://isotope.metafizzy.co/" target="_blank" rel="external">http://isotope.metafizzy.co/</a></li>
+<li>许可：Commercial license</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;isotope&quot;</code></li>
+<li>功能：创建动态和智能布局，隐藏和显示与过滤项目，重新排序和整理甚至更多。同时Isotope还有许多很酷的动画</li>
+</ul>
+<h3 id="jquery"><a href="plugins.html#jquery" class="headerlink" title="jquery"></a>jquery</h3><ul>
+<li>版本：2.1.4</li>
+<li>官网：<a href="http://jquery.com/" target="_blank" rel="external">http://jquery.com/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：jQuery是一个优秀的Javascrīpt框架。</li>
+</ul>
+<h3 id="jquery-appear"><a href="plugins.html#jquery-appear" class="headerlink" title="jquery-appear"></a>jquery-appear</h3><ul>
+<li>版本：0.3.6</li>
+<li>官网：<a href="https://github.com/morr/jquery.appear/" target="_blank" rel="external">https://github.com/morr/jquery.appear/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;appear&quot;</code></li>
+<li>功能：在浏览器窗口中跟踪元素外观</li>
+</ul>
+<h3 id="jquery-cookie"><a href="plugins.html#jquery-cookie" class="headerlink" title="jquery-cookie"></a>jquery-cookie</h3><ul>
+<li>版本：1.4.1</li>
+<li>官网：<a href="https://github.com/carhartl/jquery-cookie" target="_blank" rel="external">https://github.com/carhartl/jquery-cookie</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：jQuery cookie插件</li>
+</ul>
+<h3 id="jquery-asHoverScroll"><a href="plugins.html#jquery-asHoverScroll" class="headerlink" title="jquery-asHoverScroll"></a>jquery-asHoverScroll</h3><ul>
+<li>版本：0.2.3</li>
+<li>官网：<a href="https://github.com/amazingSurge/jquery-asHoverScroll/" target="_blank" rel="external">https://github.com/amazingSurge/jquery-asHoverScroll/</a></li>
+<li>许可：GPL</li>
+<li>依赖：<a href="plugins.html#jquery">jQuerys</a></li>
+<li>DataAPI：无</li>
+<li>功能：鼠标移入容器元素时滚动</li>
+</ul>
+<h3 id="jquery-asScroll"><a href="plugins.html#jquery-asScroll" class="headerlink" title="jquery-asScroll"></a>jquery-asScroll</h3><ul>
+<li>版本：0.1.1</li>
+<li>官网：<a href="https://github.com/amazingSurge/jquery-asScroll/" target="_blank" rel="external">https://github.com/amazingSurge/jquery-asScroll/</a></li>
+<li>许可：GPL</li>
+<li>依赖：<a href="plugins.html#jquery">jQuerys</a></li>
+<li>DataAPI：无</li>
+<li>功能：滚动条美化</li>
+</ul>
+<h3 id="jquery-asScrollable"><a href="plugins.html#jquery-asScrollable" class="headerlink" title="jquery-asScrollable"></a>jquery-asScrollable</h3><ul>
+<li>版本：0.3.1</li>
+<li>官网：<a href="https://github.com/amazingSurge/jquery-asScrollable/" target="_blank" rel="external">https://github.com/amazingSurge/jquery-asScrollable/</a></li>
+<li>许可：GPL</li>
+<li>依赖：<a href="plugins.html#jquery">jQuerys</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;scrollable&quot;</code></li>
+<li>功能：块级元素滚动</li>
+</ul>
+<h3 id="jquery-pjax"><a href="plugins.html#jquery-pjax" class="headerlink" title="jquery-pjax"></a>jquery-pjax</h3><ul>
+<li>版本：0.4.2</li>
+<li>文档：<a href="../../bsify/jquery-pjax/index.html" target="_blank" rel="external">http://bsify.admui.com/jquery-pjax/</a></li>
+<li>许可：GPL</li>
+<li>依赖：<a href="plugins.html#jquery">jQuerys</a></li>
+<li>DataAPI：无</li>
+<li>功能：Pjax插件</li>
+</ul>
+<h3 id="jquery-selective"><a href="plugins.html#jquery-selective" class="headerlink" title="jquery-selective"></a>jquery-selective</h3><ul>
+<li>版本：0.1.0</li>
+<li>官网：<a href="https://github.com/amazingSurge/jquery-selective/" target="_blank" rel="external">https://github.com/amazingSurge/jquery-selective/</a></li>
+<li>许可：GPL</li>
+<li>依赖：<a href="plugins.html#jquery">jQuerys</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;selective&quot;</code></li>
+<li>功能：用来标记，选择等</li>
+</ul>
+<h3 id="jquery-strength"><a href="plugins.html#jquery-strength" class="headerlink" title="jquery-strength"></a>jquery-strength</h3><ul>
+<li>版本：0.1.1</li>
+<li>官网：<a href="https://github.com/amazingSurge/jquery-strength/" target="_blank" rel="external">https://github.com/amazingSurge/jquery-strength/</a></li>
+<li>许可：GPL</li>
+<li>依赖：<a href="plugins.html#jquery">jQuerys</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;strength&quot;</code></li>
+<li>功能：密码强度验证</li>
+</ul>
+<h3 id="jquery-treegrid"><a href="plugins.html#jquery-treegrid" class="headerlink" title="jquery-treegrid"></a>jquery-treegrid</h3><ul>
+<li>版本：0.3.0</li>
+<li>官网：<a href="https://github.com/maxazan/jquery-treegrid/" target="_blank" rel="external">https://github.com/maxazan/jquery-treegrid/</a></li>
+<li>许可：GPL</li>
+<li>依赖：<a href="plugins.html#jquery">jQuerys</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;treegrid&quot;</code></li>
+<li>功能：密码强度验证</li>
+</ul>
+<h3 id="jquery-wizard-js"><a href="plugins.html#jquery-wizard-js" class="headerlink" title="jquery-wizard.js"></a>jquery-wizard.js</h3><ul>
+<li>版本：0.3.1</li>
+<li>官网：<a href="https://github.com/amazingSurge/jquery-wizard/" target="_blank" rel="external">https://github.com/amazingSurge/jquery-wizard/</a></li>
+<li>许可：GPL</li>
+<li>依赖：<a href="plugins.html#jquery">jQuerys</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;wizard&quot;</code></li>
+<li>功能：向导插件</li>
+</ul>
+<h3 id="jstree"><a href="plugins.html#jstree" class="headerlink" title="jstree"></a>jstree</h3><ul>
+<li>版本：3.3.3</li>
+<li>官网：<a href="https://www.jstree.com/" target="_blank" rel="external">https://www.jstree.com/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuerys</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;jstree&quot;</code></li>
+<li>功能：jQuery 树形控件</li>
+</ul>
+<h3 id="jszip"><a href="plugins.html#jszip" class="headerlink" title="jszip"></a>jszip</h3><ul>
+<li>版本：3.1.3</li>
+<li>官网：<a href="http://stuartk.com/jszip" target="_blank" rel="external">http://stuartk.com/jszip</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：直接在浏览器上创建 zip 压缩文档</li>
+</ul>
+<h3 id="jquery-slidePanel"><a href="plugins.html#jquery-slidePanel" class="headerlink" title="jquery-slidePanel"></a>jquery-slidePanel</h3><ul>
+<li>版本：0.2.2</li>
+<li>官网：<a href="https://github.com/amazingSurge/jquery-slidePanel/" target="_blank" rel="external">https://github.com/amazingSurge/jquery-slidePanel/</a></li>
+<li>许可：GPL</li>
+<li>依赖：<a href="plugins.html#jquery">jQuerys</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;slidePanel&quot;</code></li>
+<li>功能：侧边栏</li>
+</ul>
+<h3 id="jquery-Knob"><a href="plugins.html#jquery-Knob" class="headerlink" title="jquery-Knob"></a>jquery-Knob</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="https://github.com/aterrien/jQuery-Knob/" target="_blank" rel="external">https://github.com/aterrien/jQuery-Knob/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;knob&quot;</code></li>
+<li>功能：旋钮插件</li>
+</ul>
+<h3 id="jquery-labelauty"><a href="plugins.html#jquery-labelauty" class="headerlink" title="jquery-labelauty"></a>jquery-labelauty</h3><ul>
+<li>版本：1.1.0</li>
+<li>官网：<a href="https://github.com/fntneves/jquery-labelauty/" target="_blank" rel="external">https://github.com/fntneves/jquery-labelauty/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;labelauty&quot;</code></li>
+<li>功能：美化多选框和单选按钮，允许为每个选项输入状态定制标签</li>
+</ul>
+<h3 id="jquery-ui"><a href="plugins.html#jquery-ui" class="headerlink" title="jquery-ui"></a>jquery-ui</h3><ul>
+<li>版本：1.11.4</li>
+<li>官网：<a href="http://jqueryui.com/" target="_blank" rel="external">http://jqueryui.com/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：一套jQuery的页面UI插件，包含很多种常用的页面控件</li>
+</ul>
+<h3 id="jquery-wizard"><a href="plugins.html#jquery-wizard" class="headerlink" title="jquery-wizard"></a>jquery-wizard</h3><ul>
+<li>版本：0.3.1</li>
+<li>官网：<a href="https://github.com/amazingSurge/jquery-wizard/" target="_blank" rel="external">https://github.com/amazingSurge/jquery-wizard/</a></li>
+<li>许可：GPL</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：jQuery 向导插件</li>
+</ul>
+<h3 id="jt-timepicker"><a href="plugins.html#jt-timepicker" class="headerlink" title="jt.timepicker"></a>jt.timepicker</h3><ul>
+<li>版本：1.8.11</li>
+<li>官网：<a href="http://jonthornton.github.com/jquery-timepicker/" target="_blank" rel="external">http://jonthornton.github.com/jquery-timepicker/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;timepicker&quot;</code></li>
+<li>功能：时间选择器</li>
+</ul>
+<h3 id="ladda-bootstrap"><a href="plugins.html#ladda-bootstrap" class="headerlink" title="ladda-bootstrap"></a>ladda-bootstrap</h3><ul>
+<li>版本：0.1.0</li>
+<li>官网：<a href="http://msurguy.github.io/ladda-bootstrap/" target="_blank" rel="external">http://msurguy.github.io/ladda-bootstrap/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;ladda&quot;</code></li>
+<li>功能：Ladda UI</li>
+</ul>
+<h3 id="layout-grid"><a href="plugins.html#layout-grid" class="headerlink" title="layout-grid"></a>layout-grid</h3><ul>
+<li>版本：0.1.0</li>
+<li>官网：<a href="http://clippings.github.io/layout-grid/" target="_blank" rel="external">http://clippings.github.io/layout-grid/</a></li>
+<li>许可：BSD-3-Clause</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：响应式栅格系统，当浏览器窗口发生变化时会重新排列</li>
+</ul>
+<h3 id="lodash"><a href="plugins.html#lodash" class="headerlink" title="lodash"></a>lodash</h3><ul>
+<li>版本：4.11.1</li>
+<li>官网：<a href="https://lodash.com/" target="_blank" rel="external">https://lodash.com/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：提供一致性，模块化，性能和配件等功能</li>
+</ul>
+<h3 id="magnific-popup"><a href="plugins.html#magnific-popup" class="headerlink" title="magnific-popup"></a>magnific-popup</h3><ul>
+<li>版本：1.1.0</li>
+<li>官网：<a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank" rel="external">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;magnificPopup&quot;</code></li>
+<li>功能：响应式弹出层和对话框组件，专注于性能，为用户在各种平台下提供良好的体验</li>
+</ul>
+<h3 id="marked"><a href="plugins.html#marked" class="headerlink" title="marked"></a>marked</h3><ul>
+<li>版本：0.3.4</li>
+<li>官网：<a href="https://github.com/chjj/marked/" target="_blank" rel="external">https://github.com/chjj/marked/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：全功能Markdown解析和编译器</li>
+</ul>
+<h3 id="masonry"><a href="plugins.html#masonry" class="headerlink" title="masonry"></a>masonry</h3><ul>
+<li>版本：3.3.2</li>
+<li>官网：<a href="http://masonry.desandro.com/" target="_blank" rel="external">http://masonry.desandro.com/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;masonry&quot;</code></li>
+<li>功能：瀑布流布局</li>
+</ul>
+<h3 id="media-match"><a href="plugins.html#media-match" class="headerlink" title="media-match"></a>media-match</h3><ul>
+<li>版本：0.1.0</li>
+<li>官网：<a href="https://github.com/weblinc/media-match/" target="_blank" rel="external">https://github.com/weblinc/media-match/</a></li>
+<li>许可：MIT</li>
+<li>DataAPI：无</li>
+<li>功能：通过JS测试CSS3媒体查询</li>
+</ul>
+<h3 id="matchHeight"><a href="plugins.html#matchHeight" class="headerlink" title="matchHeight"></a>matchHeight</h3><ul>
+<li>版本：0.7.0</li>
+<li>官网：<a href="https://github.com/liabru/jquery-match-height/" target="_blank" rel="external">https://github.com/liabru/jquery-match-height/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;matchHeight&quot;</code></li>
+<li>功能：响应式等高。它能根据选中的元素等高显示</li>
+</ul>
+<h3 id="modernizr"><a href="plugins.html#modernizr" class="headerlink" title="modernizr"></a>modernizr</h3><ul>
+<li>版本：3.3.1</li>
+<li>官网：<a href="http://modernizr.com/" target="_blank" rel="external">http://modernizr.com/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：利用JS来检测浏览器对CSS支持情况</li>
+</ul>
+<h3 id="moment"><a href="plugins.html#moment" class="headerlink" title="moment"></a>moment</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="http://momentjs.com/" target="_blank" rel="external">http://momentjs.com/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：日期处理类库，提供了日期格式化、日期解析等功能。它支持在浏览器和NodeJS两种环境中运行。此类库能够将给定的任意日期转换成多种不同的格式，具有强大的日期计算功能，同时也内置了能显示多样的日期形式的函数。另外，它也支持多种语言</li>
+</ul>
+<h3 id="morris-js"><a href="plugins.html#morris-js" class="headerlink" title="morris.js"></a>morris.js</h3><ul>
+<li>版本：0.5.1</li>
+<li>官网：<a href="http://morrisjs.github.com/morris.js/" target="_blank" rel="external">http://morrisjs.github.com/morris.js/</a></li>
+<li>许可：BSD-2-Clause</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：生成各种时序图</li>
+</ul>
+<h3 id="multiselect"><a href="plugins.html#multiselect" class="headerlink" title="multiselect"></a>multiselect</h3><ul>
+<li>版本：0.9.12</li>
+<li><p>官网：<a href="http://loudev.com/" target="_blank" rel="external">http://loudev.com/</a></p>
+</li>
+<li><p>许可：WTFPL</p>
+</li>
+<li>DataAPI：<code>data-pulgin=&quot;multiSelect&quot;</code></li>
+<li>功能：Select对象列表，支持查询列表内容，支持排序，全选和反选</li>
+</ul>
+<h3 id="nestable2"><a href="plugins.html#nestable2" class="headerlink" title="nestable2"></a>nestable2</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="https://github.com/RamonSmit/Nestable/" target="_blank" rel="external">https://github.com/RamonSmit/Nestable/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;nestable&quot;</code></li>
+<li>功能：可拖拽树状结构</li>
+</ul>
+<h3 id="nprogress"><a href="plugins.html#nprogress" class="headerlink" title="nprogress"></a>nprogress</h3><ul>
+<li>版本：0.2.0</li>
+<li>官网：<a href="http://ricostacruz.com/nprogress/" target="_blank" rel="external">http://ricostacruz.com/nprogress/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;nprogress&quot;</code></li>
+<li>功能：实现全站进度条</li>
+</ul>
+<h3 id="owl-carousel"><a href="plugins.html#owl-carousel" class="headerlink" title="owl.carousel"></a>owl.carousel</h3><ul>
+<li>版本：2.0.0-beta.3</li>
+<li>官网：<a href="https://github.com/smashingboxes/OwlCarousel2/" target="_blank" rel="external">https://github.com/smashingboxes/OwlCarousel2/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;owlCarousel&quot;</code></li>
+<li>功能：响应式幻灯片插件</li>
+</ul>
+<h3 id="peity"><a href="plugins.html#peity" class="headerlink" title="peity"></a>peity</h3><ul>
+<li>版本：3.2.0</li>
+<li>官网：<a href="https://github.com/benpickles/peity/" target="_blank" rel="external">https://github.com/benpickles/peity/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;peityBar&quot;</code></li>
+<li>功能：转换一些元素内容到简单的画布对象，如饼图、线图和柱状图</li>
+</ul>
+<h3 id="plyr"><a href="plugins.html#plyr" class="headerlink" title="plyr"></a>plyr</h3><ul>
+<li>版本：1.5.21</li>
+<li>官网：<a href="http://plyr.io/" target="_blank" rel="external">http://plyr.io/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：<code>data-pulgin=&quot;plyr&quot;</code></li>
+<li>功能：使用HTML5开发的基于浏览器上的多媒体播放器</li>
+</ul>
+<h3 id="raphael"><a href="plugins.html#raphael" class="headerlink" title="raphael"></a>raphael</h3><ul>
+<li>版本：2.1.4</li>
+<li>官网：<a href="https://github.com/DmitryBaranovskiy/raphael/" target="_blank" rel="external">https://github.com/DmitryBaranovskiy/raphael/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：强大的矢量图形库</li>
+</ul>
+<h3 id="raty"><a href="plugins.html#raty" class="headerlink" title="raty"></a>raty</h3><ul>
+<li>版本：2.7.0</li>
+<li>官网：<a href="https://github.com/wbotelhos/raty/" target="_blank" rel="external">https://github.com/wbotelhos/raty/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;rating&quot;</code></li>
+<li>功能：星级评分</li>
+</ul>
+<h3 id="respond"><a href="plugins.html#respond" class="headerlink" title="respond"></a>respond</h3><ul>
+<li>版本：1.4.2</li>
+<li>官网：<a href="https://github.com/scottjehl/Respond/" target="_blank" rel="external">https://github.com/scottjehl/Respond/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：快速、轻量的polyfill，用于为IE6-8以及其它不支持 CSS3 Media Queries 的浏览器提供媒体查询的 min-width 和 max-width 特性，实现响应式网页设计</li>
+</ul>
+<h3 id="rickshaw"><a href="plugins.html#rickshaw" class="headerlink" title="rickshaw"></a>rickshaw</h3><ul>
+<li>版本：1.6.0-rc.0</li>
+<li>官网：<a href="https://github.com/shutterstock/rickshaw/" target="_blank" rel="external">https://github.com/shutterstock/rickshaw/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：绘制时序图</li>
+</ul>
+<h3 id="screenfull"><a href="plugins.html#screenfull" class="headerlink" title="screenfull"></a>screenfull</h3><ul>
+<li>版本：3.0.0</li>
+<li>官网：<a href="https://github.com/sindresorhus/screenfull.js/" target="_blank" rel="external">https://github.com/sindresorhus/screenfull.js/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：简单的跨平台的全屏API封装。它使不同浏览器的全屏实现变得很平滑。而且可以让任何元素全屏</li>
+</ul>
+<h3 id="select2"><a href="plugins.html#select2" class="headerlink" title="select2"></a>select2</h3><ul>
+<li>版本：4.0.2</li>
+<li>官网：<a href="https://select2.github.io/" target="_blank" rel="external">https://select2.github.io/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：<code>data-pulgin=&quot;select2&quot;</code></li>
+<li>功能：Select美化。支持搜索，远程数据集，以及无限滚动的结果</li>
+</ul>
+<h3 id="skycons"><a href="plugins.html#skycons" class="headerlink" title="skycons"></a>skycons</h3><ul>
+<li>版本：稳定版</li>
+<li>官网：<a href="http://darkskyapp.github.io/skycons/" target="_blank" rel="external">http://darkskyapp.github.io/skycons/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：天气动画图标</li>
+</ul>
+<h3 id="slick-carousel"><a href="plugins.html#slick-carousel" class="headerlink" title="slick-carousel"></a>slick-carousel</h3><ul>
+<li>版本：1.5.9</li>
+<li>官网：<a href="http://kenwheeler.github.io/slick/" target="_blank" rel="external">http://kenwheeler.github.io/slick/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：响应式可左右拖动的幻灯片插件</li>
+</ul>
+<h3 id="jquery-sparkline"><a href="plugins.html#jquery-sparkline" class="headerlink" title="jquery.sparkline"></a>jquery.sparkline</h3><ul>
+<li>版本：2.1.2</li>
+<li>官网：<a href="http://omnipotent.net/jquery.sparkline/" target="_blank" rel="external">http://omnipotent.net/jquery.sparkline/</a></li>
+<li>许可：BSD-3-Clause</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：生成静态或动态波谱图表</li>
+</ul>
+<h3 id="summernote"><a href="plugins.html#summernote" class="headerlink" title="summernote"></a>summernote</h3><ul>
+<li>版本：0.6.3</li>
+<li>官网：<a href="http://summernote.org/" target="_blank" rel="external">http://summernote.org/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;summernote&quot;</code></li>
+<li>功能：生简单灵活的所见即所得的HTML在线编辑器</li>
+</ul>
+<h3 id="slimScroll"><a href="plugins.html#slimScroll" class="headerlink" title="slimScroll"></a>slimScroll</h3><ul>
+<li>版本：1.3.8</li>
+<li>官网：<a href="https://github.com/rochal/jQuery-slimScroll/" target="_blank" rel="external">https://github.com/rochal/jQuery-slimScroll/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;slimScroll&quot;</code></li>
+<li>功能：滚动条美化插件</li>
+</ul>
+<h3 id="switchery"><a href="plugins.html#switchery" class="headerlink" title="switchery"></a>switchery</h3><ul>
+<li>版本：0.8.1</li>
+<li>官网：<a href="http://abpetkov.github.io/switchery/" target="_blank" rel="external">http://abpetkov.github.io/switchery/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;switchery&quot;</code></li>
+<li>功能：ios7 风格的复选框按钮</li>
+</ul>
+<h3 id="timecircles"><a href="plugins.html#timecircles" class="headerlink" title="timecircles"></a>timecircles</h3><ul>
+<li>版本：1.5.3</li>
+<li>官网：<a href="http://git.wimbarelds.nl/TimeCircles/" target="_blank" rel="external">http://git.wimbarelds.nl/TimeCircles/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：时间类插件，它能够制作出一个漂亮环的形时间，可用于计时或倒计时</li>
+</ul>
+<h3 id="to-markdown"><a href="plugins.html#to-markdown" class="headerlink" title="to-markdown"></a>to-markdown</h3><ul>
+<li>版本：3.0.0</li>
+<li>官网：<a href="https://github.com/domchristie/to-markdown/" target="_blank" rel="external">https://github.com/domchristie/to-markdown/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：将HTML文档转成Markdown格式</li>
+</ul>
+<h3 id="toastr"><a href="plugins.html#toastr" class="headerlink" title="toastr"></a>toastr</h3><ul>
+<li>版本：2.1.2</li>
+<li>官网：<a href="http://www.toastrjs.com/" target="_blank" rel="external">http://www.toastrjs.com/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;toastr&quot;</code></li>
+<li>功能：类似Android的Toast提示</li>
+</ul>
+<h3 id="toolbar"><a href="plugins.html#toolbar" class="headerlink" title="toolbar"></a>toolbar</h3><ul>
+<li>版本：1.1.0</li>
+<li>官网：<a href="https://github.com/paulkinzett/toolbar/" target="_blank" rel="external">https://github.com/paulkinzett/toolbar/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;toolbar&quot;</code></li>
+<li>功能：Tooltip的工具栏</li>
+</ul>
+<h3 id="typeahead-js"><a href="plugins.html#typeahead-js" class="headerlink" title="typeahead.js"></a>typeahead.js</h3><ul>
+<li>版本：0.11.1</li>
+<li>官网：<a href="http://twitter.github.com/typeahead.js/" target="_blank" rel="external">http://twitter.github.com/typeahead.js/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：自动补全</li>
+</ul>
+<h3 id="twbs-pagination"><a href="plugins.html#twbs-pagination" class="headerlink" title="twbs-pagination"></a>twbs-pagination</h3><ul>
+<li>版本：1.4.1</li>
+<li>官网：<a href="https://github.com/esimakin/twbs-pagination/" target="_blank" rel="external">https://github.com/esimakin/twbs-pagination/</a></li>
+<li>许可：Apache-2.0</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;twbsPagination&quot;</code></li>
+<li>功能：Bootstrap分页插件</li>
+</ul>
+<h3 id="webui-popover"><a href="plugins.html#webui-popover" class="headerlink" title="webui-popover"></a>webui-popover</h3><ul>
+<li>版本：1.2.7</li>
+<li>官网：<a href="https://github.com/sandywalker/webui-popover/" target="_blank" rel="external">https://github.com/sandywalker/webui-popover/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#jquery">jQuery</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;webuiPopover&quot;</code></li>
+<li>功能：弹出框插件</li>
+</ul>
+<h3 id="x-editable"><a href="plugins.html#x-editable" class="headerlink" title="x-editable"></a>x-editable</h3><ul>
+<li>版本：1.5.1</li>
+<li>官网：<a href="http://github.com/vitalets/x-editable/" target="_blank" rel="external">http://github.com/vitalets/x-editable/</a></li>
+<li>许可：MIT</li>
+<li>依赖：<a href="plugins.html#bootstrap">Bootstrap</a></li>
+<li>DataAPI：<code>data-pulgin=&quot;editableTable&quot;</code></li>
+<li>功能：表格编辑插件</li>
+</ul>
+<h2 id="国产插件"><a href="plugins.html#%E5%9B%BD%E4%BA%A7%E6%8F%92%E4%BB%B6" class="headerlink" title="国产插件"></a>国产插件</h2><h3 id="artTemplate"><a href="plugins.html#artTemplate" class="headerlink" title="artTemplate"></a>artTemplate</h3><ul>
+<li>版本：3.0.3</li>
+<li>官网：<a href="http://aui.github.com/artTemplate/" target="_blank" rel="external">http://aui.github.com/artTemplate/</a></li>
+<li>许可：BSD</li>
+<li>依赖：<a href="plugins.html#jQuery">jQuery</a></li>
+<li>DataAPI：无</li>
+<li>功能：新一代javascript模板引擎</li>
+</ul>
+<h3 id="eCharts"><a href="plugins.html#eCharts" class="headerlink" title="eCharts"></a>eCharts</h3><ul>
+<li>版本：3.2.4 </li>
+<li>官网：<a href="http://echarts.baidu.com/" target="_blank" rel="external">http://echarts.baidu.com/</a></li>
+<li>许可：MIT</li>
+<li>依赖：无</li>
+<li>DataAPI：无</li>
+<li>功能：ECharts，一个纯Javascript的图表库，可以流畅的运行在PC和移动设备上</li>
+</ul>
+<h2 id="插件升级"><a href="plugins.html#%E6%8F%92%E4%BB%B6%E5%8D%87%E7%BA%A7" class="headerlink" title="插件升级"></a>插件升级</h2><p>Admui 对所引用的插件的样式进行了重构，您可以在<code>/src/themes/{主题名}/libs/</code>下找到插件对应的LESS源码。</p>
+<p>某些插件的JS文件也经过了修改，这些插件包含但不限于以下所列内容：</p>
+<ul>
+<li><a href="plugins.html#jquery-pjax">jquery-pjax</a>，修改过的 jquery-pjax 插件我们已经托管到 <a href="https://github.com/admui/jquery-pjax" target="_blank" rel="external">Github 上</a>。</li>
+</ul>
+<p>Admui 在选择插件的时候尽量使用了最新版或者稳定版，所以我们不建议您手动对插件进行升级，我们会在最新版的源码中包含尽可能新的插件。</p>
+
+    
+    <div class="page-links">
+        
+        <span><a href="components.html">&lang; 上一页：UI 组件</a></span>
+        
+        
+        <span style="float:right"><a href="icons.html">下一页：字体图标 &rang;</a></span>
+        
+    </div>
+    
+    <div class="footer">
+    &copy; 2015-2017
+    <a href="/portal/index.html">Admui</a>
+    ·
+    上海畅控
+</div>
+</div>
+
+    
+</div>
+
+
+<script src="/portal/assets/js/smooth-scroll.min.js"></script>
+<script src="/portal/assets/js/common.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+    }, false);
+</script>
+
+</body>
+</html>

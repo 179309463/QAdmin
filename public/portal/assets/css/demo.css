@@ -1,0 +1,18 @@
+#content .divider {
+    margin: 40px 0;
+}
+
+#content .meta,
+#content .description {
+    font-size: 12px;
+}
+
+#content .card .ribbon{
+    position: absolute;
+    left:-1rem;
+}
+
+#video {
+    text-align: center;
+    margin: 5rem 0 6rem 0;
+}

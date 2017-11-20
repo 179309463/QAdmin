@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alertify中文文档 - BSify</title>
+    <meta name="keywords" content="Alertify中文文档,Alertify文档,Alertify api">
+    <meta name="description" content="Alertify.js是一个小型js库，它提供了轻量级、高性能的浏览器对话框。由于其仅使用了1个小于3kB的请求，所以即使在网络比较差的情况下也可以保证警告、对话框、提示和日志消息基本的样式。">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;http://www.admui.com/ie.html"/><![endif]-->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Alertify中文文档"/>
+    <link rel="apple-touch-icon-precomposed" href="../dist/images/icon-72@x2.png.html">
+    <meta name="msapplication-TileImage" content="/dist/images/icon-72@x2.png">
+    <meta name="msapplication-TileColor" content="#1abc9c">
+    <link rel="shortcut icon" href="../dist/images/favicon.png">
+    <link rel="stylesheet" href="../dist/plugins/docsify/vue.css" title="vue">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?c93d6e213eb26f48978528a760c0cbc1";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+<body>
+<nav class="app-nav no-badge"><ul>
+    <li><a href="../index.html" class="active">返回首页</a></li>
+</ul>
+</nav>
+<section class="cover" style="background: linear-gradient(to left bottom, hsl(172, 100%, 85%) 0%,hsl(170, 100%, 85%) 100%)">
+    <div class="cover-main"></div>
+    <div class="mask"></div>
+</section>
+<main>
+    <button class="sidebar-toggle">
+        <div class="sidebar-toggle-button"><span></span><span></span><span></span></div>
+    </button>
+    <aside class="sidebar">
+        <h1>
+            <a class="app-name-link" data-nosearch>alertify</a>
+        </h1>
+        <div class="sidebar-adv">
+            <a href="/portal/index.html" target="_blank">
+                <img src="../dist/images/banner.jpg" width="300">
+            </a>
+        </div>
+        <div class="sidebar-nav">
+            <ul>
+                <li>
+                    <a class="section-link" href="index-id=%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.html">快速开始</a>
+                </li>
+                <li>
+                    <ul class="children">
+                        <li>
+                            <a class="section-link" href="index-id=%E9%80%9A%E8%BF%87-rawgit.html">通过 RawGit</a>
+                        </li>
+                        <li>
+                            <a class="section-link" href="index-id=%E9%80%9A%E8%BF%87-bower.html">通过 Bower</a>
+                        </li>
+                        <li>
+                            <a class="section-link" href="index-id=%E9%80%9A%E8%BF%87-npm.html">通过 NPM</a>
+                        </li>
+                        <li>
+                            <a class="section-link" href="index-id=%E7%A6%81%E7%94%A8%E9%BB%98%E8%AE%A4-css.html">禁用默认 CSS</a>
+                        </li>
+                        <li>
+                            <a class="section-link" href="index-id=angular-js.html">Angular JS</a>
+                        </li>
+                        <li>
+                            <ul class="children">
+                                <li>
+                                    <a class="section-link" href="index-id=%E5%88%9D%E5%A7%8B%E5%8C%96-ngalertify.html">初始化 ngAlertify</a>
+                                </li>
+                                </li></ul>
+                        </li>
+                    </ul>
+                <li>
+                    <a class="section-link" href="index-id=%E6%80%A7%E8%83%BD.html">性能</a>
+                </li>
+                <li>
+                    <a class="section-link" href="index-id=%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html">使用方法</a>
+                </li>
+                <li>
+                    <ul class="children">
+                        <li>
+                            <a class="section-link" href="index-id=%E5%AF%B9%E8%AF%9D%E6%A1%86.html">对话框</a>
+                        </li>
+                        <li>
+                            <ul class="children">
+                                <li>
+                                    <a class="section-link" href="index-id=alert-%E5%AF%B9%E8%AF%9D%E6%A1%86.html">Alert 对话框</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=confirm-%E5%AF%B9%E8%AF%9D%E6%A1%86.html">Confirm 对话框</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=prompt-%E5%AF%B9%E8%AF%9D%E6%A1%86.html">Prompt 对话框</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%87%E7%AD%BE.html">自定义标签</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=ajax-%E5%A4%9A%E4%B8%AA%E5%AF%B9%E8%AF%9D%E6%A1%86.html">Ajax - 多个对话框</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=promise-aware.html">Promise Aware</a>
+                                </li>
+                                </li></ul>
+                        <li>
+                            <a class="section-link" href="index-id=%E6%97%A5%E5%BF%97%E6%B6%88%E6%81%AF.html">日志消息</a>
+                        </li>
+                        <li>
+                            <ul class="children">
+                                <li>
+                                    <a class="section-link" href="index-id=%E4%BD%8D%E7%BD%AE%E8%AE%BE%E7%BD%AE.html">位置设置</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E8%AE%BE%E7%BD%AE%E7%88%B6%E5%85%83%E7%B4%A0.html">设置父元素</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E6%A0%87%E5%87%86%E6%97%A5%E5%BF%97.html">标准日志</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E5%B8%A6html%E7%9A%84%E6%A0%87%E5%87%86%E6%97%A5%E5%BF%97.html">带HTML的标准日志</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E5%B8%A6%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E6%A0%87%E5%87%86%E6%97%A5%E5%BF%97.html">带回调函数标准日志</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E6%88%90%E5%8A%9F%E6%97%A5%E5%BF%97.html">成功日志</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E5%B8%A6%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%88%90%E5%8A%9F%E6%97%A5%E5%BF%97.html">带回调函数的成功日志</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E9%94%99%E8%AF%AF%E6%97%A5%E5%BF%97.html">错误日志</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E5%B8%A6%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E7%9A%84%E9%94%99%E8%AF%AF%E6%97%A5%E5%BF%97.html">带回调函数的错误日志</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E5%8D%95%E5%87%BB%E5%85%B3%E9%97%AD%E6%97%A5%E5%BF%97.html">单击关闭日志</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E7%A6%81%E7%94%A8%E6%97%A5%E5%BF%97%E7%9A%84click%E4%BA%8B%E4%BB%B6.html">禁用日志的click事件</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=_10-%E7%A7%92%E5%90%8E%E9%9A%90%E8%97%8F.html">10 秒后隐藏</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E6%8C%81%E7%BB%AD%E6%98%BE%E7%A4%BA%E7%9A%84%E6%97%A5%E5%BF%97.html">持续显示的日志</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E6%97%A5%E5%BF%97%E6%B6%88%E6%81%AF%E6%9C%80%E5%A4%A7%E6%95%B0%E9%87%8F.html">日志消息最大数量</a>
+                                </li>
+                                <li>
+                                    <a class="section-link" href="index-id=%E8%AE%BE%E7%BD%AE%E6%97%A5%E5%BF%97%E6%A8%A1%E6%9D%BF.html">设置日志模板</a>
+                                </li>
+                                </li></ul>
+                        </li>
+                    </ul>
+                <li>
+                    <a class="section-link" href="index-id=%E5%85%B6%E4%BB%96%E9%85%8D%E7%BD%AE%E9%A1%B9.html">其他配置项</a>
+                </li>
+                <li>
+                    <ul class="children">
+                        <li>
+                            <a class="section-link" href="index-id=%E9%87%8D%E7%BD%AE%E9%BB%98%E8%AE%A4%E5%80%BC.html">重置默认值</a>
+                        </li>
+                        </li>
+                    </ul>
+                    <script>window.__SUB_SIDEBAR__ = undefined</script>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <section class="content">
+        <article class="markdown-section" id="main">
+            <h2 id="快速开始">
+                <a href="index-id=%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.html" data-id="快速开始" class="anchor">
+                    <span>快速开始</span></a>
+            </h2>
+            <h3 id="通过-rawgit">
+                <a href="index-id=%E9%80%9A%E8%BF%87-rawgit.html" data-id="通过-rawgit" class="anchor">
+                    <span>通过 RawGit</span></a>
+            </h3>
+            <pre v-pre data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>--</span> <span class="token attr-name">标准版</span> <span class="token attr-name">--</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>--</span> <span class="token attr-name">angular模块</span> <span class="token attr-name">--</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/ngAlertify.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+            <h3 id="通过-bower">
+                <a href="index-id=%E9%80%9A%E8%BF%87-bower.html" data-id="通过-bower" class="anchor"><span>通过 Bower</span>
+                </a>
+            </h3>
+            <pre v-pre data-lang="bash"><code class="lang-bash">bower install --save alertifyjs</code></pre>
+            <h3 id="通过-npm">
+                <a href="index-id=%E9%80%9A%E8%BF%87-npm.html" data-id="通过-npm" class="anchor"><span>通过 NPM</span></a>
+            </h3>
+            <pre v-pre data-lang="bash"><code class="lang-bash">npm install --save alertifyjs</code></pre>
+            <h3 id="禁用默认-css">
+                <a href="index-id=%E7%A6%81%E7%94%A8%E9%BB%98%E8%AE%A4-css.html" data-id="禁用默认-css" class="anchor">
+                    <span>禁用默认 CSS</span></a>
+            </h3>
+            <p>如果不想使用默认的CSS，只需要在引入javascript文件之前插入自己的样式文件（任意<code>id=&quot;alertifyCSS&quot;</code> 的
+                <code>style</code> 或 <code>link</code> 元素）：</p>
+            <pre v-pre data-lang="html"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/path/to/custom/styles.css<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alertifyCSS<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/path/to/alertify.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+            <p><strong>注意</strong></p><p>我们会在主要的CDN上发布最新版本，在此之前，您也可以在GitHub上下载，或者通过NPM或Bower进行安装。</p>
+            <p>如果您通过Bower或NPM进行安装，则需要在HTML中引入“dist”文件夹中的文件，以便插件能正常使用。</p>
+            <p>还需要注意的是，CSS默认是JS动态生成的，不需要通过单独引入样式文件的方式来使用主题。由于CSS会被JS插入到<code>&lt;link&gt;</code>元素或<code>&lt;style&gt;</code>元素的前面，所以您也可以使用自己的样式来覆盖它。
+            </p>
+            <h3 id="angular-js">
+                <a href="index-id=angular-js.html" data-id="angular-js" class="anchor"><span>Angular JS</span></a>
+            </h3>
+            <p>此插件也有AngularJS的版本。它的名称是“ngAlertify.js”，如果您正在构建AngularJS应用的话可以考虑使用它。</p>
+            <p>如果您想查看通过ngAlertify实现日志消息的在线示例，
+                <a href="https://alertifyjs.org/angular.html" target="_blank">请点击这里</a>
+                。
+            </p>
+            <h4 id="初始化-ngalertify">
+                <a href="index-id=%E5%88%9D%E5%A7%8B%E5%8C%96-ngalertify.html" data-id="初始化-ngalertify" class="anchor">
+                    <span>初始化 ngAlertify</span></a>
+            </h4>
+            <pre v-pre data-lang="js"><code class="lang-js"><span class="token comment" spellcheck="true">// 请确保已经引入了ngAlertify.js文件</span>
+angular
+    <span class="token punctuation">.</span><span class="token function">module</span><span class="token punctuation">(</span><span class="token string">"myApp"</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">"ngAlertify"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">controller</span><span class="token punctuation">(</span><span class="token string">"myController"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>$scope<span class="token punctuation">,</span> alertify<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        alertify<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span><span class="token string">"欢迎使用alertify!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <h2 id="性能">
+                <a href="index-id=%E6%80%A7%E8%83%BD.html" data-id="性能" class="anchor"><span>性能</span></a>
+            </h2>
+            <p>Alertify是基于高性能，轻量级的原则来设计的（这也就意味着它不像其他插件那样有丰富的功能，我们也不打算增加更多的功能，实际上这也是我们的初衷），所以对于各种网站和用户来说，它是一个不错的选择。</p>
+            <p>目前，整个库的JavaScript和CSS只有2.29KB（gzip压缩后），并且以后会越来越小。考虑到它仅有一个HTTP请求，且不需要其他依赖，所以更值得选择。</p>
+            <p>Angular模块只有2.32KB，所以也很轻量级！</p>
+            <h2 id="使用方法">
+                <a href="index-id=%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html" data-id="使用方法" class="anchor">
+                    <span>使用方法</span></a>
+            </h2>
+            <h3 id="对话框">
+                <a href="index-id=%E5%AF%B9%E8%AF%9D%E6%A1%86.html" data-id="对话框" class="anchor"><span>对话框</span></a>
+            </h3>
+            <h4 id="alert-对话框">
+                <a href="index-id=alert-%E5%AF%B9%E8%AF%9D%E6%A1%86.html" data-id="alert-对话框" class="anchor">
+                    <span>Alert 对话框</span></a>
+            </h4>
+            <p>对话框显示文本，需要用户知晓消息内容</p><p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify<span class="token punctuation">.</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"消息"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo1">运行代码</button>
+
+            <h4 id="confirm-对话框">
+                <a href="index-id=confirm-%E5%AF%B9%E8%AF%9D%E6%A1%86.html" data-id="confirm-对话框" class="anchor">
+                    <span>Confirm 对话框</span></a>
+            </h4>
+            <p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js"><span class="token comment" spellcheck="true">// confirm 对话框</span>
+alertify<span class="token punctuation">.</span><span class="token function">confirm</span><span class="token punctuation">(</span><span class="token string">"消息"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 用户点击"ok"按钮</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 用户点击"cancel"按钮</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo2">运行代码</button>
+
+            <h4 id="prompt-对话框">
+                <a href="index-id=prompt-%E5%AF%B9%E8%AF%9D%E6%A1%86.html" data-id="prompt-对话框" class="anchor">
+                    <span>Prompt 对话框</span></a>
+            </h4>
+            <p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify
+  <span class="token punctuation">.</span><span class="token function">defaultValue</span><span class="token punctuation">(</span><span class="token string">"默认值"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">"这是一个Prompt对话框"</span><span class="token punctuation">,</span>
+    <span class="token keyword">function</span> <span class="token punctuation">(</span>val<span class="token punctuation">,</span> ev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+      <span class="token comment" spellcheck="true">// The click event is in the event variable, so you can use it here.</span>
+      ev<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment" spellcheck="true">// The value entered is availble in the val variable.</span>
+      alertify<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span><span class="token string">"您单击了OK，类型为："</span> <span class="token operator">+</span> val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>ev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+      <span class="token comment" spellcheck="true">// The click event is in the event variable, so you can use it here.</span>
+      ev<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      alertify<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">"您单击了Cancel"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo3">运行代码</button>
+
+            <h4 id="自定义标签">
+                <a href="index-id=%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%87%E7%AD%BE.html" data-id="自定义标签" class="anchor">
+                    <span>自定义标签</span></a>
+            </h4>
+            <p>您也可以轻松设定自己的按钮标签（文字），并不一定要使用&quot;Ok&quot;和&quot;Cancel&quot;。</p><p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify
+  <span class="token punctuation">.</span><span class="token function">okBtn</span><span class="token punctuation">(</span><span class="token string">"同意"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">cancelBtn</span><span class="token punctuation">(</span><span class="token string">"拒绝"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">confirm</span><span class="token punctuation">(</span><span class="token string">"自定义按钮标签的Confirm对话框"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>ev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+      <span class="token comment" spellcheck="true">// The click event is in the</span>
+      <span class="token comment" spellcheck="true">// event variable, so you can use</span>
+      <span class="token comment" spellcheck="true">// it here.</span>
+      ev<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      alertify<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span><span class="token string">"您单击了OK"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>ev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+      <span class="token comment" spellcheck="true">// The click event is in the</span>
+      <span class="token comment" spellcheck="true">// event variable, so you can use</span>
+      <span class="token comment" spellcheck="true">// it here.</span>
+      ev<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      alertify<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">"您单击了Cancel"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo4">运行代码</button>
+
+            <h4 id="ajax-多个对话框">
+                <a href="index-id=ajax-%E5%A4%9A%E4%B8%AA%E5%AF%B9%E8%AF%9D%E6%A1%86.html" data-id="ajax-多个对话框" class="anchor">
+                    <span>Ajax - 多个对话框</span></a>
+            </h4>
+            <p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify<span class="token punctuation">.</span><span class="token function">confirm</span><span class="token punctuation">(</span><span class="token string">"确认？"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>ev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">// The click event is in the</span>
+    <span class="token comment" spellcheck="true">// event variable, so you can use</span>
+    <span class="token comment" spellcheck="true">// it here.</span>
+    ev<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    alertify<span class="token punctuation">.</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"AJAX成功以后OK"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>ev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">// The click event is in the</span>
+    <span class="token comment" spellcheck="true">// event variable, so you can use</span>
+    <span class="token comment" spellcheck="true">// it here.</span>
+    ev<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    alertify<span class="token punctuation">.</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"AJAX成功以后Cancel"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo5">运行代码</button>
+
+            <h4 id="promise-aware">
+                <a href="index-id=promise-aware.html" data-id="promise-aware" class="anchor"><span>Promise Aware</span>
+                </a>
+            </h4>
+            <p>如果您的浏览器支持promises，您可以使用它们来代替回调函数</p><p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js"> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">"function"</span> <span class="token operator">!==</span> <span class="token keyword">typeof</span> Promise<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      alertify<span class="token punctuation">.</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"您的浏览器不支持promises"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  alertify<span class="token punctuation">.</span><span class="token function">confirm</span><span class="token punctuation">(</span><span class="token string">"确认？"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>resolvedValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// "resolvedValue" is an object with the following keys:</span>
+      <span class="token comment" spellcheck="true">// buttonClicked</span>
+      <span class="token comment" spellcheck="true">// inputValue (only for prompts)</span>
+      <span class="token comment" spellcheck="true">// event</span>
+
+      <span class="token comment" spellcheck="true">// The click event is in</span>
+      <span class="token comment" spellcheck="true">// resolvedValue, so you can use</span>
+      <span class="token comment" spellcheck="true">// it here.</span>
+      resolvedValue<span class="token punctuation">.</span>event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      alertify<span class="token punctuation">.</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"您单击了"</span> <span class="token operator">+</span> resolvedValue<span class="token punctuation">.</span>buttonClicked <span class="token operator">+</span> <span class="token string">"按钮！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo6">运行代码</button>
+
+            <h3 id="日志消息">
+                <a href="index-id=%E6%97%A5%E5%BF%97%E6%B6%88%E6%81%AF.html" data-id="日志消息" class="anchor">
+                    <span>日志消息</span></a>
+            </h3>
+            <h4 id="位置设置">
+                <a href="index-id=%E4%BD%8D%E7%BD%AE%E8%AE%BE%E7%BD%AE.html" data-id="位置设置" class="anchor">
+                    <span>位置设置</span></a>
+            </h4>
+            <p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify<span class="token punctuation">.</span><span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 快速的显示</span>
+alertify<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"默认在左下角的位置显示"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    alertify<span class="token punctuation">.</span><span class="token function">logPosition</span><span class="token punctuation">(</span><span class="token string">"左上角"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    alertify<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"左上角"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    alertify<span class="token punctuation">.</span><span class="token function">logPosition</span><span class="token punctuation">(</span><span class="token string">"右上角"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    alertify<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"右上角"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    alertify<span class="token punctuation">.</span><span class="token function">logPosition</span><span class="token punctuation">(</span><span class="token string">"右下角"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    alertify<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"右下角"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">4500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    alertify<span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 重置</span>
+    alertify<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"默认位置"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">6000</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo7">运行代码</button>
+
+            <h4 id="设置父元素">
+                <a href="index-id=%E8%AE%BE%E7%BD%AE%E7%88%B6%E5%85%83%E7%B4%A0.html" data-id="设置父元素" class="anchor">
+                    <span>设置父元素</span></a>
+            </h4>
+            <p>可以设置一个父元素，将Alertify添加到该DOM节点中</p><p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js"><span class="token comment" spellcheck="true">// Alertify 默认被添加在document.body中。</span>
+<span class="token comment" spellcheck="true">// 您可以轻松改变它，比如：</span>
+<span class="token keyword">var</span> elem <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"my-element"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+alertify<span class="token punctuation">.</span><span class="token function">parent</span><span class="token punctuation">(</span>elem<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <h4 id="标准日志">
+                <a href="index-id=%E6%A0%87%E5%87%86%E6%97%A5%E5%BF%97.html" data-id="标准日志" class="anchor">
+                    <span>标准日志</span></a>
+            </h4>
+            <p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"标准日志消息"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo8">运行代码</button>
+
+            <h4 id="带html的标准日志">
+                <a href="index-id=%E5%B8%A6html%E7%9A%84%E6%A0%87%E5%87%86%E6%97%A5%E5%BF%97.html" data-id="带html的标准日志" class="anchor">
+                    <span>带HTML的标准日志</span></a>
+            </h4>
+            <p>HTML片段也可以在日志消息正常显示</p><p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js"><span class="token keyword">var</span> msg <span class="token operator">=</span> <span class="token string">"&lt;img src='https://placehold.it/256x128'>"</span> <span class="token operator">+</span>
+          <span class="token string">"&lt;h3>这里是HTML内容&lt;/h3>"</span> <span class="token operator">+</span>
+          <span class="token string">"&lt;p>看起来不错，不是吗？&lt;/p>"</span><span class="token punctuation">;</span>
+alertify<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo9">运行代码</button>
+
+            <h4 id="带回调函数标准日志">
+                <a href="index-id=%E5%B8%A6%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E6%A0%87%E5%87%86%E6%97%A5%E5%BF%97.html" data-id="带回调函数标准日志" class="anchor">
+                    <span>带回调函数标准日志</span></a>
+            </h4>
+            <p>请注意，设置了回调函数以后，单击日志消息并不会自动关闭，这与之前有所不同。这也就意味着如果用户多次点击，会多次调用回调函数。如果您的回调函数只能执行一次，那么您需要分开跟踪回调函数（If you&#39;re callback is an action that must be completed only once, you&#39;ll need to keep track of that separately）。</p>
+            <p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"带回调函数标准日志消息"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>ev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">// The click event is in the</span>
+    <span class="token comment" spellcheck="true">// event variable, so you can use</span>
+    <span class="token comment" spellcheck="true">// it here.</span>
+    ev<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    alertify<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"您单击了通知"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo10">运行代码</button>
+
+            <h4 id="成功日志">
+                <a href="index-id=%E6%88%90%E5%8A%9F%E6%97%A5%E5%BF%97.html" data-id="成功日志" class="anchor">
+                    <span>成功日志</span></a>
+            </h4>
+            <p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span><span class="token string">"成功日志消息"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo11">运行代码</button>
+
+            <h4 id="带回调函数的成功日志">
+                <a href="index-id=%E5%B8%A6%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%88%90%E5%8A%9F%E6%97%A5%E5%BF%97.html" data-id="带回调函数的成功日志" class="anchor">
+                    <span>带回调函数的成功日志</span></a>
+            </h4>
+            <p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span><span class="token string">"带回调函数的成功日志消息"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>ev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">// The click event is in the</span>
+    <span class="token comment" spellcheck="true">// event variable, so you can use</span>
+    <span class="token comment" spellcheck="true">// it here.</span>
+    ev<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    alertify<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span><span class="token string">"您单击了通知"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo12">运行代码</button>
+
+            <h4 id="错误日志">
+                <a href="index-id=%E9%94%99%E8%AF%AF%E6%97%A5%E5%BF%97.html" data-id="错误日志" class="anchor">
+                    <span>错误日志</span></a>
+            </h4>
+            <p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">"错误日志消息"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo13">运行代码</button>
+
+            <h4 id="带回调函数的错误日志">
+                <a href="index-id=%E5%B8%A6%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E7%9A%84%E9%94%99%E8%AF%AF%E6%97%A5%E5%BF%97.html" data-id="带回调函数的错误日志" class="anchor">
+                    <span>带回调函数的错误日志</span></a>
+            </h4>
+            <p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">"带回调函数的错误日志消息"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>ev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">// The click event is in the</span>
+    <span class="token comment" spellcheck="true">// event variable, so you can use</span>
+    <span class="token comment" spellcheck="true">// it here.</span>
+    ev<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    alertify<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">"您单击了通知"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo14">运行代码</button>
+
+            <h4 id="单击关闭日志">
+                <a href="index-id=%E5%8D%95%E5%87%BB%E5%85%B3%E9%97%AD%E6%97%A5%E5%BF%97.html" data-id="单击关闭日志" class="anchor">
+                    <span>单击关闭日志</span></a>
+            </h4>
+            <p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify
+  <span class="token punctuation">.</span><span class="token function">closeLogOnClick</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"单击关闭"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo15">运行代码</button>
+
+            <h4 id="禁用日志的click事件">
+                <a href="index-id=%E7%A6%81%E7%94%A8%E6%97%A5%E5%BF%97%E7%9A%84click%E4%BA%8B%E4%BB%B6.html" data-id="禁用日志的click事件" class="anchor">
+                    <span>禁用日志的click事件</span></a>
+            </h4>
+            <p>默认情况下，单击关闭日志消息功能是被禁用的，但如果您已经启用了它，并需要将其重置为禁用的话，也是非常方便的。</p>
+            <p>为什么默认要禁用单击关闭呢，主要是为了日志消息中所包含的HTML（包括链接）能被操作。</p><p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify
+  <span class="token punctuation">.</span><span class="token function">closeLogOnClick</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"单击关闭"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">closeLogOnClick</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"不能通过单击关闭"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo16">运行代码</button>
+
+            <h4 id="_10-秒后隐藏">
+                <a href="index-id=_10-%E7%A7%92%E5%90%8E%E9%9A%90%E8%97%8F.html" data-id="_10-秒后隐藏" class="anchor">
+                    <span>10 秒后隐藏</span></a>
+            </h4>
+            <p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify<span class="token punctuation">.</span><span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"10秒后隐藏"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo17">运行代码</button>
+
+            <h4 id="持续显示的日志">
+                <a href="index-id=%E6%8C%81%E7%BB%AD%E6%98%BE%E7%A4%BA%E7%9A%84%E6%97%A5%E5%BF%97.html" data-id="持续显示的日志" class="anchor">
+                    <span>持续显示的日志</span></a>
+            </h4>
+            <p>持续显示日志消息一直可见，直到单击（如果设置了closeLogOnClick(true)），或者当消息数量超过maxLogItems设置时移除。</p><p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify<span class="token punctuation">.</span><span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"一直显示直到被单击"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo18">运行代码</button>
+
+            <h4 id="日志消息最大数量">
+                <a href="index-id=%E6%97%A5%E5%BF%97%E6%B6%88%E6%81%AF%E6%9C%80%E5%A4%A7%E6%95%B0%E9%87%8F.html" data-id="日志消息最大数量" class="anchor">
+                    <span>日志消息最大数量</span></a>
+            </h4>
+            <p>您可以设置日志/成功/错误消息的最大显示数量，默认为两个。</p><p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify
+  <span class="token punctuation">.</span><span class="token function">maxLogItems</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"这是第一个消息"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// The timeout is just for visual effect.</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  alertify<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"第二条消息显示会关闭第一条消息"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo19">运行代码</button>
+
+            <h4 id="设置日志模板">
+                <a href="index-id=%E8%AE%BE%E7%BD%AE%E6%97%A5%E5%BF%97%E6%A8%A1%E6%9D%BF.html" data-id="设置日志模板" class="anchor">
+                    <span>设置日志模板</span></a>
+            </h4>
+            <p>可以为所有的日志设置模板</p><p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js">alertify
+  <span class="token punctuation">.</span><span class="token function">setLogTemplate</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token string">'日志消息：'</span> <span class="token operator">+</span> input<span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"这是一条消息"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo20">运行代码</button>
+
+            <h2 id="其他配置项">
+                <a href="index-id=%E5%85%B6%E4%BB%96%E9%85%8D%E7%BD%AE%E9%A1%B9.html" data-id="其他配置项" class="anchor">
+                    <span>其他配置项</span></a>
+            </h2>
+            <h3 id="重置默认值">
+                <a href="index-id=%E9%87%8D%E7%BD%AE%E9%BB%98%E8%AE%A4%E5%80%BC.html" data-id="重置默认值" class="anchor">
+                    <span>重置默认值</span></a>
+            </h3>
+            <p>您可以改变按钮标签、延时、默认提示或者占位符等的值，同时也可以轻松重置为默认值。</p><p>代码示例</p>
+            <pre v-pre data-lang="js"><code class="lang-js"><span class="token comment" spellcheck="true">// Notice the okay button is not the custom value, it was reset.</span>
+alertify
+  <span class="token punctuation">.</span><span class="token function">okBtn</span><span class="token punctuation">(</span><span class="token string">"前往"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"自定义值已被重置！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <button id="demo21">运行代码</button>
+            <p>----
+                最后更新于：2017/06/19 01:26 </p>
+        </article>
+    </section>
+</main>
+<script>window.$docsify = {
+    "basePath": "/alertify/"
+}</script>
+</body>
+<script src="../dist/plugins/docsify/docsify.js" data-name="alertify"></script>
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
+<script src="../dist/js/alertify/demo.js"></script>
+</html>

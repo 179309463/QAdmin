@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>概述 - Admui 开发文档</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="admui,admui官网,admui框架,通用后台管理系统,后台框架,ui框架" />
+    <meta name="description" content="Admui 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='http://www.admui.com/ie'" />
+    <![endif]-->
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Admui" />
+    <meta name="msapplication-TileImage" content="/portal/assets/img/app/icon-72@x2.png" />
+    <meta name="msapplication-TileColor" content="#395b81" />
+    <link rel="apple-touch-icon-precomposed" href="/portal/assets/img/app/icon-72@x2.png" />
+    <link rel="shortcut icon" href="/portal/assets/img/app/favicon.png" />
+    <meta name="msapplication-TileColor" content="#62a8ea">
+    <script>
+        window.PAGE_TYPE = "java"
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?cd758c4c82a4964836712308cb782b12";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <link rel="stylesheet" href="/portal/assets/css/page.css">
+</head>
+<body>
+<div id="mobile-bar">
+    <a class="menu-button"></a>
+    <a class="logo" href="../index.html">Admui开发文档</a>
+    <select class="version-select">
+        <option value="basic">基础版</option>
+        <option value="pjax" selected>pjax版</option>
+    </select>
+</div>
+<div id="header">
+    <a id="logo" href="../index.html">
+        <img src="/portal/assets/img/logo.svg"> <span>Admui 开发文档</span>
+    </a>
+    <select class="version-select">
+        <option value="basic">基础版</option>
+        <option value="pjax" selected>pjax版</option>
+    </select>
+    <ul id="nav">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="../ui/index.html" class="nav-link">UI</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+
+    </ul>
+</div>
+
+<div id="main" class="fix-sidebar">
+    
+    
+<div class="sidebar">
+    <ul class="main-menu">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="../ui/index.html" class="nav-link">UI</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+
+    </ul>
+    <div class="list">
+        <ul class="menu-root">
+            
+            <li>
+                <a href="index.html" class="sidebar-link current ">概述</a>
+            </li>
+            
+            <li>
+                <a href="local.html" class="sidebar-link ">本地部署</a>
+            </li>
+            
+            <li>
+                <a href="function.html" class="sidebar-link ">功能介绍</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content java with-sidebar">
+    <h1>概述</h1>
+    <p>Admui 使用了JDK1.7.0_05作为JAVA版后台开发的JDK，MAVEN来管理项目的构建，数据库使用的是MySQL5.5.20，我们会陆续推出其他数据库（如:Oracle）的版本，请及时关注。</p>
+<h2 id="环境支持"><a href="index.html#%E7%8E%AF%E5%A2%83%E6%94%AF%E6%8C%81" class="headerlink" title="环境支持"></a>环境支持</h2><p>Admui 可以很好的支持JDK1.7及以上版本，MySQL5.5及以上版本，操作系统不限。</p>
+<h2 id="开源框架"><a href="index.html#%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6" class="headerlink" title="开源框架"></a>开源框架</h2><p>Admui 使用了Spring MVC + MyBatis作为基础开发框架：</p>
+<ul>
+<li>Spring 4.1.6.RELEASE</li>
+<li>MyBatis 3.2.5</li>
+</ul>
+<p>相信很多做过JAVA WEB开发的小伙伴对这套框架已经很熟悉了，即使之前没有接触过，那也完全没有关系。一方面，网上关于此套框架的文档很多；另一方面，在下面的文档中，我们会详细介绍如何将Admui 在本地开发工具中导入并正常运行，有了源码和能够正常访问的系统，一切问题都简化了。</p>
+<h2 id="包含内容"><a href="index.html#%E5%8C%85%E5%90%AB%E5%86%85%E5%AE%B9" class="headerlink" title="包含内容"></a>包含内容</h2><p>您可以在源码包中找到以下文件夹结构和文件：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">Admui/</div><div class="line">├── src/</div><div class="line">│   └── main/</div><div class="line">│       ├── java/ (java源代码)</div><div class="line">│       ├── resources/ (spring、mybatis等配置文件)</div><div class="line">│       └── webapp/</div><div class="line">│      	    ├── public/ (js、css等静态文件)</div><div class="line">│           └── WEB-INF/ (web.xml及jsp页面)</div><div class="line">├── admui.sql (数据库脚本)</div><div class="line">└── pom.xml (Maven配置文件)</div></pre></td></tr></table></figure>
+    
+    <div class="page-links">
+        
+        
+        <span style="float:right"><a href="local.html">下一页：本地部署 &rang;</a></span>
+        
+    </div>
+    
+    <div class="footer">
+    &copy; 2015-2017
+    <a href="/portal/index.html">Admui</a>
+    ·
+    上海畅控
+</div>
+</div>
+
+    
+</div>
+
+
+<script src="/portal/assets/js/smooth-scroll.min.js"></script>
+<script src="/portal/assets/js/common.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+    }, false);
+</script>
+
+</body>
+</html>
