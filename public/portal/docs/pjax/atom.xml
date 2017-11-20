@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Admui 文档</title>
-  <subtitle>Admui 通用管理系统快速开发框架</subtitle>
+  <title>QAdmin 文档</title>
+  <subtitle>QAdmin 通用管理系统快速开发框架</subtitle>
   <link href="/pjax/atom.xml" rel="self"/>
   
-  <link href="http://docs.admui.com/pjax/"/>
+  <link href="http://docs.qadmin.com/pjax/"/>
   <updated>2017-09-12T11:50:29.000Z</updated>
-  <id>http://docs.admui.com/pjax/</id>
+  <id>http://docs.qadmin.com/pjax/</id>
   
   <author>
-    <name>Admui</name>
-    <email>service@admui.com</email>
+    <name>QAdmin</name>
+    <email>service@qadmin.com</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Admui-pjax v1.2.0 更新日志</title>
-    <link href="http://docs.admui.com/pjax/logs/v1.2.0/"/>
-    <id>http://docs.admui.com/pjax/logs/v1.2.0/</id>
+    <title>QAdmin-pjax v1.2.0 更新日志</title>
+    <link href="http://docs.qadmin.com/pjax/logs/v1.2.0/"/>
+    <id>http://docs.qadmin.com/pjax/logs/v1.2.0/</id>
     <published>2017-09-12T12:10:12.000Z</published>
     <updated>2017-09-12T11:50:29.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Admui-pjax v1.2.0 重点改进了gulp任务以及核心样式文件，同时优化和修复若干问题，v1.2.0 更新日志如下：</p>
+    <content type="html"><![CDATA[<p>QAdmin-pjax v1.2.0 重点改进了gulp任务以及核心样式文件，同时优化和修复若干问题，v1.2.0 更新日志如下：</p>
 <a id="more"></a>
 <h4 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h4><ul>
 <li>改进gulp构建任务相关配置，提高运行效率，优化处理方式；</li>
@@ -45,12 +45,12 @@
 <h3 id="涉及文件"><a href="#涉及文件" class="headerlink" title="涉及文件"></a>涉及文件</h3><h4 id="自动构建版本"><a href="#自动构建版本" class="headerlink" title="自动构建版本"></a>自动构建版本</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">src/pages/examples/pages/team/documents/*.html</div><div class="line">src/pages/examples/pages/team/calendar.html</div><div class="line">src/pages/examples/tables/data-tables/basic-init/scroll-y.html</div><div class="line">src/pages/system/settings/display.html</div><div class="line">src/pages/system/settings/log.html</div><div class="line">src/pages/system/menu.html</div><div class="line">src/pages/site-map.html</div><div class="line">src/pages/includes/head.html</div><div class="line">src/pages/login.html</div><div class="line">src/themes/classic/base/less/site.less</div><div class="line">src/themes/classic/base/less/layouts/site-menbar-unfold.less</div><div class="line">src/themes/classic/gloabal/less/var-mixins.less</div><div class="line">src/themes/classic/gloabal/less/vars.less</div><div class="line">src/themes/classic/gloabal/less/bootstrap-extend/scaffolding.less</div><div class="line">src/themes/classic/global/less/sections/page.less</div><div class="line">src/themes/classic/base/js/site.js</div><div class="line">src/themes/classic/base/js/sections/content-tab.js</div><div class="line">src/themes/classic/global/js/components/panel.js</div><div class="line">src/assets/js/examples/components/layouts/page-aside.js</div><div class="line">src/assets/js/examples/pages/team/*.js</div><div class="line">srd/assets/js/examples/tables/data-tables/common.js</div><div class="line">src/assets/js/system/menu.js</div><div class="line">src/assets/js/system/user.js</div><div class="line">build/**/*.*</div><div class="line">gulpfile.js</div></pre></td></tr></table></figure>
 <h4 id="基础源码版本"><a href="#基础源码版本" class="headerlink" title="基础源码版本"></a>基础源码版本</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">views/examples/pages/team/documents/*.html</div><div class="line">views/examples/pages/team/calendar.html</div><div class="line">views/examples/tables/data-tables/basic-init/scroll-y.html</div><div class="line">views/system/settings/display.html</div><div class="line">views/system/settings/log.html</div><div class="line">views/system/menu.html</div><div class="line">views/site-map.html</div><div class="line">views/includes/head.html</div><div class="line">views/login.html</div><div class="line">public/themes/classic/base/css/site.css</div><div class="line">public/themes/classic/global/css/bootstrap.css</div><div class="line">public/themes/classic/base/js/site.js</div><div class="line">public/themes/classic/base/js/sections/content-tab.js</div><div class="line">public/themes/classic/global/js/components/panel.js</div><div class="line">public/js/examples/components/layouts/page-aside.js</div><div class="line">public/js/examples/pages/team/*.js</div><div class="line">public/js/examples/tables/data-tables/common.js</div><div class="line">public/js/system/menu.js</div><div class="line">public/js/system/user.js</div></pre></td></tr></table></figure>
 <h4 id="java版本"><a href="#java版本" class="headerlink" title="java版本"></a>java版本</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">src/main/webapp/WEB-INF/jsp/examples/pages/team/documents/*.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/examples/pages/team/calendar.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/examples/tables/data-tables/basic-init/scroll-y.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/system/settings/display.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/system/settings/log.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/system/menu.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/site-map.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/includes/head.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/login.jsp</div><div class="line">src/main/webapp/public/themes/classic/base/css/site.css</div><div class="line">src/main/webapp/public/themes/classic/global/css/bootstrap.css</div><div class="line">src/main/webapp/public/themes/classic/base/js/site.js</div><div class="line">src/main/webapp/public/themes/classic/base/js/sections/content-tab.js</div><div class="line">src/main/webapp/public/themes/classic/global/js/components/panel.js</div><div class="line">src/main/webapp/public/js/examples/components/layouts/page-aside.js</div><div class="line">src/main/webapp/public/js/examples/pages/team/*.js</div><div class="line">src/main/webapp/public/js/examples/tables/data-tables/common.js</div><div class="line">src/main/webapp/public/js/system/menu.js</div><div class="line">src/main/webapp/public/js/system/user.js</div></pre></td></tr></table></figure>
-<h3 id="在线体验"><a href="#在线体验" class="headerlink" title="在线体验"></a>在线体验</h3><p><a href="http://www.admui.com/demo" target="_blank" rel="external">http://www.admui.com/demo</a></p>
+<h3 id="在线体验"><a href="#在线体验" class="headerlink" title="在线体验"></a>在线体验</h3><p><a href="http://www.qadmin.com/demo" target="_blank" rel="external">http://www.qadmin.com/demo</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Admui-pjax v1.2.0 重点改进了gulp任务以及核心样式文件，同时优化和修复若干问题，v1.2.0 更新日志如下：&lt;/p&gt;
+      &lt;p&gt;QAdmin-pjax v1.2.0 重点改进了gulp任务以及核心样式文件，同时优化和修复若干问题，v1.2.0 更新日志如下：&lt;/p&gt;
     
     </summary>
     
@@ -58,13 +58,13 @@
   </entry>
   
   <entry>
-    <title>Admui-pjax v1.1.0 更新日志</title>
-    <link href="http://docs.admui.com/pjax/logs/v1.1.0/"/>
-    <id>http://docs.admui.com/pjax/logs/v1.1.0/</id>
+    <title>QAdmin-pjax v1.1.0 更新日志</title>
+    <link href="http://docs.qadmin.com/pjax/logs/v1.1.0/"/>
+    <id>http://docs.qadmin.com/pjax/logs/v1.1.0/</id>
     <published>2017-06-26T09:32:12.000Z</published>
     <updated>2017-09-12T11:48:03.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Admui-pjax v1.1.0 重点改进了消息通知，同时优化和修复若干问题，v1.1.0 更新日志如下：</p>
+    <content type="html"><![CDATA[<p>QAdmin-pjax v1.1.0 重点改进了消息通知，同时优化和修复若干问题，v1.1.0 更新日志如下：</p>
 <a id="more"></a>
 <h4 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h4><ul>
 <li>改进消息通知阅读方式，改为在全局显示，便于用户查看新收到消息。（新消息会在当前页面右下角弹出提示，点击即可查看详情，无须离开当前页面）。</li>
@@ -80,13 +80,13 @@
 </ul>
 <h3 id="涉及文件"><a href="#涉及文件" class="headerlink" title="涉及文件"></a>涉及文件</h3><h4 id="自动构建版本"><a href="#自动构建版本" class="headerlink" title="自动构建版本"></a>自动构建版本</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">src/pages/index.html</div><div class="line">src/pages/examples/home.html</div><div class="line">src/pages/system/account/index.html</div><div class="line">src/pages/system/account/message.html</div><div class="line">src/pages/system/settings/display.html</div><div class="line">src/assets/js/notify-msg.js</div><div class="line">src/assets/js/system/account/account.js</div><div class="line">src/assets/js/system/account/message.js</div><div class="line">src/assets/less/system/account.less</div><div class="line">src/themes/classic/global/less/sections/site-navbar.less</div></pre></td></tr></table></figure>
 <h4 id="基础源码版本"><a href="#基础源码版本" class="headerlink" title="基础源码版本"></a>基础源码版本</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">views/index.html</div><div class="line">views/examples/home.html</div><div class="line">views/system/account/index.html</div><div class="line">views/system/account/message.html</div><div class="line">views/system/settings/display.html</div><div class="line">public/js/notify-msg.js</div><div class="line">public/js/system/account/account.js</div><div class="line">public/js/system/account/message.js</div><div class="line">public/css/system/account.css</div><div class="line">public/themes/classic/base/css/site.css</div><div class="line">public/themes/classic/base/skins/*.css</div></pre></td></tr></table></figure>
-<h4 id="java版本"><a href="#java版本" class="headerlink" title="java版本"></a>java版本</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">src/main/webapp/WEB-INF/jsp/index.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/examples/home.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/system/account/index.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/system/account/message.jsp</div><div class="line">src/main/webapp/public/js/notify-msg.js</div><div class="line">src/main/webapp/public/js/system/account/account.js</div><div class="line">src/main/webapp/public/js/system/account/message.js</div><div class="line">src/main/webapp/public/css/system/account.css</div><div class="line">src/main/webapp/public/themes/classic/base/css/site.css</div><div class="line">src/main/webapp/public/themes/classic/base/skins/*.css</div><div class="line">src/main/java/cn/ermei/admui/controller/BaseController.java</div><div class="line">src/main/java/cn/ermei/admui/controller/SystemController.java</div><div class="line">src/main/java/cn/ermei/admui/service/impl/MessageServiceImpl.java</div><div class="line">src/main/java/cn/ermei/admui/websocket/SocketHandler.java</div></pre></td></tr></table></figure>
-<h3 id="在线体验"><a href="#在线体验" class="headerlink" title="在线体验"></a>在线体验</h3><p><a href="http://www.admui.com/demo" target="_blank" rel="external">http://www.admui.com/demo</a></p>
+<h4 id="java版本"><a href="#java版本" class="headerlink" title="java版本"></a>java版本</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">src/main/webapp/WEB-INF/jsp/index.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/examples/home.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/system/account/index.jsp</div><div class="line">src/main/webapp/WEB-INF/jsp/system/account/message.jsp</div><div class="line">src/main/webapp/public/js/notify-msg.js</div><div class="line">src/main/webapp/public/js/system/account/account.js</div><div class="line">src/main/webapp/public/js/system/account/message.js</div><div class="line">src/main/webapp/public/css/system/account.css</div><div class="line">src/main/webapp/public/themes/classic/base/css/site.css</div><div class="line">src/main/webapp/public/themes/classic/base/skins/*.css</div><div class="line">src/main/java/cn/ermei/qadmin/controller/BaseController.java</div><div class="line">src/main/java/cn/ermei/qadmin/controller/SystemController.java</div><div class="line">src/main/java/cn/ermei/qadmin/service/impl/MessageServiceImpl.java</div><div class="line">src/main/java/cn/ermei/qadmin/websocket/SocketHandler.java</div></pre></td></tr></table></figure>
+<h3 id="在线体验"><a href="#在线体验" class="headerlink" title="在线体验"></a>在线体验</h3><p><a href="http://www.qadmin.com/demo" target="_blank" rel="external">http://www.qadmin.com/demo</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Admui-pjax v1.1.0 重点改进了消息通知，同时优化和修复若干问题，v1.1.0 更新日志如下：&lt;/p&gt;
+      &lt;p&gt;QAdmin-pjax v1.1.0 重点改进了消息通知，同时优化和修复若干问题，v1.1.0 更新日志如下：&lt;/p&gt;
     
     </summary>
     
@@ -94,13 +94,13 @@
   </entry>
   
   <entry>
-    <title>Admui-pjax v1.0.1 更新日志</title>
-    <link href="http://docs.admui.com/pjax/logs/v1.0.1/"/>
-    <id>http://docs.admui.com/pjax/logs/v1.0.1/</id>
+    <title>QAdmin-pjax v1.0.1 更新日志</title>
+    <link href="http://docs.qadmin.com/pjax/logs/v1.0.1/"/>
+    <id>http://docs.qadmin.com/pjax/logs/v1.0.1/</id>
     <published>2017-06-13T15:56:43.000Z</published>
     <updated>2017-09-12T11:48:03.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Admui-pjax v1.0.1是一个维护版本，重点以优化和修复bug为主，v1.0.1 更新日志如下：</p>
+    <content type="html"><![CDATA[<p>QAdmin-pjax v1.0.1是一个维护版本，重点以优化和修复bug为主，v1.0.1 更新日志如下：</p>
 <a id="more"></a>
 <h4 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h4><ul>
 <li>优化核心js文件，将个别方法进行迁移；</li>
@@ -121,12 +121,12 @@
 <h3 id="涉及文件"><a href="#涉及文件" class="headerlink" title="涉及文件"></a>涉及文件</h3><h4 id="自动构建版本"><a href="#自动构建版本" class="headerlink" title="自动构建版本"></a>自动构建版本</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">src/pages/index.html</div><div class="line">src/pages/system/blacklist.html</div><div class="line">src/pages/system/menu.html</div><div class="line">src/pages/system/settings/display.html</div><div class="line">src/pages/system/settings/log.html</div><div class="line">src/pages/system/user.html</div><div class="line">src/pages/login.html</div><div class="line">src/pages/site-map.html</div><div class="line">src/pages/includes/error.html</div><div class="line">src/themes/classic/base/js/app.js</div><div class="line">src/themes/classic/base/js/site.js</div><div class="line">src/themes/classic/base/js/sections/content-tabs.js</div><div class="line">src/themes/classic/global/js/core.js</div><div class="line">src/assets/js/system/menu.js</div><div class="line">src/assets/js/system/account/password.js</div><div class="line">src/assets/js/system/account/account.js</div><div class="line">src/assets/js/system/account/message.js</div><div class="line">src/assets/js/system/log.js</div><div class="line">src/assets/js/system/settings/display.js</div><div class="line">src/assets/js/error.js</div><div class="line">src/assets/js/notify-msg.js</div><div class="line">src/vendor/jquery-pjax/*.js</div><div class="line">src/assets/less/login.less</div><div class="line">src/themes/classic/global/less/sections/site-navbar.less</div><div class="line">gulpfile.js</div><div class="line">server/bin/www</div></pre></td></tr></table></figure>
 <h4 id="基础源码版本"><a href="#基础源码版本" class="headerlink" title="基础源码版本"></a>基础源码版本</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">views/index.html</div><div class="line">views/system/blacklist.html</div><div class="line">views/system/menu.html</div><div class="line">views/system/settings/display.html</div><div class="line">views/system/settings/log.html</div><div class="line">views/system/user.html</div><div class="line">views/login.html</div><div class="line">views/site-map.html</div><div class="line">views/includes/error.html</div><div class="line">public/themes/classic/base/js/app.js</div><div class="line">public/themes/classic/base/js/site.js</div><div class="line">public/themes/classic/base/js/sections/content-tabs.js</div><div class="line">public/themes/classic/global/js/core.js</div><div class="line">public/js/system/menu.js</div><div class="line">public/js/system/account/password.js</div><div class="line">public/js/system/account/account.js</div><div class="line">public/js/system/account/message.js</div><div class="line">public/js/system/log.js</div><div class="line">public/js/system/settings/display.js</div><div class="line">public/js/error.js</div><div class="line">public/js/notify-msg.js</div><div class="line">public/vendor/jquery-pjax/*.js</div><div class="line">public/css/login.css</div><div class="line">public/themes/classic/base/css/site.css</div><div class="line">public/themes/classic/base/css/skins/*.css</div><div class="line">server/bin/www</div></pre></td></tr></table></figure>
 <h4 id="java版本"><a href="#java版本" class="headerlink" title="java版本"></a>java版本</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">src/main/resources/webapp/WEB-INF/jsp/index.jsp</div><div class="line">src/main/resources/webapp/WEB-INF/jsp/system/blacklist.jsp</div><div class="line">src/main/resources/webapp/WEB-INF/jsp/system/menu.jsp</div><div class="line">src/main/resources/webapp/WEB-INF/jsp/system/settings/display.jsp</div><div class="line">src/main/resources/webapp/WEB-INF/jsp/system/settings/log.jsp</div><div class="line">src/main/resources/webapp/WEB-INF/jsp/system/user.jsp</div><div class="line">src/main/resources/webapp/WEB-INF/jsp/login.jsp</div><div class="line">src/main/resources/webapp/public/themes/classic/base/js/app.js</div><div class="line">src/main/resources/webapp/public/themes/classic/base/js/site.js</div><div class="line">src/main/resources/webapp/public/themes/classic/base/js/sections/content-tabs.js</div><div class="line">src/main/resources/webapp/public/themes/classic/global/js/core.js</div><div class="line">src/main/resources/webapp/public/js/system/menu.js</div><div class="line">src/main/resources/webapp/public/js/system/account/password.js</div><div class="line">src/main/resources/webapp/public/js/system/account/account.js</div><div class="line">src/main/resources/webapp/public/js/system/account/message.js</div><div class="line">src/main/resources/webapp/public/js/system/log.js</div><div class="line">src/main/resources/webapp/public/js/system/settings/display.js</div><div class="line">src/main/resources/webapp/public/js/notify-msg.js</div><div class="line">src/main/resources/webapp/public/vendor/jquery-pjax/*.js</div><div class="line">src/main/resources/webapp/public/css/login.css</div><div class="line">src/main/resources/webapp/public/themes/classic/base/css/site.css</div><div class="line">src/main/resources/webapp/public/themes/classic/base/css/skins/*.css</div></pre></td></tr></table></figure>
-<h3 id="在线体验"><a href="#在线体验" class="headerlink" title="在线体验"></a>在线体验</h3><p><a href="http://www.admui.com/demo" target="_blank" rel="external">http://www.admui.com/demo</a></p>
+<h3 id="在线体验"><a href="#在线体验" class="headerlink" title="在线体验"></a>在线体验</h3><p><a href="http://www.qadmin.com/demo" target="_blank" rel="external">http://www.qadmin.com/demo</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Admui-pjax v1.0.1是一个维护版本，重点以优化和修复bug为主，v1.0.1 更新日志如下：&lt;/p&gt;
+      &lt;p&gt;QAdmin-pjax v1.0.1是一个维护版本，重点以优化和修复bug为主，v1.0.1 更新日志如下：&lt;/p&gt;
     
     </summary>
     
@@ -134,15 +134,15 @@
   </entry>
   
   <entry>
-    <title>Admui-pjax v1.0.0 正式版发布</title>
-    <link href="http://docs.admui.com/pjax/logs/v1.0.0/"/>
-    <id>http://docs.admui.com/pjax/logs/v1.0.0/</id>
+    <title>QAdmin-pjax v1.0.0 正式版发布</title>
+    <link href="http://docs.qadmin.com/pjax/logs/v1.0.0/"/>
+    <id>http://docs.qadmin.com/pjax/logs/v1.0.0/</id>
     <published>2017-04-25T01:23:40.000Z</published>
     <updated>2017-09-12T11:48:03.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Admui-pjax 通用管理系统快速开发框架是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象。您可以 Admui 为基础，快速开发各种MIS系统，如CMS、OA、CRM、ERP、POS等。Admui 紧贴业务特性，涵盖了大量的常用组件和基础功能，最大程度上帮助企业节省时间成本和费用开支。</p>
+    <content type="html"><![CDATA[<p>QAdmin-pjax 通用管理系统快速开发框架是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象。您可以 QAdmin 为基础，快速开发各种MIS系统，如CMS、OA、CRM、ERP、POS等。QAdmin 紧贴业务特性，涵盖了大量的常用组件和基础功能，最大程度上帮助企业节省时间成本和费用开支。</p>
 <a id="more"></a>
-<p>Admui-pjax v1.0.0 版包含了UI大量的示例和基础的管理系统功能。</p>
+<p>QAdmin-pjax v1.0.0 版包含了UI大量的示例和基础的管理系统功能。</p>
 <h3 id="UI-示例"><a href="#UI-示例" class="headerlink" title="UI 示例"></a>UI 示例</h3><ul>
 <li>UI 组件(布局、基本、进阶、组件、小工具)</li>
 <li>页面示例(首页、常用、团队)</li>
@@ -165,13 +165,13 @@
 <li>网站地图</li>
 </ul>
 <p>详细功能介绍见<a href="/pjax/java/function.html">功能介绍</a>。</p>
-<h3 id="界面截图"><a href="#界面截图" class="headerlink" title="界面截图"></a>界面截图</h3><p><img src="/portal/assets/img/screenshot-1.jpg" alt="Admui 界面"><br><img src="/portal/assets/img/screenshot-2.jpg" alt="Admui 界面"><br><img src="/portal/assets/img/screenshot-3.jpg" alt="Admui 界面"><br><img src="/portal/assets/img/screenshot-4.jpg" alt="Admui 界面"><br><img src="/portal/assets/img/screenshot-5.jpg" alt="Admui 界面"><br><img src="/portal/assets/img/screenshot-6.jpg" alt="Admui 界面"></p>
-<h3 id="在线体验"><a href="#在线体验" class="headerlink" title="在线体验"></a>在线体验</h3><p><a href="http://www.admui.com/demo" target="_blank" rel="external">http://www.admui.com/demo</a></p>
+<h3 id="界面截图"><a href="#界面截图" class="headerlink" title="界面截图"></a>界面截图</h3><p><img src="/portal/assets/img/screenshot-1.jpg" alt="QAdmin 界面"><br><img src="/portal/assets/img/screenshot-2.jpg" alt="QAdmin 界面"><br><img src="/portal/assets/img/screenshot-3.jpg" alt="QAdmin 界面"><br><img src="/portal/assets/img/screenshot-4.jpg" alt="QAdmin 界面"><br><img src="/portal/assets/img/screenshot-5.jpg" alt="QAdmin 界面"><br><img src="/portal/assets/img/screenshot-6.jpg" alt="QAdmin 界面"></p>
+<h3 id="在线体验"><a href="#在线体验" class="headerlink" title="在线体验"></a>在线体验</h3><p><a href="http://www.qadmin.com/demo" target="_blank" rel="external">http://www.qadmin.com/demo</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Admui-pjax 通用管理系统快速开发框架是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象。您可以 Admui 为基础，快速开发各种MIS系统，如CMS、OA、CRM、ERP、POS等。Admui 紧贴业务特性，涵盖了大量的常用组件和基础功能，最大程度上帮助企业节省时间成本和费用开支。&lt;/p&gt;
+      &lt;p&gt;QAdmin-pjax 通用管理系统快速开发框架是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象。您可以 QAdmin 为基础，快速开发各种MIS系统，如CMS、OA、CRM、ERP、POS等。QAdmin 紧贴业务特性，涵盖了大量的常用组件和基础功能，最大程度上帮助企业节省时间成本和费用开支。&lt;/p&gt;
     
     </summary>
     

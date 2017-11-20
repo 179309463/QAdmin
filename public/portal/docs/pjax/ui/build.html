@@ -2,21 +2,21 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>构建工具 - Admui 开发文档</title>
+    <title>构建工具 - QAdmin 开发文档</title>
     <meta charset="utf-8">
-    <meta name="keywords" content="admui,admui官网,admui框架,通用后台管理系统,后台框架,ui框架" />
-    <meta name="description" content="Admui 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
+    <meta name="keywords" content="qadmin,qadmin官网,qadmin框架,通用后台管理系统,后台框架,ui框架" />
+    <meta name="description" content="QAdmin 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <!--[if lte IE 9]>
-    <meta http-equiv="refresh" content="0; url='http://www.admui.com/ie'" />
+    <meta http-equiv="refresh" content="0; url='http://www.qadmin.com/ie'" />
     <![endif]-->
     <meta name="renderer" content="webkit" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Admui" />
+    <meta name="apple-mobile-web-app-title" content="QAdmin" />
     <meta name="msapplication-TileImage" content="/portal/assets/img/app/icon-72@x2.png" />
     <meta name="msapplication-TileColor" content="#395b81" />
     <link rel="apple-touch-icon-precomposed" href="/portal/assets/img/app/icon-72@x2.png" />
@@ -37,7 +37,7 @@
 <body>
 <div id="mobile-bar">
     <a class="menu-button"></a>
-    <a class="logo" href="../index.html">Admui开发文档</a>
+    <a class="logo" href="../index.html">QAdmin开发文档</a>
     <select class="version-select">
         <option value="basic">基础版</option>
         <option value="pjax" selected>pjax版</option>
@@ -45,7 +45,7 @@
 </div>
 <div id="header">
     <a id="logo" href="../index.html">
-        <img src="/portal/assets/img/logo.svg"> <span>Admui 开发文档</span>
+        <img src="/portal/assets/img/logo.svg"> <span>QAdmin 开发文档</span>
     </a>
     <select class="version-select">
         <option value="basic">基础版</option>
@@ -155,8 +155,8 @@
 
 <div class="content ui with-sidebar">
     <h1>构建工具</h1>
-    <h2 id="开发工具"><a href="build.html#%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7" class="headerlink" title="开发工具"></a>开发工具</h2><p>我们推荐您使用 Admui 提供的 GUI 开发工具来快速构建您的项目，详细介绍及用法请参考：<a href="gui-tools.html">GUI开发工具</a>。</p>
-<p>也可以通过以下命令来构建 Admui 项目。</p>
+    <h2 id="开发工具"><a href="build.html#%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7" class="headerlink" title="开发工具"></a>开发工具</h2><p>我们推荐您使用 QAdmin 提供的 GUI 开发工具来快速构建您的项目，详细介绍及用法请参考：<a href="gui-tools.html">GUI开发工具</a>。</p>
+<p>也可以通过以下命令来构建 QAdmin 项目。</p>
 <h2 id="运行项目"><a href="build.html#%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE" class="headerlink" title="运行项目"></a>运行项目</h2><h3 id="安装-NPM-模块"><a href="build.html#%E5%AE%89%E8%A3%85-NPM-%E6%A8%A1%E5%9D%97" class="headerlink" title="安装 NPM 模块"></a>安装 NPM 模块</h3><ul>
 <li><p>在根目录下运行<code>npm install</code>安装依赖包。</p>
 </li>
@@ -164,8 +164,8 @@
 </li>
 </ul>
 <p><code>dev</code> 运行开发环境，提供浏览器自动刷新、增量编译、未压缩静态文件等；<code>build</code> 部署生产环境，合并压缩、替换路径、添加版本号等。</p>
-<h3 id="使用-Gulp"><a href="build.html#%E4%BD%BF%E7%94%A8-Gulp" class="headerlink" title="使用 Gulp"></a>使用 Gulp</h3><p>Admui 使用 Gulp 来构建项目。它是自动化项目的构建利器，使用它可以大大提高工作效率。</p>
-<p>Admui 配置了大多数常用的任务以构建项目。如果不能满足您的需求，您可以在<code>gulp</code>文件夹下定义更多的任务。</p>
+<h3 id="使用-Gulp"><a href="build.html#%E4%BD%BF%E7%94%A8-Gulp" class="headerlink" title="使用 Gulp"></a>使用 Gulp</h3><p>QAdmin 使用 Gulp 来构建项目。它是自动化项目的构建利器，使用它可以大大提高工作效率。</p>
+<p>QAdmin 配置了大多数常用的任务以构建项目。如果不能满足您的需求，您可以在<code>gulp</code>文件夹下定义更多的任务。</p>
 <p>了解如何定义 Gulp 任务，请访问 <a href="http://gulpjs.com/" target="_blank" rel="external">Gulp官网</a> 或 <a href="http://www.gulpjs.com.cn/" target="_blank" rel="external">Gulp中文网</a>。</p>
 
     
@@ -180,7 +180,7 @@
     
     <div class="footer">
     &copy; 2015-2017
-    <a href="/portal/index.html">Admui</a>
+    <a href="/portal/index.html">QAdmin</a>
     ·
     上海畅控
 </div>

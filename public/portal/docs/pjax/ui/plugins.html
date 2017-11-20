@@ -2,21 +2,21 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>第三方插件 - Admui 开发文档</title>
+    <title>第三方插件 - QAdmin 开发文档</title>
     <meta charset="utf-8">
-    <meta name="keywords" content="admui,admui官网,admui框架,通用后台管理系统,后台框架,ui框架" />
-    <meta name="description" content="Admui 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
+    <meta name="keywords" content="qadmin,qadmin官网,qadmin框架,通用后台管理系统,后台框架,ui框架" />
+    <meta name="description" content="QAdmin 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <!--[if lte IE 9]>
-    <meta http-equiv="refresh" content="0; url='http://www.admui.com/ie'" />
+    <meta http-equiv="refresh" content="0; url='http://www.qadmin.com/ie'" />
     <![endif]-->
     <meta name="renderer" content="webkit" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Admui" />
+    <meta name="apple-mobile-web-app-title" content="QAdmin" />
     <meta name="msapplication-TileImage" content="/portal/assets/img/app/icon-72@x2.png" />
     <meta name="msapplication-TileColor" content="#395b81" />
     <link rel="apple-touch-icon-precomposed" href="/portal/assets/img/app/icon-72@x2.png" />
@@ -37,7 +37,7 @@
 <body>
 <div id="mobile-bar">
     <a class="menu-button"></a>
-    <a class="logo" href="../index.html">Admui开发文档</a>
+    <a class="logo" href="../index.html">QAdmin开发文档</a>
     <select class="version-select">
         <option value="basic">基础版</option>
         <option value="pjax" selected>pjax版</option>
@@ -45,7 +45,7 @@
 </div>
 <div id="header">
     <a id="logo" href="../index.html">
-        <img src="/portal/assets/img/logo.svg"> <span>Admui 开发文档</span>
+        <img src="/portal/assets/img/logo.svg"> <span>QAdmin 开发文档</span>
     </a>
     <select class="version-select">
         <option value="basic">基础版</option>
@@ -155,7 +155,7 @@
 
 <div class="content ui with-sidebar">
     <h1>第三方插件</h1>
-    <p>在 Admui 中，除了部分自定义的插件外，同时本着不重复制造轮子的原则，我们也整合了大量成熟的，经过验证的第三方插件，在开发过程中，如果有必要，请参考所使用插件的官方api。</p>
+    <p>在 QAdmin 中，除了部分自定义的插件外，同时本着不重复制造轮子的原则，我们也整合了大量成熟的，经过验证的第三方插件，在开发过程中，如果有必要，请参考所使用插件的官方api。</p>
 <p>一些插件可能监听了<code>window.onScroll</code>事件，如果页面中使用了<code>.page.page-full</code>，可能会导致这些插件的与滚动条相关的功能失效，如果碰到这种情况，建议不要在<code>.page</code>上使用<code>.page-full</code>。</p>
 <p>对于未使用的插件，建议在项目开发完成后删除。</p>
 <p>以下是我们使用的第三方插件：</p>
@@ -169,7 +169,7 @@
 </ul>
 <h3 id="alertify-js"><a href="plugins.html#alertify-js" class="headerlink" title="alertify.js"></a>alertify.js</h3><ul>
 <li>版本：1.0.10</li>
-<li>文档：<a href="../../bsify/alertify/index.html" target="_blank" rel="external">http://bsify.admui.com/alertify/</a></li>
+<li>文档：<a href="../../bsify/alertify/index.html" target="_blank" rel="external">http://bsify.qadmin.com/alertify/</a></li>
 <li>许可：MIT</li>
 <li>依赖：无</li>
 <li>DataAPI：<code>data-pulgin=&quot;alertify&quot;</code></li>
@@ -649,7 +649,7 @@
 </ul>
 <h3 id="jquery-pjax"><a href="plugins.html#jquery-pjax" class="headerlink" title="jquery-pjax"></a>jquery-pjax</h3><ul>
 <li>版本：0.4.2</li>
-<li>文档：<a href="../../bsify/jquery-pjax/index.html" target="_blank" rel="external">http://bsify.admui.com/jquery-pjax/</a></li>
+<li>文档：<a href="../../bsify/jquery-pjax/index.html" target="_blank" rel="external">http://bsify.qadmin.com/jquery-pjax/</a></li>
 <li>许可：GPL</li>
 <li>依赖：<a href="plugins.html#jquery">jQuerys</a></li>
 <li>DataAPI：无</li>
@@ -1063,12 +1063,12 @@
 <li>DataAPI：无</li>
 <li>功能：ECharts，一个纯Javascript的图表库，可以流畅的运行在PC和移动设备上</li>
 </ul>
-<h2 id="插件升级"><a href="plugins.html#%E6%8F%92%E4%BB%B6%E5%8D%87%E7%BA%A7" class="headerlink" title="插件升级"></a>插件升级</h2><p>Admui 对所引用的插件的样式进行了重构，您可以在<code>/src/themes/{主题名}/libs/</code>下找到插件对应的LESS源码。</p>
+<h2 id="插件升级"><a href="plugins.html#%E6%8F%92%E4%BB%B6%E5%8D%87%E7%BA%A7" class="headerlink" title="插件升级"></a>插件升级</h2><p>QAdmin 对所引用的插件的样式进行了重构，您可以在<code>/src/themes/{主题名}/libs/</code>下找到插件对应的LESS源码。</p>
 <p>某些插件的JS文件也经过了修改，这些插件包含但不限于以下所列内容：</p>
 <ul>
-<li><a href="plugins.html#jquery-pjax">jquery-pjax</a>，修改过的 jquery-pjax 插件我们已经托管到 <a href="https://github.com/admui/jquery-pjax" target="_blank" rel="external">Github 上</a>。</li>
+<li><a href="plugins.html#jquery-pjax">jquery-pjax</a>，修改过的 jquery-pjax 插件我们已经托管到 <a href="https://github.com/qadmin/jquery-pjax" target="_blank" rel="external">Github 上</a>。</li>
 </ul>
-<p>Admui 在选择插件的时候尽量使用了最新版或者稳定版，所以我们不建议您手动对插件进行升级，我们会在最新版的源码中包含尽可能新的插件。</p>
+<p>QAdmin 在选择插件的时候尽量使用了最新版或者稳定版，所以我们不建议您手动对插件进行升级，我们会在最新版的源码中包含尽可能新的插件。</p>
 
     
     <div class="page-links">
@@ -1082,7 +1082,7 @@
     
     <div class="footer">
     &copy; 2015-2017
-    <a href="/portal/index.html">Admui</a>
+    <a href="/portal/index.html">QAdmin</a>
     ·
     上海畅控
 </div>

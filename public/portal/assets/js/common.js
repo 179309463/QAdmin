@@ -38,7 +38,7 @@
     for (var i = 0, len = version.length; i < len; i++) {
         version[i].addEventListener('change', function (e) {
             var version = e.target.value
-            window.location.assign('http://docs.admui.com/' + version + '/');
+            window.location.assign('http://docs.qadmin.com/' + version + '/');
         });
     }
     /**

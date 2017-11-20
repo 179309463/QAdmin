@@ -2,21 +2,21 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>本地部署 - Admui 开发文档</title>
+    <title>本地部署 - QAdmin 开发文档</title>
     <meta charset="utf-8">
-    <meta name="keywords" content="admui,admui官网,admui框架,通用后台管理系统,后台框架,ui框架" />
-    <meta name="description" content="Admui 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
+    <meta name="keywords" content="qadmin,qadmin官网,qadmin框架,通用后台管理系统,后台框架,ui框架" />
+    <meta name="description" content="QAdmin 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <!--[if lte IE 9]>
-    <meta http-equiv="refresh" content="0; url='http://www.admui.com/ie'" />
+    <meta http-equiv="refresh" content="0; url='http://www.qadmin.com/ie'" />
     <![endif]-->
     <meta name="renderer" content="webkit" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Admui" />
+    <meta name="apple-mobile-web-app-title" content="QAdmin" />
     <meta name="msapplication-TileImage" content="/portal/assets/img/app/icon-72@x2.png" />
     <meta name="msapplication-TileColor" content="#395b81" />
     <link rel="apple-touch-icon-precomposed" href="/portal/assets/img/app/icon-72@x2.png" />
@@ -37,7 +37,7 @@
 <body>
 <div id="mobile-bar">
     <a class="menu-button"></a>
-    <a class="logo" href="../index.html">Admui开发文档</a>
+    <a class="logo" href="../index.html">QAdmin开发文档</a>
     <select class="version-select">
         <option value="basic">基础版</option>
         <option value="pjax" selected>pjax版</option>
@@ -45,7 +45,7 @@
 </div>
 <div id="header">
     <a id="logo" href="../index.html">
-        <img src="/portal/assets/img/logo.svg"> <span>Admui 开发文档</span>
+        <img src="/portal/assets/img/logo.svg"> <span>QAdmin 开发文档</span>
     </a>
     <select class="version-select">
         <option value="basic">基础版</option>
@@ -115,16 +115,16 @@
 
 <div class="content java with-sidebar">
     <h1>本地部署</h1>
-    <p>在此章节，我们将介绍如何将Admui导入到本地开发工具，并正常运行。</p>
+    <p>在此章节，我们将介绍如何将QAdmin导入到本地开发工具，并正常运行。</p>
 <h2 id="新建项目"><a href="local.html#%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE" class="headerlink" title="新建项目"></a>新建项目</h2><p>首先，您需要新建一个支持MAVEN的WEB项目，然后将源码中的<code>/src/main/java</code>、<code>/src/main/resources</code>和<code>/src/main/webapp</code>下的所有文件(文件夹)分别拷贝到我们新建项目的对应文件夹下。</p>
-<h2 id="初始化数据库"><a href="local.html#%E5%88%9D%E5%A7%8B%E5%8C%96%E6%95%B0%E6%8D%AE%E5%BA%93" class="headerlink" title="初始化数据库"></a>初始化数据库</h2><p>在您的MySQL数据库中新建一个数据库(如admui)，接下来在新建数据库中执行源码中的 admui.sql 脚本。</p>
+<h2 id="初始化数据库"><a href="local.html#%E5%88%9D%E5%A7%8B%E5%8C%96%E6%95%B0%E6%8D%AE%E5%BA%93" class="headerlink" title="初始化数据库"></a>初始化数据库</h2><p>在您的MySQL数据库中新建一个数据库(如qadmin)，接下来在新建数据库中执行源码中的 qadmin.sql 脚本。</p>
 <blockquote>
 <p>Notes：请牢记您数据库的用户名和密码。</p>
 </blockquote>
 <h2 id="修改项目配置文件"><a href="local.html#%E4%BF%AE%E6%94%B9%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6" class="headerlink" title="修改项目配置文件"></a>修改项目配置文件</h2><p>打开您项目的<code>pom.xml</code>，将源码中<code>pom.xml</code>的文件内容拷贝进去。</p>
 <p>打开<code>/src/main/resources/jdbc.properties</code>配置文件，修改以下数据库信息：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">jdbc.url=jdbc\:mysql\://localhost\:3306/admui?useUnicode\=true&amp;characterEncoding\=utf8</div><div class="line">jdbc.username=root</div><div class="line">jdbc.password=root</div></pre></td></tr></table></figure>
-<h2 id="应用服务器部署"><a href="local.html#%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2" class="headerlink" title="应用服务器部署"></a>应用服务器部署</h2><p>将项目部署到WEB应用服务器（如：Tomcat），启动并访问；默认的用户密码为 admui / Admui123</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">jdbc.url=jdbc\:mysql\://localhost\:3306/qadmin?useUnicode\=true&amp;characterEncoding\=utf8</div><div class="line">jdbc.username=root</div><div class="line">jdbc.password=root</div></pre></td></tr></table></figure>
+<h2 id="应用服务器部署"><a href="local.html#%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2" class="headerlink" title="应用服务器部署"></a>应用服务器部署</h2><p>将项目部署到WEB应用服务器（如：Tomcat），启动并访问；默认的用户密码为 qadmin / QAdmin123</p>
 
     
     <div class="page-links">
@@ -138,7 +138,7 @@
     
     <div class="footer">
     &copy; 2015-2017
-    <a href="/portal/index.html">Admui</a>
+    <a href="/portal/index.html">QAdmin</a>
     ·
     上海畅控
 </div>

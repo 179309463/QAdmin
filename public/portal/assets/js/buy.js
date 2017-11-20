@@ -260,7 +260,7 @@ $(function () {
     		product.$data.program = program
     		
     	},
-    	code: function(opt){ // admui源码
+    	code: function(opt){ // qadmin源码
     		var code = [];
     		
     		if(typeof opt !== 'undefined'){

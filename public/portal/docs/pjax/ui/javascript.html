@@ -2,21 +2,21 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>JS 模块 - Admui 开发文档</title>
+    <title>JS 模块 - QAdmin 开发文档</title>
     <meta charset="utf-8">
-    <meta name="keywords" content="admui,admui官网,admui框架,通用后台管理系统,后台框架,ui框架" />
-    <meta name="description" content="Admui 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
+    <meta name="keywords" content="qadmin,qadmin官网,qadmin框架,通用后台管理系统,后台框架,ui框架" />
+    <meta name="description" content="QAdmin 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <!--[if lte IE 9]>
-    <meta http-equiv="refresh" content="0; url='http://www.admui.com/ie'" />
+    <meta http-equiv="refresh" content="0; url='http://www.qadmin.com/ie'" />
     <![endif]-->
     <meta name="renderer" content="webkit" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Admui" />
+    <meta name="apple-mobile-web-app-title" content="QAdmin" />
     <meta name="msapplication-TileImage" content="/portal/assets/img/app/icon-72@x2.png" />
     <meta name="msapplication-TileColor" content="#395b81" />
     <link rel="apple-touch-icon-precomposed" href="/portal/assets/img/app/icon-72@x2.png" />
@@ -37,7 +37,7 @@
 <body>
 <div id="mobile-bar">
     <a class="menu-button"></a>
-    <a class="logo" href="../index.html">Admui开发文档</a>
+    <a class="logo" href="../index.html">QAdmin开发文档</a>
     <select class="version-select">
         <option value="basic">基础版</option>
         <option value="pjax" selected>pjax版</option>
@@ -45,7 +45,7 @@
 </div>
 <div id="header">
     <a id="logo" href="../index.html">
-        <img src="/portal/assets/img/logo.svg"> <span>Admui 开发文档</span>
+        <img src="/portal/assets/img/logo.svg"> <span>QAdmin 开发文档</span>
     </a>
     <select class="version-select">
         <option value="basic">基础版</option>
@@ -155,12 +155,12 @@
 
 <div class="content ui with-sidebar">
     <h1>JS 模块</h1>
-    <h2 id="主题结构"><a href="javascript.html#%E4%B8%BB%E9%A2%98%E7%BB%93%E6%9E%84" class="headerlink" title="主题结构"></a>主题结构</h2><p>Admui 具有高度模块化的 JavaScript。</p>
+    <h2 id="主题结构"><a href="javascript.html#%E4%B8%BB%E9%A2%98%E7%BB%93%E6%9E%84" class="headerlink" title="主题结构"></a>主题结构</h2><p>QAdmin 具有高度模块化的 JavaScript。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">/src/themes/(主题名)/(布局名)/js/</div><div class="line">    ├── sections/ (布局模块, 如：menu，labelPage等)</div><div class="line">    ├── app.js (基本示例)</div><div class="line">    └── site.js (初始化函数)</div><div class="line"></div><div class="line">/src/themes/(主题名)/global/js/</div><div class="line">    ├── components/ (源文件)</div><div class="line">    ├── configs/ (基本配置信息)</div><div class="line">    ├── plugins/ (插件)</div><div class="line">    ├── components.js (组件，通过components文件夹组合而成)</div><div class="line">    └── core.js (定义root对象 $.site 和 $.components 等)</div></pre></td></tr></table></figure>
 <h2 id="网站初始化"><a href="javascript.html#%E7%BD%91%E7%AB%99%E5%88%9D%E5%A7%8B%E5%8C%96" class="headerlink" title="网站初始化"></a>网站初始化</h2><p>使用 <code>$.site</code> 对象来设置 <code>pjax</code> 操作及主题功能；如：菜单栏，栅格菜单，工具条，工具提示和组件等。</p>
 <p>在 <code>/src/themes/(主题名)/(布局名)/js/site.js</code> 文件中我们对网站进行了初始化操作，您不需要再重新进行初始化操作。</p>
 <p>我们还在 <code>/src/themes/(主题名)/(布局名)/js/app.js</code> 文件中提供了 <code>$.app</code> 对象，设置一些公用的方法，以便在各个页面中调用。</p>
-<h2 id="window-Content-对象"><a href="javascript.html#window-Content-%E5%AF%B9%E8%B1%A1" class="headerlink" title="window.Content 对象"></a><code>window.Content</code> 对象</h2><p>Admui是依赖于pjax实现的，为了更好的管理内存，我们希望开发人员以面向对象的写法在<code>window.Content</code>对象中实现功能，以便在切换标签页时释放上一个标签页中占用内存。代码如下：</p>
+<h2 id="window-Content-对象"><a href="javascript.html#window-Content-%E5%AF%B9%E8%B1%A1" class="headerlink" title="window.Content 对象"></a><code>window.Content</code> 对象</h2><p>QAdmin是依赖于pjax实现的，为了更好的管理内存，我们希望开发人员以面向对象的写法在<code>window.Content</code>对象中实现功能，以便在切换标签页时释放上一个标签页中占用内存。代码如下：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="built_in">window</span>.Content = &#123;</div><div class="line">    <span class="attr">consoleText</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'hello world'</span>);</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">run</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="keyword">this</span>.consoleText();</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <blockquote>
 <p>v1.0.1 扩展</p>
@@ -176,12 +176,12 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">var font = $.configs.extend(&apos;site&apos;,&#123;</div><div class="line">    fontSize: &apos;18px&apos;,</div><div class="line">    color: &apos;#f60&apos;,</div><div class="line">    ...</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>我们也在 <code>global/configs/site-configs.js</code> 文件中通过 <code>$.configs.colors = {&quot;red&quot;: {&quot;100&quot;: &quot;#ffeaea&quot;}}</code> 配置了一些颜色信息，可以通过 <code>$.color(name[,level])</code> 方法使用。如下：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> color = $.color(<span class="string">'red'</span>, <span class="number">100</span>);</div><div class="line"><span class="built_in">console</span>.info(color); <span class="comment">// 输出：'#ffeaea'</span></div></pre></td></tr></table></figure>
-<h2 id="离开页面"><a href="javascript.html#%E7%A6%BB%E5%BC%80%E9%A1%B5%E9%9D%A2" class="headerlink" title="离开页面"></a>离开页面</h2><p>使用<code>$.leavePage</code> 函数可以为当前页写一些离开页面时的功能，Admui 会在离开该页时运行该函数。例如：</p>
+<h2 id="离开页面"><a href="javascript.html#%E7%A6%BB%E5%BC%80%E9%A1%B5%E9%9D%A2" class="headerlink" title="离开页面"></a>离开页面</h2><p>使用<code>$.leavePage</code> 函数可以为当前页写一些离开页面时的功能，QAdmin 会在离开该页时运行该函数。例如：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">$.leavePage = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(<span class="string">'hello world!'</span>);</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 <h2 id="关闭标签页"><a href="javascript.html#%E5%85%B3%E9%97%AD%E6%A0%87%E7%AD%BE%E9%A1%B5" class="headerlink" title="关闭标签页"></a>关闭标签页</h2><p>使用<code>$.site.contentTabs.closeTab</code> 方法可以动态的关闭当前选中的标签页。例如：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">$.site.contentTabs.closeTab();</div></pre></td></tr></table></figure>
 <blockquote>
-<p>Notes: 关于<code>core.js</code>中的<code>$.ctx</code>属性。该属性可以方便您更改项目名称。您只需在<code>index.html</code>中的<code>id为admui-signOut</code>节点处填写<code>data-ctx</code>值，并在您有ajax等请求时，使用<code>$.ctx</code>属性即可。(如果您不需要，可删除该属性)</p>
+<p>Notes: 关于<code>core.js</code>中的<code>$.ctx</code>属性。该属性可以方便您更改项目名称。您只需在<code>index.html</code>中的<code>id为qadmin-signOut</code>节点处填写<code>data-ctx</code>值，并在您有ajax等请求时，使用<code>$.ctx</code>属性即可。(如果您不需要，可删除该属性)</p>
 </blockquote>
 <h2 id="组件注册"><a href="javascript.html#%E7%BB%84%E4%BB%B6%E6%B3%A8%E5%86%8C" class="headerlink" title="组件注册"></a>组件注册</h2><p>使用<code>$.components</code> 对象可以进行组件注册，您可以合理的组织您使用到的第三方插件。</p>
 <h3 id="注册"><a href="javascript.html#%E6%B3%A8%E5%86%8C" class="headerlink" title="注册"></a>注册</h3><blockquote>
@@ -218,7 +218,7 @@
 </ul>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">$.components.init(<span class="string">'rating'</span>);</div></pre></td></tr></table></figure>
 <p>我们也可以通过上下文指定该组件的第二个参数。当我们在打开新标签页，或者通过ajax加载DOM这将会非常有用：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">$.components.init(<span class="string">'rating'</span>, <span class="string">'#admui-pageContent'</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">$.components.init(<span class="string">'rating'</span>, <span class="string">'#qadmin-pageContent'</span>);</div></pre></td></tr></table></figure>
 <ul>
 <li>详细：</li>
 </ul>
@@ -230,7 +230,7 @@
 <h3 id="默认配置"><a href="javascript.html#%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE" class="headerlink" title="默认配置"></a>默认配置</h3><p>我们在组件注册时定义了配置选项对象，您可以根据具体的使用情况修改它。当您不使用我们的组件方案，又希望使用我们定义的配置选项时，可以通过如下方法获取配置：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> defaults = $.components.getDefaults(<span class="string">'&#123;compontentName&#125;'</span>);</div></pre></td></tr></table></figure>
 <p>如果您也需要加入自己的配置项，可以使用 <code>$.po(name[,object])</code> 方法：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> defaults = $.po(<span class="string">'&#123;componentName&#125;'</span>, &#123;</div><div class="line">    <span class="attr">name</span>: <span class="string">'Admui'</span>,</div><div class="line">    ...</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> defaults = $.po(<span class="string">'&#123;componentName&#125;'</span>, &#123;</div><div class="line">    <span class="attr">name</span>: <span class="string">'QAdmin'</span>,</div><div class="line">    ...</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 <p>如果您不需要我们的组件的解决方案，您也可以将其删除。</p>
 
     
@@ -245,7 +245,7 @@
     
     <div class="footer">
     &copy; 2015-2017
-    <a href="/portal/index.html">Admui</a>
+    <a href="/portal/index.html">QAdmin</a>
     ·
     上海畅控
 </div>

@@ -317,7 +317,7 @@ $(function () {
 	});
 
 	// 客服组件
-	$('body').append('<script src="//assets-cdn.kf5.com/supportbox/main.js?' + (new Date).getDay() + '" id="kf5-provide-supportBox" kf5-domain="admui.kf5.com" charset="utf-8"></script>');
+	$('body').append('<script src="//assets-cdn.kf5.com/supportbox/main.js?' + (new Date).getDay() + '" id="kf5-provide-supportBox" kf5-domain="qadmin.kf5.com" charset="utf-8"></script>');
 
 	// 打开客服弹出层
 	$('.open-kf').on('click', function(e){
