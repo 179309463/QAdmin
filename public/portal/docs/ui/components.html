@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>UI 组件 - QAdmin 开发文档</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="qadmin,qadmin官网,qadmin框架,通用后台管理系统,后台框架,ui框架" />
+    <meta name="description" content="QAdmin 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='http://www.qadmin.com/ie'" />
+    <![endif]-->
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="QAdmin" />
+    <meta name="msapplication-TileImage" content="/img/app/icon-72@x2.png" />
+    <meta name="msapplication-TileColor" content="#395b81" />
+    <link rel="apple-touch-icon-precomposed" href="/img/app/icon-72@x2.png" />
+    <link rel="shortcut icon" href="/img/app/favicon.png" />
+    <meta name="msapplication-TileColor" content="#62a8ea">
+    <script>
+        window.PAGE_TYPE = "ui"
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?cd758c4c82a4964836712308cb782b12";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <link rel="stylesheet" href="/portal/docs/common.css">
+</head>
+<body>
+<div id="mobile-bar">
+    <a class="menu-button"></a>
+    <a class="logo" href="../index.html">QAdmin开发文档</a>
+    <select class="version-select">
+        <option value="basic">基础版</option>
+        <option value="pjax" selected>pjax版</option>
+    </select>
+</div>
+<div id="header">
+    <a id="logo" href="../index.html">
+        <img src="/img/logo.svg"> <span>QAdmin 开发文档</span>
+    </a>
+    <select class="version-select">
+        <option value="basic">基础版</option>
+        <option value="pjax" selected>pjax版</option>
+    </select>
+    <ul id="nav">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">UI</a>
+</li>
+<li>
+    <a href="../java/index.html" class="nav-link">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+
+    </ul>
+</div>
+
+<div id="main" class="fix-sidebar">
+    
+    
+<div class="sidebar">
+    <ul class="main-menu">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">UI</a>
+</li>
+<li>
+    <a href="../java/index.html" class="nav-link">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+
+    </ul>
+    <div class="list">
+        <ul class="menu-root">
+            
+            <li>
+                <a href="index.html" class="sidebar-link ">基本概述</a>
+            </li>
+            
+            <li>
+                <a href="themes.html" class="sidebar-link ">主题说明</a>
+            </li>
+            
+            <li>
+                <a href="build.html" class="sidebar-link ">构建工具</a>
+            </li>
+            
+            <li>
+                <a href="gui-tools.html" class="sidebar-link ">开发工具</a>
+            </li>
+            
+            <li>
+                <a href="files.html" class="sidebar-link ">入口文件</a>
+            </li>
+            
+            <li>
+                <a href="structure.html" class="sidebar-link ">模板结构</a>
+            </li>
+            
+            <li>
+                <a href="hello-world.html" class="sidebar-link ">Hello world</a>
+            </li>
+            
+            <li>
+                <a href="style.html" class="sidebar-link ">自定义样式</a>
+            </li>
+            
+            <li>
+                <a href="javascript.html" class="sidebar-link ">JS 模块</a>
+            </li>
+            
+            <li>
+                <a href="components.html" class="sidebar-link current ">UI 组件</a>
+            </li>
+            
+            <li>
+                <a href="plugins.html" class="sidebar-link ">第三方插件</a>
+            </li>
+            
+            <li>
+                <a href="icons.html" class="sidebar-link ">字体图标</a>
+            </li>
+            
+            <li>
+                <a href="code-guide.html" class="sidebar-link ">编码规范</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content ui with-sidebar">
+    <h1>UI 组件</h1>
+    <p>QAdmin 包含了所有的 BootStrap3 组件，并自定义了一些组件，在使用这些组件之前，建议先阅读一下 <a href="http://getbootstrap.com/" target="_blank" rel="external">BootStrap3文档</a> 或 <a href="http://v3.bootcss.com/" target="_blank" rel="external">BootStrap3中文文档</a>。</p>
+<p>同时，我们也对组件的功能和样式做了很多扩展，在我们提供的<code>UI示例 - 组件</code>中，您可以找到您需要使用的组件。</p>
+<p>QAdmin 提供大量组件组合使用的示例页面，希望能对您使用这些组件有所帮助。您可以自定义或者直接使用这些组件，只需复制对应的<code>Html</code>代码即可，某些组件可能还需要引入依赖的<code>js</code>和<code>css</code>。</p>
+
+    
+    <div class="page-links">
+        
+        <span><a href="javascript.html">&lang; 上一页：JS 模块</a></span>
+        
+        
+        <span style="float:right"><a href="plugins.html">下一页：第三方插件 &rang;</a></span>
+        
+    </div>
+    
+    <div class="footer">
+    &copy; 2015-2017
+    <a href="/portal/index.html">QAdmin</a>
+    ·
+    上海畅控
+</div>
+</div>
+
+    
+</div>
+
+
+<script src="/vendor/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+<script src="/portal/docs/common.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+    }, false);
+</script>
+
+</body>
+</html>

@@ -259,7 +259,7 @@
     var isMobile = inBrowser && document.body.clientWidth <= 600;
 
     /**
-     * @see https://github.com/MoOx/pjax/blob/master/lib/is-supported.js
+     * @see https://github.com/MoOx/blob/master/lib/is-supported.js
      */
     var supportsPushState = inBrowser && (function () {
             // Borrowed wholesale from https://github.com/defunkt/jquery-pjax

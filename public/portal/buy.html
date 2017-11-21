@@ -5,29 +5,30 @@
 <head>
     <title>购买 - QAdmin</title>
     <meta charset="utf-8" />
-<meta name="keywords" content="QAdmin框架,后台管理系统框架,后台框架,ui框架,后台bootstrap框架,响应式后台,后台主题" />
-<meta name="description" content="QAdmin是一个基于Java及jQuery等最新Web技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-<!--[if lte IE 9]>
-<meta http-equiv="refresh" content="0; url='http://www.qadmin.com/ie'" />
-<![endif]-->
-<meta name="renderer" content="webkit" />
-<meta name="visitor-form" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<meta name="apple-mobile-web-app-title" content="QAdmin" />
-<meta name="msapplication-TileImage" content="/portal/assets/img/app/icon-72@x2.png" />
-<meta name="msapplication-TileColor" content="#395b81" />
-<link rel="apple-touch-icon-precomposed" href="/portal/assets/img/app/icon-72@x2.png" />
-<link rel="shortcut icon" href="/portal/assets/img/app/favicon.png" />
-<link rel="stylesheet" href="http://cdn.bootcss.com/semantic-ui/2.2.6/semantic.min.css" />
-<link rel="stylesheet" href="/portal/assets/css/toastr.min.css" />
-<link rel="stylesheet" href="/portal/assets/css/style.css" />
+    <meta name="keywords" content="QAdmin框架,后台管理系统框架,后台框架,ui框架,后台bootstrap框架,响应式后台,后台主题" />
+    <meta name="description" content="QAdmin是一个基于Java及jQuery等最新Web技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='http://www.qadmin.com/ie'" />
+    <![endif]-->
+    <meta name="renderer" content="webkit" />
+    <meta name="visitor-form" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="QAdmin" />
+    <meta name="msapplication-TileImage" content="/img/app/icon-72@x2.png" />
+    <meta name="msapplication-TileColor" content="#395b81" />
+    <link rel="apple-touch-icon-precomposed" href="/img/app/icon-72@x2.png" />
+    <link rel="shortcut icon" href="/img/app/favicon.png" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/semantic-ui/2.2.6/semantic.min.css" />
+    <link rel="stylesheet" href="/lib/toastr/build/toastr.css" />
+    <link rel="stylesheet" href="/portal/portal.css" />
 
-    <link href="/portal/assets/css/buy.css" rel="stylesheet" />
+    <link href="/portal/buy.css" rel="stylesheet" />
+
     <script>
         var formData = {
        		types: [],
@@ -56,7 +57,7 @@
 <!-- 导航 -->
 <header id="navbar">
     <div class="ui container">
-        <a href="index.html" class="logo"><img src="/portal/assets/img/logo.svg" /></a>
+        <a href="index.html" class="logo"><img src="/img/logo.svg" /></a>
         <a href="buy.html#" class="menu"><i class="sidebar icon"></i></a>
         <a href="index-sendUrl=-user.html" class="ucenter openlogin"><i class="user icon"></i></a>
         <nav>
@@ -64,7 +65,7 @@
             <a href="buy.html" class="active">购买</a>
             <a href="demo.html">演示</a>
             <a href="/portal/help/hc/index.html">帮助</a>
-            <a href="/portal/docs/pjax/index.html">开发文档</a>
+            <a href="/portal/docs/index.html">开发文档</a>
             <a href="/portal/bsify/index.html">BSify</a>
         </nav>
     </div>
@@ -88,7 +89,7 @@
             <a class="item active">
                 QAdmin 购买
             </a>
-            <a class="right item" href="/portal/help/hc/kb/section/1014666/index.html" target="_blank">
+            <a class="right item" href="/portal/help/hc/kb/section/id.html" target="_blank">
                 <i class="help circle icon"></i> 帮助
             </a>
         </div>
@@ -116,7 +117,7 @@
                                 </div>
                                 <div class="form-cell-info">
                                     <div>仅提供已购买主版本和当前版本的最新版，<span class="text-red">不同版本之间可能会有不兼容的情况，请谨慎选择。</span>
-                                        <a href="/portal/help/hc/kb/article/1039831/index.html" target="_blank">点此了解</a>
+                                        <a href="/portal/help/hc/kb/article/id.html" target="_blank">点此了解</a>
                                     </div>
                                     <div>QAdmin 的版本号遵循《<a href="http://semver.org/lang/zh-CN/" target="_blank">语义化版本 2.0.0</a>》
                                     </div>
@@ -143,7 +144,7 @@
                                 </div>
                                 <div class="form-cell-info">"自动构建"包含所有项目源码，适合对Gulp、Less等比较熟悉的前端工程师使用，同时，利用"自动构建"提供的脚手架可最大程度的实现对QAdmin的定制</div>
                                 <div class="form-cell-info">"基础源码"包含所有html、css、js等文件，适合对要求界面定制要求不高的场景，或普通前端工程师使用</div>
-                                <div class="form-cell-info"><a href="/portal/help/hc/kb/article/1040432/index.html" target="_blank">如何选择适合我的前端源码？</a></div>
+                                <div class="form-cell-info"><a href="/portal/help/hc/kb/article/id.html" target="_blank">如何选择适合我的前端源码？</a></div>
                             </div>
                         </div>
                     </div>
@@ -193,7 +194,7 @@
                                     </ul>
                                 </div>
                                 <div class="form-cell-info">您可以将QAdmin用于多个项目，但是您需要为每个域名(不包含子域名)或IP购买授权。
-                                    <a href="/portal/help/hc/kb/article/1035790/index.html" target="_blank">详情</a>
+                                    <a href="/portal/help/hc/kb/article/id.html" target="_blank">详情</a>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +216,7 @@
                             <label>协议合同：</label>
                             <div class="inline">
                                 <div class="form-cell-info">如果需要纸质合同，请在购买完成后在会员中心下载。
-                                    <a href="/portal/help/hc/kb/article/1035530/index.html" target="_blank">详情</a>
+                                    <a href="/portal/help/hc/kb/article/id.html" target="_blank">详情</a>
                                 </div>
                             </div>
                         </div>
@@ -437,7 +438,7 @@
 <script src="/vendor/jquery/dist/jquery.min.js"></script>
 <script src="http://cdn.bootcss.com/semantic-ui/2.2.6/semantic.min.js"></script>
 <script src="/lib/toastr/build/toastr.js"></script>
-<script src="/portal/assets/js/main.js"></script>
+<script src="/portal/portal.js"></script>
 
 <!-- 自定义js -->
 <script>
@@ -450,7 +451,7 @@
 </script>
 
 <script src="/vendor/vue/dist/vue.min.js"></script>
-<script src="/portal/assets/js/buy.js"></script>
+<script src="/portal/buy.js"></script>
 </body>
 
 </html>

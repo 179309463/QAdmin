@@ -10,8 +10,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="keywords" content="qadmin,qadmin官网,qadmin框架,通用后台管理系统,后台框架,ui框架"/><meta name="description" content="QAdmin 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象"/>    <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="_csrf" value="f675af88a597243598f16cf69c68306600e0d43a">
-    <link rel="stylesheet" type="text/css" href="../../../library/ue/third-party/SyntaxHighlighter/shCoreDefault.css" />
+    <meta name="_csrf" value="a12eeb1e923c210d2c0dbdcb59adaebe01da2d53">
+    <link rel="stylesheet" type="text/css" href="../../library/ue/third-party/SyntaxHighlighter/shCoreDefault.css" />
 <link rel="stylesheet" type="text/css" href="http://assets-cdn.kf5.com/help-center/css/theme_base.css?v=201710122319" />
 <link rel="stylesheet" type="text/css" href="http://assets-cdn.kf5.com/help-center/css/theme_fonts.css" />
 <link rel="stylesheet" type="text/css" href="https://fs.kf5.com/generated/cssv2/style_d1b11d193b9d62b13d4185fa795032af.css?v=fbdc9014ca799cf0" />
@@ -21,20 +21,17 @@
 <script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/vendor/jquery-ui.1.11.0.min.js"></script>
 <script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/application/dialog.js?v=201710122319"></script>
 <script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/application/function.js?v=201710122319"></script>
-<script type="text/javascript" src="../../../library/ue/ueditor.config.js"></script>
-<script type="text/javascript" src="../../../library/ue/ueditor.min.js"></script>
-<script type="text/javascript" src="../../../library/ue/third-party/SyntaxHighlighter/shCore.js"></script>
-<script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/application/ueditor_insertimage_ui.js?v=201710122319"></script>
+<script type="text/javascript" src="../../library/ue/third-party/SyntaxHighlighter/shCore.js"></script>
 <script type="text/javascript">
 /*<![CDATA[*/
 $.ajaxSetup({
         headers: {
-            "X-CSRF-Token": "f675af88a597243598f16cf69c68306600e0d43a"
+            "X-CSRF-Token": "a12eeb1e923c210d2c0dbdcb59adaebe01da2d53"
         }
     })
 /*]]>*/
 </script>
-<title>讨论社区 - QAdmin框架 - 客户服务</title>
+<title>产品购买 - QAdmin框架 - 客户服务</title>
     <link rel="shortcut icon" type="image/x-icon" href="http://help.qadmin.com/upload/28399/201704/58e4690e6694a_999.ico" />    <!--[if lt IE 9]>
     <script type="text/javascript" src="//assets-cdn.kf5.com/help-center/js/vendor/html5.js"></script>
     <script type="text/javascript">
@@ -62,7 +59,7 @@ $.ajaxSetup({
             <a href="/portal/index.html">首页</a>
             <a href="/portal/buy.html">购买</a>
             <a href="/portal/demo.html">演示</a>
-            <a href="../../index.html" class="active">帮助</a>
+            <a href="../index.html" class="active">帮助</a>
             <a href="/portal/docs/index.html">开发文档</a>
         </nav>
     </div>
@@ -72,51 +69,89 @@ $.ajaxSetup({
         <h1 class="logo"><a href="/portal/help.html">客户服务平台</a></h1>
         <nav class="header-nav">
             <ul class="header-nav-list clearfix">
-                <li><a href="index.html" class="community-link">讨论社区</a></li>
-                <li><a href="../../../user/login/index.html" class="submit-a-request">提交新问题</a></li></li>
+                <li><a href="../community/topic/index.html" class="community-link">讨论社区</a></li>
+                <li><a href="../../user/login/index.html" class="submit-a-request">提交新问题</a></li></li>
             </ul>
             <div class="user-nav clearfix">
                 <div class="user-info dropdown">
-                <div class="dropdown-toggle"><span class="user-info-name"><a href="../../../user/login/index.html" class="login" role="button">登录</a></span></div></div>
+                <div class="dropdown-toggle"><span class="user-info-name"><a href="../../user/login/index.html" class="login" role="button">登录</a></span></div></div>
                 
             </div>
         </nav>
     </div>
 </header><main>
-    <header class="main-header">
-    <div class="wrap">
-        <h2 class="community-title">讨论社区</h2>
-        <form action="../../index.html" class="main-header-search" method="get">
-            <label for="">
-                <input type="hidden" name="type" value="community" />
-                <input type="search" id="search" name="keyword" value="" placeholder="搜索社区" />
-                <i class="icon-search"></i>
-            </label>
-        </form>
-            </div>
-</header>    <section class="content">
+	<section class="search-box">
+        <form id="forum-search-form" accept-charset="UTF-8" action="../index.html" class="search" method="get" role="search">
+                <div class="search-match">
+                    <label for="top-search">
+                        <input type="hidden" name="type" value="kb" />
+                        <input type="search" id="search" name="keyword" placeholder="输入问题关键字，找到答案" autocomplete="off" x-webkit-speech />
+                    </label>
+                    <ul id="search-match-list" class="match-list"></ul>
+                </div>
+                <input type="submit" name="" value="搜索">
+            </form>
+	</section>
+    <section class="content">
         <div class="wrap clearfix">
             <section class="content-main">
-                <div class="question-bbs">
-                    <nav class="question-bbs-top-nav">
-                        <a href="index.html" class="active">全部</a><a href="1002913/index.html" >问题讨论</a>                    </nav>
-                    <nav class="nav-tabs">
-                        <h2>问题列表</h2>
-                        <ul>
-                            <li class="active"><a href="index.html">时间</a></li><li ><a href="filter/hot/index.html">热门</a></li>                        </ul>
-                    </nav>
-                    <ul class="question-bbs-list">
-                        <div class="empty-block">没有内容</div>                    </ul>
-                                    </div>
+                <nav class="sub-nav">
+                    <ul class="breadcrumbs"> <li> <a href="../index.html">首页</a></li> <li> <a href="../category/id.html">帮助支持</a></li> <li> 产品购买</li></ul>
+                </nav>
+				<h2>产品购买</h2>
+				<p class="description"></p>
+                <nav class="nav-tabs">
+				    <ul><li class="active"><a href="index-filter=all.html">全部</a></li><li><a href="index-filter=recent.html">最近</a></li></ul>
+				</nav>
+                <ul class="articles-list"><li class="">
+                    <span class="posts-item-vote-state">0 赞</span>
+                    <div class="posts-item-content">
+                        <h3><a href="../article/id.html">如何选择适合我的前端源码？</a></h3>
+                        <p>
+                            <span class="author">QAdmin-小朵</span>
+                             • <time>发表于 2017年04月20日 03:59</time> • <span>更新于 5月前</span> • <span>0 回复</span></p></div></li><li class="">
+                    <span class="posts-item-vote-state">0 赞</span>
+                    <div class="posts-item-content">
+                        <h3><a href="../article/id.html">升级产品的时候，如何选择版本？</a></h3>
+                        <p>
+                            <span class="author">QAdmin-小朵</span>
+                             • <time>发表于 2017年04月18日 16:50</time> • <span>更新于 5月前</span> • <span>0 回复</span></p></div></li><li class="">
+                    <span class="posts-item-vote-state">0 赞</span>
+                    <div class="posts-item-content">
+                        <h3><a href="../article/id.html">QAdmin全部开源吗？</a></h3>
+                        <p>
+                            <span class="author">QAdmin-小朵</span>
+                             • <time>发表于 2017年04月06日 10:27</time> • <span>更新于 4月前</span> • <span>0 回复</span></p></div></li><li class="">
+                    <span class="posts-item-vote-state">0 赞</span>
+                    <div class="posts-item-content">
+                        <h3><a href="../article/id.html">QAdmin可授权在多少个域名下使用？</a></h3>
+                        <p>
+                            <span class="author">QAdmin-小朵</span>
+                             • <time>发表于 2017年04月06日 10:20</time> • <span>更新于 5月前</span> • <span>0 回复</span></p></div></li><li class="">
+                    <span class="posts-item-vote-state">0 赞</span>
+                    <div class="posts-item-content">
+                        <h3><a href="../article/id.html">如何升级QAdmin至最新版？</a></h3>
+                        <p>
+                            <span class="author">QAdmin-小朵</span>
+                             • <time>发表于 2017年04月06日 10:13</time> • <span>更新于 6月前</span> • <span>0 回复</span></p></div></li><li class="">
+                    <span class="posts-item-vote-state">0 赞</span>
+                    <div class="posts-item-content">
+                        <h3><a href="../article/id.html">QAdmin升级时如何选择版本？</a></h3>
+                        <p>
+                            <span class="author">QAdmin-小朵</span>
+                             • <time>发表于 2017年04月06日 10:09</time> • <span>更新于 6月前</span> • <span>0 回复</span></p></div></li><li class="">
+                    <span class="posts-item-vote-state">0 赞</span>
+                    <div class="posts-item-content">
+                        <h3><a href="../article/id.html">QAdmin购买常见问题</a></h3>
+                        <p>
+                            <span class="author">QAdmin-小朵</span>
+                             • <time>发表于 2017年04月05日 11:44</time> • <span>更新于 6月前</span> • <span>0 回复</span></p></div></li></ul>
+                
             </section>
-            
-    <section class="content-sidebar">
-        <div class="category js-scroll-fixed">
-            <div class="question-user-info">
-                                            <a href="../../../user/login/index.html" class="new-question-post">发新帖求助或提交建议</a>
-            </div>
+            <section class="content-sidebar">
+                
+            </section>
         </div>
-    </section>        </div>
     </section>
 </main><footer id="footer">
     <div class="link">
@@ -133,31 +168,7 @@ $.ajaxSetup({
     <div class="wrap clearfix copyright">
         <i class="fa fa-copyright"></i> 2016 QAdmin
     </div>
-</footer>    <div id="edit_quesion_layer" class="pooup-bscrim" style="display:none;">
-        <div class="popup-mask"></div>
-        <div class="popup-box" style="z-index:10000;">
-            <header>
-                <h2>编辑问题</h2>
-                <a href="javascript:void(0);" class="close" onclick="hiddenLockLayer('#edit_quesion_layer');"><i class="icon-uniE119"></i></a>
-            </header>
-            <form id="question_form" action="../ajax/type/edit_question/index.html" method="post">
-<input type="hidden" value="f675af88a597243598f16cf69c68306600e0d43a" name="_csrf" />                <div class="popup-content" style="height:422px; position:relative;">
-                    <div>
-                        <label for="CommunityQuestion_title" class="required">标题 <span class="required">*</span></label>                        <input type="hidden" id="question_id" name="question_id" value="0"/>
-                        <input class="text" name="CommunityQuestion[title]" id="CommunityQuestion_title" type="text" maxlength="255" />                    </div>
-                    <div>
-                        <label for="CommunityQuestion_topic_id" class="required">选择话题 <span class="required">*</span></label>                        <select name="CommunityQuestion[topic_id]" id="CommunityQuestion_topic_id">
-<option value="1002913">问题讨论</option>
-</select>                    </div>
-                    <div>
-                        <label for="CommunityQuestion_content" class="required">内容 <span class="required">*</span></label>                        <textarea class="wysiwyg" name="CommunityQuestion[content]" id="CommunityQuestion_content"></textarea>                    </div>
-                </div>
-                <footer>
-                    <a href="javascript:void(0);" class="btn" onclick="$('#question_form').trigger('submit');">提交</a>
-                </footer>
-            </form>        </div>
-    </div>
-
+</footer>
 <script type="text/javascript" src="https://fs.kf5.com/generated/jsv2/application_d1b11d193b9d62b13d4185fa795032af.js?v=fbdc9014ca799cf0"></script>
 <script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/vendor/ajaxupload.3.5.js"></script>
 <script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/vendor/autosize.min.js"></script>
@@ -165,90 +176,21 @@ $.ajaxSetup({
 <script type="text/javascript">
 /*<![CDATA[*/
 
-                $(".main-header-search").submit(function(){
-                    if($("#search").val()==""){
-                        showNotice("请输入搜索的关键字",false);
-                        return false;
-                    }
-                });
-            
+            $("#forum-search-form").submit(function(){
+                if($("#search").val()==""){
+                    showNotice("请输入搜索的关键字",false);
+                    return false;
+                }
+            });
+        
 
-
-    //实例化
-	var question_editor = new UE.ui.Editor({toolbars:[
-	['source',
-	'bold', 'italic', 'underline', 'strikethrough', 'insertorderedlist', 'insertunorderedlist','pasteplain', 'forecolor', 'backcolor', 
-	'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify',
-	'link', 'unlink'
-	]
-	],
-	imageUrl:'/posts/ueupload',imagePath:'',imageManagerUrl:'/posts/ueimagemanage',imageManagerPath:'',
-	initialContent:'',wordCount:false,autoHeightEnabled:true,retainOnlyLabelPasted:true,elementPathEnabled:false,
-	initialFrameWidth:'100%', initialFrameHeight:150,
-	lang:'zh-cn',
-	minFrameWidth:500, minFrameHeight:60 });
-	question_editor.render("CommunityQuestion_content");
-	var question_options = {
-			data:			{},
-			dataType: 		"json",
-			success:       	questionShowResponse
-	};
-
-	//表单提交转为AJAX提交
-	$("#question_form").submit(function(){
-		$("#question_form :submit").attr("disabled","disabled");
-		var form = $(this).ajaxSubmit(question_options);
-		return false;
-	});
-
-	//提交成功后回调执行
-	function questionShowResponse(msg){
-		if(msg.err == 0){
-			window.location.reload();
-		}else{
-			showNotice(msg.error, false);
-			$("#question_form :submit").removeAttr("disabled");
-		}
-	}
-
-	//显示编辑帖子的浮层
-	function editQuestion(id){
-		$("#question_id").val(id);
-		$.get("/hc/community/ajax/type/get_question/",{id:id},function(data){
-			if(data){
-				$("#CommunityQuestion_title").val(data.title);
-				question_editor.setContent(data.content);
-				var selectEl=$("#CommunityQuestion_topic_id");
-				selectEl.val(data.topic_id);
-				selectEl.find("option").each(function(){
-				    if($(this).attr("value")==data.topic_id){
-                        var index=$(this).index();
-                        var title=selectEl.parent().find(".js-select .title");
-                        var item=selectEl.parent().find(".js-select .options-ul li");
-                        item.removeClass("active");
-                        item.eq(index).addClass("active");
-                        title.html($(this).text());
-				    }
-				});
-				$("#edit_quesion_layer .popup-title").html("编辑问题");
-				showLockLayer("#edit_quesion_layer, .popup-overlay");
-			}
-		},"json");
-	}
-
-    //
-	function newQuestion(id){
-		var logged = 0;
-		if(!logged) window.location.href = "/user/login/";
-		else{
-			$("#question_id").val(0);
-			if(id)	$("#CommunityQuestion_topic_id").val(id);
-			$("#edit_quesion_layer .popup-title").html("发布问题");
-			$("#edit_quesion_layer, .popup-overlay").show();
-		}
-	}
-
-
+            $(".main-header-search").submit(function(){
+                if($("#search").val()==""){
+                    showNotice("请输入搜索的关键字",false);
+                    return false;
+                }
+            });
+        
 
 		$("#search").keyup(function(){
 			$.get("/posts/matchkeyword/",{keyword:$("#search").val()},function(data){
@@ -281,7 +223,7 @@ $.ajaxSetup({
 	});
 	
     function set_language(lang){
-        $.post("/user/changelanguage/",{type:"change_language",language:lang,url:"/hc/community/topic/"},function(res){
+        $.post("/user/changelanguage/",{type:"change_language",language:lang,url:"/hc/kb/section/id.html"},function(res){
         	if(!res.error){
         		window.location.href = res.url;
         	}

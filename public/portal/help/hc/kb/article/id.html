@@ -10,8 +10,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="keywords" content="qadmin,qadmin官网,qadmin框架,通用后台管理系统,后台框架,ui框架"/><meta name="description" content="QAdmin 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象"/>    <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="_csrf" value="f675af88a597243598f16cf69c68306600e0d43a">
-    <link rel="stylesheet" type="text/css" href="../../../library/ue/third-party/SyntaxHighlighter/shCoreDefault.css" />
+    <meta name="_csrf" value="1798b4d9b7833ae828f7e7f5247dd797125f2df1">
+    <link rel="stylesheet" type="text/css" href="../../library/ue/third-party/SyntaxHighlighter/shCoreDefault.css" />
 <link rel="stylesheet" type="text/css" href="http://assets-cdn.kf5.com/help-center/css/theme_base.css?v=201710122319" />
 <link rel="stylesheet" type="text/css" href="http://assets-cdn.kf5.com/help-center/css/theme_fonts.css" />
 <link rel="stylesheet" type="text/css" href="https://fs.kf5.com/generated/cssv2/style_d1b11d193b9d62b13d4185fa795032af.css?v=fbdc9014ca799cf0" />
@@ -21,20 +21,17 @@
 <script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/vendor/jquery-ui.1.11.0.min.js"></script>
 <script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/application/dialog.js?v=201710122319"></script>
 <script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/application/function.js?v=201710122319"></script>
-<script type="text/javascript" src="../../../library/ue/ueditor.config.js"></script>
-<script type="text/javascript" src="../../../library/ue/ueditor.min.js"></script>
-<script type="text/javascript" src="../../../library/ue/third-party/SyntaxHighlighter/shCore.js"></script>
-<script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/application/ueditor_insertimage_ui.js?v=201710122319"></script>
+<script type="text/javascript" src="../../library/ue/third-party/SyntaxHighlighter/shCore.js"></script>
 <script type="text/javascript">
 /*<![CDATA[*/
 $.ajaxSetup({
         headers: {
-            "X-CSRF-Token": "f675af88a597243598f16cf69c68306600e0d43a"
+            "X-CSRF-Token": "1798b4d9b7833ae828f7e7f5247dd797125f2df1"
         }
     })
 /*]]>*/
 </script>
-<title>讨论社区 - QAdmin框架 - 客户服务</title>
+<title>QAdmin全部开源吗？ - QAdmin框架 - 客户服务</title>
     <link rel="shortcut icon" type="image/x-icon" href="http://help.qadmin.com/upload/28399/201704/58e4690e6694a_999.ico" />    <!--[if lt IE 9]>
     <script type="text/javascript" src="//assets-cdn.kf5.com/help-center/js/vendor/html5.js"></script>
     <script type="text/javascript">
@@ -62,7 +59,7 @@ $.ajaxSetup({
             <a href="/portal/index.html">首页</a>
             <a href="/portal/buy.html">购买</a>
             <a href="/portal/demo.html">演示</a>
-            <a href="../../index.html" class="active">帮助</a>
+            <a href="../index.html" class="active">帮助</a>
             <a href="/portal/docs/index.html">开发文档</a>
         </nav>
     </div>
@@ -72,53 +69,87 @@ $.ajaxSetup({
         <h1 class="logo"><a href="/portal/help.html">客户服务平台</a></h1>
         <nav class="header-nav">
             <ul class="header-nav-list clearfix">
-                <li><a href="index.html" class="community-link">讨论社区</a></li>
-                <li><a href="../../../user/login/index.html" class="submit-a-request">提交新问题</a></li></li>
+                <li><a href="../../community/topic/index.html" class="community-link">讨论社区</a></li>
+                <li><a href="../../user/login/index.html" class="submit-a-request">提交新问题</a></li></li>
             </ul>
             <div class="user-nav clearfix">
                 <div class="user-info dropdown">
-                <div class="dropdown-toggle"><span class="user-info-name"><a href="../../../user/login/index.html" class="login" role="button">登录</a></span></div></div>
+                <div class="dropdown-toggle"><span class="user-info-name"><a href="../../user/login/index.html" class="login" role="button">登录</a></span></div></div>
                 
             </div>
         </nav>
     </div>
 </header><main>
-    <header class="main-header">
-    <div class="wrap">
-        <h2 class="community-title">讨论社区</h2>
-        <form action="../../index.html" class="main-header-search" method="get">
-            <label for="">
-                <input type="hidden" name="type" value="community" />
-                <input type="search" id="search" name="keyword" value="" placeholder="搜索社区" />
-                <i class="icon-search"></i>
-            </label>
-        </form>
-            </div>
-</header>    <section class="content">
+	<section class="search-box">
+        <form id="forum-search-form" accept-charset="UTF-8" action="../index.html" class="search" method="get" role="search">
+                <div class="search-match">
+                    <label for="top-search">
+                        <input type="hidden" name="type" value="kb" />
+                        <input type="search" id="search" name="keyword" placeholder="输入问题关键字，找到答案" autocomplete="off" x-webkit-speech />
+                    </label>
+                    <ul id="search-match-list" class="match-list"></ul>
+                </div>
+                <input type="submit" name="" value="搜索">
+            </form>
+	</section>
+    <section class="content">
         <div class="wrap clearfix">
             <section class="content-main">
-                <div class="question-bbs">
-                    <nav class="question-bbs-top-nav">
-                        <a href="index.html" class="active">全部</a><a href="1002913/index.html" >问题讨论</a>                    </nav>
-                    <nav class="nav-tabs">
-                        <h2>问题列表</h2>
-                        <ul>
-                            <li class="active"><a href="index.html">时间</a></li><li ><a href="filter/hot/index.html">热门</a></li>                        </ul>
-                    </nav>
-                    <ul class="question-bbs-list">
-                        <div class="empty-block">没有内容</div>                    </ul>
-                                    </div>
+                <nav class="sub-nav">
+                    <ul class="breadcrumbs"> <li> <a href="../index.html">首页</a></li> <li> <a href="../category/id.html">帮助支持</a></li> <li> <a href="../section/id.html">产品购买</a></li></ul>
+                </nav>
+                <article class="article">
+                    <header class="article-header">
+                        <h2>
+                            QAdmin全部开源吗？
+                            
+                        </h2>
+                        <p class="article-header-info">
+							<span class="author">QAdmin-小朵</span> • 
+		                    <span>发表于：2017年04月06日 10:27:10</span>
+		                     • <span>更新于：2017年06月13日 19:21:31</span>
+                        </p>
+                    </header>
+                    <div class="article-content">
+                        <div class="original-content"><p><span style="color: rgb(192, 0, 0);">购买后可以获取您所购买的所有源码。</span></p><p>QAdmin作为一款企业级的快速开发框架，我们始终把安全放在第一位，<span style="font-size: 16px;">我们承诺：QAdmin提供的所有源码（QAdmin中包含的第三方插件、库等源码不在此范畴）不包含加密，混淆的代码，更不预留任何后门，请放心使用。</span></p></div>
+                        
+                        <div class="signature">QAdmin 通用管理系统快速开发框架</div>
+                    </div>
+					<footer class="article-footer">
+                        <ul class="share-list">
+                <li class="wechat"><div class="qr-box" data-url="/portal/help/hc/kb/article/id.html"></div><a href="javascript:void(0);"><i class="icon-weixin"></i></a></li>
+                <li class="sina"><a href="http://service.weibo.com/share/share.php?url=http%3A%2F%2Fhelp.qadmin.com%2Fhc%2Fkb%2Farticle%2F1035796%2F&amp;title=%E3%80%90QAdmin%E5%85%A8%E9%83%A8%E5%BC%80%E6%BA%90%E5%90%97%EF%BC%9F%E3%80%91+%E8%B4%AD%E4%B9%B0%E5%90%8E%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%8F%96%E6%82%A8%E6%89%80%E8%B4%AD%E4%B9%B0%E7%9A%84%E6%89%80%E6%9C%89%E6%BA%90%E7%A0%81%E3%80%82QAdmin%E4%BD%9C%E4%B8%BA%E4%B8%80%E6%AC%BE%E4%BC%81%E4%B8%9A%E7%BA%A7%E7%9A%84%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%A7%8B%E7%BB%88%E6%8A%8A%E5%AE%89%E5%85%A8%E6%94%BE%E5%9C%A8%E7%AC%AC%E4%B8%80%E4%BD%8D%EF%BC%8C%E6%88%91%E4%BB%AC%E6%89%BF%E8%AF%BA%EF%BC%9AQAdmin%E6%8F%90%E4%BE%9B%E7%9A%84%E6%89%80%E6%9C%89%E6%BA%90%E7%A0%81%EF%BC%88QAdmin%E4%B8%AD%E5%8C%85%E5%90%AB%E7%9A%84%E7%AC%AC%E4%B8%89%E6%96%B9%E6%8F%92%E4%BB%B6%E3%80%81%E5%BA%93%E7%AD%89%E6%BA%90%E7%A0%81%E4%B8%8D%E5%9C%A8%E6%AD%A4%E8%8C%83%E7%95%B4%EF%BC%89%E4%B8%8D%E5%8C%85%E5%90%AB%E5%8A%A0%E5%AF%86%EF%BC%8C%E6%B7%B7%E6%B7%86%E7%9A%84%E4%BB%A3%E7%A0%81%EF%BC%8C%E6%9B%B4%E4%B8%8D%E9%A2%84%E7%95%99%E4%BB%BB%E4%BD%95%E5%90%8E%E9%97%A8%EF%BC%8C%E8%AF%B7%E6%94%BE%E5%BF%83%E4%BD%BF%E7%94%A8%E3%80%82&amp;appkey=&amp;pic=&amp;searchPic=false" target="_blank"><i class="icon-weibo"></i></a></li>
+                <li class="qq"><a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fhelp.qadmin.com%2Fhc%2Fkb%2Farticle%2F1035796%2F&amp;title=%E3%80%90QAdmin%E5%85%A8%E9%83%A8%E5%BC%80%E6%BA%90%E5%90%97%EF%BC%9F%E3%80%91+%E8%B4%AD%E4%B9%B0%E5%90%8E%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%8F%96%E6%82%A8%E6%89%80%E8%B4%AD%E4%B9%B0%E7%9A%84%E6%89%80%E6%9C%89%E6%BA%90%E7%A0%81%E3%80%82QAdmin%E4%BD%9C%E4%B8%BA%E4%B8%80%E6%AC%BE%E4%BC%81%E4%B8%9A%E7%BA%A7%E7%9A%84%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%A7%8B%E7%BB%88%E6%8A%8A%E5%AE%89%E5%85%A8%E6%94%BE%E5%9C%A8%E7%AC%AC%E4%B8%80%E4%BD%8D%EF%BC%8C%E6%88%91%E4%BB%AC%E6%89%BF%E8%AF%BA%EF%BC%9AQAdmin%E6%8F%90%E4%BE%9B%E7%9A%84%E6%89%80%E6%9C%89%E6%BA%90%E7%A0%81%EF%BC%88QAdmin%E4%B8%AD%E5%8C%85%E5%90%AB%E7%9A%84%E7%AC%AC%E4%B8%89%E6%96%B9%E6%8F%92%E4%BB%B6%E3%80%81%E5%BA%93%E7%AD%89%E6%BA%90%E7%A0%81%E4%B8%8D%E5%9C%A8%E6%AD%A4%E8%8C%83%E7%95%B4%EF%BC%89%E4%B8%8D%E5%8C%85%E5%90%AB%E5%8A%A0%E5%AF%86%EF%BC%8C%E6%B7%B7%E6%B7%86%E7%9A%84%E4%BB%A3%E7%A0%81%EF%BC%8C%E6%9B%B4%E4%B8%8D%E9%A2%84%E7%95%99%E4%BB%BB%E4%BD%95%E5%90%8E%E9%97%A8%EF%BC%8C%E8%AF%B7%E6%94%BE%E5%BF%83%E4%BD%BF%E7%94%A8%E3%80%82&amp;desc=&amp;summary=%E3%80%90QAdmin%E5%85%A8%E9%83%A8%E5%BC%80%E6%BA%90%E5%90%97%EF%BC%9F%E3%80%91+%E8%B4%AD%E4%B9%B0%E5%90%8E%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%8F%96%E6%82%A8%E6%89%80%E8%B4%AD%E4%B9%B0%E7%9A%84%E6%89%80%E6%9C%89%E6%BA%90%E7%A0%81%E3%80%82QAdmin%E4%BD%9C%E4%B8%BA%E4%B8%80%E6%AC%BE%E4%BC%81%E4%B8%9A%E7%BA%A7%E7%9A%84%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%A7%8B%E7%BB%88%E6%8A%8A%E5%AE%89%E5%85%A8%E6%94%BE%E5%9C%A8%E7%AC%AC%E4%B8%80%E4%BD%8D%EF%BC%8C%E6%88%91%E4%BB%AC%E6%89%BF%E8%AF%BA%EF%BC%9AQAdmin%E6%8F%90%E4%BE%9B%E7%9A%84%E6%89%80%E6%9C%89%E6%BA%90%E7%A0%81%EF%BC%88QAdmin%E4%B8%AD%E5%8C%85%E5%90%AB%E7%9A%84%E7%AC%AC%E4%B8%89%E6%96%B9%E6%8F%92%E4%BB%B6%E3%80%81%E5%BA%93%E7%AD%89%E6%BA%90%E7%A0%81%E4%B8%8D%E5%9C%A8%E6%AD%A4%E8%8C%83%E7%95%B4%EF%BC%89%E4%B8%8D%E5%8C%85%E5%90%AB%E5%8A%A0%E5%AF%86%EF%BC%8C%E6%B7%B7%E6%B7%86%E7%9A%84%E4%BB%A3%E7%A0%81%EF%BC%8C%E6%9B%B4%E4%B8%8D%E9%A2%84%E7%95%99%E4%BB%BB%E4%BD%95%E5%90%8E%E9%97%A8%EF%BC%8C%E8%AF%B7%E6%94%BE%E5%BF%83%E4%BD%BF%E7%94%A8%E3%80%82&amp;site=&amp;pics=" target="_blank"><i class="icon-qq"></i></a></li>
+            </ul><p><span id="vote_count">0</span> 人觉得有帮助 <a href="../../user/login/index-request=-hc-kb-article-1035796-.html" class="article-vote-up" id="vote"><i class="icon-thumb-up"></i>有帮助</a></p>
+					</footer>
+                </article>
+                <div id="article-comments" class="article-comments">
+                    
+                    <ul class="article-comments-list"></ul>
+                    
+                    <div class="info-block">您需要<a href="../../user/login/index-request=-hc-kb-article-1035796-.html">登录</a>后才可以回复</div>
+                </div>
             </section>
-            
-    <section class="content-sidebar">
-        <div class="category js-scroll-fixed">
-            <div class="question-user-info">
-                                            <a href="../../../user/login/index.html" class="new-question-post">发新帖求助或提交建议</a>
-            </div>
+            <section class="content-sidebar">
+                <div class="widget-column hot-articles">
+                    <h3>最多浏览的文档</h3>
+                    <ul>
+                        <li>
+                            <a href="../article/id.html" title="QAdmin可授权在多少个域名下使用？">QAdmin可授权在多少个域名下使用？</a>
+                        </li>
+                        <li>
+                            <a href="../article/id.html" title="QAdmin可授权在多少个域名下使用？">QAdmin可授权在多少个域名下使用？</a>
+                        </li>
+                        <li>
+                            <a href="../article/id.html" title="QAdmin可授权在多少个域名下使用？">QAdmin可授权在多少个域名下使用？</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-    </section>        </div>
     </section>
-</main><footer id="footer">
+</main>
+<footer id="footer">
     <div class="link">
         <a href="/portal/about.html">关于我们</a>
         ·
@@ -133,31 +164,28 @@ $.ajaxSetup({
     <div class="wrap clearfix copyright">
         <i class="fa fa-copyright"></i> 2016 QAdmin
     </div>
-</footer>    <div id="edit_quesion_layer" class="pooup-bscrim" style="display:none;">
+</footer>
+    <div id="forum_comment_layer" class="pooup-bscrim" style="display:none;">
         <div class="popup-mask"></div>
         <div class="popup-box" style="z-index:10000;">
             <header>
-                <h2>编辑问题</h2>
-                <a href="javascript:void(0);" class="close" onclick="hiddenLockLayer('#edit_quesion_layer');"><i class="icon-uniE119"></i></a>
+                <h2>编辑回复</h2>
+                <a href="javascript:void(0);" class="close" onclick="hiddenLockLayer('#forum_comment_layer');"><i class="icon-uniE119"></i></a>
             </header>
-            <form id="question_form" action="../ajax/type/edit_question/index.html" method="post">
-<input type="hidden" value="f675af88a597243598f16cf69c68306600e0d43a" name="_csrf" />                <div class="popup-content" style="height:422px; position:relative;">
-                    <div>
-                        <label for="CommunityQuestion_title" class="required">标题 <span class="required">*</span></label>                        <input type="hidden" id="question_id" name="question_id" value="0"/>
-                        <input class="text" name="CommunityQuestion[title]" id="CommunityQuestion_title" type="text" maxlength="255" />                    </div>
-                    <div>
-                        <label for="CommunityQuestion_topic_id" class="required">选择话题 <span class="required">*</span></label>                        <select name="CommunityQuestion[topic_id]" id="CommunityQuestion_topic_id">
-<option value="1002913">问题讨论</option>
-</select>                    </div>
-                    <div>
-                        <label for="CommunityQuestion_content" class="required">内容 <span class="required">*</span></label>                        <textarea class="wysiwyg" name="CommunityQuestion[content]" id="CommunityQuestion_content"></textarea>                    </div>
+            <div class="popup-content" style="height:248px;">
+                <div>
+                    <input type="hidden" value="0" id="forum_comment_id" name="forum_comment_id"/>
+                    <textarea id="forum_comment_content" class="wysiwyg"></textarea>
                 </div>
-                <footer>
-                    <a href="javascript:void(0);" class="btn" onclick="$('#question_form').trigger('submit');">提交</a>
-                </footer>
-            </form>        </div>
+            </div>
+            <footer>
+                <a href="javascript:void(0);" class="btn" onclick="updateForumComment();">提交</a>
+            </footer>
+        </div>
     </div>
 
+
+<script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/jquery.qrcode.min.js"></script>
 <script type="text/javascript" src="https://fs.kf5.com/generated/jsv2/application_d1b11d193b9d62b13d4185fa795032af.js?v=fbdc9014ca799cf0"></script>
 <script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/vendor/ajaxupload.3.5.js"></script>
 <script type="text/javascript" src="http://assets-cdn.kf5.com/help-center/js/vendor/autosize.min.js"></script>
@@ -165,17 +193,54 @@ $.ajaxSetup({
 <script type="text/javascript">
 /*<![CDATA[*/
 
-                $(".main-header-search").submit(function(){
-                    if($("#search").val()==""){
-                        showNotice("请输入搜索的关键字",false);
-                        return false;
-                    }
-                });
-            
+            $("#forum-search-form").submit(function(){
+                if($("#search").val()==""){
+                    showNotice("请输入搜索的关键字",false);
+                    return false;
+                }
+            });
+        
+
+            $(".main-header-search").submit(function(){
+                if($("#search").val()==""){
+                    showNotice("请输入搜索的关键字",false);
+                    return false;
+                }
+            });
+        
+
+var paginationEl=$(".pagination");
+var commentListEl=$(".article-comments-list");
+paginationEl.find("a").live("click",function(){
+    var that=$(this);
+     $.get(that.attr("href"),function(html){
+        html=$(html);
+        var pageHtml=html.find(".pagination").html();
+        var commentListHtml=html.find(".article-comments-list").html();
+        paginationEl.html(pageHtml);
+        commentListEl.html(commentListHtml);
+        window.location.href="/portal/help/hc/kb/article/id.html";
+     });
+     return false;
+});
+//点击空白处，隐藏微信分享二维码
+$(".share-list .wechat,.share-list .wechat *").attr("data-type","share-weixin");
+$("body").click(function(event){
+    if($(event.target).attr("data-type")!="share-weixin"){
+        $(".wechat .qr-box").animate({opacity:0},400,function(){
+            $(this).attr("style","display:none");
+        });
+    }
+});
+$(".qr-box").each(function(){
+	$(this).qrcode({render:"canvas", width:130, height:130, text:$(this).attr("data-url")})
+});
+$.post("/hc/kb/viewCount/", {"post_id": "1035796"}, function(){});
 
 
-    //实例化
-	var question_editor = new UE.ui.Editor({toolbars:[
+
+//渲染编辑器
+var forum_comment_editor = new UE.ui.Editor({toolbars:[
 	['source',
 	'bold', 'italic', 'underline', 'strikethrough', 'insertorderedlist', 'insertunorderedlist','pasteplain', 'forecolor', 'backcolor', 
 	'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify',
@@ -184,69 +249,33 @@ $.ajaxSetup({
 	],
 	imageUrl:'/posts/ueupload',imagePath:'',imageManagerUrl:'/posts/ueimagemanage',imageManagerPath:'',
 	initialContent:'',wordCount:false,autoHeightEnabled:true,retainOnlyLabelPasted:true,elementPathEnabled:false,
-	initialFrameWidth:'100%', initialFrameHeight:150,
+	initialFrameWidth:'100%', initialFrameHeight:200,
 	lang:'zh-cn',
 	minFrameWidth:500, minFrameHeight:60 });
-	question_editor.render("CommunityQuestion_content");
-	var question_options = {
-			data:			{},
-			dataType: 		"json",
-			success:       	questionShowResponse
-	};
+forum_comment_editor.render("forum_comment_content");
 
-	//表单提交转为AJAX提交
-	$("#question_form").submit(function(){
-		$("#question_form :submit").attr("disabled","disabled");
-		var form = $(this).ajaxSubmit(question_options);
+//编辑一条评论，显示编辑浮层
+function editForumComment(id){
+	$("#forum_comment_id").val(id);
+	forum_comment_editor.setContent($("#comment_"+id+" .article-comments-item-content").html());
+	showLockLayer("#forum_comment_layer, .popup-overlay");
+}
+
+//提交对评论的编辑结果
+function updateForumComment(){
+	var html = forum_comment_editor.getContent();
+	if(html.length<3){
+		showNotice("回复内容太短，需大于3个汉字！", false);
 		return false;
-	});
-
-	//提交成功后回调执行
-	function questionShowResponse(msg){
-		if(msg.err == 0){
+	}
+	$.post("/hc/kb/ajax/",{method:"update_comment",id:$("#forum_comment_id").val(),content:html},function(data){
+		if(data == "success"){
 			window.location.reload();
 		}else{
-			showNotice(msg.error, false);
-			$("#question_form :submit").removeAttr("disabled");
+			showNotice("更新失败！", false);
 		}
-	}
-
-	//显示编辑帖子的浮层
-	function editQuestion(id){
-		$("#question_id").val(id);
-		$.get("/hc/community/ajax/type/get_question/",{id:id},function(data){
-			if(data){
-				$("#CommunityQuestion_title").val(data.title);
-				question_editor.setContent(data.content);
-				var selectEl=$("#CommunityQuestion_topic_id");
-				selectEl.val(data.topic_id);
-				selectEl.find("option").each(function(){
-				    if($(this).attr("value")==data.topic_id){
-                        var index=$(this).index();
-                        var title=selectEl.parent().find(".js-select .title");
-                        var item=selectEl.parent().find(".js-select .options-ul li");
-                        item.removeClass("active");
-                        item.eq(index).addClass("active");
-                        title.html($(this).text());
-				    }
-				});
-				$("#edit_quesion_layer .popup-title").html("编辑问题");
-				showLockLayer("#edit_quesion_layer, .popup-overlay");
-			}
-		},"json");
-	}
-
-    //
-	function newQuestion(id){
-		var logged = 0;
-		if(!logged) window.location.href = "/user/login/";
-		else{
-			$("#question_id").val(0);
-			if(id)	$("#CommunityQuestion_topic_id").val(id);
-			$("#edit_quesion_layer .popup-title").html("发布问题");
-			$("#edit_quesion_layer, .popup-overlay").show();
-		}
-	}
+	});
+}
 
 
 
@@ -281,7 +310,7 @@ $.ajaxSetup({
 	});
 	
     function set_language(lang){
-        $.post("/user/changelanguage/",{type:"change_language",language:lang,url:"/hc/community/topic/"},function(res){
+        $.post("/user/changelanguage/",{type:"change_language",language:lang,url:"/portal/help/hc/kb/article/id.html"},function(res){
         	if(!res.error){
         		window.location.href = res.url;
         	}

@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>入口文件 - QAdmin 开发文档</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="qadmin,qadmin官网,qadmin框架,通用后台管理系统,后台框架,ui框架" />
+    <meta name="description" content="QAdmin 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='http://www.qadmin.com/ie'" />
+    <![endif]-->
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="QAdmin" />
+    <meta name="msapplication-TileImage" content="/img/app/icon-72@x2.png" />
+    <meta name="msapplication-TileColor" content="#395b81" />
+    <link rel="apple-touch-icon-precomposed" href="/img/app/icon-72@x2.png" />
+    <link rel="shortcut icon" href="/img/app/favicon.png" />
+    <meta name="msapplication-TileColor" content="#62a8ea">
+    <script>
+        window.PAGE_TYPE = "ui"
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?cd758c4c82a4964836712308cb782b12";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <link rel="stylesheet" href="/portal/docs/common.css">
+</head>
+<body>
+<div id="mobile-bar">
+    <a class="menu-button"></a>
+    <a class="logo" href="../index.html">QAdmin开发文档</a>
+    <select class="version-select">
+        <option value="basic">基础版</option>
+        <option value="pjax" selected>pjax版</option>
+    </select>
+</div>
+<div id="header">
+    <a id="logo" href="../index.html">
+        <img src="/img/logo.svg"> <span>QAdmin 开发文档</span>
+    </a>
+    <select class="version-select">
+        <option value="basic">基础版</option>
+        <option value="pjax" selected>pjax版</option>
+    </select>
+    <ul id="nav">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">UI</a>
+</li>
+<li>
+    <a href="../java/index.html" class="nav-link">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+
+    </ul>
+</div>
+
+<div id="main" class="fix-sidebar">
+    
+    
+<div class="sidebar">
+    <ul class="main-menu">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">UI</a>
+</li>
+<li>
+    <a href="../java/index.html" class="nav-link">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+
+    </ul>
+    <div class="list">
+        <ul class="menu-root">
+            
+            <li>
+                <a href="index.html" class="sidebar-link ">基本概述</a>
+            </li>
+            
+            <li>
+                <a href="themes.html" class="sidebar-link ">主题说明</a>
+            </li>
+            
+            <li>
+                <a href="build.html" class="sidebar-link ">构建工具</a>
+            </li>
+            
+            <li>
+                <a href="gui-tools.html" class="sidebar-link ">开发工具</a>
+            </li>
+            
+            <li>
+                <a href="files.html" class="sidebar-link current ">入口文件</a>
+            </li>
+            
+            <li>
+                <a href="structure.html" class="sidebar-link ">模板结构</a>
+            </li>
+            
+            <li>
+                <a href="hello-world.html" class="sidebar-link ">Hello world</a>
+            </li>
+            
+            <li>
+                <a href="style.html" class="sidebar-link ">自定义样式</a>
+            </li>
+            
+            <li>
+                <a href="javascript.html" class="sidebar-link ">JS 模块</a>
+            </li>
+            
+            <li>
+                <a href="components.html" class="sidebar-link ">UI 组件</a>
+            </li>
+            
+            <li>
+                <a href="plugins.html" class="sidebar-link ">第三方插件</a>
+            </li>
+            
+            <li>
+                <a href="icons.html" class="sidebar-link ">字体图标</a>
+            </li>
+            
+            <li>
+                <a href="code-guide.html" class="sidebar-link ">编码规范</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content ui with-sidebar">
+    <h1>入口文件</h1>
+    <p>以下是首页所需要引入的文件，由于QAdmin使用了 <a href="https://github.com/qadmin/jquery-pjax" target="_blank" rel="external">jQuery-Pjax</a> 加载页面，其他页面无需再次引入这些文件。</p>
+<p>Pajx 是 HTML5 pushState 以及 Ajax 两项技术的简称，综合这两个技术可以实现在不刷新页面的情况下载入 HTML 到当前网页。</p>
+<h2 id="CSS"><a href="files.html#CSS" class="headerlink" title="CSS"></a>CSS</h2><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- 样式 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"/public/themes/classic/base/css/site.css"</span> <span class="attr">id</span>=<span class="string">"qadmin-siteStyle"</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- 图标 CSS--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"/public/fonts/font-awesome/font-awesome.css"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"/public/fonts/web-icons/web-icons.css"</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- 插件 CSS --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"/public/vendor/animsition/animsition.css"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"/public/vendor/slidepanel/slidePanel.css"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"/public/vendor/toastr/toastr.css"</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="JavaScript"><a href="files.html#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><h3 id="IE10-支持"><a href="files.html#IE10-%E6%94%AF%E6%8C%81" class="headerlink" title="IE10 支持"></a>IE10 支持</h3><p>以下代码是为了支持IE10。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!--[if lt IE 10]&gt;</span></div><div class="line">&lt;script src="/public/vendor/media-match/media.match.js"&gt;&lt;/script&gt;</div><div class="line">&lt;script src="/public/vendor/respond/respond.src.js"&gt;&lt;/script&gt;</div><div class="line">&lt;![endif]--&gt;</div></pre></td></tr></table></figure>
+<h3 id="需在头部引入的js"><a href="files.html#%E9%9C%80%E5%9C%A8%E5%A4%B4%E9%83%A8%E5%BC%95%E5%85%A5%E7%9A%84js" class="headerlink" title="需在头部引入的js"></a>需在头部引入的js</h3><p>Modernizr可以在支持HTML5和CSS3的浏览器中充分利用HTML5和CSS3的特性进行开发，同时又不会牺牲其他不支持这些新技术的浏览器的控制。</p>
+<p>Breakpoints用于响应式布局设置断点，当浏览器进入或退出断点时会触发自定义事件，在复杂布局时非常实用。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- 插件 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/vendor/jquery/jquery.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/vendor/bootstrap/bootstrap.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/vendor/modernizr/modernizr.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/vendor/breakpoints/breakpoints.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/vendor/artTemplate/template.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/vendor/toastr/toastr.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 核心  --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/themes/classic/global/js/core.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/themes/classic/base/js/site.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/themes/classic/global/js/configs/site-configs.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/themes/classic/global/js/components.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">    Breakpoints();</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="需在底部引入的js"><a href="files.html#%E9%9C%80%E5%9C%A8%E5%BA%95%E9%83%A8%E5%BC%95%E5%85%A5%E7%9A%84js" class="headerlink" title="需在底部引入的js"></a>需在底部引入的js</h3><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- 插件 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/vendor/jquery-pjax/jquery.pjax.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/themes/classic/global/js/plugins/responsive-tabs.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/vendor/ashoverscroll/jquery-asHoverScroll.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/vendor/slimscroll/jquery.slimscroll.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/vendor/screenfull/screenfull.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- 布局 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/themes/classic/base/js/sections/menu.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/themes/classic/base/js/sections/media-menu.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/themes/classic/base/js/sections/content-tabs.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- 消息通知 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/public/js/notify-msg.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+    
+    <div class="page-links">
+        
+        <span><a href="gui-tools.html">&lang; 上一页：开发工具</a></span>
+        
+        
+        <span style="float:right"><a href="structure.html">下一页：模板结构 &rang;</a></span>
+        
+    </div>
+    
+    <div class="footer">
+    &copy; 2015-2017
+    <a href="/portal/index.html">QAdmin</a>
+    ·
+    上海畅控
+</div>
+</div>
+
+    
+</div>
+
+
+<script src="/vendor/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+<script src="/portal/docs/common.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+    }, false);
+</script>
+
+</body>
+</html>
