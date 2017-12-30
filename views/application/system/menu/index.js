@@ -6,7 +6,7 @@
 (function () {
     'use strict';
 
-    var $content = $("#qadmin-pageContent"),
+    var $content = $("#qadmin-pageContent, body"),
         $nestable = $('[data-plugin="nestable"]'),
         $topMenu = $content.find('.top-menu');
 

@@ -3,9 +3,21 @@
 	<head>
 		<title>空白页面</title>
 		<%- include('./includes/head.html') %>	
+
+	    <style>
+	        body{
+	            background: #f1f4f5
+	        }
+	    </style>
+
 	</head>
-	<body>
+	<body class="iframe layout-full">
 		<%- include('../'+path) %>
+
+		<!-- 布局 -->
+		<script src="/themes/classic/base/js/sections/menu.js"></script>
+		<script src="/themes/classic/base/js/sections/media-menu.js"></script>
+		<script src="/themes/classic/base/js/sections/content-tabs.js"></script>
 
 		<!-- 插件 -->
 		<script src="/lib/jquery-pjax/jquery.pjax.js"></script>

@@ -19,7 +19,7 @@
         window.Content = {
             run: function () {
                 if (typeof $.site.contentTabs !== 'undefined') {
-                    $('#qadmin-pageContent').on('click', '#closeTab', function () {
+                    $('#qadmin-pageContent, body').on('click', '#closeTab', function () {
                         $.site.contentTabs.closeTab();
                     });
                 }

@@ -6,7 +6,7 @@
 (function (document, window, $) {
     'use strict';
 
-    var $pageContent = $('#qadmin-pageContent');
+    var $pageContent = $('#qadmin-pageContent, body');
     window.Content = App.extend({
         scrollChatsToBottom: function () {
             var $chatsWrap = $(".page-message-chats");

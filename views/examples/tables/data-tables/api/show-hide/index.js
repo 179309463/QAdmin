@@ -11,7 +11,7 @@
         "paging": false
     }));
 
-    $('#qadmin-pageContent').on('click', '#DTToggleBtn .btn', function () {
+    $('#qadmin-pageContent, body').on('click', '#DTToggleBtn .btn', function () {
         // 获取 API 对象
         var column = table.column($(this).attr('data-column'));
 

@@ -9,7 +9,7 @@
     var t = $('#dataTableExample').DataTable($.po('dataTable'));
     var counter = 1;
 
-    $('#qadmin-pageContent').on('click', '#DTAddRow', function () {
+    $('#qadmin-pageContent, body').on('click', '#DTAddRow', function () {
         t.row.add([
             counter + '.1',
             counter + '.2',

@@ -7019,6 +7019,8 @@ ul.panel-actions > li:first-child {
 }
 body.layout-full {
 	padding-top: 0;
+    height: 100vh;
+    overflow-x: hidden;
 }
 .layout-full .site-contabs, .layout-full .site-page {
 	height: 100%;

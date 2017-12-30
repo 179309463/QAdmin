@@ -24,11 +24,11 @@
 
     $('#dataTableExample').DataTable($.po('dataTable'));
 
-    $('#qadmin-pageContent').on('keyup click', 'input.global_filter', function () {
+    $('#qadmin-pageContent, body').on('keyup click', 'input.global_filter', function () {
         filterGlobal();
     });
 
-    $('#qadmin-pageContent').on('keyup click', 'input.column_filter', function () {
+    $('#qadmin-pageContent, body').on('keyup click', 'input.column_filter', function () {
         filterColumn($(this).parents('tr').attr('data-column'));
     });
 })(window, document, jQuery);

@@ -29,7 +29,7 @@
     // 示例 3
     // ------
     (function () {
-        var $pageContent = $('#qadmin-pageContent');
+        var $pageContent = $('#qadmin-pageContent, body');
 
         $('#exampleContext2').contextmenu({
             target: '#exampleContextMenu',

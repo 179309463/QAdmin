@@ -7,7 +7,7 @@
     'use strict';
 
     bootbox.setDefaults($.po('bootbox'));
-    var $pageContent = $('#qadmin-pageContent');
+    var $pageContent = $('#qadmin-pageContent, body');
     
     window.Content = {
         stageTpl: function (title) {

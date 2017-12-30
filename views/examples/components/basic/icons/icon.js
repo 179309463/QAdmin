@@ -6,7 +6,7 @@
 (function (document, window, $) {
     'use strict';
 
-    var $pageContent =$('#qadmin-pageContent');
+    var $pageContent =$('#qadmin-pageContent, body');
     window.Content = {
         run: function () {
             $pageContent.on('slide', '#iconChange', function (slideEvt) {

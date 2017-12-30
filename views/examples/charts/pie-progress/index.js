@@ -8,7 +8,7 @@
 
     // API方法示例
     // -------------------
-    var $pageContent = $('#qadmin-pageContent'),
+    var $pageContent = $('#qadmin-pageContent, body'),
         $example = $('#examplePieApi');
 
     $pageContent.on('click', '.pie-api-start', function () {

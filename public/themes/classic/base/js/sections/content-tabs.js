@@ -230,8 +230,8 @@
                 $.site.contentTabs.labelEvent($navContent, 'media');
             }, 200)();
         },
-            enable: function ($el) {
-                if($.site.tab_style!="iframe"){
+        enable: function ($el) {
+            if($.site.tab_style!="iframe"){
                 var href = $.trim($el.find('a').attr('href')), tabID,
                     self = this;
 
@@ -304,7 +304,6 @@
                     parents.trigger('open.site.menu');
                 }
             }
-
         },
         getPath: function () {
             if($.site.tab_style!="iframe"){

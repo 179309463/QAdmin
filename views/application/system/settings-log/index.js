@@ -8,7 +8,7 @@
 
     $(function () {
         var oTable, $thisRow,
-            $pageContent = $('#qadmin-pageContent');
+            $pageContent = $('#qadmin-pageContent, body');
 
         oTable = $('.dataTable').DataTable($.po('dataTable',{
             autoWidth: false,

@@ -7,7 +7,7 @@
     "use strict";
 
     var table = $('#dataTableExample').DataTable($.po('dataTable')),
-        $pageContent = $('#qadmin-pageContent');
+        $pageContent = $('#qadmin-pageContent, body');
 
     $pageContent.on('click', '#dataTableExample tbody tr', function () {
         $(this).toggleClass('selected');

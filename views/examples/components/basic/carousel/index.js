@@ -6,7 +6,7 @@
 (function (document, window, $) {
     'use strict';
 
-    var $pageContent = $('#qadmin-pageContent');
+    var $pageContent = $('#qadmin-pageContent, body');
     // 显示单个
     // -------------------------
     $('#exampleSingleItem').slick();

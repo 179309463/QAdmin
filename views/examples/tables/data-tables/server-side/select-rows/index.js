@@ -30,7 +30,7 @@
             }
         }));
 
-        $('#qadmin-pageContent').on('click', '#dataTableExample tbody tr', function () {
+        $('#qadmin-pageContent, body').on('click', '#dataTableExample tbody tr', function () {
             var id = this.id;
             var index = $.inArray(id, selected);
 

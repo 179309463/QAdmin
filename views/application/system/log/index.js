@@ -10,7 +10,7 @@
     window.Content.extend({
         run: function (next) {
             var oTable, searchData,
-                $pageContent = $('#qadmin-pageContent'),
+                $pageContent = $('#qadmin-pageContent, body'),
                 $filterDate = $('#filter-date');
 
             oTable = $('.dataTable').DataTable($.po('dataTable', {

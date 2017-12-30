@@ -6,7 +6,7 @@
 (function (document, window, $) {
     'use strict';
 
-    var $content = $('#qadmin-pageContent');
+    var $content = $('#qadmin-pageContent, body');
     // 简单示例
     // ----------------------
     $("#simpleCropper img").cropper({

@@ -8,7 +8,7 @@
 
     window.Content = {
         queryIp: function () {
-            var opts = $.extend(true, {},$.po('webuiPopover'), $('.ip-msg', '#qadmin-pageContent').data(),{
+            var opts = $.extend(true, {},$.po('webuiPopover'), $('.ip-msg', '#qadmin-pageContent, body').data(),{
                 trigger: 'click',
                 title: '详细信息',
                 type: 'async',
@@ -20,12 +20,12 @@
                     return message;
                 }
             });
-            $('.ip-msg', '#qadmin-pageContent').webuiPopover(opts);
+            $('.ip-msg', '#qadmin-pageContent, body').webuiPopover(opts);
         },
         run: function () {
             var oTable, self = this,
                 $blackList = $("#blackList"),
-                $pageContent = $("#qadmin-pageContent");
+                $pageContent = $("#qadmin-pageContent, body");
 
             oTable = $('.dataTable').DataTable($.po('dataTable',{
                 rowId: 'blId',

@@ -22,7 +22,7 @@
 
     var table = $('#dataTableExample').DataTable($.po('dataTable'));
 
-    $('#qadmin-pageContent').on('keyup', '#DTMinAge, #DTMaxAge',function () {
+    $('#qadmin-pageContent, body').on('keyup', '#DTMinAge, #DTMaxAge',function () {
         table.draw();
     });
 })(window, document, jQuery);

@@ -17,6 +17,10 @@
 	bottom: 40px;
 	width: 700px;
 }
+.iframe .slidePanel-right, .page-frame .slidePanel-left {
+	top: 0px;
+	bottom: 0px;
+}
 @media (max-width: 1199px) {
 	.slidePanel-right, .slidePanel-left {
 		width: -webkit-calc(100% - 230px);
@@ -32,6 +36,10 @@
 	.slidePanel-right, .slidePanel-left {
 		top: 60px;
 		bottom: 0;
+	}
+	.iframe .slidePanel-right, .iframe .slidePanel-left {
+		top: 0px;
+		bottom: 0px;
 	}
 }
 .slidePanel-top, .slidePanel-bottom {

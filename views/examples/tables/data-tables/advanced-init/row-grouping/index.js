@@ -30,7 +30,7 @@
     }));
 
     // 分组排序
-    $('#qadmin-pageContent').on('click', '#dataTableExample tbody tr.group', function () {
+    $('#qadmin-pageContent, body').on('click', '#dataTableExample tbody tr.group', function () {
         var currentOrder = table.order()[0];
         if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
             table.order([2, 'desc']).draw();
