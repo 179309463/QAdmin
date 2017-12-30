@@ -2,32 +2,16 @@
 <html class="no-js css-menubar" lang="zh-cn">
 	<head>
 		<title>空白页面</title>
-		<%- include('./includes/head.html') %>
-		
-		<!-- 图标 CSS-->
-    	<link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.css">
-    	<link rel="stylesheet" href="/vendor/web-icons/css/web-icons.css">
-
-		<!-- 插件 CSS -->
-		<link rel="stylesheet" href="/vendor/animsition/dist/css/animsition.css">
-		<link rel="stylesheet" href="/lib/toastr/build/toastr.css">
-		<!-- 插件 -->
-		<script src="/vendor/jquery/dist/jquery.min.js"></script>
-		<script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-
-		<script src="/lib/toastr/build/toastr.js"></script>
-		<script src="/vendor/bootbox.js/bootbox.js"></script>
-		<!-- 核心  -->
-		<script src="/themes/classic/global/js/core.js"></script>
-		<script src="/themes/classic/global/js/configs/site-configs.js"></script>
-		<script src="/themes/classic/global/js/components.js"></script>
-
-		<!-- 插件 -->
-		<script src="/vendor/jquery-asHoverScroll/dist/jquery-asHoverScroll.min.js"></script>
-		<script src="/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-		<script src="/vendor/screenfull/dist/screenfull.min.js"></script>		
+		<%- include('./includes/head.html') %>	
 	</head>
 	<body>
 		<%- include('../'+path) %>
+
+		<!-- 插件 -->
+		<script src="/lib/jquery-pjax/jquery.pjax.js"></script>
+		<script src="/themes/classic/global/js/plugins/responsive-tabs.js"></script>
+		<script src="/vendor/jquery-asHoverScroll/dist/jquery-asHoverScroll.min.js"></script>
+		<script src="/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="/vendor/screenfull/dist/screenfull.min.js"></script>	
 	</body>
 </html>
