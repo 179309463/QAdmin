@@ -189,11 +189,11 @@
             $('[data-toggle="popover"]').popover();
 
             if($.site.tab_style!="iframe"){
-            $.components.init();
-            window.Content.run();
+                $.components.init();
+                window.Content.run();
 
-            this.theme();
-            this.pjaxFun();
+                this.theme();
+                this.pjaxFun();
             }else{
                 if (window.localStorage) {
                     this.theme();

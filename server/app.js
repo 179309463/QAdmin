@@ -6,6 +6,10 @@ var bodyParser = require('body-parser');
 
 // 载入路由
 var index = require('./routes/index');
+var system = require('./routes/system');
+var datatable = require('./routes/datatable');
+var examples = require('./routes/examples');
+var gojs = require('./routes/gojs');
 var data = require('./routes/data');
 
 // 监听端口
@@ -21,6 +25,10 @@ app.use(logger('dev'));
 app.use(express.static(path.resolve(__dirname, '../public')));
 app.use('/views/', express.static(path.resolve(__dirname, '../views')));
 app.use('/', data);
+app.use('/', system);
+app.use('/', datatable);
+app.use('/', examples);
+app.use('/', gojs);
 app.use('/', index);
 
 app.listen(port)
