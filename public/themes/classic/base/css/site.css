@@ -24,8 +24,6 @@ body {
 	line-height: 1.6;
 	color: #76838f;
 	background-color: #fff;
-	padding-top: 60px;
-	overflow: hidden;
 }
 input, button, select, textarea {
 	font-family: inherit;
@@ -6480,6 +6478,17 @@ ul.panel-actions > li:first-child {
 	height:         calc(100vh - 100px);
 	overflow-y: auto;
 }
+.site-page .page-container .page-frame {
+	position:relative;
+	display:none;
+	width:100%;
+	height:-webkit-calc(100vh - 100px);
+	height:calc(100vh - 100px);
+	overflow-x:hidden
+}
+.site-page .page-container .page-frame.active {
+	display:block
+}
 .site-page .page-container + .page-loading {
 	position: absolute;
 	top: 0;
@@ -6518,6 +6527,10 @@ ul.panel-actions > li:first-child {
 	height: -webkit-calc(100vh - 140px) !important;
 	height:         calc(100vh - 140px) !important;
 }
+.site-contabs-open .site-page .page-frame {
+	height: -webkit-calc(100vh - 140px);
+	height:         calc(100vh - 140px)
+}
 .site-contabs-open .site-page .page-loading {
 	height: -webkit-calc(100vh - 100px) !important;
 	height:         calc(100vh - 100px) !important;
@@ -6534,6 +6547,16 @@ ul.panel-actions > li:first-child {
 		height: -webkit-calc(100vh - 60px) !important;
 		height:         calc(100vh - 60px) !important;
 	}
+	.site-contabs-open .site-page .page-frame {
+		height: -webkit-calc(100vh - 60px);
+		height:         calc(100vh - 60px)
+	}
+}
+.page {
+	position: relative;
+	min-height: 100vh;
+	overflow: visible;
+	background: #f1f4f5
 }
 .page-dark.layout-full {
 	color: #fff;

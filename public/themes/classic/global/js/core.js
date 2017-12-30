@@ -193,4 +193,40 @@
         }
     });
 
+    $.sessionStorage = $.sessionStorage || {};
+    $.extend($.sessionStorage, {
+        'set': function(key, value) {
+            if (!sessionStorage) {
+                console.error('该浏览器不支持sessionStorage对象');
+            }
+            if (!key || !value) {
+                return null;
+            }
+            if (typeof value === 'object') {
+                value = JSON.stringify(value);
+            }
+            sessionStorage.setItem(key, value);
+        },
+        'get': function(key) {
+            var value;
+            if (!sessionStorage) {
+                console.error('该浏览器不支持sessionStorage对象');
+            }
+            value = sessionStorage.getItem(key);
+            if (!value) {
+                return null;
+            }
+            if (typeof value === 'string') {
+                value = JSON.parse(value);
+            }
+            return value;
+        },
+        'remove': function(key) {
+            if (!sessionStorage) {
+                console.error('该浏览器不支持sessionStorage对象');
+            }
+            sessionStorage.removeItem(key);
+        }
+    });
+
 })(window, document, jQuery);

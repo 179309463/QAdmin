@@ -1,8 +1,11 @@
 var express = require('express'),
-    router = express.Router();
+    router = express.Router(),
+    type = 'iframe';
 
 router.get('/', (req, res) => {
+  type = (req.query.pjax=="true" ? 'index' : 'iframe');
   res.render('application/index', {
+    type: type,
     path: 'examples/home/index.html',
     nav_menu: 'examples/nav-menu.html',
     site_menu: 'examples/site-menu.html'
@@ -12,6 +15,7 @@ router.get('/', (req, res) => {
 console.log('载入路由...');
 
 function responseCommon(req, res) {
+    type = (req.query.pjax=="true" ? 'index' : 'iframe');
     var _path = req.path.substring(1);
     var i = _path.indexOf("/");
     var module = _path.substring(0, i);
@@ -22,7 +26,8 @@ function responseCommon(req, res) {
     if (req.headers['x-pjax']) {
         res.render(_path);
     } else {
-        res.render('application/index', {
+        res.render('application/'+type, {
+            type: type,
             path: _path,
             nav_menu: module+'/nav-menu.html',
             site_menu: module+'/site-menu.html'
@@ -87,6 +92,7 @@ router.all('/system/account/*', function (req, res) {
         switch (fileName) {
             case 'account/index.html':
                 res.render('index', {
+                    type: type,
                     path: _index,
                     path1:'message/index.html',
                     fileName: fileName,
@@ -96,6 +102,7 @@ router.all('/system/account/*', function (req, res) {
                 break;
             case 'password/index.html':
                 res.render('index', {
+                    type: type,
                     path: _index,
                     path1: 'password/index.html',
                     fileName: fileName,
@@ -105,6 +112,7 @@ router.all('/system/account/*', function (req, res) {
                 break;
             case 'log/index.html':
                 res.render('index',{
+                    type: type,
                     path: _index,
                     path1: '../log-table/index.html',
                     fileName: fileName,
@@ -114,6 +122,7 @@ router.all('/system/account/*', function (req, res) {
                 break;
             case 'display/index.html':
                 res.render('index',{
+                    type: type,
                     path: _index,
                     path1: '../settings-display/index.html',
                     fileName: fileName,
@@ -161,7 +170,8 @@ router.all('/examples/tables/data-tables/basic-init/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'basic-init/index.html':
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1:'zero-configuration/index.html',
                     fileName: fileName,
@@ -170,7 +180,8 @@ router.all('/examples/tables/data-tables/basic-init/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -217,7 +228,8 @@ router.all('/examples/tables/data-tables/advanced-init/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'advanced-init/index.html':
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1:'events-live/index.html',
                     fileName: fileName,
@@ -226,7 +238,8 @@ router.all('/examples/tables/data-tables/advanced-init/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -273,7 +286,8 @@ router.all('/examples/tables/data-tables/data-sources/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'data-sources/index.html':
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1:'dom/index.html',
                     fileName: fileName,
@@ -282,7 +296,8 @@ router.all('/examples/tables/data-tables/data-sources/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -329,7 +344,8 @@ router.all('/examples/tables/data-tables/api/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'api/index.html':
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1:'add-row/index.html',
                     fileName: fileName,
@@ -338,7 +354,8 @@ router.all('/examples/tables/data-tables/api/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -385,7 +402,8 @@ router.all('/examples/tables/data-tables/ajax/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'ajax/index.html':
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1:'simple/index.html',
                     fileName: fileName,
@@ -394,7 +412,8 @@ router.all('/examples/tables/data-tables/ajax/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -441,7 +460,8 @@ router.all('/examples/tables/data-tables/server-side/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'server-side/index.html':
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1:'simple/index.html',
                     fileName: fileName,
@@ -450,7 +470,8 @@ router.all('/examples/tables/data-tables/server-side/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -497,7 +518,8 @@ router.all('/examples/tables/data-tables/plug-ins/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'plug-ins/index.html':
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1:'api/index.html',
                     fileName: fileName,
@@ -506,7 +528,8 @@ router.all('/examples/tables/data-tables/plug-ins/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -553,7 +576,8 @@ router.all('/examples/tables/data-tables/others/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'others/index.html':
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1:'fixed-header/index.html',
                     fileName: fileName,
@@ -562,7 +586,8 @@ router.all('/examples/tables/data-tables/others/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/index', {
+                res.render('application/'+type, {
+                    type: type,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -591,7 +616,8 @@ router.get('/examples/home', (req, res) => {
     if (req.headers['x-pjax']) {
         res.render("examples/home/index.html");
     } else {
-        res.render('application/index', {
+        res.render('application/'+type, {
+            type: type,
             path: "examples/home/index.html",
             nav_menu: 'examples/nav-menu.html',
             site_menu: 'examples/site-menu.html'
@@ -605,7 +631,8 @@ router.get('/gojs/home', (req, res) => {
     if (req.headers['x-pjax']) {
         res.render("gojs/home/index.html");
     } else {
-        res.render('application/index', {
+        res.render('application/'+type, {
+            type: type,
             path: "gojs/home/index.html",
             nav_menu: 'gojs/nav-menu.html',
             site_menu: 'gojs/site-menu.html'

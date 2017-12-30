@@ -5,6 +5,13 @@
     <title>主页</title>
     <%- include('./includes/head.html') %>
 
+    <style>
+        body{
+            padding-top: 60px;
+            overflow: hidden;
+        }
+    </style>
+
     <!-- 图标 CSS-->
     <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="/vendor/web-icons/css/web-icons.css">
@@ -171,9 +178,15 @@
     </button>
     <div class="contabs-scroll pull-left">
         <ul class="nav con-tabs">
-            <li class="active">
-                <a data-pjax="#qadmin-pageContent" href="/examples/home" rel="contents"><span>首页</span></a>
-            </li>
+            <% if(type=='iframe') { %>
+                <li>
+                    <a href="/examples/home" target="iframe-0" title="首页"><span>首页</span></a>
+                </li>
+            <% }else { %>
+                <li class="active">
+                    <a data-pjax="#qadmin-pageContent" href="/examples/home" rel="contents"><span>首页</span></a>
+                </li>
+            <% } %>
         </ul>
     </div>
     <div class="btn-group pull-right">
@@ -199,7 +212,11 @@
 
 <main class="site-page">
     <div class="page-container" id="qadmin-pageContent">
-        <%- include('../'+path) %>
+        <% if(type=='iframe') { %>
+        <iframe src="" frameborder="0" name="iframe-0" class="page-frame animation-fade active"></iframe>
+        <% }else{ %>
+            <%- include('../'+path) %>
+        <% } %>
     </div>
     <div class="page-loading vertical-align text-center">
         <div class="page-loader loader-default loader vertical-align-middle" data-type="default"></div>

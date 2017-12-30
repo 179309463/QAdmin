@@ -8,6 +8,71 @@
 
     var $content = $("#qadmin-pageContent");
 
+    $.objExtend = $.objExtend || {}; // 公用模块对象
+
+    $.extend($.objExtend, {
+        _queue: {
+            prepare: [],
+            run: [],
+            complete: []
+        },
+        run: function () {
+            var self = this;
+            this.dequeue('prepare', function () {
+                self.trigger('before.run', self);
+            });
+
+            this.dequeue('run', function () {
+                self.dequeue('complete', function () {
+                    self.trigger('after.run', self);
+                });
+            });
+        },
+        dequeue: function (name, done) { // 队列当前状态离队，进行下一步操作
+            var self = this,
+                queue = this.getQueue(name),
+                fn = queue.shift(),
+                next = function () {
+                    self.dequeue(name, done);
+                };
+
+            if (fn) {
+                fn.call(this, next);
+            } else if ($.isFunction(done)) {
+                done.call(this);
+            }
+        },
+        getQueue: function (name) { // 获取队列状态信息
+            if (!$.isArray(this._queue[name])) {
+                this._queue[name] = [];
+            }
+
+            return this._queue[name];
+        },
+        extend: function (obj) { // 公用模块对象扩展方法
+            $.each(this._queue, function (name, queue) {
+                if ($.isFunction(obj[name])) {
+                    queue.unshift(obj[name]);
+
+                    delete obj[name];
+                }
+            });
+            $.extend(this, obj);
+            return this;
+        },
+        trigger: function (name, data, $el) { // 离队状态执行动作
+
+            if (typeof name === 'undefined') {
+                return;
+            }
+            if (typeof $el === 'undefined') {
+                $el = $("#qadmin-pageContent");
+            }
+
+            $el.trigger(name + '.app', data);
+        }
+    });
+    
     /*公用模块对象*/
     var app = {
         handleSlidePanel: function () {

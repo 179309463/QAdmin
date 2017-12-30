@@ -13,7 +13,27 @@
     $.site = $.site || {};
 
     $.extend($.site, {
+        tab_style: '',
         run: function () {
+
+            $.site.tab_style = ($(".page-frame").length>0 ? 'iframe' : 'pjax');
+
+            if($.site.tab_style=="iframe"){
+                var self = this,
+                $content = this.$content = $('#qadmin-pageContent');
+                $.content = $.content || {};
+                $.extend($.content, {
+                    window: function() {
+                        var name = $content.find('iframe.active').attr('name');
+                        return window.frames[name];
+                    },
+                    document: function() {
+                        var name = $content.find('iframe.active').attr('name');
+                        return window.frames[name].document;
+                    }
+                });
+                this.iframeDocument = null;
+            }
 
             $.ctx = $('#qadmin-signOut').data('ctx') || $.ctx;
 
@@ -168,11 +188,19 @@
             $('[data-toggle="tooltip"]').tooltip({trigger: 'hover'});
             $('[data-toggle="popover"]').popover();
 
+            if($.site.tab_style!="iframe"){
             $.components.init();
             window.Content.run();
 
             this.theme();
             this.pjaxFun();
+            }else{
+                if (window.localStorage) {
+                    this.theme();
+                    this.tabsDraw();
+                }
+                $.components.init();
+            }
         },
 
         theme: function () { // 主题渲染
@@ -295,6 +323,91 @@
                     $labelNav.find("li.active span").text(title);
                 }
 
+            });
+        },
+
+        tabsDraw: function() {
+            var self = this;
+            var targetUrl;
+            var hash = location.hash.substring(2);
+            var loadIframe = function(key, checked, url) {
+                var iframe = self.$content.find('iframe:first');
+                if (key === checked || !hash) {
+                    targetUrl = url;
+                    $('.con-tabs').find('li:first').addClass('active');
+                    iframe.attr('src', url);
+                    self.iframeEvents(iframe);
+                } else {
+                    iframe.removeClass('active');
+                }
+            };
+            var setting = $.sessionStorage.get('qadmin.base.contentTabs');
+            var checked = setting.checked;
+            for (var key in setting) {
+                var option = setting[key];
+                if (key === 'checked' || key === 'tabId') {
+                    continue;
+                } else if (key === 'iframe-0') {
+                    loadIframe(key, checked, option.url);
+                    continue;
+                }
+                var url = option.url;
+                var name = option.name;
+                var labelHtml = '<a href="' + url + '" ' + 'target="' + key + '"' + '" title="' + name + '' + '" rel="contents"><span>' + name + '</span><i class="icon' + ' wb-close-mini">' + '</i></a></li>';
+                var iframeHtml;
+                if (key === checked && hash) {
+                    targetUrl = url;
+                    labelHtml = '<li class="active">' + labelHtml;
+                    iframeHtml = '<iframe src="' + url + '" frameborder="0" name="' + key + '" class="page-frame animation-fade active"></iframe>';
+                } else {
+                    labelHtml = '<li>' + labelHtml;
+                    iframeHtml = '<iframe src="" frameborder="0" name="' + key + '" class="page-frame animation-fade"></iframe>';
+                }
+                $('.con-tabs').append(labelHtml);
+                self.$content.append(iframeHtml);
+            }
+            if (hash !== targetUrl && hash) {
+                var title = '未知页面';
+                $('.site-menu a').each(function() {
+                    var that = $(this);
+                    if (that.attr('href') === hash) {
+                        title = $.trim(that.attr('title') || that.text());
+                        return ! [];
+                    }
+                });
+                $.site.contentTabs.buildTag({
+                    'name': title,
+                    'url': hash
+                });
+            }
+            $.site.contentTabs.enable($('.con-tabs').find('.active'));
+            if (Object.keys(setting).length >= 0x13) {
+                $.site.contentTabs.labelSize();
+                $.site.contentTabs.labelEvent($('.con-tabs'), 'media');
+            }
+        },
+        
+        iframeEvents: function(iframe) {
+            var self = this,
+            loadStyles = function(iframeDocument) {
+                $('#qadmin-siteStyle', iframeDocument).load(function() {
+                    var style = $('#qadmin-siteStyle', self.iframeDocument);
+                    var min = style.prop('href').indexOf('?v=') === -1 ? '': '.min';
+                    if (self.themeColor && self.themeColor !== 'primary') {
+                        style.attr('href', '/public/themes/classic/base/skins/' + self.themeColor + '/site' + min + '.css');
+                    }
+                });
+            };
+            iframe.load(function() {
+                var iframeDocument = self.iframeDocument = $.content.document();
+                $(iframeDocument).on('click', function() {
+                    if (Breakpoints.is('xs') && $('body').hasClass('site-menubar-open')) {
+                        $.site.menubar.hide();
+                        self._hideNavbar();
+                    }
+                    $('[data-toggle="dropdown"]').parent().removeClass('open');
+                });
+                loadStyles(iframeDocument);
             });
         }
     });
