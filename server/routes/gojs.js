@@ -10,6 +10,7 @@ router.get('/gojs/home', (req, res) => {
     } else {
         res.render('application/'+type, {
             type: type,
+            isModal: false,
             path: "gojs/home/index.html",
             nav_menu: 'gojs/nav-menu.html',
             site_menu: 'gojs/site-menu.html'

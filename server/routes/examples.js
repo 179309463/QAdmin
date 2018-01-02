@@ -10,6 +10,7 @@ router.get('/examples/home', (req, res) => {
     } else {
         res.render('application/'+type, {
             type: type,
+            isModal: false,
             path: "examples/home/index.html",
             nav_menu: 'examples/nav-menu.html',
             site_menu: 'examples/site-menu.html'

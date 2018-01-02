@@ -40,6 +40,7 @@ router.all('/examples/tables/data-tables/basic-init/*', function (req, res) {
             case 'basic-init/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1:'zero-configuration/index.html',
                     fileName: fileName,
@@ -50,6 +51,7 @@ router.all('/examples/tables/data-tables/basic-init/*', function (req, res) {
             default:
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -98,6 +100,7 @@ router.all('/examples/tables/data-tables/advanced-init/*', function (req, res) {
             case 'advanced-init/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1:'events-live/index.html',
                     fileName: fileName,
@@ -108,6 +111,7 @@ router.all('/examples/tables/data-tables/advanced-init/*', function (req, res) {
             default:
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -156,6 +160,7 @@ router.all('/examples/tables/data-tables/data-sources/*', function (req, res) {
             case 'data-sources/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1:'dom/index.html',
                     fileName: fileName,
@@ -166,6 +171,7 @@ router.all('/examples/tables/data-tables/data-sources/*', function (req, res) {
             default:
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -214,6 +220,7 @@ router.all('/examples/tables/data-tables/api/*', function (req, res) {
             case 'api/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1:'add-row/index.html',
                     fileName: fileName,
@@ -224,6 +231,7 @@ router.all('/examples/tables/data-tables/api/*', function (req, res) {
             default:
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -272,6 +280,7 @@ router.all('/examples/tables/data-tables/ajax/*', function (req, res) {
             case 'ajax/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1:'simple/index.html',
                     fileName: fileName,
@@ -282,6 +291,7 @@ router.all('/examples/tables/data-tables/ajax/*', function (req, res) {
             default:
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -330,6 +340,7 @@ router.all('/examples/tables/data-tables/server-side/*', function (req, res) {
             case 'server-side/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1:'simple/index.html',
                     fileName: fileName,
@@ -340,6 +351,7 @@ router.all('/examples/tables/data-tables/server-side/*', function (req, res) {
             default:
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -388,6 +400,7 @@ router.all('/examples/tables/data-tables/plug-ins/*', function (req, res) {
             case 'plug-ins/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1:'api/index.html',
                     fileName: fileName,
@@ -398,6 +411,7 @@ router.all('/examples/tables/data-tables/plug-ins/*', function (req, res) {
             default:
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,
@@ -446,6 +460,7 @@ router.all('/examples/tables/data-tables/others/*', function (req, res) {
             case 'others/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1:'fixed-header/index.html',
                     fileName: fileName,
@@ -456,6 +471,7 @@ router.all('/examples/tables/data-tables/others/*', function (req, res) {
             default:
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1: fileName,
                     fileName: fileName,

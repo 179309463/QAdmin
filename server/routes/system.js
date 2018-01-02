@@ -60,6 +60,7 @@ router.all('/application/system/account/*', function (req, res) {
             case 'account/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1:'message/index.html',
                     fileName: fileName,
@@ -70,6 +71,7 @@ router.all('/application/system/account/*', function (req, res) {
             case 'password/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1: 'password/index.html',
                     fileName: fileName,
@@ -80,6 +82,7 @@ router.all('/application/system/account/*', function (req, res) {
             case 'log/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1: '../log-table/index.html',
                     fileName: fileName,
@@ -90,6 +93,7 @@ router.all('/application/system/account/*', function (req, res) {
             case 'display/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    isModal: false,
                     path: _index,
                     path1: '../settings-display/index.html',
                     fileName: fileName,
