@@ -266,6 +266,7 @@
                     }
                 });
             }else{
+                debugger
                 var href = $.trim($el.find('a').attr('href')),
                 index = href.indexOf('#'),
                 _0x15921d = index > 0 ? href.substring(0, index) : href,
@@ -283,7 +284,7 @@
                 tabPaneActiveId = $.trim(this.$instance.closest('div.tab-pane.active').attr('id'));
                 tabPaneId = $.trim(link.closest('div.tab-pane').attr('id'));
                 if (tabPaneActiveId !== tabPaneId) {
-                    $('#qadmin-navbar a[href="#' + tabPaneId + '"]').tab('show');
+                    $('a[href="#' + tabPaneId + '"]').tab('show');
                 }
                 _0x36f5e2 = link.closest('li').siblings('li.open');
                 parents = link.parents('li.has-sub');
