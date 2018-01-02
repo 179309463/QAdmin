@@ -6,7 +6,7 @@
 (function (window, document, $) {
 	'use strict';
 	
-	$.site.menu = {
+	$.site.menu = $.site.menu || {
 		speed: 250,
 		accordion: true, // 将默认的折叠效果改为手风琴效果
 		

@@ -54,8 +54,8 @@
         var Skintools = {
             storageKey: 'qadmin.base.skinTools',
             path: $.ctx + '/themes/classic/base',
-            $siteSidebar: $('.site-menubar'),
-            $siteNavbar: $('.site-navbar'),
+            $siteSidebar: $.parentFrame.find('.site-menubar'),
+            $siteNavbar: $.parentFrame.find('.site-navbar'),
             navbarSkins: 'bg-primary-600 bg-brown-600 bg-cyan-600 bg-green-600 bg-grey-600 bg-indigo-600 bg-orange-600 bg-pink-600 bg-purple-600 bg-red-600 bg-teal-600 bg-yellow-700',
             defaultSettings: {
                 sidebar: 'site-menubar-dark',
@@ -97,9 +97,9 @@
                 $pageContent.on("change", 'input[name="menuTxtIcon"]', function () {
                     var value = $(this).val();
                     if (value === 'site-menubar-keep') { // 显示文字
-                        $("body").removeClass("site-menubar-fold-alt").addClass("site-menubar-keep");
+                        $.parentFrame.find("body").removeClass("site-menubar-fold-alt").addClass("site-menubar-keep");
                     } else {
-                        $("body").removeClass("site-menubar-keep").addClass("site-menubar-fold-alt");
+                        $.parentFrame.find("body").removeClass("site-menubar-keep").addClass("site-menubar-fold-alt");
                     }
                     self.updateSetting('menuTxtIcon', value);
                 });
@@ -107,12 +107,12 @@
                 $pageContent.on('change', 'input[name="tabFlag"]', function () { // Tab页签
                     var value = $(this).val();
                     if (value === 'site-contabs-open') {
-                        $('#qadmin-siteConTabs ul.con-tabs').removeAttr('style');
-                        $("body").addClass("site-contabs-open");
+                        $('#qadmin-siteConTabs ul.con-tabs', $.parentFrame).removeAttr('style');
+                        $.parentFrame.find("body").addClass("site-contabs-open");
 
                         $.site.contentTabs.containerSize();
                     } else {
-                        $("body").removeClass("site-contabs-open");
+                        $.parentFrame.find("body").removeClass("site-contabs-open");
                     }
                     self.updateSetting('tabFlag', value);
                 });
@@ -229,7 +229,7 @@
                 }
             },
             primaryImprove: function (val) {
-                var $link = $('#qadmin-siteStyle', $('head')), href,
+                var $link = $('#qadmin-siteStyle', $.parentFrame), href,
                     etx = $link.prop('href').indexOf('?v=') === -1 ? '' : '.min' ;
 
                 if (val === 'primary') {
@@ -240,6 +240,22 @@
                 }
 
                 $link.attr('href', href);
+
+                var self = this;
+                var frames = $.parentFrame.find('#qadmin-pageContent>iframe');
+                frames.each(function() {
+                    var name = $(this).attr('name');
+                    $link = $('#qadmin-siteStyle', parent.frames[name].document);
+                    if ($link.length) {
+                        etx = $link.prop('href').indexOf('?v=') === -0x1 ? '': '.min';
+                        if (val === 'primary') {
+                            href = self.path + '/css/site' + etx + '.css';
+                        } else {
+                            href = self.path + '/skins/' + val + etx + '.css';
+                        }
+                        $link.attr('href', href);
+                    }
+                });
             },
             reset: function () {
                 localStorage.clear();

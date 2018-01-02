@@ -6,6 +6,8 @@
 (function (window, document, $) {
     'use strict';
 
+    $.parentFrame = $(window.top.document);
+    
     $.leavePage = null; // 离开页面方法
 
     $.ctx = ''; // 项目名称

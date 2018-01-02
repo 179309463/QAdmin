@@ -9,7 +9,7 @@
     var $body = $('body'),
         $html = $('html');
 
-    $.site.menubar = {
+    $.site.menubar = $.site.menubar || {
         opened: null,
         folded: null,
         top: false,

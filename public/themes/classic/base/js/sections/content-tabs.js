@@ -6,7 +6,7 @@
 (function (window, document, $) {
     'use strict';
 
-    $.site.contentTabs = {
+    $.site.contentTabs = $.site.contentTabs || {
         $instance: $('.site-menu'),
         relative: 0,
 

@@ -10,6 +10,10 @@
 
     window.Content = $.extend({}, $.objExtend);
 
+    if(window.top && window.top.$.site){
+        $.site = window.top.$.site;
+        return;
+    }
     $.site = $.site || {};
 
     $.extend($.site, {
