@@ -5933,6 +5933,10 @@ ul.panel-actions > li:first-child {
 		display: none !important;
 	}
 }
+body {
+	padding-top: 60px;
+	overflow-x: hidden;
+}
 .site-navbar {
 	z-index: 2000;
 	background-color: #4e97d9;
@@ -5948,16 +5952,6 @@ ul.panel-actions > li:first-child {
 	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
 	color: #fff;
 	cursor: pointer;
-}
-.site-navbar .navbar-header .navbar-brand .version-toggle {
-	float: right
-}
-.site-navbar .navbar-header .navbar-brand .version-toggle .btn {
-	color: #fff
-}
-.site-navbar .navbar-header .navbar-brand .version-toggle .dropdown-menu {
-	min-width: auto;
-	margin-top: 10px
 }
 @media (min-width: 768px) {
 	.site-navbar .navbar-header {
@@ -6046,9 +6040,6 @@ ul.panel-actions > li:first-child {
 }
 .site-menubar-fold .navbar-brand-logo.navbar-logo-mini {
 	display: inline-block !important;
-}
-.site-menubar-fold .version-toggle {
-	display: none
 }
 .site-menubar-unfold .navbar-brand-logo.navbar-logo {
 	display: inline-block !important;
@@ -6478,28 +6469,6 @@ ul.panel-actions > li:first-child {
 	height:         calc(100vh - 100px);
 	overflow-y: auto;
 }
-.iframe .site-page .page-container .page {
-	position: relative;
-	min-height: -webkit-calc(100vh);
-	min-height:         calc(100vh);
-	overflow-x: hidden;
-}
-.iframe .site-page .page-container .page.page-full {
-	height: -webkit-calc(100vh);
-	height:         calc(100vh);
-	overflow-y: auto;
-}
-.site-page .page-container .page-frame {
-	position:relative;
-	display:none;
-	width:100%;
-	height:-webkit-calc(100vh - 100px);
-	height:calc(100vh - 100px);
-	overflow-x:hidden
-}
-.site-page .page-container .page-frame.active {
-	display:block
-}
 .site-page .page-container + .page-loading {
 	position: absolute;
 	top: 0;
@@ -6538,10 +6507,6 @@ ul.panel-actions > li:first-child {
 	height: -webkit-calc(100vh - 140px) !important;
 	height:         calc(100vh - 140px) !important;
 }
-.site-contabs-open .site-page .page-frame {
-	height: -webkit-calc(100vh - 140px);
-	height:         calc(100vh - 140px)
-}
 .site-contabs-open .site-page .page-loading {
 	height: -webkit-calc(100vh - 100px) !important;
 	height:         calc(100vh - 100px) !important;
@@ -6557,10 +6522,6 @@ ul.panel-actions > li:first-child {
 	.site-contabs-open .site-page .page.page-full {
 		height: -webkit-calc(100vh - 60px) !important;
 		height:         calc(100vh - 60px) !important;
-	}
-	.site-contabs-open .site-page .page-frame {
-		height: -webkit-calc(100vh - 60px);
-		height:         calc(100vh - 60px)
 	}
 }
 .page-dark.layout-full {
@@ -7230,9 +7191,6 @@ body.layout-full {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.css-menubar .site-contabs, .css-menubar .site-page, .css-menubar .site-footer {
 		margin-left: 90px;
-	}
-	.css-menubar .iframe .site-page {
-		margin-left: 0px
 	}
 	.css-menubar.page-aside-fixed .page-aside {
 		position: fixed;

@@ -1,0 +1,13 @@
+.site-navbar .navbar-header .navbar-brand .version-toggle {
+	float: right
+}
+.site-navbar .navbar-header .navbar-brand .version-toggle .btn {
+	color: #fff
+}
+.site-navbar .navbar-header .navbar-brand .version-toggle .dropdown-menu {
+	min-width: auto;
+	margin-top: 10px
+}
+.site-menubar-fold .version-toggle {
+	display: none
+}
