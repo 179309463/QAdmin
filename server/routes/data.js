@@ -59,4 +59,8 @@ router.post('/employee/all/post', function(req, res){
     filterData(req, res, '/views/examples/tables/data-tables/server-side/employee.post.json');
 });
 
+router.get('/layer/photos', function(req, res){
+    filterData(req, res, '/views/examples/components/advanced/layer/index.json');
+});
+
 module.exports = router;

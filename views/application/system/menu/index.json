@@ -555,6 +555,14 @@
                                 "id": 11144,
                                 "text": "弹层组件",
                                 "children": null
+                            },
+                            {
+                                "layer": "02010315",
+                                "icon": null,
+                                "url": "/ui/components/advanced/layer/index",
+                                "id": 11145,
+                                "text": "Layer 弹层",
+                                "children": null
                             }
                         ]
                     },
