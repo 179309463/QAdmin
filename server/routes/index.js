@@ -6,6 +6,7 @@ router.get('/', (req, res) => {
   type = (req.query.pjax=="true" ? 'index' : 'iframe');
   res.render('application/index', {
     type: type,
+    isModal: false,
     path: 'examples/home/index.html',
     nav_menu: 'examples/nav-menu.html',
     site_menu: 'examples/site-menu.html'
