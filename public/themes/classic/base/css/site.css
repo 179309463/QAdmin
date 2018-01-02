@@ -7231,6 +7231,9 @@ body.layout-full {
 	.css-menubar .site-contabs, .css-menubar .site-page, .css-menubar .site-footer {
 		margin-left: 90px;
 	}
+	.css-menubar .iframe .site-page {
+		margin-left: 0px
+	}
 	.css-menubar.page-aside-fixed .page-aside {
 		position: fixed;
 		left: 90px;
