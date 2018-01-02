@@ -1,6 +1,13 @@
 body.iframe{
 	padding-top: 0px;
 }
+.modal-content>iframe {
+	float: left;
+	width: 100%;
+	height: 0;
+	margin: 0;
+	border: none
+}
 .iframe .site-page .page-container .page {
 	position: relative;
 	min-height: -webkit-calc(100vh);

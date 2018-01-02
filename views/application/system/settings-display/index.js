@@ -85,10 +85,10 @@
                         value = $(this).val();
                     if (value === 'site-menubar-unfold') {
                         $menuFold.addClass("hidden");
-                        $.site.menubar.unfold();
+                        window.top.$.site.menubar.unfold();
                     } else {
                         $menuFold.removeClass("hidden");
-                        $.site.menubar.fold();
+                        window.top.$.site.menubar.fold();
                     }
                     self.updateSetting('menuDisplay', value);
                 });
@@ -259,7 +259,7 @@
             },
             reset: function () {
                 localStorage.clear();
-                location.reload(true);
+                window.top.location.reload(true);
             }
         };
 
