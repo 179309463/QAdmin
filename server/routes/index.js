@@ -25,6 +25,8 @@ router.get('/locked.html', (req, res) => {
 
 router.all('/*', function (req, res) {
     type = (req.query.pjax=="true" ? 'index' : 'iframe');
+    isModal = (req.query.modal=="true");
+
     var _path = req.path.substring(1);
     var i = _path.indexOf("/");
     var module = _path.substring(0, i);
@@ -37,6 +39,7 @@ router.all('/*', function (req, res) {
     } else {
         res.render('application/'+type, {
             type: type,
+            isModal: isModal,
             path: _path,
             nav_menu: module+'/nav-menu.html',
             site_menu: module+'/site-menu.html'

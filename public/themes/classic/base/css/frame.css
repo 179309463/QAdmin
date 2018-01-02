@@ -1,5 +1,9 @@
 body.iframe{
 	padding-top: 0px;
+	background: #f1f4f5;
+}
+body.iframe.isModal{
+	background: #fff;
 }
 .modal-content>iframe {
 	float: left;

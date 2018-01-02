@@ -4,22 +4,20 @@
 		<title>空白页面</title>
 		<%- include('./includes/head.html') %>	
 
-	    <style>
-	        body{
-	            background: #f1f4f5
-	        }
-	    </style>
-
 	</head>
-	<body class="iframe">
-		<main class="site-page">
-		    <div class="page-container" id="qadmin-pageContent">
-		        <%- include('../'+path) %>
-		    </div>
-		    <div class="page-loading vertical-align text-center">
-		        <div class="page-loader loader-default loader vertical-align-middle" data-type="default"></div>
-		    </div>
-		</main>
+	<body class="iframe <%- isModal ? 'isModal' : '' %>">
+		<% if(isModal){ %>
+			<%- include('../'+path) %>
+		<% }else{ %>
+			<main class="site-page">
+			    <div class="page-container" id="qadmin-pageContent">
+			        <%- include('../'+path) %>
+			    </div>
+			    <div class="page-loading vertical-align text-center">
+			        <div class="page-loader loader-default loader vertical-align-middle" data-type="default"></div>
+			    </div>
+			</main>
+		<% } %>
 		
 		<!-- 布局 -->
 		<script src="/themes/classic/base/js/sections/menu.js"></script>

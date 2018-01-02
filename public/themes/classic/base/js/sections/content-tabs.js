@@ -266,7 +266,6 @@
                     }
                 });
             }else{
-                debugger
                 var href = $.trim($el.find('a').attr('href')),
                 index = href.indexOf('#'),
                 _0x15921d = index > 0 ? href.substring(0, index) : href,
