@@ -7,7 +7,7 @@
     'use strict';
 
     var $example = $('#exampleTransition'),
-        $pageContent = $('#qadmin-pageContent, body');
+        $pageContent = $('#qadmin-pageContent');
 
     $pageContent.on('click.panel.transition', '[data-type]', function () {
         var type = $(this).data('type');

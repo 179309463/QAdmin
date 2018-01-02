@@ -16,7 +16,7 @@
         $item.find('.timeline-content').addClass('invisible');
     });
 
-    $('#qadmin-pageContent, body').on('appear', '.timeline-item.timeline-invisible', function () {
+    $('#qadmin-pageContent').on('appear', '.timeline-item.timeline-invisible', function () {
         var $item = $(this);
         $item.removeClass('timeline-invisible');
 

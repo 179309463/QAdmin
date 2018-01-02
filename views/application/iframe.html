@@ -11,9 +11,16 @@
 	    </style>
 
 	</head>
-	<body class="iframe layout-full">
-		<%- include('../'+path) %>
-
+	<body class="iframe">
+		<main class="site-page">
+		    <div class="page-container" id="qadmin-pageContent">
+		        <%- include('../'+path) %>
+		    </div>
+		    <div class="page-loading vertical-align text-center">
+		        <div class="page-loader loader-default loader vertical-align-middle" data-type="default"></div>
+		    </div>
+		</main>
+		
 		<!-- 布局 -->
 		<script src="/themes/classic/base/js/sections/menu.js"></script>
 		<script src="/themes/classic/base/js/sections/media-menu.js"></script>

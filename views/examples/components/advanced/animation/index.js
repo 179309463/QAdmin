@@ -6,7 +6,7 @@
 (function (document, window, $) {
     'use strict';
 
-    $('#qadmin-pageContent, body').on('click', '.select-loader', function () {
+    $('#qadmin-pageContent').on('click', '.select-loader', function () {
         var type = $(this).data('type'),
             curr = $('.example-loading .loader').data('type');
 
@@ -19,7 +19,7 @@
 
     // NProgress
     // -----------------
-    $('#qadmin-pageContent, body').on('click', '.btn', function (e) {
+    $('#qadmin-pageContent').on('click', '.btn', function (e) {
         var $target = $(e.target);
         var id = $target.attr('id');
 

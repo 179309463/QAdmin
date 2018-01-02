@@ -8,7 +8,7 @@
 
     window.Content = App.extend({
         run: function (next) {
-            var $pageContent = $('#qadmin-pageContent, body'),
+            var $pageContent = $('#qadmin-pageContent'),
                 $actionBtn = $('.site-action').actionBtn({
                     toggleSelector: '.list-group-item',
                     listSelector: '.site-action-buttons'

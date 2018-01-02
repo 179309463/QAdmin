@@ -20,13 +20,13 @@
     // -----------------------------
     (function () {
         // 滚动到
-        $('#qadmin-pageContent, body').on('click', '.api-scroll-to', function () {
+        $('#qadmin-pageContent').on('click', '.api-scroll-to', function () {
             var to = $(this).data('to');
             $('#exampleScollableApi').slimScroll({scrollTo: to});
         });
 
         // 滚动
-        $('#qadmin-pageContent, body').on('click', '.api-scroll-by', function () {
+        $('#qadmin-pageContent').on('click', '.api-scroll-by', function () {
             var to = $(this).data('by');
             $('#exampleScollableApi').slimScroll({scrollBy: to});
         });

@@ -6,7 +6,7 @@
 (function (document, window, $) {
     'use strict';
 
-    var $content = $("#qadmin-pageContent, body"),
+    var $content = $("#qadmin-pageContent"),
         $userAccont = $("#userAccountInfo");
 
     window.Content = App.extend({

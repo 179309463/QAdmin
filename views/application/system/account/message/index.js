@@ -56,7 +56,7 @@
         },
         run: function (next) {
             var self = this, fn = window.notifyFn.unReadMsg,
-                $pageContent = $('#qadmin-pageContent, body');
+                $pageContent = $('#qadmin-pageContent');
 
             this.loadMsg('');
             this.fnExtend();

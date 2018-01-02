@@ -6,7 +6,7 @@
 (function (document, window, $) {
     'use strict';
 
-    var $pageContent = $('#qadmin-pageContent, body');
+    var $pageContent = $('#qadmin-pageContent');
     // 进度条动画
     // --------------------------
     $pageContent.on('click', '#exampleButtonStart', function () {

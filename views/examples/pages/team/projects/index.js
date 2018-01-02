@@ -77,7 +77,7 @@
         },
 
         handleProject: function () {
-            $('#qadmin-pageContent, body').on('click', '[data-tag=project-delete]', function () {
+            $('#qadmin-pageContent').on('click', '[data-tag=project-delete]', function () {
                 bootbox.setDefaults($.po('bootbox'));
                 bootbox.dialog({
                     message: "您确定要删除这个项目吗？",

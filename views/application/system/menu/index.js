@@ -6,7 +6,7 @@
 (function () {
     'use strict';
 
-    var $content = $("#qadmin-pageContent, body"),
+    var $content = $("#qadmin-pageContent"),
         $nestable = $('[data-plugin="nestable"]'),
         $topMenu = $content.find('.top-menu');
 
@@ -454,7 +454,7 @@
 
                         $.pjax({
                             url: $(".site-contabs").find('ul.con-tabs>li.active>a').attr('href'),
-                            container: '#qadmin-pageContent, body',
+                            container: '#qadmin-pageContent',
                             replace: true
                         });
                         toastr.info("当前菜单保存成功，重新登录可更新菜单数据！");

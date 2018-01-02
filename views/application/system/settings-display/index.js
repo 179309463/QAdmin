@@ -6,7 +6,7 @@
 (function (window, document) {
     'use strict';
 
-    if ($('#qadmin-pageContent, body').find('#accountContent').length > 0) {
+    if ($('#qadmin-pageContent').find('#accountContent').length > 0) {
         $('#displayForm').prepend('<input type="hidden" name="userId" value="' + $('#qadmin-signOut')
                 .attr("data-user") + '">');
     }
@@ -68,7 +68,7 @@
             },
             init: function () {
                 var self = this,
-                    $pageContent = $('#qadmin-pageContent, body');
+                    $pageContent = $('#qadmin-pageContent');
 
                 $pageContent.on('change', '#skintoolsSidebar', function () { // 菜单主题
                     self.sidebarEvents($(this));
@@ -149,7 +149,7 @@
                     $.each(this.settings, function (n, v) {
                         switch (n) {
                             case 'boxLayout':
-                                $('#boxLayout', '#qadmin-pageContent, body').prop('checked', v !== "");
+                                $('#boxLayout', '#qadmin-pageContent').prop('checked', v !== "");
                                 break;
                             case 'sidebar':
                                 $('#skintoolsSidebar').selectpicker('val', [v]);
@@ -158,7 +158,7 @@
                                 $('input[value="' + v + '"]', $("#skintoolsNavbar>ul")).prop('checked', true);
                                 break;
                             case 'navbarInverse':
-                                $('#navbarDisplay', '#qadmin-pageContent, body').prop('checked', v !== '');
+                                $('#navbarDisplay', '#qadmin-pageContent').prop('checked', v !== '');
                                 break;
                             case 'menuDisplay':
                                 $('input[value="' + v + '"]', '#displayForm').prop('checked', true);

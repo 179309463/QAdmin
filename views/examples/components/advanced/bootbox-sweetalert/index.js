@@ -27,7 +27,7 @@
             // 示例
             // ----------------
             (function () {
-                var $pageContent = $('#qadmin-pageContent, body');
+                var $pageContent = $('#qadmin-pageContent');
                 bootbox.setDefaults($.po('bootbox'));
 
                 $pageContent.on('click', '#exampleBootboxPromptDefaultValue', function () {
@@ -120,7 +120,7 @@
             // 样式
             // --------------
             (function () {
-                var $pageContent = $('#qadmin-pageContent, body');
+                var $pageContent = $('#qadmin-pageContent');
 
                 $pageContent.on("click", '#exampleWarningConfirm', function () {
                     swal($.po('sweetalert', {

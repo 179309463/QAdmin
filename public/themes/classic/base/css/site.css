@@ -6478,6 +6478,17 @@ ul.panel-actions > li:first-child {
 	height:         calc(100vh - 100px);
 	overflow-y: auto;
 }
+.iframe .site-page .page-container .page {
+	position: relative;
+	min-height: -webkit-calc(100vh);
+	min-height:         calc(100vh);
+	overflow-x: hidden;
+}
+.iframe .site-page .page-container .page.page-full {
+	height: -webkit-calc(100vh);
+	height:         calc(100vh);
+	overflow-y: auto;
+}
 .site-page .page-container .page-frame {
 	position:relative;
 	display:none;
@@ -6551,12 +6562,6 @@ ul.panel-actions > li:first-child {
 		height: -webkit-calc(100vh - 60px);
 		height:         calc(100vh - 60px)
 	}
-}
-.page {
-	position: relative;
-	min-height: 100vh;
-	overflow: visible;
-	background: #f1f4f5
 }
 .page-dark.layout-full {
 	color: #fff;
@@ -7019,8 +7024,6 @@ ul.panel-actions > li:first-child {
 }
 body.layout-full {
 	padding-top: 0;
-    height: 100vh;
-    overflow-x: hidden;
 }
 .layout-full .site-contabs, .layout-full .site-page {
 	height: 100%;

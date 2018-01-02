@@ -10,7 +10,7 @@
         run: function () {
             var $panel = $('#examplePanel'),
                 api = $panel.data('panel-api'),
-                $pageContent = $('#qadmin-pageContent, body');
+                $pageContent = $('#qadmin-pageContent');
 
             // 全屏
             $pageContent.on('click', '#exampleTogglFullscreene', function () {

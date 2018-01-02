@@ -6,7 +6,7 @@
 (function (window, document, $) {
     "use strict";
 
-    $('#qadmin-pageContent, body').on('shown.bs.tab', '#DTExample a[data-toggle="tab"]',function () {
+    $('#qadmin-pageContent').on('shown.bs.tab', '#DTExample a[data-toggle="tab"]',function () {
         $.fn.dataTable.tables({visible: true, api: true}).columns.adjust();
     });
 

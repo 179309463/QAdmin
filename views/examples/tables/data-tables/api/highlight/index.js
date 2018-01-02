@@ -8,7 +8,7 @@
 
     var lastIdx = null;
     var table = $('#dataTableExample').DataTable($.po('dataTable'));
-    $('#qadmin-pageContent, body')
+    $('#qadmin-pageContent')
         .on('mouseover', '#dataTableExample tbody td', function () {
             var colIdx = table.cell(this).index().column;
             if (colIdx !== lastIdx) {

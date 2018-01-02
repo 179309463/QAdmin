@@ -44,7 +44,7 @@
                 "order": [[1, 'asc']]
             }));
             // 展开关闭详情时的事件监听
-            $('#qadmin-pageContent, body').on('click', '#dataTableExample tbody td.details-control', function () {
+            $('#qadmin-pageContent').on('click', '#dataTableExample tbody td.details-control', function () {
                 var tr = $(this).closest('tr');
                 var row = table.row(tr);
                 if (row.child.isShown()) {

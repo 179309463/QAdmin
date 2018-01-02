@@ -128,7 +128,7 @@
 
             var $searchableTree = $('#exampleSearchableTree').treeview(options);
 
-            $('#qadmin-pageContent, body').on('keyup', '#inputSearchable', function (e) {
+            $('#qadmin-pageContent').on('keyup', '#inputSearchable', function (e) {
                 var pattern = $(e.target).val();
 
                 $searchableTree.treeview('search', [pattern, {
@@ -144,13 +144,13 @@
                 }),
                 $expandibleTree = $('#exampleExpandibleTree').treeview(options);
 
-            $('#qadmin-pageContent, body').on('click', '#exampleExpandAll', function () {
+            $('#qadmin-pageContent').on('click', '#exampleExpandAll', function () {
                 $expandibleTree.treeview('expandAll', {
                     levels: '99'
                 });
             });
 
-            $('#qadmin-pageContent, body').on('click', '#exampleCollapseAll', function () {
+            $('#qadmin-pageContent').on('click', '#exampleCollapseAll', function () {
                 $expandibleTree.treeview('collapseAll');
             });
         },
