@@ -115,7 +115,7 @@
     "zTree": "^3.5.29",
     "mxgraph": "^3.7.5",
     "gojs": "^1.7.27",
-    "jsplumb": "jsPlumb#^2.5.7",
+    "jsplumb": "^2.5.11",
     "propertiesjs": "^1.6.0",
     "layer": "^3.1.1",
     "pixeden-stroke-7-icon": "^1.2.3",
