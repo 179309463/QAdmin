@@ -624,7 +624,7 @@ if (typeof jQuery === 'undefined') {
 				that.$element.show().scrollTop(0)
 			} else {
 				var currentId = that.$element.attr('id');
-				that.$element.after('<div id="' + currentId + '-admui"></div>');
+				that.$element.after('<div id="' + currentId + '-qadmin"></div>');
 				that.$element.appendTo(that.$body).show().scrollTop(0)
 			}
 			if (result) {
@@ -719,7 +719,7 @@ if (typeof jQuery === 'undefined') {
 			currentId = that.$element.attr('id');
 		that.$element.hide();
 		if (that.flag) {
-			$('#' + currentId + '-admui').before(that.$element).remove()
+			$('#' + currentId + '-qadmin').before(that.$element).remove()
 		}
 		this.backdrop(function() {
 			that.$body.removeClass('modal-open');

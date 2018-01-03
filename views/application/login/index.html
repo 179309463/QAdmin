@@ -59,17 +59,6 @@
     <!-- 插件 -->
     <link rel="stylesheet" href="/vendor/bootstrap-select/dist/css/bootstrap-select.css">
     <link rel="stylesheet" href="/lib/formvalidation.io/dist/css//formValidation.min.css">
-    
-    <!-- 百度统计 -->
-    <script>
-    var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "https://hm.baidu.com/hm.js?c9dd85291ea88dcf64671a7dfa65e0ef";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
 
 </head>
 
@@ -120,7 +109,7 @@
                     </div>
                     <h3 class="hidden-xs">登录 QAdmin</h3>
                     <p class="hidden-xs">QAdmin 在线演示系统</p>
-                    <form action="login/index.html" class="login-form" method="post" id="loginForm">
+                    <form action="/application/index" class="login-form" method="get" id="loginForm">
                     	<div class="form-group">
                             <label class="sr-only" for="identity">选择身份</label>
                             <select class="form-control" id="identity">

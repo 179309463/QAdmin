@@ -5,7 +5,7 @@
 		<%- include('./includes/head.html') %>	
 
 	</head>
-	<body class="iframe <%- isModal ? 'isModal' : '' %>">
+	<body class="iframe<%- isModal ? ' isModal' : '' %>">
 		<% if(isModal){ %>
 			<%- include('../'+path) %>
 		<% }else{ %>

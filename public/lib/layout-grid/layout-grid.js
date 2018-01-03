@@ -378,7 +378,8 @@ var LTGrid = (function ($) {
     LTGrid.prototype._moveGhost = function ($widget, mouseX, mouseY) {
         var size = this.size()
         var $ghost = this._getGhost($widget)
-        var rect = $ghost[LTRect.NAME](size)
+        var rect = $ghost[LTRect.NAME](size);
+        var rect_origin = rect;
         var gap = this._options.params[size].gap
         var cols = this._options.params[size].cols
 
@@ -387,7 +388,8 @@ var LTGrid = (function ($) {
 
         rect.x = Math.min(Math.max(0, rect.x), cols - rect.w)
 
-        $ghost[LTRect.NAME](size, rect)
+        if(rect_origin.x!=rect.x || rect_origin.y!=rect.y)
+            $ghost[LTRect.NAME](size, rect)
     }
 
     /**

@@ -2,7 +2,7 @@ var express = require('express'),
     router = express.Router(),
     type = 'iframe';
 
-router.get('/', (req, res) => {
+router.get(['/', '/application','/application/index','/application/index.html'], (req, res) => {
   type = (req.query.pjax=="true" ? 'index' : 'iframe');
   res.render('application/index', {
     type: type,
@@ -20,8 +20,8 @@ router.get('/application/system/logout', (req, res) => {
   res.render('application/login/index.html')
 });
 
-router.get('/locked.html', (req, res) => {
-  res.render('application/locked')
+router.get('/application/locked/index.html', (req, res) => {
+  res.render('application/locked/index.html')
 });
 
 router.all('/*', function (req, res) {
