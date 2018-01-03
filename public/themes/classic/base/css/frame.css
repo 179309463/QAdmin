@@ -44,8 +44,12 @@ body.iframe.isModal{
 		height:         calc(100vh - 60px)
 	}
 }
+.site-menubar-unfold.iframe .site-page,
+.site-menubar-fold.iframe .site-page{
+	margin-left: 0px;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.css-menubar .iframe .site-page {
-		margin-left: 0px
+		margin-left: 0px;
 	}
 }

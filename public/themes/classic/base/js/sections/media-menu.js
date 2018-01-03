@@ -297,7 +297,9 @@
                     this.tagId = tagId;
                     this.init(tagId);
                 } else {
-                    this.api.enable();
+                    if (this.api) {
+                        this.api.enable();
+                    }
                 }
             },
 
