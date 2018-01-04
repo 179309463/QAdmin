@@ -137,7 +137,8 @@
     "jQuery-wScrollspy": "willianis4w/jQuery-wScrollspy",
     "smooth-scroll": "cferdinandi/smooth-scroll#^12.1.5",
     "jquery": "2.2.4",
-    "city-picker": "^1.1.1"
+    "city-picker": "^1.1.1",
+    "ckeditor": "^4.8.0"
   },
   "resolutions": {
     "jquery": "2.2.4",
