@@ -52,7 +52,7 @@
                 }else{
                     var iframe = $item.data('pjax') || '#qadmin-pageContent';
                     if ($item.is('[target="_blank"]') && iframe === '#qadmin-pageContent') {
-                        window.history.replaceState(null, '', '#!' + href);
+                        window.history.replaceState && window.history.replaceState(null, '', '#!' + href);
                         self.tabType = true;
                         self.buildTag({
                             name: title,
@@ -210,7 +210,7 @@
             var iframe = content.children('iframe[name="' + target + '"]');
             $('title').text(title);
             if (!this.tabType) {
-                window.history.replaceState(null, '', '#!' + href);
+                window.history.replaceState && window.history.replaceState(null, '', '#!' + href);
             }
             if (!iframe.attr('src')) {
                 iframe.attr('src', href);

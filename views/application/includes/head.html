@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="/themes/classic/base/css/version.css">
 <link rel="stylesheet" href="/themes/classic/base/css/frame.css">
 
-<!--[if lte IE 9]>
+<!--[if lt IE 9]>
 <meta http-equiv="refresh" content="0; url='/portal/browser.html'" />
 <![endif]-->
 <!--[if lt IE 10]>
@@ -36,13 +36,16 @@
 <![endif]-->
 <script src="/themes/classic/ie/array.js"></script>
 <script src="/themes/classic/ie/string.js"></script>
+<script src="/themes/classic/ie/dom.js"></script>
 
 <!-- 图标 CSS-->
 <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.css">
 <link rel="stylesheet" href="/lib/web-icons/css/web-icons.css">
 
 <!-- 插件 CSS -->
+<!--[if gt IE 9]><!--> 
 <link rel="stylesheet" href="/vendor/animsition/dist/css/animsition.css">
+<!--<![endif]-->
 <link rel="stylesheet" href="/lib/toastr/build/toastr.css">
 <link rel="stylesheet" href="/lib/layer/retina.css">
 

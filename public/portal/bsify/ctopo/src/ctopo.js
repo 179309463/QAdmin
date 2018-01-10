@@ -5,7 +5,7 @@
  */
 function ctopo(opt){
 	//状态机常量
-	const STATE_IMAGE_LOAD=10,	//加载图片
+	var STATE_IMAGE_LOAD=10,	//加载图片
 		  STATE_INIT_LOAD=20,	//正在初始化
 		  STATE_INIT_OVER=30;	//初始化完成
 	//默认配置对象
