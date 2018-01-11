@@ -37,7 +37,7 @@
                     title = $item.text(),
                     href = $item.attr('href');
 
-                title = title === '' ? $item.attr('title') : title;
+                title = $.trim(title === '' ? $item.attr('title') : title);
                 result = new RegExp(/^([a-zA-z]+:|#|javascript|www\.)/); // 不执行pjax的地址
 
                 if (result.test(href)) {
@@ -308,7 +308,7 @@
         getPath: function () {
             if($.site.tab_style!="iframe"){
                 var pathname = location.pathname,
-                    title = $('#qadmin-pageContent').find('title').text();
+                    title = $.trim($('#qadmin-pageContent').find('title').text());
 
                 if (pathname !== $.ctx + '/') {
                     this.buildTag({name: title, url: pathname});
