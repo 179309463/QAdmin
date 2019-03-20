@@ -79,7 +79,6 @@
     "jquery-labelauty": "^1.1.4",
     "jquery-ui": "jqueryui#^1.12.1",
     "jt.timepicker": "^1.11.12",
-    "ladda-bootstrap": "^0.1.0",
     "lodash": "^4.17.4",
     "magnific-popup": "^1.1.0",
     "marked": "^0.3.6",
@@ -142,9 +141,12 @@
     "highcharts": "^6.0.4",
     "ag-grid-docs": "https://github.com/ag-grid/ag-grid-docs.git#^15.0.0",
     "framework7": "^2.0.6",
-    "framework7-vue": "https://github.com/framework7io/framework7-vue.git#^2.0.0"
+    "framework7-vue": "https://github.com/framework7io/framework7-vue.git#^2.0.0",
+    "ladda": "1.0.6"
   },
   "resolutions": {
-    "chartist": "^0.11.0"
+    "chartist": "^0.11.0",
+    "jquery": "2.2.4",
+    "spin.js": "~2.0.2"
   }
 }

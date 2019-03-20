@@ -7,10 +7,10 @@
 <div class="page page-full animation-fade">
     <div class="page-header">
         <ol class="breadcrumb">
-            <li>
+            <li class="breadcrumb-item">
                 <a href="/examples/components/basic/icons/index.html" data-pjax>矢量图标</a>
             </li>
-            <li class="active">Open Iconic</li>
+            <li class="breadcrumb-item active">Open Iconic</li>
         </ol>
         <div class="page-header-actions">
             <a class="btn btn-default btn-outline btn-round" href="https://github.com/iconic/open-iconic.git" target="_blank">
@@ -18,20 +18,19 @@
         </div>
     </div>
     <div class="page-content container-fluid">
-        <div class="row padding-vertical-30">
-            <div class="col-sm-12 text-center">
-                <h2>Open Iconic 图标搜索</h2>
-                <form role="search">
-                    <div class="input-search">
-                        <input type="text" class="form-control round" placeholder="搜索图标...">
-                        <button type="submit" class="input-search-btn">
-                            <i class="icon wb-search" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </form>
-                <div class="width-300 center-block margin-vertical-25">
-                    <input id="iconChange" class="icon-slider" type="text" data-plugin="bootstrapSlider" data-slider-min="16" data-slider-max="64" data-slider-step="1" data-slider-value="24" data-slider-tooltip="always">
+        <div class="py-30 text-center">
+            <h2>图标搜索</h2>
+            <form role="search">
+                <div class="input-search">
+                    <input type="text" class="form-control round" placeholder="搜索图标...">
+                    <button type="submit" class="input-search-btn">
+                        <i class="icon wb-search" aria-hidden="true"></i>
+                    </button>
                 </div>
+            </form>
+            <div class="icon-slider-bar">
+                <input id="iconChange" class="icon-slider" type="text" data-plugin="bootstrapSlider" data-slider-min="16"
+                        data-slider-max="64" data-slider-step="1" data-slider-value="24" data-slider-tooltip="always">
             </div>
         </div>
         <div class="panel">

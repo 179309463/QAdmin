@@ -71,9 +71,9 @@
             });
 
             // 标签页的移动  &&  关闭单个标签页
-            $navContabs.on('click.site.contabs', 'button.pull-left', function () {
+            $navContabs.on('click.site.contabs', 'button.float-left', function () {
                 self.labelPosition($navContent, self.labelWidth, "right");
-            }).on('click.site.contabs', '.pull-right>.btn-icon', function () {
+            }).on('click.site.contabs', '.float-right>.btn-icon', function () {
                 var content = $navContent.width();
 
                 self.labelPosition($navContent, self.labelWidth, "left", self.view, content);
@@ -117,7 +117,7 @@
             });
 
             // 刷新当前 && 关闭其他 && 所有标签页
-            $navContabs.on('click.site.contabs', '.pull-right li.reload-page', function () {
+            $navContabs.on('click.site.contabs', '.float-right a.reload-page', function () {
                 var URL = $navContabs.find('ul.con-tabs>li.active>a').attr('href');
 
                 if($.site.tab_style!="iframe"){
@@ -129,7 +129,7 @@
                 }else{
                     $('#qadmin-pageContent').children('[src="' + URL + '"]').attr('src', URL);
                 }                    
-            }).on('click.site.contabs', '.pull-right li.close-other', function () {
+            }).on('click.site.contabs', '.float-right a.close-other', function () {
                 if($.site.tab_style!="iframe"){
                     $navContabs.find('ul.con-tabs>li').filter(function () {
                         return !$(this).is('.active') && $(this).index() !== 0;
@@ -150,7 +150,7 @@
                 $navContent.animate({left: 0}, 100);
 
                 self.btnView('hide');
-            }).on('click.site.contabs', '.pull-right li.close-all', function () {
+            }).on('click.site.contabs', '.float-right a.close-all', function () {
                 var $labels = $navContabs.find('ul.con-tabs>li'),
                     labelsURL = $labels.eq(0).find('a').attr('href');
 
@@ -615,8 +615,8 @@
         },
         btnView: function (status) { // 标签页左右移动按钮状态
             var $siteContabs = $('.site-contabs'),
-                $contabsLeftBtn = $siteContabs.children('button.pull-left'),
-                $contabsRightBtn = $siteContabs.find('.pull-right > button.btn-icon');
+                $contabsLeftBtn = $siteContabs.children('button.float-left'),
+                $contabsRightBtn = $siteContabs.find('.float-right > button.btn-icon');
 
             if (status === 'visible') {
                 $contabsLeftBtn.removeClass('hide');

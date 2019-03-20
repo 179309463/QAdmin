@@ -1,16 +1,23 @@
-/**
- * QAdmin v1.2.0 (http://www.qadmin.com/)
- * Copyright 2015-2017 QAdmin Team
- * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
- */
-.grid-stack-item-content {
-	font-size: 20px;
-	color: #526069;
-	text-align: center;
-	background: white;
+.bootbox .modal-dialog {
+	width: 360px
 }
-.grid-stack-item-content .fa {
-	display: block;
-	margin: 20px 0 10px;
-	font-size: 64px;
+
+.grid-stack-item-content {
+	background: #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: Center;
+	-webkit-align-items: Center;
+	-ms-flex-align: Center;
+	align-items: Center;
+	height: 100%;
+	color: #757575;
+	font-size: 1.5rem;
+	text-shadow: none
 }

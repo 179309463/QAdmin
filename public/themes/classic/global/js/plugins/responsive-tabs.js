@@ -53,9 +53,9 @@
             if (this.$dropdown.length === 0) { // 没有下拉菜单
                 this.flag = true;
 
-                this.$nav.append('<li class="dropdown" role="presentation">'
-                    + '<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">'
-                    + '<span class="caret"></span> 更多</a><ul class="dropdown-menu" role="menu"></ul></li>');
+                this.$nav.append('<li class="dropdown nav-item" role="presentation">'
+                    + '<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" aria-expanded="false">'
+                    + '更多</a><ul class="dropdown-menu" role="menu"></ul></li>');
 
                 this.$dropdown = this.$nav.find(this.options.dropdownSelector);
                 this.$dropdown.css("opacity", 0); // 还需要将其隐藏起来

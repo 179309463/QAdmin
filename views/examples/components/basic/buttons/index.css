@@ -1,30 +1,59 @@
-/**
- * QAdmin v1.2.0 (http://www.qadmin.com/)
- * Copyright 2015-2017 QAdmin Team
- * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
- */
+.bootbox .modal-dialog {
+	width: 360px
+}
+
 .color-box {
 	width: 20px;
 	height: 40px;
-	border-radius: 4px;
+	border-radius: 4px
 }
+
 .btn.btn-direction {
-	width: 174px;
+	width: 174px
 }
-.btn-pill-left, .btn-pill-right {
-	width: 120px;
+
+.btn-pill-left,.btn-pill-right {
+	width: 120px
 }
-.text-active, .active > .text, .active > .auto .text {
-	display: none !important;
+
+.active>.auto .text,.active>.text,.text-active {
+	display: none!important
 }
-.active > .text-active, .active > .auto .text-active {
-	display: inline-block !important;
+
+.active>.auto .text-active,.active>.text-active {
+	display: inline-block!important
 }
+
 .active .icon {
-	line-height: 1;
+	line-height: 1
 }
-@media screen and (max-width: 768px) {
+
+.bg-btn-secondary {
+	background: #6c757d
+}
+
+.bg-btn-secondary-hover {
+	background: #5a6268
+}
+
+.bg-btn-secondary-active {
+	background: #545b62
+}
+
+.bg-btn-light {
+	background: #f8f9fa
+}
+
+.bg-btn-light-hover {
+	background: #e2e6ea
+}
+
+.bg-btn-light-active {
+	background: #dae0e5
+}
+
+@media (max-width:767.98px) {
 	.btn-group-justified .btn {
-		min-height: 50px;
+		min-height: 50px
 	}
 }
