@@ -6,7 +6,7 @@
         <p>本示例演示了Ajax调用服务器来获得行的附加信息</p>
     </div>
     <div class="panel-body">
-        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample">
+        <table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap" id="dataTableExample">
             <thead>
             <tr>
                 <th></th>
@@ -31,22 +31,22 @@
 <div class="panel nav-tabs-horizontal">
     <div class="panel-body" data-approve="nav-tabs">
         <ul class="nav nav-tabs nav-tabs-line" role="tablist">
-            <li role="presentation" class="active">
-                <a data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
             </li>
-            <li role="presentation">
-                <a data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
             </li>
-            <li role="presentation">
-                <a data-toggle="tab" href="#DTAjax" aria-controls="DTAjax" role="tab" aria-expanded="true">AJAX</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTAjax" aria-controls="DTAjax" role="tab" aria-expanded="true">AJAX</a>
             </li>
         </ul>
-        <div class="tab-content margin-top-15">
+        <div class="tab-content mt-15">
             <div class="tab-pane active" id="DTJS" role="tabpanel">
 		<pre data-plugin="highlight"><code class="js">/* 格式化详情功能 - 根据需要修改 */
 function format(d) {
     // `d` 是该行的原始数据对象
-    return '&lt;table class="table table-bordered text-nowrap padding-left-50 margin-bottom-0" cellpadding="5"&gt;' +
+    return '&lt;table class="table table-bordered text-nowrap pl-50 mb-0" cellpadding="5"&gt;' +
         '&lt;tr&gt;' +
         '&lt;td&gt;姓名：&lt;/td&gt;' +
         '&lt;td&gt;' + d.name + '&lt;/td&gt;' +
@@ -77,7 +77,7 @@ $(function () {
             {"data": "office"},
             {"data": "salary"}
         ],
-        "order": [[1, 'asc']]
+        "order": &#91;&#91;1, 'asc'&#93;&#93;
     }));
     // 展开关闭详情时的事件监听
     $('#dataTableExample tbody').on('click', 'td.details-control', function () {
@@ -97,7 +97,7 @@ $(function () {
 });</code></pre>
             </div>
             <div class="tab-pane" id="DTHtml" role="tabpanel">
-				<pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped width-full"&gt;
+				<pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped w-full"&gt;
     &lt;thead&gt;
     &lt;tr&gt;
         &lt;th&gt;姓名&lt;/th&gt;

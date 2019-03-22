@@ -3,10 +3,11 @@
         <h3 class="panel-title">列渲染</h3>
     </div>
     <div class="alert alert-warning" role="alert">
-        <p>本示例演示了把年龄列隐藏，通过 <code>columns.render</code> 方法把年龄的值拼接到姓名列</p>
+        <p>本示例演示了把年龄列隐藏，通过
+            <code>columns.render</code> 方法把年龄的值拼接到姓名列</p>
     </div>
     <div class="panel-body">
-        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample">
+        <table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap" id="dataTableExample">
             <thead>
             <tr>
                 <th>姓名</th>
@@ -491,17 +492,19 @@
 <div class="panel nav-tabs-horizontal">
     <div class="panel-body" data-approve="nav-tabs">
         <ul class="nav nav-tabs nav-tabs-line" role="tablist">
-            <li role="presentation" class="active">
-                <a data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab"
+                   aria-expanded="false">JavaScript</a>
             </li>
-            <li role="presentation">
-                <a data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab"
+                   aria-expanded="false">HTML</a>
             </li>
         </ul>
-        <div class="tab-content margin-top-15">
+        <div class="tab-content mt-15">
             <div class="tab-pane active" id="DTJS" role="tabpanel">
-                <pre data-plugin="highlight"><code class="js">$(function () {
-    $('#dataTableExample').DataTable($.po('dataTable', {
+                            <pre data-plugin="highlight"><code class="js">$(function () {
+    $('#dataTableExample').DataTable($.concatCpt('dataTable', {
         "columnDefs": [
             {
                 "render": function (data, type, row) {
@@ -518,7 +521,7 @@
 }));</code></pre>
             </div>
             <div class="tab-pane" id="DTHtml" role="tabpanel">
-                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped width-full"&gt;
+                            <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped w-full"&gt;
     &lt;thead&gt;
     &lt;tr&gt;
         &lt;th&gt;姓名&lt;/th&gt;
@@ -1002,5 +1005,3 @@
         </div>
     </div>
 </div>
-
-<script src="/views/examples/tables/data-tables/advanced-init/column-render/index.js"></script>

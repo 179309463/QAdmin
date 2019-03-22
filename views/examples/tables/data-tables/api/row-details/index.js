@@ -27,7 +27,7 @@
                     '</table>';
             }
 
-            var table = $('#dataTableExample').DataTable($.po('dataTable', {
+            window.table1 = $('#dataTableExample').dataTable($.po('dataTable', {
                 "ajax": $.ctx + "/views/examples/tables/dt-ajax-2.json",
                 "columns": [
                     {
@@ -43,10 +43,11 @@
                 ],
                 "order": [[1, 'asc']]
             }));
+            console.log(table)
             // 展开关闭详情时的事件监听
             $('#qadmin-pageContent').on('click', '#dataTableExample tbody td.details-control', function () {
                 var tr = $(this).closest('tr');
-                var row = table.row(tr);
+                var row = window.table1.row(tr);
                 if (row.child.isShown()) {
                     // 本行已展开
                     row.child.hide();

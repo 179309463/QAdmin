@@ -3,10 +3,12 @@
         <h3 class="panel-title">隐藏列的复杂的表头</h3>
     </div>
     <div class="alert alert-warning" role="alert">
-        <p>通过 <code>rowspan</code> / <code>colspan</code> 制作复杂的表头，下面的例子演示如何隐藏"年龄"一列</p>
+        <p>通过
+            <code>rowspan</code> /
+            <code>colspan</code> 制作复杂的表头，下面的例子演示如何隐藏"年龄"一列</p>
     </div>
     <div class="panel-body">
-        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample">
+        <table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap" id="dataTableExample">
             <thead>
             <tr>
                 <th rowspan="2">姓名</th>
@@ -494,17 +496,19 @@
 <div class="panel nav-tabs-horizontal">
     <div class="panel-body" data-approve="nav-tabs">
         <ul class="nav nav-tabs nav-tabs-line" role="tablist">
-            <li role="presentation" class="active">
-                <a data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab"
+                   aria-expanded="false">JavaScript</a>
             </li>
-            <li role="presentation">
-                <a data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab"
+                   aria-expanded="false">HTML</a>
             </li>
         </ul>
-        <div class="tab-content margin-top-15">
+        <div class="tab-content mt-15">
             <div class="tab-pane active" id="DTJS" role="tabpanel">
-                <pre data-plugin="highlight"><code class="js">$(function () {
-    var table = $('#dataTableExample').DataTable($.po('dataTable'));
+                            <pre data-plugin="highlight"><code class="js">$(function () {
+    var table = $('#dataTableExample').DataTable($.concatCpt('dataTable'));
     $('#dataTableExample tbody').on('click', 'tr', function () {
         var data = table.row(this).data();
         toastr.info('您单击了"' + data[0] + '"的行');
@@ -512,7 +516,7 @@
 });</code></pre>
             </div>
             <div class="tab-pane" id="DTHtml" role="tabpanel">
-                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample"&gt;
+                            <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap" id="dataTableExample"&gt;
     &lt;thead&gt;
     &lt;tr&gt;
         &lt;th rowspan="2"&gt;姓名&lt;/th&gt;

@@ -6,7 +6,7 @@
         <p>DataTables 可以通过 <code>ajax</code> 设置ajax数据源获取json数据</p>
     </div>
     <div class="panel-body">
-        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample" data-plugin="dataTable" data-ajax="/views/examples/tables/dt-ajax.json">
+        <table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap" id="dataTableExample" data-plugin="dataTable" data-ajax="/views/examples/tables/dt-ajax.json">
             <thead>
             <tr>
                 <th>姓名</th>
@@ -33,22 +33,22 @@
 <div class="panel nav-tabs-horizontal">
     <div class="panel-body" data-approve="nav-tabs">
         <ul class="nav nav-tabs nav-tabs-line" role="tablist">
-            <li role="presentation" class="active">
-                <a data-toggle="tab" href="#DTDataApi" aria-controls="DTDataApi" role="tab" aria-expanded="false">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#DTDataApi" aria-controls="DTDataApi" role="tab" aria-expanded="false">
                     DataApi
                 </a>
             </li>
-            <li role="presentation" class="">
-                <a data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
+            <li class="nav-item">
+                <a class="nav-link"  data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
             </li>
-            <li role="presentation" class="">
-                <a data-toggle="tab" href="#DTAjax" aria-controls="DTAjax" role="tab" aria-expanded="false">AJAX</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTAjax" aria-controls="DTAjax" role="tab" aria-expanded="false">AJAX</a>
             </li>
-            <li role="presentation">
-                <a data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
             </li>
         </ul>
-        <div class="tab-content margin-top-15">
+        <div class="tab-content mt-15">
             <div class="tab-pane active" id="DTDataApi" role="tabpanel">
                 <pre data-plugin="highlight"><code class="html">data-plugin="dataTable"</code></pre>
             </div>
@@ -520,7 +520,7 @@
 }</code></pre>
             </div>
             <div class="tab-pane" id="DTHtml" role="tabpanel">
-                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped width-full" data-plugin="dataTable" data-ajax="/views/examples/tables/dt-ajax.json"&gt;
+                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped w-full" data-plugin="dataTable" data-ajax="/views/examples/tables/dt-ajax.json"&gt;
     &lt;thead&gt;
     &lt;tr&gt;
         &lt;th&gt;姓名&lt;/th&gt;

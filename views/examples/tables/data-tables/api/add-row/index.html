@@ -9,8 +9,8 @@
         <p>需要注意的是，你调用这个方法后需要重绘表格（调用 <code>draw()</code>）才能看到效果</p>
     </div>
     <div class="panel-body">
-        <button type="button" class="btn btn-success margin-bottom-15" id="DTAddRow">添加行</button>
-        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample">
+        <button type="button" class="btn btn-success mb-15" id="DTAddRow">添加行</button>
+        <table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap" id="dataTableExample">
             <thead>
             <tr>
                 <th>第1列</th>
@@ -35,16 +35,16 @@
 <div class="panel nav-tabs-horizontal">
     <div class="panel-body" data-approve="nav-tabs">
         <ul class="nav nav-tabs nav-tabs-line" role="tablist">
-            <li role="presentation" class="active">
-                <a data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
             </li>
-            <li role="presentation">
-                <a data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
             </li>
         </ul>
-        <div class="tab-content margin-top-15">
+        <div class="tab-content mt-15">
             <div class="tab-pane active" id="DTJS" role="tabpanel">
-				<pre data-plugin="highlight"><code class="js">var t = $('#dataTableExample').DataTable($.po('dataTable'));
+				<pre data-plugin="highlight"><code class="js">var t = $('#dataTableExample').dataTable($.po('dataTable'));
 var counter = 1;
 
 $('#DTddRow').on('click', function () {
@@ -63,8 +63,8 @@ $('#DTddRow').on('click', function () {
 $('#DTddRow').click();</code></pre>
             </div>
             <div class="tab-pane" id="DTHtml" role="tabpanel">
-				<pre data-plugin="highlight"><code class="html">&lt;button type="button" class="btn btn-success margin-bottom-15" id="DTAddRow"&gt;添加行&lt;/button&gt;
-&lt;table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap"
+				<pre data-plugin="highlight"><code class="html">&lt;button type="button" class="btn btn-success mb-15" id="DTAddRow"&gt;添加行&lt;/button&gt;
+&lt;table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap"
        id="dataTableExample"&gt;
     &lt;thead&gt;
     &lt;tr&gt;

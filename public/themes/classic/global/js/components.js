@@ -495,7 +495,7 @@
     $.components.register("dataTable", {
         defaults: {
             responsive: true,
-            dom: "<'row'<'col-xs-6'<'hidden-xs'l>><'col-xs-6'f>>" + "<'row'<'col-xs-12'tr>>" + "<'row'<'col-sm-5'i><'col-sm-7'p>>",
+            dom: "<'row'<'col-6'<'hidden-xs'l>><'col-6'f>>" + "<'row'<'col-12'tr>>" + "<'row'<'col-sm-5'i><'col-sm-7'p>>",
             language: {
                 "sSearchPlaceholder": "快速查找",
                 "lengthMenu": "每页显示 _MENU_ 条",

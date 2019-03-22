@@ -1,25 +1,26 @@
-<title>树形表格</title>
+<title>树形表格 - 表格示例</title>
 
 <link rel="stylesheet" href="/vendor/jquery-treegrid/css/jquery.treegrid.css">
 
-<div class="page page-full animation-fade page-tables">
+<div class="page animation-fade page-tables">
     <div class="page-header">
         <h1 class="page-title">树形表格</h1>
         <div class="page-header-actions">
             <a class="btn btn-inverse btn-round" href="https://github.com/maxazan/jquery-treegrid" target="_blank">
-                <i class="icon wb-link" aria-hidden="true"></i> <span class="hidden-xs">官网</span></a>
+                <i class="icon wb-link" aria-hidden="true"></i> 官网</a>
         </div>
     </div>
     <div class="page-content">
         <div class="panel">
             <div class="panel-body container-fluid">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="example-wrap">
                             <h4 class="example-title">基本示例</h4>
-                            <p>在表格上添加 <code>data-plugin="treegrid"</code> 即可调用树形表格</p>
+                            <p>在表格上添加
+                                <code>data-plugin="treegrid"</code> 即可调用树形表格</p>
                             <div class="example ">
-                                <table class="table table-bordered table-striped table-condensed" data-plugin="treegrid">
+                                <table class="table table-bordered table-striped table-sm" data-plugin="treegrid">
                                     <tr class="treegrid-1">
                                         <td>根节点 1</td>
                                         <td>其他信息</td>
@@ -56,13 +57,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="example-wrap">
                             <h4 class="example-title">在其他列应用</h4>
-                            <p>如果要应用于其他列，可通过 <code>data-tree-column="number"</code> 实现，其中 number 为对应列的索引值</code>
+                            <p>如果要应用于其他列，可通过
+                                <code>data-tree-column="number"</code> 实现，其中 number 为对应列的索引值</code>
                             </p>
                             <div class="example ">
-                                <table class="table table-bordered table-striped table-condensed" data-plugin="treegrid" data-tree-column="1">
+                                <table class="table table-bordered table-striped table-sm" data-plugin="treegrid"
+                                       data-tree-column="1">
                                     <tr class="treegrid-1">
                                         <td>根节点</td>
                                         <td>其他信息</td>
@@ -85,12 +88,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="example-wrap">
                             <h4 class="example-title">保存表格状态</h4>
-                            <p>可通过 <code>data-save-state="true"</code> 将表格状态保存到本地，操作表格并刷新本页查看效果</code></p>
+                            <p>可通过
+                                <code>data-save-state="true"</code> 将表格状态保存到本地，操作表格并刷新本页查看效果</code>
+                            </p>
                             <div class="example">
-                                <table class="table table-bordered table-striped table-condensed" data-plugin="treegrid" data-initial-state="collapsed" data-save-state="true">
+                                <table class="table table-bordered table-striped table-sm" data-plugin="treegrid"
+                                       data-initial-state="collapsed" data-save-state="true">
                                     <tr class="treegrid-1">
                                         <td>根节点 1</td>
                                         <td>其他信息</td>
@@ -127,13 +133,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="example-wrap">
                             <h4 class="example-title">事件</h4>
                             <p>本示例演示treegrid的各种事件，操作表格查看对应事件</code>
                             </p>
                             <div class="example ">
-                                <table class="table table-bordered table-striped table-condensed" data-plugin="treegrid" data-initial-state="collapsed" data-save-state="true">
+                                <table class="table table-bordered table-striped table-sm" data-plugin="treegrid"
+                                       data-initial-state="collapsed" data-save-state="true">
                                     <tr class="treegrid-1">
                                         <td>根节点</td>
                                         <td>其他信息</td>
@@ -162,7 +169,7 @@
                 <div class="example-wrap">
                     <h4 class="example-title">大量数据</h4>
                     <p>本示例演示数据较多的情况</p>
-                    <table class="table table-bordered table-striped table-condensed tree-table"></table>
+                    <table class="table table-bordered table-striped table-sm tree-table"></table>
                 </div>
             </div>
         </div>

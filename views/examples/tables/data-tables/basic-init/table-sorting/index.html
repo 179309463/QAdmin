@@ -6,7 +6,7 @@
         在 DataTables 初始化时你可以使用order选项指定列怎么排序，order可以接受多个二维数组数据，数组第一个位置为第几列，第二个位置为标示asc(升序)或desc(降序)
     </div>
     <div class="panel-body">
-        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample" data-plugin="dataTable" data-order="[[3,&quot;desc&quot;]]">
+        <table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap" id="dataTableExample" data-plugin="dataTable" data-order="[[3,&quot;desc&quot;]]">
             <thead>
             <tr>
                 <th>姓名</th>
@@ -491,31 +491,31 @@
 <div class="panel nav-tabs-horizontal">
     <div class="panel-body" data-approve="nav-tabs">
         <ul class="nav nav-tabs nav-tabs-line" role="tablist">
-            <li role="presentation" class="active">
-                <a data-toggle="tab" href="#DTDataApi" aria-controls="DTDataApi" role="tab" aria-expanded="false">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#DTDataApi" aria-controls="DTDataApi" role="tab" aria-expanded="false">
                     DataApi
                 </a>
             </li>
-            <li role="presentation" class="">
-                <a data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
             </li>
-            <li role="presentation">
-                <a data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
             </li>
         </ul>
-        <div class="tab-content margin-top-15">
+        <div class="tab-content mt-15">
             <div class="tab-pane active" id="DTDataApi" role="tabpanel">
-                <pre data-plugin="highlight"><code class="html">data-plugin="dataTable" data-order="[[3,&amp;quot;desc&amp;quot;]]"</code></pre>
+                <pre data-plugin="highlight"><code class="html">data-plugin="dataTable" data-order="&#91;&#91;3,&amp;quot;desc&amp;quot;&#93;&#93;"</code></pre>
             </div>
             <div class="tab-pane" id="DTJS" role="tabpanel">
                 <pre data-plugin="highlight"><code class="js">$(function () {
     $('#dataTableExample').DataTable($.po('dataTable', {
-        "order": [[ 3, "desc" ]]
+        "order": &#91;&#91; 3, "desc" &#93;&#93;
     }));
 });</code></pre>
             </div>
             <div class="tab-pane" id="DTHtml" role="tabpanel">
-                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample" data-plugin="dataTable" data-order="[[3,&amp;quot;desc&amp;quot;]]"&gt;
+                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap" id="dataTableExample" data-plugin="dataTable" data-order="&#91;&#91;3,&amp;quot;desc&amp;quot;&#93;&#93;"&gt;
     &lt;thead&gt;
     &lt;tr&gt;
         &lt;th&gt;姓名&lt;/th&gt;

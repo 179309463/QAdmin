@@ -4,10 +4,10 @@
     </div>
     <div class="alert alert-warning" role="alert">
         <p>通常你可能会想要你的表格跟着页面大小的变化而变化。下面的例子展示了，表格设置了width为100%，表格随着页面的大小变化自动适应。请尝试改变浏览器窗口的大小看看效果</p>
-        <p>在 QAdmin 中,只需要给表格添加 <code>.width-full</code>,即可实现表格自适应</p>
+        <p>在 Admui 中,只需要给表格添加 <code>.w-full</code>,即可实现表格自适应</p>
     </div>
     <div class="panel-body">
-        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample" data-plugin="dataTable">
+        <table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap" id="dataTableExample" data-plugin="dataTable">
             <thead>
             <tr>
                 <th>姓名</th>
@@ -492,19 +492,19 @@
 <div class="panel nav-tabs-horizontal">
     <div class="panel-body" data-approve="nav-tabs">
         <ul class="nav nav-tabs nav-tabs-line" role="tablist">
-            <li role="presentation" class="active">
-                <a data-toggle="tab" href="#DTDataApi" aria-controls="DTDataApi" role="tab" aria-expanded="false">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#DTDataApi" aria-controls="DTDataApi" role="tab" aria-expanded="false">
                     DataApi
                 </a>
             </li>
-            <li role="presentation" class="">
-                <a data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
+            <li class="nav-item">
+                <a class="nav-link"  data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
             </li>
-            <li role="presentation">
-                <a data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
             </li>
         </ul>
-        <div class="tab-content margin-top-15">
+        <div class="tab-content mt-15">
             <div class="tab-pane active" id="DTDataApi" role="tabpanel">
                 <pre data-plugin="highlight"><code class="html">data-plugin="dataTable"</code></pre>
             </div>
@@ -514,7 +514,7 @@
 });</code></pre>
             </div>
             <div class="tab-pane" id="DTHtml" role="tabpanel">
-                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample" data-plugin="dataTable"&gt;
+                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap" id="dataTableExample" data-plugin="dataTable"&gt;
     &lt;thead&gt;
     &lt;tr&gt;
         &lt;th&gt;姓名&lt;/th&gt;

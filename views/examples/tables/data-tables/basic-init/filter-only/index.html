@@ -6,7 +6,7 @@
         如果你不想使用 DataTables 的某项特性，那么你可以禁用它，下面的例子展示了只启用查找功能(默认是启用的)
     </div>
     <div class="panel-body">
-        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample" data-plugin="dataTable" data-plugin="dataTable" data-paging="false" data-ordering="false" data-info="false">
+        <table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap" id="dataTableExample" data-plugin="dataTable" data-paging="false" data-ordering="false" data-info="false">
             <thead>
             <tr>
                 <th>姓名</th>
@@ -491,19 +491,19 @@
 <div class="panel nav-tabs-horizontal">
     <div class="panel-body" data-approve="nav-tabs">
         <ul class="nav nav-tabs nav-tabs-line" role="tablist">
-            <li role="presentation" class="active">
-                <a data-toggle="tab" href="#DTDataApi" aria-controls="DTDataApi" role="tab" aria-expanded="false">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#DTDataApi" aria-controls="DTDataApi" role="tab" aria-expanded="false">
                     DataApi
                 </a>
             </li>
-            <li role="presentation" class="">
-                <a data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
             </li>
-            <li role="presentation">
-                <a data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
             </li>
         </ul>
-        <div class="tab-content margin-top-15">
+        <div class="tab-content mt-15">
             <div class="tab-pane active" id="DTDataApi" role="tabpanel">
                 <pre data-plugin="highlight"><code class="html">data-plugin="dataTable" data-paging="false" data-ordering="false" data-info="false"</code></pre>
             </div>
@@ -515,7 +515,7 @@
 }));</code></pre>
             </div>
             <div class="tab-pane" id="DTHtml" role="tabpanel">
-                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped width-full" id="dataTableExample" data-plugin="dataTable" data-plugin="dataTable" data-paging="false" data-ordering="false" data-info="false"&gt;
+                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped w-full" id="dataTableExample" data-plugin="dataTable" data-plugin="dataTable" data-paging="false" data-ordering="false" data-info="false"&gt;
     &lt;thead&gt;
     &lt;tr&gt;
         &lt;th&gt;姓名&lt;/th&gt;
