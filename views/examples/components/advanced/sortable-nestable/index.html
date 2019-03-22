@@ -1,22 +1,13 @@
-<title>拖动排序</title>
+
+<title>拖动排序 - UI示例</title>
 
 <link rel="stylesheet" href="/lib/nestable2/dist/jquery.nestable.min.css">
+<link rel="stylesheet" href="/lib/html5sortable/jquery.sortable.css">
 <link rel="stylesheet" href="/views/examples/components/advanced/sortable-nestable/index.css">
 
-<div class="page page-full animation-fade">
+<div class="page animation-fade">
     <div class="page-header">
         <h1 class="page-title">Sortable &amp; Nestable</h1>
-        <div class="page-header-actions">
-            <button type="button" class="btn btn-icon btn-inverse btn-round">
-                <i class="icon wb-pencil" aria-hidden="true"></i>
-            </button>
-            <button type="button" class="btn btn-icon btn-inverse btn-round">
-                <i class="icon wb-refresh" aria-hidden="true"></i>
-            </button>
-            <button type="button" class="btn btn-icon btn-inverse btn-round">
-                <i class="icon wb-settings" aria-hidden="true"></i>
-            </button>
-        </div>
     </div>
     <div class="page-content">
 
@@ -32,25 +23,25 @@
             </div>
             <div class="panel-body container-fluid">
                 <div class="row row-lg">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
 
-                        <div class="example-wrap margin-lg-0">
+                        <div class="example-wrap m-lg-0">
                             <h4 class="example-title">排序</h4>
                             <p>可以拖动列表项进行排序。</p>
                             <ul class="list-group sortable list-group-full" data-plugin="sortable">
                                 <li class="list-group-item">
-                                    <span class="badge badge-success">6</span>
+                                    <span class="badge badge-pill badge-success">6</span>
                                     <i class="icon wb-inbox" aria-hidden="true"></i> 收件箱
                                 </li>
                                 <li class="list-group-item">
-                                    <span class="badge badge-info">2</span>
+                                    <span class="badge badge-pill badge-info">2</span>
                                     <i class="icon wb-user" aria-hidden="true"></i> 简介
                                 </li>
                                 <li class="list-group-item">
                                     <i class="icon wb-bell" aria-hidden="true"></i> 通知
                                 </li>
                                 <li class="list-group-item">
-                                    <span class="badge badge-info">10</span>
+                                    <span class="badge badge-pill badge-info">10</span>
                                     <i class="icon wb-info-circle" aria-hidden="true"></i> 信息
                                 </li>
                                 <li class="list-group-item">
@@ -60,12 +51,13 @@
                         </div>
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
 
                         <div class="example-wrap">
                             <h4 class="example-title">手柄拖动</h4>
                             <p>拖动左侧的图标进行排序。</p>
-                            <ul class="list-group list-group-gap sortable-with-handle list-group-full" data-plugin="sortable" data-handle="i">
+                            <ul class="list-group list-group-gap sortable-with-handle list-group-full" data-plugin="sortable"
+                                data-handle="i">
                                 <li class="list-group-item">
                                     <i class="icon wb-list sortable-handle" aria-hidden="true"></i> CSS3 选择器
                                 </li>
@@ -85,57 +77,68 @@
                         </div>
 
                     </div>
-                    <div class="clearfix visible-md-block"></div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
 
-                        <div class="example-wrap margin-md-0">
+                        <div class="example-wrap m-md-0">
                             <h4 class="example-title">待办事项</h4>
                             <ul class="list-task list-group sortable" data-role="tasklist" data-plugin="sortable">
                                 <li class="list-group-item task-done" data-role="task">
                                     <div class="checkbox-custom checkbox-primary">
-                                        <input type="checkbox" id="inputSchedule" name="inputCheckboxesSchedule" checked>
-                                        <label for="inputSchedule"><i class="icon wb-calendar" aria-hidden="true"></i>
-                                            <span>接见菲律宾总统</span></label>
+                                        <input type="checkbox" id="inputSchedule" name="inputCheckboxesSchedule"
+                                                checked>
+                                        <label for="inputSchedule">
+                                            <i class="icon wb-calendar" aria-hidden="true"></i>
+                                            <span>接见菲律宾总统</span>
+                                        </label>
                                     </div>
                                 </li>
                                 <li class="list-group-item" data-role="task">
                                     <div class="checkbox-custom checkbox-primary">
                                         <input type="checkbox" id="inputCall" name="inputCheckboxesCall">
-                                        <label for="inputCall"><i class="icon wb-bell" aria-hidden="true"></i> <span>给妈妈打电话</span>
-                                            <span class="label label-danger">今天</span></label>
+                                        <label for="inputCall">
+                                            <i class="icon wb-bell" aria-hidden="true"></i>
+                                            <span>给妈妈打电话</span>
+                                            <span class="badge badge-danger">今天</span>
+                                        </label>
                                     </div>
                                 </li>
                                 <li class="list-group-item" data-role="task">
                                     <div class="checkbox-custom checkbox-primary">
                                         <input type="checkbox" id="inputBook" name="inputCheckboxesBook">
-                                        <label for="inputBook"><i class="icon wb-calendar" aria-hidden="true"></i>
-                                            <span>与总理探讨xyz等若干问题</span></label>
+                                        <label for="inputBook">
+                                            <i class="icon wb-calendar" aria-hidden="true"></i>
+                                            <span>与总理探讨xyz等若干问题</span>
+                                        </label>
                                     </div>
                                 </li>
                                 <li class="list-group-item" data-role="task">
                                     <div class="checkbox-custom checkbox-primary">
                                         <input type="checkbox" id="inputForward" name="inputCheckboxesForward">
-                                        <label for="inputForward"><span>好好睡一觉</span> <span class="label label-primary">18小时</span>
+                                        <label for="inputForward">
+                                            <span>好好睡一觉</span>
+                                            <span class="badge  badge-primary">18小时</span>
                                         </label>
                                     </div>
                                 </li>
                                 <li class="list-group-item" data-role="task">
                                     <div class="checkbox-custom checkbox-primary">
                                         <input type="checkbox" id="inputRecieve" name="inputCheckboxesRecieve">
-                                        <label for="inputRecieve"><span>起床</span></label>
+                                        <label for="inputRecieve">
+                                            <span>起床</span>
+                                        </label>
                                     </div>
                                 </li>
                             </ul>
                         </div>
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
 
                         <div class="example-wrap">
                             <h4 class="example-title">编辑列表项</h4>
                             <ul class="list-group list-group-gap sortable" data-plugin="sortable">
                                 <li class="list-group-item list-group-item-warning">
-                                    <span class="pull-right">
+                                    <span class="float-right">
                                         <a href="javascript:;">
                                             <i class="icon wb-pencil white" aria-hidden="true"></i>
                                         </a>
@@ -145,12 +148,13 @@
                                         <a href="javascript:;">
                                             <i class="icon wb-close white" aria-hidden="true"></i>
                                         </a>
-                                    </span> <span class="pull-left">
+                                    </span>
+                                    <span class="float-left">
                                         <i class="icon wb-sort-vertical" aria-hidden="true"></i>
                                     </span> 第一项
                                 </li>
                                 <li class="list-group-item list-group-item-success">
-                                    <span class="pull-right">
+                                    <span class="float-right">
                                         <a href="javascript:;">
                                             <i class="icon wb-pencil white" aria-hidden="true"></i>
                                         </a>
@@ -160,12 +164,13 @@
                                         <a href="javascript:;">
                                             <i class="icon wb-close white" aria-hidden="true"></i>
                                         </a>
-                                    </span> <span class="pull-left">
+                                    </span>
+                                    <span class="float-left">
                                         <i class="icon wb-sort-vertical" aria-hidden="true"></i>
                                     </span> 第二项
                                 </li>
                                 <li class="list-group-item list-group-item-danger">
-                                    <span class="pull-right">
+                                    <span class="float-right">
                                         <a href="javascript:;">
                                             <i class="icon wb-pencil white" aria-hidden="true"></i>
                                         </a>
@@ -175,12 +180,13 @@
                                         <a href="javascript:;">
                                             <i class="icon wb-close white" aria-hidden="true"></i>
                                         </a>
-                                    </span> <span class="pull-left">
+                                    </span>
+                                    <span class="float-left">
                                         <i class="icon wb-sort-vertical" aria-hidden="true"></i>
                                     </span> 第三项
                                 </li>
                                 <li class="list-group-item list-group-item-info">
-                                    <span class="pull-right">
+                                    <span class="float-right">
                                         <a href="javascript:;">
                                             <i class="icon wb-pencil white" aria-hidden="true"></i>
                                         </a>
@@ -190,12 +196,13 @@
                                         <a href="javascript:;">
                                             <i class="icon wb-close white" aria-hidden="true"></i>
                                         </a>
-                                    </span> <span class="pull-left">
+                                    </span>
+                                    <span class="float-left">
                                         <i class="icon wb-sort-vertical" aria-hidden="true"></i>
                                     </span> 第四项
                                 </li>
                                 <li class="list-group-item list-group-item-dark">
-                                    <span class="pull-right">
+                                    <span class="float-right">
                                         <a href="javascript:;">
                                             <i class="icon wb-pencil white" aria-hidden="true"></i>
                                         </a>
@@ -205,7 +212,8 @@
                                         <a href="javascript:;">
                                             <i class="icon wb-close white" aria-hidden="true"></i>
                                         </a>
-                                    </span> <span class="pull-left">
+                                    </span>
+                                    <span class="float-left">
                                         <i class="icon wb-sort-vertical" aria-hidden="true"></i>
                                     </span> 第五项
                                 </li>
@@ -229,7 +237,7 @@
             </div>
             <div class="panel-body container-fluid">
                 <div class="row row-lg">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
 
                         <div class="example-wrap">
                             <h4 class="example-title">基本</h4>
@@ -237,17 +245,18 @@
                                 <div class="dd" data-plugin="nestable">
                                     <ol class="dd-list">
                                         <li class="dd-item" data-id="1">
-                                            <div class="dd-handle">列表项 1 <span class="pull-right text-info">进行中</span>
+                                            <div class="dd-handle">列表项 1
+                                                <span class="float-right text-info">进行中</span>
                                             </div>
                                         </li>
                                         <li class="dd-item" data-id="2">
                                             <div class="dd-handle">列表项 2
-                                                <span class="pull-right text-success">已批准</span>
+                                                <span class="float-right text-success">已批准</span>
                                             </div>
                                         </li>
                                         <li class="dd-item" data-id="3">
                                             <div class="dd-handle">列表项 3
-                                                <span class="pull-right text-warning">待处理</span>
+                                                <span class="float-right text-warning">待处理</span>
                                             </div>
                                             <ol class="dd-list">
                                                 <li class="dd-item" data-id="4">
@@ -277,7 +286,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
 
                         <div class="example-wrap">
                             <h4 class="example-title">手柄拖动</h4>
@@ -286,12 +295,14 @@
                                     <ol class="dd-list">
                                         <li class="dd-item dd-item-alt" data-id="1">
                                             <div class="dd-handle"></div>
-                                            <div class="dd-content">列表项 1 <span class="pull-right wb-wrench"></span>
+                                            <div class="dd-content">列表项 1
+                                                <span class="float-right wb-wrench"></span>
                                             </div>
                                         </li>
                                         <li class="dd-item dd-item-alt" data-id="2">
                                             <div class="dd-handle"></div>
-                                            <div class="dd-content">列表项 2 <span class="pull-right wb-settings"></span>
+                                            <div class="dd-content">列表项 2
+                                                <span class="float-right wb-settings"></span>
                                             </div>
                                         </li>
                                         <li class="dd-item dd-item-alt" data-id="3">
@@ -330,10 +341,9 @@
                         </div>
 
                     </div>
-                    <div class="clearfix visible-lg-block visible-md-block"></div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
 
-                        <div class="example-wrap margin-md-0">
+                        <div class="example-wrap m-md-0">
                             <h4 class="example-title">连接</h4>
                             <p>列表项可在两个列表之间拖动。</p>
                             <div class="example">
@@ -375,7 +385,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
 
                         <div class="example-wrap">
                             <h4 class="example-title">媒体</h4>
@@ -386,9 +396,10 @@
                                             <div class="dd-handle">列表项 1</div>
                                             <div class="dd-content">
                                                 <div class="media">
-                                                    <div class="media-left">
+                                                    <div class="pr-10">
                                                         <a class="avatar" href="javascript:;">
-                                                            <img class="img-responsive" src="/views/examples/images/portraits/3.jpg" alt="...">
+                                                            <img class="img-fluid" src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/3.jpg"
+                                                                    alt="...">
                                                         </a>
                                                     </div>
                                                     <div class="media-body">
@@ -405,9 +416,10 @@
                                             <div class="dd-handle">列表项 2</div>
                                             <div class="dd-content">
                                                 <div class="media">
-                                                    <div class="media-left">
+                                                    <div class="pr-10">
                                                         <a class="avatar" href="javascript:;">
-                                                            <img class="img-responsive" src="/views/examples/images/portraits/4.jpg" alt="...">
+                                                            <img class="img-fluid" src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/4.jpg"
+                                                                    alt="...">
                                                         </a>
                                                     </div>
                                                     <div class="media-body">
@@ -424,9 +436,10 @@
                                                     <div class="dd-handle">列表项 3</div>
                                                     <div class="dd-content">
                                                         <div class="media">
-                                                            <div class="media-left">
+                                                            <div class="pr-10">
                                                                 <a class="avatar" href="javascript:;">
-                                                                    <img class="img-responsive" src="/views/examples/images/portraits/2.jpg" alt="...">
+                                                                    <img class="img-fluid" src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/2.jpg"
+                                                                            alt="...">
                                                                 </a>
                                                             </div>
                                                             <div class="media-body">
@@ -445,9 +458,10 @@
                                             <div class="dd-handle">列表项 4</div>
                                             <div class="dd-content">
                                                 <div class="media">
-                                                    <div class="media-left">
+                                                    <div class="pr-10">
                                                         <a class="avatar avatar-online" href="javascript:;">
-                                                            <img class="img-responsive" src="/views/examples/images/portraits/4.jpg" alt="...">
+                                                            <img class="img-fluid" src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/4.jpg"
+                                                                    alt="...">
                                                             <i></i>
                                                         </a>
                                                     </div>
@@ -469,7 +483,7 @@
         </div>
 
     </div>
-</div>
+</div>    
 
 <script src="/lib/html5sortable/jquery.sortable.js"></script>
 <script src="/vendor/nestable2/dist/jquery.nestable.min.js"></script>

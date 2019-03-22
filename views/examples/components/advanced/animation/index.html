@@ -6,17 +6,6 @@
 <div class="page page-full animation-fade">
     <div class="page-header">
         <h1 class="page-title">动画</h1>
-        <div class="page-header-actions">
-            <button type="button" class="btn btn-icon btn-inverse btn-round">
-                <i class="icon wb-pencil" aria-hidden="true"></i>
-            </button>
-            <button type="button" class="btn btn-icon btn-inverse btn-round">
-                <i class="icon wb-refresh" aria-hidden="true"></i>
-            </button>
-            <button type="button" class="btn btn-icon btn-inverse btn-round">
-                <i class="icon wb-settings" aria-hidden="true"></i>
-            </button>
-        </div>
     </div>
     <div class="page-content container-fluid">
 
@@ -26,11 +15,12 @@
             </div>
             <div class="panel-body container-fluid">
                 <div class="row row-lg">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
 
                         <div class="example-wrap">
                             <h4 class="example-title">基本</h4>
-                            <p>添加 <code>.animation-{name}</code> 类到需要添加动画的元素上。 </p>
+                            <p>添加
+                                <code>.animation-{name}</code> 类到需要添加动画的元素上。 </p>
                             <div class="example example-buttons touch">
                                 <div class="animation-example animation-hover hover">
                                     <button type="button" class="btn btn-default animation-fade">Fade</button>
@@ -67,11 +57,12 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
 
                         <div class="example-wrap">
                             <h4 class="example-title">反相</h4>
-                            <p>添加 <code>.animation-reverse</code> 类到需要反相动画的元素上。</p>
+                            <p>添加
+                                <code>.animation-reverse</code> 类到需要反相动画的元素上。</p>
                             <div class="example example-buttons touch">
                                 <div class="animation-example animation-hover hover">
                                     <button type="button" class="btn btn-primary animation-reverse animation-fade">
@@ -126,9 +117,10 @@
                 <div class="row row-lg">
                     <div class="col-md-4">
 
-                        <div class="example-wrap margin-md-0">
+                        <div class="example-wrap m-md-0">
                             <h4 class="example-title">时间</h4>
-                            <p>添加 <code>.animation-duration-{time(秒)}</code> 类到动画元素上。</p>
+                            <p>添加
+                                <code>.animation-duration-{time(秒)}</code> 类到动画元素上。</p>
                             <div class="example example-buttons touch">
                                 <div class="animation-example animation-hover hover">
                                     <button type="button" class="btn btn-outline btn-default animation-duration-3 animation-scale-up">
@@ -148,7 +140,8 @@
 
                         <div class="example-wrap">
                             <h4 class="example-title">延迟</h4>
-                            <p>添加 <code>.animation-delay-{time(毫秒)}</code> 类到动画元素上。</p>
+                            <p>添加
+                                <code>.animation-delay-{time(毫秒)}</code> 类到动画元素上。</p>
                             <div class="example example-buttons touch">
                                 <div class="animation-example animation-hover hover">
                                     <button type="button" class="btn btn-outline btn-default animation-scale-up animation-delay-100">
@@ -183,8 +176,7 @@
             </div>
         </div>
 
-
-        <div class="panel" id="exampleNProgress">
+        <div class="panel">
             <div class="panel-heading">
                 <h3 class="panel-title">NProgress
                     <small>
@@ -193,9 +185,8 @@
                 </h3>
             </div>
             <div class="panel-body container-fluid">
-                <div class="row row-lg">
+                <div class="row row-lg" id="exampleNProgress">
                     <div class="col-md-6">
-
                         <div class="example-wrap">
                             <h4 class="example-title">基础 API</h4>
                             <div class="example example-buttons">
@@ -204,7 +195,7 @@
                                 </button>
                                 <button id="exampleNProgressSet" type="button" class="btn btn-default btn-outline">0.5
                                 </button>
-                                <button id="exampleNProgressInc" type="button" class="btn btn-default btn-outline">inc
+                                <button id="exampleNProgressInc" type="button" class="btn btn-default btn-outline">增加
                                 </button>
                                 <button id="exampleNProgressDone" type="button" class="btn btn-default btn-outline">完成
                                 </button>
@@ -248,45 +239,120 @@
             </div>
         </div>
 
-
-        <div class="panel" id="example-select-loader">
+        <div class="panel">
             <div class="panel-heading">
                 <h3 class="panel-title">Loading 图标</h3>
             </div>
+
             <div class="panel-body container-fluid">
+                <p>下列是通过纯 CSS 实现的 Loading 图标，只需添加
+                    <code>.loader</code> 和
+                    <code>.loader-{type}</code> 即可。单击下面的按钮查看示例。 </p>
                 <div class="row row-lg">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="example-loading example-well height-350 vertical-align text-center">
-                            <div class="loader-default loader vertical-align-middle" data-type="default"></div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="example-wrap">
+                            <h4 class="example-title">Default</h4>
+                            <div class="example-loading example-well h-150 vertical-align text-center">
+                                <div class="loader vertical-align-middle loader-default"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
+
+                    <div class="col-xl-4 col-md-6">
                         <div class="example-wrap">
-                            <h4 class="example-title">选择 CSS Loading 图标</h4>
-                            <p>下列是通过纯 CSS 实现的 Loading 图标，只需添加 <code>.loader</code> 和 <code>.loader-{type}</code>
-                                即可。单击下面的按钮查看示例。 </p>
-                            <div class="example example-buttons">
-                                <button type="button" class="select-loader btn btn-outline btn-default" data-type="default">
-                                    Default
-                                </button>
-                                <button type="button" class="select-loader btn btn-outline btn-default" data-type="grill">
-                                    Grill
-                                </button>
-                                <button type="button" class="select-loader btn btn-outline btn-default" data-type="circle">
-                                    Circle
-                                </button>
-                                <button type="button" class="select-loader btn btn-outline btn-default" data-type="tadpole">
-                                    Tadpole
-                                </button>
-                                <button type="button" class="select-loader btn btn-outline btn-default" data-type="ellipsis">
-                                    Ellipsis
-                                </button>
-                                <button type="button" class="select-loader btn btn-outline btn-default" data-type="dot">
-                                    Dot
-                                </button>
-                                <button type="button" class="select-loader btn btn-outline btn-default" data-type="bounce">
-                                    Bounce
-                                </button>
+                            <h4 class="example-title">Grill</h4>
+                            <div class="example-loading example-well h-150 vertical-align text-center">
+                                <div class="loader vertical-align-middle loader-grill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="example-wrap">
+                            <h4 class="example-title">Circle</h4>
+                            <div class="example-loading example-well h-150 vertical-align text-center">
+                                <div class="loader vertical-align-middle loader-circle"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="example-wrap">
+                            <h4 class="example-title">Round Circle</h4>
+                            <div class="example-loading example-well h-150 vertical-align text-center">
+                                <div class="loader vertical-align-middle loader-round-circle"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="example-wrap">
+                            <h4 class="example-title">Tadpole</h4>
+                            <div class="example-loading example-well h-150 vertical-align text-center">
+                                <div class="loader vertical-align-middle loader-tadpole"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="example-wrap">
+                            <h4 class="example-title">Ellipsis</h4>
+                            <div class="example-loading example-well h-150 vertical-align text-center">
+                                <div class="loader vertical-align-middle loader-ellipsis"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="example-wrap">
+                            <h4 class="example-title">Dot</h4>
+                            <div class="example-loading example-well h-150 vertical-align text-center">
+                                <div class="loader vertical-align-middle loader-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="example-wrap">
+                            <h4 class="example-title">Bounce</h4>
+                            <div class="example-loading example-well h-150 vertical-align text-center">
+                                <div class="loader vertical-align-middle loader-bounce"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="example-wrap">
+                            <h4 class="example-title">Cube</h4>
+                            <div class="example-loading example-well h-150 vertical-align text-center" style="transform: translateZ(-100px);">
+                                <div class="loader vertical-align-middle loader-cube"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="example-wrap">
+                            <h4 class="example-title">Rotate plane</h4>
+                            <div class="example-loading example-well h-150 vertical-align text-center" style="transform: translateZ(-50px);">
+                                <div class="loader vertical-align-middle loader-rotate-plane"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="example-wrap">
+                            <h4 class="example-title">Folding cube</h4>
+                            <div class="example-loading example-well h-150 vertical-align text-center">
+                                <div class="loader vertical-align-middle loader-folding-cube"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="example-wrap">
+                            <h4 class="example-title">Cube grid</h4>
+                            <div class="example-loading example-well h-150 vertical-align text-center">
+                                <div class="loader vertical-align-middle loader-cube-grid"></div>
                             </div>
                         </div>
                     </div>
@@ -294,73 +360,78 @@
             </div>
         </div>
 
-
         <div class="row">
-            <div class="col-sm-12">
-                <h3 class="example-title">Appear Animate
+            <div class="col-12">
+                <h3 class="example-title mb-20">Appear Animate
                     <small>
                         <a class="example-plugin-link" href="https://github.com/morr/jquery.appear" target="_blank">官网
                         </a>
                     </small>
                 </h3>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div class="panel panel-primary panel-bordered" data-plugin="appear" data-animate="fade">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Fade</h3>
                             </div>
-                            <div class="panel-body">使用 <code>data-plugin="appear"</code> 和
+                            <div class="panel-body">使用
+                                <code>data-plugin="appear"</code> 和
                                 <code>data-animate="fade"</code> 添加 Appear 动画。
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div class="panel panel-danger panel-bordered" data-plugin="appear" data-animate="slide-top">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Slide Top</h3>
                             </div>
-                            <div class="panel-body">使用 <code>data-plugin="appear"</code> 和 <code>data-animate="slide-top"</code>
-                                添加 Appear 动画。
+                            <div class="panel-body">使用
+                                <code>data-plugin="appear"</code> 和
+                                <code>data-animate="slide-top"</code> 添加 Appear 动画。
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div class="panel panel-dark panel-bordered" data-plugin="appear" data-animate="slide-bottom">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Slide Bottom</h3>
                             </div>
-                            <div class="panel-body">使用 <code>data-plugin="appear"</code> 和 <code>data-animate="slide-bottom"</code>
-                                添加 Appear 动画。
+                            <div class="panel-body">使用
+                                <code>data-plugin="appear"</code> 和
+                                <code>data-animate="slide-bottom"</code> 添加 Appear 动画。
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div class="panel panel-success panel-bordered" data-plugin="appear" data-animate="scale-up">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Scale Up</h3>
                             </div>
-                            <div class="panel-body">使用 <code>data-plugin="appear"</code> 和
+                            <div class="panel-body">使用
+                                <code>data-plugin="appear"</code> 和
                                 <code>data-animate="scale-up"</code> 添加 Appear 动画。
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div class="panel panel-info panel-bordered" data-plugin="appear" data-animate="scale-down">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Scale Down</h3>
                             </div>
-                            <div class="panel-body">使用 <code>data-plugin="appear"</code> 和 <code>data-animate="scale-down"</code>
-                                添加 Appear 动画。
+                            <div class="panel-body">使用
+                                <code>data-plugin="appear"</code> 和
+                                <code>data-animate="scale-down"</code> 添加 Appear 动画。
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div class="panel panel-warning panel-bordered" data-plugin="appear" data-animate="slide-right">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Slide Right</h3>
                             </div>
-                            <div class="panel-body">使用 <code>data-plugin="appear"</code> 和 <code>data-animate="slide-right"</code>
-                                添加 Appear 动画。
+                            <div class="panel-body">使用
+                                <code>data-plugin="appear"</code> 和
+                                <code>data-animate="slide-right"</code> 添加 Appear 动画。
                             </div>
                         </div>
                     </div>

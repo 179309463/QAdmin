@@ -2,18 +2,13 @@
 
 <link rel="stylesheet" href="/views/examples/components/widgets/data/index.css">
 
-<div class="page page-full animation-fade">
+<div class="page animation-fade">
     <div class="page-header">
-        <h1 class="page-title">数据小工具</h1>
-        <div class="page-header-actions">
-            <button type="button" class="btn btn-sm btn-outline btn-default btn-round">
-                <span class="text hidden-xs">设置</span> <i class="icon wb-chevron-right" aria-hidden="true"></i>
-            </button>
-        </div>
+        <h1 class="page-title">数据</h1>
     </div>
     <div class="page-content container-fluid">
         <div class="row" data-plugin="masonry">
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel" id="todo-list">
                     <div class="panel-heading">
@@ -23,47 +18,59 @@
                         <li class="list-group-item task-done" data-role="task">
                             <div class="checkbox-custom checkbox-primary">
                                 <input type="checkbox" id="inputSchedule" name="inputCheckboxesSchedule" checked>
-                                <label for="inputSchedule"><i class="icon wb-calendar" aria-hidden="true"></i> <span>接见菲律宾总统</span>
+                                <label for="inputSchedule">
+                                    <i class="icon wb-calendar" aria-hidden="true"></i>
+                                    <span>接见菲律宾总统</span>
                                 </label>
                             </div>
                         </li>
                         <li class="list-group-item" data-role="task">
                             <div class="checkbox-custom checkbox-primary">
                                 <input type="checkbox" id="inputCall" name="inputCheckboxesCall">
-                                <label for="inputCall"><i class="icon wb-bell" aria-hidden="true"></i>
-                                    <span>给妈妈打电话</span> <span class="label label-danger">今天</span></label>
+                                <label for="inputCall">
+                                    <i class="icon wb-bell" aria-hidden="true"></i>
+                                    <span>给妈妈打电话</span>
+                                    <span class="badge badge-danger">今天</span>
+                                </label>
                             </div>
                         </li>
                         <li class="list-group-item" data-role="task">
                             <div class="checkbox-custom checkbox-primary">
                                 <input type="checkbox" id="inputBook" name="inputCheckboxesBook">
-                                <label for="inputBook"><i class="icon wb-calendar" aria-hidden="true"></i> <span>与总理探讨xyz等若干问题</span>
+                                <label for="inputBook">
+                                    <i class="icon wb-calendar" aria-hidden="true"></i>
+                                    <span>与总理探讨xyz等若干问题</span>
                                 </label>
                             </div>
                         </li>
                         <li class="list-group-item" data-role="task">
                             <div class="checkbox-custom checkbox-primary">
                                 <input type="checkbox" id="inputForward" name="inputCheckboxesForward">
-                                <label for="inputForward"><span>好好睡一觉</span>
-                                    <span class="label label-primary">18小时</span></label>
+                                <label for="inputForward">
+                                    <span>好好睡一觉</span>
+                                    <span class="badge badge-primary">18小时</span>
+                                </label>
                             </div>
                         </li>
                         <li class="list-group-item" data-role="task">
                             <div class="checkbox-custom checkbox-primary">
                                 <input type="checkbox" id="inputRecieve" name="inputCheckboxesRecieve">
-                                <label for="inputRecieve"><span>起床</span></label>
+                                <label for="inputRecieve">
+                                    <span>起床</span>
+                                </label>
                             </div>
                         </li>
                     </ul>
                 </div>
 
             </div>
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel" id="messge">
                     <div class="panel-heading">
                         <div class="panel-actions">
-                            <a class="text-action" href="javascript:;"><i class="icon wb-edit" aria-hidden="true"></i>
+                            <a class="text-action" href="javascript:;">
+                                <i class="icon wb-edit" aria-hidden="true"></i>
                             </a>
                         </div>
                         <h3 class="panel-title">消息</h3>
@@ -72,15 +79,15 @@
                         <ul class="list-group list-group-full">
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <span class="avatar avatar-online">
-                                            <img src="/views/examples/images/portraits/1.jpg" alt="">
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/1.jpg" alt="">
                                             <i></i>
                                         </span>
                                     </div>
                                     <div class="media-body">
                                         <h5 class="list-group-item-heading">
-                                            <small class="pull-right">3 天前</small>
+                                            <small class="float-right">3 天前</small>
                                             ♫茉莉花
                                         </h5>
                                         <p class="list-group-item-text">话说。。缪定纯老师单身吗</p>
@@ -89,15 +96,15 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <span class="avatar avatar-online">
-                                            <img src="/views/examples/images/portraits/2.jpg" alt="">
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/2.jpg" alt="">
                                             <i></i>
                                         </span>
                                     </div>
                                     <div class="media-body">
                                         <h5 class="list-group-item-heading">
-                                            <small class="pull-right">3 天前</small>
+                                            <small class="float-right">3 天前</small>
                                             五花肉
                                         </h5>
                                         <p class="list-group-item-text">快去各大招聘网站投简历！！！来来来！</p>
@@ -106,15 +113,15 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <span class="avatar avatar-busy">
-                                            <img src="/views/examples/images/portraits/3.jpg" alt="">
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/3.jpg" alt="">
                                             <i></i>
                                         </span>
                                     </div>
                                     <div class="media-body">
                                         <h5 class="list-group-item-heading">
-                                            <small class="pull-right">3 天前</small>
+                                            <small class="float-right">3 天前</small>
                                             紫萱
                                         </h5>
                                         <p class="list-group-item-text">你觉得我萌，我就放心了。。。</p>
@@ -123,15 +130,15 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <span class="avatar avatar-off">
-                                            <img src="/views/examples/images/portraits/4.jpg" alt="">
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/4.jpg" alt="">
                                             <i></i>
                                         </span>
                                     </div>
                                     <div class="media-body">
                                         <h5 class="list-group-item-heading">
-                                            <small class="pull-right">3 天前</small>
+                                            <small class="float-right">3 天前</small>
                                             永不服输的Shirley
                                         </h5>
                                         <p class="list-group-item-text">快去各大招聘网站投简历！！！</p>
@@ -143,7 +150,7 @@
                 </div>
 
             </div>
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel">
                     <div class="panel-heading">
@@ -163,25 +170,27 @@
                 </div>
 
             </div>
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel" id="daily-feed">
                     <div class="panel-heading">
-                        <h3 class="panel-title">每日推荐 <span class="pull-right label label-round label-warning">10</span>
+                        <h3 class="panel-title">每日推荐
+                            <span class="float-right label label-round label-warning">10</span>
                         </h3>
                     </div>
                     <div class="panel-body">
                         <ul class="list-group list-group-dividered list-group-full">
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-online" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/5.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/5.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
                                         <h4 class="media-heading">
-                                            <small class="pull-right">5 分钟前</small>
+                                            <small class="float-right">5 分钟前</small>
                                             <a class="name">郭雨萌</a>
                                             发布了一条新通知
                                         </h4>
@@ -191,23 +200,24 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-off" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/6.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/6.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
                                         <h4 class="media-heading">
-                                            <small class="pull-right">2 小时前</small>
+                                            <small class="float-right">2 小时前</small>
                                             <a class="name">史上第一最最搞</a>
                                             冤冤相报何时了，这样都不分手，一定是真爱！！
                                         </h4>
                                         <small>今天 12:55</small>
-                                        <div class="actions margin-top-10">
-                                            <button type="button" class="btn btn-outline btn-default btn-xs">
+                                        <div class="actions mt-10">
+                                            <button type="button" class="btn btn-outline btn-default btn-sm">
                                                 <i class="icon wb-thumb-up" aria-hidden="true"></i>Like
                                             </button>
-                                            <button type="button" class="btn btn-outline btn-default btn-xs">
+                                            <button type="button" class="btn btn-outline btn-default btn-sm">
                                                 <i class="icon wb-heart" aria-hidden="true"></i>Love
                                             </button>
                                         </div>
@@ -216,14 +226,15 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-away" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/7.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/7.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
                                         <h4 class="media-heading">
-                                            <small class="pull-right">6 小时前</small>
+                                            <small class="float-right">6 小时前</small>
                                             <a class="name">摩卡工社</a>
                                             在
                                             <a class="name">《解密：特斯拉自动驾驶背后的关键技术》</a>
@@ -238,14 +249,15 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-busy" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/8.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/8.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
                                         <h4 class="media-heading">
-                                            <small class="pull-right">20 小时前</small>
+                                            <small class="float-right">20 小时前</small>
                                             <a class="name">段旭</a>
                                             关注了
                                             <a class="name">卢晓明</a>
@@ -257,13 +269,13 @@
                             </li>
                         </ul>
                         <button type="button" class="btn btn-block btn-primary">
-                            <i class="icon wb-chevron-down margin-right-5" aria-hidden="true"></i> 显示更多
+                            <i class="icon wb-chevron-down mr-5" aria-hidden="true"></i> 显示更多
                         </button>
                     </div>
                 </div>
 
             </div>
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel">
                     <div class="panel-heading">
@@ -272,61 +284,69 @@
                     <div class="panel-body">
                         <ul class="list-group list-group-dividered list-group-full">
                             <li class="list-group-item">
-                                <small class="label label-round label-info pull-right">已修复</small>
+                                <small class="badge badge-round label-info float-right">已修复</small>
                                 <p>
                                     <a class="hightlight" href="javascript:;">服务器不可用</a>
                                     <span>[13060]</span>
                                 </p>
                                 <small>
                                     <a class="hightlight" href="javascript:;">
-                                      <span class="avatar avatar-xs">
-                                        <img src="/views/examples/images/portraits/1.jpg" alt="">
-                                      </span> <span>曲凯</span></a>
+                                        <span class="avatar avatar-xs">
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/1.jpg" alt="">
+                                        </span>
+                                        <span>曲凯</span>
+                                    </a>
                                     提交于
                                     <time datetime="2016-07-01T08:55">2 小时前</time>
                                 </small>
                             </li>
                             <li class="list-group-item">
-                                <small class="label label-round label-warning pull-right">待解决</small>
+                                <small class="badge badge-round label-warning float-right">待解决</small>
                                 <p>
                                     <a class="hightlight" href="javascript:;">手机 APP 有问题</a>
                                     <span>[13061]</span>
                                 </p>
                                 <small>
                                     <a class="hightlight" href="javascript:;">
-                                      <span class="avatar avatar-xs">
-                                        <img src="/views/examples/images/portraits/2.jpg" alt="">
-                                      </span> <span>宋长乐</span></a>
+                                        <span class="avatar avatar-xs">
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/2.jpg" alt="">
+                                        </span>
+                                        <span>宋长乐</span>
+                                    </a>
                                     提交于
                                     <time datetime="2016-07-01T07:55">1 小时前</time>
                                 </small>
                             </li>
                             <li class="list-group-item">
-                                <small class="label label-round label-primary pull-right">解决中</small>
+                                <small class="badge badge-round label-primary float-right">解决中</small>
                                 <p>
                                     <a class="hightlight" href="javascript:;">IE6 下显示有问题</a>
                                     <span>[13062]</span>
                                 </p>
                                 <small>
                                     <a class="hightlight" href="javascript:;">
-                                      <span class="avatar avatar-xs">
-                                        <img src="/views/examples/images/portraits/3.jpg" alt="">
-                                      </span> <span>于恋洋</span></a>
+                                        <span class="avatar avatar-xs">
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/3.jpg" alt="">
+                                        </span>
+                                        <span>于恋洋</span>
+                                    </a>
                                     提交于
                                     <time datetime="2016-06-28T21:05">3 天前</time>
                                 </small>
                             </li>
                             <li class="list-group-item">
-                                <small class="label label-round label-danger pull-right">已关闭</small>
+                                <small class="badge badge-round label-danger float-right">已关闭</small>
                                 <p>
                                     <a class="hightlight" href="javascript:;">响应式菜单有问题</a>
                                     <span>[13063]</span>
                                 </p>
                                 <small>
                                     <a class="hightlight" href="javascript:;">
-                                      <span class="avatar avatar-xs">
-                                        <img src="/views/examples/images/portraits/4.jpg" alt="">
-                                      </span> <span>石亚琼</span></a>
+                                        <span class="avatar avatar-xs">
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/4.jpg" alt="">
+                                        </span>
+                                        <span>石亚琼</span>
+                                    </a>
                                     提交于
                                     <time datetime="2016-06-27T13:05">4 天前</time>
                                 </small>
@@ -336,7 +356,7 @@
                 </div>
 
             </div>
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel">
                     <div class="panel-heading">
@@ -438,14 +458,14 @@
                     </div>
                     <div class="panel-footer">
                         <a class="blue-grey-500" href="javascript:;">
-                            <i class="icon wb-info-circle blue-600 margin-right-10" aria-hidden="true"></i> 显示更多
+                            <i class="icon wb-info-circle blue-600 mr-10" aria-hidden="true"></i> 显示更多
                         </a>
                     </div>
                 </div>
 
             </div>
 
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel">
                     <div class="panel-heading">
@@ -467,7 +487,7 @@
                                 <td>2016.5.23 3:29</td>
                                 <td>&yen;321.33</td>
                                 <td>
-                                    <span class="label label-success">已完成</span>
+                                    <span class="badge badge-success">已完成</span>
                                 </td>
                             </tr>
                             <tr>
@@ -475,7 +495,7 @@
                                 <td>20165.23 3:20</td>
                                 <td>&yen;234.34</td>
                                 <td>
-                                    <span class="label label-warning">已取消</span>
+                                    <span class="badge badge-warning">已取消</span>
                                 </td>
                             </tr>
                             <tr>
@@ -483,7 +503,7 @@
                                 <td>2016.5.23 3:03</td>
                                 <td>&yen;724.17</td>
                                 <td>
-                                    <span class="label label-info">进行中</span>
+                                    <span class="badge badge-info">进行中</span>
                                 </td>
                             </tr>
                             <tr>
@@ -491,7 +511,7 @@
                                 <td>2016.5.23 3:00</td>
                                 <td>&yen;23.71</td>
                                 <td>
-                                    <span class="label label-danger">待发货</span>
+                                    <span class="badge badge-danger">待发货</span>
                                 </td>
                             </tr>
                             <tr>
@@ -499,7 +519,7 @@
                                 <td>2016.5.23 2:49</td>
                                 <td>&yen;8345.23</td>
                                 <td>
-                                    <span class="label label-success">已完成</span>
+                                    <span class="badge badge-success">已完成</span>
                                 </td>
                             </tr>
                             <tr>
@@ -507,7 +527,7 @@
                                 <td>2016.5.23 2:23</td>
                                 <td>&yen;245.12</td>
                                 <td>
-                                    <span class="label label-info">待付款</span>
+                                    <span class="badge badge-info">待付款</span>
                                 </td>
                             </tr>
                             <tr>
@@ -515,7 +535,7 @@
                                 <td>2016.5.23 2:15</td>
                                 <td>&yen;5663.54</td>
                                 <td>
-                                    <span class="label label-danger">待发货</span>
+                                    <span class="badge badge-danger">待发货</span>
                                 </td>
                             </tr>
                             <tr>
@@ -523,7 +543,7 @@
                                 <td>2016.5.23 2:13</td>
                                 <td>&yen;943.45</td>
                                 <td>
-                                    <span class="label label-success">已完成</span>
+                                    <span class="badge badge-success">已完成</span>
                                 </td>
                             </tr>
                             </tbody>
@@ -532,7 +552,7 @@
                 </div>
 
             </div>
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel" id="projects">
                     <div class="panel-heading">
@@ -559,7 +579,8 @@
                                     <button type="button" class="btn btn-sm btn-icon btn-pure btn-default">
                                         <i class="icon wb-wrench" aria-hidden="true"></i>
                                     </button>
-                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default" data-toggle="tooltip" data-original-title="删除">
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="删除">
                                         <i class="icon wb-close" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -574,7 +595,8 @@
                                     <button type="button" class="btn btn-sm btn-icon btn-pure btn-default">
                                         <i class="icon wb-wrench" aria-hidden="true"></i>
                                     </button>
-                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default" data-toggle="tooltip" data-original-title="删除">
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="删除">
                                         <i class="icon wb-close" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -589,7 +611,8 @@
                                     <button type="button" class="btn btn-sm btn-icon btn-pure btn-default">
                                         <i class="icon wb-wrench" aria-hidden="true"></i>
                                     </button>
-                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default" data-toggle="tooltip" data-original-title="删除">
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="删除">
                                         <i class="icon wb-close" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -604,7 +627,8 @@
                                     <button type="button" class="btn btn-sm btn-icon btn-pure btn-default">
                                         <i class="icon wb-wrench" aria-hidden="true"></i>
                                     </button>
-                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default" data-toggle="tooltip" data-original-title="删除">
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="删除">
                                         <i class="icon wb-close" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -619,7 +643,8 @@
                                     <button type="button" class="btn btn-sm btn-icon btn-pure btn-default">
                                         <i class="icon wb-wrench" aria-hidden="true"></i>
                                     </button>
-                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default" data-toggle="tooltip" data-original-title="删除">
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="删除">
                                         <i class="icon wb-close" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -630,12 +655,13 @@
                 </div>
 
             </div>
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            项目进度 <span class="badge badge-info">5</span>
+                            项目进度
+                            <span class="badge badge-info">5</span>
                         </h3>
                     </div>
                     <div class="table-responsive">
@@ -653,7 +679,7 @@
                                 <td>619</td>
                                 <td>修复已知BUG</td>
                                 <td>
-                                    <span class="label label-primary">修复中</span>
+                                    <span class="badge badge-primary">修复中</span>
                                 </td>
                                 <td>
                                     <span data-plugin="peityLine">5,3,2,-1,-3,-2,2,3,5,2</span>
@@ -663,7 +689,7 @@
                                 <td>620</td>
                                 <td>开发 Windows 桌面软件</td>
                                 <td>
-                                    <span class="label label-warning">待开发</span>
+                                    <span class="badge badge-warning">待开发</span>
                                 </td>
                                 <td>
                                     <span data-plugin="peityLine">1,-1,0,2,3,1,-1,1,4,2</span>
@@ -673,7 +699,7 @@
                                 <td>621</td>
                                 <td>越狱 IOS11</td>
                                 <td>
-                                    <span class="label label-info">测试中</span>
+                                    <span class="badge badge-info">测试中</span>
                                 </td>
                                 <td>
                                     <span data-plugin="peityLine">2,3,-1,-3,-1,0,2,4,5,3</span>
@@ -683,7 +709,7 @@
                                 <td>622</td>
                                 <td>完善审批流程</td>
                                 <td>
-                                    <span class="label label-danger">已取消</span>
+                                    <span class="badge badge-danger">已取消</span>
                                 </td>
                                 <td>
                                     <span data-plugin="peityLine">1,-2,0,2,4,5,3,2,4,2</span>
@@ -693,7 +719,7 @@
                                 <td>623</td>
                                 <td>手机 APP</td>
                                 <td>
-                                    <span class="label label-default">未开始</span>
+                                    <span class="badge badge-default">未开始</span>
                                 </td>
                                 <td>
                                     <span data-plugin="peityLine">4,2,-1,-3,-2,1,3,5,2,4</span>
@@ -705,7 +731,7 @@
                 </div>
 
             </div>
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel" id="followers">
                     <div class="panel-heading">
@@ -716,13 +742,14 @@
                         <ul class="list-group list-group-dividered list-group-full">
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-online" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/9.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/9.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <div class="pull-right">
+                                        <div class="float-right">
                                             <button type="button" class="btn btn-outline btn-default btn-sm">关注</button>
                                         </div>
                                         <div>
@@ -734,13 +761,14 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-away" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/10.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/10.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <div class="pull-right">
+                                        <div class="float-right">
                                             <button type="button" class="btn btn-success btn-default btn-sm">
                                                 <i class="icon wb-check" aria-hidden="true"></i>已关注
                                             </button>
@@ -754,13 +782,14 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-busy" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/11.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/11.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <div class="pull-right">
+                                        <div class="float-right">
                                             <button type="button" class="btn btn-outline btn-default btn-sm">关注</button>
                                         </div>
                                         <div>
@@ -772,13 +801,14 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-off" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/12.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/12.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <div class="pull-right">
+                                        <div class="float-right">
                                             <button type="button" class="btn btn-outline btn-default btn-sm">关注</button>
                                         </div>
                                         <div>
@@ -793,7 +823,7 @@
                 </div>
 
             </div>
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel" id="chat">
                     <div class="panel-heading">
@@ -804,9 +834,11 @@
                         <div class="chats">
                             <div class="chat">
                                 <div class="chat-avatar">
-                                    <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="June Lane">
-                                        <img src="/views/examples/images/portraits/4.jpg" alt="...">
-                                        <i></i></a>
+                                    <a class="avatar avatar-online" data-toggle="tooltip" href="javascript:;"
+                                        data-placement="right" title="June Lane">
+                                        <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/4.jpg" alt="...">
+                                        <i></i>
+                                    </a>
                                 </div>
                                 <div class="chat-body">
                                     <div class="chat-content">
@@ -818,9 +850,11 @@
                             </div>
                             <div class="chat chat-left">
                                 <div class="chat-avatar">
-                                    <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="left" title="Edward Fletcher">
-                                        <img src="/views/examples/images/portraits/5.jpg" alt="...">
-                                        <i></i></a>
+                                    <a class="avatar avatar-online" data-toggle="tooltip" href="javascript:;"
+                                        data-placement="left" title="Edward Fletcher">
+                                        <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/5.jpg" alt="...">
+                                        <i></i>
+                                    </a>
                                 </div>
                                 <div class="chat-body">
                                     <div class="chat-content">
@@ -831,9 +865,11 @@
                             </div>
                             <div class="chat">
                                 <div class="chat-avatar">
-                                    <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="June Lane">
-                                        <img src="/views/examples/images/portraits/4.jpg" alt="...">
-                                        <i></i></a>
+                                    <a class="avatar avatar-online" data-toggle="tooltip" href="javascript:;"
+                                        data-placement="right" title="June Lane">
+                                        <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/4.jpg" alt="...">
+                                        <i></i>
+                                    </a>
                                 </div>
                                 <div class="chat-body">
                                     <div class="chat-content">
@@ -846,12 +882,12 @@
                         </div>
                     </div>
                     <div class="panel-footer">
-                        <form class="margin-bottom-10">
+                        <form class="mb-10">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="说点什么…">
                                 <span class="input-group-btn">
-                    <button class="btn btn-primary" type="button">发送</button>
-                  </span>
+                                    <button class="btn btn-primary" type="button">发送</button>
+                                </span>
                             </div>
                         </form>
                     </div>
@@ -859,7 +895,7 @@
 
             </div>
 
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel">
                     <div class="panel-heading">
@@ -870,17 +906,18 @@
                         <ul class="list-group list-group-dividered list-group-full">
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-online" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/15.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/15.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <small class="pull-right">20 小时前</small>
+                                        <small class="float-right">20 小时前</small>
                                         <h4 class="media-heading">手机 APP 原型图已确定</h4>
                                         <small>
                                             <a href="javascript:;" title="">郭雨萌</a>
-                                            <a class="label label-outline label-default" href="javascript:;" title="">
+                                            <a class="badge badge-outline label-default" href="javascript:;" title="">
                                                 手机APP
                                             </a>
                                         </small>
@@ -889,17 +926,18 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-away" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/16.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/16.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <small class="pull-right">20 小时前</small>
+                                        <small class="float-right">20 小时前</small>
                                         <h4 class="media-heading">桌面软件——系统通知部分已完成</h4>
                                         <small>
                                             <a href="javascript:;" title="">于恋洋</a>
-                                            <a class="label label-outline label-default" href="javascript:;" title="">
+                                            <a class="badge badge-outline label-default" href="javascript:;" title="">
                                                 桌面软件
                                             </a>
                                         </small>
@@ -908,17 +946,18 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-busy" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/17.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/17.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <small class="pull-right">20 小时前</small>
+                                        <small class="float-right">20 小时前</small>
                                         <h4 class="media-heading">UC 浏览器显示有点小问题</h4>
                                         <small>
                                             <a href="javascript:;" title="">石亚琼</a>
-                                            <a class="label label-outline label-default" href="javascript:;" title="">
+                                            <a class="badge badge-outline label-default" href="javascript:;" title="">
                                                 BUG提交
                                             </a>
                                         </small>
@@ -927,17 +966,18 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-off" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/18.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/18.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <small class="pull-right">20 小时前</small>
+                                        <small class="float-right">20 小时前</small>
                                         <h4 class="media-heading">增加了审批流程模块</h4>
                                         <small>
                                             <a href="javascript:;" title="">思遥</a>
-                                            <a class="label label-outline label-default" href="javascript:;" title="">
+                                            <a class="badge badge-outline label-default" href="javascript:;" title="">
                                                 开发计划
                                             </a>
                                         </small>
@@ -946,17 +986,18 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-online" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/19.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/19.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <small class="pull-right">20 小时前</small>
+                                        <small class="float-right">20 小时前</small>
                                         <h4 class="media-heading">修改了 Icon 图标</h4>
                                         <small>
                                             <a href="javascript:;" title="">思遥</a>
-                                            <a class="label label-outline label-default" href="javascript:;" title="">
+                                            <a class="badge badge-outline label-default" href="javascript:;" title="">
                                                 设计
                                             </a>
                                         </small>
@@ -965,17 +1006,18 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-online" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/20.jpg" alt="">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/20.jpg" alt="">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <small class="pull-right">20 小时前</small>
+                                        <small class="float-right">20 小时前</small>
                                         <h4 class="media-heading">IE6 显示不正常</h4>
                                         <small>
                                             <a href="javascript:;" title="">思遥</a>
-                                            <a class="label label-outline label-default" href="javascript:;" title="">
+                                            <a class="badge badge-outline label-default" href="javascript:;" title="">
                                                 BUG提交
                                             </a>
                                         </small>
@@ -987,21 +1029,23 @@
                 </div>
 
             </div>
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="panel-title-icon icon wb-chat" aria-hidden="true"></i> 最新评论
+                        <h3 class="panel-title">
+                            <i class="panel-title-icon icon wb-chat" aria-hidden="true"></i> 最新评论
                         </h3>
                     </div>
                     <div class="panel-body">
                         <ul class="list-group list-group-dividered list-group-full">
                             <li class="list-group-item">
                                 <div class="media comment">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-online" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/6.jpg" alt="...">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/6.jpg" alt="...">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body comment-body">
                                         <a class="comment-author">郭雨萌</a>
@@ -1016,10 +1060,11 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media comment">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-busy" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/7.jpg" alt="...">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/7.jpg" alt="...">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body comment-body">
                                         <a class="comment-author">于恋洋</a>
@@ -1037,10 +1082,11 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media comment">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-online" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/8.jpg" alt="...">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/8.jpg" alt="...">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body comment-body">
                                         <a class="comment-author">石亚琼</a>
@@ -1057,10 +1103,11 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media comment">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-away" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/9.jpg" alt="...">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/9.jpg" alt="...">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body comment-body">
                                         <a class="comment-author">思遥</a>
@@ -1078,7 +1125,7 @@
                 </div>
 
             </div>
-            <div class="col-md-6 col-xs-12 masonry-item">
+            <div class="col-lg-6 masonry-item">
 
                 <div class="panel">
                     <div class="panel-heading">
@@ -1088,19 +1135,20 @@
                         <div class="form-group">
                             <textarea class="form-control" placeholder="不超过140字…" rows="3"></textarea>
                         </div>
-                        <a href="javascript:;" class="btn btn-primary btn-sm pull-right">发布</a>
+                        <a href="javascript:;" class="btn btn-primary btn-sm float-right">发布</a>
                         <div class="clearfix"></div>
-                        <hr class="margin-bottom-10">
+                        <hr class="mb-10">
                         <ul class="list-group list-group-dividered list-group-full">
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-online" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/16.jpg" alt="...">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/16.jpg" alt="...">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <small class="text-muted pull-right">刚刚</small>
+                                        <small class="text-muted float-right">刚刚</small>
                                         <h4 class="media-heading">@郭雨萌</h4>
                                         <div>遇见是两个人的事，离开却是一个人的决定，遇见是一个开始，离开却是为了遇见下一个离开。这是一个流行离开的世界，但是我们都不擅长告别。——
                                             米兰·昆德拉《生活在别处》
@@ -1110,13 +1158,14 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-busy" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/17.jpg" alt="...">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/17.jpg" alt="...">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <small class="text-muted pull-right">38 分钟前</small>
+                                        <small class="text-muted float-right">38 分钟前</small>
                                         <h4 class="media-heading">@于恋洋</h4>
                                         <div>杠上了！被禁赛的俄罗斯自己办了运动会</div>
                                     </div>
@@ -1124,13 +1173,14 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-left">
+                                    <div class="pr-10">
                                         <a class="avatar avatar-online" href="javascript:;">
-                                            <img src="/views/examples/images/portraits/18.jpg" alt="...">
-                                            <i></i></a>
+                                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/18.jpg" alt="...">
+                                            <i></i>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <small class="text-muted pull-right">2 小时前</small>
+                                        <small class="text-muted float-right">2 小时前</small>
                                         <h4 class="media-heading">@石亚琼</h4>
                                         <div>苹果的新耳机分分钟被大家玩坏了</div>
                                     </div>
@@ -1142,9 +1192,98 @@
                 </div>
 
             </div>
+            <div class="col-lg-6 masonry-item">
+
+                <div class="panel team-panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">团队</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="avatar avatar-online">
+                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/2.jpg" alt="">
+                            <i></i>
+                        </div>
+                        <div class="avatar avatar-off">
+                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/3.jpg" alt="">
+                            <i></i>
+                        </div>
+                        <div class="avatar avatar-busy">
+                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/4.jpg" alt="">
+                            <i></i>
+                        </div>
+                        <div class="avatar avatar-away">
+                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/1.jpg" alt="">
+                            <i></i>
+                        </div>
+                        <div class="avatar avatar-online">
+                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/5.jpg" alt="">
+                            <i></i>
+                        </div>
+                        <div class="avatar avatar-away">
+                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/1.jpg" alt="">
+                            <i></i>
+                        </div>
+                        <div class="avatar avatar-away">
+                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/1.jpg" alt="">
+                            <i></i>
+                        </div>
+                        <div class="avatar avatar-away">
+                            <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/1.jpg" alt="">
+                            <i></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 masonry-item">
+
+                <div class="panel input-panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">发布微博</h3>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4" cols="40" placeholder="随便写点什么吧..."></textarea>
+                        <div class="form-footer">
+                            <div class="input-panle-btn">
+                                <i class="icon wb-image"></i>
+                            </div>
+                            <div class="input-panle-btn">
+                                <i class="icon wb-video"></i>
+                            </div>
+                            <div class="input-panle-btn">
+                                <i class="icon wb-calendar"></i>
+                            </div>
+                            <div class="input-panle-btn">
+                                <i class="icon wb-map"></i>
+                            </div>
+                            <button class="btn submit font-weight-500">发布</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 masonry-item">
+
+                <div class="panel badges-panle">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">标签</h3>
+                    </div>
+                    <div class="panel-body">
+                        <span class="badge badge-outline badge-default">Default</span>
+                        <span class="badge badge-outline badge-primary">Primary</span>
+                        <span class="badge badge-outline badge-success">Success</span>
+                        <span class="badge badge-outline badge-info">Info</span>
+                        <span class="badge badge-outline badge-warning">Warning</span>
+                        <span class="badge badge-outline badge-danger">Danger</span>
+                        <span class="badge badge-outline badge-dark">Dark</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
+
 
 <script src="/vendor/peity/jquery.peity.min.js" data-name="peity"></script>
 <script src="/vendor/masonry/dist/masonry.pkgd.min.js"></script>

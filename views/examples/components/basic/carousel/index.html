@@ -1,23 +1,13 @@
-<title>轮播组件</title>
+
+<title>轮播组件 - UI示例</title>
 
 <link rel="stylesheet" href="/lib/owl.carousel/dist/assets/owl.carousel.css">
 <link rel="stylesheet" href="/lib/slick-carousel/slick/slick.css">
 <link rel="stylesheet" href="/views/examples/components/basic/carousel/index.css">
 
-<div class="page page-full animation-fade">
+<div class="page animation-fade">
     <div class="page-header">
         <h1 class="page-title">轮播组件</h1>
-        <div class="page-header-actions">
-            <button type="button" class="btn btn-icon btn-inverse btn-round">
-                <i class="icon wb-pencil" aria-hidden="true"></i>
-            </button>
-            <button type="button" class="btn btn-icon btn-inverse btn-round">
-                <i class="icon wb-refresh" aria-hidden="true"></i>
-            </button>
-            <button type="button" class="btn btn-icon btn-inverse btn-round">
-                <i class="icon wb-settings" aria-hidden="true"></i>
-            </button>
-        </div>
     </div>
     <div class="page-content">
 
@@ -29,7 +19,7 @@
                 <div class="row row-lg">
                     <div class="col-lg-6">
 
-                        <div class="example-wrap margin-lg-0">
+                        <div class="example-wrap m-lg-0">
                             <h4 class="example-title">默认</h4>
                             <p>下面是一个简单的幻灯片，使用 Bootstrap 轮播（Carousel）插件显示了一个循环播放元素的通用组件。</p>
                             <div class="example">
@@ -40,22 +30,26 @@
                                         <li class="" data-slide-to="2" data-target="#exampleCarouselDefault"></li>
                                     </ol>
                                     <div class="carousel-inner" role="listbox">
-                                        <div class="item active">
-                                            <img class="width-full" src="/views/examples/images/photos/city-1.jpg" alt="...">
+                                        <div class="carousel-item active">
+                                            <img class="w-full" src="/views/examples/images/photos/city-1.jpg" alt="...">
                                         </div>
-                                        <div class="item">
-                                            <img class="width-full" src="/views/examples/images/photos/city-2.jpg" alt="...">
+                                        <div class="carousel-item">
+                                            <img class="w-full" src="/views/examples/images/photos/city-2.jpg" alt="...">
                                         </div>
-                                        <div class="item">
-                                            <img class="width-full" src="/views/examples/images/photos/city-3.jpg" alt="...">
+                                        <div class="carousel-item">
+                                            <img class="w-full" src="/views/examples/images/photos/city-3.jpg" alt="...">
                                         </div>
                                     </div>
-                                    <a class="left carousel-control" href="#exampleCarouselDefault" role="button" data-slide="prev">
+                                    <a class="carousel-control-prev" href="#exampleCarouselDefault" role="button"
+                                        data-slide="prev">
                                         <span class="icon wb-chevron-left" aria-hidden="true"></span>
-                                        <span class="sr-only">上一个</span></a>
-                                    <a class="right carousel-control" href="#exampleCarouselDefault" role="button" data-slide="next">
+                                        <span class="sr-only">上一个</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#exampleCarouselDefault" role="button"
+                                        data-slide="next">
                                         <span class="icon wb-chevron-right" aria-hidden="true"></span>
-                                        <span class="sr-only">下一个</span></a>
+                                        <span class="sr-only">下一个</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +59,8 @@
 
                         <div class="example-wrap">
                             <h4 class="example-title">可选标题</h4>
-                            <p>您可以通过 .item 内的 <code>.carousel-caption</code> 元素向幻灯片添加标题。可以在该处放置任何 HTML 代码，它会自动对齐并格式化。
+                            <p>您可以通过 .item 内的
+                                <code>.carousel-caption</code> 元素向幻灯片添加标题。可以在该处放置任何 HTML 代码，它会自动对齐并格式化。
                             </p>
                             <div class="example">
                                 <div class="carousel slide" id="exampleCarouselCaptions" data-ride="carousel">
@@ -75,34 +70,38 @@
                                         <li class="" data-slide-to="2" data-target="#exampleCarouselCaptions"></li>
                                     </ol>
                                     <div class="carousel-inner" role="listbox">
-                                        <div class="item active">
-                                            <img class="width-full" src="/views/examples/images/photos/city-1.jpg" alt="...">
+                                        <div class="carousel-item active">
+                                            <img class="w-full" src="/views/examples/images/photos/city-1.jpg" alt="...">
                                             <div class="carousel-caption">
                                                 <h3>第1张幻灯片</h3>
                                                 <p>第1张幻灯片的描述内容</p>
                                             </div>
                                         </div>
-                                        <div class="item">
-                                            <img class="width-full" src="/views/examples/images/photos/city-2.jpg" alt="...">
+                                        <div class="carousel-item">
+                                            <img class="w-full" src="/views/examples/images/photos/city-2.jpg" alt="...">
                                             <div class="carousel-caption">
                                                 <h3>第2张幻灯片</h3>
                                                 <p>第2张幻灯片的描述内容</p>
                                             </div>
                                         </div>
-                                        <div class="item">
-                                            <img class="width-full" src="/views/examples/images/photos/city-3.jpg" alt="...">
+                                        <div class="carousel-item">
+                                            <img class="w-full" src="/views/examples/images/photos/city-3.jpg" alt="...">
                                             <div class="carousel-caption">
                                                 <h3>第3张幻灯片</h3>
                                                 <p>第3张幻灯片的描述内容</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <a class="left carousel-control" href="#exampleCarouselCaptions" role="button" data-slide="prev">
+                                    <a class="carousel-control-prev" href="#exampleCarouselCaptions" role="button"
+                                        data-slide="prev">
                                         <span class="icon wb-chevron-left" aria-hidden="true"></span>
-                                        <span class="sr-only">上一个</span></a>
-                                    <a class="right carousel-control" href="#exampleCarouselCaptions" role="button" data-slide="next">
+                                        <span class="sr-only">上一个</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#exampleCarouselCaptions" role="button"
+                                        data-slide="next">
                                         <span class="icon wb-chevron-right" aria-hidden="true"></span>
-                                        <span class="sr-only">下一个</span></a>
+                                        <span class="sr-only">下一个</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -190,7 +189,6 @@
                         </div>
 
                     </div>
-                    <div class="clearfix visible-md-block visible-lg-block"></div>
                     <div class="col-md-6">
 
                         <div class="example-wrap">
@@ -232,22 +230,22 @@
                             <h4 class="example-title">可变宽度</h4>
                             <div class="example">
                                 <div class="slider" id="exampleVariableWidth">
-                                    <div class="width-200">
+                                    <div class="w-200">
                                         <h3>200</h3>
                                     </div>
-                                    <div class="width-150">
+                                    <div class="w-150">
                                         <h3>150</h3>
                                     </div>
-                                    <div class="width-250">
+                                    <div class="w-250">
                                         <h3>250</h3>
                                     </div>
-                                    <div class="width-300">
+                                    <div class="w-300">
                                         <h3>300</h3>
                                     </div>
-                                    <div class="width-100">
+                                    <div class="w-100">
                                         <h3>100</h3>
                                     </div>
-                                    <div class="width-350">
+                                    <div class="w-350">
                                         <h3>350</h3>
                                     </div>
                                 </div>
@@ -255,7 +253,6 @@
                         </div>
 
                     </div>
-                    <div class="clearfix visible-md-block visible-lg-block"></div>
                     <div class="col-md-6">
 
                         <div class="example-wrap">
@@ -271,7 +268,8 @@
                                     </div>
                                     <div>
                                         <h3>3</h3>
-                                        <p>橘子 <br>苹果</p>
+                                        <p>橘子
+                                            <br>苹果</p>
                                     </div>
                                     <div>
                                         <h3>4</h3>
@@ -311,7 +309,6 @@
                         </div>
 
                     </div>
-                    <div class="clearfix visible-md-block visible-lg-block"></div>
                     <div class="col-md-6">
 
                         <div class="example-wrap">
@@ -348,26 +345,25 @@
                             <div class="example">
                                 <div class="slider" id="exampleLazy">
                                     <div>
-                                        <img class="img-responsive" alt="..." data-lazy="/views/examples/images/photos/city-1.jpg">
+                                        <img class="img-fluid" alt="..." data-lazy="/views/examples/images/photos/city-1.jpg">
                                     </div>
                                     <div>
-                                        <img class="img-responsive" alt="..." data-lazy="/views/examples/images/photos/city-2.jpg">
+                                        <img class="img-fluid" alt="..." data-lazy="/views/examples/images/photos/city-2.jpg">
                                     </div>
                                     <div>
-                                        <img class="img-responsive" alt="..." data-lazy="/views/examples/images/photos/city-3.jpg">
+                                        <img class="img-fluid" alt="..." data-lazy="/views/examples/images/photos/city-3.jpg">
                                     </div>
                                     <div>
-                                        <img class="img-responsive" alt="..." data-lazy="/views/examples/images/photos/city-4.jpg">
+                                        <img class="img-fluid" alt="..." data-lazy="/views/examples/images/photos/city-4.jpg">
                                     </div>
                                     <div>
-                                        <img class="img-responsive" alt="..." data-lazy="/views/examples/images/photos/city-5.jpg">
+                                        <img class="img-fluid" alt="..." data-lazy="/views/examples/images/photos/city-5.jpg">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="clearfix visible-md-block visible-lg-block"></div>
                     <div class="col-md-6">
 
                         <div class="example-wrap">
@@ -404,26 +400,25 @@
                             <div class="example">
                                 <div class="slider" id="exampleFade">
                                     <div>
-                                        <img class="img-responsive" alt="..." data-lazy="/views/examples/images/photos/city-1.jpg">
+                                        <img class="img-fluid" alt="..." data-lazy="/views/examples/images/photos/city-1.jpg">
                                     </div>
                                     <div>
-                                        <img class="img-responsive" alt="..." data-lazy="/views/examples/images/photos/city-2.jpg">
+                                        <img class="img-fluid" alt="..." data-lazy="/views/examples/images/photos/city-2.jpg">
                                     </div>
                                     <div>
-                                        <img class="img-responsive" alt="..." data-lazy="/views/examples/images/photos/city-3.jpg">
+                                        <img class="img-fluid" alt="..." data-lazy="/views/examples/images/photos/city-3.jpg">
                                     </div>
                                     <div>
-                                        <img class="img-responsive" alt="..." data-lazy="/views/examples/images/photos/city-4.jpg">
+                                        <img class="img-fluid" alt="..." data-lazy="/views/examples/images/photos/city-4.jpg">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="clearfix visible-md-block visible-lg-block"></div>
                     <div class="col-md-6">
 
-                        <div class="example-wrap margin-md-0">
+                        <div class="example-wrap m-md-0">
                             <h4 class="example-title">添加 & 删除</h4>
                             <div class="example example-buttons">
                                 <div class="slider" id="exampleAddRemove">
@@ -431,7 +426,7 @@
                                         <h3>1</h3>
                                     </div>
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center mt-40">
                                     <button type="button" class="btn btn-primary btn-outline" id="exampleAddSlide">添加
                                     </button>
                                     <button type="button" class="btn btn-primary btn-outline" id="exampleRemoveSlide">
@@ -485,7 +480,7 @@
                                         <h3>12</h3>
                                     </div>
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center mt-40">
                                     <button type="button" class="btn btn-primary btn-outline" id="exampleFilter">过滤
                                     </button>
                                 </div>
@@ -515,7 +510,8 @@
                         <div class="example-wrap">
                             <h4 class="example-title">没有边距</h4>
                             <div class="example">
-                                <div class="owl-carousel owl-theme" data-plugin="owlCarousel" data-center="false" data-dots="false" data-nav="true">
+                                <div class="owl-carousel" data-plugin="owlCarousel" data-center="false" data-dots="false"
+                                        data-nav="true">
                                     <div class="item">
                                         <img src="/views/examples/images/photos/city-1.jpg" alt="...">
                                     </div>
@@ -544,24 +540,25 @@
                         <div class="example-wrap">
                             <h4 class="example-title">居中</h4>
                             <div class="example">
-                                <div class="owl-carousel-centered owl-carousel owl-theme" data-plugin="owlCarousel" data-center="true" data-dots="false" data-nav="true">
+                                <div class="owl-carousel owl-carousel-centered" data-plugin="owlCarousel" data-center="true"
+                                        data-dots="false" data-nav="true">
                                     <div class="item">
-                                        <img src="/views/examples/images/photos/city-1.jpg" alt="...">
+                                        <img src="/views/examples/images/photos/city-1.jpg" alt="..." />
                                     </div>
                                     <div class="item">
-                                        <img src="/views/examples/images/photos/city-2.jpg" alt="...">
+                                        <img src="/views/examples/images/photos/city-2.jpg" alt="..." />
                                     </div>
                                     <div class="item">
-                                        <img src="/views/examples/images/photos/city-3.jpg" alt="...">
+                                        <img src="/views/examples/images/photos/city-3.jpg" alt="..." />
                                     </div>
                                     <div class="item">
-                                        <img src="/views/examples/images/photos/city-4.jpg" alt="...">
+                                        <img src="/views/examples/images/photos/city-4.jpg" alt="..." />
                                     </div>
                                     <div class="item">
-                                        <img src="/views/examples/images/photos/city-5.jpg" alt="...">
+                                        <img src="/views/examples/images/photos/city-5.jpg" alt="..." />
                                     </div>
                                     <div class="item">
-                                        <img src="/views/examples/images/photos/city-6.jpg" alt="...">
+                                        <img src="/views/examples/images/photos/city-6.jpg" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -572,19 +569,28 @@
                 <div class="row row-lg">
                     <div class="col-lg-6">
 
-                        <div class="example-wrap margin-lg-0">
+                        <div class="example-wrap m-lg-0">
                             <h4 class="example-title">Logos</h4>
-                            <div class="example">
-                                <div class="owl-carousel-shortcode owl-carousel owl-theme" data-plugin="owlCarousel" data-center="true" data-dots="true" data-nav="false">
+                            <div class="example example-logos">
+                                <div class="owl-carousel owl-carousel-shortcode" data-plugin="owlCarousel" data-center="true"
+                                        data-dots="true" data-nav="false">
                                     <div class="item">
-                                        <i class="icon font-size-40 margin-right-15 fa fa-wechat" aria-hidden="true"></i>
-                                        微信
+                                        <i class="icon font-size-40 mr-15 fa-qq" aria-hidden="true"></i> QQ
                                     </div>
                                     <div class="item">
-                                        <i class="icon font-size-40 margin-right-15 fa fa-qq" aria-hidden="true"></i> QQ
+                                        <i class="icon font-size-40 mr-15 fa-weibo" aria-hidden="true"></i> 微博
                                     </div>
                                     <div class="item">
-                                        <i class="icon font-size-40 margin-right-15 fa fa-weibo" aria-hidden="true"></i> 微博
+                                        <i class="icon font-size-40 mr-15 fa-wechat" aria-hidden="true"></i> 微信
+                                    </div>
+                                    <div class="item">
+                                        <i class="icon font-size-40 mr-15 fa-linkedin" aria-hidden="true"></i> Linkedin
+                                    </div>
+                                    <div class="item">
+                                        <i class="icon font-size-40 mr-15 fa-html5" aria-hidden="true"></i> HTML5
+                                    </div>
+                                    <div class="item">
+                                        <i class="icon font-size-40 mr-15 fa-css3" aria-hidden="true"></i> CSS3
                                     </div>
                                 </div>
                             </div>
@@ -595,49 +601,50 @@
 
                         <div class="example-wrap">
                             <h4 class="example-title">简单组合</h4>
-                            <div class="example margin-bottom-0">
-                                <div class="owl-carousel-portfolio owl-carousel-navOut owl-carousel owl-theme" data-plugin="owlCarousel" data-margin="30">
-                                    <div class="item">
-                                        <div class="cover">
-                                            <img class="cover-image" src="/views/examples/images/photos/city-1.jpg" alt="...">
+                            <div class="example mb-0">
+                                <div class="owl-carousel owl-carousel-portfolio owl-carousel-navOut" data-plugin="owlCarousel"
+                                        data-margin="30">
+                                    <div class="item card">
+                                        <img class="card-img-top" src="/views/examples/images/photos/city-1.jpg" alt="...">
+                                        <div class="card-block px-0">
+                                            <h4 class="card-title">标题</h4>
+                                            <p class="card-title">内容描述</p>
                                         </div>
-                                        <h4>标题</h4>
-                                        <p>内容描述</p>
                                     </div>
-                                    <div class="item">
-                                        <div class="cover">
-                                            <img class="cover-image" src="/views/examples/images/photos/city-2.jpg" alt="...">
+                                    <div class="item card">
+                                        <img class="card-img-top" src="/views/examples/images/photos/city-2.jpg" alt="...">
+                                        <div class="card-block px-0">
+                                            <h4 class="card-title">标题</h4>
+                                            <p class="card-title">内容描述</p>
                                         </div>
-                                        <h4>标题</h4>
-                                        <p>内容描述</p>
                                     </div>
-                                    <div class="item">
-                                        <div class="cover">
-                                            <img class="cover-image" src="/views/examples/images/photos/city-3.jpg" alt="...">
+                                    <div class="item card">
+                                        <img class="card-img-top" src="/views/examples/images/photos/city-3.jpg" alt="...">
+                                        <div class="card-block px-0">
+                                            <h4 class="card-title">标题</h4>
+                                            <p class="card-title">内容描述</p>
                                         </div>
-                                        <h4>标题</h4>
-                                        <p>内容描述</p>
                                     </div>
-                                    <div class="item">
-                                        <div class="cover">
-                                            <img class="cover-image" src="/views/examples/images/photos/city-4.jpg" alt="...">
+                                    <div class="item card">
+                                        <img class="card-img-top" src="/views/examples/images/photos/city-4.jpg" alt="...">
+                                        <div class="card-block px-0">
+                                            <h4 class="card-title">标题</h4>
+                                            <p class="card-title">内容描述</p>
                                         </div>
-                                        <h4>标题</h4>
-                                        <p>内容描述</p>
                                     </div>
-                                    <div class="item">
-                                        <div class="cover">
-                                            <img class="cover-image" src="/views/examples/images/photos/city-5.jpg" alt="...">
+                                    <div class="item card">
+                                        <img class="card-img-top" src="/views/examples/images/photos/city-5.jpg" alt="...">
+                                        <div class="card-block px-0">
+                                            <h4 class="card-title">标题</h4>
+                                            <p class="card-title">内容描述</p>
                                         </div>
-                                        <h4>标题</h4>
-                                        <p>内容描述</p>
                                     </div>
-                                    <div class="item">
-                                        <div class="cover">
-                                            <img class="cover-image" src="/views/examples/images/photos/city-6.jpg" alt="...">
+                                    <div class="item card">
+                                        <img class="card-img-top" src="/views/examples/images/photos/city-6.jpg" alt="...">
+                                        <div class="card-block px-0">
+                                            <h4 class="card-title">标题</h4>
+                                            <p class="card-title">内容描述</p>
                                         </div>
-                                        <h4>标题</h4>
-                                        <p>内容描述</p>
                                     </div>
                                 </div>
                             </div>

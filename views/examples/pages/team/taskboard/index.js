@@ -13,22 +13,22 @@
         stageTpl: function (title) {
             return '<li class="taskboard-stage">' +
                 '<header class="taskboard-stage-header">' +
-                '<div class="taskboard-stage-actions pull-right">' +
-                '<div class="dropdown">' +
-                '<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><i class="icon wb-chevron-down" aria-hidden="true"></i></a>' +
-                '<ul class="dropdown-menu bullet" role="menu">' +
-                '<li role="presentation" class="taskboard-stage-rename"><a href="javascript:;" role="menuitem"><i class="icon wb-pencil" aria-hidden="true"></i>重命名</a></li>' +
-                '<li role="presentation" class="taskboard-stage-delete" ><a href="javascript:;" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>删除</a></li>' +
-                '<li class="taskboard-stage-rename-wrap">' +
-                '<div class="form-group">' +
-                '<input class="form-control taskboard-stage-rename-input" type="text" value="' + title + '" name="name">' +
-                '</div>' +
-                '<button class="btn btn-primary btn-block taskboard-stage-rename-save" type="button">保存</button>' +
-                '</li>' +
-                '</ul>' +
-                '</div>' +
-                '</div>' +
-                '<h5 class="taskboard-stage-title">' + title + '</h5>' +
+                    '<div class="taskboard-stage-actions float-right">' +
+                        '<div class="dropdown">' +
+                            '<a data-toggle="dropdown" href="#" aria-expanded="false"><i class="icon wb-chevron-down" aria-hidden="true"></i></a>' +
+                            '<div class="dropdown-menu bullet" role="menu">' +
+                                '<a role="presentation" class="dropdown-item taskboard-stage-rename"><i class="icon wb-pencil" aria-hidden="true"></i>重命名</a>' +
+                                '<a role="presentation" class="dropdown-item taskboard-stage-delete" ><i class="icon wb-trash" aria-hidden="true"></i>删除</a>' +
+                                '<div class="dropdown-item taskboard-stage-rename-wrap">' +
+                                    '<div class="form-group">' +
+                                        '<input class="form-control taskboard-stage-rename-input" type="text" value="' + title + '" name="name">' +
+                                    '</div>' +
+                                    '<button class="btn btn-primary btn-block taskboard-stage-rename-save" type="button">保存</button>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>' +
+                    '<h5 class="taskboard-stage-title">' + title + '</h5>' +
                 '</header>' +
                 '<div class="taskboard-stage-content">' +
                 '<ul class="list-group taskboard-list">' +
@@ -136,7 +136,7 @@
 
         commentTpl: function (src, user, time, content) {
             return '<div class="comment media">' +
-                '<div class="media-left">' +
+                '<div class="pr-20">' +
                 '<a class="avatar avatar-lg" href="javascript:;">' +
                 '<img src="' + src + '" alt="...">' +
                 '</a>' +

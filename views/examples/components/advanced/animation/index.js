@@ -6,16 +6,16 @@
 (function (document, window, $) {
     'use strict';
 
-    $('#example-select-loader').on('click', '.select-loader', function () {
-        var type = $(this).data('type'),
-            curr = $('.example-loading .loader').data('type');
+    // $('#example-select-loader').on('click', '.select-loader', function () {
+    //     var type = $(this).data('type'),
+    //         curr = $('.example-loading .loader').data('type');
 
-        if (type === curr) {
-            return;
-        }
-        $('.example-loading .loader').removeClass('loader-' + curr).addClass('loader-' + type).data('type', type);
+    //     if (type === curr) {
+    //         return;
+    //     }
+    //     $('.example-loading .loader').removeClass('loader-' + curr).addClass('loader-' + type).data('type', type);
 
-    });
+    // });
 
     // NProgress
     // -----------------

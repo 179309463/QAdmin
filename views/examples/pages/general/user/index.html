@@ -1,8 +1,8 @@
-<title>客户列表</title>
+<title>客户列表 - 页面示例</title>
 
 <link rel="stylesheet" href="/views/examples/pages/general/user/index.css">
 
-<div class="page page-full animation-fade page-user">
+<div class="page animation-fade page-user">
     <div class="page-content">
 
         <div class="panel">
@@ -15,49 +15,37 @@
                     </div>
                 </form>
                 <div class="nav-tabs-horizontal">
-                    <div class="dropdown page-user-sortlist hidden-xs">
-                        排序：
-                        <a class="dropdown-toggle inline-block" data-toggle="dropdown" href="#" aria-expanded="false">
-                            最后登录<span class="caret"></span>
+                    <div class="dropdown page-user-sortlist d-none d-sm-block">
+                        排序方式：
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">
+                            最后登录
                         </a>
-                        <ul class="dropdown-menu animation-scale-up animation-top-right animation-duration-250 dropdown-menu-right" role="menu">
-                            <li class="active" role="presentation">
-                                <a href="javascript:;">最近联系</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="javascript:;">用户名</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="javascript:;">地址</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="javascript:;">注册日期</a>
-                            </li>
-                        </ul>
+                        <div class="dropdown-menu animation-scale-up animation-top-right animation-duration-250 dropdown-menu-right"
+                                aria-labelledby="exampleSizingDropdown4" role="menu">
+                            <a class="dropdown-item active" href="javascript:;" role="menuitem">最近联系</a>
+                            <a class="dropdown-item" href="javascript:;" role="menuitem">用户名</a>
+                            <a class="dropdown-item" href="javascript:;" role="menuitem">地址</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:;" role="menuitem">注册日期</a>
+                        </div>
                     </div>
                     <ul class="nav nav-tabs nav-tabs-line" role="tablist">
-                        <li class="active" role="presentation">
-                            <a data-toggle="tab" href="#all_contacts" aria-controls="all_contacts" role="tab">所有客户</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#all_contacts" aria-controls="all_contacts"
+                                role="tab">所有客户</a>
                         </li>
-                        <li role="presentation">
-                            <a data-toggle="tab" href="#my_contacts" aria-controls="my_contacts" role="tab">我的客户</a>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#my_contacts" aria-controls="my_contacts" role="tab">我的客户</a>
                         </li>
-                        <li class="dropdown" role="presentation">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-                                <span class="caret"></span> 客户
+                        <li class="nav-item dropdown" role="presentation">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:;"
+                                aria-expanded="false">
+                                客户
                             </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li role="presentation">
-                                    <a data-toggle="tab" href="#all_contacts" aria-controls="all_contacts" role="tab">
-                                        所有客户
-                                    </a>
-                                </li>
-                                <li class="active" role="presentation">
-                                    <a data-toggle="tab" href="#my_contacts" aria-controls="my_contacts" role="tab">
-                                        我的客户
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="dropdown-menu" role="menu">
+                                <a class="dropdown-item" data-toggle="tab" href="#" aria-controls="all_contacts" role="tab">其他客户</a>
+                                <a class="dropdown-item" data-toggle="tab" href="#" aria-controls="my_contacts" role="tab">观望客户</a>
+                            </div>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -65,14 +53,14 @@
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-online">
-                                                <img src="/views/examples/images/portraits/1.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/1.jpg" alt="...">
                                                 <i class="avatar avatar-busy"></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 李霞
                                                 <small>最近联系：1 小时前</small>
                                             </h4>
@@ -81,15 +69,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -100,14 +93,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-away">
-                                                <img src="/views/examples/images/portraits/2.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/2.jpg" alt="...">
                                                 <i class="avatar avatar-busy"></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 杜重治
                                                 <small>最近联系：2 小时前</small>
                                             </h4>
@@ -116,15 +109,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -135,14 +133,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-busy">
-                                                <img src="/views/examples/images/portraits/3.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/3.jpg" alt="...">
                                                 <i class="avatar avatar-busy"></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 陈锋
                                                 <small>最近联系：3 小时前</small>
                                             </h4>
@@ -151,15 +149,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -171,14 +174,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-off">
-                                                <img src="/views/examples/images/portraits/4.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/4.jpg" alt="...">
                                                 <i class="avatar avatar-busy"></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 郑伯宁
                                                 <small>最近联系：4 小时前</small>
                                             </h4>
@@ -187,15 +190,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -207,14 +215,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-online">
-                                                <img src="/views/examples/images/portraits/5.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/5.jpg" alt="...">
                                                 <i class="avatar avatar-busy"></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 施华军
                                                 <small>最近联系：5 小时前</small>
                                             </h4>
@@ -223,15 +231,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -242,14 +255,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-away">
-                                                <img src="/views/examples/images/portraits/6.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/6.jpg" alt="...">
                                                 <i class="avatar avatar-busy"></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 吴书振
                                                 <small>最近联系：6 小时前</small>
                                             </h4>
@@ -258,15 +271,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -278,14 +296,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-busy">
-                                                <img src="/views/examples/images/portraits/7.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/7.jpg" alt="...">
                                                 <i class="avatar avatar-busy"></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 张宁
                                                 <small>最近联系：7 小时前</small>
                                             </h4>
@@ -294,15 +312,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -314,14 +337,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-off">
-                                                <img src="/views/examples/images/portraits/8.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/8.jpg" alt="...">
                                                 <i class="avatar avatar-busy"></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 马世波
                                                 <small>最近联系：8 小时前</small>
                                             </h4>
@@ -330,15 +353,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -349,14 +377,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-online">
-                                                <img src="/views/examples/images/portraits/9.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/9.jpg" alt="...">
                                                 <i class="avatar avatar-busy"></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 张章
                                                 <small>最近联系：9 小时前</small>
                                             </h4>
@@ -365,15 +393,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -384,14 +417,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-away">
-                                                <img src="/views/examples/images/portraits/10.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/10.jpg" alt="...">
                                                 <i class="avatar avatar-busy"></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 张竹影
                                                 <small>最近联系：10 小时前</small>
                                             </h4>
@@ -400,15 +433,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -420,14 +458,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-busy">
-                                                <img src="/views/examples/images/portraits/11.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/11.jpg" alt="...">
                                                 <i class="avatar avatar-busy"></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 韩庆福
                                                 <small>最近联系：11 小时前</small>
                                             </h4>
@@ -436,15 +474,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -455,14 +498,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-off">
-                                                <img src="/views/examples/images/portraits/12.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/12.jpg" alt="...">
                                                 <i class="avatar avatar-busy"></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 刘勇
                                                 <small>最近联系：12 小时前</small>
                                             </h4>
@@ -471,15 +514,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -497,14 +545,14 @@
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-online">
-                                                <img src="/views/examples/images/portraits/13.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/13.jpg" alt="...">
                                                 <i></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 尚志兴
                                                 <small>最近联系：1 小时前</small>
                                             </h4>
@@ -513,15 +561,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -532,14 +585,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-away">
-                                                <img src="/views/examples/images/portraits/14.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/14.jpg" alt="...">
                                                 <i></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 杜若芳
                                                 <small>最近联系：2 小时前</small>
                                             </h4>
@@ -548,15 +601,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -568,14 +626,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-busy">
-                                                <img src="/views/examples/images/portraits/15.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/15.jpg" alt="...">
                                                 <i></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 杨乔松
                                                 <small>最近联系：3 小时前</small>
                                             </h4>
@@ -584,15 +642,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -603,14 +666,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-off">
-                                                <img src="/views/examples/images/portraits/16.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/16.jpg" alt="...">
                                                 <i></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 闫跃进
                                                 <small>最近联系：4 小时前</small>
                                             </h4>
@@ -619,15 +682,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -638,14 +706,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-online">
-                                                <img src="/views/examples/images/portraits/17.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/17.jpg" alt="...">
                                                 <i></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 孙凯
                                                 <small>最近联系：5 小时前</small>
                                             </h4>
@@ -654,15 +722,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -674,14 +747,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-away">
-                                                <img src="/views/examples/images/portraits/18.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/18.jpg" alt="...">
                                                 <i></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 赖祥校
                                                 <small>最近联系：6 小时前</small>
                                             </h4>
@@ -690,15 +763,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -709,14 +787,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-busy">
-                                                <img src="/views/examples/images/portraits/19.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/19.jpg" alt="...">
                                                 <i></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 郭晖
                                                 <small>最近联系：7 小时前</small>
                                             </h4>
@@ -725,15 +803,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -744,14 +827,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-off">
-                                                <img src="/views/examples/images/portraits/20.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/20.jpg" alt="...">
                                                 <i></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 贺光明
                                                 <small>最近联系：8 小时前</small>
                                             </h4>
@@ -760,15 +843,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -780,14 +868,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-online">
-                                                <img src="/views/examples/images/portraits/1.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/1.jpg" alt="...">
                                                 <i></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 邓小燕
                                                 <small>最近联系：9 小时前</small>
                                             </h4>
@@ -796,15 +884,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -815,14 +908,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-away">
-                                                <img src="/views/examples/images/portraits/2.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/2.jpg" alt="...">
                                                 <i></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 白莉惠
                                                 <small>最近联系：10 小时前</small>
                                             </h4>
@@ -831,15 +924,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -850,14 +948,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="pr-0 pr-sm-20 align-self-center">
                                             <div class="avatar avatar-busy">
-                                                <img src="/views/examples/images/portraits/3.jpg" alt="...">
+                                                <img src="http://cdn.admui.com/demo/pjax/2.0.0/images/portraits/3.jpg" alt="...">
                                                 <i></i>
                                             </div>
                                         </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
+                                        <div class="media-body align-self-center">
+                                            <h4 class="mt-0 mb-10">
                                                 杨海霞
                                                 <small>最近联系：11 小时前</small>
                                             </h4>
@@ -866,15 +964,20 @@
                                             </p>
                                             <div>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-envelope" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color wb-mobile" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-qq" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-qq" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-wechat" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-wechat" aria-hidden="true"></i>
+                                                </a>
                                                 <a class="text-action" href="javascript:;">
-                                                    <i class="icon icon-color fa fa-weibo" aria-hidden="true"></i></a>
+                                                    <i class="icon icon-color fa-weibo" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="media-right">
@@ -895,5 +998,7 @@
 
     </div>
 </div>
+
+
 
 <script src="/vendor/twbs-pagination/jquery.twbsPagination.min.js"></script>

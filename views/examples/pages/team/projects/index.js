@@ -35,7 +35,7 @@
                     img: '/views/examples/images/portraits/2.jpg'
                 }];
 
-            $('[data-plugin="jquery-selective"]').selective({
+            $('#jquery-selective').selective({
                 namespace: 'addMember',
                 local: members,
                 selected: selected,

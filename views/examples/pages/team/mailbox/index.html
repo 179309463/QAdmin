@@ -1,4 +1,4 @@
-<title>邮箱</title>
+<title>邮箱 - 页面示例</title>
 
 <link rel="stylesheet" href="/lib/select2/dist/css/select2.css">
 <link rel="stylesheet" href="/lib/bootstrap-markdown/css/bootstrap-markdown.min.css">
@@ -6,25 +6,26 @@
 <link rel="stylesheet" href="/lib/jquery-slidePanel/dist/css/slidePanel.css">
 <link rel="stylesheet" href="/views/examples/pages/team/mailbox/index.css">
 
-<div class="page page-full bg-white animsition fade-in page-mailbox">
+<div class="page bg-white page-mailbox page-aside-fixed page-aside-left page-full">
 
     <div class="page-aside">
         <div class="page-aside-switch">
             <i class="icon wb-chevron-left" aria-hidden="true"></i>
             <i class="icon wb-chevron-right" aria-hidden="true"></i>
         </div>
-        <div class="page-aside-inner height-full" data-plugin="slimScroll">
+        <div class="page-aside-inner h-full" data-plugin="mCustomScrollbar">
             <div class="page-aside-section">
                 <div class="list-group">
                     <a class="list-group-item active" href="javascript:;">
-                        <span class="badge badge-danger">6</span>
+                        <span class="badge badge-pill badge-danger">6</span>
                         <i class="icon wb-inbox" aria-hidden="true"></i>收件箱
                     </a>
                     <a class="list-group-item" href="javascript:;">
                         <i class="icon wb-envelope" aria-hidden="true"></i>已发送
                     </a>
                     <a class="list-group-item" href="javascript:;">
-                        <span class="badge badge-info">2</span><i class="icon wb-edit" aria-hidden="true"></i>草稿箱
+                        <span class="badge badge-pill badge-info">2</span>
+                        <i class="icon wb-edit" aria-hidden="true"></i>草稿箱
                     </a>
                     <a class="list-group-item" href="javascript:;">
                         <i class="icon wb-star" aria-hidden="true"></i>标星邮件
@@ -42,14 +43,19 @@
                             <i class="item-right wb-medium-point red-600" aria-hidden="true"></i>
                             <span class="list-text">工作</span>
                             <div class="item-actions">
-                                <span class="btn btn-pure btn-icon" data-toggle="list-editable"><i class="icon wb-edit" aria-hidden="true"></i></span>
-                                <span class="btn btn-pure btn-icon" data-tag="list-delete"><i class="icon wb-trash" aria-hidden="true"></i></span>
+                                <span class="btn btn-pure btn-icon" data-toggle="list-editable">
+                                    <i class="icon wb-edit" aria-hidden="true"></i>
+                                </span>
+                                <span class="btn btn-pure btn-icon" data-tag="list-delete">
+                                    <i class="icon wb-trash" aria-hidden="true"></i>
+                                </span>
                             </div>
                         </div>
                         <div class="list-editable">
                             <div class="form-group form-material">
                                 <input type="text" class="form-control empty" name="label" data-bind=".list-text" value="Work">
-                                <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close" aria-label="关闭" aria-expanded="true"></button>
+                                <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close"
+                                        aria-label="关闭" aria-expanded="true"></button>
                             </div>
                         </div>
                     </div>
@@ -58,14 +64,19 @@
                             <i class="item-right wb-medium-point orange-600" aria-hidden="true"></i>
                             <span class="list-text">家庭</span>
                             <div class="item-actions">
-                                <span class="btn btn-pure btn-icon" data-toggle="list-editable"><i class="icon wb-edit" aria-hidden="true"></i></span>
-                                <span class="btn btn-pure btn-icon" data-tag="list-delete"><i class="icon wb-trash" aria-hidden="true"></i></span>
+                                <span class="btn btn-pure btn-icon" data-toggle="list-editable">
+                                    <i class="icon wb-edit" aria-hidden="true"></i>
+                                </span>
+                                <span class="btn btn-pure btn-icon" data-tag="list-delete">
+                                    <i class="icon wb-trash" aria-hidden="true"></i>
+                                </span>
                             </div>
                         </div>
                         <div class="list-editable">
                             <div class="form-group form-material">
                                 <input type="text" class="form-control empty" name="label" data-bind=".list-text" value="Family">
-                                <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close" aria-label="关闭" aria-expanded="true"></button>
+                                <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close"
+                                        aria-label="关闭" aria-expanded="true"></button>
                             </div>
                         </div>
                     </div>
@@ -74,14 +85,19 @@
                             <i class="item-right wb-medium-point cyan-600" aria-hidden="true"></i>
                             <span class="list-text">个人</span>
                             <div class="item-actions">
-                                <span class="btn btn-pure btn-icon" data-toggle="list-editable"><i class="icon wb-edit" aria-hidden="true"></i></span>
-                                <span class="btn btn-pure btn-icon" data-tag="list-delete"><i class="icon wb-trash" aria-hidden="true"></i></span>
+                                <span class="btn btn-pure btn-icon" data-toggle="list-editable">
+                                    <i class="icon wb-edit" aria-hidden="true"></i>
+                                </span>
+                                <span class="btn btn-pure btn-icon" data-tag="list-delete">
+                                    <i class="icon wb-trash" aria-hidden="true"></i>
+                                </span>
                             </div>
                         </div>
                         <div class="list-editable">
                             <div class="form-group form-material">
                                 <input type="text" class="form-control empty" name="label" data-bind=".list-text" value="Private">
-                                <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close" aria-label="关闭" aria-expanded="true"></button>
+                                <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close"
+                                        aria-label="关闭" aria-expanded="true"></button>
                             </div>
                         </div>
                     </div>
@@ -90,14 +106,19 @@
                             <i class="item-right wb-medium-point green-600" aria-hidden="true"></i>
                             <span class="list-text">朋友</span>
                             <div class="item-actions">
-                                <span class="btn btn-pure btn-icon" data-toggle="list-editable"><i class="icon wb-edit" aria-hidden="true"></i></span>
-                                <span class="btn btn-pure btn-icon" data-tag="list-delete"><i class="icon wb-trash" aria-hidden="true"></i></span>
+                                <span class="btn btn-pure btn-icon" data-toggle="list-editable">
+                                    <i class="icon wb-edit" aria-hidden="true"></i>
+                                </span>
+                                <span class="btn btn-pure btn-icon" data-tag="list-delete">
+                                    <i class="icon wb-trash" aria-hidden="true"></i>
+                                </span>
                             </div>
                         </div>
                         <div class="list-editable">
                             <div class="form-group form-material">
-                                <input type="text" class="form-control empty" name="label" data-bind=".list-text" value="Friends">
-                                <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close" aria-label="关闭" aria-expanded="true"></button>
+                                <input type="text" class="form-control empty" name="label" data-bind=".list-text" value="好友">
+                                <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close"
+                                        aria-label="关闭" aria-expanded="true"></button>
                             </div>
                         </div>
                     </div>
@@ -123,35 +144,9 @@
             </div>
         </div>
 
-        <div class="page-content page-content-table" data-selectable="selectable">
+        <div class="page-content page-content-table pb-20" data-selectable="selectable">
 
             <div class="page-content-actions">
-                <div class="pull-right filter">
-                    <span>筛选：</span>
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-pure dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                            全选 <span class="icon wb-chevron-down-mini" aria-hidden="true"></span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-right animation-scale-up animation-top-right animation-duration-250" role="menu">
-                            <li>
-                                <a href="javascript:;">全选</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">已读</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">未读</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="javascript:;">标星</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">未标星</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="actions-main">
                     <span class="checkbox-custom checkbox-primary checkbox-lg inline-block vertical-align-bottom">
                         <input type="checkbox" class="mailbox-checkbox selectable-all" id="select_all">
@@ -159,49 +154,48 @@
                     </span>
                     <div class="btn-group">
                         <div class="dropdown">
-                            <button class="btn btn-icon btn-pure btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">
-                                <i class="icon wb-folder" aria-hidden="true" data-toggle="tooltip" data-original-title="文件夹" data-container="body" title=""></i>
+                            <button class="btn btn-icon btn-pure btn-default" data-toggle="dropdown" aria-expanded="false"
+                                    type="button">
+                                <i class="icon wb-folder" aria-hidden="true" data-toggle="tooltip" data-original-title="文件夹"
+                                    data-container="body" title=""></i>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li>
-                                    <a href="javascript:;">工作</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">家庭</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">个人</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">朋友</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="javascript:;">回收站</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">垃圾邮件</a>
-                                </li>
-                            </ul>
+                            <div class="dropdown-menu" role="menu">
+                                <a class="dropdown-item" href="javascript:;">工作</a>
+                                <a class="dropdown-item" href="javascript:;">家庭</a>
+                                <a class="dropdown-item" href="javascript:;">个人</a>
+                                <a class="dropdown-item" href="javascript:;">朋友</a>
+                                <li class="dropdown-divider"></li>
+                                <a class="dropdown-item" href="javascript:;">回收站</a>
+                                <a class="dropdown-item" href="javascript:;">垃圾邮件</a>
+                            </div>
                         </div>
                         <div class="dropdown">
-                            <button class="btn btn-icon btn-pure btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">
-                                <i class="icon wb-tag" aria-hidden="true" data-toggle="tooltip" data-original-title="标签" data-container="body" title=""></i>
+                            <button class="btn btn-icon btn-pure btn-default" data-toggle="dropdown" aria-expanded="false"
+                                    type="button">
+                                <i class="icon wb-tag" aria-hidden="true" data-toggle="tooltip" data-original-title="标签"
+                                    data-container="body" title=""></i>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li>
-                                    <a href="javascript:;">工作</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">家庭</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">个人</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">朋友</a>
-                                </li>
-                            </ul>
+                            <div class="dropdown-menu" role="menu">
+                                <a class="dropdown-item" href="javascript:;">工作</a>
+                                <a class="dropdown-item" href="javascript:;">家庭</a>
+                                <a class="dropdown-item" href="javascript:;">个人</a>
+                                <a class="dropdown-item" href="javascript:;">朋友</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-pure" data-toggle="dropdown" aria-expanded="false">
+                                全选
+                                <span class="icon wb-chevron-down-mini" aria-hidden="true"></span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right animation-scale-up animation-top-right animation-duration-250"
+                                    role="menu">
+                                <a class="dropdown-item" href="javascript:;">全选</a>
+                                <a class="dropdown-item" href="javascript:;">已读</a>
+                                <a class="dropdown-item" href="javascript:;">未读</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:;">标星</a>
+                                <a class="dropdown-item" href="javascript:;">未标星</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -211,7 +205,7 @@
                 <tbody></tbody>
             </table>
 
-            <ul data-plugin="twbsPagination" data-total-pages="50" data-pagination-class="pagination pagination-gap"></ul>
+            <ul data-plugin="twbsPagination" data-total-pages="50" data-pagination-class="pagination pagination-no-border"></ul>
         </div>
     </div>
     <div class="site-action">
@@ -240,7 +234,8 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <select id="topicTo" class="form-control" data-plugin="select2" multiple="multiple" data-placeholder="收件人：">
+                        <select id="topicTo" class="form-control" data-plugin="select2" multiple="multiple"
+                                data-placeholder="收件人：">
                             <optgroup label="">
                                 <option value="AK">梅小燕 - meixiaoyan@qq.com</option>
                                 <option value="HI">唐雪琴 - xueqin@163.com</option>
@@ -285,15 +280,18 @@
     </div>
 </div>
 
+
 <script src="/vendor/bootstrap-markdown/js/bootstrap-markdown.js" data-name="markdown"></script>
 <script src="/vendor/bootstrap-markdown/locale/bootstrap-markdown.zh.js" data-deps="markdown"></script>
 <script src="/vendor/select2/dist/js/select2.min.js"></script>
 <script src="/vendor/marked/marked.min.js"></script>
 <script src="/vendor/to-markdown/dist/to-markdown.js"></script>
+
 <script src="/vendor/twbs-pagination/jquery.twbsPagination.min.js"></script>
 <script src="/vendor/bootbox.js/bootbox.js"></script>
 <script src="/vendor/jquery-slidePanel/dist/jquery-slidePanel.min.js"></script>
 <script src="/themes/classic/global/js/plugins/action-btn.js"></script>
 <script src="/themes/classic/global/js/plugins/selectable.js"></script>
+
 <script src="/themes/classic/base/js/app.js" data-name="app"></script>
 <script src="/views/examples/pages/team/mailbox/index.js" data-deps="app"></script>

@@ -27,7 +27,7 @@
 				var $item = $(this);
 				
 				if ($.site.menubar.folded === true && $item.is('.has-sub') && $item.parent('.site-menu').length > 0) {
-					self.position($item, $item.children('.site-menu-sub'));
+					//self.position($item, $item.children('.site-menu-sub'));
                     $('body').addClass('site-menubar-fold-hover');
 				}
 				
@@ -35,7 +35,7 @@
 			}).on('mouseleave.site.menu', '.site-menu-item', function () {
 				var $item = $(this);
 				if ($.site.menubar.folded === true && $item.is('.has-sub') && $item.parent('.site-menu').length > 0) {
-					$item.children('.site-menu-sub').css("max-height", "");
+					$item.children('.site-menu-sub');//.css("max-height", "");
                     $('body').removeClass('site-menubar-fold-hover');
 				}
 				
@@ -161,22 +161,22 @@
 				menubarHeight = $.site.menubar.$instance.outerHeight(),
 				itemHeight = $item.find("> a").outerHeight();
 			
-			$dropdown.removeClass('site-menu-sub-up').css('max-height', "");
+			//$dropdown.removeClass('site-menu-sub-up');//.css('max-height', "");
 			
-			if (offsetTop > menubarHeight / 2) {
-				$dropdown.addClass('site-menu-sub-up');
+			// if (offsetTop > menubarHeight / 2) {
+			// 	//$dropdown.addClass('site-menu-sub-up');
 				
-				if ($.site.menubar.foldAlt) {
-					offsetTop = offsetTop - itemHeight;
-				}
-				$dropdown.css('max-height', offsetTop + itemHeight);
-			} else {
-				if ($.site.menubar.foldAlt) {
-					offsetTop = offsetTop + itemHeight;
-				}
-				$dropdown.removeClass('site-menu-sub-up');
-				$dropdown.css('max-height', menubarHeight - offsetTop);
-			}
+			// 	if ($.site.menubar.foldAlt) {
+			// 		offsetTop = offsetTop - itemHeight;
+			// 	}
+			// 	//$dropdown.css('max-height', offsetTop + itemHeight);
+			// } else {
+			// 	if ($.site.menubar.foldAlt) {
+			// 		offsetTop = offsetTop + itemHeight;
+			// 	}
+			// 	//$dropdown.removeClass('site-menu-sub-up');
+			// 	//$dropdown.css('max-height', menubarHeight - offsetTop);
+			// }
 		}
 	};
 })(window, document, jQuery);

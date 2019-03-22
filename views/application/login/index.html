@@ -118,7 +118,7 @@
                             </div>
                         </h3>
                         <p class="description">QAdmin 在线演示系统</p>
-                        <form class="login-form" action="/loginValidate" method="post" id="loginForm">
+                        <form class="login-form" action="/" method="get" id="loginForm">
                             <div class="form-group">
                                 <label class="sr-only"  for="userName">选择身份</label>
                                 <select class="form-control" id="identity">
@@ -142,7 +142,7 @@
                                     <input type="text" class="form-control"  id="verifyCode" name="verifyCode" placeholder="请输入验证码">
                                     <div class="input-group-append">
                                         <a href="javascript:;" class="btn btn-default btn-outline p-0 m-0 reload-vify">
-                                            <img src="/captcha"  height="40">
+                                            <img src="/views/application/login/images/captcha.png"  height="40">
                                         </a>
                                     </div>
                                 </div>

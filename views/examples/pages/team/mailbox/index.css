@@ -1,166 +1,195 @@
-/**
- * QAdmin v1.2.0 (http://www.qadmin.com/)
- * Copyright 2015-2017 QAdmin Team
- * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
- */
+@charset "UTF-8";
+
+
 .page-mailbox .identity {
-	white-space: nowrap;
+	white-space: nowrap
 }
+
 .page-mailbox .page-content-actions .btn-group {
-	margin-left: 8px;
+	margin-left: 8px
 }
+
 .page-mailbox .page-content-actions .btn-pure.btn-default {
-	color: #a3afb7;
+	color: #a3afb7
 }
-.page-mailbox .page-content-actions .btn-pure.btn-default.active, .page-mailbox .page-content-actions .btn-pure.btn-default:focus, .page-mailbox .page-content-actions .btn-pure.btn-default:hover {
-	color: #76838f;
+
+.page-mailbox .page-content-actions .btn-pure.btn-default.active,.page-mailbox .page-content-actions .btn-pure.btn-default:focus,.page-mailbox .page-content-actions .btn-pure.btn-default:hover {
+	color: #76838f
 }
+
 .page-mailbox .checkbox-important {
-	position: relative;
-	padding: 9px 0 0 14px;
 	margin-bottom: 4px;
+	padding: 9px 0 0 14px;
+	position: relative
 }
-.page-mailbox .checkbox-important input[type="checkbox"] {
-	position: absolute;
-	top: 50%;
+
+.page-mailbox .checkbox-important input[type=checkbox] {
+	cursor: pointer;
 	left: 3px;
-	z-index: 2;
 	margin: -2px 0 0;
-	cursor: pointer;
 	opacity: 0;
-}
-.page-mailbox .checkbox-important input[type="checkbox"]:checked + label:before {
-	color: #f2a654;
-	background-color: transparent;
-}
-.page-mailbox .checkbox-important label {
-	margin-bottom: 0;
-	font-weight: normal;
-	line-height: 1.2;
-	text-align: left;
-	cursor: pointer;
-}
-.page-mailbox .checkbox-important label:before {
 	position: absolute;
 	top: 50%;
-	left: 4px;
+	z-index: 2
+}
+
+.page-mailbox .checkbox-important input[type=checkbox]:checked+label:before {
+	background-color: transparent;
+	color: #eb6709
+}
+
+.page-mailbox .checkbox-important label {
+	cursor: pointer;
+	line-height: 1.2;
+	margin-bottom: 0;
+	text-align: left;
+	font-weight: 400
+}
+
+.page-mailbox .checkbox-important label:before {
+	color: #e4eaec;
+	content: "";
 	display: inline-block;
-	width: 16px;
-	height: 16px;
-	margin-top: -4px;
 	font-family: "Web Icons";
 	font-size: 16px;
-	font-weight: bold;
+	height: 16px;
+	left: 4px;
 	line-height: 1;
-	color: #e4eaec;
-	content: "\f1a3";
+	margin-top: -4px;
+	position: absolute;
+	top: 50%;
+	width: 16px;
+	font-weight: 700
 }
+
 .page-mailbox .table {
 	table-layout: fixed;
-	border-collapse: unset;
+	border-collapse: collapse
 }
+
 .page-mailbox .table td {
-	vertical-align: middle;
+	vertical-align: middle
 }
+
 .page-mailbox .table .avatar {
-	margin-left: 10px;
+	margin-left: 10px
 }
-.page-mailbox .table .content > * {
+
+.page-mailbox .table .content>* {
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;
+	white-space: nowrap
 }
+
 .page-mailbox .table .title {
-	color: #526069;
+	color: #526069
 }
-.page-mailbox .table .time {
-	color: #a3afb7;
+
+.page-mailbox .table .time,.slidePanel .mail-header .time {
+	color: #a3afb7
 }
-.page-mailbox .table .identity .icon {
-	margin-right: 8px;
+
+.page-mailbox .table .identity>i {
+	margin-right: 8px
 }
-.page-mailbox .table .unread > td:first-child {
-	border-left: 1px solid #62a8ea;
+
+.page-mailbox .table .unread>td:first-child {
+	border-left: 1px solid #3e8ef7
 }
-@media (max-width: 767px) {
+
+.page-mailbox .select2-container {
+	z-index: 1700
+}
+
+@media (max-width:767.98px) {
 	.page-mailbox .responsive-hide {
-		display: none;
+		display: none
 	}
 }
-@media (max-width: 480px) {
+
+.slidePanel .mail-header::after,.slidePanel-header::after {
+	display: block;
+	clear: both;
+	content: ""
+}
+
+@media (max-width:479.98px) {
 	.page-mailbox .page-header .page-header-actions {
+		margin-top: 20px;
 		position: relative;
 		top: 0;
 		right: 0;
-		margin-top: 20px;
 		-webkit-transform: none;
-		    -ms-transform: none;
-		     -o-transform: none;
-		        transform: none;
+		transform: none
 	}
+
 	.page-mailbox .page-content-actions .actions-right {
-		display: block;
 		float: none;
+		display: block
 	}
 }
+
 .slidePanel-header {
-	background-color: #57c7d4;
+	background-color: #0bb2d4
 }
-.slidePanel-header:before, .slidePanel-header:after {
-	display: table;
-	content: " ";
+
+.slidePanel .actions-top {
+	position: absolute;
+	top: 30px;
+	right: 20px
 }
-.slidePanel-header:after {
-	clear: both;
+
+.slidePanel .actions-bottom {
+	position: absolute;
+	bottom: 30px;
+	right: 20px
 }
+
 .slidePanel .mail-header {
 	position: relative;
 	padding-left: 50px;
-	margin-bottom: 20px;
+	margin-bottom: 20px
 }
-.slidePanel .mail-header:before, .slidePanel .mail-header:after {
-	display: table;
-	content: " ";
-}
-.slidePanel .mail-header:after {
-	clear: both;
-}
+
 .slidePanel .mail-header-main {
-	display: inline-block;
+	display: inline-block
 }
+
 .slidePanel .mail-header-right {
-	float: right;
+	float: right
 }
-.slidePanel .mail-header .time {
-	color: #a3afb7;
-}
+
 .slidePanel .mail-header .avatar {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 0
 }
+
 .slidePanel .mail-header .identity .icon {
-	margin-right: 6px;
 	margin-left: 10px;
+	margin-right: 6px
 }
+
 .slidePanel .mail-content p {
-	margin-bottom: 20px;
+	margin-bottom: 20px
 }
+
 .slidePanel .mail-content p:last-child {
-	margin-bottom: 0;
+	margin-bottom: 0
 }
-.slidePanel .mail-content + .mail-attachments {
-	margin-top: 40px;
+
+.slidePanel .mail-content+.mail-attachments {
+	margin-top: 40px
 }
+
 .slidePanel .mail-attachments {
-	margin-bottom: 20px;
+	margin-bottom: 20px
 }
+
 .slidePanel .mail-attachments .wb-paperclip {
-	margin-right: 10px;
+	margin-right: 10px
 }
+
 .slidePanel .mail-attachments .list-group-item {
-	padding: 0;
-}
-.select2-container {
-	z-index: 1700;
+	padding: 0
 }

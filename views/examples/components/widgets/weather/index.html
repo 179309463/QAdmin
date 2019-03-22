@@ -1,109 +1,121 @@
-<title>天气</title>
+<title>天气 - UI示例</title>
 
-<link rel="stylesheet" href="/vendor/weather-icons/css/weather-icons.css">
+<link rel="stylesheet" href="/lib/weather-icons/css/weather-icons.css">
 <link rel="stylesheet" href="/views/examples/components/widgets/weather/index.css">
 
-<div class="page page-full animation-fade">
+<div class="page animation-fade">
     <div class="page-header">
-        <h1 class="page-title">天气小工具</h1>
-        <div class="page-header-actions">
-            <button type="button" class="btn btn-sm btn-outline btn-default btn-round">
-                <span class="text hidden-xs">设置</span> <i class="icon wb-chevron-right" aria-hidden="true"></i>
-            </button>
-        </div>
+        <h1 class="page-title">天气</h1>
     </div>
     <div class="page-content page-content-example container-fluid">
         <div class="row">
-            <div class="col-xlg-7 col-xs-12">
-
-                <div class="widget widget-shadow weather">
-                    <div class="widget-header cover overlay">
-                        <img class="cover-image height-lg-450" src="/views/examples/images/photos/view-9.jpg" alt="...">
+            <div class="col-xxl-7">
+                <div class="card card-shadow weather">
+                    <div class="card-header card-header-transparent cover">
+                        <img class="cover-image h-xl-450" src="http://cdn.admui.com/demo/pjax/2.0.0/images/photos/view-9.jpg" alt="...">
                         <div class="overlay-panel">
                             <span class="font-size-40 white">上海</span>
-                            <div class="weather-location input-search pull-right margin-top-10">
-                                <input type="text" class="form-control input-sm grey-200" placeholder="搜索城市">
+                            <div class="weather-location input-search float-right mt-10">
+                                <input type="text" class="form-control form-control-sm grey-200" placeholder="Location">
                                 <button type="submit" class="input-search-btn">
                                     <i class="icon wb-search grey-400" aria-hidden="true"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="widget-footer">
+
+                    <div class="card-footer bg-white">
                         <div class="row no-space">
-                            <div class="col-md-4 col-sm-5 padding-left-30 padding-vertical-30">
+                            <div class="col-lg-4 col-md-5 pl-30 py-30">
                                 <div class="row">
-                                    <div class="col-xs-4">
+                                    <div class="col-4">
                                         <div class="vertical-align">
-                                            <i class="vertical-align-middle wi wi-day-sunny font-size-50 margin-top-10"></i>
+                                            <i class="vertical-align-middle wi-day-sunny font-size-50 mt-10"></i>
                                         </div>
                                     </div>
-                                    <div class="col-xs-8">
-                                        <span class="blue-600 font-size-40">20℃</span>
+
+                                    <div class="col-8">
+                                        <span class="blue-600 font-size-40">20°
+                                            <span class="font-size-30">C</span>
+                                        </span>
                                         <span class="font-size-18 blue-grey-700">/</span>
-                                        <span class="font-size-18 blue-grey-700">7℃</span>
-                                        <p class="font-size-14 margin-bottom-0">2016.9.8 星期一</p>
+                                        <span class="font-size-18 blue-grey-700">7°
+                                            <span class="font-size-16">C</span>
+                                        </span>
+                                        <p class="font-size-14 mb-0">2016.9.8 星期一</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8 col-sm-7">
+
+                            <div class="col-lg-8 col-md-7">
                                 <div class="row no-space text-center">
-                                    <div class="col-xs-2">
+                                    <div class="col-2">
                                         <div class="weather-day vertical-align">
                                             <div class="vertical-align-middle font-size-16">
-                                                <div class="margin-bottom-10">星期二</div>
-                                                <i class="wi wi-day-sunny font-size-24 margin-bottom-10"></i>
-                                                <div>24℃
+                                                <div class="mb-10">星期一</div>
+                                                <i class="wi-day-sunny font-size-24 mb-10"></i>
+                                                <div>24°
+                                                    <span class="font-size-12">C</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-2">
+
+                                    <div class="col-2">
                                         <div class="weather-day vertical-align">
                                             <div class="vertical-align-middle font-size-16">
-                                                <div class="margin-bottom-10">星期三</div>
-                                                <i class="wi wi-day-cloudy font-size-24 margin-bottom-10"></i>
-                                                <div>21℃
+                                                <div class="mb-10">星期二</div>
+                                                <i class="wi-day-cloudy font-size-24 mb-10"></i>
+                                                <div>21°
+                                                    <span class="font-size-12">C</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-2">
+
+                                    <div class="col-2">
                                         <div class="weather-day vertical-align">
                                             <div class="vertical-align-middle font-size-16">
-                                                <div class="margin-bottom-10">星期四</div>
-                                                <i class="wi wi-day-sunny font-size-24 margin-bottom-10"></i>
-                                                <div>25℃
+                                                <div class="mb-10">星期三</div>
+                                                <i class="wi-day-sunny font-size-24 mb-10"></i>
+                                                <div>25°
+                                                    <span class="font-size-12">C</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-2">
+
+                                    <div class="col-2">
                                         <div class="weather-day vertical-align">
                                             <div class="vertical-align-middle font-size-16">
-                                                <div class="margin-bottom-10">星期五</div>
-                                                <i class="wi wi-day-cloudy-gusts font-size-24 margin-bottom-10"></i>
-                                                <div>20℃
+                                                <div class="mb-10">星期四</div>
+                                                <i class="wi-day-cloudy-gusts font-size-24 mb-10"></i>
+                                                <div>20°
+                                                    <span class="font-size-12">C</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-2">
+
+                                    <div class="col-2">
                                         <div class="weather-day vertical-align">
                                             <div class="vertical-align-middle font-size-16">
-                                                <div class="margin-bottom-10">星期六</div>
-                                                <i class="wi wi-day-lightning font-size-24 margin-bottom-10"></i>
-                                                <div>18℃
+                                                <div class="mb-10">星期五</div>
+                                                <i class="wi-day-lightning font-size-24 mb-10"></i>
+                                                <div>18°
+                                                    <span class="font-size-12">C</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-2">
+
+                                    <div class="col-2">
                                         <div class="weather-day vertical-align">
                                             <div class="vertical-align-middle font-size-16">
-                                                <div class="margin-bottom-10">星期日</div>
-                                                <i class="wi wi-day-storm-showers font-size-24 margin-bottom-10"></i>
-                                                <div>14℃
+                                                <div class="mb-10">星期六</div>
+                                                <i class="wi-day-storm-showers font-size-24 mb-10"></i>
+                                                <div>14°
+                                                    <span class="font-size-12">C</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -113,299 +125,321 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="col-xlg-5 col-lg-7 col-xs-12">
 
-                <div class="widget widget-shadow">
-                    <div class="widget-content padding-25 bg-blue-600 white text-center">
-                        <h3 class=white>
-                            <span class="font-size-30">上海</span> 中国 </h3>
-                        <p class="weather-day-date margin-bottom-30">
-                            <span class="margin-right-5">星期一</span> 2016.9.9 </p>
-                        <div class="margin-bottom-30">
-                            <canvas class="margin-right-40 text-top" id="ex4-rain" width="90" height="90"></canvas>
-                            <div class="inline-block">
-                                <span class="font-size-50">29°
-                                    <span class="font-size-40">C</span>
-                                </span>
-                                <p class="text-left">小雨</p>
-                            </div>
-                        </div>
-                        <div class="row no-space">
-                            <div class="col-xs-2">
-                                <div class="">
-                                    <div class="margin-bottom-10">星期二</div>
-                                    <i class="wi wi-day-sunny font-size-30 margin-bottom-10"></i>
-                                    <div>24℃
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <div class="">
-                                    <div class="margin-bottom-10">星期三</div>
-                                    <i class="wi wi-day-cloudy font-size-30 margin-bottom-10"></i>
-                                    <div>21℃
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <div class="">
-                                    <div class="margin-bottom-10">星期四</div>
-                                    <i class="wi wi-day-sunny font-size-30 margin-bottom-10"></i>
-                                    <div>25℃
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <div class="">
-                                    <div class="margin-bottom-10">星期五</div>
-                                    <i class="wi wi-day-cloudy-gusts font-size-30 margin-bottom-10"></i>
-                                    <div>20℃
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <div class="">
-                                    <div class="margin-bottom-10">星期六</div>
-                                    <i class="wi wi-day-lightning font-size-30 margin-bottom-10"></i>
-                                    <div>18℃
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <div class="">
-                                    <div class="margin-bottom-10">星期日</div>
-                                    <i class="wi wi-day-storm-showers font-size-30 margin-bottom-10"></i>
-                                    <div>14℃
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-lg-5 col-xs-12">
+            <div class="col-xxl-5">
                 <div class="row">
-                    <div class="col-xlg-6 col-lg-12 col-sm-6">
-
-                        <div class="widget widget-shadow">
-                            <div class="widget-header bg-green-600 white padding-horizontal-30 padding-vertical-10">
-                                <i class="icon wb-map margin-right-5" aria-hidden="true"></i> <span>广州</span>
-                            </div>
-                            <div class="widget-content padding-horizontal-30 padding-vertical-10">
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <div class="font-size-14">2016年9月9日 星期五</div>
-                                        <div class="font-size-40 blue-grey-700">
-                                            27℃
+                    <div class="col-xxl-12 col-xl-7">
+                        <div class="card card-inverse card-shadow bg-primary white text-center">
+                            <div class="card-block p-25">
+                                <h3 class="white">
+                                    <span class="font-size-30">上海, </span>中国
+                                </h3>
+                                <p class="weather-day-date mb-30">
+                                    <span class="mr-5">星期一</span> 2016.9.9
+                                </p>
+                                <div class="mb-30">
+                                    <canvas class="mr-40 text-top" id="ex4-rain" width="90" height="90"></canvas>
+                                    <div class="inline-block">
+                                        <span class="font-size-50">29°
+                                            <span class="font-size-40">C</span>
+                                        </span>
+                                        <p class="text-left">小雨</p>
+                                    </div>
+                                </div>
+                                <div class="row no-space">
+                                    <div class="col-2">
+                                        <div>
+                                            <div class="mb-10">星期一</div>
+                                            <i class="wi-day-sunny font-size-30 mb-10"></i>
+                                            <div>24°
+                                                <span class="font-size-12">C</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 text-right">
-                                        <i class="wi wi-fog font-size-50"></i>
+                                    <div class="col-2">
+                                        <div>
+                                            <div class="mb-10">星期二</div>
+                                            <i class="wi-day-cloudy font-size-30 mb-10"></i>
+                                            <div>21°
+                                                <span class="font-size-12">C</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div>
+                                            <div class="mb-10">星期三</div>
+                                            <i class="wi-day-sunny font-size-30 mb-10"></i>
+                                            <div>25°
+                                                <span class="font-size-12">C</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div>
+                                            <div class="mb-10">星期四</div>
+                                            <i class="wi-day-cloudy-gusts font-size-30 mb-10"></i>
+                                            <div>20°
+                                                <span class="font-size-12">C</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div>
+                                            <div class="mb-10">星期五</div>
+                                            <i class="wi-day-lightning font-size-30 mb-10"></i>
+                                            <div>18°
+                                                <span class="font-size-12">C</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div>
+                                            <div class="mb-10">星期六</div>
+                                            <i class="wi-day-storm-showers font-size-30 mb-10"></i>
+                                            <div>14°
+                                                <span class="font-size-12">C</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <div class="col-xlg-6 col-lg-12 col-sm-6">
-
-                        <div class="widget widget-shadow padding-horizontal-30 padding-vertical-20">
-                            <div class="widget-content">
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <i class="wi wi-day-sunny font-size-40"></i>
+                    <div class="col-xxl-12 col-xl-5">
+                        <div class="row">
+                            <div class="col-xxl-6 col-xl-12 col-md-6">
+                                <div class="card card-shadow">
+                                    <div class="card-header bg-green-600 white px-30 py-10">
+                                        <i class="icon wb-map mr-5" aria-hidden="true"></i>
+                                        <span>广州</span>
                                     </div>
-                                    <div class="col-xs-6 text-right">
-                                        <div class="font-size-40 blue-grey-700">
-                                            27℃
+                                    <div class="card-block px-30 py-10">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="font-size-14">2016年9月9日 星期五</div>
+                                                <div class="font-size-40 blue-grey-700">
+                                                    27°
+                                                    <span class="font-size-30">C</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <i class="wi-fog font-size-50"></i>
+                                            </div>
                                         </div>
-                                        <div class="font-size-14">2016年9月9日 星期五</div>
                                     </div>
                                 </div>
-                                <div class="font-size-14">
-                                    <i class="icon wb-map margin-right-5" aria-hidden="true"></i> <span>成都</span>
+                            </div>
+
+                            <div class="col-xxl-6 col-xl-12 col-md-6">
+                                <div class="card card-shadow px-30 py-20">
+                                    <div class="card-block p-0">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <i class="wi-day-sunny font-size-40"></i>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <div class="font-size-40 blue-grey-700">
+                                                    27°
+                                                    <span class="font-size-30">C</span>
+                                                </div>
+                                                <div class="font-size-14">2016年9月9日 星期五</div>
+                                            </div>
+                                        </div>
+                                        <div class="font-size-14">
+                                            <i class="icon wb-map mr-5" aria-hidden="true"></i>
+                                            <span>三亚</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-            <div class="col-xlg-6 col-xs-12">
 
-                <div class="widget widget-shadow text-center">
-                    <div class="widget-content">
-                        <div class="row no-space">
-                            <div class="col-xs-6">
-                                <div class="bg-blue-grey-700 white vertical-align height-200">
-                                    <div class="vertical-align-middle">
-                                        <div class="font-size-40">
-                                            27℃
-                                        </div>
-                                        <div class="font-size-20">重庆</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-6">
-                                <div class="bg-white height-200">
-                                    <div class="vertical-align height-150">
-                                        <i class="wi wi-day-sunny vertical-align-middle font-size-50"></i>
-                                    </div>
-                                    <div class="row no-space">
-                                        <div class="col-xs-6 height-50">
-                                            <i class="wi wi-strong-wind margin-right-5"></i> 8 千米/小时
-                                        </div>
-                                        <div class="col-xs-6 height-50">
-                                            <i class="wi wi-sprinkles margin-right-5"></i> 40%
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-xlg-3 col-sm-6 col-xs-12">
-
-                <div class="widget widget-shadow">
-                    <div class="widget-content bg-green-600 text-center white">
-                        <div class="row no-space">
-                            <div class="col-xs-6 vertical-align height-200">
+            <div class="col-xxl-6">
+                <div class="card card-shadow text-center">
+                    <div class="row no-space">
+                        <div class="col-6">
+                            <div class="bg-blue-grey-700 white vertical-align h-200">
                                 <div class="vertical-align-middle">
                                     <div class="font-size-40">
-                                        27℃
+                                        27°
+                                        <span class="font-size-30">C</span>
                                     </div>
-                                    <div class="margin-top-3">天津</div>
+                                    <div class="font-size-20">海南, 中国</div>
                                 </div>
                             </div>
-                            <div class="col-xs-6 vertical-align height-200" style="border-left: 1px solid rgba(255, 255, 255, 0.1);">
-                                <div class="vertical-align-middle">
-                                    <div class="font-size-50">
-                                        <i class="wi wi-cloudy"></i>
+                        </div>
+                        <div class="col-6">
+                            <div class="bg-white h-200">
+                                <div class="vertical-align h-150">
+                                    <i class="wi-day-sunny vertical-align-middle font-size-50"></i>
+                                </div>
+                                <div class="row no-space">
+                                    <div class="col-6 h-50">
+                                        <i class="wi-strong-wind mr-5"></i> 8 千米/小时
                                     </div>
-                                    <div class="margin-top-3">2016.9.9</div>
+                                    <div class="col-6 h-50">
+                                        <i class="wi-sprinkles mr-5"></i> 40%
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="col-xlg-3 col-sm-6 col-xs-12">
 
-                <div class="widget widget-shadow">
-                    <div class="widget-header cover overlay">
-                        <img class="cover-image height-200" src="/views/examples/images/photos/view-16.jpg" alt="...">
+            <div class="col-xxl-3 col-md-6">
+                <div class="row no-space card card-group text-center white">
+                    <div class="col-6 card-inverse bg-green-600">
+                        <div class="card-block vertical-align h-200">
+                            <div class="vertical-align-middle">
+                                <div class="font-size-40">
+                                    27°
+                                    <span class="font-size-24">C</span>
+                                </div>
+                                <div class="mt-3">天津, 中国</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 card-inverse bg-green-600">
+                        <div class="card-block vertical-align h-200" style="border-left: 1px solid rgba(255, 255, 255, 0.1);">
+                            <div class="vertical-align-middle">
+                                <div class="font-size-50">
+                                    <i class="wi-cloudy"></i>
+                                </div>
+                                <div class="mt-3">2016.9.9</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxl-3 col-md-6">
+                <div class="card card-shadow">
+                    <div class="card-header card-header-transparent cover h-200">
+                        <img class="cover-image" src="http://cdn.admui.com/demo/pjax/2.0.0/images/photos/view-9.jpg" alt="...">
                         <div class="overlay-panel overlay-background">
-                            <div class="font-size-16 pull-right"><i class="icon wb-map" aria-hidden="true"></i></div>
-                            <p class="font-size-20">杭州</p>
+                            <div class="font-size-16 float-right">
+                                <i class="icon wb-map" aria-hidden="true"></i>
+                            </div>
+                            <p class="font-size-20">三亚, 中国</p>
                             <p class="font-size-20">
-                                <i class="wi wi-day-cloudy margin-right-15 font-size-40"></i>
-                                <span class="font-size-40 blue-600">20℃
-                                </span> <span>/</span> <span>7℃
+                                <i class="wi-day-cloudy mr-15 font-size-40"></i>
+                                <span class="font-size-40 blue-600">20°
+                                    <span class="font-size-30">C</span>
+                                </span>
+                                <span>/</span>
+                                <span>7°
+                                    <span class="font-size-16">C</span>
                                 </span>
                             </p>
-                            <p class="margin-bottom-5">星期一</p>
+                            <p class="mb-5">星期一</p>
                             <p>2016.9.9</p>
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="col-xlg-4 col-xs-12">
+
+            <div class="col-xxl-4">
                 <div class="row">
-                    <div class="col-xlg-12 col-md-6">
-
-                        <div class="widget widget-shadow text-center">
-                            <div class="widget-content">
-                                <div class="bg-red-600 padding-30 white">
+                    <div class="col-xxl-12 col-lg-6">
+                        <div class="card card-shadow text-center">
+                            <div class="card-block p-0">
+                                <div class="bg-red-600 p-30 white">
                                     <div class="font-size-40">
-                                        27℃ <i class="wi wi-day-cloudy-windy"></i>
+                                        27°
+                                        <span class="font-size-30">C</span>
+                                        <i class="wi-day-cloudy-windy"></i>
                                     </div>
                                 </div>
-                                <div class="bg-white red-600 font-size-14 padding-15">
-                                    2016.9.9 星期一
+                                <div class="bg-white red-600 font-size-14 p-15">
+                                    5月12日 星期六
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <div class="col-xlg-12 col-md-6">
 
-                        <div class="widget bg-blue-600 white text-center">
-                            <div class="widget-content">
-                                <div class="padding-30">
+                    <div class="col-xxl-12 col-lg-6">
+                        <div class="card bg-blue-600 white text-center">
+                            <div class="card-block p-0">
+                                <div class="p-30">
                                     <div class="font-size-50">
-                                        <i class="wi wi-day-cloudy-windy"></i> <span class="font-size-40">27℃</span>
+                                        <i class="wi-day-cloudy-windy"></i>
+                                        <span class="font-size-40">
+                                            27°
+                                            <span class="font-size-30">C</span>
+                                        </span>
                                     </div>
                                 </div>
-                                <div class="bg-blue-500 padding-horizontal-30 padding-vertical-25">
+                                <div class="bg-blue-500 px-30 py-25">
                                     <div class="row no-space">
-                                        <div class="col-xs-6">
-                                            <i class="wi wi-strong-wind margin-right-10"></i>
-                                            <span class="font-weight-bold">8</span> 千米/小时
+                                        <div class="col-6">
+                                            <i class="wi-strong-wind mr-10"></i>
+                                            <span class="font-weight-bold">8</span>千米/小时
                                         </div>
-                                        <div class="col-xs-6">
-                                            <i class="wi wi-sprinkles margin-right-10"></i> <span class="font-weight-bold">40</span>%
+                                        <div class="col-6">
+                                            <i class="wi-sprinkles mr-10"></i>
+                                            <span class="font-weight-bold">40</span>%
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-            <div class="col-xlg-4 col-md-6 col-xs-12">
 
-                <div class="widget widget-shadow text-center font-size-16">
-                    <div class="widget-content">
-                        <div class="bg-purple-600 padding-30 white ">
+            <div class="col-xxl-4 col-lg-6">
+                <div class="card card-shadow text-center font-size-16">
+                    <div class="card-block p-0">
+                        <div class="bg-purple-600 p-30 white ">
                             <div>
                                 <canvas id="ex6-snow" width="100" height="145"></canvas>
                             </div>
                             <div>
-                                <span class="font-size-40">-4℃
+                                <span class="font-size-40">-4°
+                                    <span class="font-size-30">C</span>
                                 </span>
                             </div>
-                            <div>大雪</div>
+                            <div>中雪</div>
                         </div>
-                        <div class="bg-white padding-30">
+                        <div class="bg-white p-30">
                             <div class="blue-grey-700">
-                                <span class="font-size-20">呼和浩特</span>
+                                <span class="font-size-20">拉萨, </span>
+                                <span class="font-size-18">中国</span>
                             </div>
-                            <div class="">
-                                <span class="margin-right-5">星期一</span> 13:00
+                            <div>
+                                <span class="mr-5">今天 </span> 下午 05:12
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="col-xlg-4 col-md-6 col-xs-12">
 
-                <div class="widget widget-shadow text-center font-size-16">
-                    <div class="widget-content">
-                        <div class="bg-white padding-30 ">
+            <div class="col-xxl-4 col-lg-6">
+                <div class="card card-shadow text-center font-size-16">
+                    <div class="card-block p-0">
+                        <div class="bg-white p-30 ">
                             <canvas id="ex7-sleet" width="100" height="215"></canvas>
                         </div>
-                        <div class="bg-blue-grey-700 padding-30">
+                        <div class="bg-blue-grey-700 p-30">
                             <div class="row">
-                                <div class="col-xs-6">
+                                <div class="col-6">
                                     <div class="white">
-                                        <i class="wb-chevron-down green-600 font-size-20 margin-right-5"></i>
-                                        <span class="font-size-30">8℃</span>
+                                        <i class="wb-chevron-down green-600 font-size-20 mr-5"></i>
+                                        <span class="font-size-30">8°</span>
+                                        <span class="font-size-24">C</span>
                                     </div>
                                     <div class="font-size-14">最低</div>
                                 </div>
-                                <div class="col-xs-6">
+                                <div class="col-6">
                                     <div class="white">
-                                        <i class="wb-chevron-up red-500 font-size-20 margin-right-5"></i>
-                                        <span class="font-size-30">19℃</span>
+                                        <i class="wb-chevron-up red-500 font-size-20 mr-5"></i>
+                                        <span class="font-size-30">19°</span>
+                                        <span class="font-size-24">C</span>
                                     </div>
                                     <div class="font-size-14">最高</div>
                                 </div>
@@ -413,11 +447,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
-
+    
 <script src="/lib/skycons/skycons.js" data-name="skycons"></script>
 <script src="/views/examples/components/widgets/weather/index.js" data-deps="skycons"></script>

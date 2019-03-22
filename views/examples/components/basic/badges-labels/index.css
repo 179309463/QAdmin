@@ -1,14 +1,7 @@
-/**
- * QAdmin v1.2.0 (http://www.qadmin.com/)
- * Copyright 2015-2017 QAdmin Team
- * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
- */
-.example > span {
-	margin-right: 16px;
+.example>span {
+	margin: 0 16px 8px 0
 }
-.example .label {
-	line-height: 30px;
-}
-.example-2 > span {
-	margin-right: 35px;
+
+.example-2>span {
+	margin-right: 35px
 }
