@@ -53,7 +53,7 @@ body.iframe.isModal{
 		margin-left: 0px;
 	}
 }
-
+/* 
 .page-aside-fixed .page-aside{
 	position: absolute!important;
 	height: calc(100% - 60px - 44px);
@@ -64,4 +64,4 @@ body.iframe.isModal{
 .iframe .page-aside-fixed .page-aside,
 .iframe .page-aside-static .page-aside{
 	bottom: 0;
-}
+} */
