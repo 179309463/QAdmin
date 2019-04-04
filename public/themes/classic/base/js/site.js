@@ -405,7 +405,7 @@
                         $.site.menubar.hide();
                         self._hideNavbar();
                     }
-                    $('[data-toggle="dropdown"]').parent().removeClass('open');
+                    $('.dropdown-menu.show').removeClass('show');
                 });
                 loadStyles(iframeDocument);
             });

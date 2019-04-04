@@ -1,16 +1,17 @@
-/**
- * QAdmin v1.2.0 (http://www.qadmin.com/)
- * Copyright 2015-2017 QAdmin Team
- * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
- */
-.blocks-dropdowns > li {
-	margin-bottom: 50px;
+.page-content .dropdown-menu {
+	width: 240px
 }
+
+.blocks-dropdowns>li {
+	margin-bottom: 50px
+}
+
 .blocks-dropdowns .dropdown-menu {
-	width: 100%;
+	width: 100%
 }
-@media (min-width: 992px) {
-	.blocks-dropdowns > li {
-		max-width: 300px;
+
+@media (min-width:992px) {
+	.blocks-dropdowns>li {
+		max-width: 300px
 	}
 }

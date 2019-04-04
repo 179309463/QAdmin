@@ -458,6 +458,16 @@
             });
         }
     });
+
+    $.components.register("dropdownHover", {
+        mode: "init",
+        defaults: {},
+        init: function (context) {
+            $('[data-hover="dropdown"]', context).each(function () {
+                $(this).dropdownHover();
+            });
+        }
+    });
 })(window, document, jQuery);
 (function(window, document, $){
     "use strict";

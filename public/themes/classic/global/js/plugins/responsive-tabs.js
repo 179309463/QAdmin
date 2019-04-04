@@ -12,7 +12,7 @@
             navSelector: '.nav-tabs',
             itemSelector: '>li',
             dropdownSelector: '>.dropdown',
-            dropdownItemSelector: 'li',
+            dropdownItemSelector: 'a.dropdown-item',
             tabParentSelector: '',
             tabSelector: '.tab-pane',
             activeClassName: 'active',
@@ -55,13 +55,13 @@
 
                 this.$nav.append('<li class="dropdown nav-item" role="presentation">'
                     + '<a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" aria-expanded="false">'
-                    + '更多</a><ul class="dropdown-menu" role="menu"></ul></li>');
+                    + '更多</a><div class="dropdown-menu" role="menu"></div></li>');
 
                 this.$dropdown = this.$nav.find(this.options.dropdownSelector);
-                this.$dropdown.css("opacity", 0); // 还需要将其隐藏起来
+                //this.$dropdown.css("opacity", 0); // 还需要将其隐藏起来
                 dropWidth = this.$dropdown.width();
                 dropWidth = dropWidth === 0 ? 90 : dropWidth;
-                this.$dropdown.addClass("hidden").css("opacity", 1);
+                this.$dropdown.hide();
             } else {
                 dropWidth = this.$dropdown.width();
             }
@@ -114,10 +114,10 @@
                     }
                     for (; v < self.itemsLenth; v++) {
                         if(self.flag){
-                            self.$dropdown.find("ul").append(self.$items.eq(v).prop("outerHTML"));
+                            self.$dropdown.find("div").append(self.$items.eq(v).prop("innerHTML").replace("nav-link", "dropdown-item"));
                         }else{
-                            self.$dropdown.find('ul>li'+self.options.noNavClassName+':first')
-                                .before(self.$items.eq(v).prop("outerHTML"));
+                            self.$dropdown.find('div>a'+self.options.noNavClassName+':first')
+                                .before(self.$items.eq(v).prop("innerHTML").replace("nav-link", "dropdown-item"));
                         }
 
                         self.$items.eq(v).hide();
@@ -129,7 +129,7 @@
                             self.$items.eq(j).show();
                         } else {
                             fn(i);
-                            self.$dropdown.find("ul>li").show();
+                            self.$dropdown.find("div>a").show();
                             break;
                         }
                     }
@@ -148,18 +148,18 @@
 
             if (i === this.breakpoints.length) {
                 if(this.flag){
-                    this.$dropdown.addClass("hidden");
+                    this.$dropdown.hide();
                 }else{
-                    this.$dropdown.find('ul>li:not(li'+this.options.noNavClassName+')').remove();
+                    this.$dropdown.find('div>a:not(a'+this.options.noNavClassName+')').remove();
                 }
                 this.$items.show();
                 this.$items.eq(panelIndex).addClass(activeClassName);
             } else {
-                this.$dropdown.removeClass("hidden");
+                this.$dropdown.show();
                 if(this.flag){
-                    this.$dropdown.find("ul>li").remove();
+                    this.$dropdown.find("div>a").remove();
                 }else{
-                    this.$dropdown.find('ul>li:not(li'+this.options.noNavClassName+')').remove();
+                    this.$dropdown.find('div>a:not(a'+this.options.noNavClassName+')').remove();
                 }
 
                 callback(i);
@@ -209,9 +209,9 @@
                 $parent.removeClass('in');
 
                 function refresh(){
-                    self.$dropdown.find("ul>li:first").remove();
+                    self.$dropdown.find("div>a:first").remove();
 
-                    if(self.$dropdown.find('ul>li').length === 0) {
+                    if(self.$dropdown.find('div>a').length === 0) {
                         self.$dropdown.remove();
                     }
                 }

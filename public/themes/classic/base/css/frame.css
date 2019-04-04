@@ -65,3 +65,10 @@ body.iframe.isModal{
 .iframe .page-aside-static .page-aside{
 	bottom: 0;
 } */
+
+.modal-backdrop{
+	background-color: #000!important;
+}
+.nav-tabs-reverse{
+	justify-content: flex-end;
+}
