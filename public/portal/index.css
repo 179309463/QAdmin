@@ -8,7 +8,7 @@
 #banner {
     background-color: #4696e5;
     color: #fff;
-    background-image: url("/img/1.jpg");
+    background-image: url("/assets/img/1.jpg");
     background-position: top left;
     background-attachment: fixed;
     background-size: cover;
@@ -32,7 +32,7 @@
     margin-right: -420px;
     width: 380px;
     height: 320px;
-    background: url("/img/imac.svg") no-repeat center center;
+    background: url("/assets/img/imac.svg") no-repeat center center;
     background-size: auto 100%;
     text-align: center;
     padding-top:21px;

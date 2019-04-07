@@ -2,8 +2,9 @@
 <html class="no-js css-menubar" lang="zh-cn">
 	<head>
 		<title>空白页面</title>
-		<%- include('./includes/head.html') %>	
-
+		<%- include('./includes/head.html') %>
+		<%- include('./includes/style.html') %>	
+		<%- include('./includes/script-head.html') %>	
 	</head>
 	<body class="iframe<%- isModal ? ' isModal' : '' %>">
 		<% if(isModal){ %>
@@ -19,19 +20,6 @@
 			</main>
 		<% } %>
 		
-		<!-- 布局 -->
-		<script src="/themes/classic/base/js/sections/menu.js"></script>
-		<script src="/themes/classic/base/js/sections/media-menu.js"></script>
-		<script src="/themes/classic/base/js/sections/content-tabs.js"></script>
-
-		<!-- 插件 -->
-		<script src="/lib/jquery-pjax/jquery.pjax.js"></script>
-		<script src="/themes/classic/global/js/plugins/responsive-tabs.js"></script>
-		<script src="/vendor/jquery-asHoverScroll/dist/jquery-asHoverScroll.min.js"></script>
-		<script src="/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-		<script src="/vendor/screenfull/dist/screenfull.min.js"></script>	
-
-		<!-- 消息通知 -->
-		<script src="/views/application/notify-msg.js"></script>
+		<%- include('./includes/script-body.html') %>	
 	</body>
 </html>

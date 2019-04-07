@@ -17,10 +17,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="QAdmin" />
-    <meta name="msapplication-TileImage" content="/img/app/icon-72@x2.png" />
+    <meta name="msapplication-TileImage" content="/assets/img/app/icon-72@x2.png" />
     <meta name="msapplication-TileColor" content="#395b81" />
-    <link rel="apple-touch-icon-precomposed" href="/img/app/icon-72@x2.png" />
-    <link rel="shortcut icon" href="/img/app/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/app/icon-72@x2.png" />
+    <link rel="shortcut icon" href="/assets/img/app/favicon.png" />
     <meta name="msapplication-TileColor" content="#62a8ea">
     <script>
         window.PAGE_TYPE = "ui"
@@ -45,7 +45,7 @@
 </div>
 <div id="header">
     <a id="logo" href="../index.html">
-        <img src="/img/logo.svg"> <span>QAdmin 开发文档</span>
+        <img src="/assets/img/logo.svg"> <span>QAdmin 开发文档</span>
     </a>
     <select class="version-select">
         <option value="basic">基础版</option>
@@ -174,7 +174,7 @@
 <p>LESS 文件会在项目运行的时候编译。我们也提供能了增量编译和浏览器自动刷新保证在项目运行中编辑 LESS 文件时进行编译。关于如何运行项目，请参考<a href="build.html">构建工具</a>。</p>
 <p>如果您所购买的产中不包含Gulp自动构建的部分，您可以可以直接在<code>/public/css/</code>下新建 css 文件并添加代码，或者通过在线升级的方式购买自动构建部分。<a href="/portal/buy.html" target="_blank" rel="external">升级</a></p>
 <h5 id="几个问题："><a href="hello-world.html#%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%EF%BC%9A" class="headerlink" title="几个问题："></a>几个问题：</h5><p>1）如何在 LESS 文件中使用 QAdmin 定义的 LESS 变量呢？在 LESS 文件的头部引入定义变量的文件就可以了。如下所示：</p>
-<figure class="highlight less"><table><tr><td class="code"><pre><div class="line"><span class="keyword">@import</span> <span class="string">'../../../themes/classic/global/less/vars'</span>;</div><div class="line"> </div><div class="line"><span class="selector-class">.page-hello-world</span>&#123;</div><div class="line">    ……</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="code"><pre><div class="line"><span class="keyword">@import</span> <span class="string">'../../../assets/less/vars'</span>;</div><div class="line"> </div><div class="line"><span class="selector-class">.page-hello-world</span>&#123;</div><div class="line">    ……</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>2）如何自定义 QAdmin 的 LESS 全局变量？QAdmin中如下几处地方可以定义 LESS 的全局变量，您可以找到<code>/src/themes/(主题文件夹)/global/less/vars-customs.less</code>，并根据自己的需要添加。</p>
 <h4 id="2-使用CSS"><a href="hello-world.html#2-%E4%BD%BF%E7%94%A8CSS" class="headerlink" title="2. 使用CSS"></a>2. 使用CSS</h4><p>在<code>/public/css/</code>文件夹下合适的位置新建一个<code>hello-world.css</code>文件，并插入以下代码：</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><div class="line"><span class="selector-class">.page-hello-world</span>&#123; <span class="comment">/* 避免全局污染 */</span></div><div class="line">    </div><div class="line">    <span class="comment">/* 将所有本页面的样式代码写到这个代码块中 */</span></div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>

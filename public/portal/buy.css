@@ -1,5 +1,5 @@
 #introduction {
-    background: rgba(32, 36, 46, .9) url("/img/aff.jpg") no-repeat center bottom fixed;
+    background: rgba(32, 36, 46, .9) url("/assets/img/aff.jpg") no-repeat center bottom fixed;
     background-size: cover;
     position: relative;
 }

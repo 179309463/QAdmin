@@ -221,7 +221,7 @@
             settings = JSON.parse(settings);
 
             if (settings.themeColor && settings.themeColor !== 'primary') {
-                $link.attr('href', '/themes/classic/base/skins/' + settings.themeColor + etx + '.css');
+                $link.attr('href', '/assets/skins/' + settings.themeColor + etx + '.css');
             }
 
             if (settings.sidebar && settings.sidebar === 'site-menubar-light') {
@@ -394,7 +394,7 @@
                     var style = $('#qadmin-siteStyle', self.iframeDocument);
                     var min = style.prop('href').indexOf('?v=') === -1 ? '': '.min';
                     if (self.themeColor && self.themeColor !== 'primary') {
-                        style.attr('href', '/public/themes/classic/base/skins/' + self.themeColor + '/site' + min + '.css');
+                        style.attr('href', '/public/assets/skins/' + self.themeColor + '/site' + min + '.css');
                     }
                 });
             };

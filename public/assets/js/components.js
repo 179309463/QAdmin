@@ -1810,7 +1810,7 @@
                         b.insertBefore(c, b.childNodes[0]);
                     };
                 }
-            })(document, "/images/uploads/sprite.svg");
+            })(document, "/assets/images/uploads/sprite.svg");
 
             plyr.setup();
         }
