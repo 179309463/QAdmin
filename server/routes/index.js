@@ -3,10 +3,9 @@ var express = require('express'),
     type = 'iframe';
 
 router.get(['/', '/application','/application/index','/application/index.html'], (req, res) => {
-  type = (req.query.pjax=="true" ? 'index' : 'iframe');
+  type = (req.query.modal=="true" ? 'modal' : (req.query.pjax=="true" ? 'index' : 'iframe'));
   res.render('application/index', {
     type: type,
-    isModal: false,
     path: 'examples/home/index.html',
     nav_menu: 'examples/nav-menu.html',
     site_menu: 'examples/site-menu.html'
@@ -25,8 +24,7 @@ router.get('/application/locked/index.html', (req, res) => {
 });
 
 router.all('/*', function (req, res) {
-    type = (req.query.pjax=="true" ? 'index' : 'iframe');
-    isModal = (req.query.modal=="true");
+    type = (req.query.modal=="true" ? 'modal' : (req.query.pjax=="true" ? 'index' : 'iframe'));
 
     var _path = req.path.substring(1);
     var i = _path.indexOf("/");
@@ -40,7 +38,6 @@ router.all('/*', function (req, res) {
     } else {
         res.render('application/'+type, {
             type: type,
-            isModal: isModal,
             path: _path,
             nav_menu: module+'/nav-menu.html',
             site_menu: module+'/site-menu.html'

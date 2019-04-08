@@ -5,7 +5,231 @@
  */
 (function (docuemnt, window, $) {
     'use strict';
+    
+    $.parentFrame = $(window.top.document);
+    
+    $.leavePage = null; // 离开页面方法
 
+    $.ctx = ''; // 项目名称
+
+    $.configs = $.configs || {}; // 配置基本信息
+
+    $.extend($.configs, {
+        _data: {},
+        get: function (name) {
+            var data = this._data;
+
+            for (var i = 0; i < arguments.length; i++) {
+                name = arguments[i];
+
+                data = data[name];
+            }
+
+            return data;
+        },
+        set: function (name, value) {
+            this._data[name] = value;
+        },
+        extend: function (name, options) {
+            var value = this.get(name);
+            return $.extend(true, value, options);
+        }
+    });
+
+    $.colors = function (name, level) { // 获取颜色配置信息
+        if (!$.configs.colors && typeof $.configs.colors[name] === 'undefined') {
+            return null;
+        }
+
+        if (level && typeof $.configs.colors[name][level] !== 'undefined') {
+            return $.configs.colors[name][level];
+        }else{
+            return $.configs.colors[name];
+        }
+    };
+
+    $.po = function (name, options) { // 3rd调用参数
+        var defaults = $.components.getDefaults(name);
+        return $.extend(true, {}, defaults, options);
+    };
+
+    $.objExtend = $.objExtend || {}; // 公用模块对象
+
+    $.extend($.objExtend, {
+        _queue: {
+            prepare: [],
+            run: [],
+            complete: []
+        },
+        run: function () {
+            var self = this;
+            this.dequeue('prepare', function () {
+                self.trigger('before.run', self);
+            });
+
+            this.dequeue('run', function () {
+                self.dequeue('complete', function () {
+                    self.trigger('after.run', self);
+                });
+            });
+        },
+        dequeue: function (name, done) { // 队列当前状态离队，进行下一步操作
+            var self = this,
+                queue = this.getQueue(name),
+                fn = queue.shift(),
+                next = function () {
+                    self.dequeue(name, done);
+                };
+
+            if (fn) {
+                fn.call(this, next);
+            } else if ($.isFunction(done)) {
+                done.call(this);
+            }
+        },
+        getQueue: function (name) { // 获取队列状态信息
+            if (!$.isArray(this._queue[name])) {
+                this._queue[name] = [];
+            }
+
+            return this._queue[name];
+        },
+        extend: function (obj) { // 公用模块对象扩展方法
+            $.each(this._queue, function (name, queue) {
+                if ($.isFunction(obj[name])) {
+                    queue.unshift(obj[name]);
+
+                    delete obj[name];
+                }
+            });
+            $.extend(this, obj);
+            return this;
+        },
+        trigger: function (name, data, $el) { // 离队状态执行动作
+
+            if (typeof name === 'undefined') {
+                return;
+            }
+            if (typeof $el === 'undefined') {
+                $el = $("#qadmin-pageContent");
+            }
+
+            $el.trigger(name + '.app', data);
+        }
+    });
+
+    $.components = $.components || {}; // 实现插件的提前检测和调用
+
+    $.extend($.components, {
+        _components: {},
+        register: function (name, obj) {
+            this._components[name] = obj;
+        },
+        init: function (args, name,context) {
+            var self = this, obj;
+                args =  args || true;
+
+            if (typeof name === 'undefined') {
+                $.each(this._components, function (name) {
+                    self.init(args, name);
+                });
+            } else {
+                context = context || document;
+
+                obj = this.get(name);
+
+                if (!obj) {
+                    return;
+                }
+
+                switch (obj.mode) {
+                    case 'default':
+                        return this._initDefault(name, context);
+                    case 'init':
+                        return this._initComponent(obj, context);
+                    case 'api':
+                        return this._initApi(obj, context,args);
+                    default:
+                        this._initApi(obj, context,args);
+                        this._initComponent(obj, context);
+                        return;
+                }
+            }
+        },
+        _initDefault: function (name, context) { // jquery 3rd的基本用法
+            if (!$.fn[name]) {
+                return;
+            }
+
+            var defaults = this.getDefaults(name);
+
+            $('[data-plugin=' + name + ']', context).each(function () {
+                var $this = $(this),
+                    options = $.extend(true, {}, defaults, $this.data());
+
+                $this[name](options);
+            });
+        },
+        _initComponent: function (obj, context) { // jquery 3rd的高级用法
+            if ($.isFunction(obj.init)) {
+                obj.init.call(obj, context);
+            }
+        },
+        _initApi: function (obj, context, args) { // 其他处理
+            if (args && $.isFunction(obj.api)) {
+                obj.api.call(obj, context);
+            }
+        },
+        getDefaults: function (name) {
+            var component = this.get(name);
+
+            return component && typeof component.defaults !== "undefined" ? component.defaults : {};
+        },
+        get: function (name) {
+            if (typeof this._components[name] !== "undefined") {
+                return this._components[name];
+            } else {
+                console.error('component:' + name + ' 脚本文件没有注册任何信息！');
+                return undefined;
+            }
+        }
+    });
+
+    $.sessionStorage = $.sessionStorage || {};
+    $.extend($.sessionStorage, {
+        'set': function(key, value) {
+            if (!sessionStorage) {
+                console.error('该浏览器不支持sessionStorage对象');
+            }
+            if (!key || !value) {
+                return null;
+            }
+            if (typeof value === 'object') {
+                value = JSON.stringify(value);
+            }
+            sessionStorage.setItem(key, value);
+        },
+        'get': function(key) {
+            var value;
+            if (!sessionStorage) {
+                console.error('该浏览器不支持sessionStorage对象');
+            }
+            value = sessionStorage.getItem(key);
+            if (!value) {
+                return null;
+            }
+            if (typeof value === 'string') {
+                value = JSON.parse(value);
+            }
+            return value;
+        },
+        'remove': function(key) {
+            if (!sessionStorage) {
+                console.error('该浏览器不支持sessionStorage对象');
+            }
+            sessionStorage.removeItem(key);
+        }
+    });
     /* globals Breakpoints, screenfull*/
 
     window.Content = $.extend({}, $.objExtend);
@@ -264,7 +488,7 @@
 
             $(document).on('pjax:start', function () {
                 window.onresize = null;
-                window.App = null;
+                //window.App = null;
                 window.Content = $.extend({}, $.objExtend);
 
                 $("#qadmin-pageContent").off();
@@ -416,4 +640,278 @@
         $.site.run();
     });
 
+    $.configs.set('site', {
+        fontFamily: '"Helvetica Neue", Helvetica, Tahoma, Arial, "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif'
+    });
+
+    $.configs.colors = {
+        "red": {
+            "100": "#ffeaea",
+            "200": "#fad3d3",
+            "300": "#fab4b4",
+            "400": "#fa9898",
+            "500": "#fa7a7a",
+            "600": "#f96868",
+            "700": "#e9595b",
+            "800": "#d6494b"
+        },
+        "pink": {
+            "100": "#fce4ec",
+            "200": "#ffccde",
+            "300": "#fba9c6",
+            "400": "#fb8db4",
+            "500": "#f978a6",
+            "600": "#f96197",
+            "700": "#f44c87",
+            "800": "#e53b75"
+        },
+        "purple": {
+            "100": "#f6f2ff",
+            "200": "#e3dbf4",
+            "300": "#d2c5ec",
+            "400": "#bba7e4",
+            "500": "#a58add",
+            "600": "#926dde",
+            "700": "#7c51d1",
+            "800": "#6d45bc"
+        },
+        "indigo": {
+            "100": "#edeff9",
+            "200": "#dadef5",
+            "300": "#bcc5f4",
+            "400": "#9daaf3",
+            "500": "#8897ec",
+            "600": "#677ae4",
+            "700": "#5166d6",
+            "800": "#465bd4"
+        },
+        "blue": {
+            "100": "#e8f1f8",
+            "200": "#d5e4f1",
+            "300": "#bcd8f1",
+            "400": "#a2caee",
+            "500": "#89bceb",
+            "600": "#62a8ea",
+            "700": "#4e97d9",
+            "800": "#3583ca"
+        },
+        "cyan": {
+            "100": "#ecf9fa",
+            "200": "#d3eff2",
+            "300": "#baeaef",
+            "400": "#9ae1e9",
+            "500": "#77d6e1",
+            "600": "#57c7d4",
+            "700": "#47b8c6",
+            "800": "#37a9b7"
+        },
+        "teal": {
+            "100": "#ecfdfc",
+            "200": "#cdf4f1",
+            "300": "#99e1da",
+            "400": "#79d1c9",
+            "500": "#56bfb5",
+            "600": "#3aa99e",
+            "700": "#269b8f",
+            "800": "#178d81"
+        },
+        "green": {
+            "100": "#e7faf2",
+            "200": "#bfedd8",
+            "300": "#9fe5c5",
+            "400": "#7dd3ae",
+            "500": "#5cd29d",
+            "600": "#46be8a",
+            "700": "#36ab7a",
+            "800": "#279566"
+        },
+        "light-green": {
+            "100": "#f1f7ea",
+            "200": "#e0ecd1",
+            "300": "#cadfb1",
+            "400": "#bad896",
+            "500": "#acd57c",
+            "600": "#9ece67",
+            "700": "#83b944",
+            "800": "#70a532"
+        },
+        "yellow": {
+            "100": "#fffae7",
+            "200": "#f9eec1",
+            "300": "#f6e7a9",
+            "400": "#f8e59b",
+            "500": "#f7e083",
+            "600": "#f7da64",
+            "700": "#f9cd48",
+            "800": "#fbc02d"
+        },
+        "orange": {
+            "100": "#fff3e6",
+            "200": "#ffddb9",
+            "300": "#fbce9d",
+            "400": "#f6be80",
+            "500": "#f4b066",
+            "600": "#f2a654",
+            "700": "#ec9940",
+            "800": "#e98f2e"
+        },
+        "brown": {
+            "100": "#fae6df",
+            "200": "#e2bdaf",
+            "300": "#d3aa9c",
+            "400": "#b98e7e",
+            "500": "#a17768",
+            "600": "#8d6658",
+            "700": "#7d5b4f",
+            "800": "#715146"
+        },
+        "grey": {
+            "100": "#fafafa",
+            "200": "#eeeeee",
+            "300": "#e0e0e0",
+            "400": "#bdbdbd",
+            "500": "#9e9e9e",
+            "600": "#757575",
+            "700": "#616161",
+            "800": "#424242"
+        },
+        "blue-grey": {
+            "100": "#f3f7f9",
+            "200": "#e4eaec",
+            "300": "#ccd5db",
+            "400": "#a3afb7",
+            "500": "#76838f",
+            "600": "#526069",
+            "700": "#37474f",
+            "800": "#263238"
+        }
+    };
+
+    var isIE = (function () { // 检查IE
+        if (!!window.ActiveXObject || "ActiveXObject" in window){
+            return true;
+        }else{
+            return false;
+        }
+    });
+
+    if(isIE){
+        $.ajaxSetup({
+            cache: false
+        });
+    }
+
+    var $content = $("#qadmin-pageContent");
+    
+    /*公用模块对象*/
+    window.app = {
+        handleSlidePanel: function () {
+            if (typeof $.slidePanel === 'undefined') {
+                return;
+            }
+
+            $content.on('click', '[data-toggle=slidePanel]', function (e) {
+                $.slidePanel.show({
+                    url: $(this).data('url'),
+                    settings: {
+                        cache: false
+                    }
+                }, $.po('slidePanel', {
+                    template: function (options) {
+                        return '<div class="' + options.classes.base + ' ' + options.classes.base + '-' + options.direction + '">' +
+                            '<div class="' + options.classes.base + '-scrollable"><div>' +
+                            '<div class="' + options.classes.content + '"></div>' +
+                            '</div></div>' +
+                            '<div class="' + options.classes.base + '-handler"></div>' +
+                            '</div>';
+                    },
+                    afterLoad: function () {
+                        this.$panel.find('.' + this.options.classes.base + '-scrollable')
+                            .slimScroll($.po('slimScroll'));
+                    }
+                }));
+
+                e.stopPropagation();
+            });
+        },
+        handleMultiSelect: function () {
+            var $all = $('.select-all');
+
+            $content.on('change', '.multi-select', function (e, isSelectAll) {
+                if (isSelectAll) {
+                    return;
+                }
+
+                var $select = $('.multi-select'),
+                    total = $select.length,
+                    checked = $select.find('input:checked').length;
+                if (total === checked) {
+                    $all.find('input').prop('checked', true);
+                } else {
+                    $all.find('input').prop('checked', false);
+                }
+            });
+
+            $all.on('change', function () {
+                var checked = $(this).find('input').prop('checked');
+
+                $('.multi-select input').each(function () {
+                    $(this).prop('checked', checked).trigger('change', [true]);
+                });
+
+            });
+        },
+        handleListActions: function () { // 操作主体部分，左侧菜单编辑
+            $content.on('keydown', '.list-editable [data-bind]', function (event) {
+                var keycode = (event.keyCode ? event.keyCode : event.which);
+
+                if (keycode === 13 || keycode === 27) {
+                    var $input = $(this),
+                        bind = $input.data('bind'),
+                        $list = $input.parents('.list-group-item'),
+                        $content = $list.find('.list-content'),
+                        $editable = $list.find('.list-editable'),
+                        $update = bind ? $list.find(bind) : $list.find('.list-text');
+
+                    if (keycode === 13) {
+                        $update.html($input.val());
+                    } else {
+                        $input.val($update.text());
+                    }
+
+                    $content.show();
+                    $editable.hide();
+                }
+            });
+
+            $content.on('click', '[data-toggle="list-editable-close"]', function () {
+                var $btn = $(this),
+                    $list = $btn.parents('.list-group-item'),
+                    $content = $list.find('.list-content'),
+                    $editable = $list.find('.list-editable');
+
+                $content.show();
+                $editable.hide();
+            });
+        },
+        pageAside: function () {
+            var pageAside = $(".page-aside"),
+                isOpen = pageAside.hasClass('open');
+
+            pageAside.toggleClass('open', !isOpen);
+        },
+        run: function () {
+            var self = this;
+
+            // 小屏下侧边栏滚动
+            $content.on('click', '.page-aside-switch', function (e) {
+                self.pageAside();
+                e.stopPropagation();
+            });
+
+        }
+    };
+
+    window.App = $.extend({}, $.objExtend);
+    window.App.extend(window.app);
 })(document, window, jQuery);

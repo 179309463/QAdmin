@@ -6,15 +6,9 @@
 		<%- include('./includes/style.html') %>	
 		<%- include('./includes/script-head.html') %>	
 	</head>
-	<body class="iframe">
-		<main class="site-page">
-			<div class="page-container" id="qadmin-pageContent">
-				<%- include('../'+path) %>
-			</div>
-			<div class="page-loading vertical-align text-center">
-				<div class="page-loader loader-default loader vertical-align-middle" data-type="default"></div>
-			</div>
-		</main>
+	<body class="iframe isModal">
+		<%- include('../'+path) %>
+
         <!-- 布局 -->
         <script src="/views/application/includes/site-menu.js"></script>
         <script src="/views/application/includes/site-menubar.js"></script>
