@@ -524,17 +524,17 @@
     (function () {
         var a11 = [];
         for (var i = 1; i <= 5; i += 1) {
-            a11.push([parseInt(Math.random() * 30), i]);
+            a11.push([i, parseInt(Math.random() * 30)]);
         }
 
         var a22 = [];
         for (i = 1; i <= 5; i += 1) {
-            a22.push([parseInt(Math.random() * 30), i]);
+            a22.push([i, parseInt(Math.random() * 30)]);
         }
 
         var a33 = [];
         for (i = 1; i <= 5; i += 1) {
-            a33.push([parseInt(Math.random() * 30), i]);
+            a33.push([i, parseInt(Math.random() * 30)]);
         }
 
         $.plot("#exampleFlotHorizontalBar", [{

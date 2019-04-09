@@ -143,7 +143,8 @@
     "framework7": "4.2.2",
     "framework7-vue": "https://github.com/framework7io/framework7-vue.git#^2.0.0",
     "ladda": "1.0.6",
-    "bootstrap": "4.3.1"
+    "bootstrap": "4.3.1",
+    "flot": "3.0.2"
   },
   "resolutions": {
     "chartist": "^0.11.0",
