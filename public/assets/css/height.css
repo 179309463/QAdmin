@@ -4,6 +4,9 @@
 .height-full-40{
 	height: calc(100% - 40px);
 }
+.site-page{
+	height: 100%;
+}
 .site-page .page-container{
 	height: 100%;
 }

@@ -1,5 +1,4 @@
 qadmin D:\qadmin
-├── Ionicons#2.0.1 (latest is 4.5.5)
 ├── ag-grid-docs#15.0.0 (latest is 18.0.0)
 ├── ag-grid-enterprise#15.0.0 (latest is 20.2.0)
 ├─┬ bootbox.js#4.4.0 (latest is 5.1.0)
