@@ -1,8 +1,4 @@
 qadmin D:\qadmin
-├── ag-grid-docs#15.0.0 (latest is 18.0.0)
-├── ag-grid-enterprise#15.0.0 (latest is 20.2.0)
-├─┬ bootbox.js#4.4.0 (latest is 5.1.0)
-│ └── bootstrap#4.3.1
 ├── bootstrap-colorpicker#2.5.3 (latest is 3.1.1)
 ├─┬ bootstrap-daterangepicker#2.1.27 (latest is 3.0.3)
 │ ├── jquery#3.3.1

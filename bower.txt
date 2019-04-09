@@ -1,5 +1,0 @@
-bower check-new     Checking for new versions of the project dependencies...
-qadmin D:\github\qadmin
-
-├── Ionicons#2.0.1 (latest is 4.0.0-11)
-├── d3#3.5.17 incompatible with ^4.11.0 (4.12.2 available)
