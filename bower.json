@@ -20,7 +20,7 @@
     "blueimp-tmpl": "^3.11.0",
     "blueimp-load-image": "2.21.0",
     "blueimp-file-upload": "9.28.0",
-    "bootbox.js": "bootbox#^4.4.0",
+    "bootbox.js": "5.1.0",
     "bootstrap-contextmenu": "^0.3.4",
     "bootstrap-colorpicker": "^2.5.1",
     "bootstrap-datepicker": "1.8.0",
@@ -144,7 +144,8 @@
     "framework7-vue": "https://github.com/framework7io/framework7-vue.git#^2.0.0",
     "ladda": "1.0.6",
     "bootstrap": "4.3.1",
-    "flot": "3.0.2"
+    "flot": "3.0.2",
+    "ionicons": "4.5.5"
   },
   "resolutions": {
     "chartist": "^0.11.0",
@@ -161,6 +162,7 @@
     "d3": "^5.0.0",
     "framework7": "4.2.2",
     "jquery_appear": "0.4.1",
-    "mxgraph": "4.0.0"
+    "mxgraph": "4.0.0",
+    "bootbox.js": "5.1.0"
   }
 }
