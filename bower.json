@@ -22,7 +22,7 @@
     "blueimp-file-upload": "9.28.0",
     "bootbox.js": "5.1.0",
     "bootstrap-contextmenu": "^0.3.4",
-    "bootstrap-colorpicker": "^2.5.1",
+    "bootstrap-colorpicker": "2.5.3",
     "bootstrap-datepicker": "1.8.0",
     "bootstrap-daterangepicker": "^2.1.25",
     "bootstrap-hover-dropdown": "^2.2.1",
@@ -164,6 +164,7 @@
     "mxgraph": "4.0.0",
     "bootbox.js": "5.1.0",
     "ag-grid-enterprise": "20.2.0",
-    "ag-grid-docs": "18.0.0"
+    "ag-grid-docs": "18.0.0",
+    "bootstrap-colorpicker": "2.5.3"
   }
 }
