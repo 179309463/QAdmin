@@ -614,15 +614,15 @@
         iframeEvents: function(iframe) {
             var self = this,
             loadStyles = function(iframeDocument) {
-                $('#qadmin-siteStyle', iframeDocument).load(function() {
+                //$('#qadmin-siteStyle', iframeDocument).load(function() {
                     var style = $('#qadmin-siteStyle', self.iframeDocument);
                     var min = style.prop('href').indexOf('?v=') === -1 ? '': '.min';
                     if (self.themeColor && self.themeColor !== 'primary') {
                         style.attr('href', '/public/assets/skins/' + self.themeColor + '/site' + min + '.css');
                     }
-                });
-            };
-            iframe.load(function() {
+                //});
+            },
+            loadIframe = function() {
                 var iframeDocument = self.iframeDocument = $.content.document();
                 $(iframeDocument).on('click', function() {
                     if (Breakpoints.is('xs') && $('body').hasClass('site-menubar-open')) {
@@ -632,7 +632,12 @@
                     $('.dropdown-menu.show').removeClass('show');
                 });
                 loadStyles(iframeDocument);
-            });
+            };
+            if(iframe[0].attachEvent) {
+                iframe[0].attachEvent("onload", loadIframe);
+            } else {
+                iframe[0].onload = loadIframe;
+            }
         }
     });
 

@@ -441,7 +441,7 @@
                 if ($currentLabel.closest('li').hasClass('active')) {
                     return true;
                 }
-                if ($currentLabel.closest('li').size() <= 0) {
+                if ($currentLabel.closest('li').length <= 0) {
                     return false;
                 }
                 $labelNav.find('li.active').removeClass('active');
@@ -597,7 +597,7 @@
                 if (tab.is('.active')) {
                     var which = '';
                     var nextLi = tab.next('li');
-                    if (nextLi.size() > 0) {
+                    if (nextLi.length > 0) {
                         which = nextLi;
                     } else {
                         which = tab.prev('li');
