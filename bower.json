@@ -52,7 +52,7 @@
     "datepair.js": "^0.4.15",
     "draggabilly": "^2.1.1",
     "dropify": "^0.2.2",
-    "echarts": "^3.7.2",
+    "echarts": "4.2.1",
     "flag-icon-css": "^2.9.0",
     "Flot": "flot#^0.8.3",
     "gridstack": "0.4.0",
@@ -170,6 +170,7 @@
     "fullcalendar": "4.0.2",
     "smooth-scroll": "16.0.3",
     "gojs": "2.0.8",
-    "highcharts": "7.1.0"
+    "highcharts": "7.1.0",
+    "echarts": "4.2.1"
   }
 }
