@@ -92,7 +92,7 @@
     "nprogress": "^0.2.0",
     "owl.carousel": "OwlCarousel2#^2.2.1",
     "peity": "^3.2.1",
-    "plyr": "^2.0.16",
+    "plyr": "3.5.2",
     "raphael": "2.2.8",
     "raty": "2.8.0",
     "respond": "^1.4.2",
@@ -166,6 +166,7 @@
     "ag-grid-enterprise": "20.2.0",
     "ag-grid-docs": "18.0.0",
     "bootstrap-colorpicker": "2.5.3",
-    "screenfull": "4.2.0"
+    "screenfull": "4.2.0",
+    "plyr": "3.5.2"
   }
 }
