@@ -44,7 +44,6 @@ qadmin D:\qadmin
 ├─┬ ladda#1.0.6 (latest is 2.0.1)
 │ └── spin.js#2.0.2 (latest is 4.0.0)
 ├── plyr#2.0.18 (latest is 3.5.2)
-├── screenfull#3.3.3 (latest is 4.2.0)
 ├── smooth-scroll#12.1.5 (latest is 16.0.3)
 ├── to-markdown#3.1.1 (latest is 5.0.3)
 ├─┬ webui-popover#1.2.17 (latest is 2.1.15)
