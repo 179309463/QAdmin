@@ -1,7 +1,6 @@
 ├── bootstrap-daterangepicker#2.1.27 (latest is 3.0.3)
-├── bootstrap-select#1.12.4 (latest is 2.0.0-beta1)
-├── ladda#1.0.6 (latest is 2.0.1)
 ├── smooth-scroll#12.1.5 (latest is 16.0.3)
 
 Flot的水平堆叠条形图
 bootstrap-colorpicker#2.5.3 不能升级
+ladda#1.0.6 不能升级
