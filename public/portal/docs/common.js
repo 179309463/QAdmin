@@ -38,7 +38,7 @@
     for (var i = 0, len = version.length; i < len; i++) {
         version[i].addEventListener('change', function (e) {
             var version = e.target.value
-            window.location.assign('http://docs.qadmin.com/' + version + '/');
+            window.location.assign('http://docs.admui.com/' + version + '/');
         });
     }
     /**
@@ -100,9 +100,9 @@
             // make links clickable
             allHeaders.forEach(makeHeaderClickable)
 
-            smoothScroll.init({
+            new SmoothScroll('a[href*="#"]',{
                 speed: 400,
-                offset: window.innerWidth > 720 ? 105 : 65
+                offset: window.innerWidth > 720 ? 100 : 65
             })
         }
 

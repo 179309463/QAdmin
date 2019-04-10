@@ -425,7 +425,7 @@ body.sidebar-open {
 }
 #home .banner {
   height: 480px;
-  background: center center url("/assets/img/banner.jpg") no-repeat;
+  background: center center url("/assets/images/banner.jpg") no-repeat;
   text-align: center;
   position: relative;
 }

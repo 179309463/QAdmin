@@ -132,7 +132,7 @@
     "move.js": "visionmedia/move.js#^0.5.0",
     "vue": "2.6.10",
     "jQuery-wScrollspy": "willianis4w/jQuery-wScrollspy",
-    "smooth-scroll": "cferdinandi/smooth-scroll#^12.1.5",
+    "smooth-scroll": "cferdinandi/smooth-scroll#16.0.3",
     "jquery": "3.3.1",
     "city-picker": "1.2.0",
     "ckeditor": "4.11.3",
@@ -167,6 +167,7 @@
     "bootstrap-colorpicker": "2.5.3",
     "screenfull": "4.2.0",
     "plyr": "3.5.2",
-    "fullcalendar": "4.0.2"
+    "fullcalendar": "4.0.2",
+    "smooth-scroll": "16.0.3"
   }
 }
