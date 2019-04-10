@@ -1,67 +1,75 @@
-/**
- * QAdmin v1.2.0 (http://www.qadmin.com/)
- * Copyright 2015-2017 QAdmin Team
- * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
- */
-.page-forms .btn-group .btn + .btn, .page-forms .btn-group .btn + .btn-group, .page-forms .btn-group .btn-group + .btn, .page-forms .btn-group .btn-group + .btn-group {
-	margin-left: 0;
+.cropper-preview,.img-preview {
+	overflow: hidden
 }
-.page-forms .cropper-preview {
-	overflow: hidden;
+
+.btn-group .btn+.btn,.btn-group .btn+.btn-group,.btn-group .btn-group+.btn,.btn-group .btn-group+.btn-group {
+	margin-left: 0
 }
-.page-forms .img-preview {
+
+.img-preview {
 	float: left;
-	margin: 0 10px 10px 0;
-	overflow: hidden;
+	margin: 0 10px 10px 0
 }
-.page-forms .img-preview > img {
-	max-width: 100%;
+
+.img-preview>img {
+	max-width: 100%
 }
-.page-forms .preview-lg {
+
+.preview-lg {
 	width: 263px;
-	height: 148px;
+	height: 148px
 }
-.page-forms .preview-md {
+
+.preview-md {
 	width: 139px;
-	height: 78px;
+	height: 78px
 }
-.page-forms .preview-sm {
+
+.preview-sm {
 	width: 69px;
-	height: 39px;
+	height: 39px
 }
-.page-forms .preview-xs {
+
+.preview-xs {
 	width: 35px;
 	height: 20px;
-	margin-right: 0;
+	margin-right: 0
 }
-.page-forms .cropper, .page-forms .cropper-toolbar {
-	margin-bottom: 30px;
+
+.cropper,.cropper-toolbar {
+	margin-bottom: 30px
 }
-@media (min-width: 1200px) {
-	.page-forms .cropper {
-		max-height: 600px;
+
+@media (min-width:1200px) {
+	.cropper {
+		max-height: 600px
 	}
 }
-@media (min-width: 769px) {
-	.page-forms .cropper {
-		max-height: 400px;
+
+@media (min-width:768px) {
+	.cropper {
+		max-height: 400px
 	}
 }
-@media (max-width: 768px) {
-	.page-forms .cropper {
-		max-height: 300px;
+
+@media (max-width:767.98px) {
+	.cropper {
+		max-height: 300px
 	}
 }
-@media (max-width: 480px) {
-	.page-forms .cropper {
-		max-height: 246px;
+
+@media (max-width:479.98px) {
+	.cropper {
+		max-height: 246px
 	}
 }
-@media (max-width: 586px) {
-	.page-forms .btn-group .btn {
-		padding: 6px 8px;
+
+@media (max-width:586px) {
+	.btn-group .btn {
+		padding: 6px 8px
 	}
-	.page-forms .cropper {
-		max-height: 246px;
+
+	.cropper {
+		max-height: 246px
 	}
 }
