@@ -117,7 +117,7 @@
     "propertiesjs": "^1.6.0",
     "layer": "^3.1.1",
     "pixeden-stroke-7-icon": "^1.2.3",
-    "font-awesome": "^4.7.0",
+    "font-awesome": "4.7.0",
     "glyphicons": "^0.0.2",
     "open-iconic": "^1.1.1",
     "themify-icons": "^0.1.2",
@@ -146,7 +146,6 @@
     "ionicons": "4.5.5"
   },
   "resolutions": {
-    "jquery": "3.3.1",
-    "bootstrap": "4.3.1"
+    "font-awesome": "4.7.0"
   }
 }
