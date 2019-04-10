@@ -1,9 +1,15 @@
 <title>日历 - 页面示例</title>
 
-<link rel="stylesheet" href="/vendor/fullcalendar/dist/fullcalendar.css">
+<link rel="stylesheet" href="/vendor/fullcalendar/dist/core/main.css">
+<link rel="stylesheet" href="/vendor/fullcalendar/dist/bootstrap/main.css">
+<link rel="stylesheet" href="/vendor/fullcalendar/dist/daygrid/main.css">
+<link rel="stylesheet" href="/vendor/fullcalendar/dist/timegrid/main.css">
+<link rel="stylesheet" href="/vendor/fullcalendar/dist/list/main.css">
+
 <link rel="stylesheet" href="/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.css">
 <link rel="stylesheet" href="/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css">
 <link rel="stylesheet" href="/lib/jquery-selective/jquery-selective.css">
+
 <link rel="stylesheet" href="/views/examples/pages/team/calendar/index.css">
 
 <div class="page animation-fade page-calendar page-aside-fixed page-aside-left page-full">
@@ -90,19 +96,19 @@
                     事件</h5>
                 <div class="list-group calendar-list">
                     <a class="list-group-item calendar-event" data-title="Meeting" data-stick=true data-color="red-600"
-                        href="javascript:;">
+                       href="javascript:;">
                         <i class="wb-medium-point red-600 mr-10" aria-hidden="true"></i>开会
                     </a>
                     <a class="list-group-item calendar-event" data-title="Birthday Party" data-stick=true data-color="green-600"
-                        href="javascript:;">
+                       href="javascript:;">
                         <i class="wb-medium-point green-600 mr-10" aria-hidden="true"></i>生日
                     </a>
                     <a class="list-group-item calendar-event" data-title="Call Jimba" data-stick=true data-color="orange-600"
-                        href="javascript:;">
+                       href="javascript:;">
                         <i class="wb-medium-point orange-600 mr-10" aria-hidden="true"></i>联系客户
                     </a>
                     <a class="list-group-item calendar-event" data-title="Dinner with Team" data-stick=true data-color="cyan-600"
-                        href="javascript:;">
+                       href="javascript:;">
                         <i class="wb-medium-point cyan-600 mr-10" aria-hidden="true"></i>团队活动
                     </a>
                     <a id="addNewEventBtn" class="list-group-item" href="javascript:;">
@@ -147,7 +153,7 @@
                     <div class="col-sm-10">
                         <div class="input-group">
                             <input type="text" class="form-control" id="starts" data-container="#addNewEvent"
-                                    data-plugin="datepicker" data-language="zh-CN">
+                                   data-plugin="datepicker" data-language="zh-CN">
                             <div class="input-group-append">
                                 <span class="input-group-text">
                                     <i class="icon wb-calendar" aria-hidden="true"></i>
@@ -161,7 +167,7 @@
                     <div class="col-sm-10">
                         <div class="input-group">
                             <input type="text" class="form-control" id="ends" data-container="#addNewEvent" data-plugin="datepicker"
-                                    data-language="zh-CN">
+                                   data-language="zh-CN">
                             <div class="input-group-append">
                                 <span class="input-group-text">
                                     <i class="icon wb-calendar" aria-hidden="true"></i>
@@ -174,7 +180,7 @@
                     <label class="col-sm-2 col-form-label" for="repeats">重复：</label>
                     <div class="col-sm-10">
                         <input type="number" class="form-control" id="repeats" name="repeats" data-plugin="TouchSpin"
-                                data-min="0" data-max="10" value="0">
+                               data-min="0" data-max="10" value="0">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -232,7 +238,7 @@
 </div>
 
 <div class="modal fade" id="editNewEvent" aria-hidden="true" aria-labelledby="editNewEvent" role="dialog" tabindex="-1"
-        data-show="false">
+     data-show="false">
     <div class="modal-dialog">
         <form class="modal-content form-horizontal" action="#" method="post" role="form">
             <div class="modal-header">
@@ -254,7 +260,7 @@
                     <div class="col-sm-10">
                         <div class="input-group">
                             <input type="text" class="form-control" id="editStarts" name="editStarts" data-container="#editNewEvent"
-                                    data-plugin="datepicker" data-language="zh-CN">
+                                   data-plugin="datepicker" data-language="zh-CN">
                             <div class="input-group-append">
                                 <span class="input-group-text">
                                     <i class="icon wb-calendar" aria-hidden="true"></i>
@@ -268,7 +274,7 @@
                     <div class="col-sm-10">
                         <div class="input-group">
                             <input type="text" class="form-control" id="editEnds" data-container="#editNewEvent"
-                                    data-plugin="datepicker" data-language="zh-CN">
+                                   data-plugin="datepicker" data-language="zh-CN">
                             <div class="input-group-append">
                                 <span class="input-group-text">
                                     <i class="icon wb-calendar" aria-hidden="true"></i>
@@ -281,7 +287,7 @@
                     <label class="col-sm-2 col-form-label" for="editRepeats">重复：</label>
                     <div class="col-sm-10">
                         <input type="number" class="form-control" id="editRepeats" name="repeats" data-plugin="TouchSpin"
-                                data-min="0" data-max="10" value="0">
+                               data-min="0" data-max="10" value="0">
                     </div>
                 </div>
                 <div class="form-group row" id="editColor">
@@ -413,7 +419,7 @@
 </div>
 
 <div class="modal fade" id="addNewCalendarForm" aria-hidden="true" aria-labelledby="addNewCalendarForm" role="dialog"
-        tabindex="-1">
+     tabindex="-1">
     <div class="modal-dialog">
         <form class="modal-content" action="#" method="post" role="form">
             <div class="modal-header">
@@ -448,14 +454,20 @@
 
 <script src="/vendor/jquery-ui/jquery-ui.min.js"></script>
 <script src="/vendor/moment/min/moment.min.js" data-name="moment"></script>
-<script src="/vendor/fullcalendar/dist/fullcalendar.min.js" data-name="fullcalendar" data-deps="moment"></script>
-<script src="/vendor/fullcalendar/dist/locale/zh-cn.js" data-deps="fullcalendar"></script>
+<script src="/vendor/fullcalendar/dist/core/main.js" data-name="fullcalendar" data-deps="moment"></script>
+<script src="/vendor/fullcalendar/dist/bootstrap/main.js" data-deps="fullcalendar"></script>
+<script src="/vendor/fullcalendar/dist/interaction/main.js" data-deps="fullcalendar"></script>
+<script src="/vendor/fullcalendar/dist/daygrid/main.js" data-deps="fullcalendar"></script>
+<script src="/vendor/fullcalendar/dist/timegrid/main.js" data-deps="fullcalendar"></script>
+<script src="/vendor/fullcalendar/dist/list/main.js" data-deps="fullcalendar"></script>
+
+<script src="/vendor/fullcalendar/dist/core/locales/zh-cn.js" data-deps="fullcalendar"></script>
 <script src="/vendor/jquery-selective/dist/jquery-selective.min.js"></script>
 
 <script src="/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" data-name="datepicker"></script>
 <script src="/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js" data-deps="datepicker"></script>
 <script src="/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
-<script src="/vendor/bootbox.js/bootbox.js"></script>
+<script src="/vendor/bootbox.js/dist/bootbox.all.min.js"></script>
 <script src="/assets/js/plugins/action-btn.js"></script>
 
 <script src="/views/examples/pages/team/calendar/index.js" data-deps="fullcalendar"></script>

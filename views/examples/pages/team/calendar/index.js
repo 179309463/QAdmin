@@ -49,12 +49,15 @@
             }];
             var actionBtn = $('.site-action').actionBtn().data('actionBtn');
             var my_options = {
+                plugins: [ 'bootstrap', 'dayGrid', 'timeGrid', 'list', 'interaction' ],
                 header: {
-                    left: null,
-                    center: 'prev,title,next',
-                    right: 'month,agendaWeek,agendaDay'
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
                 },
                 defaultDate: '2016-10-12',
+                locale: 'zh-cn',
+                themeSystem: 'bootstrap',
                 selectable: true,
                 selectHelper: true,
                 select: function () {
@@ -62,15 +65,15 @@
                 },
                 editable: true,
                 eventLimit: true,
-                windowResize: function (view) {
-                    var width = $(window).outerWidth();
-                    var options = $.extend({}, my_options);
-                    options.events = view.calendar.getEventCache();
-                    options.aspectRatio = width < 667 ? 0.5 : 1.35;
+                // windowResize: function (view) {
+                //     var width = $(window).outerWidth();
+                //     var options = $.extend({}, my_options);
+                //     options.events = view.calendar.getEventCache();
+                //     options.aspectRatio = width < 667 ? 0.5 : 1.35;
 
-                    $('#calendar').fullCalendar('destroy');
-                    $('#calendar').fullCalendar(options);
-                },
+                //     $('#calendar').fullCalendar('destroy');
+                //     $('#calendar').fullCalendar(options);
+                // },
                 eventClick: function (event) {
                     var color = event.backgroundColor ? event.backgroundColor : $.colors('blue', 600);
                     $('#editEname').val(event.title);
@@ -129,36 +132,36 @@
             _options = $(window).outerWidth() < 667 ? my_options_mobile : my_options;
 
             $('#editNewEvent').modal();
-            $('#calendar').fullCalendar(_options);
+            new FullCalendar.Calendar($('#calendar')[0],_options).render();
         },
 
         handleSelective: function () {
             var member = [{
                 id: 'uid_1',
                 name: '刘松洋',
-                avatar: '/views/examples/images/portraits/1.jpg'
+                avatar: '/assets/images/portraits/1.jpg'
             }, {
                 id: 'uid_2',
                 name: '邓艳红',
-                avatar: '/views/examples/images/portraits/2.jpg'
+                avatar: '/assets/images/portraits/2.jpg'
             }, {
                 id: 'uid_3',
                 name: '张润展',
-                avatar: '/views/examples/images/portraits/3.jpg'
+                avatar: '/assets/images/portraits/3.jpg'
             }, {
                 id: 'uid_4',
                 name: '李吉琴',
-                avatar: '/views/examples/images/portraits/4.jpg'
+                avatar: '/assets/images/portraits/4.jpg'
             }];
 
             var items = [{
                 id: 'uid_1',
                 name: '赵振宁',
-                avatar: '/views/examples/images/portraits/1.jpg'
+                avatar: '/assets/images/portraits/1.jpg'
             }, {
                 id: 'uid_2',
                 name: '陈宝荣',
-                avatar: '/views/examples/images/portraits/2.jpg'
+                avatar: '/assets/images/portraits/2.jpg'
             }];
 
             $('[data-plugin="jquery-selective"]').selective({

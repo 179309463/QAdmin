@@ -34,9 +34,6 @@ qadmin D:\qadmin
 │ ├── bootstrap#4.3.1 incompatible with ^3 (3.4.1 available, latest is 4.3.1
 )
 │ └── jquery#3.3.1
-├─┬ fullcalendar#3.10.0 (latest is 4.0.2)
-│ ├── jquery#3.3.1
-│ └── moment#2.24.0
 ├─┬ fullpage.js#2.9.7 (latest is 3.0.4)
 │ └── jquery#3.3.1
 ├── gojs#1.8.38 (latest is 2.0.8)
