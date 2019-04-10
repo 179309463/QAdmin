@@ -136,7 +136,7 @@
     "jquery": "3.3.1",
     "city-picker": "1.2.0",
     "ckeditor": "4.11.3",
-    "highcharts": "^6.0.4",
+    "highcharts": "7.1.0",
     "ag-grid-docs": "https://github.com/ag-grid/ag-grid-docs.git#18.0.0",
     "framework7": "4.2.2",
     "framework7-vue": "https://github.com/framework7io/framework7-vue.git#^2.0.0",
@@ -169,6 +169,7 @@
     "plyr": "3.5.2",
     "fullcalendar": "4.0.2",
     "smooth-scroll": "16.0.3",
-    "gojs": "2.0.8"
+    "gojs": "2.0.8",
+    "highcharts": "7.1.0"
   }
 }

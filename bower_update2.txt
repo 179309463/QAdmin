@@ -36,8 +36,6 @@ qadmin D:\qadmin
 │ └── jquery#3.3.1
 ├─┬ fullpage.js#2.9.7 (latest is 3.0.4)
 │ └── jquery#3.3.1
-├── gojs#1.8.38 (latest is 2.0.8)
-├── highcharts#6.2.0 (latest is 7.1.0)
 ├─┬ ladda#1.0.6 (latest is 2.0.1)
 │ └── spin.js#2.0.2 (latest is 4.0.0)
 ├── smooth-scroll#12.1.5 (latest is 16.0.3)
