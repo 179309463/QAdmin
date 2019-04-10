@@ -60,7 +60,7 @@
     "fullcalendar": "4.0.2",
     "formatter.js": "formatter#^0.1.5",
     "formvalidation.io": "^0.0.3",
-    "fontawesome-iconpicker": "^1.3.1",
+    "fontawesome-iconpicker": "3.2.0",
     "highlight": "9.15.6",
     "html5shiv": "^3.7.3",
     "iCheck": "^1.0.2",
@@ -144,8 +144,5 @@
     "bootstrap": "4.3.1",
     "flot": "3.0.2",
     "ionicons": "4.5.5"
-  },
-  "resolutions": {
-    "font-awesome": "4.7.0"
   }
 }

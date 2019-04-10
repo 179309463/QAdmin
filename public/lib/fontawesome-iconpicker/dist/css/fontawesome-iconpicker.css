@@ -41,6 +41,9 @@
 	background: #f3f7f9;
 	border: solid 1px #e4eaec;
 }
+.iconpicker-popover.popover.fade {
+	opacity: 1;
+}
 .iconpicker-popover.popover.top, .iconpicker-popover.popover.topLeftCorner, .iconpicker-popover.popover.topLeft, .iconpicker-popover.popover.topRight, .iconpicker-popover.popover.topRightCorner {
 	margin-top: -6px;
 }
