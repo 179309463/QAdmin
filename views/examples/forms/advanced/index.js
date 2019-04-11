@@ -154,15 +154,15 @@
                 tagClass: function (item) {
                     switch (item.continent) {
                         case '北京':
-                            return 'label label-primary';
+                            return 'badge badge-primary';
                         case '广东':
-                            return 'label label-danger';
+                            return 'badge badge-danger';
                         case '浙江':
-                            return 'label label-success';
+                            return 'badge badge-success';
                         case '新疆':
-                            return 'label label-default';
+                            return 'badge badge-default';
                         case '江苏':
-                            return 'label label-warning';
+                            return 'badge badge-warning';
                     }
                 },
                 itemValue: 'value',

@@ -8,7 +8,7 @@
 
     $.components.register("tagsinput", {
         defaults: {
-            tagClass: "label label-default"
+            tagClass: "badge badge-default"
         },
         mode: "default"
     });

@@ -1,43 +1,26 @@
-/**
- * QAdmin v1.2.0 (http://www.qadmin.com/)
- * Copyright 2015-2017 QAdmin Team
- * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
- */
-.page-forms .bootstrap-select {
-	width: 100% !important;
+.bootstrap-select {
+	width: 100%!important
 }
-.page-forms .datepair-wrap {
-	position: relative;
-	overflow: hidden;
+
+.datepair-wrap {
+	position: relative
 }
-.page-forms .input-daterange-wrap {
-	float: left;
+
+.input-daterange-wrap {
+	float: left
 }
-.page-forms .input-daterange-to {
+
+.input-daterange-to {
 	float: left;
 	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
+	height: 2.287rem;
+	line-height: 2.287rem;
+	text-align: center
 }
-@media (max-width: 1360px) {
-	.page-forms .input-daterange-wrap, .page-forms .input-daterange-to {
+
+@media (max-width:1360px) {
+	.input-daterange-to,.input-daterange-wrap {
 		display: block;
-		float: none;
+		float: none
 	}
-}
-
-.bootstrap-maxlength.label {
-	margin-top: 5px;
-}
-
-input.to-labelauty + label {
-	min-width: 160px;
-}
-input.to-labelauty-icon + label {
-	display: inline-block;
-	padding: 8px 8px;
-}
-input.to-labelauty-icon + label + span {
-	margin-left: 7px;
 }
