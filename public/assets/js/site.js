@@ -616,9 +616,12 @@
             loadStyles = function(iframeDocument) {
                 //$('#qadmin-siteStyle', iframeDocument).load(function() {
                     var style = $('#qadmin-siteStyle', self.iframeDocument);
-                    var min = style.prop('href').indexOf('?v=') === -1 ? '': '.min';
-                    if (self.themeColor && self.themeColor !== 'primary') {
-                        style.attr('href', '/public/assets/skins/' + self.themeColor + '/site' + min + '.css');
+                    var href = style.prop('href');
+                    if(href){
+                        var min = href.indexOf('?v=') === -1 ? '': '.min';
+                        if (self.themeColor && self.themeColor !== 'primary') {
+                            style.attr('href', '/public/assets/skins/' + self.themeColor + '/site' + min + '.css');
+                        }
                     }
                 //});
             },
