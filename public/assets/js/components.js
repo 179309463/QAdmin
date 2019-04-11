@@ -1130,6 +1130,26 @@
                         '<a class="btn btn-success btn-outline pull-right" href="#' + this.id + '" data-wizard="finish" role="button">' + options.buttonLabels.finish + '</a>' +
                         '</div>';
                 }
+            },
+            classes: {
+                step: {
+                  done: 'done',
+                  error: 'error',
+                  active: 'active',
+                  disabled: 'disabled',
+                  activing: 'activing',
+                  loading: 'loading'
+                },
+          
+                pane: {
+                  active: 'active',
+                  activing: 'activing'
+                },
+          
+                button: {
+                  hide: 'hide',
+                  disabled: 'disabled'
+                }
             }
         }
     });

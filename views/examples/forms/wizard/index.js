@@ -99,7 +99,7 @@
     (function () {
         $("#exampleWizardFormContainer").wizard($.po('wizard', {
             onInit: function () {
-                $('#exampleFormContainer').formValidation($.po('formValidation', {
+                $('#exampleWizardFormContainer').formValidation($.po('formValidation', {
                     fields: {
                         username: {
                             validators: {
@@ -133,7 +133,7 @@
                 }));
             },
             validator: function () {
-                var fv = $('#exampleFormContainer').data('formValidation');
+                var fv = $('#exampleWizardFormContainer').data('formValidation');
 
                 var $this = $(this);
 
