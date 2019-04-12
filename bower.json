@@ -142,6 +142,8 @@
     "flot": "3.0.2",
     "ionicons": "4.5.5",
     "cxSelect": "https://github.com/ciaoca/cxSelect.git#^1.4.1",
-    "clippings-layout-grid": "https://github.com/clippings/layout-grid.git#2.0.0"
+    "clippings-layout-grid": "https://github.com/clippings/layout-grid.git#2.0.0",
+    "packery": "^2.1.2",
+    "bootstrap-iconpicker": "^1.10.0"
   }
 }
