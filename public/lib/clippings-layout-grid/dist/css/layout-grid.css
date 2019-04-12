@@ -23,7 +23,7 @@
  * │               lt-lg-h-1               │
  * └───────────────────────────────────────┘
  */
-.lt-container {
+ .lt-container {
 	position: relative;
 	width: 100%;
 }
