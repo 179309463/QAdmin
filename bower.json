@@ -144,6 +144,7 @@
     "cxSelect": "https://github.com/ciaoca/cxSelect.git#^1.4.1",
     "clippings-layout-grid": "https://github.com/clippings/layout-grid.git#2.0.0",
     "packery": "^2.1.2",
-    "bootstrap-iconpicker": "^1.10.0"
+    "bootstrap-iconpicker": "^1.10.0",
+    "jQuery-contextMenu": "^2.8.0"
   }
 }

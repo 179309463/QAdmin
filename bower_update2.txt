@@ -24,6 +24,10 @@ fullpage.js#2.9.7 不能升级 license
   "dependencies": {
     "ace-builds": "ace-build#1.4.3",
     "alertifyjs": "^1.0.11",
+        ember???
+        vue-alertify & alertifyjs OK
+        react-alertify-js & alertifyjs OK
+        ng-alertify & alertifyjs OK
     "animsition": "^4.0.2",
     "autosize": "^4.0.0",
     "blueimp-canvas-to-blob": "^3.14.0",
@@ -44,6 +48,10 @@ fullpage.js#2.9.7 不能升级 license
     "bootstrap-tokenfield": "^0.12.1",
     "bootstrap-touchspin": "4.2.5",
     "bootstrap-treeview": "^1.2.0",
+        ember???
+        vue???
+        react-bootstrap-treeview & bootstrap-treeview OK
+        ngx-bootstrap-treeview not bootstrap-treeview OK
     "breakpoints.js": "^1.0.5",
     "c3": "0.7.0",
     "card": "^2.4.0",
@@ -99,6 +107,10 @@ fullpage.js#2.9.7 不能升级 license
     "jquery-treegrid": "^0.3.0",
     "jquery-wizard.js": "^0.4.4",
     "jstree": "^3.3.5",
+        ember-cli-jstree & jstree OK
+        vue-jstree & jstree OK
+        react-jstree & jstree OK
+        ng-js-tree & jstree OK
     "jszip": "3.2.0",
     "jquery-slidePanel": "^0.3.5",
     "jquery-knob": "^1.2.13",
@@ -113,6 +125,10 @@ fullpage.js#2.9.7 不能升级 license
         angular-magnific-popup & magnific-popup OK
     "marked": "0.6.2",
     "masonry": "^4.2.0",
+        ember-masonry-grid & masonry OK
+        react-masonry-component & masonry OK
+        vue-masonry & masonry OK
+        angular-masonry & masonry OK
     "media-match": "^2.0.3",
     "matchHeight": "^0.7.2",
     "moment": "2.24.0",
@@ -134,6 +150,7 @@ fullpage.js#2.9.7 不能升级 license
     "plyr": "3.5.2",
     "raphael": "2.2.8",
     "raty": "2.8.0",
+        无
     "respond": "^1.4.2",
     "screenfull": "4.2.0",
        ember-cli-full-screen OK
@@ -161,6 +178,10 @@ fullpage.js#2.9.7 不能升级 license
     "x-editable": "^1.5.1",
     "ag-grid-enterprise": "20.2.0",
     "zTree": "3.5.40",
+        ember???
+        vue-ztree-2.0 & zTree OK
+        ztree-for-react & zTree OK
+        angular???
     "mxgraph": "4.0.0",
     "gojs": "2.0.8",
     "jsplumb": "2.9.0",
@@ -234,7 +255,9 @@ fullpage.js#2.9.7 不能升级 license
         react-packery-component & packery OK
         ngx-packery & packery OK
         ng-packery & packery OK
-    "bootstrap-iconpicker": "^1.10.0"
+    "bootstrap-iconpicker": "^1.10.0",
         angular-bootstrap-iconpicker
+    "jQuery-contextMenu": "^2.8.0"
+        无
   }
 }
