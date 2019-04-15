@@ -1872,6 +1872,7 @@
 
                 if (options.hints && typeof options.hints === 'string') {
                     options.hints = options.hints.split(',');
+                    $this.data("hints", options.hints);
                 }
 
                 $this.raty(options);

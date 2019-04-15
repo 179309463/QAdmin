@@ -78,9 +78,19 @@ fullpage.js#2.9.7 不能升级 license
         ngx-icon-picker
         ngx-icon-picker-fontawesome5
     "highlight": "9.15.6",
+        markdown-code-highlighting & highlight.js OK
+        vue-highlightjs & highlight.js OK
+        react-highlight.js & highlight.js OK
+        ngx-highlight-js & highlight.js OK
+        angular-highlightjs & highlight.js OK
+
     "html5shiv": "^3.7.3",
     "iCheck": "^1.0.2",
     "intro.js": "2.9.3",
+        ember-introjs & intro.js OK
+        vue-introjs & intro.js OK
+        intro.js-react & intro.js OK
+        angular-intro.js & intro.js OK
     "isotope": "^3.0.4",
     "jquery.cookie": "jquery-cookie#^1.4.1",
     "jquery-asHoverScroll": "^0.3.3",
@@ -97,6 +107,10 @@ fullpage.js#2.9.7 不能升级 license
     "jt.timepicker": "^1.11.12",
     "lodash": "4.17.12-pre",
     "magnific-popup": "^1.1.0",
+        ember???
+        vue???
+        react-magnific-popup & magnific-popup OK
+        angular-magnific-popup & magnific-popup OK
     "marked": "0.6.2",
     "masonry": "^4.2.0",
     "media-match": "^2.0.3",
@@ -106,7 +120,16 @@ fullpage.js#2.9.7 不能升级 license
     "multiselect": "^0.9.12",
     "nestable2": "^1.6.0",
     "nprogress": "^0.2.0",
+        ember-cli-nprogress & nprogress OK
+        vue-nprogress & nprogress OK
+        react-nprogress OK
+        ngx-progress & nprogress OK
     "owl.carousel": "OwlCarousel2#^2.2.1",
+        ember-cli-owl-carousel2 & owl.carousel OK
+        react-owl-carousel & owl.carousel OK
+        vue-owl-carousel & owl.carousel OK
+        ngx-owl-carousel & owl.carousel OK
+        angular-owl-carousel2 & owl.carousel OK
     "peity": "^3.2.1",
     "plyr": "3.5.2",
     "raphael": "2.2.8",
@@ -123,6 +146,10 @@ fullpage.js#2.9.7 不能升级 license
     "skycons": "*",
     "summernote": "0.8.11",
     "jquery-slimscroll": "jquery-slimScroll#^1.3.8",
+        ember???
+        vue-slimscroll & jquery-slimscroll OK
+        react-slimScroll & jquery-slimscroll OK
+        ng-slim-scroll & jquery-slimscroll OK
     "switchery": "0.8.2",
     "timecircles": "^1.5.3",
     "toolbar": "^1.0.1",
@@ -166,8 +193,14 @@ fullpage.js#2.9.7 不能升级 license
         ngx-bootstrap-slider
         angular-bootstrap-slider
     "slick-carousel": "^1.8.1",
+        ember-cli-slick & slick-carousel OK
+        react-slick OK
+        vue-slick & slick-carousel OK
+        ngx-slick & slick-carousel OK
+        angular-slick-carousel & slick-carousel OK
     "html5sortable": "*",
     "jquery_appear": "0.4.1",
+        无
     "fullpage.js": "2.9.7",
     "move.js": "visionmedia/move.js#^0.5.0",
     "vue": "2.6.10",
