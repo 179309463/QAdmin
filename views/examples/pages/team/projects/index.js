@@ -11,28 +11,28 @@
             var members = [{
                     id: 'uid_1',
                     name: '孙继红',
-                    img: '/views/examples/images/portraits/1.jpg'
+                    img: '/assets/images/portraits/1.jpg'
                 }, {
                     id: 'uid_2',
                     name: '张倩',
-                    img: '/views/examples/images/portraits/2.jpg'
+                    img: '/assets/images/portraits/2.jpg'
                 }, {
                     id: 'uid_3',
                     name: '孙咏梅',
-                    img: '/views/examples/images/portraits/3.jpg'
+                    img: '/assets/images/portraits/3.jpg'
                 }, {
                     id: 'uid_4',
                     name: '冉佩利',
-                    img: '/views/examples/images/portraits/4.jpg'
+                    img: '/assets/images/portraits/4.jpg'
                 }],
                 selected = [{
                     id: 'uid_1',
                     name: '柳映秋',
-                    img: '/views/examples/images/portraits/1.jpg'
+                    img: '/assets/images/portraits/1.jpg'
                 }, {
                     id: 'uid_2',
                     name: '周伊娅',
-                    img: '/views/examples/images/portraits/2.jpg'
+                    img: '/assets/images/portraits/2.jpg'
                 }];
 
             $('#jquery-selective').selective({

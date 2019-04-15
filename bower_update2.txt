@@ -35,15 +35,28 @@ fullpage.js#2.9.7 不能升级 license
     "blueimp-load-image": "2.21.0",
     "blueimp-file-upload": "9.28.0",
     "bootbox.js": "5.1.0",
+        ember???
+        vue???
+        react-bootboxjs & bootbox OK
+        ngBootbox & bootbox OK
     "bootstrap-contextmenu": "^0.3.4",
     "bootstrap-colorpicker": "2.5.3",
     "bootstrap-datepicker": "1.8.0",
+        ember-cli-bootstrap-datepicker & bootstrap-datepicker OK
+        vue???
+        react???
+        angular-bootstrap-datepicker & bootstrap-datepicker OK
     "bootstrap-hover-dropdown": "^2.2.1",
         无
     "bootstrap-markdown": "^2.10.0",
     "bootstrap-maxlength": "^1.7.0",
     "bootstrap-select": "2.0.0-beta1",
     "bootstrap-sweetalert": "^1.0.1",
+        sweetalert2!!!
+        ember-cli-sweet-alert not bootstrap-sweetalert OK
+        vue-sweetalert2 & bootstrap-sweetalert OK
+        react-bootstrap-sweetalert not bootstrap-sweetalert OK
+        ngx-sweetalert2 not bootstrap-sweetalert OK
     "bootstrap-tagsinput": "^0.8.0",
     "bootstrap-tokenfield": "^0.12.1",
     "bootstrap-touchspin": "4.2.5",
@@ -57,9 +70,17 @@ fullpage.js#2.9.7 不能升级 license
     "card": "^2.4.0",
     "chart.js": "2.8.0",
     "chartist": "^0.11.0",
+        ember-cli-chartist & chartist OK
+        vue-chartist & chartist OK
+        react-chartist & chartist OK
+        ngx-chartist & chartist OK
     "chartist-plugin-tooltip": "^0.0.18",
     "clockpicker": "^0.0.7",
     "codemirror": "5.45.0",
+        ivy-codemirror & codemirror OK
+        vue-codemirror & codemirror OK
+        react-codemirror & codemirror OK
+        @ctrl/ngx-codemirror codemirror & codemirror OK
     "cropper": "4.0.0",
     "datatables": "^1.10.16",
     "datatables-bootstrap": "^1.0.0",
@@ -104,6 +125,7 @@ fullpage.js#2.9.7 不能升级 license
     "jquery-asHoverScroll": "^0.3.3",
     "jquery-pjax": "^2.0.1",
     "jquery-selective": "^0.3.5",
+        无
     "jquery-treegrid": "^0.3.0",
     "jquery-wizard.js": "^0.4.4",
     "jstree": "^3.3.5",
@@ -133,6 +155,10 @@ fullpage.js#2.9.7 不能升级 license
     "matchHeight": "^0.7.2",
     "moment": "2.24.0",
     "morris.js": "^0.5.1",
+        ember-cli-morris-charts & morris OK
+        vue-morris & morris OK
+        react???
+        angular-morris & morris OK
     "multiselect": "^0.9.12",
     "nestable2": "^1.6.0",
     "nprogress": "^0.2.0",
@@ -147,7 +173,15 @@ fullpage.js#2.9.7 不能升级 license
         ngx-owl-carousel & owl.carousel OK
         angular-owl-carousel2 & owl.carousel OK
     "peity": "^3.2.1",
+        ember???
+        vue-peity & peity OK
+        react-peity & peity OK
+        angular-peity & peity OK
     "plyr": "3.5.2",
+        ember-cli-plyr & plyr OK
+        vue-plyr & plyr OK
+        react-plyr & plyr OK
+        ngx-plyr & plyr OK
     "raphael": "2.2.8",
     "raty": "2.8.0",
         无
@@ -173,6 +207,7 @@ fullpage.js#2.9.7 不能升级 license
         无
     "typeahead.js": "^0.11.1",
     "twbs-pagination": "^1.4.1",
+        无
     "webui-popover": "2.1.15",
         无
     "x-editable": "^1.5.1",
@@ -187,6 +222,10 @@ fullpage.js#2.9.7 不能升级 license
     "jsplumb": "2.9.0",
     "propertiesjs": "^1.6.0",
     "layer": "^3.1.1",
+        ember???
+        vue-layer not layer OK
+        react???
+        ngx.superlayer not layer OK
     "pixeden-stroke-7-icon": "^1.2.3",
     "font-awesome": "4.7.0",
         ember-fontawesome OK
@@ -220,6 +259,7 @@ fullpage.js#2.9.7 不能升级 license
         ngx-slick & slick-carousel OK
         angular-slick-carousel & slick-carousel OK
     "html5sortable": "*",
+        无
     "jquery_appear": "0.4.1",
         无
     "fullpage.js": "2.9.7",
@@ -257,7 +297,12 @@ fullpage.js#2.9.7 不能升级 license
         ng-packery & packery OK
     "bootstrap-iconpicker": "^1.10.0",
         angular-bootstrap-iconpicker
-    "jQuery-contextMenu": "^2.8.0"
+    "jQuery-contextMenu": "^2.8.0",
         无
+    "toastr": "https://github.com/CodeSeven/toastr.git#^2.1.4"
+        ember-toastr & toastr OK
+        react-toastr & toastr OK
+        @deveodk/vue-toastr not toastr OK
+        ngx-toastr not toastr OK
   }
 }

@@ -12,7 +12,7 @@
     <section class="slidePanel-inner-section">
         <div class="forum-header">
             <a class="avatar" href="javascript:;">
-                <img src="/views/examples/images/portraits/2.jpg" alt="...">
+                <img src="/assets/images/portraits/2.jpg" alt="...">
             </a>
             <span class="name">竹林心风</span>
             <span class="time">3 分钟前</span>
@@ -47,7 +47,7 @@
                 <span class="floor">1</span>
             </div>
             <a class="avatar" href="javascript:;">
-                <img src="/views/examples/images/portraits/2.jpg" alt="...">
+                <img src="/assets/images/portraits/2.jpg" alt="...">
             </a>
             <span class="name">唱不完的离歌</span>
             <span class="time">2 分钟前</span>

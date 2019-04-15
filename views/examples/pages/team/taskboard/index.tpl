@@ -110,7 +110,7 @@
       <div class="comment media">
         <div class="pr-20">
           <a class="avatar avatar-lg" href="javascript:;">
-            <img src="/views/examples/images/portraits/5.jpg" alt="...">
+            <img src="/assets/images/portraits/5.jpg" alt="...">
           </a>
         </div>
         <div class="w-full">

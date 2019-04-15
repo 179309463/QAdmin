@@ -170,31 +170,31 @@
                 member = [{
                     id: 'uid_1',
                     name: '梅小燕',
-                    avatar: '/views/examples/images/portraits/1.jpg'
+                    avatar: '/assets/images/portraits/1.jpg'
                 }, {
                     id: 'uid_2',
                     name: '赵桦',
-                    avatar: '/views/examples/images/portraits/2.jpg'
+                    avatar: '/assets/images/portraits/2.jpg'
                 }, {
                     id: 'uid_3',
                     name: '曹洁群',
-                    avatar: '/views/examples/images/portraits/3.jpg'
+                    avatar: '/assets/images/portraits/3.jpg'
                 }, {
                     id: 'uid_4',
                     name: '嵇慧莉',
-                    avatar: '/views/examples/images/portraits/4.jpg'
+                    avatar: '/assets/images/portraits/4.jpg'
                 }, {
                     id: 'uid_5',
                     name: '孙玉珍',
-                    avatar: '/views/examples/images/portraits/5.jpg'
+                    avatar: '/assets/images/portraits/5.jpg'
                 }, {
                     id: 'uid_6',
                     name: '柳映秋',
-                    avatar: '/views/examples/images/portraits/6.jpg'
+                    avatar: '/assets/images/portraits/6.jpg'
                 }, {
                     id: 'uid_7',
                     name: '周伊娅',
-                    avatar: '/views/examples/images/portraits/7.jpg'
+                    avatar: '/assets/images/portraits/7.jpg'
                 }];
 
             function getNum(num) {

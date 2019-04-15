@@ -2,7 +2,7 @@
     {
         "id": "mid_1",
         "label": "mid_1",
-        "avatar": "/views/examples/images/portraits/5.jpg",
+        "avatar": "/assets/images/portraits/5.jpg",
         "name": "廖力",
         "email": "jim.hunter32@qq.com",
         "title": "在图像识别上，隐私技术面临人工智能的挑战",
@@ -30,7 +30,7 @@
     {
         "id": "mid_2",
         "label": "mid_2",
-        "avatar": "/views/examples/images/portraits/6.jpg",
+        "avatar": "/assets/images/portraits/6.jpg",
         "name": "颜慧",
         "email": "zoe.perez69@yahoo.com",
         "title": "福特 2025 年开始卖无人驾驶汽车",
@@ -67,7 +67,7 @@
     {
         "id": "mid_3",
         "label": "mid_3",
-        "avatar": "/views/examples/images/portraits/7.jpg",
+        "avatar": "/assets/images/portraits/7.jpg",
         "name": "刘亦文",
         "email": "esther.kelly84@hotmail.com",
         "title": "三星通过 OTA 升级限制手机充电量",
@@ -100,7 +100,7 @@
     {
         "id": "mid_4",
         "label": "mid_4",
-        "avatar": "/views/examples/images/portraits/8.jpg",
+        "avatar": "/assets/images/portraits/8.jpg",
         "name": "梅小燕",
         "email": "jo.dunn18@qq.com",
         "title": "iPhone 7 T-Mobile 首日预订量是 iPhone 6 的 4 倍",
@@ -120,7 +120,7 @@
     {
         "id": "mid_5",
         "label": "mid_5",
-        "avatar": "/views/examples/images/portraits/9.jpg",
+        "avatar": "/assets/images/portraits/9.jpg",
         "name": "尹建芹",
         "email": "jacob.morgan95@qq.com",
         "title": "苹果 iOS 10 正式推送",
@@ -148,7 +148,7 @@
     {
         "id": "mid_6",
         "label": "mid_6",
-        "avatar": "/views/examples/images/portraits/10.jpg",
+        "avatar": "/assets/images/portraits/10.jpg",
         "name": "赵桦",
         "email": "erin.miller29@tom.com",
         "title": "网易或分拆新闻业务",
@@ -181,7 +181,7 @@
     {
         "id": "mid_7",
         "label": "mid_7",
-        "avatar": "/views/examples/images/portraits/11.jpg",
+        "avatar": "/assets/images/portraits/11.jpg",
         "name": "唐雪琴",
         "email": "fernando.coleman60@sohu.com",
         "title": "Google Pixel XL 模糊谍照曝光",
@@ -214,7 +214,7 @@
     {
         "id": "mid_8",
         "label": "mid_8",
-        "avatar": "/views/examples/images/portraits/12.jpg",
+        "avatar": "/assets/images/portraits/12.jpg",
         "name": "陈媚婉",
         "email": "tanya.ortiz78163.com",
         "title": "小鹏汽车 Beta 版正式亮相",
@@ -234,7 +234,7 @@
     {
         "id": "mid_9",
         "label": "mid_9",
-        "avatar": "/views/examples/images/portraits/13.jpg",
+        "avatar": "/assets/images/portraits/13.jpg",
         "name": "曹洁群",
         "email": "sebastian.nelson47@qq.com",
         "title": "爱奇艺 1.5 亿元战略投资创维旗下酷开",
