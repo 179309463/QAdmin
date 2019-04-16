@@ -21,3 +21,8 @@
 .cover.plyr{
 	overflow: visible;
 }
+
+/*菜单目录树向下指示箭头*/
+.site-menubar-unfold .site-menu-item{
+	line-height: 38px!important;
+}

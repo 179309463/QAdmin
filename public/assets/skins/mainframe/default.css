@@ -14573,11 +14573,11 @@ a.list-group-item.active,a.list-group-item.active:focus,a.list-group-item.active
 	background-color: transparent
 }
 
-@media (min-width:768px) {
+/* @media (min-width:768px) {
 	.site-navbar .navbar-header {
 		width: 240px
 	}
-}
+} */
 
 .site-navbar .navbar-header .navbar-toggler {
 	color: #fff

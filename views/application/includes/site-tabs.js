@@ -268,12 +268,12 @@
             }else{
                 var href = $.trim($el.find('a').attr('href')),
                 index = href.indexOf('#'),
-                _0x15921d = index > 0 ? href.substring(0, index) : href,
-                link = this.$instance.find('a[href="' + _0x15921d + '"]'),
+                hrefWithoutHash = index > 0 ? href.substring(0, index) : href,
+                link = this.$instance.find('a[href="' + hrefWithoutHash + '"]'),
                 parents,
-                _0x36f5e2,
-                _0x5e5980,
-                _0x17fd81,
+                linkClosestLiOpenSiblings,
+                linkClosestSubLiOpenSiblings,
+                instanceOpenLies,
                 tabPaneActiveId,
                 tabPaneId;
                 if (link.length === 0) {
@@ -285,21 +285,21 @@
                 if (tabPaneActiveId !== tabPaneId) {
                     $('a[href="#' + tabPaneId + '"]').tab('show');
                 }
-                _0x36f5e2 = link.closest('li').siblings('li.open');
+                linkClosestLiOpenSiblings = link.closest('li').siblings('li.open');
                 parents = link.parents('li.has-sub');
-                _0x5e5980 = link.closest('li.has-sub').siblings('li.open');
-                _0x17fd81 = this.$instance.find('li.open');
+                linkClosestSubLiOpenSiblings = link.closest('li.has-sub').siblings('li.open');
+                instanceOpenLies = this.$instance.find('li.open');
                 this.$instance.find('li.active').trigger('deactive.site.menu');
                 link.closest('li').trigger('active.site.menu');
-                if (_0x36f5e2.length) {
-                    _0x36f5e2.trigger('close.site.menu');
+                if (linkClosestLiOpenSiblings.length) {
+                    linkClosestLiOpenSiblings.trigger('close.site.menu');
                 }
                 if (!link.closest('li.has-sub').hasClass('open')) {
-                    if (_0x5e5980.length) {
-                        _0x5e5980.trigger('close.site.menu');
+                    if (linkClosestSubLiOpenSiblings.length) {
+                        linkClosestSubLiOpenSiblings.trigger('close.site.menu');
                     }
-                    if (_0x17fd81.length) {
-                        _0x17fd81.not(parents).trigger('close.site.menu');
+                    if (instanceOpenLies.length) {
+                        instanceOpenLies.not(parents).trigger('close.site.menu');
                     }
                     parents.trigger('open.site.menu');
                 }

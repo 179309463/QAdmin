@@ -487,6 +487,21 @@
                 $.pjax.submit(event, container, {replace: true});
             });
 
+            $(document).on('pjax:beforeSend', function(event, xhr, options){
+                var url = options.url;
+                var parts = url.split("#");
+                var part1 = parts[0];
+                var part2 = (parts.length==2 ? ("#" + parts[1]) : "");
+                var connecter = ""
+                if(part1.indexOf("?")==-1){
+                    connecter = "?"
+                }else{
+                    connecter = "&"
+                }
+                options.url += part1 + connecter + "pjax=true" + part2;
+                console.log(options.url);
+            });
+
             $(document).on('pjax:start', function () {
                 window.onresize = null;
                 //window.App = null;
