@@ -232,11 +232,12 @@
                 var $link = $('#qadmin-siteStyle', $.parentFrame), href,
                     etx = $link.prop('href').indexOf('?v=') === -1 ? '' : '.min' ;
 
+                var type = $link.data("type");
                 if (val === 'primary') {
-                    href = this.path + '/css/site' + etx + '.css';
+                    href = this.path + '/skins/' + type + '/default.css';
                 }
                 else {
-                    href = this.path + '/skins/' + val + etx + '.css';
+                    href = this.path + '/skins/' + type + "/" + val + etx + '.css';
                 }
 
                 $link.attr('href', href);
@@ -247,11 +248,12 @@
                     var name = $(this).attr('name');
                     $link = $('#qadmin-siteStyle', parent.frames[name].document);
                     if ($link.length) {
+                        var type = $link.data('type');
                         etx = $link.prop('href').indexOf('?v=') === -0x1 ? '': '.min';
                         if (val === 'primary') {
-                            href = self.path + '/css/site' + etx + '.css';
+                            href = self.path + '/skins/' + type + '/default.css';
                         } else {
-                            href = self.path + '/skins/' + val + etx + '.css';
+                            href = self.path + '/skins/' + type + '/' + val + etx + '.css';
                         }
                         $link.attr('href', href);
                     }

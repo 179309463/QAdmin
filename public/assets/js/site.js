@@ -436,7 +436,8 @@
                 settingsName = 'qadmin.base.skinTools',
                 $link = $('#qadmin-siteStyle', $('head')),
                 settings = localStorage.getItem(settingsName),
-                etx = $link.prop('href').indexOf('?v=') === -1 ? '' : '.min' ;
+                etx = $link.prop('href').indexOf('?v=') === -1 ? '' : '.min',
+                type = $link.data('type');
 
             if (!settings) {
                 return;
@@ -445,7 +446,7 @@
             settings = JSON.parse(settings);
 
             if (settings.themeColor && settings.themeColor !== 'primary') {
-                $link.attr('href', '/assets/skins/' + settings.themeColor + etx + '.css');
+                $link.attr('href', '/assets/skins/' + type + '/' + settings.themeColor + etx + '.css');
             }
 
             if (settings.sidebar && settings.sidebar === 'site-menubar-light') {
@@ -619,8 +620,9 @@
                     var href = style.prop('href');
                     if(href){
                         var min = href.indexOf('?v=') === -1 ? '': '.min';
+                        var type = style.data("type");
                         if (self.themeColor && self.themeColor !== 'primary') {
-                            style.attr('href', '/public/assets/skins/' + self.themeColor + '/site' + min + '.css');
+                            style.attr('href', '/public/assets/skins/' + type + '/' + self.themeColor + '/site' + min + '.css');
                         }
                     }
                 //});

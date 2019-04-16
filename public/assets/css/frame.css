@@ -53,19 +53,6 @@ body.iframe.isModal{
 		margin-left: 0px;
 	}
 }
-/* 
-.page-aside-fixed .page-aside{
-	position: absolute!important;
-	height: calc(100% - 60px - 44px);
-}
-.iframe .page-aside{
-	position: fixed!important;
-}
-.iframe .page-aside-fixed .page-aside,
-.iframe .page-aside-static .page-aside{
-	bottom: 0;
-} */
-
 .modal-backdrop{
 	background-color: #000!important;
 }
