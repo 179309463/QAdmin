@@ -56,7 +56,7 @@
             path: $.ctx + '/assets',
             $siteSidebar: $.parentFrame.find('.site-menubar'),
             $siteNavbar: $.parentFrame.find('.site-navbar'),
-            navbarSkins: 'bg-primary-600 bg-brown-600 bg-cyan-600 bg-green-600 bg-grey-600 bg-indigo-600 bg-orange-600 bg-pink-600 bg-purple-600 bg-red-600 bg-teal-600 bg-yellow-700',
+            navbarSkins: 'bg-primary-600 bg-blue-600 bg-brown-600 bg-cyan-600 bg-green-600 bg-grey-600 bg-indigo-600 bg-orange-600 bg-pink-600 bg-purple-600 bg-red-600 bg-teal-600 bg-yellow-700',
             defaultSettings: {
                 sidebar: 'site-menubar-dark',
                 navbar: 'bg-primary-600',
