@@ -45,4 +45,6 @@
         }));
     })();
 
+    $('[data-toggle="tooltip"]').tooltip({trigger: 'click'});
+
 })(document, window, jQuery);

@@ -499,7 +499,6 @@
                     connecter = "&"
                 }
                 options.url += part1 + connecter + "pjax=true" + part2;
-                console.log(options.url);
             });
 
             $(document).on('pjax:start', function () {

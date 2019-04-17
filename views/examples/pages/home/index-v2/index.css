@@ -4,7 +4,7 @@
  * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
  */
 .page-index-v2 .page-header {
-	background-image: url("images/dashboard-header.jpg");
+	background-image: url("/assets/images/dashboard-header.jpg");
 	-webkit-background-size: cover;
 	        background-size: cover;
 }

@@ -7,22 +7,14 @@
     'use strict';
 
     window.Content = {
-        affixHandle: function () {
-            $('#articleAffix').affix({
-                offset: {
-                    top: 210
-                }
-            });
-        },
         scrollHandle: function () {
-            $('body').scrollspy({
-                target: '#articleAffix'
+            $('.page-documents').scrollspy({
+                target: '#articleAffix',
+                offset: 200
             });
         },
         run: function () {
             this.scrollHandle();
-            this.affixHandle();
-
         }
     };
 

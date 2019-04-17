@@ -26,3 +26,16 @@
 .site-menubar-unfold .site-menu-item{
 	line-height: 38px!important;
 }
+
+/*alertify遮罩zindex太低*/
+.alertify{
+	z-index: 3000!important;
+}
+
+/*layer按钮字体样式*/
+.layui-layer-btn a{
+	color: #333!important;
+}
+.layui-layer-btn .layui-layer-btn0{
+	color: #fff!important;
+}

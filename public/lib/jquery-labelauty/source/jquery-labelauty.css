@@ -80,11 +80,11 @@ input.labelauty[disabled]+label {
 }
 
 input.labelauty+label>span.labelauty-unchecked-image {
-	background-image: url(input-unchecked.png)
+	background-image: url(images/input-unchecked.png)
 }
 
 input.labelauty+label>span.labelauty-checked-image {
-	background-image: url(input-checked.png)
+	background-image: url(images/input-checked.png)
 }
 
 input.to-labelauty+label {

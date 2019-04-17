@@ -81,7 +81,12 @@
           setTimeout(process, opts.interval);
         };
 
-        $("#qadmin-pageContent .page").scroll(on_check).resize(on_check);
+        if(top==window){
+          $("#qadmin-pageContent .page").scroll(on_check).resize(on_check);
+        }else{
+          $(document).scroll(on_check).resize(on_check);
+        }
+        
         check_binded = true;
       }
 
