@@ -4,15 +4,9 @@
     </button>
     <div class="contabs-scroll float-left">
         <ul class="nav con-tabs">
-            <% if(type=='iframe') { %>
-                <li>
-                    <a href="/examples/home" target="iframe-0" title="首页"><span>首页</span></a>
-                </li>
-            <% }else { %>
-                <li class="active">
-                    <a data-pjax="#qadmin-pageContent" href="/examples/home" rel="contents"><span>首页</span></a>
-                </li>
-            <% } %>
+            <li>
+                <a data-pjax="#qadmin-pageContent" href="/examples/home" target="iframe-0" title="首页" rel="contents"><span>首页</span></a>
+            </li>
         </ul>
     </div>
     <div class="btn-group float-right">

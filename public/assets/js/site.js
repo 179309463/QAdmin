@@ -417,6 +417,7 @@
                 window.Content.run();
 
                 this.theme();
+                this.tabsDraw();
                 this.pjaxFun();
             }else{
                 if (window.localStorage) {
@@ -568,7 +569,12 @@
         tabsDraw: function() {
             var self = this;
             var targetUrl;
-            var hash = location.hash.substring(2);
+            var hash = "";
+            if($.site.tab_style=="iframe"){
+                hash = location.hash.substring(2);
+            }else{
+                hash = location.pathname;
+            }
             var loadIframe = function(key, checked, url) {
                 var iframe = self.$content.find('iframe:first');
                 if (key === checked || !hash) {
@@ -580,6 +586,13 @@
                     iframe.removeClass('active');
                 }
             };
+            var loadView = function(key, checked, url) {
+                if (key === checked || !hash) {
+                    targetUrl = url;
+                    $('.con-tabs').find('li:first').addClass('active');
+                } else {
+                }
+            };
             var setting = $.sessionStorage.get('qadmin.base.contentTabs');
             var checked = setting.checked;
             for (var key in setting) {
@@ -587,23 +600,29 @@
                 if (key === 'checked' || key === 'tabId') {
                     continue;
                 } else if (key === 'iframe-0') {
-                    loadIframe(key, checked, option.url);
+                    if($.site.tab_style=="iframe"){
+                        loadIframe(key, checked, option.url);
+                    }else{
+                        loadView(key, checked, option.url);
+                    }
                     continue;
                 }
                 var url = option.url;
                 var name = option.name;
-                var labelHtml = '<a href="' + url + '" ' + 'target="' + key + '"' + '" title="' + name + '' + '" rel="contents"><span>' + name + '</span><i class="icon' + ' wb-close-mini">' + '</i></a></li>';
+                var labelHtml = '<a data-pjax="#qadmin-pageContent" href="' + url + '" ' + 'target="' + key + '"' + '" title="' + name + '' + '" rel="contents"><span>' + name + '</span><i class="icon' + ' wb-close-mini">' + '</i></a></li>';
                 var iframeHtml;
                 if (key === checked && hash) {
                     targetUrl = url;
-                    labelHtml = '<li class="active">' + labelHtml;
+                    labelHtml = '<li class="active">' + labelHtml + '</li>';
                     iframeHtml = '<iframe src="' + url + '" frameborder="0" name="' + key + '" class="page-frame animation-fade active"></iframe>';
                 } else {
-                    labelHtml = '<li>' + labelHtml;
+                    labelHtml = '<li>' + labelHtml + '</li>';
                     iframeHtml = '<iframe src="" frameborder="0" name="' + key + '" class="page-frame animation-fade"></iframe>';
                 }
                 $('.con-tabs').append(labelHtml);
-                self.$content.append(iframeHtml);
+                if($.site.tab_style=="iframe"){
+                    self.$content.append(iframeHtml);
+                }
             }
             if (hash !== targetUrl && hash) {
                 var title = '未知页面';

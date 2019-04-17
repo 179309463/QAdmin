@@ -306,16 +306,16 @@
             }
         },
         getPath: function () {
-            if($.site.tab_style!="iframe"){
-                var pathname = location.pathname,
-                    title = $.trim($('#qadmin-pageContent').find('title').text());
+            // if($.site.tab_style!="iframe"){
+            //     var pathname = location.pathname,
+            //         title = $.trim($('#qadmin-pageContent').find('title').text());
 
-                if (pathname !== $.ctx + '/') {
-                    this.buildTag({name: title, url: pathname});
-                }
+            //     if (pathname !== $.ctx + '/') {
+            //         this.buildTag({name: title, url: pathname});
+            //     }
 
-                $('#qadmin-pageContent').find('title').remove();
-            }else{
+            //     $('#qadmin-pageContent').find('title').remove();
+            // }else{
                 var li = $('#qadmin-siteConTabs').find('li:first > a');
                 var setting = this.settings = $.sessionStorage.get(this.storageKey);
                 if (setting === null) {
@@ -331,7 +331,7 @@
                 } else {
                     this.tabId = setting.tabId;
                 }
-            }
+            //}
         },
         updateSetting: function(key, value) {
             var setting = $.sessionStorage.get(this.storageKey);
