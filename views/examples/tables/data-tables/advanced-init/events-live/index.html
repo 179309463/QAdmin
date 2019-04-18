@@ -995,3 +995,18 @@
         </div>
     </div>
 </div>
+
+<script>
+(function (document, window) {
+    'use strict';
+    window.Content = App.extend({
+        run: function(next){
+            var table = $('#dataTableExample').DataTable($.po('dataTable'));
+            $('#dataTableExample tbody').on('click', 'tr', function () {
+                var data = table.row(this).data();
+                toastr.info('您单击了"' + data[0] + '"的行');
+            });
+        }
+    });
+})(document, window);    
+</script>

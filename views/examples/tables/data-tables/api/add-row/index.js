@@ -6,8 +6,8 @@
 (function (window, document, $) {
     "use strict";
     
-    window.t = $('#dataTableExample').DataTable($.po('dataTable'));
-    window.counter = 1;
+    var t = $('#dataTableExample').DataTable($.po('dataTable'));
+    var counter = 1;
 
     $('#qadmin-pageContent').on('click', '#DTAddRow', function () {
         t.row.add([

@@ -34,7 +34,7 @@
             }
         },
         init: function (context) {
-            if (!$.fn.dataTable) {
+            if (!$.fn.DataTable) {
                 return;
             }
 
@@ -44,7 +44,7 @@
                 var options = $.extend(true, {}, defaults, $(this).data());
 
 
-                $(this).dataTable(options);
+                $(this).DataTable(options);
             });
         }
     });

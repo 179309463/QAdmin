@@ -6,7 +6,7 @@
 (function (window, document, $) {
     "use strict";
 
-    $('#dataTableExample').dataTable($.po('dataTable', {
+    $('#dataTableExample').DataTable($.po('dataTable', {
         "aoColumns": [
             null,
             null,

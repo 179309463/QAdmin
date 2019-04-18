@@ -6,7 +6,7 @@
 (function (window, document, $) {
     "use strict";
 
-    var table = $('#dataTableExample').dataTable($.po('dataTable', {
+    var table = $('#dataTableExample').DataTable($.po('dataTable', {
         "columnDefs": [
             {"visible": false, "targets": 2}
         ],

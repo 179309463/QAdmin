@@ -17,6 +17,7 @@
 
         // 显示切换
         column.visible(!column.visible());
+        table.columns.adjust();
     });
 })(window, document, jQuery);
 

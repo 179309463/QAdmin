@@ -1,3 +1,9 @@
+<style>
+table.dataTable.table-striped tbody tr.odd.selected, 
+table.dataTable.table-striped tbody tr.even.selected{
+    background-color: #eff2f3;
+}
+</style>
 <div class="panel">
     <div class="panel-heading">
         <h3 class="panel-title">选择行</h3>
@@ -6,7 +12,7 @@
         <p>本示例演示了怎么获取选中行数</p>
     </div>
     <div class="panel-body">
-        <button type="button" class="btn btn-success margin-bottom-15" id="DTSelectRow">获取选中行数</button>
+        <button type="button" class="btn btn-success margin-bottom-15" id="DTSelectRow">获取选中行数</button><br/><br/>
         <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample">
             <thead>
             <tr>
