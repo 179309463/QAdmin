@@ -6,7 +6,7 @@
         <p>通过使用 <code>columns.data</code> 选项用于告诉 DataTables 找到每一列的数据源对象中对应的属性</p>
     </div>
     <div class="panel-body">
-        <table class="table table-bordered table-hover dataTable table-striped width-full text-nowrap" id="dataTableExample">
+        <table class="table table-bordered table-hover dataTable table-striped w-full text-nowrap" id="dataTableExample">
             <thead>
             <tr>
                 <th>姓名</th>
@@ -33,17 +33,17 @@
 <div class="panel nav-tabs-horizontal">
     <div class="panel-body" data-approve="nav-tabs">
         <ul class="nav nav-tabs nav-tabs-line" role="tablist">
-            <li role="presentation" class="active">
-                <a data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#DTJS" aria-controls="DTJS" role="tab" aria-expanded="false">JavaScript</a>
             </li>
-            <li role="presentation" class="">
-                <a data-toggle="tab" href="#DTAjax" aria-controls="DTAjax" role="tab" aria-expanded="false">AJAX</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTAjax" aria-controls="DTAjax" role="tab" aria-expanded="false">AJAX</a>
             </li>
-            <li role="presentation">
-                <a data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#DTHtml" aria-controls="DTHtml" role="tab" aria-expanded="true">HTML</a>
             </li>
         </ul>
-        <div class="tab-content margin-top-15">
+        <div class="tab-content mt-15">
             <div class="tab-pane active" id="DTJS" role="tabpanel">
                 <pre data-plugin="highlight"><code class="js">$('#dataTableExample').DataTable($.po('dataTable', {
     "ajax": "/views/examples/tables/dt-ajax-2.json",
@@ -520,7 +520,7 @@
 }</code></pre>
             </div>
             <div class="tab-pane" id="DTHtml" role="tabpanel">
-                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped width-full"&gt;
+                <pre data-plugin="highlight"><code class="html">&lt;table class="table table-bordered table-hover dataTable table-striped w-full"&gt;
     &lt;thead&gt;
     &lt;tr&gt;
         &lt;th&gt;姓名&lt;/th&gt;
@@ -546,6 +546,5 @@
         </div>
     </div>
 </div>
-
 
 <script src="/views/examples/tables/data-tables/ajax/objects/index.js"></script>

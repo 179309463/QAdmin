@@ -39,3 +39,21 @@
 .layui-layer-btn .layui-layer-btn0{
 	color: #fff!important;
 }
+
+/*page-aside样式问题*/
+@media(max-width: 767.98px){
+	.page-aside {
+		position: absolute!important;
+		top: 0px!important;
+	}
+	.page-aside-left .page-aside+.page-main, 
+	.page-aside-left:not(.page-aside-fixed) .page-aside+.page-main{
+		margin-left: 0!important;
+	}
+}
+@media(min-width: 768px) and (max-width: 1199.98px){
+	.page-aside-left .page-aside+.page-main, 
+	.page-aside-left:not(.page-aside-fixed) .page-aside+.page-main{
+		margin-left: 180px!important;
+	}
+}

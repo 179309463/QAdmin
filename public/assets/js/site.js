@@ -665,7 +665,7 @@
                 $(iframeDocument).on('click', function() {
                     if (Breakpoints.is('xs') && $('body').hasClass('site-menubar-open')) {
                         $.site.menubar.hide();
-                        self._hideNavbar();
+                        //self._hideNavbar();
                     }
                     $('.dropdown-menu.show').removeClass('show');
                 });
@@ -856,7 +856,7 @@
         });
     }
 
-    var $content = $("#qadmin-pageContent");
+    
     
     /*公用模块对象*/
     window.app = {
@@ -864,7 +864,7 @@
             if (typeof $.slidePanel === 'undefined') {
                 return;
             }
-
+            var $content = $("#qadmin-pageContent");
             $content.on('click', '[data-toggle=slidePanel]', function (e) {
                 $.slidePanel.show({
                     url: $(this).data('url'),
@@ -891,7 +891,7 @@
         },
         handleMultiSelect: function () {
             var $all = $('.select-all');
-
+            var $content = $("#qadmin-pageContent");
             $content.on('change', '.multi-select', function (e, isSelectAll) {
                 if (isSelectAll) {
                     return;
@@ -917,6 +917,7 @@
             });
         },
         handleListActions: function () { // 操作主体部分，左侧菜单编辑
+            var $content = $("#qadmin-pageContent");
             $content.on('keydown', '.list-editable [data-bind]', function (event) {
                 var keycode = (event.keyCode ? event.keyCode : event.which);
 
@@ -956,11 +957,10 @@
             pageAside.toggleClass('open', !isOpen);
         },
         run: function () {
-            var self = this;
-
+            var $content = $("#qadmin-pageContent");
             // 小屏下侧边栏滚动
             $content.on('click', '.page-aside-switch', function (e) {
-                self.pageAside();
+                window.app.pageAside();
                 e.stopPropagation();
             });
 
