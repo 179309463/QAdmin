@@ -40,12 +40,59 @@
 	color: #fff!important;
 }
 
-/*page-aside样式问题*/
-@media(max-width: 767.98px){
-	.page-aside {
-		position: absolute!important;
-		top: 0px!important;
+/*navbar-left样式问题*/
+@media(max-width: 479.98px){
+	.site-navbar .navbar-toolbar.navbar-left{
+		min-width: 80px;
 	}
+}
+@media(min-width: 479.98px) and (max-width: 767.98px){
+	.site-navbar .navbar-toolbar.navbar-left{
+		width: -webkit-calc(100% - 300px);
+		width: calc(100% - 300px);
+	}
+}
+@media(min-width: 768px){
+	.site-navbar .navbar-toolbar.navbar-left{
+		width: -webkit-calc(100% - 450px);
+		width: calc(100% - 450px);
+	}
+}
+/*site-page样式问题*/
+@media(max-width: 479.98px) {
+	.site-contabs-open .site-page{
+		height: 100%;
+
+	}
+}
+/*slide-panel样式问题*/
+.slidePanel-left, .slidePanel-right{
+	top: 100px!important;
+}
+@media (max-width: 767.98px){
+	.slidePanel-left, .slidePanel-right{
+		top: 60px!important;
+	}
+}
+.iframe .slidePanel-left, .iframe .slidePanel-right{
+	top: 0!important;
+}
+@media (max-width: 767.98px){
+	.iframe .slidePanel-left, .iframe .slidePanel-right{
+		top: 0!important;
+	}
+}
+/*page-aside样式问题*/
+.page-aside-fixed .page-aside {
+	top: 100px!important;
+	height: -webkit-calc(100% - 60px - 84px)!important;
+    height: calc(100% - 60px- 88px)!important;
+}
+.iframe .page-aside-fixed .page-aside{
+	top: 0px!important;
+	height: 100%!important;
+}
+@media(max-width: 767.98px){
 	.page-aside-left .page-aside+.page-main, 
 	.page-aside-left:not(.page-aside-fixed) .page-aside+.page-main{
 		margin-left: 0!important;
@@ -55,5 +102,11 @@
 	.page-aside-left .page-aside+.page-main, 
 	.page-aside-left:not(.page-aside-fixed) .page-aside+.page-main{
 		margin-left: 180px!important;
+	}
+}
+/*site-contabs样式问题*/
+@media (max-width: 767.98px){
+	body.site-navbar-collapse-show .site-contabs{
+		top: 120px!important;
 	}
 }
