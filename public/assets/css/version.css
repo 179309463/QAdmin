@@ -110,3 +110,24 @@
 		top: 120px!important;
 	}
 }
+/*.page-container样式问题*/
+.page-container.h-full{
+	overflow: auto;
+}
+.page-container.h-full .page.page-full{
+	height: unset!important;
+}
+.page-container.h-full .page{
+	min-height: unset!important;
+}
+.page-container.h-full > .page.page-aside-right.page-aside-fixed .page-aside{
+	right: 16px;
+}
+.iframe .page{
+	height: 100%!important;
+	min-height: 100%!important;
+	overflow: auto;
+}
+.iframe .page-container.h-full > .page.page-aside-right.page-aside-fixed .page-aside{
+	right: 0px;
+}
