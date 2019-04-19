@@ -3,7 +3,7 @@ var express = require('express'),
     type = 'iframe';
 
 router.get('/examples', (req, res) => {
-  type = (req.query.pjax=="true" ? 'index' : 'iframe');
+  type = (req.query.modal=="true" ? 'modal' : (req.query.pjax=="true" ? 'index' : 'iframe'))
   res.render('application/index', {
     type: type,
     isModal: false,
@@ -14,6 +14,7 @@ router.get('/examples', (req, res) => {
 })
 
 router.get('/examples/home', (req, res) => {
+    type = (req.query.modal=="true" ? 'modal' : (req.query.pjax=="true" ? 'index' : 'iframe'))
     var _path = req.path.substring(1);
 
     if (req.headers['x-pjax']) {

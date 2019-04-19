@@ -82,23 +82,24 @@
                     var $target = $(e.target),
                         $item = $(this);
                     if ($target.is("i.wb-close-mini") && $item.is(".active")) {
-                        self.closeTab();
+                        self.closeTab($item);
 
-                        e.preventDefault();
+                        return false;
                     } else if ($target.is("i.wb-close-mini")) {
                         $item.remove();
 
                         self.labelSize();
                         self.labelEvent($navContent, 'media');
 
-                        e.preventDefault();
+                        return false;
                     } else if ($item.is(".active")) {
-                        e.preventDefault();
+                        return false;
                     } else {
                         $item.siblings("li").removeClass("active");
                         $item.addClass("active");
 
                         self.enable($item);
+                        return true;
                     }
                 }else{
                     var $target = $(e.target),
@@ -112,8 +113,9 @@
                         self.checkoutTab($item.find('a'));
                         self.enable($item);
                     }
-                    e.preventDefault();
+                    return false;
                 }
+               
             });
 
             // 刷新当前 && 关闭其他 && 所有标签页
@@ -563,6 +565,9 @@
             };
         },
         closeTab: function (tab) {
+            var target = tab.children('a').attr('target');
+            this.updateSetting(target);
+
             if($.site.tab_style!="iframe"){
                 var $navContent = $(".site-contabs ul.con-tabs"),
                     $item = $navContent.find('li.active'), labelsURL;
@@ -580,7 +585,7 @@
                 }
 
                 $item.remove();
-
+                
                 this.labelSize();
                 this.labelEvent($navContent, 'media');
 
@@ -591,9 +596,7 @@
                 });
 
                 this.$instance.find("a[href='" + labelsURL + "']").parent('li').addClass('active');
-            }else{ 
-                var target = tab.children('a').attr('target');
-                
+            }else{                 
                 if (tab.is('.active')) {
                     var which = '';
                     var nextLi = tab.next('li');
@@ -608,7 +611,6 @@
                 }
                 tab.remove();
                 $('#qadmin-pageContent').children('[name="' + target + '"]').remove();
-                this.updateSetting(target);
                 this.labelSize();
                 this.labelEvent($('.con-tabs'), 'media');
             }
