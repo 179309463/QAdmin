@@ -98,6 +98,9 @@
 	top: 0px!important;
 	height: 100%!important;
 }
+.page-aside-right.page-aside-fixed .page-aside{
+	right: 16px;
+}
 @media(max-width: 767.98px){
 	.page-aside-left .page-aside+.page-main, 
 	.page-aside-left:not(.page-aside-fixed) .page-aside+.page-main{
@@ -134,12 +137,13 @@
 .page-container.h-full .page{
 	min-height: unset!important;
 }
-.page-container.h-full > .page.page-aside-right.page-aside-fixed .page-aside{
-	right: 16px;
-}
 .iframe .page.page-full.page-h-unset{
 	height: 100%!important;
 	min-height: 100%!important;
+	overflow: auto;
+}
+.iframe .page.page-full.page-h-unset-unset{
+	height: unset!important;
 	overflow: auto;
 }
 
