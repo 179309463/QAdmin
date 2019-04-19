@@ -1,3 +1,10 @@
+.height-full-22{
+	height: calc(100% - 22px);
+}
+.height-full-40{
+	height: calc(100% - 40px);
+}
+
 .site-navbar .navbar-header .navbar-brand .version-toggle {
 	float: right
 }
@@ -62,7 +69,6 @@
 @media(max-width: 479.98px) {
 	.site-contabs-open .site-page{
 		height: 100%;
-
 	}
 }
 /*slide-panel样式问题*/
@@ -111,11 +117,19 @@
 	}
 }
 /*.page-container样式问题*/
-.page-container.h-full{
-	overflow: auto;
-}
 .page-container.h-full .page.page-full{
+	height: calc(100vh - 60px - 84px)!important;
+}
+.page-container.h-full .page.page-full.page-h-unset{
 	height: unset!important;
+}
+@media(max-width: 479.98px) {
+	.page-container.h-full .page.page-full{
+		height: calc(100vh - 60px)!important;
+	}
+	.page-container.h-full .page.page-full.page-h-unset{
+		height: unset!important;
+	}
 }
 .page-container.h-full .page{
 	min-height: unset!important;
@@ -123,11 +137,61 @@
 .page-container.h-full > .page.page-aside-right.page-aside-fixed .page-aside{
 	right: 16px;
 }
-.iframe .page{
+.iframe .page.page-full.page-h-unset{
 	height: 100%!important;
 	min-height: 100%!important;
 	overflow: auto;
 }
-.iframe .page-container.h-full > .page.page-aside-right.page-aside-fixed .page-aside{
-	right: 0px;
+
+/********/
+
+body.iframe{
+	padding-top: 0px;
+	background: #f1f4f5;
+}
+body.iframe.isModal{
+	background: #fff;
+}
+.modal-content>iframe {
+	float: left;
+	width: 100%;
+	height: 0;
+	margin: 0;
+	border: none
+}
+.site-page .page-container .page-frame {
+	position:relative;
+	display:none;
+	width:100%;
+	height:-webkit-calc(100vh - 100px);
+	height:calc(100vh - 100px);
+	overflow-x:hidden
+}
+.site-page .page-container .page-frame.active {
+	display:block
+}
+.site-contabs-open .site-page .page-frame {
+	height: -webkit-calc(100vh - 140px);
+	height:         calc(100vh - 140px)
+}
+@media (max-width: 480px) {
+	.site-contabs-open .site-page .page-frame {
+		height: -webkit-calc(100vh - 60px);
+		height:         calc(100vh - 60px)
+	}
+}
+.site-menubar-unfold.iframe .site-page,
+.site-menubar-fold.iframe .site-page{
+	margin-left: 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.css-menubar .iframe .site-page {
+		margin-left: 0px;
+	}
+}
+.modal-backdrop{
+	background-color: #000!important;
+}
+.nav-tabs-reverse{
+	justify-content: flex-end;
 }
