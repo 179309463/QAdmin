@@ -231,7 +231,7 @@
             }, 200)();
         },
         enable: function ($el) {
-            if($.site.tab_style!="iframe"){
+            //if($.site.tab_style!="iframe"){
                 var href = $.trim($el.find('a').attr('href')), tabID,
                     self = this;
 
@@ -243,7 +243,7 @@
 
                         $('a[href="#' + tabID + '"]').tab('show');
                         $navTabs.find('li').removeClass('active');
-                        $activeLi.addClass('active');
+                        $activeLi.find('a').addClass('active');
                         if($activeLi.parent('ul').hasClass('dropdown-menu')){
                             $activeLi.closest('.dropdown').addClass('active');
                         }
@@ -261,49 +261,49 @@
                     if ($item.attr('href') === href) {
                         tabID = $item.parents('.tab-pane').attr('id');
                         isOpen();
-                        $item.parent('li').addClass('active');
+                        $item.parent('li').find('a').addClass('active');
                         return false;
                     }
                 });
-            }else{
-                var href = $.trim($el.find('a').attr('href')),
-                index = href.indexOf('#'),
-                hrefWithoutHash = index > 0 ? href.substring(0, index) : href,
-                link = this.$instance.find('a[href="' + hrefWithoutHash + '"]'),
-                parents,
-                linkClosestLiOpenSiblings,
-                linkClosestSubLiOpenSiblings,
-                instanceOpenLies,
-                tabPaneActiveId,
-                tabPaneId;
-                if (link.length === 0) {
-                    $.site.menu.refresh();
-                    return;
-                }
-                tabPaneActiveId = $.trim(this.$instance.closest('div.tab-pane.active').attr('id'));
-                tabPaneId = $.trim(link.closest('div.tab-pane').attr('id'));
-                if (tabPaneActiveId !== tabPaneId) {
-                    $('a[href="#' + tabPaneId + '"]').tab('show');
-                }
-                linkClosestLiOpenSiblings = link.closest('li').siblings('li.open');
-                parents = link.parents('li.has-sub');
-                linkClosestSubLiOpenSiblings = link.closest('li.has-sub').siblings('li.open');
-                instanceOpenLies = this.$instance.find('li.open');
-                this.$instance.find('li.active').trigger('deactive.site.menu');
-                link.closest('li').trigger('active.site.menu');
-                if (linkClosestLiOpenSiblings.length) {
-                    linkClosestLiOpenSiblings.trigger('close.site.menu');
-                }
-                if (!link.closest('li.has-sub').hasClass('open')) {
-                    if (linkClosestSubLiOpenSiblings.length) {
-                        linkClosestSubLiOpenSiblings.trigger('close.site.menu');
-                    }
-                    if (instanceOpenLies.length) {
-                        instanceOpenLies.not(parents).trigger('close.site.menu');
-                    }
-                    parents.trigger('open.site.menu');
-                }
-            }
+            // }else{
+            //     var href = $.trim($el.find('a').attr('href')),
+            //     index = href.indexOf('#'),
+            //     hrefWithoutHash = index > 0 ? href.substring(0, index) : href,
+            //     link = this.$instance.find('a[href="' + hrefWithoutHash + '"]'),
+            //     parents,
+            //     linkClosestLiOpenSiblings,
+            //     linkClosestSubLiOpenSiblings,
+            //     instanceOpenLies,
+            //     tabPaneActiveId,
+            //     tabPaneId;
+            //     if (link.length === 0) {
+            //         $.site.menu.refresh();
+            //         return;
+            //     }
+            //     tabPaneActiveId = $.trim(this.$instance.closest('div.tab-pane.active').attr('id'));
+            //     tabPaneId = $.trim(link.closest('div.tab-pane').attr('id'));
+            //     if (tabPaneActiveId !== tabPaneId) {
+            //         $('a[href="#' + tabPaneId + '"]').tab('show');
+            //     }
+            //     linkClosestLiOpenSiblings = link.closest('li').siblings('li.open');
+            //     parents = link.parents('li.has-sub');
+            //     linkClosestSubLiOpenSiblings = link.closest('li.has-sub').siblings('li.open');
+            //     instanceOpenLies = this.$instance.find('li.open');
+            //     this.$instance.find('li.active').trigger('deactive.site.menu');
+            //     link.closest('li').trigger('active.site.menu');
+            //     if (linkClosestLiOpenSiblings.length) {
+            //         linkClosestLiOpenSiblings.trigger('close.site.menu');
+            //     }
+            //     if (!link.closest('li.has-sub').hasClass('open')) {
+            //         if (linkClosestSubLiOpenSiblings.length) {
+            //             linkClosestSubLiOpenSiblings.trigger('close.site.menu');
+            //         }
+            //         if (instanceOpenLies.length) {
+            //             instanceOpenLies.not(parents).trigger('close.site.menu');
+            //         }
+            //         parents.trigger('open.site.menu');
+            //     }
+            // }
         },
         getPath: function () {
             // if($.site.tab_style!="iframe"){

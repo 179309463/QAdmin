@@ -61,8 +61,8 @@
 }
 @media(min-width: 768px){
 	.site-navbar .navbar-toolbar.navbar-left{
-		width: -webkit-calc(100% - 450px);
-		width: calc(100% - 450px);
+		width: -webkit-calc(100% - 500px);
+		width: calc(100% - 500px);
 	}
 }
 /*site-page样式问题*/
