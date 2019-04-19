@@ -263,7 +263,7 @@
                     if ($item.attr('href') === href) {
                         tabID = $item.parents('.tab-pane').attr('id');
                         isOpen();
-                        $item.parent('li').find('a').addClass('active');
+                        //$item.parent('li').find('a').addClass('active');
                         return false;
                     }
                 });

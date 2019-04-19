@@ -149,5 +149,8 @@
     "toastr": "https://github.com/CodeSeven/toastr.git#^2.1.4",
     "to-markdown": "3.1.1",
     "stickyfill": "https://github.com/wilddeer/stickyfill.git#^2.1.0"
+  },
+  "resolutions": {
+    "jquery": "3.3.1"
   }
 }
