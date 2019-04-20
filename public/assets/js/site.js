@@ -622,7 +622,12 @@
                 $('.con-tabs').append(labelHtml);
                 if($.site.tab_style=="iframe"){
                     self.$content.append(iframeHtml);
+                    if (key === checked && hash) {
+                        var iframe = self.$content.find("iframe.active");
+                        self.iframeEvents(iframe);
+                    }
                 }
+                
             }
             if (hash !== targetUrl && hash) {
                 var title = '未知页面';
