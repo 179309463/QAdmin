@@ -6,10 +6,10 @@
         <!-- 样式 -->
         <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
         <% if(type=='iframe') { %>
-            <link rel="stylesheet" href="/assets/skins/mainframe/default.css" data-type="mainframe" id="qadmin-siteStyle">
+            <link rel="stylesheet" href="/assets/skins/<%=theme%>/mainframe/default.css" data-type="mainframe" id="qadmin-siteStyle">
         <% }else { %>
-            <link rel="stylesheet" href="/assets/skins/mainframe/default.css">
-            <link rel="stylesheet" href="/assets/skins/pjax/default.css" data-type="pjax" id="qadmin-siteStyle">
+            <link rel="stylesheet" href="/assets/skins/<%=theme%>/mainframe/default.css">
+            <link rel="stylesheet" href="/assets/skins/<%=theme%>/pjax/default.css" data-type="pjax" id="qadmin-siteStyle">
         <% } %>
 
         <link rel="stylesheet" href="/assets/css/patch.css">
@@ -38,7 +38,7 @@
         </style>
         <%- include('./includes/script-head.html') %>   
     </head>
-    <body class="site-contabs-open site-menubar-unfold">
+    <body class="site-contabs-open site-menubar-unfold" data-theme="<%=theme%>">
         <%- include('./includes/site-navbar.html') %>
         <%- include('./includes/site-menubar.html') %>
         <%- include('./includes/site-tabs.html') %>

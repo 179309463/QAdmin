@@ -234,10 +234,10 @@
 
                 var type = $link.data("type");
                 if (val === 'primary') {
-                    href = this.path + '/skins/' + type + '/default.css';
+                    href = this.path + '/skins/' + $("body").data("theme") + "/" + type + '/default.css';
                 }
                 else {
-                    href = this.path + '/skins/' + type + "/" + val + etx + '.css';
+                    href = this.path + '/skins/' + $("body").data("theme") + "/" + type + "/" + val + etx + '.css';
                 }
 
                 $link.attr('href', href);
@@ -251,9 +251,9 @@
                         var type = $link.data('type');
                         etx = $link.prop('href').indexOf('?v=') === -0x1 ? '': '.min';
                         if (val === 'primary') {
-                            href = self.path + '/skins/' + type + '/default.css';
+                            href = self.path + '/skins/' + $("body").data("theme") + "/" + type + '/default.css';
                         } else {
-                            href = self.path + '/skins/' + type + '/' + val + etx + '.css';
+                            href = self.path + '/skins/' + $("body").data("theme") + "/" + type + '/' + val + etx + '.css';
                         }
                         $link.attr('href', href);
                     }

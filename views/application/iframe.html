@@ -5,7 +5,7 @@
 		<%- include('./includes/meta.html') %>
 		<!-- 样式 -->
 		<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
-		<link rel="stylesheet" href="/assets/skins/iframe/default.css" data-type="iframe" id="qadmin-siteStyle">
+		<link rel="stylesheet" href="/assets/skins/<%=theme%>/iframe/default.css" data-type="iframe" id="qadmin-siteStyle">
 
 		<link rel="stylesheet" href="/assets/css/patch.css">
 
@@ -27,7 +27,7 @@
 		<link rel="stylesheet" href="/lib/layer/retina.css">
 		<%- include('./includes/script-head.html') %>	
 	</head>
-	<body class="iframe">
+	<body class="iframe" data-theme="base">
 		<main class="site-page">
 			<div class="page-container" style="height:100%;" id="qadmin-pageContent">
 				<%- include('../'+path) %>

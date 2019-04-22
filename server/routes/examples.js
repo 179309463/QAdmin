@@ -1,11 +1,16 @@
 var express = require('express'),
     router = express.Router(),
-    type = 'iframe';
+    type = 'iframe',
+    theme = 'base';
 
 router.get('/examples', (req, res) => {
   type = (req.query.modal=="true" ? 'modal' : (req.query.pjax=="true" ? 'index' : 'iframe'))
+  theme = (req.query.theme == 'topbar' ? 'topbar' : 'base');
+
   res.render('application/index', {
     type: type,
+    theme: theme,
+
     isModal: false,
     path: 'examples/home/index.html',
     nav_menu: 'examples/nav-menu.html',
@@ -22,6 +27,8 @@ router.get('/examples/home', (req, res) => {
     } else {
         res.render('application/'+type, {
             type: type,
+            theme: theme,
+
             isModal: false,
             path: "examples/home/index.html",
             nav_menu: 'examples/nav-menu.html',

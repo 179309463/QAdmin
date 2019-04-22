@@ -1,11 +1,14 @@
 var express = require('express'),
     router = express.Router(),
-    type = 'iframe';
+    type = 'iframe',
+    theme = 'base';
 
 router.get(['/', '/application','/application/index','/application/index.html'], (req, res) => {
   type = (req.query.modal=="true" ? 'modal' : (req.query.pjax=="true" ? 'index' : 'iframe'));
+  theme = (req.query.theme == 'topbar' ? 'topbar' : 'base');
   res.render('application/index', {
     type: type,
+    theme: theme,
     path: 'examples/home/index.html',
     nav_menu: 'examples/nav-menu.html',
     site_menu: 'examples/site-menu.html'
@@ -25,6 +28,7 @@ router.get('/application/locked/index.html', (req, res) => {
 
 router.all('/*', function (req, res) {
     type = (req.query.modal=="true" ? 'modal' : (req.query.pjax=="true" ? 'index' : 'iframe'));
+    theme = (req.query.theme == 'topbar' ? 'topbar' : 'base');
 
     var _path = req.path.substring(1);
     var i = _path.indexOf("/");
@@ -38,6 +42,7 @@ router.all('/*', function (req, res) {
     } else {
         res.render('application/'+type, {
             type: type,
+            theme: theme,
             path: _path,
             nav_menu: module+'/nav-menu.html',
             site_menu: module+'/site-menu.html'

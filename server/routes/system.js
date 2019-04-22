@@ -1,6 +1,7 @@
 var express = require('express'),
     router = express.Router(),
-    type = 'iframe';
+    type = 'iframe',
+    theme = 'base';
 
 router.all('/application/system/account/*', function (req, res) {
     res.charset = 'utf-8';
@@ -60,6 +61,7 @@ router.all('/application/system/account/*', function (req, res) {
             case 'account/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    theme: theme,
                     isModal: false,
                     path: _index,
                     path1:'message/index.html',
@@ -71,6 +73,7 @@ router.all('/application/system/account/*', function (req, res) {
             case 'password/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    theme: theme,
                     isModal: false,
                     path: _index,
                     path1: 'password/index.html',
@@ -82,6 +85,7 @@ router.all('/application/system/account/*', function (req, res) {
             case 'log/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    theme: theme,
                     isModal: false,
                     path: _index,
                     path1: '../log-table/index.html',
@@ -93,6 +97,7 @@ router.all('/application/system/account/*', function (req, res) {
             case 'display/index.html':
                 res.render('application/'+type, {
                     type: type,
+                    theme: theme,
                     isModal: false,
                     path: _index,
                     path1: '../settings-display/index.html',
