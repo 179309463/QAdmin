@@ -40,15 +40,15 @@
     </head>
     <body class="site-contabs-open site-menubar-unfold" data-theme="<%=theme%>">
         <%- include('./includes/site-navbar.html') %>
-        <%- include('./includes/site-menubar.html') %>
+        <%- include('./includes/site-menu/'+theme+'/index.html') %>
         <%- include('./includes/site-tabs.html') %>
 
         <%- include('./includes/site-page.html') %>
         <%- include('./includes/site-footer.html') %>
 
         <!-- 布局 -->
-        <script src="/views/application/includes/site-menu.js"></script>
-        <script src="/views/application/includes/site-menubar.js"></script>
+        <script src="/views/application/includes/site-menu/site-menu.js"></script>
+        <script src="/views/application/includes/site-menu/site-menubar.js"></script>
         <script src="/views/application/includes/site-tabs.js"></script>
         
         <%- include('./includes/script-body.html') %>    

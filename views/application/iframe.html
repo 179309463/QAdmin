@@ -27,7 +27,7 @@
 		<link rel="stylesheet" href="/lib/layer/retina.css">
 		<%- include('./includes/script-head.html') %>	
 	</head>
-	<body class="iframe" data-theme="base">
+	<body class="iframe" data-theme="<%=theme%>">
 		<main class="site-page">
 			<div class="page-container" style="height:100%;" id="qadmin-pageContent">
 				<%- include('../'+path) %>
@@ -38,8 +38,8 @@
 		</main>
 		
         <!-- 布局 -->
-        <script src="/views/application/includes/site-menu.js"></script>
-        <script src="/views/application/includes/site-menubar.js"></script>
+        <script src="/views/application/includes/site-menu/site-menu.js"></script>
+        <script src="/views/application/includes/site-menu/site-menubar.js"></script>
         <script src="/views/application/includes/site-tabs.js"></script>		
 		<%- include('./includes/script-body.html') %>	
 	</body>
