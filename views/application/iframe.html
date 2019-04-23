@@ -2,7 +2,34 @@
 <html class="no-js css-menubar" lang="zh-cn">
 	<head>
 		<title>空白页面</title>
-		<%- include('./includes/meta.html') %>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 移动设备 viewport -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+		<meta name="author" content="qadmin.com">
+		<!-- 360浏览器默认使用Webkit内核 -->
+		<meta name="renderer" content="webkit">
+		<!-- 禁止搜索引擎抓取 -->
+		<meta name="robots" content="nofollow">
+		<!-- 禁止百度SiteAPP转码 -->
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<!-- Chrome浏览器添加桌面快捷方式（安卓） -->
+		<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+		<meta name="mobile-web-app-capable" content="yes">
+		<!-- Safari浏览器添加到主屏幕（IOS） -->
+		<link rel="icon" sizes="192x192" href="/assets/images/apple-touch-icon.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="QAdmin">
+		<!-- Win8标题栏及ICON图标 -->
+		<link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon.png">
+		<meta name="msapplication-TileImage" content="/assets/images/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#62a8ea">
+
+		<!--[if lt IE 9]>
+		<meta http-equiv="refresh" content="0; url='/portal/browser.html'" />
+		<![endif]-->
+		
 		<!-- 样式 -->
 		<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet" href="/assets/skins/<%=theme%>/iframe/default.css" data-type="iframe" id="qadmin-siteStyle">
@@ -25,22 +52,44 @@
 		<!--<![endif]-->
 		<link rel="stylesheet" href="/lib/toastr/build/toastr.css">
 		<link rel="stylesheet" href="/lib/layer/retina.css">
-		<%- include('./includes/script-head.html') %>	
+		
+		<!--[if lt IE 10]>
+		<script src="/vendor/media-match/media.match.min.js"></script>
+		<script src="/vendor/respond/dest/respond.min.js"></script>
+		<![endif]-->
+		<script src="/assets/js/ie/array.js"></script>
+		<script src="/assets/js/ie/string.js"></script>
+		<script src="/assets/js/ie/dom.js"></script>
+
+		<!-- 插件 -->
+		<script src="/vendor/jquery/dist/jquery.js"></script>
+		<script src="/vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+		<script src="/vendor/lodash/dist/lodash.js"></script>
+		<script src="/lib/modernizr/modernizr.min.js"></script>
+		<script src="/vendor/breakpoints.js/dist/breakpoints.min.js"></script>
+		<script src="/lib/artTemplate/template.min.js"></script>
+		<script src="/lib/toastr/toastr.js"></script>
+		<script src="/vendor/bootbox.js/dist/bootbox.all.min.js"></script>
+		<script src="/lib/layer/layer.min.js"></script>
+
+		<!-- 核心  -->
+		<script src="/assets/js/site.js"></script>
+		<script src="/assets/js/components.js"></script>
+
+		<script>
+		Breakpoints();
+		</script>
 	</head>
 	<body class="iframe" data-theme="<%=theme%>">
 		<main class="site-page">
 			<div class="page-container" style="height:100%;" id="qadmin-pageContent">
 				<%- include('../'+path) %>
 			</div>
-			<!-- <div class="page-loading vertical-align text-center">
-				<div class="page-loader loader-default loader vertical-align-middle" data-type="default"></div>
-			</div> -->
 		</main>
 		
-        <!-- 布局 -->
-        <script src="/views/application/includes/site-menu/site-menu.js"></script>
-        <script src="/views/application/includes/site-menu/site-menubar.js"></script>
-        <script src="/views/application/includes/site-tabs.js"></script>		
-		<%- include('./includes/script-body.html') %>	
+		<!-- 插件 -->
+        <script src="/lib/jquery-pjax/jquery.pjax.js"></script>
+        <script src="/vendor/jquery-asHoverScroll/dist/jquery-asHoverScroll.min.js"></script>
+        <script src="/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 	</body>
 </html>

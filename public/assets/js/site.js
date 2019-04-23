@@ -282,14 +282,16 @@
                 $.site.contentTabs.init();
             }
 
-            $('#qadmin-navMenu').responsiveHorizontalTabs({ // 导航条响应式
-                tabParentSelector: '#qadmin-navTabs',
-                fnCallback: function (el) {
-                    if($('#qadmin-navMenu').is(':visible')) {
-                        el.removeClass('is-load');
+            if($('#qadmin-navMenu').length>0){
+                $('#qadmin-navMenu').responsiveHorizontalTabs({ // 导航条响应式
+                    tabParentSelector: '#qadmin-navTabs',
+                    fnCallback: function (el) {
+                        if($('#qadmin-navMenu').is(':visible')) {
+                            el.removeClass('is-load');
+                        }
                     }
-                }
-            });
+                });
+            }
 
             if (typeof $.site.menubar !== 'undefined') { // 导航条&菜单的响应式工作
                 $('.site-menubar').on('changing.site.menubar', function () {
@@ -567,6 +569,9 @@
         },
 
         tabsDraw: function() {
+            if (typeof $.site.contentTabs === 'undefined') {
+                return
+            }
             var self = this;
             var targetUrl;
             var hash = "";

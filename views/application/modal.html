@@ -8,11 +8,10 @@
 	</head>
 	<body class="iframe isModal">
 		<%- include('../'+path) %>
-
-        <!-- 布局 -->
-        <script src="/views/application/includes/site-menu.js"></script>
-        <script src="/views/application/includes/site-menubar.js"></script>
-        <script src="/views/application/includes/site-tabs.js"></script>		
-		<%- include('./includes/script-body.html') %>	
+		
+		<!-- 插件 -->
+        <script src="/lib/jquery-pjax/jquery.pjax.js"></script>
+        <script src="/vendor/jquery-asHoverScroll/dist/jquery-asHoverScroll.min.js"></script>
+        <script src="/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 	</body>
 </html>
