@@ -8,6 +8,15 @@ font-awesome#4.7.0 不能升级
 fullpage.js#2.9.7 不能升级 license
 to-markdown 不能升级
 
+IE 11 兼容性检查
+1）图片轮播/邮件模板
+2）菜单树第一个
+3）右键菜单
+4）jquery.jquery_appear/简单时间轴/图标时间轴
+5）引用Blockquote
+6) fullcalendar日历，多重滚动条
+7）表单中的form-group
+
 {
   "name": "qadmin",
   "description": "使用express框架搭建项目",

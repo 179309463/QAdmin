@@ -20,8 +20,9 @@
 }
 
 /*font awesome版本问题*/
-[class*=" fa-"],[class^=fa-] {
-	line-height: unset!important;
+.site-menubar [class*=" fa-"],
+.site-menubar [class^=fa-] {
+	line-height: 38px!important;
 }
 
 /*播放器tooltip被遮挡问题*/
