@@ -629,19 +629,21 @@
                 }
                 
             }
-            if (hash !== targetUrl && hash) {
-                var title = '未知页面';
-                $('.site-menu a').each(function() {
-                    var that = $(this);
-                    if (that.attr('href') === hash) {
-                        title = $.trim(that.attr('title') || that.text());
-                        return ! [];
-                    }
-                });
-                $.site.contentTabs.buildTag({
-                    'name': title,
-                    'url': hash
-                });
+            if($.site.tab_style=="iframe"){
+                if (hash !== targetUrl && hash) {
+                    var title = '未知页面';
+                    $('.site-menu a').each(function() {
+                        var that = $(this);
+                        if (that.attr('href') === hash) {
+                            title = $.trim(that.attr('title') || that.text());
+                            return ! [];
+                        }
+                    });
+                    $.site.contentTabs.buildTag({
+                        'name': title,
+                        'url': hash
+                    });
+                }
             }
             $.site.contentTabs.enable($('.con-tabs').find('.active'));
             if (Object.keys(setting).length >= 0x13) {
