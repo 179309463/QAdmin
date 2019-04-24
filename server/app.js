@@ -12,7 +12,7 @@ var examples = require('./routes/examples');
 var data = require('./routes/data');
 
 // 监听端口
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 3200
 
 var app = new express()
 app.set('views', path.resolve(__dirname, '../views'))
