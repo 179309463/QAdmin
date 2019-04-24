@@ -39,7 +39,7 @@ router.all('/examples/tables/data-tables/basic-init/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'basic-init/index.html':
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -51,7 +51,7 @@ router.all('/examples/tables/data-tables/basic-init/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -101,7 +101,7 @@ router.all('/examples/tables/data-tables/advanced-init/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'advanced-init/index.html':
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -113,7 +113,7 @@ router.all('/examples/tables/data-tables/advanced-init/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -163,7 +163,7 @@ router.all('/examples/tables/data-tables/data-sources/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'data-sources/index.html':
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -175,7 +175,7 @@ router.all('/examples/tables/data-tables/data-sources/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -225,7 +225,7 @@ router.all('/examples/tables/data-tables/api/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'api/index.html':
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -237,7 +237,7 @@ router.all('/examples/tables/data-tables/api/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -287,7 +287,7 @@ router.all('/examples/tables/data-tables/ajax/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'ajax/index.html':
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -299,7 +299,7 @@ router.all('/examples/tables/data-tables/ajax/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -349,7 +349,7 @@ router.all('/examples/tables/data-tables/server-side/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'server-side/index.html':
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -361,7 +361,7 @@ router.all('/examples/tables/data-tables/server-side/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -411,7 +411,7 @@ router.all('/examples/tables/data-tables/plug-ins/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'plug-ins/index.html':
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -423,7 +423,7 @@ router.all('/examples/tables/data-tables/plug-ins/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -473,7 +473,7 @@ router.all('/examples/tables/data-tables/others/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'others/index.html':
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -485,7 +485,7 @@ router.all('/examples/tables/data-tables/others/*', function (req, res) {
                 });
                 break;
             default:
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,

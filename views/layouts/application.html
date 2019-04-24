@@ -32,18 +32,18 @@
         
         <!-- 样式 -->
         <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
-        <% if(@type=='iframe') %>
-            <link rel="stylesheet" href="/static/skins/<%=@theme%>/mainframe/default.css" data-type="mainframe" id="qadmin-siteStyle">
-        <% else  %>
-            <link rel="stylesheet" href="/static/skins/<%=@theme%>/mainframe/default.css">
-            <link rel="stylesheet" href="/static/skins/<%=@theme%>/pjax/default.css" data-type="pjax" id="qadmin-siteStyle">
-        <% end %>
+        <% if(type=='iframe') { %>
+            <link rel="stylesheet" href="/static/skins/<%=theme%>/mainframe/default.css" data-type="mainframe" id="qadmin-siteStyle">
+        <% }else { %>
+            <link rel="stylesheet" href="/static/skins/<%=theme%>/mainframe/default.css">
+            <link rel="stylesheet" href="/static/skins/<%=theme%>/pjax/default.css" data-type="pjax" id="qadmin-siteStyle">
+        <% } %>
 
         <link rel="stylesheet" href="/static/css/patch.css">
 
-        <link rel="stylesheet" href="/app/views/examples/components/advanced/tour/index.css">
+        <link rel="stylesheet" href="/views/examples/components/advanced/tour/index.css">
         <link rel="stylesheet" href="/vendor/magnific-popup/dist/magnific-popup.css">
-        <link rel="stylesheet" href="/app/views/examples/components/advanced/lightbox/index.css">
+        <link rel="stylesheet" href="/views/examples/components/advanced/lightbox/index.css">
         <link rel="stylesheet" href="/vendor/alertifyjs/dist/css/alertify.css">
         <link rel="stylesheet" href="/vendor/bootstrap-sweetalert/dist/sweetalert.css">
 
@@ -79,11 +79,11 @@
         <script src="/lib/modernizr/modernizr.min.js"></script>
         <script src="/vendor/breakpoints.js/dist/breakpoints.min.js"></script>
 
-        <% if(@type!='iframe') %>
+        <% if(type!='iframe') { %>
         <script src="/lib/toastr/toastr.js"></script>
         <script src="/vendor/bootbox.js/dist/bootbox.all.min.js"></script>
         <script src="/lib/layer/layer.min.js"></script>
-        <% end %>
+        <% } %>
         
         <!-- 核心  -->
         <script src="/static/js/site.js"></script>
@@ -93,27 +93,27 @@
         Breakpoints();
         </script>
     </head>
-    <body class="site-contabs-open site-menubar-unfold" data-theme="<%=@theme%>">
-        <%= render "layouts/includes/site-navbar/site-navbar" %>
-        <%= render "layouts/includes/site-menu/site-menu" %>
-        <%= render "layouts/includes/site-tabs/site-tabs" %>
+    <body class="site-contabs-open site-menubar-unfold" data-theme="<%=theme%>">
+        <%- include('./includes/site-navbar/_site-navbar.html.erb') %>
+        <%- include('./includes/site-menu/_site-menu.html.erb') %>
+        <%- include('./includes/site-tabs/_site-tabs.html.erb') %>
 
         <main class="site-page">
-            <% if(@type=='iframe') %>
+            <% if(type=='iframe') { %>
                 <div class="page-container" id="qadmin-pageContent">
                     <iframe src="" frameborder="0" name="iframe-0" class="page-frame animation-fade active"></iframe>
                 </div>
-            <% else %>
+            <% }else{ %>
                 <div class="page-container h-full" id="qadmin-pageContent" style="overflow:auto;">
-                    <%= yield %>
+                    <%- include('../'+path) %>
                 </div>
-            <% end %>
+            <% } %>
             <div class="page-loading vertical-align text-center">
                 <div class="page-loader loader-default loader vertical-align-middle" data-type="default"></div>
             </div>
         </main>
 
-        <%= render "layouts/includes/site-footer/site-footer" %>
+        <%- include('./includes/site-footer/_site-footer.html.erb') %>
         
         <!-- 插件 -->
         <script src="/lib/jquery-pjax/jquery.pjax.js"></script>

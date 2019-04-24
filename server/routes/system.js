@@ -59,7 +59,7 @@ router.all('/application/system/account/*', function (req, res) {
     } else {
         switch (fileName) {
             case 'account/index.html':
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -71,7 +71,7 @@ router.all('/application/system/account/*', function (req, res) {
                 });
                 break;
             case 'password/index.html':
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -83,7 +83,7 @@ router.all('/application/system/account/*', function (req, res) {
                 });
                 break;
             case 'log/index.html':
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,
@@ -95,7 +95,7 @@ router.all('/application/system/account/*', function (req, res) {
                 });
                 break;
             case 'display/index.html':
-                res.render('application/'+type, {
+                res.render('layouts/'+type, {
                     type: type,
                     theme: theme,
                     isModal: false,

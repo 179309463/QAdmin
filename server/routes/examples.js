@@ -4,10 +4,10 @@ var express = require('express'),
     theme = 'base';
 
 router.get('/examples', (req, res) => {
-  type = (req.query.modal=="true" ? 'modal' : (req.query.pjax=="true" ? 'index' : 'iframe'))
+  type = (req.query.modal=="true" ? 'modal' : (req.query.pjax=="true" ? 'application' : 'iframe'))
   theme = (req.query.theme == 'topbar' ? 'topbar' : 'base');
 
-  res.render('application/index', {
+  res.render('layouts/application', {
     type: type,
     theme: theme,
 
@@ -19,13 +19,13 @@ router.get('/examples', (req, res) => {
 })
 
 router.get('/examples/home', (req, res) => {
-    type = (req.query.modal=="true" ? 'modal' : (req.query.pjax=="true" ? 'index' : 'iframe'))
+    type = (req.query.modal=="true" ? 'modal' : (req.query.pjax=="true" ? 'application' : 'iframe'))
     var _path = req.path.substring(1);
 
     if (req.headers['x-pjax']) {
         res.render("examples/home/index.html");
     } else {
-        res.render('application/'+type, {
+        res.render('layouts/'+type, {
             type: type,
             theme: theme,
 
