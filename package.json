@@ -1,5 +1,5 @@
 {
-  "name": "myweb",
+  "name": "qadmin",
   "version": "1.0.0",
   "description": "使用express框架搭建项目",
   "main": "server/app.js",

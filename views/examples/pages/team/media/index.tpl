@@ -1,4 +1,4 @@
-<header class="slidePanel-header overlay" style="background-image: url('/assets/images/photos/view-1.jpg');" data-method="scroll" data-min="50">
+<header class="slidePanel-header overlay" style="background-image: url('/static/images/photos/view-1.jpg');" data-method="scroll" data-min="50">
     <div class="overlay-top overlay-panel overlay-background">
         <div class="slidePanel-actions btn-group" aria-label="操作" role="group">
             <button type="button" class="btn btn-pure btn-inverse icon wb-chevron-left" aria-hidden="true"></button>
@@ -36,7 +36,7 @@
                 <div class="time">3 分钟前</div>
             </div>
             <a class="avatar margin-right-10" href="javascript:;">
-                <img src="/assets/images/portraits/2.jpg" alt="...">
+                <img src="/static/images/portraits/2.jpg" alt="...">
             </a>
             <span class="name">沃尔沃XC</span>
         </div>

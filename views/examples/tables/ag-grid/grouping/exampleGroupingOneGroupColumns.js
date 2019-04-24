@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // do http request to get our sample data - not using any framework to keep the example self contained.
     // you will probably use a framework like JQuery, Angular or something else to do your HTTP calls.
-    agGrid.simpleHttpRequest({url: '../assets/api/olympicWinners.json'})
+    agGrid.simpleHttpRequest({url: '../static/api/olympicWinners.json'})
         .then( function(rows) {
             gridOptions.api.setRowData(rows);
         });

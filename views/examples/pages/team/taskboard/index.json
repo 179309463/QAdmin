@@ -12,7 +12,7 @@
                     {
                         "id": "uid_5",
                         "name": "尹建芹",
-                        "img": "/assets/images/portraits/5.jpg"
+                        "img": "/static/images/portraits/5.jpg"
                     }
                 ],
                 "subtasks": [
@@ -28,25 +28,25 @@
                 "attachments": [
                     {
                         "title": "原型图文件",
-                        "src": "/assets/images/photos/view-1.jpg",
+                        "src": "/static/images/photos/view-1.jpg",
                         "size": "500K"
                     },
                     {
                         "title": "原型图效果",
-                        "src": "/assets/images/photos/view-2.jpg",
+                        "src": "/static/images/photos/view-2.jpg",
                         "size": "2.04M"
                     }
                 ],
                 "comments": [
                     {
                         "user": "赵桦",
-                        "src": "/assets/images/portraits/3.jpg",
+                        "src": "/static/images/portraits/3.jpg",
                         "time": "2 天前",
                         "content": "行驶在高速列车轨道上的中国大城市，如何改善交通情况，同时做到环保节能，早已成为一大难题。公交、地铁、出租，和最近兴起的专车快车，都是已有的探索方式。"
                     },
                     {
                         "user": "梅小燕",
-                        "src": "/assets/images/portraits/2.jpg",
+                        "src": "/static/images/portraits/2.jpg",
                         "time": "16 小时前",
                         "content": "TOGO 的使用从注册到用车只需一台智能手机"
                     }
@@ -62,12 +62,12 @@
                     {
                         "id": "uid_5",
                         "name": "唐雪琴",
-                        "img": "/assets/images/portraits/5.jpg"
+                        "img": "/static/images/portraits/5.jpg"
                     },
                     {
                         "id": "uid_3",
                         "name": "嵇慧莉",
-                        "img": "/assets/images/portraits/3.jpg"
+                        "img": "/static/images/portraits/3.jpg"
                     }
                 ],
                 "subtasks": [
@@ -84,7 +84,7 @@
                 "comments": [
                     {
                         "user": "曹洁群",
-                        "src": "/assets/images/portraits/1.jpg",
+                        "src": "/static/images/portraits/1.jpg",
                         "time": "2 天前",
                         "content": "尼玛，又是IE6"
                     }
@@ -105,12 +105,12 @@
                     {
                         "id": "uid_5",
                         "name": "刘文平",
-                        "img": "/assets/images/portraits/5.jpg"
+                        "img": "/static/images/portraits/5.jpg"
                     },
                     {
                         "id": "uid_4",
                         "name": "孙玉珍",
-                        "img": "/assets/images/portraits/4.jpg"
+                        "img": "/static/images/portraits/4.jpg"
                     }
                 ],
                 "subtasks": [],
@@ -118,7 +118,7 @@
                 "comments": [
                     {
                         "user": "柳映秋",
-                        "src": "/assets/images/portraits/1.jpg",
+                        "src": "/static/images/portraits/1.jpg",
                         "time": "2 天前",
                         "content": "随着电动车的应用，还有自动泊车、智慧出行、自动导航、自动驾驶的出现，都会影响城市人的出行方式。而我认为 TOGO 做的是符合这种未来趋势的。另外很重要的一点是它更环保，也更高效。一台共享车能够替代 10 台甚至更多的私家车。"
                     }
@@ -134,34 +134,34 @@
                     {
                         "id": "uid_5",
                         "name": "周伊娅",
-                        "img": "/assets/images/portraits/5.jpg"
+                        "img": "/static/images/portraits/5.jpg"
                     },
                     {
                         "id": "uid_1",
                         "name": "陈思思",
-                        "img": "/assets/images/portraits/1.jpg"
+                        "img": "/static/images/portraits/1.jpg"
                     },
                     {
                         "id": "uid_2",
                         "name": "陈朝红",
-                        "img": "/assets/images/portraits/2.jpg"
+                        "img": "/static/images/portraits/2.jpg"
                     }
                 ],
                 "subtasks": [],
                 "attachments": [
                     {
                         "title": "附件 1",
-                        "src": "/assets/images/photos/view-3.jpg",
+                        "src": "/static/images/photos/view-3.jpg",
                         "size": "500K"
                     },
                     {
                         "title": "附件 2",
-                        "src": "/assets/images/photos/view-4.jpg",
+                        "src": "/static/images/photos/view-4.jpg",
                         "size": "2.04M"
                     },
                     {
                         "title": "附件 3",
-                        "src": "/assets/images/photos/view-5.jpg",
+                        "src": "/static/images/photos/view-5.jpg",
                         "size": "1.06M"
                     }
                 ],
@@ -182,7 +182,7 @@
                     {
                         "id": "uid_6",
                         "name": "孙继红",
-                        "img": "/assets/images/portraits/6.jpg"
+                        "img": "/static/images/portraits/6.jpg"
                     }
                 ],
                 "subtasks": [],
@@ -199,12 +199,12 @@
                     {
                         "id": "uid_5",
                         "name": "蒋海燕",
-                        "img": "/assets/images/portraits/5.jpg"
+                        "img": "/static/images/portraits/5.jpg"
                     },
                     {
                         "id": "uid_4",
                         "name": "倪圣婴",
-                        "img": "/assets/images/portraits/4.jpg"
+                        "img": "/static/images/portraits/4.jpg"
                     }
                 ],
                 "subtasks": [
@@ -221,7 +221,7 @@
                 "comments": [
                     {
                         "user": "张倩",
-                        "src": "/assets/images/portraits/1.jpg",
+                        "src": "/static/images/portraits/1.jpg",
                         "time": "2 天前",
                         "content": "之后 TOGO 的核心工作是扩张我们的用户群和车队，形成更高标准的服务体系。在 2016 年，TOGO 会落地更多城市，为更多用户提供服务。"
                     }

@@ -23,7 +23,7 @@
         }
     </style>
     <div class="ajax-col">
-        <img class="img-responsive" src="/assets/images/uploads/JD.com_.png" alt="..." />
+        <img class="img-responsive" src="/static/images/uploads/JD.com_.png" alt="..." />
     </div>
     <div class="ajax-col">
         <div class="margin-left-20">

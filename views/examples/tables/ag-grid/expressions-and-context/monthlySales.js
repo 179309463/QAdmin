@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // do http request to get our sample data - not using any framework to keep the example self contained.
     // you will probably use a framework like JQuery, Angular or something else to do your HTTP calls.
     var httpRequest = new XMLHttpRequest();
-    httpRequest.open('GET', '../assets/api/monthlySales.json');
+    httpRequest.open('GET', '../static/api/monthlySales.json');
     httpRequest.send();
     httpRequest.onreadystatechange = function() {
         if (httpRequest.readyState == 4 && httpRequest.status == 200) {
