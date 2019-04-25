@@ -13,4 +13,23 @@ class ApplicationController < ActionController::Base
         @path = "/example/home"
         render 'examples/home', layout: "application"
     end
+
+    def errors
+    end
+
+    def locked
+    end
+
+    def login
+    end
+
+    def maintenance
+    end
+
+    def no_auth
+    end
+
+    def site_map
+    end
+
 end

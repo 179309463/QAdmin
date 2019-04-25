@@ -16,14 +16,14 @@ router.get(['/', '/application','/application/index','/application/index.html'],
 })
 
 router.get('/login', (req, res) => {
-  res.render('application/login/index.html')
+  res.render('application/login.html')
 });
 router.get('/application/system/logout', (req, res) => {
-  res.render('application/login/index.html')
+  res.render('application/login.html')
 });
 
-router.get('/application/locked/index.html', (req, res) => {
-  res.render('application/locked/index.html')
+router.get('/application/locked.html', (req, res) => {
+  res.render('application/locked.html')
 });
 
 router.all('/*', function (req, res) {

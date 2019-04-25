@@ -9,7 +9,7 @@ router.all('/application/system/account/*', function (req, res) {
         fileName = _path.lastIndexOf('/'),
         _path2 = _path.substring(0, fileName),
         fileName = _path2.lastIndexOf("/"),
-        _index = 'application/system/account/index.html';
+        _index = 'application/system/account.html';
 
     fileName = _path.substring(fileName + 1);
 
@@ -17,7 +17,7 @@ router.all('/application/system/account/*', function (req, res) {
         switch (fileName) {
             case 'account/index.html':
                 if(req.headers['x-pjax-container'] === '#accountContent'){
-                    res.render('application/system/account/message/index.html');
+                    res.render('application/system/message.html');
                 }else{
                     res.render(_index, {
                         path1:'message/index.html',
@@ -27,7 +27,7 @@ router.all('/application/system/account/*', function (req, res) {
                 break;
             case 'password/index.html':
                 if(req.headers['x-pjax-container'] === '#accountContent'){
-                    res.render('application/system/account/password/index.html');
+                    res.render('application/system/password.html');
                 }else{
                     res.render(_index, {
                         path1: 'password/index.html',
@@ -37,7 +37,7 @@ router.all('/application/system/account/*', function (req, res) {
                 break;
             case 'log/index.html':
                 if(req.headers['x-pjax-container'] === '#accountContent'){
-                    res.render('application/system/log-table/index.html');
+                    res.render('application/system/log_table.html');
                 }else{
                     res.render(_index,{
                         path1: '../log-table/index.html',
@@ -47,7 +47,7 @@ router.all('/application/system/account/*', function (req, res) {
                 break;
             case 'display/index.html':
                 if(req.headers['x-pjax-container'] === '#accountContent'){
-                    res.render('application/system/settings-display/index.html');
+                    res.render('application/system/settings_display.html');
                 }else{
                     res.render(_index,{
                         path1: '../settings-display/index.html',
