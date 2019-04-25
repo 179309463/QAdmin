@@ -1,9 +1,92 @@
+<title>ECharts - 统计图表</title>
+
+<div class="page animation-fade">
+    <div class="page-header page-header-bordered">
+        <h1 class="page-title">百度 ECharts</h1>
+        <div class="page-header-actions">
+            <a class="btn btn-inverse btn-round" href="http://echarts.baidu.com/" target="_blank">
+                <i class="icon wb-link" aria-hidden="true"></i> 官网
+            </a>
+        </div>
+    </div>
+    <div class="page-content">
+        <p>ECharts，是百度EFE团队推出的一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，底层依赖轻量级的 Canvas 类库
+            ZRender，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。ECharts
+            3 中更是加入了更多丰富的交互功能以及更多的可视化效果，并且对移动端做了深度的优化。</p>
+        <p>以下示例仅仅展示了 Echarts 和 Amdui 的结合效果，更多示例
+            <a class="alert-link" href="http://echarts.baidu.com/examples.html">请前往官网查看</a>
+            。
+        </p>
+        <pre class="bg-white">&lt;!--引入百度地图--&gt;
+&lt;!--建议使用自己的ak，避免出现问题--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://api.map.baidu.com/getscript?v=2.0&amp;ak=ObQAHaA2vmgzruRgw43QWoAhXhuzgOVD&amp;services=&amp;t=20170207140543&quot;&gt;&lt;/script&gt;</pre>
+        <hr>
+        <div class="row">
+            <div class="col-xxl-4 col-lg-6">
+                <div class="panel panel-bordered">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">全国主要城市空气质量</h3>
+                        <div class="panel-actions">
+                            <a class="panel-action icon wb-link" href="http://echarts.baidu.com/demo.html#effectScatter-map"
+                                target="_blank" aria-hidden="true"></a>
+                        </div>
+                    </div>
+                    <div class="panel-body p-0 h-400 w-full" id="echartsDemo1"></div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-lg-6">
+                <div class="panel panel-bordered">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">上证指数</h3>
+                        <div class="panel-actions">
+                            <a class="panel-action icon wb-link" href="http://echarts.baidu.com/demo.html#candlestick-sh"
+                                target="_blank" aria-hidden="true"></a>
+                        </div>
+                    </div>
+                    <div class="panel-body p-0 h-400" id="echartsDemo2"></div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-lg-6">
+                <div class="panel panel-bordered">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">热力图与百度地图扩展</h3>
+                        <div class="panel-actions">
+                            <a class="panel-action icon wb-link" href="http://echarts.baidu.com/demo.html#heatmap-bmap"
+                                target="_blank" aria-hidden="true"></a>
+                        </div>
+                    </div>
+                    <div class="panel-body p-0 h-400" id="echartsDemo3"></div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-lg-6">
+                <div class="panel panel-bordered">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">AQI - 雷达图</h3>
+                        <div class="panel-actions">
+                            <a class="panel-action icon wb-link" href="http://echarts.baidu.com/demo.html#radar-aqi"
+                                target="_blank" aria-hidden="true"></a>
+                        </div>
+                    </div>
+                    <div class="panel-body p-0 h-400" id="echartsDemo4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+<script src="/vendor/echarts/dist/echarts.min.js" data-name="echarts"></script>
+<script src="/views/examples/charts/echarts.ditu.js"></script>
+<script src="/vendor/echarts/map/js/china.js" data-deps="echarts"></script>
+<script src="/vendor/echarts/dist/extension/bmap.min.js" data-deps="echarts"></script>
+
+<script>
 /**
  * QAdmin v1.2.0 (http://www.qadmin.com/)
  * Copyright 2015-2017 QAdmin Team
  * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
  */
-(function () {
+ (function () {
     'use strict';
 
     /* globals echarts */
@@ -810,7 +893,7 @@
         exampleThree: function () {
             var myChart = echarts.init(document.getElementById('echartsDemo3'));
 
-            $.getJSON($.ctx + '/views/examples/charts/echarts/index.json', function (data) {
+            $.getJSON($.ctx + '/views/examples/charts/echarts.json', function (data) {
 
                 var points = [].concat.apply([], data.map(function (track) {
                     return track.map(function (seg) {
@@ -1075,3 +1158,4 @@
     };
 
 })();
+</script>

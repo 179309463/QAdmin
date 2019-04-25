@@ -1,6 +1,69 @@
 <title>Gauges</title>
 
-<link rel="stylesheet" href="/views/examples/charts/gauges/index.css">
+<style>
+.gauge {
+	position: relative;
+	text-align: center;
+}
+.gauge canvas {
+	display: inline-block;
+	width: 200px;
+	max-width: 100%;
+}
+.gauge-label {
+	position: absolute;
+	bottom: 15%;
+	width: 100%;
+	font-size: 24px;
+	font-weight: 700;
+	color: #37474f;
+}
+.gauge-sm canvas {
+	width: 150px;
+}
+.gauge-sm .gauge-label {
+	font-size: 18px;
+}
+.gauge-lg canvas {
+	width: 300px;
+}
+.gauge-lg .gauge-label {
+	font-size: 36px;
+}
+.donut {
+	position: relative;
+	text-align: center;
+}
+.donut canvas {
+	display: inline-block;
+	width: 200px;
+	max-width: 100%;
+}
+.donut-label {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	font-size: 24px;
+	font-weight: 700;
+	color: #37474f;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+.donut-sm canvas {
+	width: 150px;
+}
+.donut-sm .donut-label {
+	font-size: 18px;
+}
+.donut-lg canvas {
+	width: 300px;
+}
+.donut-lg .donut-label {
+	font-size: 36px;
+}
+</style>
 
 <div class="page page-full animation-fade">
     <div class="page-header">
@@ -137,4 +200,62 @@
 </div>
 
 <script src="/lib/gauge.js/dist/gauge.js" data-name="gauge"></script>
-<script src="/views/examples/charts/gauges/index.js" data-deps="gauge"></script>
+
+<script>
+/**
+ * QAdmin v1.2.0 (http://www.qadmin.com/)
+ * Copyright 2015-2017 QAdmin Team
+ * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
+ */
+ (function (document, window, $) {
+    'use strict';
+
+    window.Content = {
+        gaugeLine: function () { // 仪表盘--动态变化
+            var dynamicGauge = document.getElementById("exampleDynamicGauge"), random;
+
+            var options = {
+                strokeColor: $.colors("purple", 500)
+            };
+
+            setInterval(function () {
+                random = Math.round(Math.random() * 1000);
+                if (random > 700) {
+                    options.strokeColor = $.colors("pink", 500);
+                } else if (random < 300) {
+                    options.strokeColor = $.colors("green", 500);
+                }
+
+                var gauge = new Gauge(dynamicGauge).setOptions($.po('gauge', options));
+                gauge.maxValue = 1000;
+                gauge.set(random);
+            }, 1500);
+        },
+        gagueDonut: function () { // 环形图--动态变化
+            var dynamicDonut = document.getElementById("exampleDynamicDonut"), random;
+
+            var options = {
+                strokeColor: $.colors("purple", 500)
+            };
+            setInterval(function () {
+                random = Math.round(Math.random() * 1000);
+                if (random > 700) {
+                    options.strokeColor = $.colors("pink", 500);
+                } else if (random < 300) {
+                    options.strokeColor = $.colors("green", 500);
+                }
+
+                var donut = new Donut(dynamicDonut).setOptions($.po('donut', options));
+                donut.animationSpeed = 50;
+                donut.maxValue = 2000;
+                donut.set(random);
+            }, 1500);
+        },
+        run: function () {
+            this.gagueDonut();
+            this.gaugeLine();
+        }
+    };
+
+})(document, window, jQuery);
+</script>
