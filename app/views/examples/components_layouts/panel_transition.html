@@ -1,6 +1,15 @@
 <title>面板动画</title>
 
-<link rel="stylesheet" href="/views/examples/components/layouts/panel-transition/index.css">
+<style>
+.page-header {
+	z-index: 100;
+}
+@media screen and (max-width: 480px) {
+	.page-content .blocks li, .page-content [class*=blocks-] li {
+		width: 100%;
+	}
+}
+</style>
 
 <div class="page page-full animation-fade">
     <div class="page-header">
@@ -335,4 +344,22 @@
     </div>
 </div>
 
-<script src="/views/examples/components/layouts/panel-transition/index.js"></script>
+<script>
+(function (document, window, $) {
+    'use strict';
+
+    var $example = $('#exampleTransition'),
+        $pageContent = $('#qadmin-pageContent');
+
+    $pageContent.on('click.panel.transition', '[data-type]', function () {
+        var type = $(this).data('type');
+
+        $example.data('animateList').run(type);
+    });
+
+    $pageContent.on('close.uikit.panel', '[class*=blocks-] > li > .panel', function () {
+        $(this).parent().hide();
+    });
+
+})(document, window, jQuery);
+</script>
