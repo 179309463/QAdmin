@@ -1,6 +1,26 @@
 <title>导航条 - UI示例</title>
 
-<link rel="stylesheet" href="/views/examples/components/structure/navbars/index.css">
+<style>
+.page-content .navbar-fixed-top, .page-content .navbar-fixed-bottom {
+	position: relative;
+}
+.scrollspy-example {
+	position: relative;
+	height: 200px;
+	padding: 0 20px;
+	overflow: auto;
+	border: solid 1px #e4eaec;
+}
+.example-fixed {
+	height: 400px;
+	line-height: 400px;
+	text-align: center;
+}
+.example-grid .example-col {
+	margin-bottom: 10px;
+	word-break: break-all;
+}
+</style>
 
 <div class="page animation-fade">
     <div class="page-header">
@@ -1851,5 +1871,18 @@
     </div>
 </div>
 
-<script src="/views/examples/components/structure/navbars/index.js"></script>
+<script>
+(function (document, window, $) {
+    'use strict';
 
+    window.Content = {
+        run: function () {
+            $('.scrollspy-example[data-spy="scroll"]').each(function () {
+                var $spy = $(this)
+                $spy.scrollspy($spy.data())
+            })
+        }
+    };
+
+})(document, window, jQuery);
+</script>
