@@ -60,7 +60,7 @@ router.post('/employee/all/post', function(req, res){
 });
 
 router.get('/layer/photos', function(req, res){
-    filterData(req, res, '/views/examples/components/advanced/layer/index.json');
+    filterData(req, res, '/views/examples/components_advanced/layer.json');
 });
 
 module.exports = router;
