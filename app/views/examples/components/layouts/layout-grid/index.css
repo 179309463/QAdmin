@@ -1,0 +1,19 @@
+.lt-body h3 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: Center;
+	-webkit-align-items: Center;
+	-ms-flex-align: Center;
+	align-items: Center;
+	height: 100%;
+	color: #757575;
+	font-size: 2rem;
+	font-weight: 100;
+	text-shadow: none
+}

@@ -1,0 +1,29 @@
+/**
+ * QAdmin v1.2.0 (http://www.qadmin.com/)
+ * Copyright 2015-2017 QAdmin Team
+ * Licensed under the QAdmin License 1.0 (http://www.qadmin.com/about/#license)
+ */
+#exampleFlotCurve, #exampleFlotRealtime, #exampleFlotMix, #exampleFlotFullBg, #exampleFlotStackBar, #exampleFlotHorizontalBar, #exampleFlotPie, #exampleFlotVisitors {
+	height: 300px;
+}
+#exampleFlotVisitorsOverview {
+	height: 120px;
+}
+.legend td {
+	padding: 3px;
+}
+@media (max-width: 586px) {
+	.example-responsive {
+		padding-bottom: 10px;
+	}
+}
+
+.flot-curve, .flot-realtime, .flot-mix, .flot-full-bg, .flot-stack-bar, .flot-horizontal-bar, .flot-pie, .flot-visitors {
+	height: 300px;
+}
+.flot-visitors-overview {
+	height: 120px;
+}
+.legend table {
+	border-spacing: 5px;
+}

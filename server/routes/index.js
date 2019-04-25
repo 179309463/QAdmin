@@ -9,7 +9,7 @@ router.get(['/', '/application','/application/index','/application/index.html'],
   res.render('layouts/application', {
     type: type,
     theme: theme,
-    path: 'examples/home.html.erb',
+    path: 'examples/home.html',
     nav_menu: 'examples/nav-menu.html',
     site_menu: 'examples/site-menu.html'
   })

@@ -92,11 +92,17 @@
         <script>
         Breakpoints();
         </script>
+
+        <%#= csrf_meta_tags %>
+        <%#= csp_meta_tag %>
+    
+        <%#= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     </head>
     <body class="site-contabs-open site-menubar-unfold" data-theme="<%=@theme%>">
-        <%= render "layouts/includes/site-navbar/site-navbar" %>
-        <%= render "layouts/includes/site-menu/site-menu" %>
-        <%= render "layouts/includes/site-tabs/site-tabs" %>
+        <%= render file: "layouts/includes/site-navbar/site-navbar" %>
+        <%= render file: "layouts/includes/site-menu/site-menu" %>
+        <%= render file: "layouts/includes/site-tabs/site-tabs" %>
 
         <main class="site-page">
             <% if(@type=='iframe') %>
@@ -113,7 +119,7 @@
             </div>
         </main>
 
-        <%= render "layouts/includes/site-footer/site-footer" %>
+        <%= render file: "layouts/includes/site-footer/site-footer" %>
         
         <!-- 插件 -->
         <script src="/lib/jquery-pjax/jquery.pjax.js"></script>

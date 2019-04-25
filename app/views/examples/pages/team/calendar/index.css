@@ -1,0 +1,11 @@
+.page{background-color:white;}
+.fc-content{color:white;}
+.fc-event, .fc-event-dot{background-color:#3e8ef7;}
+.calendar-container{padding:20px}
+#calendar {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+	bottom: 0;
+}

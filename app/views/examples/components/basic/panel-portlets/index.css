@@ -1,0 +1,23 @@
+.bootbox .modal-dialog {
+	width: 360px
+}
+
+.grid-stack-item-content {
+	background: #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: Center;
+	-webkit-align-items: Center;
+	-ms-flex-align: Center;
+	align-items: Center;
+	height: 100%;
+	color: #757575;
+	font-size: 1.5rem;
+	text-shadow: none
+}

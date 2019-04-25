@@ -12,7 +12,7 @@ router.get('/examples', (req, res) => {
     theme: theme,
 
     isModal: false,
-    path: 'examples/home/index.html',
+    path: 'examples/home.html',
     nav_menu: 'examples/nav-menu.html',
     site_menu: 'examples/site-menu.html'
   })
@@ -23,14 +23,14 @@ router.get('/examples/home', (req, res) => {
     var _path = req.path.substring(1);
 
     if (req.headers['x-pjax']) {
-        res.render("examples/home/index.html");
+        res.render("examples/home.html");
     } else {
         res.render('layouts/'+type, {
             type: type,
             theme: theme,
 
             isModal: false,
-            path: "examples/home/index.html",
+            path: "examples/home.html",
             nav_menu: 'examples/nav-menu.html',
             site_menu: 'examples/site-menu.html'
         });

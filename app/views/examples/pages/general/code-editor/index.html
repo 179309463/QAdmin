@@ -1,0 +1,110 @@
+<title>代码编辑器 - 页面示例</title>
+
+<link rel="stylesheet" href="/vendor/bootstrap-treeview/dist/bootstrap-treeview.min.css">
+<link rel="stylesheet" href="/vendor/codemirror/lib/codemirror.css">
+<link rel="stylesheet" href="/vendor/codemirror/theme/eclipse.css">
+<link rel="stylesheet" href="/vendor/codemirror/addon/scroll/simplescrollbars.css">
+<link rel="stylesheet" href="/views/examples/pages/general/code-editor/index.css">
+
+
+
+
+<div class="page animation-fade page-code-editor page-aside-fixed page-aside-left page-full">
+    <div class="page-aside">
+        <div class="page-aside-switch">
+            <i class="icon wb-chevron-left" aria-hidden="true"></i>
+            <i class="icon wb-chevron-right" aria-hidden="true"></i>
+        </div>
+        <div class="page-aside-inner h-full" data-plugin="slimScroll">
+            <section class="page-aside-section">
+                <h4 class="page-aside-title">代码编辑器</h4>
+                <div id="filesTree"></div>
+
+                <div id="filesContextMenu">
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a tabindex="-1">
+                                <i class="icon wb-pencil" aria-hidden="true"></i> 重命名...</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1">
+                                <i class="icon wb-search" aria-hidden="true"></i> 查找...</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a tabindex="-1">
+                                <i class="icon wb-file" aria-hidden="true"></i> 新建</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1">
+                                <i class="icon wb-folder" aria-hidden="true"></i> 新建文件夹...</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a tabindex="-1">
+                                <i class="icon wb-close" aria-hidden="true"></i> 删除...</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="page-main">
+        <div class="page-content">
+            <textarea id="code">
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <div>
+
+<title> - 页面示例</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.js"></script>
+
+</div>
+</head>
+
+<body>
+
+    <p>Hi，这是一个演示页面。</p>
+
+    <p>Hello world!</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/jquery.js"></script>
+
+</div>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-.js"><\/script>')
+    </script>
+
+</div>
+    <script src="js/plugins.js"></script>
+
+</div>
+    <script src="js/main.js"></script>
+
+</div>
+</body>
+
+            </textarea>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/vendor/bootstrap-treeview/dist/bootstrap-treeview.min.js" data-name="treeview"></script>
+<script src="/vendor/codemirror/lib/codemirror.js" data-name="codemirror"></script>
+<script src="/vendor/codemirror/addon/scroll/simplescrollbars.js" data-deps="codemirror"></script>
+<script src="/vendor/codemirror/mode/xml/xml.js" data-deps="codemirror"></script>
+<script src="/vendor/codemirror/mode/css/css.js"></script>
+<script src="/vendor/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+<script src="/vendor/bootstrap-contextmenu/bootstrap-contextmenu.js"></script>
+<script src="/views/examples/pages/general/code-editor/index.js" data-deps="treeview, codemirror"></script>
