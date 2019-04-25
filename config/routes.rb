@@ -6,27 +6,24 @@ Rails.application.routes.draw do
     end
   end
 
-  namespace :application do
+  namespace :system do
+    get 'account'
+    get 'blacklist'
+    get 'department'
     get 'error'
     get 'locked'
+    get 'log_table'
     get 'login'
+    get 'log'
     get 'maintenance'
+    get 'menu'
+    get 'message'
     get 'no_auth'
+    get 'password'
+    get 'settings_display'
+    get 'settings_log'
     get 'site_map'
-
-    namespace :system do
-      get 'account'
-      get 'blacklist'
-      get 'department'
-      get 'log_table'
-      get 'log'
-      get 'menu'
-      get 'message'
-      get 'password'
-      get 'settings_display'
-      get 'settings_log'
-      get 'user'     
-    end
+    get 'user'   
   end
 
   root "application#index"

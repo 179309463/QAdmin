@@ -3,7 +3,7 @@ var express = require('express'),
     type = 'iframe',
     theme = 'base';
 
-router.get(['/', '/application','/application/index','/application/index.html'], (req, res) => {
+router.get(['/', '/system','/system/index','/system/index.html'], (req, res) => {
   type = (req.query.modal=="true" ? 'modal' : (req.query.pjax=="true" ? 'application' : 'iframe'));
   theme = (req.query.theme == 'topbar' ? 'topbar' : 'base');
   res.render('layouts/application', {
@@ -16,14 +16,14 @@ router.get(['/', '/application','/application/index','/application/index.html'],
 })
 
 router.get('/login', (req, res) => {
-  res.render('application/login.html')
+  res.render('system/login.html')
 });
-router.get('/application/system/logout', (req, res) => {
-  res.render('application/login.html')
+router.get('/system/logout', (req, res) => {
+  res.render('system/login.html')
 });
 
-router.get('/application/locked.html', (req, res) => {
-  res.render('application/locked.html')
+router.get('/system/locked.html', (req, res) => {
+  res.render('system/locked.html')
 });
 
 router.all('/*', function (req, res) {

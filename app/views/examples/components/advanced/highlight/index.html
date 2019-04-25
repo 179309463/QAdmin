@@ -34,7 +34,7 @@
 &lt;!DOCTYPE html&gt;
 &lt;title&gt;Title&lt;/title&gt;
 &lt;style&gt;body {width: 500px;}&lt;/style&gt;
-&lt;script type=&quot;application/javascript&quot;&gt;
+&lt;script type=&quot;system/javascript&quot;&gt;
   function $init() {return true;}
 &lt;/script&gt;
 &lt;body&gt;
@@ -197,7 +197,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php [NC,L]
 ExpiresActive On
-ExpiresByType application/x-javascript  &quot;access plus 1 days&quot;
+ExpiresByType system/x-javascript  &quot;access plus 1 days&quot;
 Order Deny,Allow
 Allow from All
 &lt;Location /maps/&gt;

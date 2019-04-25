@@ -449,7 +449,7 @@
             settings = JSON.parse(settings);
 
             if (settings.themeColor && settings.themeColor !== 'primary') {
-                $link.attr('href', '/assets/skins/' + $("body").data("theme") + "/" + type + '/' + settings.themeColor + etx + '.css');
+                $link.attr('href', '/static/skins/' + $("body").data("theme") + "/" + type + '/' + settings.themeColor + etx + '.css');
             }
 
             if (settings.sidebar && settings.sidebar === 'site-menubar-light') {
@@ -667,7 +667,7 @@
                         var min = href.indexOf('?v=') === -1 ? '': '.min';
                         var type = style.data("type");
                         if (self.themeColor && self.themeColor !== 'primary') {
-                            style.attr('href', '/public/assets/skins/' + $("body").data("theme") + "/" + type + '/' + self.themeColor + '/site' + min + '.css');
+                            style.attr('href', '/public/static/skins/' + $("body").data("theme") + "/" + type + '/' + self.themeColor + '/site' + min + '.css');
                         }
                     }
                 //});

@@ -1,4 +1,4 @@
-class Application::SystemController < ApplicationController
+class SystemController < ApplicationController
     def account
     end
 
@@ -8,10 +8,22 @@ class Application::SystemController < ApplicationController
     def department
     end
 
+    def errors
+    end
+
+    def locked
+    end
+
     def log_table
     end
     
     def log
+    end
+
+    def login
+    end
+
+    def maintenance
     end
 
     def menu
@@ -19,7 +31,10 @@ class Application::SystemController < ApplicationController
 
     def message
     end
-
+    
+    def no_auth
+    end
+    
     def password
     end
 
@@ -28,8 +43,13 @@ class Application::SystemController < ApplicationController
 
     def settings_log
     end
+    
+    def site_map
+    end
 
     def user
     end
+
+
   end
   

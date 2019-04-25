@@ -18,29 +18,29 @@ function filterData(req, res, file){
 }
 
 router.get(['/menu/all', '/role/menus'], function (req, res) {
-    filterData(req, res, '/views/application/system/menu.json');
+    filterData(req, res, '/views/system/menu.json');
 });
 
 router.get(['/menu/roles', '/user/role'], function(req, res){
-    filterData(req, res, '/views/application/system/auth.json');
+    filterData(req, res, '/views/system/auth.json');
 });
 
 router.get('/role/user', function(req, res){
-    filterData(req, res, '/views/application/system/user.json');
+    filterData(req, res, '/views/system/user.json');
 });
 
 router.get('/log/query', function(req, res){
-    filterData(req, res, '/views/application/system/log.json');
+    filterData(req, res, '/views/system/log.json');
 });
 
 router.get('/message/query', function(req, res){
-    filterData(req, res, '/views/application/system/message.json');
+    filterData(req, res, '/views/system/message.json');
 });
 router.get('/message/queryUnread', function(req, res){
-    filterData(req, res, '/views/application/system/message.json');
+    filterData(req, res, '/views/system/message.json');
 });
 router.post('/message/read', function(req, res){
-    filterData(req, res, '/views/application/system/message.read.json');
+    filterData(req, res, '/views/system/message.read.json');
 });
 
 router.post('/post/table', function(req, res){
