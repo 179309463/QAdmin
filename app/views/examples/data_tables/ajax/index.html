@@ -1,4 +1,4 @@
-<title>数据源</title>
+<title>AJAX</title>
 
 <link rel="stylesheet" href="/vendor/glyphicons/styles/glyphicons.css">
 <link rel="stylesheet" href="/lib/datatables-bootstrap/4/dataTables.bootstrap.css">
@@ -73,19 +73,34 @@ pre[data-plugin="highlight"] code, code.hljs {
         </div>
         <div class="page-aside-inner h-full" data-plugin="slimScroll">
             <section class="page-aside-section">
-                <h5 class="page-aside-title">数据源</h5>
+                <h5 class="page-aside-title">AJAX</h5>
                 <div class="list-group">
-                    <a class="list-group-item" href="/examples/tables/data-tables/data-sources/dom/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> Html(DOM)数据源
+                    <a class="list-group-item" href="/examples/data_tables/ajax/simple.html" data-pjax="#DTConent">
+                        <i class="icon fa fa-circle-o"></i> Ajax数据源(数组)
                     </a>
-                    <a class="list-group-item" href="/examples/tables/data-tables/data-sources/ajax/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> Ajax数据源
+                    <a class="list-group-item" href="/examples/data_tables/ajax/objects.html" data-pjax="#DTConent">
+                        <i class="icon fa fa-circle-o"></i> Ajax数据源(对象)
                     </a>
-                    <a class="list-group-item" href="/examples/tables/data-tables/data-sources/js-array/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> Javascript数据源
+                    <a class="list-group-item" href="/examples/data_tables/ajax/deep.html" data-pjax="#DTConent">
+                        <i class="icon fa fa-circle-o"></i> 嵌套对象数据(对象)
                     </a>
-                    <a class="list-group-item" href="/examples/tables/data-tables/data-sources/server-side/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> 服务器处理
+                    <a class="list-group-item" href="/examples/data_tables/ajax/objects_subarrays.html" data-pjax="#DTConent">
+                        <i class="icon fa fa-circle-o"></i> 嵌套对象数据(数组)
+                    </a>
+                    <a class="list-group-item" href="/examples/data_tables/ajax/orthogonal_data.html" data-pjax="#DTConent">
+                        <i class="icon fa fa-circle-o"></i> 正交数据
+                    </a>
+                    <a class="list-group-item" href="/examples/data_tables/ajax/null_data_source.html" data-pjax="#DTConent">
+                        <i class="icon fa fa-circle-o"></i> 给一列生成自定义内容
+                    </a>
+                    <a class="list-group-item" href="/examples/data_tables/ajax/custom_data_property.html" data-pjax="#DTConent">
+                        <i class="icon fa fa-circle-o"></i> 自定义数据源属性
+                    </a>
+                    <a class="list-group-item" href="/examples/data_tables/ajax/custom_data_flat.html" data-pjax="#DTConent">
+                        <i class="icon fa fa-circle-o"></i> 不指定数据源属性
+                    </a>
+                    <a class="list-group-item" href="/examples/data_tables/ajax/defer_render.html" data-pjax="#DTConent">
+                        <i class="icon fa fa-circle-o"></i> 延迟渲染数据以提高速度
                     </a>
                 </div>
             </section>
@@ -94,7 +109,7 @@ pre[data-plugin="highlight"] code, code.hljs {
     </div>
     <div class="page-main">
         <div class="page-header">
-            <h1 class="page-title">DataTables 数据源</h1>
+            <h1 class="page-title">DataTables AJAX</h1>
             <div class="page-header-actions">
                 <a class="btn btn-inverse btn-round" href="https://datatables.net/" target="_blank">
                     <i class="icon wb-link" aria-hidden="true"></i> <span class="hidden-xs">官网</span></a>

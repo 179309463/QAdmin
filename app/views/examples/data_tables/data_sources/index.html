@@ -1,7 +1,7 @@
-<title>服务器模式</title>
+<title>数据源</title>
 
 <link rel="stylesheet" href="/vendor/glyphicons/styles/glyphicons.css">
-<link rel="stylesheet" href="/vendor/datatables-bootstrap/3/dataTables.bootstrap.css">
+<link rel="stylesheet" href="/lib/datatables-bootstrap/4/dataTables.bootstrap.css">
 <link rel="stylesheet" href="/vendor/datatables-fixedheader/css/fixedHeader.dataTables.scss">
 <link rel="stylesheet" href="/lib/datatables-responsive/css/responsive.dataTables.css">
 <link rel="stylesheet" href="/vendor/highlight/src/styles/default.css">
@@ -62,48 +62,30 @@ pre[data-plugin="highlight"] code, code.hljs {
 </style>
 
 <script src="/vendor/datatables/media/js/jquery.dataTables.min.js" data-name="dataTables"></script>
-<script src="/vendor/datatables-bootstrap/3/dataTables.bootstrap.min.js" data-deps="dataTables"></script>
+<script src="/lib/datatables-bootstrap/4/dataTables.bootstrap.min.js" data-deps="dataTables"></script>
 <script src="/vendor/datatables-responsive/js/dataTables.responsive.js" data-deps="dataTables"></script>
 
-<div class="page page-full animation-fade page-data-tables">
+<div class="page page-full animation-fade page-data-tables page-aside-fixed page-aside-left page-full">
     <div class="page-aside">
         <div class="page-aside-switch">
             <i class="icon wb-chevron-left" aria-hidden="true"></i>
             <i class="icon wb-chevron-right" aria-hidden="true"></i>
         </div>
-        <div class="page-aside-inner height-full" data-plugin="slimScroll">
+        <div class="page-aside-inner h-full" data-plugin="slimScroll">
             <section class="page-aside-section">
-                <h5 class="page-aside-title">服务器模式</h5>
+                <h5 class="page-aside-title">数据源</h5>
                 <div class="list-group">
-                    <a class="list-group-item" href="/examples/tables/data-tables/server-side/simple/index.html" data-pjax="#DTConent">
+                    <a class="list-group-item" href="/examples/data_tables/data_sources/dom.html" data-pjax="#DTConent">
+                        <i class="icon fa fa-circle-o"></i> Html(DOM)数据源
+                    </a>
+                    <a class="list-group-item" href="/examples/data_tables/data_sources/ajax.html" data-pjax="#DTConent">
+                        <i class="icon fa fa-circle-o"></i> Ajax数据源
+                    </a>
+                    <a class="list-group-item" href="/examples/data_tables/data_sources/js_array.html" data-pjax="#DTConent">
+                        <i class="icon fa fa-circle-o"></i> Javascript数据源
+                    </a>
+                    <a class="list-group-item" href="/examples/data_tables/data_sources/server_side.html" data-pjax="#DTConent">
                         <i class="icon fa fa-circle-o"></i> 服务器处理
-                    </a>
-                    <a class="list-group-item" href="/examples/tables/data-tables/server-side/custom-vars/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> 自定义http变量
-                    </a>
-                    <a class="list-group-item" href="/examples/tables/data-tables/server-side/post/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> 以post方式传输数据
-                    </a>
-                    <a class="list-group-item" href="/examples/tables/data-tables/server-side/ids/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> 自动给行添加id属性
-                    </a>
-                    <a class="list-group-item" href="/examples/tables/data-tables/server-side/object-data/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> 对象数据源
-                    </a>
-                    <a class="list-group-item" href="/examples/tables/data-tables/server-side/row-details/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> 行详情
-                    </a>
-                    <a class="list-group-item" href="/examples/tables/data-tables/server-side/select-rows/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> 行选中
-                    </a>
-                    <a class="list-group-item" href="/examples/tables/data-tables/server-side/jsonp/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> 跨域JSONP数据源
-                    </a>
-                    <a class="list-group-item" href="/examples/tables/data-tables/server-side/defer-loading/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> 延迟加载数据
-                    </a>
-                    <a class="list-group-item" href="/examples/tables/data-tables/server-side/pipeline/index.html" data-pjax="#DTConent">
-                        <i class="icon fa fa-circle-o"></i> 分页加载数据，减少ajax请求
                     </a>
                 </div>
             </section>
@@ -112,7 +94,7 @@ pre[data-plugin="highlight"] code, code.hljs {
     </div>
     <div class="page-main">
         <div class="page-header">
-            <h1 class="page-title">DataTables 服务器模式</h1>
+            <h1 class="page-title">DataTables 数据源</h1>
             <div class="page-header-actions">
                 <a class="btn btn-inverse btn-round" href="https://datatables.net/" target="_blank">
                     <i class="icon wb-link" aria-hidden="true"></i> <span class="hidden-xs">官网</span></a>
