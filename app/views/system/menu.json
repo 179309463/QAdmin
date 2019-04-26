@@ -212,7 +212,7 @@
                                     {
                                         "layer": "0201010201",
                                         "icon": null,
-                                        "url": "/ui/components/layouts/headers/index",
+                                        "url": "/ui/components_layouts/headers",
                                         "id": 78,
                                         "text": "普通",
                                         "children": null

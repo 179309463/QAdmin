@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 // 载入路由
 var index = require('./routes/index');
 var system = require('./routes/system');
-var datatable = require('./routes/datatable');
 var examples = require('./routes/examples');
 var data = require('./routes/data');
 
@@ -25,7 +24,6 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 app.use('/views/', express.static(path.resolve(__dirname, '../app/views')));
 app.use('/', data);
 app.use('/', system);
-app.use('/', datatable);
 app.use('/', examples);
 app.use('/', index);
 

@@ -333,12 +333,14 @@
                         $body.addClass('site-navbar-collapsing');
                         $body.toggleClass('site-navbar-collapse-show', isOpen);
 
-                        $('#qadmin-navMenu').responsiveHorizontalTabs({
-                            tabParentSelector: '#qadmin-navTabs',
-                            fnCallback: function (el) {
-                                el.removeClass('is-load');
-                            }
-                        });
+                        if($('#qadmin-navMenu').length>0){
+                            $('#qadmin-navMenu').responsiveHorizontalTabs({
+                                tabParentSelector: '#qadmin-navTabs',
+                                fnCallback: function (el) {
+                                    el.removeClass('is-load');
+                                }
+                            });
+                        }
 
                         setTimeout(function () {
                             $body.removeClass('site-navbar-collapsing');
@@ -496,12 +498,13 @@
                 var part1 = parts[0];
                 var part2 = (parts.length==2 ? ("#" + parts[1]) : "");
                 var connecter = ""
+
                 if(part1.indexOf("?")==-1){
                     connecter = "?"
                 }else{
                     connecter = "&"
                 }
-                options.url += part1 + connecter + "pjax=true" + part2;
+                options.url = part1 + connecter + "pjax=true" + part2;
             });
 
             $(document).on('pjax:start', function () {
@@ -511,15 +514,19 @@
 
                 $("#qadmin-pageContent").off();
                 $(window).off('resize');
-                $('#qadmin-navMenu').responsiveHorizontalTabs({ // 导航条响应式
-                    tabParentSelector: '#qadmin-navTabs',
-                    fnCallback: function (el) {
-                        if($('#qadmin-navMenu').is(':visible')) {
-                            el.removeClass('is-load');
+                if($('#qadmin-navMenu').length>0){
+                    $('#qadmin-navMenu').responsiveHorizontalTabs({ // 导航条响应式
+                        tabParentSelector: '#qadmin-navTabs',
+                        fnCallback: function (el) {
+                            if($('#qadmin-navMenu').is(':visible')) {
+                                el.removeClass('is-load');
+                            }
                         }
-                    }
-                });
-                $(window).on('resize', $.site.contentTabs.resize);
+                    });
+                }
+                if (typeof $.site.contentTabs !== 'undefined') {
+                    $(window).on('resize', $.site.contentTabs.resize);
+                }
 
                 $('head').find('script[pjax-script]').remove();
                 $body.addClass("site-page-loading");
