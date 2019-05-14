@@ -1,0 +1,15 @@
+
+.drop-cap {
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	font-family: Georgia;
+	font-size: 60px;
+	line-height: 50px;
+	color: #263238
+}
+
+.drop-cap-reversed {
+	color: #fff;
+	background-color: #263238
+}

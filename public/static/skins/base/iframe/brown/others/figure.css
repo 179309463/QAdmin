@@ -1,0 +1,14 @@
+
+.figure {
+	display: inline-block
+}
+
+.figure-img {
+	margin-bottom: .5rem;
+	line-height: 1
+}
+
+.figure-caption {
+	font-size: 90%;
+	color: #ccd5db
+}

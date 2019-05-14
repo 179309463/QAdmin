@@ -1,0 +1,11 @@
+
+.form-text {
+	display: block;
+	margin-top: 7px;
+	margin-bottom: 8px;
+	color: #bcc2c8
+}
+
+.form-text .icon {
+	margin: 0 5px
+}

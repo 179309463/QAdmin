@@ -1,0 +1,17 @@
+
+.list-group-item-dark {
+	color: #fff;
+	background-color: #526069
+}
+
+.list-group-item-dark.list-group-item-action:focus,
+.list-group-item-dark.list-group-item-action:hover {
+	color: #fff;
+	background-color: #47535b
+}
+
+.list-group-item-dark.list-group-item-action.active {
+	color: #fff;
+	background-color: #fff;
+	border-color: #fff
+}

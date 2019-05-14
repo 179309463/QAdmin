@@ -1,0 +1,29 @@
+
+.col-form-label {
+	margin-bottom: 0;
+	padding-top: -webkit-calc(.286rem + 1px);
+	padding-top: calc(.286rem + 1px);
+	padding-bottom: -webkit-calc(.286rem + 1px);
+	padding-bottom: calc(.286rem + 1px);
+	font-size: inherit;
+	line-height: 1.57143
+}
+
+.col-form-label-lg {
+	padding-top: -webkit-calc(.429rem + 1px);
+	padding-top: calc(.429rem + 1px);
+	padding-bottom: -webkit-calc(.429rem + 1px);
+	padding-bottom: calc(.429rem + 1px);
+	font-size: 1.286rem;
+	line-height: 1.33333
+}
+
+.col-form-label-sm {
+	padding-top: -webkit-calc(.215rem + 1px);
+	padding-top: calc(.215rem + 1px);
+	padding-bottom: -webkit-calc(.215rem + 1px);
+	padding-bottom: calc(.215rem + 1px);
+	font-size: .858rem;
+	line-height: 1.5
+}
+

@@ -1,0 +1,20 @@
+.timeline-icon .timeline-dot {
+	width: 40px;
+	height: 40px;
+	margin-right: -20px;
+    line-height: 40px;
+    top: -5.5px
+}
+
+.timeline-icon .timeline-reverse .timeline-dot {
+	margin-left: -20px
+}
+
+@media (max-width:767.98px) { 
+	.timeline-icon {
+		margin-left: 20px
+  	}
+  	.timeline-icon .timeline-dot {
+		margin-left: -20px
+	}  
+}

@@ -1,0 +1,53 @@
+
+
+.btn-info.disabled,.btn-info:disabled {
+	color: #fff;
+	background-color: #17a2b8;
+	border-color: #17a2b8
+}
+
+.btn-info:not(:disabled):not(.disabled).active,.btn-info:not(:disabled):not(.disabled):active,.show>.btn-info.dropdown-toggle {
+	color: #fff;
+	background-color: #117a8b;
+	border-color: #10707f
+}
+
+.btn-info:not(:disabled):not(.disabled).active:focus,.btn-info:not(:disabled):not(.disabled):active:focus,.show>.btn-info.dropdown-toggle:focus {
+	box-shadow: inset 0 3px 5px rgba(0,0,0,.125),0 0 0 .143rem rgba(23,162,184,.5)
+}
+
+
+.btn-info {
+	color: #fff;
+	background-color: #0bb2d4;
+	border-color: #0bb2d4;
+	box-shadow: none
+}
+
+
+
+
+
+.btn-info.focus,.btn-info.hover,.btn-info:focus,.btn-info:hover {
+	color: #fff;
+	background-color: #28c0de;
+	border-color: #28c0de;
+	box-shadow: none
+}
+
+.btn-info:not([disabled]):not(.disabled).active,.btn-info:not([disabled]):not(.disabled):active,.open>.btn-info.dropdown-toggle,.show>.btn-info.dropdown-toggle {
+	background-color: #0099b8;
+	border-color: #0099b8;
+	box-shadow: none
+}
+
+.btn-info:not([disabled]):not(.disabled).active.focus,.btn-info:not([disabled]):not(.disabled).active.hover,.btn-info:not([disabled]):not(.disabled).active:focus,.btn-info:not([disabled]):not(.disabled).active:hover,.btn-info:not([disabled]):not(.disabled):active.focus,.btn-info:not([disabled]):not(.disabled):active.hover,.btn-info:not([disabled]):not(.disabled):active:focus,.btn-info:not([disabled]):not(.disabled):active:hover,.open>.btn-info.dropdown-toggle.focus,.open>.btn-info.dropdown-toggle.hover,.open>.btn-info.dropdown-toggle:focus,.open>.btn-info.dropdown-toggle:hover,.show>.btn-info.dropdown-toggle.focus,.show>.btn-info.dropdown-toggle.hover,.show>.btn-info.dropdown-toggle:focus,.show>.btn-info.dropdown-toggle:hover {
+	background-color: #0099b8;
+	border-color: #0099b8
+}
+
+.btn-info.disabled,.btn-info.disabled.active,.btn-info.disabled.focus,.btn-info.disabled.hover,.btn-info.disabled:active,.btn-info.disabled:focus,.btn-info.disabled:hover,.btn-info[disabled],.btn-info[disabled].active,.btn-info[disabled].focus,.btn-info[disabled].hover,.btn-info[disabled]:active,.btn-info[disabled]:focus,.btn-info[disabled]:hover,fieldset[disabled] .btn-info,fieldset[disabled] .btn-info.active,fieldset[disabled] .btn-info.focus,fieldset[disabled] .btn-info.hover,fieldset[disabled] .btn-info:active,fieldset[disabled] .btn-info:focus,fieldset[disabled] .btn-info:hover {
+	color: #fff;
+	background-color: #54cbe3;
+	border-color: #54cbe3
+}

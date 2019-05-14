@@ -1,0 +1,128 @@
+
+.site-sidebar {
+	z-index: 1210
+}
+
+.site-sidebar.slidePanel {
+	box-shadow: 0 0 8px 0 rgba(0,0,0,.2)
+}
+
+.site-sidebar.slidePanel.slidePanel-left,
+.site-sidebar.slidePanel.slidePanel-right {
+	width: 300px;
+	overflow: hidden
+}
+
+.site-sidebar-content {
+	height: 100%
+}
+
+.site-sidebar-nav.nav-tabs>.nav-item {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 33.3333%;
+	-ms-flex: 1 1 33.3333%;
+	flex: 1 1 33.3333%
+}
+
+.site-sidebar-nav.nav-tabs>.nav-item>.nav-link {
+	padding: 0;
+	font-size: 16px;
+	line-height: 90px;
+	text-align: center
+}
+
+.site-sidebar-nav.nav-tabs>.nav-item>.nav-link>.icon {
+	margin-right: 0
+}
+
+
+.site-sidebar .conversation {
+	position: absolute;
+	top: 0;
+	right: -100%;
+	z-index: 1050;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	-webkit-transition: all .3s;
+	transition: all .3s
+}
+
+.site-sidebar .conversation .chats {
+	height: -webkit-calc(100% - 150px);
+	height: calc(100% - 150px);
+	overflow-y: auto
+}
+
+.site-sidebar .conversation.active {
+	right: 0
+}
+
+.site-sidebar .conversation-header {
+	height: 90px;
+	border-bottom: 1px solid #e4eaec
+}
+
+.site-sidebar .conversation-header>* {
+	padding: 0 30px;
+	margin: 0;
+	line-height: 90px
+}
+
+.site-sidebar .conversation-more,.site-sidebar .conversation-return {
+	color: rgba(55,71,79,.4);
+	cursor: pointer
+}
+
+.site-sidebar .conversation-more:focus,.site-sidebar .conversation-more:hover,.site-sidebar .conversation-return:focus,.site-sidebar .conversation-return:hover {
+	color: rgba(55,71,79,.6)
+}
+
+.site-sidebar .conversation-more:active,.site-sidebar .conversation-return:active {
+	color: #37474f
+}
+
+.site-sidebar .conversation-title {
+	position: relative;
+	top: 1px;
+	z-index: -1;
+	color: #37474f;
+	text-align: center
+}
+
+.site-sidebar .conversation-content {
+	padding: 30px 15px
+}
+
+.site-sidebar .conversation-reply {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 60px;
+	padding: 10px 0;
+	background-color: #fff;
+	border-top: 1px solid #e4eaec
+}
+
+.site-sidebar .conversation-reply .form-control {
+	border: 0;
+	border-right: 1px solid #e4eaec
+}
+
+@media (max-width:767.98px) {
+	.site-sidebar.slidePanel.slidePanel-left,.site-sidebar.slidePanel.slidePanel-right {
+		width: 100%
+	}
+}
+
+@media (max-width:767.98px) {
+	.site-navbar .brand {
+		display: none
+	}
+
+	.site-navbar .brand-mobile {
+		display: block
+	}
+}
+

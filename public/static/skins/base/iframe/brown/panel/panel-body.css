@@ -1,0 +1,100 @@
+
+.panel-body {
+    padding: 25px;
+    position: relative;
+}
+
+.panel.is-collapse .panel-body {
+	display: none;
+	height: 0
+}
+
+.panel-body::after {
+	display: block;
+	clear: both;
+	content: ""
+}
+
+.panel-body>:last-child {
+	margin-bottom: 0
+}
+.panel-body .h1:first-child,
+.panel-body .h2:first-child,
+.panel-body .h3:first-child,
+.panel-body .h4:first-child,
+.panel-body .h5:first-child,
+.panel-body .h6:first-child,
+.panel-body h1:first-child,
+.panel-body h2:first-child,
+.panel-body h3:first-child,
+.panel-body h4:first-child,
+.panel-body h5:first-child,
+.panel-body h6:first-child {
+	margin-top: 0
+}
+
+.panel-body>.list-group-dividered:only-child>.list-group-item:last-child {
+	border-bottom-color: transparent
+}
+
+
+
+.panel-body.scrollable-vertical {
+	padding-right: 0!important;
+	padding-left: 0!important
+}
+
+.panel-body.scrollable-vertical>.scrollable-container>.scrollable-content {
+	padding-right: 25px;
+	padding-left: 25px
+}
+
+.panel-body.scrollable-vertical>.scrollable-bar {
+	height: -webkit-calc(100% - 25px);
+	height: calc(100% - 25px);
+	margin-top: 0;
+	margin-bottom: 25px;
+	-webkit-transform: translateX(-21px);
+	transform: translateX(-21px)
+}
+.panel-body.scrollable-horizontal {
+	padding-top: 0!important;
+	padding-bottom: 0!important
+}
+
+.panel-body.scrollable-horizontal>.scrollable-container>.scrollable-content {
+	padding-top: 0;
+	padding-bottom: 25px
+}
+
+
+.panel-body.scrollable-horizontal>.scrollable-bar {
+	width: -webkit-calc(100% - 2 * 25px);
+	width: calc(100% - 2 * 25px);
+	margin-right: 25px;
+	margin-left: 0;
+	-webkit-transform: translateY(-21px);
+	transform: translateY(-21px)
+}
+
+@media (max-width:479.98px) {
+
+	.panel-body.scrollable-vertical>.scrollable-container>.scrollable-content {
+		padding-right: 20px;
+		padding-left: 20px
+	}
+
+	.panel-body.scrollable-horizontal>.scrollable-bar {
+		width: -webkit-calc(100% - 2 * 20px);
+		width: calc(100% - 2 * 20px);
+		margin-right: 20px
+	}
+}
+
+
+@media (max-width:479.98px) {
+	.panel-body {
+		padding-right: 20px;
+		padding-left: 20px
+	}
+}

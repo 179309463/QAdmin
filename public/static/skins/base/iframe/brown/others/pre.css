@@ -1,0 +1,30 @@
+pre {
+	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	font-size: 1em;
+	display: block;
+	font-size: 90%;
+	padding: 10.5px;
+	color: inherit;
+	border: 1px solid #f3efee;
+	border-radius: .215rem;
+	overflow: auto;
+	-ms-overflow-style: scrollbar;
+	text-rendering: auto;
+	-webkit-font-smoothing: initial;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+
+.pre-scrollable {
+	max-height: 340px;
+	overflow-y: scroll
+}
+
+@media print {
+	pre {
+		page-break-inside: avoid;
+		white-space: pre-wrap!important;
+		border: 1px solid #76838f
+	}
+}

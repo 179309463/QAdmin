@@ -1,0 +1,26 @@
+.nav-link {
+    overflow: hidden;
+	position: relative;
+	display: block;
+	padding: .715rem 1.072rem;    
+}
+.nav-link:hover {
+    text-decoration: none;
+	background-color: #f3f7f9
+}
+.nav-link:focus {
+    text-decoration: none;
+    background-color: #f3f7f9;
+	outline: 0
+}
+.nav-link.disabled {
+	color: #a3afb7
+}
+.nav-link.disabled:focus,
+.nav-link.disabled:hover {
+	background-color: transparent
+}
+.nav-link .close {
+	display: inline-block;
+	margin-left: 10px
+}

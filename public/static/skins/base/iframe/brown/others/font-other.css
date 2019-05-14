@@ -1,0 +1,19 @@
+.lead {
+	font-size: 1.429rem;
+	font-weight: 300
+}
+
+.small {
+	font-size: 80%;
+	font-weight: 400
+}
+
+.initialism {
+	font-size: 90%;
+	text-transform: uppercase
+}
+
+.font-italic {
+	font-style: italic!important
+}
+

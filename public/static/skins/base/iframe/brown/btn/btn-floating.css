@@ -1,0 +1,37 @@
+
+.btn-floating {
+	width: 4rem;
+	height: 4rem;
+	padding: 0;
+	margin: 0;
+	font-size: 1.715rem;
+	text-align: center;
+	border-radius: 100%;
+	box-shadow: 0 6px 10px rgba(0,0,0,.15)
+}
+
+.btn-floating.btn-xs,.btn-group-xs>.btn-floating.btn {
+	width: 2.143rem;
+	height: 2.143rem;
+	padding: 0;
+	font-size: .929rem
+}
+
+.btn-floating.btn-sm,.btn-group-sm>.btn-floating.btn {
+	width: 2.858rem;
+	height: 2.858rem;
+	padding: 0;
+	font-size: 1.072rem
+}
+
+.btn-floating.btn-lg,.btn-group-lg>.btn-floating.btn {
+	width: 5rem;
+	height: 5rem;
+	padding: 0;
+	font-size: 2.143rem
+}
+
+.btn-floating i {
+	position: relative;
+	top: 0
+}

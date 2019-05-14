@@ -1,0 +1,71 @@
+
+.btn-group-vertical {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal
+}
+.btn-group-vertical {
+	position: relative;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+    vertical-align: middle;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center    
+}
+
+.btn-group-vertical>.btn {
+	position: relative;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto
+}
+
+.btn-group-vertical>.btn.active,
+.btn-group-vertical>.btn:active,
+.btn-group-vertical>.btn:focus,
+.btn-group-vertical>.btn:hover {
+	z-index: 1
+}
+
+.btn-group-vertical .btn+.btn,
+.btn-group-vertical .btn+.btn-group,
+.btn-group-vertical .btn-group+.btn,
+.btn-group-vertical .btn-group+.btn-group {
+	margin-left: -1px
+}
+
+.btn-group-vertical .btn,
+.btn-group-vertical .btn-group {
+	width: 100%
+}
+
+.btn-group-vertical>.btn+.btn,
+.btn-group-vertical>.btn+.btn-group,
+.btn-group-vertical>.btn-group+.btn,
+.btn-group-vertical>.btn-group+.btn-group {
+	margin-top: -1px;
+	margin-left: 0
+}
+
+.btn-group-vertical>.btn-group:not(:last-child)>.btn,
+.btn-group-vertical>.btn:not(:last-child):not(.dropdown-toggle) {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0
+}
+
+.btn-group-vertical>.btn-group:not(:first-child)>.btn,
+.btn-group-vertical>.btn:not(:first-child) {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0
+}

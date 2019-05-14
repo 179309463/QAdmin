@@ -1,0 +1,76 @@
+.color-selector {
+	padding: 0;
+	margin: 0;
+	list-style: none
+}
+
+.color-selector>li {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0 8px 8px 0;
+	background-color: #997b71;
+	border-radius: 100%
+}
+
+.color-selector>li:hover {
+	opacity: .8
+}
+
+.color-selector>li:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: inherit;
+	height: inherit;
+	background: inherit;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: inherit;
+	content: "";
+}
+
+.color-selector>li input[type=radio] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: inherit;
+	height: inherit;
+	cursor: pointer;
+	border-radius: inherit;
+	opacity: 0
+}
+
+.color-selector>li input[type=radio]:disabled,
+.color-selector>li.color-selector-disabled input[type=radio]:disabled {
+	cursor: not-allowed
+}
+
+.color-selector>li label {
+	position: relative;
+	margin-bottom: .4rem;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	font-family: "Web Icons"
+}
+
+.color-selector>li input[type=radio]:checked+label:after {
+	position: absolute;
+	top: 0;
+	left: 8px;
+	display: inline-block;
+	margin-top: -2px;
+	font-size: 16px;
+	line-height: 1;
+	color: #fff;
+	content: ""
+}
+
+
+.color-selector>li.color-selector-disabled {
+	background-color: #e4eaec!important
+}

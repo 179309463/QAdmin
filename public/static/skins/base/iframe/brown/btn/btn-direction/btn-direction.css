@@ -1,0 +1,10 @@
+.btn-direction {
+	position: relative
+}
+
+.btn-direction::before {
+	position: absolute;
+	line-height: 0;
+    border: 8px solid transparent;
+    content: "";
+}

@@ -1,0 +1,17 @@
+.timeline-footer {
+	position: absolute;
+	right: 0;
+	bottom: -30px;
+	margin-right: 55px
+}
+
+.timeline-footer .icon {
+	margin-right: .3em
+}
+
+@media (max-width:767.98px) {
+	.timeline-footer {
+		bottom: -26px;
+		margin-left: 40px
+	}
+}

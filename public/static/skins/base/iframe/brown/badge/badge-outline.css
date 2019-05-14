@@ -1,0 +1,48 @@
+
+
+.badge-outline {
+	border: 1px solid transparent
+}
+
+.badge.badge-outline {
+	color: #f3f7f9;
+	background-color: transparent;
+	border-color: #f3f7f9
+}
+.badge-default.badge-outline {
+	background-color: transparent;
+	border-color: #e4eaec;
+	color: #76838f
+}
+.badge-primary.badge-outline {
+	color: #997b71;
+	background-color: transparent;
+	border-color: #997b71
+}
+
+.badge-success.badge-outline {
+	color: #11c26d;
+	background-color: transparent;
+	border-color: #11c26d
+}
+
+.badge-info.badge-outline {
+	color: #0bb2d4;
+	background-color: transparent;
+	border-color: #0bb2d4
+}
+.badge-warning.badge-outline {
+	color: #eb6709;
+	background-color: transparent;
+	border-color: #eb6709
+}
+.badge-danger.badge-outline {
+	color: #ff4c52;
+	background-color: transparent;
+	border-color: #ff4c52
+}
+.badge-dark.badge-outline {
+	color: #526069;
+	background-color: transparent;
+	border-color: #526069
+}

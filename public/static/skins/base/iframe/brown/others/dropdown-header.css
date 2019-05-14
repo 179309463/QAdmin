@@ -1,0 +1,8 @@
+.dropdown-header {
+    white-space: nowrap;
+    margin-bottom: 0;
+	display: block;
+	padding: 5px 1.072rem;
+	font-size: .858rem;
+	color: #37474f
+}

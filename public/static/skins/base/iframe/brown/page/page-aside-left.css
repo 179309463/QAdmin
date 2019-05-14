@@ -1,0 +1,37 @@
+@media (max-width:1199.98px) {
+	.page-aside-left .page-aside+.page-main {
+		margin-left: 180px
+	}
+
+}
+@media (max-width:767.98px) {
+
+	
+	.page-aside-left .page-aside+.page-main {
+		margin-left: 0
+	}
+
+
+
+	.page-aside-left .page-aside {
+		left: -260px!important
+	}
+
+	.page-aside-left .page-aside.open {
+		left: 0!important
+	}
+
+	.page-aside-left .site-footer {
+		margin-left: 0!important
+	}
+
+}
+
+
+.page-aside-left .page-aside+.page-main {
+	margin-left: 260px
+}
+.page-aside-left .page-aside {
+	left: 0
+}
+

@@ -1,0 +1,55 @@
+
+.btn-danger.disabled,.btn-danger:disabled {
+	color: #fff;
+	background-color: #dc3545;
+	border-color: #dc3545
+}
+
+.btn-danger:not(:disabled):not(.disabled).active,.btn-danger:not(:disabled):not(.disabled):active,.show>.btn-danger.dropdown-toggle {
+	color: #fff;
+	background-color: #bd2130;
+	border-color: #b21f2d
+}
+
+.btn-danger:not(:disabled):not(.disabled).active:focus,.btn-danger:not(:disabled):not(.disabled):active:focus,.show>.btn-danger.dropdown-toggle:focus {
+	box-shadow: inset 0 3px 5px rgba(0,0,0,.125),0 0 0 .143rem rgba(220,53,69,.5)
+}
+
+.btn-danger {
+	color: #fff;
+	background-color: #ff4c52;
+	border-color: #ff4c52;
+	box-shadow: none
+}
+
+
+
+
+
+
+.btn-danger.focus,.btn-danger.hover,.btn-danger:focus,.btn-danger:hover {
+	color: #fff;
+	background-color: #ff666b;
+	border-color: #ff666b;
+	box-shadow: none
+}
+
+.btn-danger:not([disabled]):not(.disabled).active,.btn-danger:not([disabled]):not(.disabled):active,.open>.btn-danger.dropdown-toggle,.show>.btn-danger.dropdown-toggle {
+	background-color: #f2353c;
+	border-color: #f2353c;
+	box-shadow: none
+}
+
+.btn-danger:not([disabled]):not(.disabled).active.focus,.btn-danger:not([disabled]):not(.disabled).active.hover,.btn-danger:not([disabled]):not(.disabled).active:focus,.btn-danger:not([disabled]):not(.disabled).active:hover,.btn-danger:not([disabled]):not(.disabled):active.focus,.btn-danger:not([disabled]):not(.disabled):active.hover,.btn-danger:not([disabled]):not(.disabled):active:focus,.btn-danger:not([disabled]):not(.disabled):active:hover,.open>.btn-danger.dropdown-toggle.focus,.open>.btn-danger.dropdown-toggle.hover,.open>.btn-danger.dropdown-toggle:focus,.open>.btn-danger.dropdown-toggle:hover,.show>.btn-danger.dropdown-toggle.focus,.show>.btn-danger.dropdown-toggle.hover,.show>.btn-danger.dropdown-toggle:focus,.show>.btn-danger.dropdown-toggle:hover {
+	background-color: #f2353c;
+	border-color: #f2353c
+}
+
+.btn-danger.disabled,.btn-danger.disabled.active,.btn-danger.disabled.focus,.btn-danger.disabled.hover,.btn-danger.disabled:active,.btn-danger.disabled:focus,.btn-danger.disabled:hover,.btn-danger[disabled],.btn-danger[disabled].active,.btn-danger[disabled].focus,.btn-danger[disabled].hover,.btn-danger[disabled]:active,.btn-danger[disabled]:focus,.btn-danger[disabled]:hover,fieldset[disabled] .btn-danger,fieldset[disabled] .btn-danger.active,fieldset[disabled] .btn-danger.focus,fieldset[disabled] .btn-danger.hover,fieldset[disabled] .btn-danger:active,fieldset[disabled] .btn-danger:focus,fieldset[disabled] .btn-danger:hover {
+	color: #fff;
+	background-color: #ff8589;
+	border-color: #ff8589
+}
+
+
+

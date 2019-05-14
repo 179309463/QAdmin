@@ -1,0 +1,60 @@
+.rating {
+	display: inline-block;
+	margin: 0 .5rem 0 0;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.rating::before {
+	display: block;
+	height: 0;
+	clear: both;
+    visibility: hidden;
+    content: "";
+}
+
+.rating.hover .icon.active {
+	opacity: .5
+}
+
+.rating .icon {
+	width: 1em;
+	height: auto;
+	padding: 0;
+	margin: 0 10px 0 0;
+	font-size: 1rem;
+	color: #ccd5db;
+    cursor: pointer;
+    vertical-align: middle
+}
+
+.rating .icon::before {
+	-webkit-transition: color .3s ease,opacity .3s ease;
+	transition: color .3s ease,opacity .3s ease
+}
+
+.rating .icon.active {
+	color: #eb6709!important
+}
+
+.rating .icon.active.hover,
+.rating .icon.hover {
+	color: #eb6709!important;
+	opacity: 1
+}
+
+.rating .icon:last-child {
+	margin-right: 0
+}
+
+.rating-disabled .icon {
+	cursor: default
+}
+
+.rating-sm .icon {
+	font-size: .858rem
+}
+
+.rating-lg .icon {
+	font-size: 1.286rem
+}

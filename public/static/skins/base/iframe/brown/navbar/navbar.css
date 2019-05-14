@@ -1,0 +1,119 @@
+.navbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-flex-wrap: wrap;
+	position: relative;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	min-height: 4.286rem;
+	padding: 0;
+	border: none;
+	box-shadow: 0 2px 4px rgba(0,0,0,.08);	
+}
+
+.navbar::after {
+	display: block;
+	clear: both;
+	content: ""
+}
+
+.navbar>.container,
+.navbar>.container-fluid {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.navbar>.container-fluid,
+.navbar>.containers {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 0;
+	-ms-flex: 1 1 0px;
+	flex: 1 1 0;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	margin: 0
+}
+@media print {
+	.navbar {
+		display: none
+	}
+}
+@media (min-width:480px) {
+	.navbar {
+		border-radius: .215rem
+	}
+}
+
+@media (min-width:768px) {
+	.navbar-left {
+		float: left
+	}
+
+	.navbar-right {
+		float: right;
+		margin-right: -.7145rem
+	}
+
+	.navbar-right~.navbar-right {
+		margin-right: 0
+	}
+
+	.navbar-right .dropdown-menu {
+		right: 0;
+		left: auto
+	}
+
+	.navbar.hidden-float {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex
+	}
+}
+@media (max-width:767.98px) {
+	.navbar.hidden-float {
+		display: none!important
+	}
+	.navbar>.container-fluid,
+	.navbar>.containers {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 100%;
+		-ms-flex: 1 1 100%;
+		flex: 1 1 100%
+	}
+}
+
+
+
+
+
+
+
+
+
+

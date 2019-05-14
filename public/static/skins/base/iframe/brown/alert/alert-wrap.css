@@ -1,0 +1,22 @@
+
+/*page-alert*/
+.page-alert .alert-wrap {
+	max-height: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	-webkit-transition: max-height .7s linear 0s;
+	transition: max-height .7s linear 0s
+}
+
+.page-alert .alert-wrap.in {
+	max-height: 500px;
+	-webkit-transition: max-height 1s linear 0s;
+	transition: max-height 1s linear 0s
+}
+
+.page-alert .alert-wrap .alert {
+	margin: 0;
+	text-align: left;
+	border-radius: 0
+}

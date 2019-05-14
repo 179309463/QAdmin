@@ -1,0 +1,13 @@
+/*alt*/
+
+.alert-alt {
+	color: #76838f;
+	background-color: rgba(243,247,249,.8);
+	border: none;
+	border-left: 3px solid transparent
+}
+
+.alert-alt .alert-link,
+.alert-alt a {
+	text-decoration: none
+}

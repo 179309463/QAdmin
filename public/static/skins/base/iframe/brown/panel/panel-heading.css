@@ -1,0 +1,30 @@
+
+.panel-heading {
+	border-top-left-radius: .071rem;
+	border-top-right-radius: .071rem;
+	padding: 0;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+.panel-heading+.alert {
+	border-radius: 0
+}
+
+.panel-heading>.nav-tabs {
+	border-bottom: none
+}
+
+.panel-heading+.nav-tabs {
+	margin-top: -.715rem
+}
+.panel-heading>.dropdown .dropdown-toggle {
+	color: inherit
+}
+.panel-heading+.panel-body {
+	padding-top: 0
+}
+
+.panel-heading+.list-group .list-group-item:first-child {
+	border-top-width: 0
+}

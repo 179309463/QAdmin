@@ -1,0 +1,36 @@
+
+.card-header {
+	padding: .858rem 1.429rem;
+	background-color: #f3f7f9;
+	margin-bottom: 0;
+	border: none;
+	box-shadow: none
+}
+.card-header:first-child {
+	border-radius: -webkit-calc(.215rem - 1px) -webkit-calc(.215rem - 1px) 0 0;
+	border-radius: calc(.215rem - 1px) calc(.215rem - 1px) 0 0
+}
+
+.card-header+.list-group .list-group-item:first-child {
+	border-top: 0
+}
+.card-header-transparent {
+	background-color: transparent
+}
+.card-header-bordered {
+	border-bottom: 1px solid #e4eaec
+}
+.card-header-tabs {
+	margin-right: -.7145rem;
+	margin-left: -.7145rem;
+	margin-bottom: -.858rem;
+	border-bottom: 0
+}
+.card-header-pills {
+	margin-right: -.7145rem;
+	margin-left: -.7145rem
+}
+.card-header-actions {
+	float: right;
+	margin: 0
+}

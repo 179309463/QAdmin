@@ -1,0 +1,27 @@
+
+@media (min-width:768px) {
+	.nav.hidden-float {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex
+	}
+}
+
+@media (max-width:767.98px) {
+	.nav.hidden-float {
+		display: none!important
+	}
+}
+.nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-flex-wrap: wrap;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding-left: 0;
+    list-style: none;
+    margin-bottom: 0
+}

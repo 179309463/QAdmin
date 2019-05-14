@@ -1,0 +1,97 @@
+
+.panel-group {
+	margin-bottom: 22px
+}
+
+.panel-group .panel {
+	margin-bottom: 0;
+	border-radius: .143rem;
+	box-shadow: none
+}
+
+.panel-group .panel+.panel {
+	margin-top: 10px
+}
+
+.panel-group .panel-heading+.panel-collapse {
+	margin: 0
+}
+
+.panel-group .panel-title {
+	position: relative;
+	padding: 15px 30px;
+	font-size: 1rem
+}
+
+.panel-group .panel-title:before {
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	-webkit-transition: all .3s linear 0s;
+	transition: all .3s linear 0s;    
+    content: "";
+    font-family: "Web Icons"
+}
+
+.panel-group .panel-title:after {
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	-webkit-transition: all .3s linear 0s;
+	transition: all .3s linear 0s;    
+    content: "";
+    font-family: "Web Icons"
+}
+
+.panel-group .panel-title[aria-expanded=false]:before {
+	opacity: .4
+}
+
+.panel-group .panel-title[aria-expanded=false]:after {
+	opacity: 0;
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg)
+}
+
+.panel-group .panel-title[aria-expanded=true]:before {
+	opacity: 0;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg)
+}
+
+.panel-group .panel-title[aria-expanded=true]:after {
+	opacity: 1
+}
+
+.panel-group .panel-title:hover {
+	color: #76838f;
+	text-decoration: none
+}
+
+.panel-group .panel-title:focus {
+    color: #76838f;
+	text-decoration: none;
+	outline: 0
+}
+
+.panel-group .panel-heading {
+	border-bottom: 0
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group {
+	border-top: 1px solid #e4eaec
+}
+
+.panel-group .panel-collapse .panel-body {
+	padding: 15px 30px
+}
+
+.panel-group .panel-footer {
+	border-top: 0
+}
+
+.panel-group .panel-footer+.panel-collapse .panel-body {
+	border-bottom: 1px solid #e4eaec
+}
+
+

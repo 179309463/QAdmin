@@ -1,0 +1,68 @@
+
+.btn-tagged {
+	padding: 0
+}
+
+.btn-tagged .btn-tag {
+	padding: .286rem .572rem;
+	margin-right: .357rem
+}
+
+
+.btn-tagged.btn-block {
+	text-align: left
+}
+
+.btn-tagged.btn-xs {
+	padding-right: .358rem
+}
+
+.btn-tagged.btn-xs .btn-tag {
+	padding: .072rem .286rem;
+	margin-right: .143rem
+}
+
+.btn-tagged.btn-sm {
+	padding-right: .715rem
+}
+
+.btn-tagged.btn-sm .btn-tag {
+	padding: .215rem .429rem;
+	margin-right: .5rem
+}
+.btn-tagged.btn-lg {
+	padding-right: 1rem
+}
+.btn-tagged.btn-lg .btn-tag {
+	padding: .429rem 1rem;
+	margin-right: .785rem
+}
+
+
+
+.btn-group-xs>.btn-tagged.btn {
+	padding-right: .358rem
+}
+
+.btn-group-xs>.btn-tagged.btn .btn-tag {
+	padding: .072rem .286rem;
+	margin-right: .143rem
+}
+
+.btn-group-sm>.btn-tagged.btn {
+	padding-right: .715rem
+}
+
+.btn-group-sm>.btn-tagged.btn .btn-tag {
+	padding: .215rem .429rem;
+	margin-right: .5rem
+}
+
+.btn-group-lg>.btn-tagged.btn {
+	padding-right: 1rem
+}
+
+.btn-group-lg>.btn-tagged.btn .btn-tag {
+	padding: .429rem 1rem;
+	margin-right: .785rem
+}

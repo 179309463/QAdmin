@@ -1,0 +1,36 @@
+
+
+.btn-default .badge-pill {
+	color: #e4eaec;
+	background-color: #76838f
+}
+
+.btn-primary .badge-pill {
+	color: #997b71;
+	background-color: #fff
+}
+.btn-success .badge-pill {
+	color: #11c26d;
+	background-color: #fff
+}
+.btn-info .badge-pill {
+	color: #0bb2d4;
+	background-color: #fff
+}
+.btn-warning .badge-pill {
+	color: #eb6709;
+	background-color: #fff
+}
+.btn-danger .badge-pill {
+	color: #ff4c52;
+	background-color: #fff
+}
+.btn-inverse .badge-pill {
+	color: #fff;
+	background-color: #76838f
+}
+
+.btn-dark .badge-pill {
+	color: #526069;
+	background-color: #fff
+}

@@ -1,0 +1,16 @@
+
+.panel-heading-tab {
+	padding: 10px 30px 0;
+	background-color: #997b71
+}
+
+.panel-heading-tab>.nav-tabs .nav-link.hover,
+.panel-heading-tab>.nav-tabs .nav-link:hover {
+	color: #76838f
+}
+
+.panel-heading-tab>.nav-tabs .nav-link.active,
+.panel-heading-tab>.nav-tabs .nav-link:active {
+	color: #76838f;
+	background-color: #fff
+}

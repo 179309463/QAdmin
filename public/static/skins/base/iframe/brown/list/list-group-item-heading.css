@@ -1,0 +1,27 @@
+.list-group-item-heading {
+	margin-top: 0;
+	margin-bottom: 5px
+}
+
+.list-group-item.disabled .list-group-item-heading,
+.list-group-item.disabled:focus .list-group-item-heading,
+.list-group-item.disabled:hover .list-group-item-heading {
+	color: inherit
+}
+
+.list-group-item.active .list-group-item-heading,
+.list-group-item.active .list-group-item-heading>.small,
+.list-group-item.active .list-group-item-heading>small,
+.list-group-item.active:focus .list-group-item-heading,
+.list-group-item.active:focus .list-group-item-heading>.small,
+.list-group-item.active:focus .list-group-item-heading>small,
+.list-group-item.active:hover .list-group-item-heading,
+.list-group-item.active:hover .list-group-item-heading>.small,
+.list-group-item.active:hover .list-group-item-heading>small {
+	color: inherit
+}
+.list-group-item.active .list-group-item-heading,
+.list-group-item.active:focus .list-group-item-heading,
+.list-group-item.active:hover .list-group-item-heading {
+	color: inherit
+}

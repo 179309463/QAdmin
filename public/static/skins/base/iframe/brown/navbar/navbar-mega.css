@@ -1,0 +1,49 @@
+
+.navbar-mega .dropdown-menu {
+	left: auto
+}
+
+.navbar-mega .dropdown-mega {
+	position: static
+}
+
+.navbar-mega .mega-content {
+	padding: 1.429rem 2.143rem
+}
+
+.navbar-mega .mega-menu {
+	min-width: 10.715rem;
+	max-width: 100%
+}
+
+.navbar-mega .mega-menu>ul {
+	padding-left: 0
+}
+
+.navbar-mega .mega-menu .list-icons {
+	margin-bottom: .429rem
+}
+
+.navbar-mega .dropdown.dropdown-fw .dropdown-menu {
+	right: 5px;
+	left: 5px
+}
+
+@media (min-width:480px) {
+	.navbar-mega .container,
+	.navbar-mega .container-fluid {
+		position: relative
+	}
+}
+
+@media (max-width:767.98px) {
+	.navbar-mega .container,
+	.navbar-mega .container-fluid {
+		position: static
+	}
+
+	.navbar-mega .dropdown.dropdown-fw .dropdown-menu {
+		right: 0;
+		left: 0
+	}
+}

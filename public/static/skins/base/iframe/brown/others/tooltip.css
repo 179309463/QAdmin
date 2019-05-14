@@ -1,0 +1,183 @@
+
+.tooltip {
+	font-family: Roboto,sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: normal;
+	word-break: normal;
+	word-spacing: normal;
+	white-space: normal;
+	line-break: auto;
+	font-size: .858rem;
+	text-shadow: none;
+	text-decoration: none;
+	word-wrap: break-word;
+	line-height: 1.57143;
+	z-index: 1900;
+	position: absolute;
+	display: block;
+	margin: 3px;
+	text-align: left;
+	text-align: start;
+	opacity: 0
+}
+
+.tooltip.show {
+	position: absolute;
+	display: block;
+	opacity: .9
+}
+
+.tooltip .arrow {
+	width: 8px;
+	height: 4px
+}
+
+
+.tooltip .arrow::before {
+	position: absolute;
+	content: "";
+	border-color: transparent;
+	border-style: solid
+}
+.tooltip-inner {
+	max-width: 200px;
+	padding: 6px 12px;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(0,0,0,.8);
+	border-radius: .215rem
+}
+
+
+.tooltip-bottom .arrow {
+	left: 50%;
+	margin-left: -4px;
+	top: 0
+}
+
+.tooltip-top .arrow {
+	left: 50%;
+	margin-left: -4px;
+	bottom: 0
+}
+
+.tooltip-left .arrow {
+	top: 50%;
+	margin-top: -4px;
+	right: 0
+}
+
+.tooltip-right .arrow {
+	top: 50%;
+	margin-top: -4px;
+	left: 0
+}
+
+.tooltip-primary .tooltip-inner {
+	color: #fff;
+	background-color: #997b71
+}
+
+.tooltip-primary.tooltip-top .arrow::before {
+	border-top-color: #997b71
+}
+
+.tooltip-primary.tooltip-right .arrow::before {
+	border-right-color: #997b71
+}
+
+.tooltip-primary.tooltip-bottom .arrow::before {
+	border-bottom-color: #997b71
+}
+
+.tooltip-primary.tooltip-left .arrow::before {
+	border-left-color: #997b71
+}
+
+.tooltip-success .tooltip-inner {
+	color: #fff;
+	background-color: #11c26d
+}
+
+.tooltip-success.tooltip-top .arrow::before {
+	border-top-color: #11c26d
+}
+
+.tooltip-success.tooltip-right .arrow::before {
+	border-right-color: #11c26d
+}
+
+.tooltip-success.tooltip-bottom .arrow::before {
+	border-bottom-color: #11c26d
+}
+
+.tooltip-success.tooltip-left .arrow::before {
+	border-left-color: #11c26d
+}
+
+.tooltip-info .tooltip-inner {
+	color: #fff;
+	background-color: #0bb2d4
+}
+
+.tooltip-info.tooltip-top .arrow::before {
+	border-top-color: #0bb2d4
+}
+
+.tooltip-info.tooltip-right .arrow::before {
+	border-right-color: #0bb2d4
+}
+
+.tooltip-info.tooltip-bottom .arrow::before {
+	border-bottom-color: #0bb2d4
+}
+
+.tooltip-info.tooltip-left .arrow::before {
+	border-left-color: #0bb2d4
+}
+
+.tooltip-warning .tooltip-inner {
+	color: #fff;
+	background-color: #eb6709
+}
+
+.tooltip-warning.tooltip-top .arrow::before {
+	border-top-color: #eb6709
+}
+
+.tooltip-warning.tooltip-right .arrow::before {
+	border-right-color: #eb6709
+}
+
+.tooltip-warning.tooltip-bottom .arrow::before {
+	border-bottom-color: #eb6709
+}
+
+.tooltip-warning.tooltip-left .arrow::before {
+	border-left-color: #eb6709
+}
+
+.tooltip-danger .tooltip-inner {
+	color: #fff;
+	background-color: #ff4c52
+}
+
+.tooltip-danger.tooltip-top .arrow::before {
+	border-top-color: #ff4c52
+}
+
+.tooltip-danger.tooltip-right .arrow::before {
+	border-right-color: #ff4c52
+}
+
+.tooltip-danger.tooltip-bottom .arrow::before {
+	border-bottom-color: #ff4c52
+}
+
+.tooltip-danger.tooltip-left .arrow::before {
+	border-left-color: #ff4c52
+}
+
+

@@ -1,0 +1,17 @@
+
+.card-footer {
+	padding: .858rem 1.429rem;
+	background-color: #f3f7f9;
+	border: none;
+	box-shadow: none
+}
+.card-footer:last-child {
+	border-radius: 0 0 -webkit-calc(.215rem - 1px) -webkit-calc(.215rem - 1px);
+	border-radius: 0 0 calc(.215rem - 1px) calc(.215rem - 1px)
+}
+.card-footer-bordered {
+	border-top: 1px solid #e4eaec
+}
+.card-footer-transparent {
+	background-color: transparent
+}

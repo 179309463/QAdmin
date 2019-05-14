@@ -1,0 +1,41 @@
+.btn-group-xs>.btn {
+	padding: .072rem .358rem;
+	font-size: .858rem;
+	line-height: 1.5;
+	border-radius: .143rem
+}
+.btn-group-xs>.dropdown-toggle.btn:after {
+	margin-left: 0
+}
+.btn-group-xs>.navbar-btn.btn {
+	margin-top: 1.357rem;
+	margin-bottom: 1.357rem
+}
+
+
+.btn-group-lg>.btn {
+	padding: .429rem 1.286rem;
+	font-size: 1.286rem;
+	line-height: 1.33333;
+	border-radius: .286rem
+}
+.btn-group-lg>.btn+.dropdown-toggle-split {
+	padding-right: .9645rem;
+	padding-left: .9645rem
+}
+
+
+.btn-group-sm>.btn {
+	padding: .215rem .715rem;
+	font-size: .858rem;
+	line-height: 1.5;
+	border-radius: .143rem
+}
+.btn-group-sm>.btn+.dropdown-toggle-split {
+	padding-right: .53625rem;
+	padding-left: .53625rem
+}
+.btn-group-sm>.navbar-btn.btn {
+	margin-top: 1.213rem;
+	margin-bottom: 1.213rem
+}

@@ -1,0 +1,37 @@
+.progress {
+	height: 15px;
+	margin-bottom: 22px;
+	overflow: hidden;
+	background-color: #e4eaec;
+	border-radius: .215rem
+}
+
+
+.progress-square {
+	border-radius: 0
+}
+
+.progress-circle {
+	border-radius: 1000px
+}
+
+
+
+
+.contextual-progress {
+	margin: 20px 0
+}
+
+.contextual-progress .progress-title {
+	float: left
+}
+
+.contextual-progress .progress-label {
+	position: relative;
+	float: right
+}
+
+.contextual-progress .progress {
+	height: 2px;
+	margin: 5px 0
+}

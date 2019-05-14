@@ -1,0 +1,111 @@
+
+
+.step {
+	position: relative;
+	padding: 10px 15px;
+	margin: 0;
+	font-size: inherit;
+	vertical-align: top;
+	background-color: #f3f7f9;
+    border-radius: 0;
+    color: #a3afb7;
+}
+
+.step-icon {
+	float: left;
+	margin-top: 4px;
+	margin-right: .5em;
+	font-size: 16px
+}
+
+.step-number {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	width: 36px;
+	height: 36px;
+	font-size: 14px;
+	line-height: 36px;
+	color: #fff;
+	text-align: center;
+	background: #e4eaec;
+	border-radius: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+.step-number~.step-desc {
+	min-height: 36px;
+	margin-left: 46px
+}
+
+.step-title {
+	font-size: 16px;
+    color: #526069;
+    margin-bottom: 0;
+}
+
+.step-desc {
+	text-align: left
+}
+
+.step-desc p {
+    margin-bottom: 0;
+}
+
+
+
+.step.active,.step.current {
+	color: #fff;
+	background-color: #997b71
+}
+
+.step.active .step-title,.step.current .step-title {
+	color: #fff
+}
+
+.step.active .step-number,.step.current .step-number {
+	color: #997b71;
+	background-color: #fff
+}
+
+.step.disabled {
+	color: #ccd5db;
+	pointer-events: none;
+	cursor: auto
+}
+
+.step.disabled .step-title {
+	color: #ccd5db
+}
+
+.step.disabled .step-number {
+	background-color: #ccd5db
+}
+
+.step.error {
+	color: #fff;
+	background-color: #ff4c52
+}
+
+.step.error .step-title {
+	color: #fff
+}
+
+.step.error .step-number {
+	color: #ff4c52;
+	background-color: #fff
+}
+
+.step.done,.step.done .step-title {
+	color: #fff
+}
+
+.step.done {
+	background-color: #11c26d
+}
+
+.step.done .step-number {
+	color: #11c26d;
+	background-color: #fff
+}

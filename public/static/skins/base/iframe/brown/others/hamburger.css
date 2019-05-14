@@ -1,0 +1,105 @@
+.hamburger {
+    vertical-align: middle;
+	font-size: 20px;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+	transition: -webkit-transform .2s ease-in-out;
+	transition: transform .2s ease-in-out;
+	transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out
+}
+
+.hamburger .hamburger-bar {
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+	transition: -webkit-transform .2s ease-in-out;
+	transition: transform .2s ease-in-out;
+	transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+	display: block;
+	width: 1em;
+	height: .1em;
+	margin: 0;
+	border-radius: 1px;
+	background: #76838f;
+	margin: .2em 0;
+}
+
+.hamburger:after,
+.hamburger:before {
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+	transition: -webkit-transform .2s ease-in-out;
+	transition: transform .2s ease-in-out;
+	transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+	content: '';
+	display: block;
+	width: 1em;
+	height: .1em;
+	margin: 0;
+	border-radius: 1px;
+	background: #76838f;
+}
+
+.navbar-default .hamburger .hamburger-bar,
+.navbar-default .hamburger:after,
+.navbar-default .hamburger:before {
+	background: #76838f
+}
+
+.navbar-inverse .hamburger .hamburger-bar,
+.navbar-inverse .hamburger:after,
+.navbar-inverse .hamburger:before {
+	background: #fff
+}
+
+
+.hamburger-close .hamburger-bar {
+	opacity: 0
+}
+
+.hamburger-close:before {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 8%;
+	transform-origin: 8%
+}
+.hamburger-close:after {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 8%;
+	transform-origin: 8%
+}
+
+.hamburger-close.collapsed:before,
+.hamburger-close.hided:before {
+	-webkit-transform: rotate(0);
+	transform: rotate(0)
+}
+
+.hamburger-close.collapsed:after,
+.hamburger-close.hided:after {
+	-webkit-transform: rotate(0);
+	transform: rotate(0)
+}
+.hamburger-close.collapsed .hamburger-bar,
+.hamburger-close.hided .hamburger-bar {
+	opacity: 1
+}
+
+
+.hamburger-arrow-left.collapsed {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg)
+}
+
+.hamburger-arrow-left.collapsed::before {
+	width: .6em;
+	-webkit-transform: translate3d(.45em,.1em,0) rotate(45deg);
+	transform: translate3d(.45em,.1em,0) rotate(45deg)
+}
+
+.hamburger-arrow-left.collapsed .hamburger-bar {
+	border-radius: .2em
+}
+
+.hamburger-arrow-left.collapsed::after {
+	width: .6em;
+	-webkit-transform: translate3d(.45em,-.1em,0) rotate(-45deg);
+	transform: translate3d(.45em,-.1em,0) rotate(-45deg)
+}

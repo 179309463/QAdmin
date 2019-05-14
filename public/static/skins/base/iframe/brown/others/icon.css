@@ -1,0 +1,282 @@
+.icon {
+    speak: none;
+	font-style: normal;
+	position: relative;
+	font-weight: 400;
+	-webkit-transform: translate(0,0);
+	transform: translate(0,0);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: auto;
+    line-height: 1;
+    display: inline-block
+}
+
+.icon.float-left {
+	margin-right: .3em
+}
+
+.icon.float-right {
+	margin-left: .3em
+}
+
+.icon-circle {
+	position: relative;
+	margin: .5em
+}
+
+.icon-circle:before {
+	position: relative;
+	z-index: 1
+}
+
+.icon-circle:after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 0;
+	width: 2em;
+	height: 2em;
+	content: "";
+	background-color: inherit;
+	border-radius: 100%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%)
+}
+
+.icon-lg {
+	font-size: 1.33333em;
+	vertical-align: -15%
+}
+
+.icon-stack {
+    vertical-align: middle;
+    display: inline-block
+}
+
+.icon-2x {
+	font-size: 2em
+}
+
+.icon-3x {
+	font-size: 3em
+}
+
+.icon-4x {
+	font-size: 4em
+}
+
+.icon-5x {
+	font-size: 5em
+}
+
+.icon-fw {
+	width: 1.28571em;
+	text-align: center
+}
+
+.icon-ul {
+	padding-left: 0;
+	margin-left: 2.14286em;
+	list-style-type: none
+}
+
+.icon-ul>li {
+	position: relative
+}
+
+.icon-li {
+	position: absolute;
+	top: .14286em;
+	left: -2.14286em;
+	width: 2.14286em;
+	text-align: center
+}
+
+.icon-li.icon-lg {
+	left: -1.85714em
+}
+
+.icon-border {
+	padding: .2em .25em .15em;
+	border: .08em solid #e4eaec;
+	border-radius: .1em
+}
+
+.icon-spin {
+	-webkit-animation: icon-spin 2s infinite linear;
+	animation: icon-spin 2s infinite linear
+}
+
+.icon-spin-reverse {
+	-webkit-animation: icon-spin-reverse 2s infinite linear;
+	animation: icon-spin-reverse 2s infinite linear
+}
+
+.icon-rotate-90 {
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg)
+}
+
+.icon-rotate-180 {
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg)
+}
+
+.icon-rotate-270 {
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg)
+}
+
+.icon-flip-horizontal,.icon-flip-vertical {
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation, mirror=1)
+}
+
+.icon-flip-horizontal {
+	-webkit-transform: scale(-1,1);
+	transform: scale(-1,1)
+}
+
+.icon-flip-vertical {
+	-webkit-transform: scale(1,-1);
+	transform: scale(1,-1)
+}
+
+.icon-stack {
+	position: relative;
+	width: 2em;
+	height: 2em;
+	line-height: 2em
+}
+
+.icon-stack-1x,.icon-stack-2x {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center
+}
+
+.icon-stack-1x {
+	line-height: inherit
+}
+
+.icon-stack-2x {
+	font-size: 2em
+}
+
+.icon-stack-inverse {
+	color: #fff
+}
+
+.icon-color {
+	color: rgba(55,71,79,.4)
+}
+
+.icon-color:focus,.icon-color:hover {
+	color: rgba(55,71,79,.6)
+}
+
+.icon-color.active,.icon-color:active {
+	color: #37474f
+}
+
+.icon-color-alt {
+	color: rgba(55,71,79,.6)
+}
+
+.icon-color-alt:focus,.icon-color-alt:hover {
+	color: rgba(55,71,79,.8)
+}
+
+.icon-color-alt.active,.icon-color-alt:active {
+	color: #37474f
+}
+
+
+
+@-webkit-keyframes icon-spin {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0)
+	}
+
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg)
+	}
+}
+
+@keyframes icon-spin {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0)
+	}
+
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg)
+	}
+}
+
+@-webkit-keyframes icon-spin-reverse {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0)
+	}
+
+	100% {
+		-webkit-transform: rotate(-359deg);
+		transform: rotate(-359deg)
+	}
+}
+
+@keyframes icon-spin-reverse {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0)
+	}
+
+	100% {
+		-webkit-transform: rotate(-359deg);
+		transform: rotate(-359deg)
+	}
+}
+
+.h1 .icon:first-child,
+.h2 .icon:first-child,
+.h3 .icon:first-child,
+.h4 .icon:first-child,
+.h5 .icon:first-child,
+.h6 .icon:first-child,
+h1 .icon:first-child,
+h2 .icon:first-child,
+h3 .icon:first-child,
+h4 .icon:first-child,
+h5 .icon:first-child,
+h6 .icon:first-child {
+	margin-right: .5em
+}
+
+.icon-fullscreen {
+	font-family: "Web Icons"
+}
+
+.icon-fullscreen:before {
+	content: ""
+}
+
+.icon-fullscreen.active:before {
+	content: ""
+}
+
+.icon-menubar {
+	font-family: "Web Icons"
+}
+
+.icon-menubar.active:before,
+.icon-menubar:before {
+	content: ""
+}

@@ -1,0 +1,42 @@
+
+.layout-full {
+	height: 100vh;
+	overflow-x: hidden
+}
+
+
+.page-dark.layout-full {
+	position: relative;
+	z-index: 0;
+	color: #fff
+}
+
+.page-dark.layout-full::after,
+.page-dark.layout-full::before {
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	content: '';
+	left: 0;
+	height: 100%
+}
+
+.page-dark.layout-full::before {
+	background-position: center top;
+	background-size: cover
+}
+
+.page-dark.layout-full::after {
+	background-color: rgba(38,50,56,.6)
+}
+
+.page-dark.layout-full .brand {
+	margin-bottom: 22px
+}
+
+.page-dark.layout-full .brand-text {
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase
+}

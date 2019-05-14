@@ -1,0 +1,21 @@
+
+.nav-tabs-inverse .nav-link.active,
+.nav-tabs-inverse .nav-link.active:focus,
+.nav-tabs-inverse .nav-link.active:hover {
+	border-color: transparent
+}
+
+.nav-tabs-inverse .tab-content {
+	background: #fff
+}
+
+.nav-tabs-inverse .nav-tabs-solid {
+	border-bottom-color: #fff
+}
+
+.nav-tabs-inverse .nav-tabs-solid .nav-link.active,
+.nav-tabs-inverse .nav-tabs-solid .nav-link.active:focus,
+.nav-tabs-inverse .nav-tabs-solid .nav-link.active:hover {
+	color: #76838f;
+	background-color: #fff
+}

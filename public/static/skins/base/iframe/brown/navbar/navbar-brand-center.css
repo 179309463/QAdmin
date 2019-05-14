@@ -1,0 +1,8 @@
+@media (max-width:767.98px) {
+	.navbar-brand-center {
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translate(-50%,0);
+		transform: translate(-50%,0)
+	}
+}

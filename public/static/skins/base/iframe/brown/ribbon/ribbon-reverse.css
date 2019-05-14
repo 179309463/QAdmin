@@ -1,0 +1,14 @@
+
+.ribbon-reverse {
+	right: -3px;
+	left: auto
+}
+
+.ribbon-reverse .ribbon-inner {
+	right: 0;
+	left: auto
+}
+
+.ribbon-reverse.ribbon-vertical .ribbon-inner {
+	right: 16px
+}

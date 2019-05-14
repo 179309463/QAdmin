@@ -1,0 +1,11 @@
+
+.carousel-indicators-fillin li {
+	background-color: transparent;
+	box-shadow: 0 0 0 2px #fff inset;
+	-webkit-transition: box-shadow .3s ease 0s;
+	transition: box-shadow .3s ease 0s
+}
+
+.carousel-indicators-fillin .active {
+	box-shadow: 0 0 0 8px #fff inset
+}

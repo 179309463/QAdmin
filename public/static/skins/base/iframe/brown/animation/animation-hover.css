@@ -1,0 +1,7 @@
+.animation-hover:not(:hover),
+.animation-hover:not(:hover) [class*=animation-],
+.touch .animation-hover:not(.hover),
+.touch .animation-hover:not(.hover) [class*=animation-] {
+	-webkit-animation-name: none;
+	animation-name: none
+}

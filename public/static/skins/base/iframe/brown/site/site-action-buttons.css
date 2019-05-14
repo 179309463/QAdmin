@@ -1,0 +1,27 @@
+
+
+.site-action-buttons {
+	position: absolute;
+	bottom: 56px;
+	left: 0;
+	display: none;
+	width: 100%;
+	text-align: center
+}
+
+.site-action-buttons .btn {
+	display: block;
+	margin: 0 auto 10px;
+	-webkit-animation-delay: .1s;
+	animation-delay: .1s
+}
+
+.site-action.active .site-action-buttons {
+	display: block
+}
+
+@media (max-width:767.98px) {
+	.site-action-buttons {
+		bottom: 46px
+	}
+}

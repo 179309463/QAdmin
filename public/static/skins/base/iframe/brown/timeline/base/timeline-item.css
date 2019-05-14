@@ -1,0 +1,36 @@
+.timeline-item {
+	position: relative;
+	display: block;
+	float: left;
+	width: 50%;
+	padding-right: 40px;
+	margin-bottom: 60px
+}
+
+.timeline:not(.timeline-single) .timeline-item:first-child+.timeline-item {
+	margin-top: 90px
+}
+
+.timeline:not(.timeline-single) .timeline-period+.timeline-item+.timeline-item {
+	margin-top: 90px
+}
+
+.timeline-item:not(.timeline-period)::after {
+	display: block;
+  clear: both;
+  content: "";
+}
+
+.timeline-item:last-child {
+	margin-bottom: 0
+}
+@media (max-width:767.98px) {
+  .timeline-item {
+		float: none;
+		width: 100%;
+		padding-right: 0;
+		padding-left: 40px;
+		margin-top: 0;
+		margin-bottom: 60px
+  }
+}

@@ -1,0 +1,18 @@
+
+.panel>.nav-tabs-vertical .nav-tabs {
+	margin-left: -1px
+}
+
+.panel>.nav-tabs-vertical .nav-tabs>li>a {
+	border-left: none;
+	border-radius: 0
+}
+
+.panel>.nav-tabs-vertical .nav-tabs.nav-tabs-reverse {
+	margin-right: -1px
+}
+
+.panel>.nav-tabs-vertical .nav-tabs.nav-tabs-reverse>li>a {
+	border-right: none;
+	border-radius: 0
+}

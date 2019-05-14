@@ -1,0 +1,215 @@
+
+
+.bs-tooltip-auto[x-placement^=right] .arrow,
+.bs-tooltip-auto[x-placement^=left] .arrow,
+.bs-tooltip-left .arrow,
+.bs-tooltip-right .arrow {
+	width: 4px;
+	height: 8px
+}
+.bs-tooltip-auto[x-placement^=top],
+.bs-tooltip-top {
+	padding: 4px 0
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.bs-tooltip-top .arrow::before {
+	top: 0;
+	border-width: 4px 4px 0;
+	border-top-color: rgba(0,0,0,.8)
+}
+
+.bs-tooltip-auto[x-placement^=right],
+.bs-tooltip-right {
+	padding: 0 4px
+}
+
+.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.bs-tooltip-right .arrow::before {
+	right: 0;
+	border-width: 4px 4px 4px 0;
+	border-right-color: rgba(0,0,0,.8)
+}
+
+.bs-tooltip-auto[x-placement^=bottom],
+.bs-tooltip-bottom {
+	padding: 4px 0
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+	bottom: 0;
+	border-width: 0 4px 4px;
+	border-bottom-color: rgba(0,0,0,.8)
+}
+
+.bs-tooltip-auto[x-placement^=left],
+.bs-tooltip-left {
+	padding: 0 4px
+}
+
+.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.bs-tooltip-left .arrow::before {
+	left: 0;
+	border-width: 4px 0 4px 4px;
+	border-left-color: rgba(0,0,0,.8)
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow,
+.bs-tooltip-auto[x-placement^=bottom] .arrow,
+.bs-tooltip-bottom .arrow,
+.bs-tooltip-top .arrow {
+	left: 50%;
+	margin-left: -4px
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow,
+.bs-tooltip-bottom .arrow{
+	top: 0
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow,
+.bs-tooltip-top .arrow {
+	bottom: 0
+}
+
+.bs-tooltip-auto[x-placement^=right] .arrow,
+.bs-tooltip-auto[x-placement^=left] .arrow,
+.bs-tooltip-left .arrow,
+.bs-tooltip-right .arrow {
+	top: 50%;
+	margin-top: -4px
+}
+
+.bs-tooltip-auto[x-placement^=left] .arrow,
+.bs-tooltip-left .arrow {
+	right: 0
+}
+
+.bs-tooltip-auto[x-placement^=right] .arrow,
+.bs-tooltip-right .arrow {
+	left: 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tooltip-primary.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.tooltip-primary.bs-tooltip-top .arrow::before{
+	border-top-color: #997b71
+}
+
+.tooltip-primary.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.tooltip-primary.bs-tooltip-right .arrow::before {
+	border-right-color: #997b71
+}
+
+.tooltip-primary.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.tooltip-primary.bs-tooltip-bottom .arrow::before {
+	border-bottom-color: #997b71
+}
+
+.tooltip-primary.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.tooltip-primary.bs-tooltip-left .arrow::before {
+	border-left-color: #997b71
+}
+
+.tooltip-success.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.tooltip-success.bs-tooltip-top .arrow::before {
+	border-top-color: #11c26d
+}
+
+.tooltip-success.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.tooltip-success.bs-tooltip-right .arrow::before {
+	border-right-color: #11c26d
+}
+
+.tooltip-success.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.tooltip-success.bs-tooltip-bottom .arrow::before {
+	border-bottom-color: #11c26d
+}
+
+.tooltip-success.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.tooltip-success.bs-tooltip-left .arrow::before {
+	border-left-color: #11c26d
+}
+
+.tooltip-info.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.tooltip-info.bs-tooltip-top .arrow::before {
+	border-top-color: #0bb2d4
+}
+
+.tooltip-info.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.tooltip-info.bs-tooltip-right .arrow::before {
+	border-right-color: #0bb2d4
+}
+
+.tooltip-info.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.tooltip-info.bs-tooltip-bottom .arrow::before {
+	border-bottom-color: #0bb2d4
+}
+
+.tooltip-info.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.tooltip-info.bs-tooltip-left .arrow::before {
+	border-left-color: #0bb2d4
+}
+
+.tooltip-warning.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.tooltip-warning.bs-tooltip-top .arrow::before {
+	border-top-color: #eb6709
+}
+
+.tooltip-warning.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.tooltip-warning.bs-tooltip-right .arrow::before {
+	border-right-color: #eb6709
+}
+
+.tooltip-warning.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.tooltip-warning.bs-tooltip-bottom .arrow::before {
+	border-bottom-color: #eb6709
+}
+
+.tooltip-warning.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.tooltip-warning.bs-tooltip-left .arrow::before {
+	border-left-color: #eb6709
+}
+
+.tooltip-danger.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.tooltip-danger.bs-tooltip-top .arrow::before {
+	border-top-color: #ff4c52
+}
+
+.tooltip-danger.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.tooltip-danger.bs-tooltip-right .arrow::before {
+	border-right-color: #ff4c52
+}
+
+.tooltip-danger.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.tooltip-danger.bs-tooltip-bottom .arrow::before {
+	border-bottom-color: #ff4c52
+}
+
+.tooltip-danger.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.tooltip-danger.bs-tooltip-left .arrow::before {
+	border-left-color: #ff4c52
+}
+
+

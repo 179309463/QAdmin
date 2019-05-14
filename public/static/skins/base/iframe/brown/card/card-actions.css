@@ -1,0 +1,32 @@
+.card-actions {
+	margin-top: 10px;
+	text-align: right
+}
+
+.card-actions a {
+	vertical-align: middle;	
+	display: inline-block;
+	margin-right: 10px;
+	color: #a3afb7
+}
+
+.card-actions a .icon,
+.card-actions a.icon {
+	text-decoration: none
+}
+
+.card-actions a .icon+span,
+.card-actions a.icon+span {
+	margin-left: 2px
+}
+
+.card-actions a.active,
+.card-actions a:focus,
+.card-actions a:hover {
+	color: #ccd5db;
+	text-decoration: none
+}
+
+.card-actions a:last-child {
+	margin-right: 0
+}

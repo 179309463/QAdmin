@@ -1,0 +1,52 @@
+
+.alert.dark.alert-danger,
+.alert.dark.alert-danger .close,
+.alert.dark.alert-danger .close:focus,
+.alert.dark.alert-danger .close:hover,
+.alert.dark.alert-primary,
+.alert.dark.alert-primary .close,
+.alert.dark.alert-primary .close:focus,
+.alert.dark.alert-primary .close:hover,
+.alert.dark.alert-success,
+.alert.dark.alert-success .close,
+.alert.dark.alert-success .close:focus,
+.alert.dark.alert-success .close:hover,
+.alert.dark.alert-info,
+.alert.dark.alert-info .close,
+.alert.dark.alert-info .close:focus,
+.alert.dark.alert-info .close:hover,
+.alert.dark.alert-warning,
+.alert.dark.alert-warning .close,
+.alert.dark.alert-warning .close:focus,
+.alert.dark.alert-warning .close:hover {
+	color: #fff
+}
+
+
+.alert.dark.alert-primary {
+	background-color: #997b71;
+	border-color: #997b71
+}
+
+
+.alert.dark.alert-success {
+	background-color: #11c26d;
+	border-color: #11c26d
+}
+
+.alert.dark.alert-info {
+	background-color: #0bb2d4;
+	border-color: #0bb2d4
+}
+
+
+.alert.dark.alert-warning {
+	background-color: #eb6709;
+	border-color: #eb6709
+}
+
+.alert.dark.alert-danger {
+	background-color: #ff4c52;
+	border-color: #ff4c52
+}
+

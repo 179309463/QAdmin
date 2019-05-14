@@ -1,0 +1,19 @@
+
+.list-group-dividered .list-group-item,
+.list-group-dividered .list-group-item.active:hover {
+	border-top-color: #e4eaec
+}
+
+.list-group-dividered .list-group-item:last-child {
+	border-bottom-color: #e4eaec
+}
+
+.list-group-dividered .list-group-item:first-child,
+.list-group-dividered .list-group-item:first-child.active:hover {
+	border-top-color: transparent
+}
+
+.list-group-dividered .list-group-item:focus,
+.list-group-dividered .list-group-item:hover {
+	z-index: auto
+}

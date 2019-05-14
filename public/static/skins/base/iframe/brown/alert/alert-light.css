@@ -1,0 +1,11 @@
+.alert-light {
+	background-color: #fefefe;
+	border-color: #fdfdfe;
+	color: #818182
+}
+
+.alert-light .close,
+.alert-light .close:focus,
+.alert-light .close:hover {
+	color: #818182
+}

@@ -1,0 +1,23 @@
+
+.panel>.alert {
+    margin: 0
+	padding-right: 25px;
+	padding-left: 25px
+}
+
+.panel>.alert-dismissible {
+	padding-right: 45px
+}
+
+@media (max-width:479.98px) {
+	.panel>.alert {
+		padding-right: 20px;
+		padding-left: 20px
+	}
+
+	.panel>.alert-dismissible {
+		padding-right: 40px
+	}
+}
+
+

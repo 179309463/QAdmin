@@ -1,0 +1,34 @@
+
+.animation-slide-top {
+	-webkit-animation-name: slide-top;
+	animation-name: slide-top
+}
+
+
+@-webkit-keyframes slide-top {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0,-100%,0);
+		transform: translate3d(0,-100%,0)
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+
+@keyframes slide-top {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0,-100%,0);
+		transform: translate3d(0,-100%,0)
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}

@@ -1,0 +1,71 @@
+.btn-default {
+	color: #212529;
+	background-color: #e4eaec;
+	border-color: #e4eaec;
+	box-shadow: none
+}
+
+.btn-default.focus,
+.btn-default.hover,
+.btn-default:focus,
+.btn-default:hover {
+	color: #76838f;
+	background-color: #f3f7f9;
+	border-color: #f3f7f9;
+	box-shadow: none
+}
+
+.btn-default:not([disabled]):not(.disabled).active,
+.btn-default:not([disabled]):not(.disabled):active,
+.open>.btn-default.dropdown-toggle,
+.show>.btn-default.dropdown-toggle {
+	background-color: #ccd5db;
+	border-color: #ccd5db;
+	box-shadow: none
+}
+
+.btn-default:not([disabled]):not(.disabled).active.focus,
+.btn-default:not([disabled]):not(.disabled).active.hover,
+.btn-default:not([disabled]):not(.disabled).active:focus,
+.btn-default:not([disabled]):not(.disabled).active:hover,
+.btn-default:not([disabled]):not(.disabled):active.focus,
+.btn-default:not([disabled]):not(.disabled):active.hover,
+.btn-default:not([disabled]):not(.disabled):active:focus,
+.btn-default:not([disabled]):not(.disabled):active:hover,
+.open>.btn-default.dropdown-toggle.focus,
+.open>.btn-default.dropdown-toggle.hover,
+.open>.btn-default.dropdown-toggle:focus,
+.open>.btn-default.dropdown-toggle:hover,
+.show>.btn-default.dropdown-toggle.focus,
+.show>.btn-default.dropdown-toggle.hover,
+.show>.btn-default.dropdown-toggle:focus,
+.show>.btn-default.dropdown-toggle:hover {
+	background-color: #ccd5db;
+	border-color: #ccd5db
+}
+
+.btn-default.disabled,
+.btn-default.disabled.active,
+.btn-default.disabled.focus,
+.btn-default.disabled.hover,
+.btn-default.disabled:active,
+.btn-default.disabled:focus,
+.btn-default.disabled:hover,
+.btn-default[disabled],
+.btn-default[disabled].active,
+.btn-default[disabled].focus,
+.btn-default[disabled].hover,
+.btn-default[disabled]:active,
+.btn-default[disabled]:focus,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default,
+fieldset[disabled] .btn-default.active,
+fieldset[disabled] .btn-default.focus,
+fieldset[disabled] .btn-default.hover,
+fieldset[disabled] .btn-default:active,
+fieldset[disabled] .btn-default:focus,
+fieldset[disabled] .btn-default:hover {
+	color: #76838f;
+	background-color: #f3f7f9;
+	border-color: #f3f7f9
+}

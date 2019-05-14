@@ -1,0 +1,13 @@
+.alert-icon {
+	position: relative;
+	padding-left: 45px
+}
+
+.alert-icon>.icon {
+	width: 1em;
+	text-align: center;
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	font-size: 1rem
+}

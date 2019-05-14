@@ -1,0 +1,21 @@
+
+.card>.list-group:first-child .list-group-item:first-child {
+	border-top-left-radius: .215rem;
+	border-top-right-radius: .215rem
+}
+
+.card>.list-group:last-child .list-group-item:last-child {
+	border-bottom-right-radius: .215rem;
+	border-bottom-left-radius: .215rem
+}
+
+
+.card>.list-group:not(:first-child)>.list-group-item:first-child {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0
+}
+
+.card>.list-group:not(:last-child)>.list-group-item:last-child {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0
+}

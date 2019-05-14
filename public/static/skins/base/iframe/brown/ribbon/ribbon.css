@@ -1,0 +1,37 @@
+.ribbon {
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	background-color: transparent
+}
+
+.ribbon-inner {
+	position: absolute;
+	top: 16px;
+	left: 0;
+	display: inline-block;
+	height: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
+	line-height: 30px;
+	color: #fff;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+    background-color: #526069;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.ribbon-inner .icon {
+	font-size: 16px
+}
+
+
+
+
+
+
+

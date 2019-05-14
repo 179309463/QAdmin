@@ -1,0 +1,74 @@
+
+.ribbon-primary .ribbon-inner {
+	background-color: #997b71
+}
+
+.ribbon-primary.ribbon-bookmark .ribbon-inner {
+	background-color: transparent;
+	background-image: -webkit-linear-gradient(right,transparent 22px,#997b71 0);
+	background-image: linear-gradient(to left,transparent 22px,#997b71 0)
+}
+
+.ribbon-primary.ribbon-bookmark .ribbon-inner:before {
+	border-color: #997b71 transparent #997b71 #997b71
+}
+
+.ribbon-primary.ribbon-bookmark.ribbon-reverse .ribbon-inner {
+	background-image: -webkit-linear-gradient(left,transparent 22px,#997b71 0);
+	background-image: linear-gradient(to right,transparent 22px,#997b71 0)
+}
+
+.ribbon-primary.ribbon-bookmark.ribbon-reverse .ribbon-inner:before {
+	border-right-color: #997b71;
+	border-left-color: transparent
+}
+
+.ribbon-primary.ribbon-bookmark.ribbon-vertical .ribbon-inner {
+	background-image: -webkit-linear-gradient(bottom,transparent 22px,#997b71 0);
+	background-image: linear-gradient(to top,transparent 22px,#997b71 0)
+}
+
+.ribbon-primary.ribbon-bookmark.ribbon-vertical .ribbon-inner:before {
+	border-right-color: #997b71;
+	border-bottom-color: transparent
+}
+
+.ribbon-primary.ribbon-bookmark.ribbon-vertical.ribbon-reverse .ribbon-inner:before {
+	border-right-color: #997b71;
+	border-bottom-color: transparent;
+	border-left-color: #997b71
+}
+
+.ribbon-primary.ribbon-corner:before {
+	border-top-color: #997b71;
+	border-left-color: #997b71
+}
+
+.ribbon-primary.ribbon-corner .ribbon-inner {
+	background-color: transparent
+}
+
+.ribbon-primary.ribbon-corner.ribbon-reverse:before {
+	border-right-color: #997b71;
+	border-left-color: transparent
+}
+
+.ribbon-primary.ribbon-corner.ribbon-bottom:before {
+	border-top-color: transparent;
+	border-bottom-color: #997b71
+}
+
+.ribbon-primary.ribbon-clip:before {
+	border-top-color: #82675f;
+	border-right-color: #82675f
+}
+
+.ribbon-primary.ribbon-clip.ribbon-reverse:before {
+	border-right-color: transparent;
+	border-left-color: #82675f
+}
+
+.ribbon-primary.ribbon-clip.ribbon-bottom:before {
+	border-top-color: transparent;
+	border-bottom-color: #82675f
+}

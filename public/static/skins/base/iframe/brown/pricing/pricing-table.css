@@ -1,0 +1,56 @@
+
+.pricing-table {
+	padding-top: 30px;
+	text-align: center
+}
+
+.pricing-table::after {
+	display: block;
+    clear: both;
+    content: "";
+}
+
+.pricing-table .pricing-header {
+	padding-bottom: 24px;
+	margin: 30px 30px 25px;
+	border-bottom: 1px solid #e4eaec
+}
+
+.pricing-table .pricing-price {
+	font-size: 48px
+}
+
+.pricing-table .pricing-currency {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: -10px;
+	font-size: 20px;
+	vertical-align: top
+}
+
+.pricing-table .pricing-period {
+	font-size: 16px
+}
+
+.pricing-table .pricing-title {
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px
+}
+
+.pricing-table .pricing-features {
+	padding: 0;
+	margin: 0
+}
+
+.pricing-table .pricing-features li {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 14px;
+	list-style: none
+}
+
+.pricing-table .pricing-footer {
+	padding: 20px 0;
+	margin: 25px 30px 30px
+}

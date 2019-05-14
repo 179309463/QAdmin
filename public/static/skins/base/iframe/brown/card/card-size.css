@@ -1,0 +1,30 @@
+
+.card-sm .card-header {
+	padding: .858rem .715rem
+}
+
+.card-sm .card-block {
+	padding: .715rem
+}
+
+.card-sm .card-footer {
+	padding: .858rem .715rem
+}
+
+.card-md .card-header {
+	padding: 1.072rem 1.429rem
+}
+
+.card-md .card-block {
+	padding: 1.072rem
+}
+
+.card-md .card-footer {
+	padding: 1.429rem 1.072rem
+}
+
+.card-lg .card-block,
+.card-lg .card-footer,
+.card-lg .card-header {
+	padding: 1.429rem
+}

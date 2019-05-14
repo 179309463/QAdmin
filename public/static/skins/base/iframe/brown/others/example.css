@@ -1,0 +1,207 @@
+
+.example {
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+.example::after {
+	display: block;
+	clear: both;
+	content: ""
+}
+
+.example:before {
+	display: table;
+	content: ""
+}
+.example-wrap {
+	margin-bottom: 50px
+}
+
+.example-wrap .example-wrap {
+	margin-bottom: 0
+}
+
+.example-title {
+	text-transform: uppercase
+}
+
+h4.example-title {
+	font-size: 14px
+}
+
+h3.example-title {
+	font-size: 18px
+}
+
+.panel-body>.example-wrap:last-child,.panel-body>.row:last-child>[class*=col-]:last-child .example-wrap:last-child {
+	margin-bottom: 0
+}
+
+.example-well {
+	position: relative;
+	margin-bottom: 30px;
+	background-color: #f1f4f5
+}
+
+.example-well .center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%)
+}
+
+.example-dropdown .dropdown::after,.example-dropdown .dropup::after {
+	display: block;
+	clear: both;
+	content: ""
+}
+
+.example-dropdown .dropdown>.dropdown-toggle,.example-dropdown .dropup>.dropdown-toggle {
+	float: left
+}
+
+.example-dropdown .dropdown>.dropdown-menu,.example-dropdown .dropup>.dropdown-menu {
+	position: static;
+	display: block;
+	clear: left
+}
+
+.example-popover,.example-tooltip {
+	z-index: 1;
+	display: inline-block;
+	position: relative
+}
+
+.example-dropdown .dropdown>.dropdown-menu-right,.example-dropdown .dropup>.dropdown-menu-right {
+	float: right;
+	clear: right
+}
+
+.example-tooltip .tooltip {
+	position: relative;
+	margin-right: 25px;
+	opacity: 1
+}
+
+.example-tooltip .tooltip.bs-tooltip-auto[x-placement^=top] .arrow,.example-tooltip .tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow,.example-tooltip .tooltip.bs-tooltip-bottom .arrow,.example-tooltip .tooltip.bs-tooltip-top .arrow {
+	left: 50%
+}
+
+.example-tooltip .tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow,.example-tooltip .tooltip.bs-tooltip-bottom .arrow {
+	top: 0
+}
+
+.example-tooltip .tooltip.bs-tooltip-auto[x-placement^=top] .arrow,.example-tooltip .tooltip.bs-tooltip-top .arrow {
+	bottom: 0
+}
+
+.example-tooltip .tooltip.bs-tooltip-auto[x-placement^=right] .arrow,.example-tooltip .tooltip.bs-tooltip-auto[x-placement^=left] .arrow,.example-tooltip .tooltip.bs-tooltip-left .arrow,.example-tooltip .tooltip.bs-tooltip-right .arrow {
+	top: 50%
+}
+
+.example-tooltip .tooltip.bs-tooltip-auto[x-placement^=left] .arrow,.example-tooltip .tooltip.bs-tooltip-left .arrow {
+	right: 0
+}
+
+.example-tooltip .tooltip.bs-tooltip-auto[x-placement^=right] .arrow,.example-tooltip .tooltip.bs-tooltip-right .arrow {
+	left: 0
+}
+
+.example-blocks .example-col,.example-grid .example-col {
+	min-height: 0;
+	padding: 10px 15px 12px;
+	background-color: #f1f4f5;
+	border-radius: 0
+}
+
+.example-grid .example-col {
+	margin-bottom: 20px
+}
+
+.example-grid .example-col .example-col {
+	margin-top: 20px;
+	margin-bottom: 0;
+	background-color: #e2e8ea
+}
+
+.example-popover .popover {
+	position: relative;
+	display: block;
+	margin-right: 25px
+}
+
+.example-buttons .btn,.example-buttons .btn-group,.example-buttons .btn-group-vertical {
+	margin-right: 15px;
+	margin-bottom: 20px
+}
+
+.example-buttons .btn-group .btn,.example-buttons .btn-group .btn-group,.example-buttons .btn-group .btn-group-vertical,.example-buttons .btn-group-vertical .btn,.example-buttons .btn-group-vertical .btn-group,.example-buttons .btn-group-vertical .btn-group-vertical {
+	margin-right: 0;
+	margin-bottom: 0
+}
+
+.example-box {
+	position: relative;
+	padding: 45px 15px 15px;
+	margin-right: 0;
+	margin-left: 0;
+	border: 1px solid #e4eaec
+}
+
+.example-box:after {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	font-size: .858rem;
+	color: #959595;
+	letter-spacing: 1px;
+	content: "示例"
+}
+
+.example-avatars .avatar {
+	margin-right: 20px;
+	margin-bottom: 20px
+}
+
+.example-avatars .avatar:last-child {
+	margin-right: 20px
+}
+
+.example-typography {
+	position: relative;
+	padding-left: 25%
+}
+
+.example-typography .heading-note,.example-typography .text-note {
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	display: block;
+	width: 260px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 13px;
+	color: #aab2bd
+}
+
+.example-typography .text-note {
+	top: 10px;
+	bottom: auto
+}
+
+.example-responsive {
+	min-height: .01%;
+	overflow-x: auto
+}
+
+@media (max-width:767.98px) {
+	.example-responsive {
+		width: 100%;
+		overflow-y: hidden;
+		-ms-overflow-style: -ms-autohiding-scrollbar
+	}
+}

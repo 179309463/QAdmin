@@ -1,0 +1,59 @@
+.btn.icon.disabled {
+	color: #a3afb7
+}
+
+.btn-icon.disabled {
+	color: #a3afb7
+}
+.btn-icon,.btn.icon {
+	padding: .715rem;
+	line-height: 1em
+}
+
+
+.btn .icon {
+	width: 1em;
+	text-align: center;
+	margin: -1px 3px 0;
+	line-height: inherit
+}
+
+
+.btn-icon .icon {
+	margin: -1px 0 0
+}
+
+
+.btn-icon.btn-xs,.btn.icon.btn-xs {
+	padding: .286rem;
+	font-size: .858rem
+}
+
+.btn-icon.btn-sm,.btn.icon.btn-sm {
+	padding: .572rem;
+	font-size: 1rem
+}
+
+.btn-icon.btn-lg,.btn.icon.btn-lg {
+	padding: .858rem;
+	font-size: 1.429rem
+}
+
+
+.btn-group-xs>.btn-icon.btn,
+.btn-group-xs>.btn.icon {
+	padding: .286rem;
+	font-size: .858rem
+}
+
+.btn-group-sm>.btn-icon.btn,
+.btn-group-sm>.btn.icon {
+	padding: .572rem;
+	font-size: 1rem
+}
+
+.btn-group-lg>.btn-icon.btn,
+.btn-group-lg>.btn.icon {
+	padding: .858rem;
+	font-size: 1.429rem
+}

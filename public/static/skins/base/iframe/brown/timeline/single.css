@@ -1,0 +1,41 @@
+.timeline-single .timeline-dot {
+	right: auto;
+	left: 0;
+	margin-right: 0;
+	margin-left: -7px
+}
+
+.timeline-single.timeline .timeline-dot {
+	margin-left: -7px
+}
+
+.timeline-single .timeline-footer {
+	right: auto;
+	bottom: -26px;
+	left: 0;
+	margin-right: 0;
+	margin-left: 40px
+}
+
+
+.timeline-single .timeline-info {
+	float: left
+}
+
+
+.timeline-single.timeline {
+	margin-left: 7px
+}
+
+.timeline-single:before {
+	left: 0
+}
+
+
+.timeline-single .timeline-item {
+	float: none;
+	width: 100%;
+	padding-right: 0;
+	padding-left: 40px;
+	margin-bottom: 60px
+}

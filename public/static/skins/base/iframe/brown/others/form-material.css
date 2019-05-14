@@ -1,0 +1,428 @@
+
+.form-material {
+	position: relative
+}
+
+.form-material.floating {
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+
+.form-material.floating+.form-material.floating {
+	margin-top: 40px
+}
+
+.form-material .form-control {
+	padding-right: 0;
+	padding-left: 0;
+	background-color: transparent;
+	background-color: rgba(0,0,0,0);
+	background-repeat: no-repeat;
+	background-position: center bottom,center -webkit-calc(100% - 1px);
+	background-position: center bottom,center calc(100% - 1px);
+	background-size: 0 2px,100% 1px;
+	-webkit-transition: background 0s ease-out;
+	transition: background 0s ease-out;
+	background-image: -webkit-linear-gradient(#997b71,#997b71),-webkit-linear-gradient(#e4eaec,#e4eaec);
+	background-image: linear-gradient(#997b71,#997b71),linear-gradient(#e4eaec,#e4eaec);
+	float: none;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;	
+}
+
+.form-material .form-control.focus,
+.form-material .form-control:focus {
+	background-image: -webkit-linear-gradient(#997b71,#997b71),-webkit-linear-gradient(#e4eaec,#e4eaec);
+	background-image: linear-gradient(#997b71,#997b71),linear-gradient(#e4eaec,#e4eaec);
+	float: none;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;	
+	background-size: 100% 2px,100% 1px;
+	outline: 0;
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s
+}
+
+
+.form-material .form-control::-webkit-input-placeholder {
+	color: #a3afb7
+}
+
+.form-material .form-control::-moz-placeholder {
+	color: #a3afb7
+}
+
+.form-material .form-control:-ms-input-placeholder {
+	color: #a3afb7
+}
+
+.form-material .form-control:disabled::-webkit-input-placeholder {
+	color: #ccd5db
+}
+
+.form-material .form-control:disabled::-moz-placeholder {
+	color: #ccd5db
+}
+
+.form-material .form-control:disabled:-ms-input-placeholder {
+	color: #ccd5db
+}
+
+
+.form-material .form-control:disabled,
+.form-material .form-control[disabled],
+fieldset[disabled] .form-material .form-control {
+	background: 0 0;
+	background: rgba(0,0,0,0);
+	border-bottom: 1px dashed #ccd5db
+}
+
+.form-material .form-control:disabled~.floating-label,
+.form-material .form-control[disabled]~.floating-label,
+fieldset[disabled] .form-material .form-control~.floating-label {
+	color: #ccd5db
+}
+
+.form-material select[multiple],
+.form-material select[size],
+.form-material textarea.form-control {
+	height: auto
+}
+
+.form-material .col-form-label {
+	font-weight: 700
+}
+
+.form-material.form-group .col-form-label {
+	padding-top: 0;
+	padding-bottom: 0
+}
+
+.form-material .floating-label {
+	position: absolute;
+	left: 0;
+	font-size: 1rem;
+	color: #76838f;
+	pointer-events: none;
+	-webkit-transition: .3s ease all;
+	transition: .3s ease all
+}
+
+.form-material .floating-label.floating-label-static {
+	position: relative;
+	top: auto;
+	display: block
+}
+
+.form-material [class*=col-]>.floating-label {
+	left: .7145rem
+}
+
+.form-material .form-control~.floating-label {
+	top: .57143rem;
+	font-size: 1rem
+}
+
+.form-material .form-control.focus~.floating-label,
+.form-material .form-control:focus~.floating-label,
+.form-material .form-control:not(.empty)~.floating-label {
+	top: -.8rem;
+	font-size: .8rem;
+	font-weight: 700
+}
+
+.form-material .form-control:-webkit-autofill~.floating-label {
+	top: -.8rem;
+	font-size: .8rem;
+	font-weight: 700
+}
+
+.form-material .form-control-sm~.floating-label,
+.form-material .input-group-sm>.form-control~.floating-label,
+.form-material .input-group-sm>.input-group-append>.btn~.floating-label,
+.form-material .input-group-sm>.input-group-append>.input-group-text~.floating-label,
+.form-material .input-group-sm>.input-group-append~.floating-label,
+.form-material .input-group-sm>.input-group-prepend>.btn~.floating-label,
+.form-material .input-group-sm>.input-group-prepend>.input-group-text~.floating-label,
+.form-material .input-group-sm>.input-group-prepend~.floating-label {
+	top: .429rem;
+	font-size: .858rem
+}
+
+.form-material .form-control-sm.focus~.floating-label,
+.form-material .form-control-sm:focus~.floating-label,
+.form-material .form-control-sm:not(.empty)~.floating-label,
+.form-material .input-group-sm>.focus.form-control~.floating-label,
+.form-material .input-group-sm>.focus.input-group-append~.floating-label,
+.form-material .input-group-sm>.focus.input-group-prepend~.floating-label,
+.form-material .input-group-sm>.form-control:focus~.floating-label,
+.form-material .input-group-sm>.form-control:not(.empty)~.floating-label,
+.form-material .input-group-sm>.input-group-append:focus~.floating-label,
+.form-material .input-group-sm>.input-group-append:not(.empty)~.floating-label,
+.form-material .input-group-sm>.input-group-append>.btn:focus~.floating-label,
+.form-material .input-group-sm>.input-group-append>.btn:not(.empty)~.floating-label,
+.form-material .input-group-sm>.input-group-append>.focus.btn~.floating-label,
+.form-material .input-group-sm>.input-group-append>.focus.input-group-text~.floating-label,
+.form-material .input-group-sm>.input-group-append>.input-group-text:focus~.floating-label,
+.form-material .input-group-sm>.input-group-append>.input-group-text:not(.empty)~.floating-label,
+.form-material .input-group-sm>.input-group-prepend:focus~.floating-label,
+.form-material .input-group-sm>.input-group-prepend:not(.empty)~.floating-label,
+.form-material .input-group-sm>.input-group-prepend>.btn:focus~.floating-label,
+.form-material .input-group-sm>.input-group-prepend>.btn:not(.empty)~.floating-label,
+.form-material .input-group-sm>.input-group-prepend>.focus.btn~.floating-label,
+.form-material .input-group-sm>.input-group-prepend>.focus.input-group-text~.floating-label,
+.form-material .input-group-sm>.input-group-prepend>.input-group-text:focus~.floating-label,
+.form-material .input-group-sm>.input-group-prepend>.input-group-text:not(.empty)~.floating-label {
+	top: -.6864rem;
+	font-size: .6864rem
+}
+
+.form-material .form-control-sm:-webkit-autofill~.floating-label,.form-material .input-group-sm>.form-control:-webkit-autofill~.floating-label,.form-material .input-group-sm>.input-group-append:-webkit-autofill~.floating-label,.form-material .input-group-sm>.input-group-append>.btn:-webkit-autofill~.floating-label,.form-material .input-group-sm>.input-group-append>.input-group-text:-webkit-autofill~.floating-label,.form-material .input-group-sm>.input-group-prepend:-webkit-autofill~.floating-label,.form-material .input-group-sm>.input-group-prepend>.btn:-webkit-autofill~.floating-label,.form-material .input-group-sm>.input-group-prepend>.input-group-text:-webkit-autofill~.floating-label {
+	top: -.6864rem;
+	font-size: .6864rem
+}
+
+.form-material .form-control-lg~.floating-label,.form-material .input-group-lg>.form-control~.floating-label,.form-material .input-group-lg>.input-group-append>.btn~.floating-label,.form-material .input-group-lg>.input-group-append>.input-group-text~.floating-label,.form-material .input-group-lg>.input-group-append~.floating-label,.form-material .input-group-lg>.input-group-prepend>.btn~.floating-label,.form-material .input-group-lg>.input-group-prepend>.input-group-text~.floating-label,.form-material .input-group-lg>.input-group-prepend~.floating-label {
+	top: .42867rem;
+	font-size: 1.286rem
+}
+
+.form-material .form-control-lg.focus~.floating-label,.form-material .form-control-lg:focus~.floating-label,.form-material .form-control-lg:not(.empty)~.floating-label,.form-material .input-group-lg>.focus.form-control~.floating-label,.form-material .input-group-lg>.focus.input-group-append~.floating-label,.form-material .input-group-lg>.focus.input-group-prepend~.floating-label,.form-material .input-group-lg>.form-control:focus~.floating-label,.form-material .input-group-lg>.form-control:not(.empty)~.floating-label,.form-material .input-group-lg>.input-group-append:focus~.floating-label,.form-material .input-group-lg>.input-group-append:not(.empty)~.floating-label,.form-material .input-group-lg>.input-group-append>.btn:focus~.floating-label,.form-material .input-group-lg>.input-group-append>.btn:not(.empty)~.floating-label,.form-material .input-group-lg>.input-group-append>.focus.btn~.floating-label,.form-material .input-group-lg>.input-group-append>.focus.input-group-text~.floating-label,.form-material .input-group-lg>.input-group-append>.input-group-text:focus~.floating-label,.form-material .input-group-lg>.input-group-append>.input-group-text:not(.empty)~.floating-label,.form-material .input-group-lg>.input-group-prepend:focus~.floating-label,.form-material .input-group-lg>.input-group-prepend:not(.empty)~.floating-label,.form-material .input-group-lg>.input-group-prepend>.btn:focus~.floating-label,.form-material .input-group-lg>.input-group-prepend>.btn:not(.empty)~.floating-label,.form-material .input-group-lg>.input-group-prepend>.focus.btn~.floating-label,.form-material .input-group-lg>.input-group-prepend>.focus.input-group-text~.floating-label,.form-material .input-group-lg>.input-group-prepend>.input-group-text:focus~.floating-label,.form-material .input-group-lg>.input-group-prepend>.input-group-text:not(.empty)~.floating-label {
+	top: -1.0288rem;
+	font-size: 1.0288rem
+}
+
+.form-material .form-control-lg:-webkit-autofill~.floating-label,.form-material .input-group-lg>.form-control:-webkit-autofill~.floating-label,.form-material .input-group-lg>.input-group-append:-webkit-autofill~.floating-label,.form-material .input-group-lg>.input-group-append>.btn:-webkit-autofill~.floating-label,.form-material .input-group-lg>.input-group-append>.input-group-text:-webkit-autofill~.floating-label,.form-material .input-group-lg>.input-group-prepend:-webkit-autofill~.floating-label,.form-material .input-group-lg>.input-group-prepend>.btn:-webkit-autofill~.floating-label,.form-material .input-group-lg>.input-group-prepend>.input-group-text:-webkit-autofill~.floating-label {
+	top: -1.0288rem;
+	font-size: 1.0288rem
+}
+
+.form-material .form-control.focus~.floating-label,.form-material .form-control:focus~.floating-label {
+	color: #997b71
+}
+
+.form-material textarea.form-control {
+	padding-bottom: .286rem;
+	resize: none
+}
+
+.form-material.floating textarea.form-control {
+	padding-top: .286rem
+}
+
+.form-material select.form-control {
+	border: 0;
+	border-radius: 0
+}
+
+.form-material:not(.floating) .col-form-label+select[multiple] {
+	margin-top: 5px
+}
+
+.form-material .hint {
+	position: absolute;
+	display: none;
+	font-size: 80%
+}
+
+.form-material .form-control.focus~.hint,
+.form-material .form-control:focus~.hint {
+	display: block
+}
+
+
+.form-material .form-control.focus:invalid~.floating-label,.form-material .form-control:not(.empty):invalid~.floating-label {
+	color: #ff4c52
+}
+
+.form-material .form-control:invalid {
+	background-image: -webkit-linear-gradient(#ff4c52,#ff4c52),-webkit-linear-gradient(#e4eaec,#e4eaec);
+	background-image: linear-gradient(#ff4c52,#ff4c52),linear-gradient(#e4eaec,#e4eaec)
+}
+
+.form-material.has-warning .form-control.focus,.form-material.has-warning .form-control:focus,.form-material.has-warning .form-control:not(.empty) {
+	background-image: -webkit-linear-gradient(#eb6709,#eb6709),-webkit-linear-gradient(#e4eaec,#e4eaec);
+	background-image: linear-gradient(#eb6709,#eb6709),linear-gradient(#e4eaec,#e4eaec)
+}
+
+
+.form-material.has-warning .form-control:-webkit-autofill {
+	background-image: -webkit-linear-gradient(#eb6709,#eb6709),-webkit-linear-gradient(#e4eaec,#e4eaec);
+	background-image: linear-gradient(#eb6709,#eb6709),linear-gradient(#e4eaec,#e4eaec)
+}
+
+
+.form-material.has-warning .form-control:not(.empty) {
+	background-size: 100% 2px,100% 1px
+}
+
+.form-material.has-warning .col-form-label,.form-material.has-warning .form-control.focus~.floating-label,.form-material.has-warning .form-control:focus~.floating-label,.form-material.has-warning .form-control:not(.empty)~.floating-label {
+	color: #eb6709
+}
+
+.form-material.has-warning .form-control:-webkit-autofill~.floating-label {
+	color: #eb6709
+}
+
+.form-material.has-danger .form-control.focus,.form-material.has-danger .form-control:focus,.form-material.has-danger .form-control:not(.empty) {
+	background-image: -webkit-linear-gradient(#ff4c52,#ff4c52),-webkit-linear-gradient(#e4eaec,#e4eaec);
+	background-image: linear-gradient(#ff4c52,#ff4c52),linear-gradient(#e4eaec,#e4eaec)
+}
+
+
+.form-material.has-danger .form-control:-webkit-autofill {
+	background-image: -webkit-linear-gradient(#ff4c52,#ff4c52),-webkit-linear-gradient(#e4eaec,#e4eaec);
+	background-image: linear-gradient(#ff4c52,#ff4c52),linear-gradient(#e4eaec,#e4eaec)
+}
+
+
+.form-material.has-danger .form-control:not(.empty) {
+	background-size: 100% 2px,100% 1px
+}
+
+.form-material.has-danger .col-form-label,.form-material.has-danger .form-control.focus~.floating-label,.form-material.has-danger .form-control:focus~.floating-label,.form-material.has-danger .form-control:not(.empty)~.floating-label {
+	color: #ff4c52
+}
+
+.form-material.has-danger .form-control:-webkit-autofill~.floating-label {
+	color: #ff4c52
+}
+
+.form-material.has-success .form-control.focus,.form-material.has-success .form-control:focus,.form-material.has-success .form-control:not(.empty) {
+	background-image: -webkit-linear-gradient(#11c26d,#11c26d),-webkit-linear-gradient(#e4eaec,#e4eaec);
+	background-image: linear-gradient(#11c26d,#11c26d),linear-gradient(#e4eaec,#e4eaec)
+}
+
+
+.form-material.has-success .form-control:-webkit-autofill {
+	background-image: -webkit-linear-gradient(#11c26d,#11c26d),-webkit-linear-gradient(#e4eaec,#e4eaec);
+	background-image: linear-gradient(#11c26d,#11c26d),linear-gradient(#e4eaec,#e4eaec)
+}
+
+.form-material.has-success .form-control:not(.empty) {
+	background-size: 100% 2px,100% 1px
+}
+
+.form-material.has-success .col-form-label,.form-material.has-success .form-control.focus~.floating-label,.form-material.has-success .form-control:focus~.floating-label,.form-material.has-success .form-control:not(.empty)~.floating-label {
+	color: #11c26d
+}
+
+.form-material.has-success .form-control:-webkit-autofill~.floating-label {
+	color: #11c26d
+}
+
+.form-material.has-info .form-control.focus,.form-material.has-info .form-control:focus,.form-material.has-info .form-control:not(.empty) {
+	background-image: -webkit-linear-gradient(#0bb2d4,#0bb2d4),-webkit-linear-gradient(#e4eaec,#e4eaec);
+	background-image: linear-gradient(#0bb2d4,#0bb2d4),linear-gradient(#e4eaec,#e4eaec)
+}
+
+
+.form-material.has-info .form-control:-webkit-autofill {
+	background-image: -webkit-linear-gradient(#0bb2d4,#0bb2d4),-webkit-linear-gradient(#e4eaec,#e4eaec);
+	background-image: linear-gradient(#0bb2d4,#0bb2d4),linear-gradient(#e4eaec,#e4eaec)
+}
+
+
+.form-material.has-info .form-control:not(.empty) {
+	background-size: 100% 2px,100% 1px
+}
+
+.form-material.has-info .col-form-label,.form-material.has-info .form-control.focus~.floating-label,.form-material.has-info .form-control:focus~.floating-label,.form-material.has-info .form-control:not(.empty)~.floating-label {
+	color: #0bb2d4
+}
+
+.form-material.has-info .form-control:-webkit-autofill~.floating-label {
+	color: #0bb2d4
+}
+
+.form-material .input-group .form-control-wrap {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	margin-right: 5px;
+	margin-left: 5px
+}
+
+.form-material .input-group .form-control-wrap .form-control {
+	float: none;
+	width: 100%
+}
+
+.form-material .input-group .input-group-text {
+	background: 0 0;
+	border: 0;
+	padding: 5px 5px 0 0
+}
+
+.form-material .input-group .input-group-append .btn {
+	margin: 0;
+	border-radius: 0;
+	border: 0
+}
+
+.form-material input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	opacity: 0
+}
+
+
+.no-cssgradients .form-material .form-control {
+	border-bottom: 2px solid #e4eaec
+}
+
+.no-cssgradients .form-material .form-control.focus,
+.no-cssgradients .form-material .form-control:focus {
+	background: 0 0;
+	border-bottom: 2px solid #997b71
+}
+.no-cssgradients .form-material.has-warning .form-control.focus,
+.no-cssgradients .form-material.has-warning .form-control:focus,
+.no-cssgradients .form-material.has-warning .form-control:not(.empty) {
+	background: 0 0;
+	border-bottom: 2px solid #eb6709
+}
+.no-cssgradients .form-material.has-warning .form-control:-webkit-autofill {
+	background: 0 0;
+	border-bottom: 2px solid #eb6709
+}
+.no-cssgradients .form-material.has-danger .form-control.focus,
+.no-cssgradients .form-material.has-danger .form-control:focus,
+.no-cssgradients .form-material.has-danger .form-control:not(.empty) {
+	background: 0 0;
+	border-bottom: 2px solid #ff4c52
+}
+.no-cssgradients .form-material.has-danger .form-control:-webkit-autofill {
+	background: 0 0;
+	border-bottom: 2px solid #ff4c52
+}
+.no-cssgradients .form-material.has-success .form-control.focus,
+.no-cssgradients .form-material.has-success .form-control:focus,
+.no-cssgradients .form-material.has-success .form-control:not(.empty) {
+	background: 0 0;
+	border-bottom: 2px solid #11c26d
+}
+.no-cssgradients .form-material.has-success .form-control:-webkit-autofill {
+	background: 0 0;
+	border-bottom: 2px solid #11c26d
+}
+
+.no-cssgradients .form-material.has-info .form-control.focus,
+.no-cssgradients .form-material.has-info .form-control:focus,
+.no-cssgradients .form-material.has-info .form-control:not(.empty) {
+	background: 0 0;
+	border-bottom: 2px solid #0bb2d4
+}
+.no-cssgradients .form-material.has-info .form-control:-webkit-autofill {
+	background: 0 0;
+	border-bottom: 2px solid #0bb2d4
+}

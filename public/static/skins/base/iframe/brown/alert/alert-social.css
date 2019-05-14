@@ -1,0 +1,204 @@
+
+
+/*social*/
+
+.alert-social {
+	position: relative;
+	padding-left: 65px
+}
+
+.alert-social>.icon {
+	width: 1em;
+	text-align: center;
+	position: absolute;
+	top: 12px;
+	bottom: 0;
+	left: 20px;
+	font-size: 28px
+}
+
+.alert-qq {
+	color: #fff;
+	background-color: #12b7f5;
+	border-color: #12b7f5
+}
+
+.alert-qq .close,.alert-qq .close:focus,.alert-qq .close:hover {
+	color: #fff
+}
+
+.alert-qq .alert-link {
+	font-weight: 700;
+	color: #fff
+}
+
+.alert-weibo {
+	color: #fff;
+	background-color: #e6624b;
+	border-color: #e6624b
+}
+
+.alert-weibo .close,.alert-weibo .close:focus,.alert-weibo .close:hover {
+	color: #fff
+}
+
+.alert-weibo .alert-link {
+	font-weight: 700;
+	color: #fff
+}
+
+.alert-wechat {
+	color: #fff;
+	background-color: #51c332;
+	border-color: #51c332
+}
+
+.alert-wechat .close,.alert-wechat .close:focus,.alert-wechat .close:hover {
+	color: #fff
+}
+
+.alert-wechat .alert-link {
+	font-weight: 700;
+	color: #fff
+}
+
+.alert-facebook {
+	color: #fff;
+	background-color: #3b5998;
+	border-color: #3b5998
+}
+
+.alert-facebook .close,.alert-facebook .close:focus,.alert-facebook .close:hover {
+	color: #fff
+}
+
+.alert-facebook .alert-link {
+	font-weight: 700;
+	color: #fff
+}
+
+.alert-twitter {
+	color: #fff;
+	background-color: #55acee;
+	border-color: #55acee
+}
+
+.alert-twitter .close,.alert-twitter .close:focus,.alert-twitter .close:hover {
+	color: #fff
+}
+
+.alert-twitter .alert-link {
+	font-weight: 700;
+	color: #fff
+}
+
+.alert-google-plus {
+	color: #fff;
+	background-color: #dd4b39;
+	border-color: #dd4b39
+}
+
+.alert-google-plus .close,.alert-google-plus .close:focus,.alert-google-plus .close:hover {
+	color: #fff
+}
+
+.alert-google-plus .alert-link {
+	font-weight: 700;
+	color: #fff
+}
+
+.alert-linkedin {
+	color: #fff;
+	background-color: #0976b4;
+	border-color: #0976b4
+}
+
+.alert-linkedin .close,.alert-linkedin .close:focus,.alert-linkedin .close:hover {
+	color: #fff
+}
+
+.alert-linkedin .alert-link {
+	font-weight: 700;
+	color: #fff
+}
+
+.alert-flickr {
+	color: #fff;
+	background-color: #ff0084;
+	border-color: #ff0084
+}
+
+.alert-flickr .close,.alert-flickr .close:focus,.alert-flickr .close:hover {
+	color: #fff
+}
+
+.alert-flickr .alert-link {
+	font-weight: 700;
+	color: #fff
+}
+
+.alert-tumblr {
+	color: #fff;
+	background-color: #35465c;
+	border-color: #35465c
+}
+
+.alert-tumblr .close,.alert-tumblr .close:focus,.alert-tumblr .close:hover {
+	color: #fff
+}
+
+.alert-tumblr .alert-link {
+	font-weight: 700;
+	color: #fff
+}
+
+.alert-github {
+	color: #fff;
+	background-color: #4183c4;
+	border-color: #4183c4
+}
+
+.alert-github .close,
+.alert-github .close:focus,
+.alert-github .close:hover {
+	color: #fff
+}
+
+.alert-github .alert-link {
+	font-weight: 700;
+	color: #fff
+}
+
+.alert-dribbble {
+	color: #fff;
+	background-color: #c32361;
+	border-color: #c32361
+}
+
+.alert-dribbble .close,
+.alert-dribbble .close:focus,
+.alert-dribbble .close:hover {
+	color: #fff
+}
+
+.alert-dribbble .alert-link {
+	font-weight: 700;
+	color: #fff
+}
+
+.alert-youtube {
+	color: #fff;
+	background-color: #b31217;
+	border-color: #b31217
+}
+
+.alert-youtube .close,
+.alert-youtube .close:focus,
+.alert-youtube .close:hover {
+	color: #fff
+}
+
+.alert-youtube .alert-link {
+	font-weight: 700;
+	color: #fff
+}

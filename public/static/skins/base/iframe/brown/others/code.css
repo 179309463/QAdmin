@@ -1,0 +1,28 @@
+code {
+	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	font-size: 1em;
+	font-size: 90%;
+	color: #716b6e;
+	word-break: break-word;
+	text-rendering: auto;
+	-webkit-font-smoothing: initial;
+	padding: .1rem .3rem;
+	border: 1px solid #cfb8b0;
+	background-color: rgba(245,226,218,.1);
+	border-radius: .215rem
+}
+
+a>code {
+	color: inherit;
+	padding: 0;
+	background-color: inherit
+}
+
+pre code {
+	color: inherit;
+	font-size: inherit;
+	word-break: normal;
+	border-radius: 0;
+	padding: 0;
+	background-color: transparent
+}

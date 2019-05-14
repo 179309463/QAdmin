@@ -1,0 +1,36 @@
+.nav-quick {
+	padding: 0;
+	margin-right: 0;
+	margin-bottom: 22px;
+	margin-left: 0;
+	background-color: #fff;
+	border-radius: .215rem;
+	box-shadow: 0 1px 1px rgba(0,0,0,.05)
+}
+
+.nav-quick .nav-item {
+	position: relative;
+	display: block;
+	padding: 0;
+	text-align: center;
+	list-style: none
+}
+
+.nav-quick .nav-link {
+	padding: 1.143rem 0;
+	color: #76838f
+}
+
+.nav-quick .nav-link .icon {
+	display: block;
+	margin-bottom: .2rem;
+	font-size: 2.286rem
+}
+
+.nav-quick .badge,
+.nav-quick .badge-pill {
+	position: absolute;
+	top: 0;
+	right: 0
+}
+

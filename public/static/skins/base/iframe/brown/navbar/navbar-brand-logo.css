@@ -1,0 +1,9 @@
+.navbar-brand-logo {
+	height: 2.286rem;
+    margin-top: -.357rem;
+    display: inline-block;
+}
+
+.navbar-brand>img.navbar-brand-logo {
+	display: inline-block
+}

@@ -1,0 +1,91 @@
+
+.input-search-close {
+	color: #000;
+	text-shadow: none;
+	opacity: .2
+}
+
+.input-search-close.icon {
+	font-size: inherit;
+	line-height: inherit
+}
+
+.input-search-close:focus,.input-search-close:hover {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: .5
+}
+
+button.input-search-close {
+	padding: 0;
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	-webkit-appearance: none
+}
+
+.input-search {
+	position: relative
+}
+
+.input-search .form-control {
+	border-radius: 200px
+}
+
+.input-search .input-search-close,.input-search .input-search-icon {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	width: 2.287rem;
+	outline: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+.input-search .input-search-close {
+	right: 8px
+}
+
+.input-search .input-search-icon+.form-control {
+	padding-left: 2.716rem
+}
+
+.input-search .input-search-icon {
+	left: 8px;
+	font-size: 16px;
+	color: #a3afb7;
+	text-align: center;
+	pointer-events: none
+}
+
+.input-search-btn+.form-control {
+	padding-right: 50px
+}
+
+.input-search-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	padding: 0 10px;
+	background: 0 0;
+	border: none;
+	border-radius: 0 200px 200px 0
+}
+
+.input-search-btn .icon {
+	margin: 0 3px
+}
+
+.input-search-dark .input-search-icon {
+	color: #76838f
+}
+
+.input-search-dark .form-control {
+	background: #f3f7f9
+}
+
+.input-search-dark .form-control:focus {
+	background-color: #fff
+}

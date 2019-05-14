@@ -1,0 +1,35 @@
+
+
+.form-group {
+	margin-bottom: 1.429rem
+}
+
+.form-group .col-form-label {
+	padding-top: .286rem;
+	padding-bottom: .286rem
+}
+
+.form-group .col-form-label-lg {
+	padding-top: .429rem;
+	padding-bottom: .429rem;
+	font-size: 1.286rem
+}
+
+.form-group .col-form-label-sm {
+	padding-top: .215rem;
+	padding-bottom: .215rem;
+	font-size: .858rem
+}
+.form-group.has-feedback.no-label .form-control-feedback {
+	top: 0
+}
+
+.form-group.has-feedback.left-feedback .form-control-feedback {
+	right: auto;
+	left: 0
+}
+
+.form-group.has-feedback.left-feedback .form-control {
+	padding-right: 13px;
+	padding-left: 50px
+}

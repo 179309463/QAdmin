@@ -1,0 +1,44 @@
+.jumbotron {
+	margin-bottom: 1.429rem;
+	background-color: #e4eaec;
+	padding: 0;
+	border-radius: .215rem	
+}
+
+.jumbotron-fluid {
+	padding-right: 0;
+	padding-left: 0;
+	border-radius: 0
+}
+.jumbotron-contents {
+	padding: 1.429rem
+}
+.jumbotron .carousel-inner>.carousel-item>a>img,
+.jumbotron .carousel-inner>.carousel-item>img {
+	width: 100%
+}
+.jumbotron .carousel,
+.jumbotron .carousel-inner,
+.jumbotron .carousel-inner>.carousel-item.active img {
+	border-top-left-radius: .215rem;
+	border-top-right-radius: .215rem
+}
+.jumbotron>.jumbotron-photo img {
+	width: 100%;
+	border-top-left-radius: .215rem;
+	border-top-right-radius: .215rem
+}
+
+@media (min-width:480px) {
+	.jumbotron {
+		padding: 2.858rem 1.429rem
+	}
+}
+
+@media (min-width:768px) {
+	.container .jumbotron,
+	.jumbotron {
+		padding: 0
+	}
+}
+

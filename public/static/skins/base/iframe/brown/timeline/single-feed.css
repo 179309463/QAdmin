@@ -1,0 +1,11 @@
+.timeline-single.timeline-feed {
+	margin-left: 15px
+}
+
+.timeline-single.timeline-feed .timeline-dot {
+	margin-left: -15px
+}
+
+.timeline-single.timeline-feed .timeline-item {
+	padding-left: 30px
+}

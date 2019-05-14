@@ -1,0 +1,27 @@
+
+
+
+.panel-toolbar {
+	background-color: transparent;
+	padding: 5px 15px;
+	margin: 0;
+	border-top: 1px solid #e4eaec;
+	border-bottom: 1px solid #e4eaec
+}
+
+
+.panel-toolbar .btn {
+	padding: 5px 10px;
+	color: #a3afb7
+}
+
+.panel-toolbar .btn.icon {
+	width: 1em;
+	text-align: center
+}
+
+.panel-toolbar .btn.active,
+.panel-toolbar .btn:active,
+.panel-toolbar .btn:hover {
+	color: #76838f
+}
