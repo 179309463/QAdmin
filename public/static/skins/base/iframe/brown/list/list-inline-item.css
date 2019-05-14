@@ -1,7 +1,0 @@
-.list-inline-item {
-	display: inline-block
-}
-
-.list-inline-item:not(:last-child) {
-	margin-right: .5rem
-}
