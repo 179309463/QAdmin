@@ -1,0 +1,70 @@
+.breadcrumb {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: .75rem 1rem;
+	list-style: none;
+	border-radius: .25rem;
+	margin-bottom: 1rem;
+	background-color: transparent
+}
+.breadcrumb .is-hidden {
+	display: none
+}
+
+.breadcrumb-item.active {
+	color: #76838f
+}
+.breadcrumb-item+.breadcrumb-item {
+	padding-left: .5rem
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+	display: inline-block;
+	padding-right: .5rem;
+	color: #ccd5db;
+	content: "/";
+	padding: 0 5px
+}
+.breadcrumb-item+.breadcrumb-item:hover::before {
+	text-decoration: none
+}
+.breadcrumb-arrow>.breadcrumb-item+.breadcrumb-item:before {
+	content: "» "
+}
+
+.breadcrumb-item .icon {
+	text-decoration: none
+}
+
+.breadcrumb-item .icon:before {
+	margin-right: 10px
+}
+
+
+
+
+
+
+
+.breadcrumb-ellipsis {
+	display: inline-block
+}
+.breadcrumb.breadcrumb-right>li.breadcrumb-ellipsis.is-hidden+li:before {
+	display: none
+}
+.breadcrumb.breadcrumb-left .breadcrumb-ellipsis {
+	float: left
+}
+
+.breadcrumb-dropdown {
+	display: inline-block
+}
+.breadcrumb.breadcrumb-left .breadcrumb-dropdown {
+	float: left
+}
+

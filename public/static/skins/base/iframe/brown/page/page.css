@@ -1,0 +1,32 @@
+.page {
+	position: relative;
+	min-height: 100vh;
+	overflow: visible;
+	background: #f1f4f5
+}
+
+.page.page-full {
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto
+}
+
+@media (max-width:767.98px) {
+	body.site-menubar-open .page {
+		height: 100%;
+		overflow: hidden;
+		pointer-events: none
+	}
+
+	.site-menubar-open .page {
+		-webkit-transform: translate3d(240px,0,0);
+		transform: translate3d(240px,0,0)
+    }
+    
+	.site-menubar-changing .page {
+		-webkit-transition: -webkit-transform .25s;
+		transition: -webkit-transform .25s;
+		transition: transform .25s;
+		transition: transform .25s,-webkit-transform .25s
+	}
+}

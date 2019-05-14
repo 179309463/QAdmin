@@ -1,0 +1,33 @@
+
+.navbar-header::after {
+	content: ""
+}
+
+.navbar-header::after {
+	display: block;
+	clear: both
+}
+.container-fluid .navbar-header {
+	margin-right: -.7145rem;
+	margin-left: -.7145rem
+}
+@media (min-width:768px) {
+	.navbar-header {
+		float: left
+	}
+	.container-fluid .navbar-header {
+		margin-right: 0;
+		margin-left: 0
+	}
+}
+@media (max-width:767.98px) {
+
+  .navbar>.container-fluid .navbar-header,
+  .navbar>.containers .navbar-header {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto
+	}
+
+}

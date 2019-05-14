@@ -1,0 +1,21 @@
+.nav-tabs.nav-tabs-bottom {
+	border-top: 1px solid #e4eaec;
+	border-bottom: none
+}
+
+.nav-tabs.nav-tabs-bottom .nav-link {
+	border-radius: 0 0 .286rem .286rem
+}
+
+.nav-tabs.nav-tabs-bottom .nav-link:focus,
+.nav-tabs.nav-tabs-bottom .nav-link:hover {
+	border-top-color: #e4eaec;
+	border-bottom-color: transparent
+}
+
+.nav-tabs.nav-tabs-bottom .nav-item {
+	margin-top: -1px;
+	margin-bottom: 0
+}
+
+

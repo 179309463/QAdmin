@@ -1,0 +1,11 @@
+
+.progress-skill {
+	position: relative
+}
+
+.progress-skill .progress-bar>span {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	color: #526069
+}

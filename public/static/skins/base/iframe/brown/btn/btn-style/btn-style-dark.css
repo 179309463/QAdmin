@@ -1,0 +1,54 @@
+
+.btn-dark.disabled,.btn-dark:disabled {
+	color: #fff;
+	background-color: #343a40;
+	border-color: #343a40
+}
+
+.btn-dark:not(:disabled):not(.disabled).active,.btn-dark:not(:disabled):not(.disabled):active,.show>.btn-dark.dropdown-toggle {
+	color: #fff;
+	background-color: #1d2124;
+	border-color: #171a1d
+}
+
+.btn-dark:not(:disabled):not(.disabled).active:focus,.btn-dark:not(:disabled):not(.disabled):active:focus,.show>.btn-dark.dropdown-toggle:focus {
+	box-shadow: inset 0 3px 5px rgba(0,0,0,.125),0 0 0 .143rem rgba(52,58,64,.5)
+}
+
+
+
+
+
+.btn-dark {
+	color: #fff;
+	background-color: #526069;
+	border-color: #526069;
+	box-shadow: none
+}
+
+
+
+.btn-dark.focus,.btn-dark.hover,.btn-dark:focus,.btn-dark:hover {
+	color: #fff;
+	background-color: #76838f;
+	border-color: #76838f;
+	box-shadow: none
+}
+
+.btn-dark:not([disabled]):not(.disabled).active,.btn-dark:not([disabled]):not(.disabled):active,.open>.btn-dark.dropdown-toggle,.show>.btn-dark.dropdown-toggle {
+	background-color: #37474f;
+	border-color: #37474f;
+	box-shadow: none
+}
+
+.btn-dark:not([disabled]):not(.disabled).active.focus,.btn-dark:not([disabled]):not(.disabled).active.hover,.btn-dark:not([disabled]):not(.disabled).active:focus,.btn-dark:not([disabled]):not(.disabled).active:hover,.btn-dark:not([disabled]):not(.disabled):active.focus,.btn-dark:not([disabled]):not(.disabled):active.hover,.btn-dark:not([disabled]):not(.disabled):active:focus,.btn-dark:not([disabled]):not(.disabled):active:hover,.open>.btn-dark.dropdown-toggle.focus,.open>.btn-dark.dropdown-toggle.hover,.open>.btn-dark.dropdown-toggle:focus,.open>.btn-dark.dropdown-toggle:hover,.show>.btn-dark.dropdown-toggle.focus,.show>.btn-dark.dropdown-toggle.hover,.show>.btn-dark.dropdown-toggle:focus,.show>.btn-dark.dropdown-toggle:hover {
+	background-color: #37474f;
+	border-color: #37474f
+}
+
+.btn-dark.disabled,.btn-dark.disabled.active,.btn-dark.disabled.focus,.btn-dark.disabled.hover,.btn-dark.disabled:active,.btn-dark.disabled:focus,.btn-dark.disabled:hover,.btn-dark[disabled],.btn-dark[disabled].active,.btn-dark[disabled].focus,.btn-dark[disabled].hover,.btn-dark[disabled]:active,.btn-dark[disabled]:focus,.btn-dark[disabled]:hover,fieldset[disabled] .btn-dark,fieldset[disabled] .btn-dark.active,fieldset[disabled] .btn-dark.focus,fieldset[disabled] .btn-dark.hover,fieldset[disabled] .btn-dark:active,fieldset[disabled] .btn-dark:focus,fieldset[disabled] .btn-dark:hover {
+	color: #fff;
+	background-color: #a3afb7;
+	border-color: #a3afb7
+}
+

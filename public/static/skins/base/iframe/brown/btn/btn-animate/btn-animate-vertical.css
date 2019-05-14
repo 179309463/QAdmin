@@ -1,0 +1,37 @@
+
+.btn-animate-vertical span {
+	-webkit-transition: all .2s ease-out 0s;
+	transition: all .2s ease-out 0s
+}
+
+.btn-animate-vertical span>.icon {
+	position: absolute;
+	top: -2px;
+	left: 50%;
+	display: block;
+	font-size: 1.715rem;
+	-webkit-transform: translate(-50%,-100%);
+	transform: translate(-50%,-100%)
+}
+
+.btn-animate-vertical:hover span {
+	-webkit-transform: translate(0,150%);
+	transform: translate(0,150%)
+}
+
+.btn-animate-vertical.btn-xs span>.icon,
+.btn-group-xs>.btn-animate-vertical.btn span>.icon {
+	top: -5px;
+	font-size: 1.286rem
+}
+
+.btn-animate-vertical.btn-sm span>.icon,
+.btn-group-sm>.btn-animate-vertical.btn span>.icon {
+	top: -3px;
+	font-size: 1.5rem
+}
+
+.btn-animate-vertical.btn-lg span>.icon,
+.btn-group-lg>.btn-animate-vertical.btn span>.icon {
+	font-size: 2.643rem
+}

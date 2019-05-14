@@ -1,0 +1,124 @@
+
+.list-group-hover .list-group-item:hover {
+	background-color: #f3f7f9
+}
+
+.list-group-hover .list-group-item-success,
+.list-group-hover a.list-group-item-success,
+.list-group-hover button.list-group-item-success {
+	color: #fff
+}
+
+.list-group-hover .list-group-item-success:focus,
+.list-group-hover .list-group-item-success:hover,
+.list-group-hover a.list-group-item-success:focus,
+.list-group-hover a.list-group-item-success:hover,
+.list-group-hover button.list-group-item-success:focus,
+.list-group-hover button.list-group-item-success:hover {
+	color: #fff;
+	background-color: #0fab60
+}
+
+.list-group-hover .list-group-item-success.active,
+.list-group-hover a.list-group-item-success.active,
+.list-group-hover button.list-group-item-success.active {
+	color: #fff;
+	background-color: #fff;
+	border-color: #fff
+}
+
+.list-group-hover .list-group-item-info,
+.list-group-hover a.list-group-item-info,
+.list-group-hover button.list-group-item-info {
+	color: #fff
+}
+
+.list-group-hover .list-group-item-info:focus,
+.list-group-hover .list-group-item-info:hover,
+.list-group-hover a.list-group-item-info:focus,
+.list-group-hover a.list-group-item-info:hover,
+.list-group-hover button.list-group-item-info:focus,
+.list-group-hover button.list-group-item-info:hover {
+	color: #fff;
+	background-color: #0a9ebc
+}
+
+.list-group-hover .list-group-item-info.active,
+.list-group-hover a.list-group-item-info.active,
+.list-group-hover button.list-group-item-info.active {
+	color: #fff;
+	background-color: #fff;
+	border-color: #fff
+}
+
+.list-group-hover .list-group-item-warning,
+.list-group-hover a.list-group-item-warning,
+.list-group-hover button.list-group-item-warning {
+	color: #fff
+}
+
+.list-group-hover .list-group-item-warning:focus,
+.list-group-hover .list-group-item-warning:hover,
+.list-group-hover a.list-group-item-warning:focus,
+.list-group-hover a.list-group-item-warning:hover,
+.list-group-hover button.list-group-item-warning:focus,
+.list-group-hover button.list-group-item-warning:hover {
+	color: #fff;
+	background-color: #d25c08
+}
+
+.list-group-hover .list-group-item-warning.active,
+.list-group-hover a.list-group-item-warning.active,
+.list-group-hover button.list-group-item-warning.active {
+	color: #fff;
+	background-color: #fff;
+	border-color: #fff
+}
+
+.list-group-hover .list-group-item-danger,
+.list-group-hover a.list-group-item-danger,
+.list-group-hover button.list-group-item-danger {
+	color: #fff
+}
+
+.list-group-hover .list-group-item-danger:focus,
+.list-group-hover .list-group-item-danger:hover,
+.list-group-hover a.list-group-item-danger:focus,
+.list-group-hover a.list-group-item-danger:hover,
+.list-group-hover button.list-group-item-danger:focus,
+.list-group-hover button.list-group-item-danger:hover {
+	color: #fff;
+	background-color: #ff3339
+}
+
+.list-group-hover .list-group-item-danger.active,
+.list-group-hover a.list-group-item-danger.active,
+.list-group-hover button.list-group-item-danger.active {
+	color: #fff;
+	background-color: #fff;
+	border-color: #fff
+}
+
+.list-group-hover .list-group-item-dark,
+.list-group-hover a.list-group-item-dark,
+.list-group-hover button.list-group-item-dark {
+	color: #fff
+}
+
+.list-group-hover .list-group-item-dark:focus,
+.list-group-hover .list-group-item-dark:hover,
+.list-group-hover a.list-group-item-dark:focus,
+.list-group-hover a.list-group-item-dark:hover,
+.list-group-hover button.list-group-item-dark:focus,
+.list-group-hover button.list-group-item-dark:hover {
+	color: #fff;
+	background-color: #47535b
+}
+
+.list-group-hover .list-group-item-dark.active,
+.list-group-hover a.list-group-item-dark.active,
+.list-group-hover button.list-group-item-dark.active {
+	color: #fff;
+	background-color: #fff;
+	border-color: #fff
+}

@@ -1,0 +1,60 @@
+
+
+.card-img {
+	width: 100%;
+	border-radius: 0;
+}
+
+.card-img-top {
+	width: 100%;
+	border-top-left-radius: -webkit-calc(.215rem - 1px);
+	border-top-left-radius: calc(.215rem - 1px);
+	border-top-right-radius: -webkit-calc(.215rem - 1px);
+	border-top-right-radius: calc(.215rem - 1px)
+}
+
+.card-img-bottom {
+	width: 100%;
+	border-bottom-right-radius: -webkit-calc(.215rem - 1px);
+	border-bottom-right-radius: calc(.215rem - 1px);
+	border-bottom-left-radius: -webkit-calc(.215rem - 1px);
+	border-bottom-left-radius: calc(.215rem - 1px)
+}
+
+.card-img-left {
+	border-radius: -webkit-calc(.215rem - 1px) 0 0 -webkit-calc(.215rem - 1px);
+	border-radius: calc(.215rem - 1px) 0 0 calc(.215rem - 1px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40%;
+	height: 100%
+}
+
+.card-img-left~.card-block {
+	width: 60%;
+	margin-left: 40%
+}
+
+@media (max-width:767.98px) {
+	.card-img-left {
+		position: relative;
+		width: 100%;
+		height: 320px
+	}
+
+	.card-img-left~.card-block {
+		width: 100%;
+		margin-left: 0
+	}
+}
+
+
+.card-img-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1.429rem
+}

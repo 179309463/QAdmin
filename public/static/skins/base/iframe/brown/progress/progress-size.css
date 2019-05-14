@@ -1,0 +1,40 @@
+
+
+.progress-lg {
+	height: 22px
+}
+
+.progress-lg.progress-vertical {
+	width: 25px
+}
+
+.progress-lg .progress-bar {
+	line-height: 22px
+}
+
+.progress-sm {
+	height: 10px
+}
+
+.progress-sm.progress-vertical {
+	width: 10px
+}
+
+.progress-sm .progress-bar {
+	line-height: 10px
+}
+
+.progress-xs {
+	height: 4px;
+	border-radius: 1px
+}
+
+
+
+.progress-xs.progress-vertical {
+	width: 4px
+}
+
+.progress-xs .progress-bar {
+	line-height: 4px
+}

@@ -1,0 +1,6 @@
+
+.panel-content>.row,
+.panel-content>.row>[class*=col-] {
+	padding-right: 30px;
+	padding-left: 30px
+}

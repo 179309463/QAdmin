@@ -1,0 +1,182 @@
+
+.testimonial {
+	margin: 3px 3px 22px
+}
+
+.testimonial-ul {
+	padding: 0;
+	margin: 0;
+	list-style: none
+}
+
+.testimonial-item {
+	float: left;
+	padding: 0 15px 30px;
+	margin: 0
+}
+
+.testimonial-content {
+	position: relative;
+	padding: 15px 20px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	background-color: #f3f7f9;
+	border-radius: .215rem
+}
+
+.testimonial-content:before {
+	position: absolute;
+	bottom: -7px;
+	left: 33px;
+	display: block;
+	width: 14px;
+	height: 14px;
+	content: "";
+	background-color: #f3f7f9;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.testimonial-content>p:last-child {
+	margin-bottom: 0
+}
+
+.testimonial-image {
+	position: relative;
+	float: left;
+	margin-top: 5px;
+	margin-left: 20px
+}
+
+.testimonial-author {
+	display: block;
+	margin-left: 75px;
+	font-size: 18px
+}
+
+.testimonial-company {
+	display: block;
+	margin-left: 75px;
+	font-size: .858rem;
+	opacity: .8
+}
+
+.testimonial-control a {
+	color: #ccd5db
+}
+
+.testimonial-control a:hover {
+	color: #ab8c82;
+	text-decoration: none
+}
+
+.testimonial-reverse .testimonial-content:before {
+	right: 33px;
+	left: auto
+}
+
+.testimonial-reverse .testimonial-image {
+	float: right;
+	margin-right: 20px;
+	margin-left: 0
+}
+
+.testimonial-reverse .testimonial-author,
+.testimonial-reverse .testimonial-company {
+	margin-right: 75px;
+	margin-left: 0;
+	text-align: right
+}
+
+.testimonial-top .testimonial-item {
+	padding: 30px 15px 0
+}
+
+.testimonial-top .testimonial-content {
+	margin-top: 30px;
+	margin-bottom: 10px
+}
+
+.testimonial-top .testimonial-content:before {
+	top: -7px;
+	bottom: auto
+}
+
+.testimonial.carousel {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.testimonial.carousel .testimonial-item {
+	position: relative;
+	display: none;
+	width: 100%;
+	padding: 10px;
+	-webkit-transition: left .6s ease-in-out 0s;
+	transition: left .6s ease-in-out 0s
+}
+
+.testimonial.carousel .testimonial-item.active,
+.testimonial.carousel .testimonial-item.next,
+.testimonial.carousel .testimonial-item.prev {
+	display: block
+}
+
+.testimonial.carousel .testimonial-item.next,
+.testimonial.carousel .testimonial-item.prev {
+	position: absolute;
+	top: 0;
+	width: 100%
+}
+
+.testimonial.carousel .testimonial-item.next {
+	left: 100%
+}
+
+.testimonial.carousel .testimonial-item.prev {
+	left: -100%
+}
+
+.testimonial.carousel .testimonial-item.active,
+.testimonial.carousel .testimonial-item.next.left,
+.testimonial.carousel .testimonial-item.prev.right {
+	left: 0
+}
+
+.testimonial.carousel .testimonial-item.active.left {
+	left: -100%
+}
+
+.testimonial.carousel .testimonial-item.active.right {
+	left: 100%
+}
+
+.testimonial.carousel .testimonial-content {
+	padding: 10px
+}
+
+.testimonial.carousel .testimonial-control {
+	position: absolute;
+	right: 10px;
+	bottom: 20px
+}
+
+.testimonial.carousel .testimonial-control>* {
+	margin-left: 10px
+}
+
+.testimonial.carousel.testimonial-reverse .testimonial-control {
+	right: auto;
+	left: 10px
+}
+
+.testimonial.carousel.testimonial-reverse .testimonial-control>* {
+	margin-right: 10px;
+	margin-left: 0
+}
+
+.testimonial.carousel.testimonial-top .testimonial-control {
+	top: 20px;
+	bottom: auto
+}

@@ -1,0 +1,22 @@
+.alert-dark {
+	background-color: #d6d8d9;
+	border-color: #c6c8ca;
+	color: #1b1e21;
+}
+
+.alert-dark .close,
+.alert-dark .close:focus,
+.alert-dark .close:hover {
+	color: #1b1e21
+}
+.alert.dark .alert-link {
+	font-weight: 700;
+	color: #fff!important
+}
+.alert.dark .alert-left-border {
+	border: none;
+	border-left: 3px solid transparent
+}
+
+
+

@@ -1,0 +1,12 @@
+
+.alert-secondary {
+	color: #383d41;
+	background-color: #e2e3e5;
+	border-color: #d6d8db
+}
+
+.alert-secondary .close,
+.alert-secondary .close:focus,
+.alert-secondary .close:hover {
+	color: #383d41
+}

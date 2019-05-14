@@ -1,0 +1,84 @@
+.card {
+	border-radius: .215rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	position: relative;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: none;
+	box-shadow: none;
+	margin-bottom: 2.143rem;
+}
+
+.card>hr {
+	margin-right: 0;
+	margin-left: 0
+}
+
+.card .cover {
+	width: 100%;
+	padding: 0;
+	border-bottom: none
+}
+
+[class*=blocks-]>li>.card {
+	margin-bottom: 0
+}
+
+
+
+.card-bordered {
+	border: 1px solid #e4eaec
+}
+.card-transparent {
+	background-color: transparent
+}
+
+.card-shadow {
+	box-shadow: 0 1px 1px rgba(0,0,0,.05)
+}
+
+
+.card-body {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: 1.429rem
+}
+
+.card-title {
+	margin-bottom: .858rem;
+	margin-top: 0
+}
+
+.card-subtitle {
+	margin-bottom: 0;
+	margin-top: -.429rem
+}
+
+.card-link:hover {
+	text-decoration: none
+}
+
+.card-link+.card-link {
+	margin-left: 1.429rem
+}
+
+.card-divider:after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 2px;
+	margin: 15px auto;
+	background-color: #fff
+}

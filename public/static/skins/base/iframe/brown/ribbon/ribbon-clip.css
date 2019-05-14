@@ -1,0 +1,83 @@
+
+.ribbon-clip {
+	left: -14px
+}
+
+.ribbon-clip:before {
+	position: absolute;
+	top: 46px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-top-color: #37474f;
+    border-right-color: #37474f;
+    content: "";
+}
+
+.ribbon-clip .ribbon-inner {
+	padding-left: 23px;
+	border-radius: 0 5px 5px 0
+}
+
+.ribbon-clip.ribbon-reverse {
+	right: -14px;
+	left: auto
+}
+
+.ribbon-clip.ribbon-reverse:before {
+	right: 0;
+	left: auto;
+	border-right-color: transparent;
+	border-left-color: #37474f
+}
+
+.ribbon-clip.ribbon-reverse .ribbon-inner {
+	padding-right: 23px;
+	padding-left: 15px;
+	border-radius: 5px 0 0 5px
+}
+
+.ribbon-clip.ribbon-bottom {
+	top: auto;
+	bottom: -3px
+}
+
+.ribbon-clip.ribbon-bottom:before {
+	top: auto;
+	bottom: 46px;
+	border-top-color: transparent;
+	border-bottom-color: #37474f
+}
+
+.ribbon-clip.ribbon-bottom .ribbon-inner {
+	top: auto;
+	bottom: 16px
+}
+
+.ribbon-clip.ribbon-xs:before {
+	top: 38px
+}
+
+.ribbon-clip.ribbon-xs.ribbon-bottom:before {
+	top: auto;
+	bottom: 38px
+}
+
+.ribbon-clip.ribbon-sm:before {
+	top: 42px
+}
+
+.ribbon-clip.ribbon-sm.ribbon-bottom:before {
+	top: auto;
+	bottom: 42px
+}
+
+.ribbon-clip.ribbon-lg:before {
+	top: 54px
+}
+
+.ribbon-clip.ribbon-lg.ribbon-bottom:before {
+	top: auto;
+	bottom: 54px
+}

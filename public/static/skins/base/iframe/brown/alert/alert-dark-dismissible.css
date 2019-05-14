@@ -1,0 +1,5 @@
+.alert.dark.alert-dismissible.alert-alt .close,
+.alert.dark.alert-dismissible.alert-alt .close:focus,
+.alert.dark.alert-dismissible.alert-alt .close:hover {
+	color: #fff
+}

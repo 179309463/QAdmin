@@ -1,0 +1,20 @@
+
+.list-icons {
+	padding-left: 10px;
+	margin-left: 0;
+	list-style: none
+}
+
+.list-icons>li {
+	margin-top: 6px
+}
+
+.list-icons>li:first-child {
+	margin-top: 0
+}
+
+.list-icons>li i {
+	float: left;
+	width: 1em;
+	margin: 0 6px 0 0
+}

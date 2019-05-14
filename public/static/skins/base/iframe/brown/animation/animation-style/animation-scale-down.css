@@ -1,0 +1,34 @@
+.animation-scale-down {
+	-webkit-animation-name: fade-scale-18;
+	animation-name: fade-scale-18
+}
+
+
+
+@-webkit-keyframes fade-scale-18 {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(1.8);
+		transform: scale(1.8)
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+@keyframes fade-scale-18 {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(1.8);
+		transform: scale(1.8)
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}

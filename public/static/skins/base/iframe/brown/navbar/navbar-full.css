@@ -1,0 +1,9 @@
+
+.navbar-full {
+	z-index: 1200
+}
+@media (min-width:480px) {
+	.navbar-full{
+		border-radius: 0
+	}
+}

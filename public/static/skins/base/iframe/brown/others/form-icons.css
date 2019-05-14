@@ -1,0 +1,37 @@
+
+.form-icons .form-control-icon {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	z-index: 99;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+.form-icons .form-control-icon+.form-control {
+	padding-left: 30px;
+	border-top-left-radius: .215rem;
+	border-bottom-left-radius: .215rem
+}
+
+.form-icons .round-input-control .form-control {
+	border-radius: 200px
+}
+
+.form-icons .large-icon .form-control {
+	height: 3.2rem!important
+}
+
+.form-icons .small-icon .form-control {
+	height: 2.2rem!important
+}
+
+.form-icons .form-control-icon-right {
+	right: 10px;
+	left: auto
+}
+
+.form-icons .form-control-icon-right+.form-control {
+	padding-right: 30px;
+	padding-left: .858rem
+}

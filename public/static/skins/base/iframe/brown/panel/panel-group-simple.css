@@ -1,0 +1,24 @@
+
+.panel-group-simple .panel {
+	background: 0 0
+}
+
+.panel-group-simple .panel-title {
+	padding-bottom: 10px;
+	padding-left: 0
+}
+
+.panel-group-simple .panel-title:after,
+.panel-group-simple .panel-title:before {
+	right: 5px
+}
+
+.panel-group-simple .panel-collapse .panel-body {
+	padding-top: 10px;
+	padding-right: 0;
+	padding-left: 0
+}
+
+.panel-group-simple .panel+.panel {
+	margin-top: 0
+}

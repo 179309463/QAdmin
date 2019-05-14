@@ -1,0 +1,9 @@
+
+.page-content {
+	padding: 20px
+}
+
+.page-content>:not(script):last-child {
+	margin-bottom: 0!important
+}
+

@@ -1,0 +1,35 @@
+.btn-inverse {
+	color: #212529;
+	background-color: #fff;
+	border-color: #e4eaec;
+	box-shadow: none
+}
+
+
+
+
+.btn-inverse.focus,.btn-inverse.hover,.btn-inverse:focus,.btn-inverse:hover {
+	color: #76838f;
+	background-color: #fff;
+	border-color: #f3f7f9;
+	box-shadow: none
+}
+
+.btn-inverse:not([disabled]):not(.disabled).active,.btn-inverse:not([disabled]):not(.disabled):active,.open>.btn-inverse.dropdown-toggle,.show>.btn-inverse.dropdown-toggle {
+	background-color: #fff;
+	border-color: #ccd5db;
+	box-shadow: none
+}
+
+.btn-inverse:not([disabled]):not(.disabled).active.focus,.btn-inverse:not([disabled]):not(.disabled).active.hover,.btn-inverse:not([disabled]):not(.disabled).active:focus,.btn-inverse:not([disabled]):not(.disabled).active:hover,.btn-inverse:not([disabled]):not(.disabled):active.focus,.btn-inverse:not([disabled]):not(.disabled):active.hover,.btn-inverse:not([disabled]):not(.disabled):active:focus,.btn-inverse:not([disabled]):not(.disabled):active:hover,.open>.btn-inverse.dropdown-toggle.focus,.open>.btn-inverse.dropdown-toggle.hover,.open>.btn-inverse.dropdown-toggle:focus,.open>.btn-inverse.dropdown-toggle:hover,.show>.btn-inverse.dropdown-toggle.focus,.show>.btn-inverse.dropdown-toggle.hover,.show>.btn-inverse.dropdown-toggle:focus,.show>.btn-inverse.dropdown-toggle:hover {
+	background-color: #fff;
+	border-color: #ccd5db
+}
+
+.btn-inverse.disabled,.btn-inverse.disabled.active,.btn-inverse.disabled.focus,.btn-inverse.disabled.hover,.btn-inverse.disabled:active,.btn-inverse.disabled:focus,.btn-inverse.disabled:hover,.btn-inverse[disabled],.btn-inverse[disabled].active,.btn-inverse[disabled].focus,.btn-inverse[disabled].hover,.btn-inverse[disabled]:active,.btn-inverse[disabled]:focus,.btn-inverse[disabled]:hover,fieldset[disabled] .btn-inverse,fieldset[disabled] .btn-inverse.active,fieldset[disabled] .btn-inverse.focus,fieldset[disabled] .btn-inverse.hover,fieldset[disabled] .btn-inverse:active,fieldset[disabled] .btn-inverse:focus,fieldset[disabled] .btn-inverse:hover {
+	color: #ccd5db;
+	background-color: #fff;
+	border-color: #a3afb7
+}
+
+

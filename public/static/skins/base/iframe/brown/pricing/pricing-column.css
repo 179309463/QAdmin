@@ -1,0 +1,55 @@
+.pricing-table [class*=pricing-column] {
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+	background-color: #f3f7f9;
+	border: 1px solid #e4eaec;
+	border-right: none
+}
+
+.pricing-table [class*=pricing-column]:last-child {
+	border-right: 1px solid #e4eaec
+}
+
+.pricing-table [class*=pricing-column].featured {
+	position: relative;
+	margin-right: -1px;
+	background-color: #fff;
+	border-right: 1px solid #e4eaec
+}
+
+@media (min-width:768px) {
+	.pricing-table .pricing-column-three {
+		width: 33.33%
+	}
+
+	.pricing-table .pricing-column-three.featured {
+		top: -30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-bottom: -30px
+	}
+
+	.pricing-table .pricing-column-five,
+	.pricing-table .pricing-column-four {
+		width: 50%
+	}
+}
+
+@media (min-width:1200px) {
+	.pricing-table .pricing-column-four {
+		width: 25%
+	}
+
+	.pricing-table .pricing-column-five {
+		width: 20%
+	}
+
+	.pricing-table .pricing-column-five.featured,
+	.pricing-table .pricing-column-four.featured {
+		top: -30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-bottom: -30px
+	}
+}

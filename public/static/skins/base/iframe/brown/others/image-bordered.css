@@ -1,0 +1,25 @@
+
+.img-bordered {
+	padding: 3px;
+	border: 1px solid #e4eaec
+}
+
+.img-bordered-primary {
+	border-color: #997b71!important
+}
+
+.img-bordered-purple {
+	border-color: #9463f7!important
+}
+
+.img-bordered-red {
+	border-color: #ff4c52!important
+}
+
+.img-bordered-green {
+	border-color: #49de94!important
+}
+
+.img-bordered-orange {
+	border-color: #eb6709!important
+}

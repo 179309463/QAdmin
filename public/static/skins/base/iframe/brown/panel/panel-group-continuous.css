@@ -1,0 +1,16 @@
+.panel-group-continuous .panel {
+	border-radius: 0
+}
+
+.panel-group-continuous .panel:first-child {
+	border-radius: .143rem .143rem 0 0
+}
+
+.panel-group-continuous .panel:last-child {
+	border-radius: 0 0 .143rem .143rem
+}
+
+.panel-group-continuous .panel+.panel {
+	margin-top: 0;
+	border-top: 1px solid #e4eaec
+}

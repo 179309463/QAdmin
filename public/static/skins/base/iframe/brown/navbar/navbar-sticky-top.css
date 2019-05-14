@@ -1,0 +1,12 @@
+.navbar-sticky-top {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1030;
+	width: 100%
+}
+@media (min-width:480px) {
+	.navbar-sticky-top {
+		border-radius: 0
+	}
+}

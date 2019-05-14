@@ -1,0 +1,9 @@
+.page-copyright-inverse,
+.page-copyright-inverse .social .icon {
+	color: #fff
+}
+
+.page-copyright-inverse .social .icon:active,
+.page-copyright-inverse .social .icon:hover {
+	color: rgba(255,255,255,.8)
+}

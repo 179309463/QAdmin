@@ -1,0 +1,68 @@
+
+.page-content-table {
+	padding: 0;
+	overflow-x: auto;
+	max-width: 100%;
+}
+
+.page-content-table .table>tbody>tr>td,
+.page-content-table .table>tbody>tr>th,
+.page-content-table .table>thead>tr>td,
+.page-content-table .table>thead>tr>th {
+	padding-top: 20px;
+	padding-bottom: 20px
+}
+
+.page-content-table .table>tbody>tr>td:first-child,
+.page-content-table .table>tbody>tr>th:first-child,
+.page-content-table .table>thead>tr>td:first-child,
+.page-content-table .table>thead>tr>th:first-child {
+	padding-left: 20px
+}
+
+.page-content-table .table>tbody>tr>td:last-child,
+.page-content-table .table>tbody>tr>th:last-child,
+.page-content-table .table>thead>tr>td:last-child,
+.page-content-table .table>thead>tr>th:last-child {
+	padding-right: 20px
+}
+
+.page-content-table .table>tbody>tr:hover>td {
+	background-color: #f3f7f9
+}
+
+.page-content-table .table>tbody>tr:last-child td {
+	border-bottom: 1px solid #e4eaec
+}
+
+.page-content-table .table>tbody>tr>td{
+	cursor: pointer
+}
+.page-content-table .table.is-indent>tbody>tr:first-child td,
+.page-content-table .table.is-indent>tfoot>tr>td {
+	border-top: 0
+}
+.page-content-table .table.is-indent>tbody>tr:last-child td.pre-cell,
+.page-content-table .table.is-indent>tbody>tr:last-child td.suf-cell,
+.page-header {
+	border-bottom: 0
+}
+
+.page-content-table .table.is-indent>tbody>tr>td.pre-cell,
+.page-content-table .table.is-indent>tbody>tr>td.suf-cell,
+.page-content-table .table.is-indent>tbody>tr>th.pre-cell,
+.page-content-table .table.is-indent>tbody>tr>th.suf-cell,
+.page-content-table .table.is-indent>thead>tr>td.pre-cell,
+.page-content-table .table.is-indent>thead>tr>td.suf-cell,
+.page-content-table .table.is-indent>thead>tr>th.pre-cell,
+.page-content-table .table.is-indent>thead>tr>th.suf-cell {
+	width: 30px;
+	padding: 0;
+	border-top: 0;
+	border-bottom: 0
+}
+
+.page-content-table .pagination {
+	margin-right: 20px;
+	margin-left: 20px
+}

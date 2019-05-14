@@ -1,0 +1,7 @@
+.timeline-single.timeline-icon {
+	margin-left: 20px
+}
+
+.timeline-single.timeline-icon .timeline-dot {
+	margin-left: -20px
+}

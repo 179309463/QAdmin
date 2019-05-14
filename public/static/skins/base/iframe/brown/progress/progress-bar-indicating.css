@@ -1,0 +1,46 @@
+
+.progress-bar-indicating.progress-bar-animated {
+	position: relative;
+	-webkit-animation: none;
+	animation: none
+}
+
+.progress-bar-indicating.progress-bar-animated:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	border-radius: inherit;
+	opacity: 0;
+	-webkit-animation: progress-active 3s ease 0s infinite;
+	animation: progress-active 3s ease 0s infinite
+}
+
+
+@-webkit-keyframes progress-active {
+	0% {
+		width: 0;
+		opacity: .4
+	}
+
+	100% {
+		width: 100%;
+		opacity: 0
+	}
+}
+
+@keyframes progress-active {
+	0% {
+		width: 0;
+		opacity: .4
+	}
+
+	100% {
+		width: 100%;
+		opacity: 0
+	}
+}
+

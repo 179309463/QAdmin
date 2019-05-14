@@ -1,0 +1,16 @@
+.card-watermark {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	line-height: 1;
+	opacity: .1
+}
+
+.card-watermark.darker {
+	color: #000
+}
+
+.card-watermark.lighter {
+	color: #fff
+}
+

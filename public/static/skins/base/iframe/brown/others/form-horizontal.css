@@ -1,0 +1,16 @@
+
+@media (min-width:768px) {
+	.form-horizontal .col-form-label {
+		margin-bottom: 0;
+		text-align: right
+	}
+
+	.form-horizontal .form-control-lg,.form-horizontal .input-group-lg>.form-control,.form-horizontal .input-group-lg>.input-group-append,.form-horizontal .input-group-lg>.input-group-append>.btn,.form-horizontal .input-group-lg>.input-group-append>.input-group-text,.form-horizontal .input-group-lg>.input-group-prepend,.form-horizontal .input-group-lg>.input-group-prepend>.btn,.form-horizontal .input-group-lg>.input-group-prepend>.input-group-text {
+		font-size: 18px
+	}
+
+	.form-horizontal .form-control-sm,.form-horizontal .input-group-sm>.form-control,.form-horizontal .input-group-sm>.input-group-append,.form-horizontal .input-group-sm>.input-group-append>.btn,.form-horizontal .input-group-sm>.input-group-append>.input-group-text,.form-horizontal .input-group-sm>.input-group-prepend,.form-horizontal .input-group-sm>.input-group-prepend>.btn,.form-horizontal .input-group-sm>.input-group-prepend>.input-group-text {
+		padding-top: 2px!important;
+		font-size: 12px
+	}
+}

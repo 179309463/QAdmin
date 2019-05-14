@@ -1,0 +1,25 @@
+.btn-link {
+    background-color: transparent;
+	color: #997b71;
+    font-weight: 400;
+}
+
+.btn-link:hover {
+    background-color: transparent;
+    color: #ab8c82;
+    text-decoration: underline;
+	border-color: transparent
+}
+
+.btn-link.focus,
+.btn-link:focus {
+	box-shadow: none;
+	text-decoration: underline;
+	border-color: transparent
+}
+
+.btn-link.disabled,
+.btn-link:disabled {
+	color: #a3afb7;
+	pointer-events: none
+}

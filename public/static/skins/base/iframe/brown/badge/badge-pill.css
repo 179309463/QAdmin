@@ -1,0 +1,27 @@
+
+.badge-pill {
+	padding-right: .6em;
+	padding-left: .6em;
+	border-radius: 10rem;
+	padding: 3px 6px
+}
+
+.badge-pill:empty {
+	display: none
+}
+
+a .badge-pill:focus,
+a .badge-pill:hover {
+	text-decoration: none;
+	cursor: pointer
+}
+
+.btn .badge-pill {
+	top: 0
+}
+
+.btn-group-xs>.btn .badge-pill,
+.btn-xs .badge-pill {
+	top: 0;
+	padding: 1px 5px
+}

@@ -1,0 +1,40 @@
+
+
+.panel-bordered .panel-toolbar {
+	border-top-color: transparent
+}
+.panel-bordered>.panel-body {
+	padding-top: 25px
+}
+.panel-bordered>.panel-body.scrollable-vertical>.scrollable-bar {
+	height: -webkit-calc(100% - 2 * 25px);
+	height: calc(100% - 2 * 25px);
+	margin-bottom: 25px
+}
+.panel-bordered>.panel-body.scrollable-horizontal>.scrollable-bar {
+	-webkit-transform: translateY(-21px);
+	transform: translateY(-21px)
+}
+.panel-bordered>.panel-body.scrollable-horizontal>.scrollable-container>.scrollable-content {
+	padding-top: 25px;
+	padding-bottom: 25px
+}
+.panel-bordered>.panel-heading {
+	border-bottom: 1px solid #e4eaec
+}
+
+.panel-bordered>.panel-heading>.panel-title {
+	padding-bottom: 20px
+}
+
+.panel-bordered>.panel-footer {
+	padding-top: 15px;
+	border-top: 1px solid #e4eaec
+}
+
+
+
+.panel-bordered>.table>tbody:first-child>tr:first-child td,
+.panel-bordered>.table>tbody:first-child>tr:first-child th {
+	border-top: 0
+}

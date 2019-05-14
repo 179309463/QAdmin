@@ -1,0 +1,78 @@
+
+.steps {
+	display: -webkit-flex;
+    display: -ms-flexbox;  
+    display: -webkit-box;  
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 0 22px
+}
+.steps-vertical {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column
+}
+.steps-lg .step {
+	padding: 15px;
+	font-size: 14px
+}
+
+.steps-lg .step-icon,.steps-lg .step-title {
+	font-size: 16px
+}
+
+.steps-lg .step-number {
+	width: 46px;
+	height: 46px;
+	font-size: 28px;
+	line-height: 46px
+}
+
+.steps-lg .step-number~.step-desc {
+	min-height: 46px;
+	margin-left: 56px
+}
+
+.steps-sm .step {
+	font-size: 12px
+}
+
+.steps-sm .step-icon,.steps-sm .step-title {
+	font-size: 14px
+}
+
+.steps-sm .step-number {
+	width: 30px;
+	height: 30px;
+	font-size: 24px;
+	line-height: 30px
+}
+
+.steps-sm .step-number~.step-desc {
+	min-height: 30px;
+	margin-left: 40px
+}
+
+.steps-xs .step {
+	font-size: 10px
+}
+
+.steps-xs .step-icon,.steps-xs .step-title {
+	font-size: 14px
+}
+
+.steps-xs .step-number {
+	width: 24px;
+	height: 24px;
+	font-size: 12px;
+	line-height: 24px
+}
+
+.steps-xs .step-number~.step-desc {
+	min-height: 24px;
+	margin-left: 34px
+}

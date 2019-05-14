@@ -1,0 +1,18 @@
+
+.list-group-item-action {
+	width: 100%;
+	color: #76838f;
+	text-align: inherit
+}
+
+.list-group-item-action:focus,
+.list-group-item-action:hover {
+	color: #76838f;
+	text-decoration: none;
+	background-color: #f3f7f9
+}
+
+.list-group-item-action:active {
+	color: #76838f;
+	background-color: #e4eaec
+}

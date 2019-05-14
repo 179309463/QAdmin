@@ -1,0 +1,66 @@
+.carousel-indicators {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	left: 0;
+	z-index: 15;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-left: 0;
+	margin-right: 15%;
+	margin-left: 15%;
+	list-style: none
+}
+.carousel-indicators .active {
+	background-color: #fff
+}
+
+.carousel-indicators li::after,
+.carousel-indicators li::before {
+	left: 0;
+	display: inline-block;
+	height: 10px;
+	content: ""
+}
+
+.carousel-indicators li {
+	position: relative;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	width: 10px;
+	height: 10px;
+	margin-right: 3px;
+	margin-left: 3px;
+	text-indent: -999px
+}
+
+.carousel-indicators li::before {
+	position: absolute;
+	top: -10px;
+	width: 100%
+}
+
+.carousel-indicators li::after {
+	position: absolute;
+	bottom: -10px;
+	width: 100%
+}
+
+
+.carousel-indicators li {
+	cursor: pointer
+}
+
+.carousel-indicators li {
+	background-color: rgba(255,255,255,.3);
+	border-radius: 10px
+}
+

@@ -1,0 +1,42 @@
+.status {
+	display: block;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #fff;
+	border-radius: 100%
+}
+.status-online {
+	background-color: #11c26d
+}
+
+.status-off {
+	background-color: #526069
+}
+
+.status-busy {
+	background-color: #eb6709
+}
+
+.status-away {
+	background-color: #ff4c52
+}
+
+.status-lg {
+	width: 14px;
+	height: 14px
+}
+
+.status-md {
+	width: 10px;
+	height: 10px
+}
+
+.status-sm {
+	width: 8px;
+	height: 8px
+}
+
+.status-xs {
+	width: 7px;
+	height: 7px
+}

@@ -1,0 +1,7 @@
+.timeline-single.timeline-avatar {
+	margin-left: 20px
+}
+
+.timeline-single.timeline-avatar .timeline-dot {
+	margin-left: -20px
+}

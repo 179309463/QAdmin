@@ -1,0 +1,122 @@
+.panel-actions {
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	z-index: 1;
+	margin: auto;
+	-webkit-transform: translate(0,-50%);
+	transform: translate(0,-50%)
+}
+
+.panel-actions .panel-action {
+    background-color: transparent;
+	display: inline-block;
+	padding: 8px 10px;
+	color: #a3afb7;
+	text-decoration: none;
+	cursor: pointer    
+}
+.panel-actions .panel-action:active,
+.panel-actions .panel-action:hover {
+	color: #526069
+}
+
+.panel-actions .panel-action[data-toggle=dropdown]:not(.dropdown-toggle) {
+	width: 34px;
+	text-align: center
+}
+
+.panel-actions .dropdown {
+	display: inline-block
+}
+.panel-actions .dropdown-toggle {
+	display: inline-block;
+	text-decoration: none
+}
+
+
+.panel-actions .progress {
+	width: 100px;
+	margin: 0
+}
+
+.panel-actions .pagination {
+	margin: 0
+}
+
+
+.panel:hover .panel-actions .show-on-hover {
+	display: inline-block
+}
+
+.panel .panel-actions .show-on-hover,
+.panel.is-fullscreen .panel-actions [data-toggle=collapse] {
+	display: none
+}
+
+ul .panel-actions {
+	list-style: none
+}
+ul .panel-actions>li {
+    margin-left: 8px;
+    display: inline-block;
+}
+
+ul .panel-actions>li:first-child {
+	margin-left: 0
+}
+ul.panel-actions {
+	list-style: none
+}
+ul.panel-actions>li {
+	display: inline-block;
+	margin-left: 8px
+}
+ul.panel-actions>li:first-child {
+	margin-left: 0
+}
+@media (max-width:479.98px) {
+	.panel-actions {
+		right: 20px
+    }
+}
+
+@media (max-width:767.98px) {
+	.panel-actions {
+		position: relative;
+		top: auto;
+		right: auto;
+		display: block;
+		padding: 0 30px 15px;
+		margin: auto;
+		-webkit-transform: none;
+		transform: none
+	}
+
+	.panel-actions-keep {
+		position: absolute;
+		top: 50%;
+		right: 25px;
+		padding: 0;
+		-webkit-transform: translate(0,-50%);
+		transform: translate(0,-50%)
+	}
+}
+
+@media (max-width:479.98px) {
+	.panel-actions {
+		padding-left: 20px
+	}
+
+	.panel-actions-keep {
+		right: 15px
+	}
+
+	.panel-actions .progress {
+		min-width: 80px
+	}
+
+	.panel-actions .show-on-hover {
+		display: none
+	}
+}

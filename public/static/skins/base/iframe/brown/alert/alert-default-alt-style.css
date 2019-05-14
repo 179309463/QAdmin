@@ -1,0 +1,40 @@
+
+.alert-alt.alert-primary {
+	border-color: #997b71
+}
+.alert-alt.alert-primary .alert-link,
+.alert-alt.alert-primary a {
+	color: #997b71
+}
+
+.alert-alt.alert-success {
+	border-color: #11c26d
+}
+.alert-alt.alert-success .alert-link,
+.alert-alt.alert-success a {
+	color: #11c26d
+}
+
+.alert-alt.alert-info {
+	border-color: #0bb2d4
+}
+.alert-alt.alert-info .alert-link,
+.alert-alt.alert-info a {
+	color: #0bb2d4
+}
+
+.alert-alt.alert-warning {
+	border-color: #eb6709
+}
+.alert-alt.alert-warning .alert-link,
+.alert-alt.alert-warning a {
+	color: #eb6709
+}
+
+.alert-alt.alert-danger {
+	border-color: #ff4c52
+}
+.alert-alt.alert-danger .alert-link,
+.alert-alt.alert-danger a {
+	color: #ff4c52
+}

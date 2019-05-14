@@ -1,0 +1,61 @@
+.pricing-list {
+	margin-bottom: 22px;
+	text-align: center;
+	border: 1px solid #e4eaec;
+	border-radius: .215rem
+}
+
+.pricing-list [class*=bg-],
+.pricing-list [class*=bg-] *,
+.pricing-list [class^=bg-],
+.pricing-list [class^=bg-] * {
+	color: #fff
+}
+
+.pricing-list .pricing-header {
+	border-bottom: 1px solid #e4eaec;
+	border-radius: .215rem .215rem 0 0
+}
+
+.pricing-list .pricing-title {
+	padding: 15px 30px;
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: .215rem .215rem 0 0
+}
+
+.pricing-list .pricing-price {
+	padding: 20px 30px;
+	margin: 0;
+	font-size: 2.358rem;
+	font-weight: 700;
+	color: #37474f
+}
+
+.pricing-list .pricing-period {
+	font-size: 1rem;
+	font-weight: 400
+}
+
+.pricing-list .pricing-features {
+	padding: 0 18px;
+	margin: 0
+}
+
+.pricing-list .pricing-features li {
+	display: block;
+	padding: 15px;
+	list-style: none;
+	border-top: 1px dashed #e4eaec
+}
+
+.pricing-list .pricing-features li:first-child {
+	border-top: none
+}
+
+.pricing-list .pricing-footer {
+	padding: 30px;
+	border-radius: 0 0 .215rem .215rem
+}

@@ -1,0 +1,44 @@
+
+.blockquote.cover-quote,
+.cover-quote {
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 0;
+	border-left: none
+}
+
+.blockquote.cover-quote:after,
+.blockquote.cover-quote:before,
+.cover-quote:after,
+.cover-quote:before {
+	position: absolute;
+	top: -20px;
+	font-size: 4em
+}
+
+.blockquote.cover-quote:before,
+.cover-quote:before {
+	left: 0;
+	content: open-quote
+}
+
+.blockquote.cover-quote:after,
+.cover-quote:after {
+	right: 0;
+	visibility: hidden;
+	content: close-quote
+}
+
+.blockquote.cover-quote.blockquote-reverse,
+.cover-quote.blockquote-reverse {
+	padding-right: 35px;
+	padding-left: 20px;
+	border-right: none
+}
+
+.blockquote.cover-quote.blockquote-reverse:before,
+.cover-quote.blockquote-reverse:before {
+	right: 0;
+	left: auto;
+	content: close-quote
+}

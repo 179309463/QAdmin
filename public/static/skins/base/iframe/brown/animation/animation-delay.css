@@ -1,0 +1,48 @@
+.animation-delay-1000 {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s
+}
+
+.animation-delay-900 {
+	-webkit-animation-delay: .9s;
+	animation-delay: .9s
+}
+
+.animation-delay-800 {
+	-webkit-animation-delay: .8s;
+	animation-delay: .8s
+}
+
+.animation-delay-700 {
+	-webkit-animation-delay: .7s;
+	animation-delay: .7s
+}
+
+.animation-delay-600 {
+	-webkit-animation-delay: .6s;
+	animation-delay: .6s
+}
+
+.animation-delay-500 {
+	-webkit-animation-delay: .5s;
+	animation-delay: .5s
+}
+
+.animation-delay-400 {
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s
+}
+
+.animation-delay-300 {
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s
+}
+
+.animation-delay-200 {
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s
+}
+.animation-delay-100 {
+	-webkit-animation-delay: .1s;
+	animation-delay: .1s
+}

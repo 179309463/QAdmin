@@ -1,0 +1,76 @@
+
+@media print {
+	a:not(.btn) {
+		text-decoration: underline
+    }
+    
+}
+
+a {
+	color: #997b71;
+	text-decoration: none;
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects
+}
+
+a:active,
+a:focus{
+	outline: 0
+}
+a:hover {
+	outline: 0;
+	color: #ab8c82;
+	text-decoration: underline
+}
+
+a:not([href]):not([tabindex]),
+a:not([href]):not([tabindex]):hover {
+	color: inherit;
+	text-decoration: none
+}
+
+a:not([href]):not([tabindex]):focus {
+	color: inherit;
+	text-decoration: none;
+	outline: 0
+}
+a.bg-primary:focus,
+a.bg-primary:hover {
+	background-color: #0062cc!important
+}
+
+a.bg-secondary:focus,
+a.bg-secondary:hover {
+	background-color: #545b62!important
+}
+
+a.bg-success:focus,
+a.bg-success:hover {
+	background-color: #1e7e34!important
+}
+
+a.bg-info:focus,
+a.bg-info:hover {
+	background-color: #117a8b!important
+}
+
+a.bg-warning:focus,
+a.bg-warning:hover {
+	background-color: #d39e00!important
+}
+
+a.bg-danger:focus,
+a.bg-danger:hover {
+	background-color: #bd2130!important
+}
+
+a.bg-light:focus,
+a.bg-light:hover {
+	background-color: #dae0e5!important
+}
+
+a.bg-dark:focus,
+a.bg-dark:hover {
+	background-color: #1d2124!important
+}
+

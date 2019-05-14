@@ -1,0 +1,15 @@
+.alert.dark.alert-primary.alert-alt {
+	border-color: #56443f
+}
+.alert.dark.alert-success.alert-alt {
+	border-color: #035e33
+}
+.alert.dark.alert-info.alert-alt {
+	border-color: #00596c
+}
+.alert.dark.alert-warning.alert-alt {
+	border-color: #923300
+}
+.alert.dark.alert-danger.alert-alt {
+	border-color: #cd0d14
+}

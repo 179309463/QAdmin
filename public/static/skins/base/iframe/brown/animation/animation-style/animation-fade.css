@@ -1,0 +1,31 @@
+
+.animation-fade {
+	-webkit-animation-name: fade;
+	animation-name: fade;
+	-webkit-animation-duration: .8s;
+	animation-duration: .8s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear
+}
+
+
+
+@-webkit-keyframes fade {
+	0% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1
+	}
+}

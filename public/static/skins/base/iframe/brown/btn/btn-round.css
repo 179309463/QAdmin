@@ -1,0 +1,15 @@
+
+.btn-squared {
+	border-radius: 0
+}
+
+.btn-round {
+	border-radius: 1000px
+}
+.btn-pill-left {
+	border-radius: 500px 0 0 500px
+}
+
+.btn-pill-right {
+	border-radius: 0 500px 500px 0
+}

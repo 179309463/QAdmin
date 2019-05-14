@@ -1,0 +1,29 @@
+
+.site-sidebar-tab-content {
+	height: 100%;
+	height: -webkit-calc(100% - 90px);
+	height: calc(100% - 90px)
+}
+
+.site-sidebar-tab-content>.tab-pane {
+	height: 100%;
+	padding: 20px
+}
+
+.site-sidebar-tab-content>.tab-pane.scrollable {
+	padding: 0
+}
+
+.site-sidebar-tab-content>.tab-pane .scrollable-content {
+	padding: 20px
+}
+
+.site-sidebar-tab-content>.tab-pane .list-group {
+	margin-right: -20px;
+	margin-left: -20px
+}
+
+.site-sidebar-tab-content>.tab-pane .list-group>.list-group-item {
+	padding-right: 20px;
+	padding-left: 20px
+}

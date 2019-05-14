@@ -1,0 +1,21 @@
+
+.ribbon-lg .ribbon-inner {
+	height: 38px;
+	font-size: 1.286rem;
+	line-height: 38px
+}
+
+.ribbon-xs .ribbon-inner {
+	font-size: .858rem
+}
+
+.ribbon-sm .ribbon-inner {
+	height: 26px;
+	font-size: .858rem;
+	line-height: 26px
+}
+
+.ribbon-xs .ribbon-inner {
+	height: 22px;
+	line-height: 22px
+}

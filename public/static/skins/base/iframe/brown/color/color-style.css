@@ -1,0 +1,65 @@
+
+.bg-primary {
+	color: #fff;
+	background-color: #997b71!important
+}
+
+.bg-primary:hover {
+	background-color: #ae978f!important
+}
+
+.bg-primary a,.bg-primary a.bg-primary,.bg-primary a.bg-primary:hover,.bg-primary a:hover {
+	color: #fff
+}
+
+.bg-success {
+	color: #fff;
+	background-color: #11c26d!important
+}
+
+.bg-success:hover {
+	background-color: #1beb87!important
+}
+
+.bg-success a,.bg-success a.bg-primary,.bg-success a.bg-primary:hover,.bg-success a:hover {
+	color: #fff
+}
+
+.bg-info {
+	color: #fff;
+	background-color: #0bb2d4!important
+}
+
+.bg-info:hover {
+	background-color: #1fcff3!important
+}
+
+.bg-info a,.bg-info a.bg-info,.bg-info a.bg-info:hover,.bg-info a:hover {
+	color: #fff
+}
+
+.bg-warning {
+	color: #fff;
+	background-color: #eb6709!important
+}
+
+.bg-warning:hover {
+	background-color: #f78330!important
+}
+
+.bg-warning a,.bg-warning a.bg-warning,.bg-warning a.bg-warning:hover,.bg-warning a:hover {
+	color: #fff
+}
+
+.bg-danger {
+	color: #fff;
+	background-color: #ff4c52!important
+}
+
+.bg-danger:hover {
+	background-color: #ff7f83!important
+}
+
+.bg-danger a,.bg-danger a.bg-danger,.bg-danger a.bg-danger:hover,.bg-danger a:hover {
+	color: #fff
+}

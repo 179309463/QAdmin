@@ -1,0 +1,42 @@
+
+.ribbon-badge {
+	top: -2px;
+    left: -2px;
+    overflow: hidden;
+}
+
+.ribbon-badge .ribbon-inner {
+	left: -40px;
+	width: 100%;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg)
+}
+
+.ribbon-badge.ribbon-reverse {
+	right: -2px;
+	left: auto
+}
+
+.ribbon-badge.ribbon-reverse .ribbon-inner {
+	right: -40px;
+	left: auto;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.ribbon-badge.ribbon-bottom {
+	top: auto;
+	bottom: -2px
+}
+
+.ribbon-badge.ribbon-bottom .ribbon-inner {
+	top: auto;
+	bottom: 16px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.ribbon-badge.ribbon-bottom.ribbon-reverse .ribbon-inner {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg)
+}

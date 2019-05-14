@@ -1,0 +1,111 @@
+
+.navbar-nav {
+	display: -webkit-box;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	margin: .6785rem -.7145rem;	
+}
+
+.navbar-nav .nav-link {
+	padding-right: 0;
+	padding-left: 0;
+	padding-top: 1.572rem;
+	padding-bottom: 1.572rem;	
+}
+.navbar-nav .nav-link.navbar-avatar {
+	padding-top: 1.0715rem;
+	padding-bottom: 1.0715rem
+}
+.navbar-nav .dropdown-menu {
+	position: static;
+	float: none
+}
+.navbar-nav .nav-item {
+	float: none
+}
+
+.navbar-nav .nav-item .nav-link {
+	padding-top: .715rem;
+	padding-bottom: .715rem;
+	line-height: 22px
+}
+
+.navbar-nav .nav-item+.nav-item {
+	margin-left: 0
+}
+
+.navbar-nav>.nav-item>.dropdown-menu {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0
+}
+
+@media (max-width:767.98px) {
+	.navbar-nav .open .dropdown-menu,
+	.navbar-nav .show .dropdown-menu {
+		position: static;
+		float: none;
+		width: auto;
+		margin-top: 0;
+		background-color: transparent;
+		border: 0;
+		box-shadow: none
+	}
+
+	.navbar-nav .open .dropdown-menu .dropdown-header,
+	.navbar-nav .open .dropdown-menu .dropdown-item,
+	.navbar-nav .show .dropdown-menu .dropdown-header,
+	.navbar-nav .show .dropdown-menu .dropdown-item {
+		padding: 5px 15px 5px 25px
+	}
+
+	.navbar-nav .open .dropdown-menu .dropdown-item,
+	.navbar-nav .show .dropdown-menu .dropdown-item {
+		line-height: 22px
+	}
+
+	.navbar-nav .open .dropdown-menu .dropdown-item:focus,
+	.navbar-nav .open .dropdown-menu .dropdown-item:hover,
+	.navbar-nav .show .dropdown-menu .dropdown-item:focus,
+	.navbar-nav .show .dropdown-menu .dropdown-item:hover {
+		background-image: none
+	}
+}
+
+
+@media (min-width:768px) {
+	.navbar-nav {
+		float: left;
+		margin: 0
+	}
+
+	.navbar-nav>.nav-item {
+		float: left
+	}
+
+	.navbar-nav>.nav-item>.nav-link {
+		padding-top: 1.357rem;
+		padding-bottom: 1.357rem
+	}
+
+	.navbar-nav.navbar-right:last-child {
+		margin-right: -.7145rem
+	}
+}
+
+@media (max-width:767.98px) {
+	.navbar-nav .nav-link.navbar-avatar {
+		padding-top: .429rem;
+		padding-bottom: .429rem
+	}
+}
+

@@ -1,0 +1,30 @@
+
+.card-actions-sidebar {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 60px
+}
+.card-actions-sidebar a {
+	display: inline-block;
+	width: 100%;
+	height: 60px;
+	margin-right: 0;
+	text-align: center;
+	border-right: 1px solid #e4eaec
+}
+
+.card-actions-sidebar a:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle
+}
+
+.card-actions-sidebar+.card-content {
+	margin-left: 80px
+}
+
+.card-actions-sidebar a+a {
+	border-top: 1px solid #e4eaec
+}

@@ -1,0 +1,10 @@
+
+
+.nav-tabs-reverse .nav-item {
+	float: right
+}
+
+.nav-tabs-reverse .nav-item+.nav-item {
+	margin-right: 2px;
+	margin-left: 0
+}

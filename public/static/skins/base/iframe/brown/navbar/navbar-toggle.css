@@ -1,0 +1,65 @@
+.navbar-toggler {
+	font-size: 1.286rem;
+	background-color: transparent;
+	background: 0 0!important;
+	position: relative;
+	float: right;
+	height: 4.286rem;
+	padding: 1.357rem .7145rem;
+	margin-top: 0;
+	margin-right: .7145rem;
+	margin-bottom: 0;
+	line-height: 22px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: .215rem;
+	-webkit-transition: color .25s linear;
+	transition: color .25s linear;	
+}
+.navbar-toggler:not(:disabled):not(.disabled) {
+	cursor: pointer
+}
+.navbar-toggler:focus {
+	text-decoration: none;
+	outline: 0
+}
+.navbar-toggler:hover {
+	text-decoration: none;
+	background: 0 0!important
+}
+.navbar-toggler-icon {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: middle;
+	content: "";
+	background: center center no-repeat;
+	background-size: 100% 100%
+}
+
+.navbar-toggler .icon {
+	margin-top: -1px
+}
+
+.navbar-toggler .icon-bar {
+	display: block;
+	width: 1.572rem;
+	height: 2px;
+	border-radius: 1px
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+	margin-top: .286rem
+}
+
+.navbar-toggler-left {
+	float: left;
+	margin-right: 0;
+	margin-left: .7145rem
+}
+
+@media (min-width:768px) {
+	.navbar-toggler {
+		display: none
+	}
+}

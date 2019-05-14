@@ -1,0 +1,12 @@
+.carousel-indicators-scaleup li {
+	border: none;
+	-webkit-transition: background-color .3s ease 0s,-webkit-transform .3s ease 0s;
+	transition: background-color .3s ease 0s,-webkit-transform .3s ease 0s;
+	transition: transform .3s ease 0s,background-color .3s ease 0s;
+	transition: transform .3s ease 0s,background-color .3s ease 0s,-webkit-transform .3s ease 0s
+}
+
+.carousel-indicators-scaleup .active {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5)
+}

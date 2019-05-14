@@ -1,0 +1,65 @@
+button {
+	overflow: visible;
+	border-radius: 0;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+    text-transform: none;
+    -webkit-appearance: button;
+    color: inherit;
+	outline: 0
+}
+
+html [type=button] {
+	-webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner,
+button::-moz-focus-inner {
+	padding: 0;
+	border-style: none
+}
+
+button.focus,button:focus {
+	outline: 0
+}
+button.close {
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+    -webkit-appearance: none;
+    cursor: pointer
+}
+
+
+
+button.bg-primary:focus,button.bg-primary:hover {
+	background-color: #0062cc!important
+}
+button.bg-secondary:focus,button.bg-secondary:hover {
+	background-color: #545b62!important
+}
+
+button.bg-success:focus,button.bg-success:hover {
+	background-color: #1e7e34!important
+}
+
+button.bg-info:focus,button.bg-info:hover {
+	background-color: #117a8b!important
+}
+
+button.bg-warning:focus,button.bg-warning:hover {
+	background-color: #d39e00!important
+}
+
+button.bg-danger:focus,button.bg-danger:hover {
+	background-color: #bd2130!important
+}
+button.bg-light:focus,button.bg-light:hover {
+	background-color: #dae0e5!important
+}
+
+button.bg-dark:focus,button.bg-dark:hover {
+	background-color: #1d2124!important
+}

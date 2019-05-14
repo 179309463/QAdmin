@@ -1,0 +1,11 @@
+
+.panel.panel-transparent {
+	background: 0 0;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.panel.panel-transparent>.panel-footer,
+.panel.panel-transparent>.panel-heading {
+	border-color: transparent
+}

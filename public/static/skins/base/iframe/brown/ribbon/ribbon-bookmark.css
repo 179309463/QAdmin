@@ -1,0 +1,87 @@
+
+.ribbon-bookmark .ribbon-inner {
+	padding-right: 42px;
+	background-color: transparent;
+	background-image: -webkit-linear-gradient(right,transparent 22px,#526069 0);
+	background-image: linear-gradient(to left,transparent 22px,#526069 0);
+	box-shadow: none
+}
+
+.ribbon-bookmark .ribbon-inner:before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 0;
+	height: 0;
+	border: 15px solid #526069;
+    border-right: 10px solid transparent;
+    content: "";
+}
+
+.ribbon-bookmark.ribbon-vertical .ribbon-inner {
+	height: 82px;
+	padding-right: 0;
+	padding-bottom: 37px;
+	background-image: -webkit-linear-gradient(bottom,transparent 22px,#526069 0);
+	background-image: linear-gradient(to top,transparent 22px,#526069 0)
+}
+
+.ribbon-bookmark.ribbon-vertical .ribbon-inner:before {
+	top: auto;
+	bottom: 0;
+	left: 0;
+	margin-top: -15px;
+	border-right: 15px solid #526069;
+	border-bottom: 10px solid transparent
+}
+
+.ribbon-bookmark.ribbon-vertical.ribbon-xs .ribbon-inner:before {
+	margin-top: -11px
+}
+
+.ribbon-bookmark.ribbon-vertical.ribbon-sm .ribbon-inner:before {
+	margin-top: -13px
+}
+
+.ribbon-bookmark.ribbon-vertical.ribbon-lg .ribbon-inner:before {
+	margin-top: -19px
+}
+
+.ribbon-bookmark.ribbon-reverse .ribbon-inner {
+	padding-right: 20px;
+	padding-left: 42px;
+	background-image: -webkit-linear-gradient(left,transparent 22px,#526069 0);
+	background-image: linear-gradient(to right,transparent 22px,#526069 0)
+}
+
+.ribbon-bookmark.ribbon-reverse .ribbon-inner:before {
+	left: 0;
+	border-right: 15px solid #526069;
+	border-left: 10px solid transparent
+}
+
+.ribbon-bookmark.ribbon-reverse.ribbon-vertical .ribbon-inner {
+	padding-right: 0;
+	padding-left: 0
+}
+
+.ribbon-bookmark.ribbon-reverse.ribbon-vertical .ribbon-inner:before {
+	right: auto;
+	left: 0;
+	border-right-color: #526069;
+	border-bottom-color: transparent;
+	border-left: 15px solid #526069
+}
+
+.ribbon-bookmark.ribbon-xs .ribbon-inner:before {
+	border-width: 11px
+}
+
+.ribbon-bookmark.ribbon-sm .ribbon-inner:before {
+	border-width: 13px
+}
+
+.ribbon-bookmark.ribbon-lg .ribbon-inner:before {
+	border-width: 19px
+}

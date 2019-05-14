@@ -1,0 +1,48 @@
+.counter {
+	text-align: center
+}
+
+.counter .counter-number-group,
+.counter>.counter-number {
+	font-size: 20px;
+	color: #37474f
+}
+
+.counter-inverse,
+.counter-inverse .counter-icon,
+.counter-inverse .counter-number-group,
+.counter-inverse>.counter-number,
+.panel-heading-tab>.nav-tabs .nav-link {
+	color: #fff
+}
+
+.counter-label {
+	display: block
+}
+
+.counter-icon {
+	font-size: 20px
+}
+
+.counter-lg .counter-icon,
+.counter-lg .counter-number-group,
+.counter-lg>.counter-number {
+	font-size: 40px
+}
+
+.counter-md .counter-icon,
+.counter-md .counter-number-group,
+.counter-md>.counter-number {
+	font-size: 30px
+}
+
+.counter-sm .counter-icon,
+.counter-sm .counter-number-group,
+.counter-sm>.counter-number {
+	font-size: 14px
+}
+
+.counter-sm .counter-number+.counter-number-related,
+.counter-sm .counter-number-related+.counter-number {
+	margin-left: 0
+}

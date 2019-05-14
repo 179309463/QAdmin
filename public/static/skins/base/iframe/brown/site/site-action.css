@@ -1,0 +1,44 @@
+
+.site-action {
+	position: fixed;
+	right: 32px;
+	bottom: 55px;
+	z-index: 1290;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s
+}
+
+.site-action input {
+	display: none
+}
+
+.site-action .btn {
+	box-shadow: 0 10px 10px 0 rgba(60,60,60,.1)
+}
+
+.site-action .front-icon {
+	display: block
+}
+
+.site-action .back-icon {
+	display: none
+}
+
+
+.site-action.active .front-icon {
+	display: none
+}
+
+.site-action.active .back-icon {
+	display: block
+}
+
+@media (max-width:767.98px) {
+	.site-action .btn-floating {
+		width: 46px;
+		height: 46px;
+		padding: 0;
+		font-size: 16px;
+		box-shadow: 0 6px 6px 0 rgba(60,60,60,.1)
+	}
+}

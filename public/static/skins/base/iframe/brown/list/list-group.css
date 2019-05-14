@@ -1,0 +1,38 @@
+.list-group {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-left: 0
+}
+
+
+.list-group.bg-inherit{
+	border-radius: .215rem
+}
+
+
+
+.list-group {
+	margin-bottom: 20px
+}
+
+
+.list-group .media {
+	width: 100%;
+	padding: 2px 0;
+	border-bottom: 0
+}
+
+
+
+.list-group .media-heading {
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-size: 1rem
+}

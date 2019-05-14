@@ -1,0 +1,67 @@
+
+.form-check {
+	position: relative;
+	display: block;
+	padding-left: 1.429rem
+}
+
+.form-check-input {
+	position: absolute;
+	margin-top: 4px;
+	margin-left: -1.429rem
+}
+
+.form-check-label {
+	margin-bottom: 0
+}
+
+.form-check-input:disabled~.form-check-label {
+	color: #a3afb7
+}
+
+
+.form-check-inline {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-left: 0;
+	margin-right: .858rem
+}
+
+.form-check-inline .form-check-input {
+	position: static;
+	margin-top: 0;
+	margin-right: .3125rem;
+	margin-left: 0
+}
+
+
+.form-check-input.is-valid~.valid-feedback,
+.form-check-input.is-valid~.valid-tooltip,
+.was-validated .form-check-input:valid~.valid-feedback,
+.was-validated .form-check-input:valid~.valid-tooltip {
+	display: block
+}
+
+.form-check-input.is-valid~.form-check-label,
+.was-validated .form-check-input:valid~.form-check-label {
+	color: #11c26d
+}
+
+
+.form-check-input.is-invalid~.invalid-feedback,
+.form-check-input.is-invalid~.invalid-tooltip,
+.was-validated .form-check-input:invalid~.invalid-feedback,
+.was-validated .form-check-input:invalid~.invalid-tooltip {
+	display: block
+}
+
+.form-check-input.is-invalid~.form-check-label,
+.was-validated .form-check-input:invalid~.form-check-label {
+	color: #ff4c52
+}

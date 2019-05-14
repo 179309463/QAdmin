@@ -1,0 +1,9 @@
+.card-default {
+	background-color: #e4eaec
+}
+
+.card-default .card-footer-bordered,
+.card-default .card-header-bordered,
+.card-default.card-bordered {
+	border-color: #e4eaec
+}

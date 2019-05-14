@@ -1,0 +1,29 @@
+
+.panel-footer {
+	background-color: transparent;
+	border-bottom-right-radius: .071rem;
+	border-bottom-left-radius: .071rem;
+	padding: 0 25px 15px;
+	border-top: 1px solid transparent
+}
+
+.table+.panel-footer {
+	padding-top: 15px;
+	border-color: #e4eaec
+}
+
+.panel-footer-chart {
+	padding: 0
+}
+
+.list-group+.panel-footer {
+	border-top-width: 0
+}
+
+
+@media (max-width:479.98px) {
+	.panel-footer {
+		padding-right: 20px;
+		padding-left: 20px
+	}
+}

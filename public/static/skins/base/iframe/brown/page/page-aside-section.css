@@ -1,0 +1,27 @@
+
+.page-aside-section {
+	position: relative
+}
+.page-aside-section::after {
+	position: relative;
+	display: block;
+	margin: 22px;
+	content: "";
+	border-bottom: 1px solid #e4eaec
+}
+
+.page-aside-section:first-child {
+	padding-top: 22px
+}
+
+.page-aside-section:first-child .page-aside-title {
+	padding-top: 0;
+	margin-top: 0
+}
+.page-aside-section:last-child {
+	margin-bottom: 22px
+}
+
+.page-aside-section:last-child::after {
+	display: none
+}

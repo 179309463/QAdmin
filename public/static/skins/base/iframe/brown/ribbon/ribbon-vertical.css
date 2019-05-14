@@ -1,0 +1,23 @@
+
+.ribbon-vertical .ribbon-inner {
+	top: 0;
+	left: 16px;
+	width: 30px;
+	height: 60px;
+	padding: 15px 0
+}
+
+.ribbon-vertical.ribbon-xs .ribbon-inner {
+	width: 22px;
+	height: 50px
+}
+
+.ribbon-vertical.ribbon-sm .ribbon-inner {
+	width: 26px;
+	height: 55px
+}
+
+.ribbon-vertical.ribbon-lg .ribbon-inner {
+	width: 38px;
+	height: 70px
+}

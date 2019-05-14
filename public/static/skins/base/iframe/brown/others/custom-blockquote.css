@@ -1,0 +1,10 @@
+
+.custom-blockquote {
+	padding: 15px 20px;
+	border-left-width: 4px;
+	border-radius: .215rem
+}
+
+.custom-blockquote.blockquote-reverse {
+	border-right-width: 4px
+}

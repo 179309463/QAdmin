@@ -1,0 +1,23 @@
+
+.page-copyright {
+	margin-top: 60px;
+	font-size: .858rem;
+	color: #37474f;
+	letter-spacing: 1px
+}
+
+.page-copyright .social .icon {
+	color: rgba(55,71,79,.6);
+	font-size: 1.143rem
+}
+
+.page-copyright .social .icon:focus,
+.page-copyright .social .icon:hover {
+	color: rgba(55,71,79,.8)
+}
+
+.page-copyright .social .icon.active,
+.page-copyright .social .icon:active {
+	color: #37474f
+}
+

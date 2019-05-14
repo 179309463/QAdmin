@@ -1,0 +1,22 @@
+
+.cover {
+	overflow: hidden
+}
+.cover-background {
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover
+}
+
+
+.cover-iframe {
+	border: 0;
+	width: 100%
+}
+
+
+.cover-gallery .carousel-inner img,
+.cover-image {
+	width: 100%
+}

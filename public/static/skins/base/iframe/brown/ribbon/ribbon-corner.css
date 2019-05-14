@@ -1,0 +1,93 @@
+
+
+.ribbon-corner {
+	top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.ribbon-corner:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 30px solid transparent;
+	border-top-color: #526069;
+    border-left-color: #526069;
+    content: "";
+}
+
+.ribbon-corner .ribbon-inner {
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 35px;
+	padding: 0;
+	line-height: 35px;
+	background-color: transparent
+}
+
+.ribbon-corner.ribbon-bottom,.ribbon-corner.ribbon-bottom .ribbon-inner {
+	top: auto;
+	bottom: 0
+}
+
+.ribbon-corner.ribbon-reverse,.ribbon-corner.ribbon-reverse .ribbon-inner {
+	right: 0;
+	left: auto
+}
+
+.ribbon-corner.ribbon-reverse:before {
+	right: 0;
+	left: auto;
+	border-right-color: #526069;
+	border-left-color: transparent
+}
+
+.ribbon-corner.ribbon-bottom:before {
+	top: auto;
+	bottom: 0;
+	border-top-color: transparent;
+	border-bottom-color: #526069
+}
+
+.ribbon-corner.ribbon-xs:before {
+	border-width: 22px
+}
+
+.ribbon-corner.ribbon-xs .ribbon-inner {
+	width: 28px;
+	height: 26px;
+	line-height: 26px
+}
+
+.ribbon-corner.ribbon-sm:before {
+	border-width: 26px
+}
+
+.ribbon-corner.ribbon-sm .ribbon-inner {
+	width: 34px;
+	height: 32px;
+	line-height: 32px
+}
+
+.ribbon-corner.ribbon-lg:before {
+	border-width: 36px
+}
+
+.ribbon-corner.ribbon-lg .ribbon-inner {
+	width: 46px;
+	height: 44px;
+	line-height: 44px
+}
+
+.ribbon-corner.ribbon-lg .ribbon-inner>.icon {
+	font-size: 1.286rem
+}
+
+
+.ribbon-corner.ribbon-sm .ribbon-inner>.icon,
+.ribbon-corner.ribbon-xs .ribbon-inner>.icon {
+	font-size: .858rem
+}

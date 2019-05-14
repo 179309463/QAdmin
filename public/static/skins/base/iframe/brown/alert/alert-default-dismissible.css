@@ -1,0 +1,28 @@
+
+
+.alert-dismissible {
+	padding-right: 40px
+}
+.alert-dismissible .close {
+	padding: 0;
+	position: inherit;
+	margin-right: -20px;
+	text-decoration: none;
+	opacity: .6;
+	top: 0;
+	right: 0;
+	color: inherit
+}
+.alert-dismissible .close:focus,
+.alert-dismissible .close:hover {
+	opacity: 1
+}
+.alert-dismissible.alert-alt .close {
+	color: #a3afb7;
+	opacity: .6
+}
+.alert-dismissible.alert-alt .close:focus,
+.alert-dismissible.alert-alt .close:hover {
+	color: #a3afb7;
+	opacity: 1
+}

@@ -1,0 +1,45 @@
+
+.invalid-tooltip,.valid-tooltip {
+	position: absolute;
+	z-index: 5;
+	max-width: 100%;
+	padding: 6px 12px;
+	border-radius: .215rem;
+	top: 100%;
+	line-height: 1.57143
+}
+
+.valid-feedback {
+	display: none;
+	width: 100%;
+	margin-top: .286rem;
+	font-size: 80%;
+	color: #11c26d
+}
+
+.valid-tooltip {
+	display: none;
+	margin-top: .1rem;
+	font-size: .858rem;
+	color: #fff;
+	background-color: rgba(17,194,109,.9)
+}
+
+
+
+
+.invalid-feedback {
+	display: none;
+	width: 100%;
+	margin-top: .286rem;
+	font-size: 80%;
+	color: #ff4c52
+}
+
+.invalid-tooltip {
+	display: none;
+	margin-top: .1rem;
+	font-size: .858rem;
+	color: #fff;
+	background-color: rgba(255,76,82,.9)
+}

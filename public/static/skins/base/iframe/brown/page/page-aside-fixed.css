@@ -1,0 +1,27 @@
+
+.page-aside-fixed .page-aside {
+	position: fixed;
+	top: 0;
+	height: 100%
+}
+
+.page-aside-fixed .page-aside-inner {
+	height: 100%;
+	overflow-y: auto
+}
+@media (max-width:1199.98px) {
+	.page-aside-fixed.page-aside-left .site-footer {
+		margin-left: 180px
+	}
+}
+.page-aside-fixed.page-aside-left .site-footer {
+	margin-left: 260px
+}
+.page-aside-fixed.page-aside-right .site-footer {
+	margin-right: 260px
+}
+@media (max-width:1199.98px) {
+	.page-aside-fixed.page-aside-right .site-footer {
+		margin-right: 180px
+	}
+}
